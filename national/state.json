@@ -204,9 +204,10 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 5.5,
-   "status": "unavailable",
+   "status": "available",
    "tz": "America/Los_Angeles",
-   "region": "Pacific"
+   "region": "Pacific",
+   "since": "2026-10-27 12:03"
   },
   "R148": {
    "name": "Sherman Oaks",
@@ -256,9 +257,10 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 10.8,
-   "status": "unavailable",
+   "status": "available",
    "tz": "America/Los_Angeles",
-   "region": "Pacific"
+   "region": "Pacific",
+   "since": "2026-10-27 12:03"
   },
   "R122": {
    "name": "Manhattan Village",
@@ -1398,9 +1400,9 @@
    "state": "AZ",
    "lat": 32.325404,
    "lon": -110.929689,
-   "metro": "Tucson",
-   "tier": 3,
-   "miles": 1.2,
+   "metro": "",
+   "tier": 0,
+   "miles": 103.7,
    "status": "unavailable",
    "tz": "US/Arizona",
    "region": "Mountain"
@@ -1414,10 +1416,9 @@
    "metro": "",
    "tier": 0,
    "miles": 78.8,
-   "status": "available",
+   "status": "unavailable",
    "tz": "America/Los_Angeles",
-   "region": "Pacific",
-   "since": "2026-10-27 11:58"
+   "region": "Pacific"
   },
   "R219": {
    "name": "Town Square",
@@ -1480,9 +1481,10 @@
    "metro": "San Diego",
    "tier": 2,
    "miles": 14.6,
-   "status": "unavailable",
+   "status": "available",
    "tz": "America/Los_Angeles",
-   "region": "Pacific"
+   "region": "Pacific",
+   "since": "2026-10-27 12:03"
   },
   "R149": {
    "name": "Boylston Street",
@@ -1688,10 +1690,9 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 7.0,
-   "status": "available",
+   "status": "unavailable",
    "tz": "America/Los_Angeles",
-   "region": "Pacific",
-   "since": "2026-10-27 11:58"
+   "region": "Pacific"
   },
   "R414": {
    "name": "4th Street",
@@ -2001,9 +2002,10 @@
    "metro": "Seattle",
    "tier": 2,
    "miles": 29.2,
-   "status": "unavailable",
+   "status": "available",
    "tz": "America/Los_Angeles",
-   "region": "Pacific"
+   "region": "Pacific",
+   "since": "2026-10-27 12:03"
   },
   "R077": {
    "name": "Pioneer Place",
@@ -2066,9 +2068,10 @@
    "metro": "",
    "tier": 0,
    "miles": 299.0,
-   "status": "unavailable",
+   "status": "available",
    "tz": "America/Denver",
-   "region": "Mountain"
+   "region": "Mountain",
+   "since": "2026-10-27 12:03"
   },
   "R186": {
    "name": "Shayden Summit",
@@ -2222,10 +2225,9 @@
    "metro": "",
    "tier": 0,
    "miles": 51.9,
-   "status": "available",
+   "status": "unavailable",
    "tz": "America/Los_Angeles",
-   "region": "Pacific",
-   "since": "2026-10-27 11:58"
+   "region": "Pacific"
   },
   "R069": {
    "name": "Mission Viejo",
@@ -2818,9 +2820,9 @@
    "state": "NY",
    "lat": 42.914661,
    "lon": -78.762075,
-   "metro": "Buffalo",
-   "tier": 3,
-   "miles": 0.6,
+   "metro": "",
+   "tier": 0,
+   "miles": 176.6,
    "status": "unavailable",
    "tz": "America/New_York",
    "region": "Middle Atlantic"
@@ -2834,10 +2836,9 @@
    "metro": "",
    "tier": 0,
    "miles": 192.6,
-   "status": "available",
+   "status": "unavailable",
    "tz": "America/Los_Angeles",
-   "region": "Pacific",
-   "since": "2026-10-27 11:58"
+   "region": "Pacific"
   },
   "R034": {
    "name": "Pasadena",
@@ -2924,9 +2925,9 @@
    "state": "VA",
    "lat": 37.656044,
    "lon": -77.618722,
-   "metro": "Richmond",
-   "tier": 3,
-   "miles": 1.1,
+   "metro": "",
+   "tier": 0,
+   "miles": 138.4,
    "status": "unavailable",
    "tz": "America/New_York",
    "region": "South Atlantic"
@@ -2939,7 +2940,7 @@
    "lon": -76.071055,
    "metro": "",
    "tier": 0,
-   "miles": 103.6,
+   "miles": 160.9,
    "status": "unavailable",
    "tz": "America/New_York",
    "region": "South Atlantic"
@@ -3023,9 +3024,9 @@
    "region": "Middle Atlantic"
   }
  },
- "last_sweep": "2026-10-27T11:58:51.275247-05:00",
- "sweep_seconds": 163,
- "metros_ok": 50,
+ "last_sweep": "2026-10-27T12:03:26.477884-05:00",
+ "sweep_seconds": 191,
+ "metros_ok": 46,
  "metros": [
   {
    "metro": "New York",
@@ -3278,6 +3279,7 @@
    "tier": 3
   }
  ],
- "last_error": "2026-10-27T11:31-05:00: stopped after Little Rock",
- "retries": 0
+ "last_error": "2026-10-27T12:03-05:00: Richmond: HTTP 541; Honolulu: HTTP 541; Tucson: HTTP 541",
+ "retries": 3,
+ "backoff_until": "2026-10-27T12:18:26.476839-05:00"
 }
