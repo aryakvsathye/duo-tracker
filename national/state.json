@@ -1932,9 +1932,9 @@
    "state": "AZ",
    "lat": 32.325404,
    "lon": -110.929689,
-   "metro": "",
-   "tier": 0,
-   "miles": 103.7,
+   "metro": "Tucson",
+   "tier": 3,
+   "miles": 1.2,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3894,9 +3894,9 @@
    "state": "NY",
    "lat": 42.914661,
    "lon": -78.762075,
-   "metro": "",
-   "tier": 0,
-   "miles": 176.6,
+   "metro": "Buffalo",
+   "tier": 3,
+   "miles": 0.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4131,14 +4131,18 @@
    "metro": "Honolulu",
    "tier": 3,
    "miles": 4.0,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "Pacific/Honolulu",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-10-27 14:32",
+    "MK1E4LL/A": "2026-10-27 14:32"
+   },
+   "since": "2026-10-27 14:32"
   },
   "R140": {
    "name": "Eastview",
@@ -4177,9 +4181,9 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-27T14:27:48.449048-05:00",
- "sweep_seconds": 157,
- "metros_ok": 48,
+ "last_sweep": "2026-10-27T14:32:58.217305-05:00",
+ "sweep_seconds": 165,
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4442,8 +4446,5 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {},
- "skipped": [
-  "Tucson",
-  "Buffalo"
- ]
+ "skipped": []
 }
