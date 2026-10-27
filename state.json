@@ -13,7 +13,7 @@
   "Hilldale": "unavailable",
   "Main Place": "unavailable"
  },
- "checks": 233,
+ "checks": 242,
  "errors": 0,
  "events": 9,
  "last_heartbeat": "2026-10-27",
@@ -59,80 +59,8 @@
    ]
   }
  },
- "last_check": "2026-10-27T12:16:09.686178-05:00",
+ "last_check": "2026-10-27T12:24:22.967920-05:00",
  "history": [
-  {
-   "t": "2026-10-27T10:53:32-05:00",
-   "ok": true,
-   "ms": 552,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-27T10:54:32-05:00",
-   "ok": true,
-   "ms": 399,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-27T10:55:32-05:00",
-   "ok": true,
-   "ms": 376,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-27T10:56:32-05:00",
-   "ok": true,
-   "ms": 555,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-27T10:57:32-05:00",
-   "ok": true,
-   "ms": 371,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-27T10:58:32-05:00",
-   "ok": true,
-   "ms": 449,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-27T10:59:32-05:00",
-   "ok": true,
-   "ms": 508,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-27T11:00:32-05:00",
-   "ok": true,
-   "ms": 486,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-27T11:01:32-05:00",
-   "ok": true,
-   "ms": 439,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-10-27T11:01:46-05:00",
    "ok": true,
@@ -777,6 +705,78 @@
    "t": "2026-10-27T12:16:09-05:00",
    "ok": true,
    "ms": 268,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:16:22-05:00",
+   "ok": true,
+   "ms": 392,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:17:22-05:00",
+   "ok": true,
+   "ms": 219,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:18:22-05:00",
+   "ok": true,
+   "ms": 237,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:19:22-05:00",
+   "ok": true,
+   "ms": 225,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:20:22-05:00",
+   "ok": true,
+   "ms": 371,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:21:22-05:00",
+   "ok": true,
+   "ms": 183,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:22:22-05:00",
+   "ok": true,
+   "ms": 271,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:23:22-05:00",
+   "ok": true,
+   "ms": 268,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:24:22-05:00",
+   "ok": true,
+   "ms": 487,
    "code": 200,
    "green": [],
    "burst": false
