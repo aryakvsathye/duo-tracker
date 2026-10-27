@@ -73,6 +73,18 @@
   }
   .zoom-ctl button:active { background: var(--kerb); }
   .zoom-ctl button svg { width: 15px; height: 15px; }
+  .tip {
+    position: absolute; z-index: 5; pointer-events: none; max-width: 260px;
+    background: var(--asphalt-2); border: 1px solid var(--kerb); border-radius: var(--r-sm);
+    padding: 8px 10px; font-size: 13px; line-height: 1.35; box-shadow: 0 6px 18px rgba(0,0,0,.4);
+    opacity: 0; transform: translateY(4px); transition: opacity .12s, transform .12s;
+  }
+  .tip.on { opacity: 1; transform: none; }
+  .tip b { display: block; font-size: 14px; }
+  .tip span { color: var(--grey); }
+  .tip .ok { color: var(--green); font-weight: 600; }
+  #map .dot.hover { stroke: var(--chalk); stroke-width: 2; }
+  .map-wrap:focus-visible { outline: 2px solid var(--chalk); outline-offset: -2px; }
   .map-hint { position: absolute; left: 10px; bottom: 10px; font-size: 11px; color: var(--grey); background: rgba(21,21,30,.75); padding: 3px 8px; border-radius: 99px; pointer-events: none; transition: opacity .4s; }
   .map-hint.gone { opacity: 0; }
   .filters { display: flex; gap: 6px; flex-wrap: wrap; padding: 10px 14px; border-bottom: 1px solid var(--kerb); }
@@ -187,7 +199,8 @@
           <button class="chip" type="button" data-f="2" aria-pressed="false">T2</button>
           <button class="chip" type="button" data-f="3" aria-pressed="false">T3</button>
         </div>
-        <div class="map-wrap">
+        <div class="map-wrap" id="mapWrap" tabindex="0" aria-label="Map. Plus and minus zoom, arrow keys move, 0 resets.">
+          <div class="tip" id="tip" role="tooltip"></div>
           <svg id="map" viewBox="0 0 975 610" role="img" aria-label="Map of Apple Stores tracked, green where the Duo is in stock"></svg>
           <div class="zoom-ctl">
             <button type="button" id="zin" aria-label="Zoom in">+</button>
@@ -319,6 +332,7 @@ async function drawStates() {
 
 /* ---------- zoom and pan ---------- */
 let zoom = null, zk = 1, filter = "all";
+const FINE_POINTER = matchMedia("(hover: hover) and (pointer: fine)").matches;
 function setupZoom(svg, world) {
   zoom = d3.zoom()
     .scaleExtent([1, 14])
@@ -326,7 +340,9 @@ function setupZoom(svg, world) {
     // On phones, one finger scrolls the page until you zoom in; pinch always zooms.
     // On computers, plain scrolling scrolls the page; ctrl/cmd + scroll or a trackpad pinch zooms.
     .filter(e => {
-      if (e.type === "wheel") return e.ctrlKey || e.metaKey;
+      // Computers: scrolling over the map zooms (scrolling down at full view still scrolls the page).
+      // Touch screens: pinch zooms; ctrl/cmd + scroll also works anywhere.
+      if (e.type === "wheel") return FINE_POINTER || e.ctrlKey || e.metaKey;
       if (e.type === "touchstart") return e.touches.length > 1 || zk > 1;
       return !e.button;
     })
@@ -336,12 +352,32 @@ function setupZoom(svg, world) {
       svg.classed("zoomed", zk > 1.01);
       if ((was < 2.4) !== (zk < 2.4) || (was < 5) !== (zk < 5) || Math.abs(was - zk) > 0.01) styleForZoom();
       document.getElementById("mapHint").classList.add("gone");
+      if (e.sourceEvent) hideTip();
     });
   svg.call(zoom).on("dblclick.zoom", null);
   svg.on("dblclick", e => {
     const [x, y] = d3.pointer(e, world.node());
-    svg.transition().duration(450).call(zoom.scaleTo, Math.min(14, zk * 2.2), [x, y]);
+    const k = e.shiftKey ? Math.max(1, zk / 2.2) : Math.min(14, zk * 2.2);
+    svg.transition().duration(450).call(zoom.scaleTo, k, [x, y]);
   });
+  // Keyboard, once the map has focus (click it or tab to it)
+  document.getElementById("mapWrap").addEventListener("keydown", e => {
+    const step = 90, t = svg.transition().duration(250);
+    if (e.key === "+" || e.key === "=") t.call(zoom.scaleBy, 1.6);
+    else if (e.key === "-" || e.key === "_") t.call(zoom.scaleBy, 1 / 1.6);
+    else if (e.key === "0") t.call(zoom.transform, d3.zoomIdentity);
+    else if (e.key === "ArrowLeft") t.call(zoom.translateBy, step / zk, 0);
+    else if (e.key === "ArrowRight") t.call(zoom.translateBy, -step / zk, 0);
+    else if (e.key === "ArrowUp") t.call(zoom.translateBy, 0, step / zk);
+    else if (e.key === "ArrowDown") t.call(zoom.translateBy, 0, -step / zk);
+    else if (e.key === "Escape") hideTip();
+    else return;
+    e.preventDefault();
+  });
+  if (FINE_POINTER) {
+    document.getElementById("mapHint").textContent = "Scroll to zoom, drag to move, double-click to zoom in";
+    document.getElementById("mapReadout").textContent = "Hover over a store, or click to keep it selected";
+  }
   document.getElementById("zin").onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1.8);
   document.getElementById("zout").onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1 / 1.8);
   document.getElementById("zreset").onclick = () => svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
@@ -405,7 +441,10 @@ function drawStores() {
     .attr("cx", s => projection([s.lon, s.lat])[0]).attr("cy", s => projection([s.lon, s.lat])[1])
     .attr("r", r).attr("fill", fill)
     .attr("fill-opacity", s => s.status === "available" ? 1 : s.tier ? 0.55 : 0.35)
-    .on("click", (e, s) => pick(s)).on("mouseenter", (e, s) => pick(s));
+    .on("click", (e, s) => pick(s))
+    .on("mouseenter", function (e, s) { d3.select(this).classed("hover", true).raise(); showTip(e, s); })
+    .on("mousemove", (e, s) => showTip(e, s))
+    .on("mouseleave", function () { d3.select(this).classed("hover", false); hideTip(); });
   const kc = list.find(s => s.metro === "Kansas City" && s.miles <= 15);
   if (kc) { const [x, y] = projection([kc.lon, kc.lat]); g.append("circle").attr("class", "home").attr("cx", x).attr("cy", y).attr("r", 11); }
 
@@ -421,6 +460,22 @@ function drawStores() {
     .text(s => s.name);
   styleForZoom();
 }
+function showTip(e, s) {
+  if (!FINE_POINTER) return;
+  const tip = document.getElementById("tip"), wrap = document.getElementById("mapWrap").getBoundingClientRect();
+  const where = s.metro ? `${s.metro}, T${s.tier}` : `${s.city}${s.state ? ", " + s.state : ""}, no tier`;
+  const status = s.status === "available"
+    ? `<span class="ok">In stock${s.since ? `, ${Math.max(1, Math.round((Date.now() - toDate(s.since)) / 60000))} min` : ""}</span>`
+    : "<span>No stock</span>";
+  tip.innerHTML = `<b>${esc(s.name)}</b><span>${esc(where)}</span><br>${status}`;
+  let x = e.clientX - wrap.left + 14, y = e.clientY - wrap.top + 14;
+  tip.classList.add("on");
+  const w = tip.offsetWidth, h = tip.offsetHeight;
+  if (x + w > wrap.width - 8) x = e.clientX - wrap.left - w - 14;
+  if (y + h > wrap.height - 8) y = e.clientY - wrap.top - h - 14;
+  tip.style.left = `${x}px`; tip.style.top = `${y}px`;
+}
+function hideTip() { document.getElementById("tip").classList.remove("on"); }
 function pick(s) {
   selected = s.id;
   d3.selectAll("#dots circle.dot").classed("sel", d => d && d.id === s.id);
