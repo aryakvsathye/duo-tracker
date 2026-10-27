@@ -233,7 +233,7 @@
 
   /* ---------- lap chart ---------- */
   .chart { padding: 14px 14px 12px; }
-  .plot { display: grid; grid-template-columns: 40px 1fr; gap: 8px; }
+  .plot { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 8px; }
   .axis { display: flex; flex-direction: column; justify-content: space-between; font-size: 11px; color: var(--grey-2); text-align: right; height: 110px; }
   .bars-wrap { position: relative; height: 110px; }
   .bars-wrap::before {
@@ -244,7 +244,7 @@
     opacity: 0.6;
   }
   .bars { position: relative; display: flex; align-items: flex-end; gap: 2px; height: 100%; }
-  .bars div { flex: 1; min-width: 2px; border-radius: 1px 1px 0 0; background: #4a4a5c; cursor: pointer; transition: opacity .15s; }
+  .bars div { flex: 1 1 0; min-width: 0; border-radius: 1px 1px 0 0; background: #4a4a5c; cursor: pointer; transition: opacity .15s; }
   .bars div.fast { background: var(--purple); }
   .bars div.lapfail { background: var(--signal); opacity: 0.8; }
   .bars div.green { background: var(--green); }
@@ -264,6 +264,30 @@
   .grid .c.sel { box-shadow: inset 0 0 0 1.5px var(--chalk); }
   .hours { white-space: nowrap; display: grid; grid-template-columns: 30px repeat(24, minmax(0, 1fr)); gap: 2px; margin-top: 5px; font-size: 10px; color: var(--grey-2); }
   .note { font-size: 13px; color: var(--grey); margin-top: 4px; }
+
+  /* ---------- how long stock lasts ---------- */
+  .dsum { padding: 12px 14px; font-size: 14px; color: var(--grey); border-bottom: 1px solid var(--kerb); }
+  .dsum b { color: var(--chalk); }
+  .drow { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 10px 14px; align-items: center; }
+  .drow + .drow { border-top: 1px solid var(--kerb); }
+  .drow .dname { font-weight: 600; font-size: 15px; }
+  .drow .dmeta { color: var(--grey); font-size: 12px; }
+  .drow .dval { grid-row: 1 / span 2; grid-column: 2; text-align: right; font-weight: 700; font-size: 17px; font-variation-settings: var(--wide); }
+  .drow .dval small { display: block; font-size: 11px; font-weight: 500; color: var(--grey); font-variation-settings: var(--narrow); }
+  .drow.d-live .dval { color: var(--green); }
+  .drow.near .dname::after { content: "Nearby"; margin-left: 8px; font-size: 11px; font-weight: 700; color: var(--chalk); background: var(--asphalt-2); padding: 2px 6px; border-radius: var(--r-sm); vertical-align: 2px; }
+
+  /* ---------- car health ---------- */
+  .hrow { display: grid; grid-template-columns: 10px 1fr auto; gap: 0 12px; padding: 11px 14px; align-items: center; font-size: 14px; }
+  .hrow + .hrow { border-top: 1px solid var(--kerb); }
+  .hrow i { width: 8px; height: 8px; border-radius: 50%; background: var(--grey-2); }
+  .hrow.h-good i { background: var(--green); }
+  .hrow.h-caution i { background: var(--yellow); }
+  .hrow.h-bad i { background: var(--signal); }
+  .hrow .hname { font-weight: 600; }
+  .hrow .hdetail { color: var(--grey); font-size: 13px; text-align: right; }
+  .hrow.h-caution .hdetail { color: var(--yellow); }
+  .hrow.h-bad .hdetail { color: #ff6b63; }
 
   /* ---------- scope toggle ---------- */
   .seg { display: inline-flex; background: var(--asphalt); border: 1px solid var(--kerb); border-radius: 99px; padding: 2px; }
@@ -419,6 +443,11 @@
     </section>
 
     <section class="section">
+      <div class="section-head"><h2>Car health</h2><span>What could stop the bot</span></div>
+      <div class="panel log" id="health"><div class="empty">Loading</div></div>
+    </section>
+
+    <section class="section">
       <div class="section-head"><h2>Lap times</h2><span id="lapSummary"></span></div>
       <div class="panel chart">
         <div class="plot">
@@ -446,6 +475,11 @@
     </section>
 
     <section class="section">
+      <div class="section-head"><h2>How long stock lasts</h2><span>From in stock to sold out</span></div>
+      <div class="panel log" id="durations"><div class="empty">Loading</div></div>
+    </section>
+
+    <section class="section">
       <div class="section-head"><h2>Race log</h2><span>Nearby stores</span></div>
       <div class="panel log" id="timeline"><div class="empty">Loading</div></div>
     </section>
@@ -465,12 +499,14 @@
 const OWNER = "aryakvsathye";
 const REPO = "duo-tracker";
 const BRANCH = "main";
+const DATA_BRANCH = "data";   // the bot saves state.json and restocks.csv here
 const WORKFLOW = "check.yml";
 const MAX_MILES = 50;
 const REFRESH_MS = 150000;        // state + run status (GitHub allows 60 calls/hour)
 const CSV_REFRESH_MS = 600000;    // restock log changes rarely
 const GAP_S = 60;          // seconds between checks (matches check.py)
-const RUN_CHECKS = 9;      // checks per daytime run (9 min window in check.py)
+const BURST_GAP_S = 20;    // during a restock wave
+const RUN_S = 540;         // each run keeps checking for 9 min
 const SETUP_S = 25;        // rough time from run start to first check (checkout + pip)
 
 const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -478,6 +514,7 @@ const API = `https://api.github.com/repos/${OWNER}/${REPO}`;
 
 let lastCheckAt = null, fetchedAt = null, lastRun = null, nextQueued = false;
 let lastState = {};
+let newestTrigger = null;
 let drive = {};   // store name -> { sec, mi } once your location and routes are known
 const miStr = mi => `${mi.toFixed(1)} mi`;
 const minStr = sec => { const m = Math.round(sec / 60); return m < 60 ? `${m} min` : `${Math.floor(m / 60)} h ${m % 60} min`; };
@@ -485,7 +522,12 @@ let events = [], csvFetchedAt = 0;
 
 /* ---------- helpers ---------- */
 async function getFile(path) {
-  const res = await fetch(`${API}/contents/${path}?ref=${BRANCH}`,
+  const text = await getFileFrom(path, DATA_BRANCH);
+  // Fall back to main for data saved before the data branch existed
+  return text !== null ? text : getFileFrom(path, BRANCH);
+}
+async function getFileFrom(path, ref) {
+  const res = await fetch(`${API}/contents/${path}?ref=${ref}`,
     { headers: { Accept: "application/vnd.github.raw" }, cache: "no-store" });
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(res.status === 403 ? "GitHub's hourly limit was reached" : `${path} returned ${res.status}`);
@@ -499,7 +541,7 @@ async function getRun() {
   const runs = (await res.json()).workflow_runs || [];
   const isQueued = r => ["queued", "waiting", "pending", "requested"].includes(r.status);
   const active = runs.find(r => r.status === "in_progress");
-  return { run: active || runs[0] || null, queued: runs.some(isQueued) };
+  return { run: active || runs[0] || null, queued: runs.some(isQueued), newest: runs[0] ? runs[0].created_at : null };
 }
 function parseCsv(text) {
   if (!text) return [];
@@ -601,9 +643,14 @@ function renderLights(state) {
     verdict.textContent = "Holding on the grid";
     const base = names.length === 2 ? "No stock at either nearby store" : `No stock at ${names.length} nearby stores`;
     const far = farInStock(state);
-    sub.innerHTML = far.length
-      ? `${base}. <span class="hint-far">In stock at ${far.length === 1 ? esc(far[0]) : far.length + " stores"} elsewhere in the region.</span>`
-      : base;
+    if (waveActive(state)) {
+      const ws = state.wave.stores || [];
+      sub.innerHTML = `${base}. <span class="hint-far">Restock wave: ${esc(ws.join(", "))}. Checking every ${BURST_GAP_S} s, have your bag ready.</span>`;
+    } else {
+      sub.innerHTML = far.length
+        ? `${base}. <span class="hint-far">In stock at ${far.length === 1 ? esc(far[0]) : far.length + " stores"} elsewhere in the region.</span>`
+        : base;
+    }
     bagText.textContent = "Open bag";
   }
 }
@@ -651,7 +698,9 @@ function renderTelemetry(state) {
   const errs = document.getElementById("errors");
   errs.textContent = state.errors ?? "–";
   errs.className = (state.errors || 0) > 0 ? "caution" : "good";
-  document.getElementById("mode").textContent = isNight() ? "Every 15 min (night)" : "Every minute";
+  const mode = document.getElementById("mode");
+  mode.textContent = isNight() ? "Every 15 min (night)" : waveActive(state) ? `Every ${BURST_GAP_S} s (wave)` : "Every minute";
+  mode.className = waveActive(state) ? "small caution" : "small";
 }
 
 function renderLaps(state) {
@@ -664,6 +713,7 @@ function renderLaps(state) {
   const top = Math.max(500, Math.ceil(Math.max(...good.map(l => l.ms), 1) / 250) * 250);
   axis.innerHTML = `<span>${top}</span><span>${top / 2}</span><span>0 ms</span>`;
   const best = good.length ? Math.min(...good.map(l => l.ms)) : null;
+  bars.style.gap = laps.length > 60 ? "1px" : "2px";
   bars.innerHTML = laps.map(l => {
     const when = l.t.slice(11, 16);
     if (!l.ok) return `<div class="lapfail" style="height:100%" data-tip="${when}, check failed${l.code ? " (" + l.code + ")" : ""}"></div>`;
@@ -730,17 +780,23 @@ function renderTimeline() {
   }).join("");
 }
 
+function waveActive(state) {
+  const w = state && state.wave;
+  return !!(w && w.until && new Date(w.until) > new Date() && !isNight());
+}
+
 function runProgress() {
   // Estimate where the active run is: first check ~SETUP_S after start,
   // then one every GAP_S, RUN_CHECKS in a daytime run (1 at night).
   if (!lastRun || lastRun.status !== "in_progress") return null;
   const started = new Date(lastRun.run_started_at || lastRun.created_at).getTime();
-  const total = isNight() ? 1 : RUN_CHECKS;
+  const gap = waveActive(lastState) ? BURST_GAP_S : GAP_S;
+  const total = isNight() ? 1 : Math.floor(RUN_S / gap);
   const first = started + SETUP_S * 1000;
   const now = Date.now();
   if (now < first) return { done: 0, total, next: first, started };
-  const done = Math.min(total, Math.floor((now - first) / (GAP_S * 1000)) + 1);
-  const next = done < total ? first + done * GAP_S * 1000 : null;
+  const done = Math.min(total, Math.floor((now - first) / (gap * 1000)) + 1);
+  const next = done < total ? first + done * gap * 1000 : null;
   return { done, total, next, started };
 }
 
@@ -1086,6 +1142,90 @@ document.querySelectorAll(".seg button").forEach(b => b.addEventListener("click"
   renderHeat();
 }));
 
+/* ---------- how long stock lasts ---------- */
+function toDate(t) { const [d, hm] = t.split(" "); const [y, m, day] = d.split("-").map(Number); const [h, mi] = hm.split(":").map(Number); return new Date(y, m - 1, day, h, mi); }
+function restockSpans() {
+  // Pair each store's first "available" with its next "unavailable"
+  const open = {}, done = [];
+  events.forEach(e => {
+    if (e.status === "available") { if (!open[e.store]) open[e.store] = e; }
+    else if (e.status === "unavailable" && open[e.store]) {
+      const start = open[e.store];
+      done.push({ store: e.store, miles: start.miles, start: start.time, mins: Math.max(1, Math.round((toDate(e.time) - toDate(start.time)) / 60000)) });
+      delete open[e.store];
+    }
+  });
+  return { done, open: Object.values(open) };
+}
+function renderDurations(state) {
+  const el = document.getElementById("durations");
+  const { done, open } = restockSpans();
+  const stock = state.stock || {};
+  const live = open.filter(e => (stock[e.store] || e.status) === "available");
+  if (!done.length && !live.length) { el.innerHTML = '<div class="empty">No finished restocks yet. Once a store sells out, you\'ll see how long its stock lasted.</div>'; return; }
+  const mins = done.map(d => d.mins).sort((a, b) => a - b);
+  const median = mins.length ? mins[Math.floor((mins.length - 1) / 2)] : null;
+  const byStore = {};
+  done.forEach(d => { (byStore[d.store] = byStore[d.store] || { miles: d.miles, list: [] }).list.push(d); });
+  const rows = [];
+  live.forEach(e => rows.push({ store: e.store, miles: e.miles, live: true,
+    val: `${Math.max(1, Math.round((Date.now() - toDate(e.time)) / 60000))} min`, sub: "in stock so far",
+    meta: `Restocked ${prettyTime(e.time)}` }));
+  Object.entries(byStore).sort((a, b) => a[1].miles - b[1].miles).forEach(([store, v]) => {
+    const ms = v.list.map(d => d.mins);
+    const last = v.list[v.list.length - 1];
+    rows.push({ store, miles: v.miles, live: false,
+      val: ms.length > 1 ? `${Math.min(...ms)}–${Math.max(...ms)} min` : `${ms[0]} min`,
+      sub: ms.length > 1 ? `${ms.length} restocks` : "1 restock",
+      meta: `Last: ${prettyTime(last.start)}, lasted ${last.mins} min` });
+  });
+  el.innerHTML =
+    (mins.length ? `<div class="dsum">Restocks have lasted <b>${mins[0]}–${mins[mins.length - 1]} min</b>, typically about <b>${median} min</b>. Check out as soon as the alert comes in.</div>` : "") +
+    rows.map(r => `<div class="drow${r.live ? " d-live" : ""}${r.miles <= MAX_MILES ? " near" : ""}">
+      <div class="dname">${esc(r.store)}</div>
+      <div class="dval">${r.val}<small>${r.sub}</small></div>
+      <div class="dmeta">${Math.round(r.miles)} mi, ${esc(r.meta)}</div>
+    </div>`).join("");
+}
+
+/* ---------- car health ---------- */
+const TOKEN_EXPIRES = "2026-11-26";   // GitHub token cron-job.org uses (check.py saves the same date)
+function renderHealth(state) {
+  const rows = [];
+  // Apple
+  const laps = (state.history || []).slice(-30);
+  const fails = laps.filter(l => !l.ok).length;
+  const lastCode = laps.length ? laps[laps.length - 1].code : null;
+  if (!laps.length) rows.push(["", "Apple", "No checks yet"]);
+  else if (fails === 0) rows.push(["good", "Apple", `Answering normally, last ${laps.length} checks OK`]);
+  else if (fails < laps.length / 3) rows.push(["caution", "Apple", `${fails} of the last ${laps.length} checks failed`]);
+  else rows.push(["bad", "Apple", `${fails} of the last ${laps.length} checks failed${lastCode ? ` (${lastCode})` : ""}. Apple may be blocking GitHub.`]);
+  // Triggers from cron-job.org
+  if (newestTrigger) {
+    const age = (Date.now() - newestTrigger) / 60000;
+    const limit = isNight() ? 20 : 12;
+    rows.push(age < limit ? ["good", "Triggers", `Last run started ${rel(Date.now() - newestTrigger)}`]
+      : age < limit * 3 ? ["caution", "Triggers", `No new run for ${Math.round(age)} min. Check cron-job.org.`]
+      : ["bad", "Triggers", `No new run for ${Math.round(age)} min. cron-job.org may have stopped.`]);
+  } else rows.push(["", "Triggers", "Couldn't read runs from GitHub"]);
+  // Data saves
+  if (lastCheckAt) {
+    const age = (Date.now() - lastCheckAt) / 60000;
+    const limit = isNight() ? 35 : 15;
+    rows.push(age < limit ? ["good", "Data saves", `Saved ${rel(Date.now() - lastCheckAt)}`]
+      : ["caution", "Data saves", `Nothing saved for ${Math.round(age)} min. Open the Actions tab.`]);
+  } else rows.push(["", "Data saves", "No data yet"]);
+  // Token
+  const expires = new Date((state.token_expires || TOKEN_EXPIRES) + "T00:00:00");
+  const days = Math.ceil((expires - Date.now()) / 86400000);
+  const when = expires.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  rows.push(days > 7 ? ["good", "GitHub token", `Expires ${when}, in ${days} days`]
+    : days > 0 ? ["caution", "GitHub token", `Expires ${when}, in ${days} day${days === 1 ? "" : "s"}. Make a new one.`]
+    : ["bad", "GitHub token", "Expired. cron-job.org can't start runs."]);
+  document.getElementById("health").innerHTML = rows.map(([cls, name, detail]) =>
+    `<div class="hrow${cls ? " h-" + cls : ""}"><i></i><div class="hname">${name}</div><div class="hdetail">${esc(detail)}</div></div>`).join("");
+}
+
 /* ---------- loop ---------- */
 async function load() {
   const err = document.getElementById("err");
@@ -1101,6 +1241,7 @@ async function load() {
     lastState = state;
     lastRun = run ? run.run : null;
     nextQueued = run ? run.queued : false;
+    newestTrigger = run && run.newest ? new Date(run.newest) : null;
     renderLights(state);
     updateRouteStores(state);
     renderStores(state);
@@ -1109,6 +1250,8 @@ async function load() {
     renderHeat();
     renderTimeline();
     renderField(state);
+    renderDurations(state);
+    renderHealth(state);
     renderFarLog();
     renderRun();
     flashChanges(state);

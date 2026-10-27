@@ -5,20 +5,29 @@ PART = os.environ["PART"]
 ZIP = os.environ["ZIP"]
 TEST = os.environ.get("TEST") == "true"
 # Try mode: check a different part number for real (no fake stock),
-# send real alerts, but leave state.json and the restock log untouched.
+# send real alerts, but leave the saved data untouched.
 TRY_PART = os.environ.get("TRY_PART", "").strip().upper()
 if TRY_PART:
     PART = TRY_PART
-DRY = TEST or bool(TRY_PART)  # never save state in test or try mode
+DRY = TEST or bool(TRY_PART)  # never save data in test or try mode
+
 TOPIC = "aryak-duo-256-night-sky"
-MAX_MILES = 50
-GAP = 60
-RUN_SECONDS = 540  # keep checking for 9 min, longer than the 5-min trigger,
-                   # so the next run is always queued and starts the moment this one ends
-HISTORY = 60  # checks kept for the lap chart
+MAX_MILES = 50          # only stores this close send stock alerts
+GAP = 60                # seconds between checks normally
+BURST_GAP = 20          # seconds between checks during a restock wave
+BURST_MINUTES = 30      # how long burst mode lasts after the latest restock in a wave
+WAVE_WINDOW = 20        # minutes: restocks at this many stores within this window = a wave
+WAVE_STORES = 2
+WAVE_COOLDOWN = 60      # minutes between wave heads-ups
+RUN_SECONDS = 540       # keep checking for 9 min, longer than the 5-min trigger,
+                        # so the next run is always queued and starts the moment this one ends
+HISTORY = 90            # checks kept for the lap chart
+TOKEN_EXPIRES = datetime.date(2026, 11, 26)  # GitHub token used by cron-job.org
+
 TZ = ZoneInfo("America/Chicago")
-STATE_FILE = "state.json"
-LOG_FILE = "restocks.csv"
+DATA_DIR = os.environ.get("DATA_DIR", ".")   # the workflow points this at the data branch
+STATE_FILE = os.path.join(DATA_DIR, "state.json")
+LOG_FILE = os.path.join(DATA_DIR, "restocks.csv")
 
 BAG = "https://www.apple.com/shop/bag"
 BUY = "https://www.apple.com/shop/buy-iphone"
@@ -32,22 +41,88 @@ headers = {
     "Referer": "https://www.apple.com/shop/buy-iphone",
 }
 
+
 def now():
     return datetime.datetime.now(TZ)
+
 
 def push(title, msg, priority="urgent", actions=None, click=BAG):
     h = {"Title": title, "Priority": priority, "Click": click}
     if actions:
         h["Actions"] = actions
-    requests.post(f"https://ntfy.sh/{TOPIC}", data=msg.encode(), headers=h)
+    try:
+        requests.post(f"https://ntfy.sh/{TOPIC}", data=msg.encode(), headers=h, timeout=15)
+    except Exception as e:
+        print(f"ntfy error: {e}")
+
+
+# ---------- restock log ----------
+def parse_time(s):
+    return datetime.datetime.strptime(s, "%Y-%m-%d %H:%M").replace(tzinfo=TZ)
+
+
+def read_log():
+    try:
+        with open(LOG_FILE, newline="") as f:
+            return [r for r in csv.DictReader(f) if r.get("time")]
+    except FileNotFoundError:
+        return []
+
+
+log_rows = read_log()
+
 
 def log_event(store, miles, status):
+    stamp = now().strftime("%Y-%m-%d %H:%M")
     new_file = not os.path.exists(LOG_FILE)
     with open(LOG_FILE, "a", newline="") as f:
         w = csv.writer(f)
         if new_file:
             w.writerow(["time", "store", "miles", "status"])
-        w.writerow([now().strftime("%Y-%m-%d %H:%M"), store, miles, status])
+        w.writerow([stamp, store, miles, status])
+    log_rows.append({"time": stamp, "store": store, "miles": str(miles), "status": status})
+
+
+def durations():
+    """Minutes each restock lasted, per store: first 'available' to the next 'unavailable'."""
+    opened, out = {}, {}
+    for r in log_rows:
+        store, t = r["store"], parse_time(r["time"])
+        if r["status"] == "available":
+            opened.setdefault(store, t)
+        elif r["status"] == "unavailable" and store in opened:
+            mins = (t - opened.pop(store)).total_seconds() / 60
+            out.setdefault(store, []).append(max(1, round(mins)))
+    return out
+
+
+def lasting_hint(store):
+    d = durations()
+    own = d.get(store)
+    if own:
+        if len(own) == 1:
+            return f"Last time it lasted about {own[0]} min."
+        return f"Restocks here have lasted {min(own)}–{max(own)} min."
+    every = [m for ms in d.values() for m in ms]
+    if every:
+        return f"Restocks in the region have lasted {min(every)}–{max(every)} min."
+    return ""
+
+
+def wave_now(at):
+    """Stores that restocked within the last WAVE_WINDOW minutes, newest restock time."""
+    cutoff = at - datetime.timedelta(minutes=WAVE_WINDOW)
+    stores, latest = [], None
+    for r in log_rows:
+        if r["status"] != "available":
+            continue
+        t = parse_time(r["time"])
+        if t >= cutoff:
+            if r["store"] not in stores:
+                stores.append(r["store"])
+            latest = t if latest is None or t > latest else latest
+    return stores, latest
+
 
 def store_details(st, info, miles, status):
     hours = (st.get("storeHours") or {}).get("hours") or []
@@ -66,7 +141,8 @@ def store_details(st, info, miles, status):
                   for h in hours],
     }
 
-# Load saved state
+
+# ---------- load saved state ----------
 try:
     with open(STATE_FILE) as f:
         state = json.load(f)
@@ -85,6 +161,41 @@ if night and not DRY and t.minute % 15 >= 5:
 single = DRY or night
 run_start = time.monotonic()
 
+
+def burst_active():
+    until = (state.get("wave") or {}).get("until")
+    return bool(until) and not night and now() < datetime.datetime.fromisoformat(until)
+
+
+def update_wave():
+    """Spot a regional restock wave, start burst mode and send one heads-up."""
+    at = now()
+    stores, latest = wave_now(at)
+    if len(stores) >= WAVE_STORES:
+        until = latest + datetime.timedelta(minutes=BURST_MINUTES)
+        wave = state.get("wave") or {}
+        if not wave.get("until") or datetime.datetime.fromisoformat(wave["until"]) < at:
+            wave = {"since": at.isoformat()}
+        wave.update(stores=stores, until=until.isoformat())
+        state["wave"] = wave
+        last = state.get("wave_alerted_at")
+        quiet = last and at - datetime.datetime.fromisoformat(last) < datetime.timedelta(minutes=WAVE_COOLDOWN)
+        nearby_green = any(s["status"] == "available" for s in state["nearby"].values())
+        if not quiet and not nearby_green and not DRY:
+            names = []
+            for s in stores:
+                city = (state["field"].get(s) or {}).get("city")
+                names.append(f"{s} ({city})" if city else s)
+            push("Restock wave in the region",
+                 f"Duo restocks at {', '.join(names)} in the last {WAVE_WINDOW} min. "
+                 f"Kansas City could be next, so have your bag ready. "
+                 f"Checking every {BURST_GAP} s for the next {BURST_MINUTES} min.",
+                 priority="default", click=BAG)
+            state["wave_alerted_at"] = at.isoformat()
+            print(f"Wave alert: {stores}")
+
+
+# ---------- check loop ----------
 alerted, failures, attempts = set(), 0, 0
 i = -1
 while True:
@@ -132,7 +243,7 @@ while True:
                     tag = "[TEST] " if TEST else ""
                     title = f"{tag}Duo in stock: {name}"
                     body = (f"Night Sky 256GB at Apple {name} ({miles} mi). "
-                            f"Tap to open your bag, choose pickup at {name}.")
+                            f"Tap to open your bag, choose pickup at {name}. {lasting_hint(name)}").strip()
                 push(title, body, actions=f"view, Open Bag, {BAG}; view, Buy page, {BUY}")
                 alerted.add(name)
 
@@ -142,21 +253,25 @@ while True:
             state["nearby"] = nearby
             state["field"] = field
             state["last_check"] = now().isoformat()
+            update_wave()
         state["checks"] += 1
-        print(f"Check {i+1}: {r.status_code} in {lap['ms']} ms, alerted: {sorted(alerted) or 'none'}")
+        print(f"Check {i+1}: {r.status_code} in {lap['ms']} ms, "
+              f"alerted: {sorted(alerted) or 'none'}{', burst' if burst_active() else ''}")
     except Exception as e:
         failures += 1
         state["errors"] += 1
         if lap["ms"] is None:
             lap["ms"] = round((time.monotonic() - started) * 1000)
         print(f"Check {i+1}: error {e}")
+    lap["burst"] = burst_active()
     if not DRY:
         state["history"] = (state["history"] + [lap])[-HISTORY:]
+    gap = BURST_GAP if burst_active() else GAP
     # Stop when another full gap would run past the window
-    if single or time.monotonic() - run_start + GAP > RUN_SECONDS:
+    if single or time.monotonic() - run_start + gap > RUN_SECONDS:
         break
-    # Sleep so checks start a minute apart, however long Apple took
-    time.sleep(max(0, GAP - (time.monotonic() - started)))
+    # Sleep so checks start evenly spaced, however long Apple took
+    time.sleep(max(0, gap - (time.monotonic() - started)))
 
 t = now()
 
@@ -166,15 +281,22 @@ if failures == attempts and not DRY and t.minute < 5:
          "All checks failed this run. Apple may be blocking it.",
          priority="low", click="https://github.com")
 
-# Daily heartbeat after 8am
+# Daily heartbeat after 8am, with a token warning in its last week
 today = t.strftime("%Y-%m-%d")
 if not DRY and t.hour >= 8 and state.get("last_heartbeat") != today:
+    days_left = (TOKEN_EXPIRES - t.date()).days
+    token_note = ""
+    if days_left <= 7:
+        token_note = (f" The GitHub token cron-job.org uses expires in {days_left} day"
+                      f"{'' if days_left == 1 else 's'}. Make a new one so the bot keeps running."
+                      if days_left > 0 else " The GitHub token cron-job.org uses has expired.")
     push("Duo checker: still running",
          f"{state['checks']} checks, {state['errors']} errors, "
-         f"{state['events']} stock changes since last update.",
-         priority="low", click="https://github.com")
+         f"{state['events']} stock changes since last update.{token_note}",
+         priority="default" if token_note else "low", click="https://github.com")
     state.update(checks=0, errors=0, events=0, last_heartbeat=today)
 
 if not DRY:
+    state["token_expires"] = TOKEN_EXPIRES.isoformat()
     with open(STATE_FILE, "w") as f:
         json.dump(state, f, indent=1)

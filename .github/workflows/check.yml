@@ -20,9 +20,17 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
+      # The bot's code lives on main
       - uses: actions/checkout@v4
         with:
           ref: main
+      # The bot's data (state.json, restocks.csv) lives on its own branch,
+      # so code changes and data saves never touch the same files
+      - uses: actions/checkout@v4
+        with:
+          ref: data
+          path: data
+          fetch-depth: 0
       - run: pip install requests
       - run: python check.py
         env:
@@ -30,17 +38,19 @@ jobs:
           ZIP: ${{ secrets.ZIP }}
           TEST: ${{ inputs.test }}
           TRY_PART: ${{ inputs.part }}
-      - name: Save log
+          DATA_DIR: data
+      - name: Save data
         if: ${{ !inputs.test && !inputs.part }}
+        working-directory: data
         run: |
           git config user.name "duo-bot"
           git config user.email "duo-bot@users.noreply.github.com"
-          git add -A
+          git add state.json restocks.csv
           git diff --cached --quiet && exit 0
-          git commit -m "Update stock log"
+          git commit -m "Update stock data"
           for i in 1 2 3; do
-            git pull --rebase -X theirs origin main && git push && exit 0
-            git rebase --abort 2>/dev/null || true
+            git push origin HEAD:data && exit 0
+            git pull --rebase origin data || git rebase --abort
             sleep 5
           done
           exit 1
