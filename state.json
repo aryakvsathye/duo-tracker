@@ -3,7 +3,7 @@
   "Country Club Plaza": "unavailable",
   "Leawood": "unavailable",
   "Village Pointe": "unavailable",
-  "Jordan Creek": "available",
+  "Jordan Creek": "unavailable",
   "Woodland Hills": "unavailable",
   "West County": "unavailable",
   "Saint Louis Galleria": "unavailable",
@@ -13,9 +13,9 @@
   "Hilldale": "unavailable",
   "Main Place": "unavailable"
  },
- "checks": 80,
+ "checks": 89,
  "errors": 0,
- "events": 4,
+ "events": 6,
  "last_heartbeat": "2026-10-27",
  "nearby": {
   "Country Club Plaza": {
@@ -59,71 +59,8 @@
    ]
   }
  },
- "last_check": "2026-10-27T09:47:42.485170-05:00",
+ "last_check": "2026-10-27T09:55:52.120299-05:00",
  "history": [
-  {
-   "t": "2026-10-27T08:50:10-05:00",
-   "ok": true,
-   "ms": 472,
-   "code": 200,
-   "green": []
-  },
-  {
-   "t": "2026-10-27T08:51:10-05:00",
-   "ok": true,
-   "ms": 182,
-   "code": 200,
-   "green": []
-  },
-  {
-   "t": "2026-10-27T08:52:10-05:00",
-   "ok": true,
-   "ms": 277,
-   "code": 200,
-   "green": []
-  },
-  {
-   "t": "2026-10-27T08:53:10-05:00",
-   "ok": true,
-   "ms": 238,
-   "code": 200,
-   "green": []
-  },
-  {
-   "t": "2026-10-27T08:54:11-05:00",
-   "ok": true,
-   "ms": 190,
-   "code": 200,
-   "green": []
-  },
-  {
-   "t": "2026-10-27T08:55:09-05:00",
-   "ok": true,
-   "ms": 552,
-   "code": 200,
-   "green": []
-  },
-  {
-   "t": "2026-10-27T08:56:10-05:00",
-   "ok": true,
-   "ms": 185,
-   "code": 200,
-   "green": []
-  },
-  {
-   "t": "2026-10-27T08:57:10-05:00",
-   "ok": true,
-   "ms": 160,
-   "code": 200,
-   "green": []
-  },
-  {
-   "t": "2026-10-27T08:58:10-05:00",
-   "ok": true,
-   "ms": 543,
-   "code": 200,
-   "green": []
-  },
   {
    "t": "2026-10-27T08:59:11-05:00",
    "ok": true,
@@ -480,6 +417,143 @@
    "ms": 187,
    "code": 200,
    "green": []
+  },
+  {
+   "t": "2026-10-27T09:47:51-05:00",
+   "ok": true,
+   "ms": 361,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:48:51-05:00",
+   "ok": true,
+   "ms": 369,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:49:51-05:00",
+   "ok": true,
+   "ms": 326,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:50:51-05:00",
+   "ok": true,
+   "ms": 218,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:51:51-05:00",
+   "ok": true,
+   "ms": 196,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:52:51-05:00",
+   "ok": true,
+   "ms": 329,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:53:51-05:00",
+   "ok": true,
+   "ms": 393,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:54:51-05:00",
+   "ok": true,
+   "ms": 278,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:55:51-05:00",
+   "ok": true,
+   "ms": 391,
+   "code": 200,
+   "green": []
   }
- ]
+ ],
+ "field": {
+  "The Promenade at Chenal": {
+   "miles": 320.42,
+   "status": "available",
+   "city": "Little Rock",
+   "state": "AR"
+  },
+  "Country Club Plaza": {
+   "miles": 10.11,
+   "status": "unavailable",
+   "city": "Kansas City",
+   "state": "MO"
+  },
+  "Leawood": {
+   "miles": 10.47,
+   "status": "unavailable",
+   "city": "Leawood",
+   "state": "KS"
+  },
+  "Village Pointe": {
+   "miles": 171.88,
+   "status": "unavailable",
+   "city": "Omaha",
+   "state": "NE"
+  },
+  "Jordan Creek": {
+   "miles": 183.62,
+   "status": "unavailable",
+   "city": "West Des Moines",
+   "state": "IA"
+  },
+  "Woodland Hills": {
+   "miles": 212.92,
+   "status": "unavailable",
+   "city": "Tulsa",
+   "state": "OK"
+  },
+  "West County": {
+   "miles": 234.82,
+   "status": "unavailable",
+   "city": "Saint Louis",
+   "state": "MO"
+  },
+  "Saint Louis Galleria": {
+   "miles": 239.77,
+   "status": "unavailable",
+   "city": "Saint Louis",
+   "state": "MO"
+  },
+  "Penn Square": {
+   "miles": 285.34,
+   "status": "unavailable",
+   "city": "Oklahoma City",
+   "state": "OK"
+  },
+  "Saddle Creek": {
+   "miles": 385.15,
+   "status": "unavailable",
+   "city": "Germantown",
+   "state": "TN"
+  },
+  "Hilldale": {
+   "miles": 394.05,
+   "status": "unavailable",
+   "city": "Madison",
+   "state": "WI"
+  },
+  "Main Place": {
+   "miles": 397.06,
+   "status": "unavailable",
+   "city": "Naperville",
+   "state": "IL"
+  }
+ }
 }
