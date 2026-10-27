@@ -96,7 +96,16 @@
   .srow { cursor: pointer; }
   @media (hover: hover) { .srow:hover { background: var(--asphalt-2); } }
   #map { display: block; width: 100%; height: auto; }
-  #map .state { fill: #23232f; stroke: #34343f; stroke-width: 0.7; }
+  #map .state { fill: #23232f; stroke: #34343f; stroke-width: 0.7; transition: fill .4s; }
+  #map .state.wave { fill: #1d3a2a; }
+  #map .divline { fill: none; stroke: #4a4a5c; stroke-width: 1.4; vector-effect: non-scaling-stroke; pointer-events: none; }
+  #map .waveline { fill: none; stroke: var(--green); stroke-width: 2; vector-effect: non-scaling-stroke; pointer-events: none; animation: breathe 2.4s ease-in-out infinite; }
+  @keyframes breathe { 50% { stroke-opacity: .35; } }
+  #map .divlabel { fill: var(--green); font-family: Archivo, system-ui, sans-serif; font-weight: 800; paint-order: stroke; stroke: var(--carbon); pointer-events: none; text-anchor: middle; }
+  .wavebar { display: none; padding: 10px 14px; border-bottom: 1px solid var(--kerb); background: rgba(49,196,108,.1); font-size: 14px; }
+  .wavebar.on { display: block; }
+  .wavebar b { color: var(--green); }
+  .wavebar span { color: var(--grey); }
   #map circle { vector-effect: non-scaling-stroke; }
   #map .dot { stroke: var(--carbon); stroke-width: 1; cursor: pointer; }
   #map .dot.out { fill-opacity: 0.85; }
@@ -192,6 +201,7 @@
 
     <section class="section">
       <div class="panel map">
+        <div class="wavebar" id="waveBar" aria-live="polite"></div>
         <div class="filters" role="group" aria-label="Show stores">
           <button class="chip" type="button" data-f="all" aria-pressed="true">All</button>
           <button class="chip" type="button" data-f="in" aria-pressed="false">In stock</button>
@@ -246,7 +256,7 @@
     <section class="section">
       <div class="section-head"><h2>Recent waves</h2><span>By region, in the order stores restocked</span></div>
       <div class="panel" id="waves"><div class="empty">Loading</div></div>
-      <p class="fine">Tiers are our own groups by metro population: T1 4.5 million and up, T2 1.5 to 4.5 million, T3 under 1.5 million. Apple doesn't publish tiers. Each store belongs to the closest of the 50 metros if it's within 50 miles. Regions are the four US Census regions. A wave is 2 or more restocks in the same region with less than 45 minutes between them. Times are shown in each store's local time zone.</p>
+      <p class="fine">Tiers are our own groups by metro population: T1 4.5 million and up, T2 1.5 to 4.5 million, T3 under 1.5 million. Apple doesn't publish tiers. Each store belongs to the closest of the 50 metros if it's within 50 miles. Regions are the nine US Census divisions. A wave is 2 or more restocks in the same division with less than 45 minutes between them. Times are shown in each store's local time zone.</p>
     </section>
   </div>
 </main>
@@ -293,14 +303,24 @@ const STATE_TZ = {};
 "IL WI IA KS MN MO NE ND SD AL MS TN AR LA OK TX".split(" ").forEach(s => STATE_TZ[s] = "America/Chicago");
 "CO MT NM UT WY ID".split(" ").forEach(s => STATE_TZ[s] = "America/Denver");
 Object.assign(STATE_TZ, { AZ: "America/Phoenix", CA: "America/Los_Angeles", NV: "America/Los_Angeles", OR: "America/Los_Angeles", WA: "America/Los_Angeles", AK: "America/Anchorage", HI: "Pacific/Honolulu" });
+// The 9 US Census divisions
+const DIVISIONS = {
+  "New England": "CT ME MA NH RI VT",
+  "Middle Atlantic": "NJ NY PA",
+  "East North Central": "IL IN MI OH WI",
+  "West North Central": "IA KS MN MO NE ND SD",
+  "South Atlantic": "DE DC FL GA MD NC SC VA WV",
+  "East South Central": "AL KY MS TN",
+  "West South Central": "AR LA OK TX",
+  "Mountain": "AZ CO ID MT NV NM UT WY",
+  "Pacific": "AK CA HI OR WA",
+};
 const REGION = {};
-Object.entries({
-  Northeast: "CT ME MA NH RI VT NJ NY PA",
-  Midwest: "IL IN MI OH WI IA KS MN MO NE ND SD",
-  South: "DE DC FL GA MD NC SC VA WV AL KY MS TN AR LA OK TX",
-  West: "AZ CO ID MT NV NM UT WY AK CA HI OR WA",
-}).forEach(([r, list]) => list.split(" ").forEach(s => REGION[s] = r));
-const REGIONS = ["Northeast", "Midwest", "South", "West"];
+Object.entries(DIVISIONS).forEach(([r, list]) => list.split(" ").forEach(s => REGION[s] = r));
+const REGIONS = Object.keys(DIVISIONS);
+// us-atlas identifies states by FIPS code
+const FIPS = { "01": "AL", "02": "AK", "04": "AZ", "05": "AR", "06": "CA", "08": "CO", "09": "CT", "10": "DE", "11": "DC", "12": "FL", "13": "GA", "15": "HI", "16": "ID", "17": "IL", "18": "IN", "19": "IA", "20": "KS", "21": "KY", "22": "LA", "23": "ME", "24": "MD", "25": "MA", "26": "MI", "27": "MN", "28": "MS", "29": "MO", "30": "MT", "31": "NE", "32": "NV", "33": "NH", "34": "NJ", "35": "NM", "36": "NY", "37": "NC", "38": "ND", "39": "OH", "40": "OK", "41": "OR", "42": "PA", "44": "RI", "45": "SC", "46": "SD", "47": "TN", "48": "TX", "49": "UT", "50": "VT", "51": "VA", "53": "WA", "54": "WV", "55": "WI", "56": "WY" };
+const divisionOf = f => REGION[FIPS[String(f.id).padStart(2, "0")]];
 function tzOf(storeId, stateCode) {
   return ((state.stores || {})[storeId] || {}).tz || STATE_TZ[stateCode] || "America/Chicago";
 }
@@ -365,8 +385,13 @@ async function drawStates() {
   const us = await (await fetch("https://cdn.jsdelivr.net/npm/us-atlas@3/states-albers-10m.json")).json();
   const svg = d3.select("#map");
   const world = svg.append("g").attr("id", "world");
-  world.append("g").selectAll("path").data(topojson.feature(us, us.objects.states).features)
+  usTopo = us;
+  world.append("g").attr("id", "states").selectAll("path").data(topojson.feature(us, us.objects.states).features)
     .join("path").attr("class", "state").attr("d", d3.geoPath());
+  // thicker lines where one Census division meets another
+  world.append("path").attr("class", "divline")
+    .attr("d", d3.geoPath()(topojson.mesh(us, us.objects.states, (a, b) => a !== b && divisionOf(a) !== divisionOf(b))));
+  world.append("g").attr("id", "waveLayer");
   world.append("g").attr("id", "metroLabels");
   world.append("g").attr("id", "dots");
   world.append("g").attr("id", "storeLabels");
@@ -374,7 +399,7 @@ async function drawStates() {
 }
 
 /* ---------- zoom and pan ---------- */
-let zoom = null, zk = 1, filter = "all";
+let zoom = null, zk = 1, filter = "all", usTopo = null;
 const FINE_POINTER = matchMedia("(hover: hover) and (pointer: fine)").matches;
 function setupZoom(svg, world) {
   zoom = d3.zoom()
@@ -452,6 +477,7 @@ function styleForZoom() {
   d3.selectAll("#dots circle.pulse").attr("r", function () { return +this.dataset.r * grow / k; })
     .classed("dim", function () { return filter !== "all" && filter !== "in" && this.dataset.tier !== filter; });
   d3.selectAll("#dots circle.home").attr("r", 11 * grow / k);
+  d3.selectAll("#waveLayer text").attr("font-size", 15 / Math.sqrt(k));
   // Metro names from 2.4x, store names from 5x
   d3.selectAll("#metroLabels text").attr("font-size", 12 / k).attr("stroke-width", 3 / k).attr("dy", -9 / k)
     .attr("display", zk >= 2.4 && zk < 5 ? null : "none");
@@ -604,7 +630,7 @@ function renderHours(a) {
 }
 function renderWaves(a) {
   const el = document.getElementById("waves");
-  if (!a.big.length) { el.innerHTML = '<div class="empty">No waves yet. A wave is 2 or more restocks in the same region close together.</div>'; return; }
+  if (!a.big.length) { el.innerHTML = '<div class="empty">No waves yet. A wave is 2 or more restocks in the same division close together.</div>'; return; }
   const per = REGIONS.map(g => [g, a.big.filter(w => w.region === g).length]).filter(([, n]) => n);
   el.innerHTML = `<div class="summary">${per.map(([g, n]) => `<b>${g}</b> ${n}`).join(", ")}</div>` + a.big.slice(-8).reverse().map(w => {
     const span = Math.round((toDate(w[w.length - 1].time) - toDate(w[0].time)) / 60000);
@@ -614,6 +640,41 @@ function renderWaves(a) {
       <div class="seq">${w.slice(0, 18).map(r => `<span class="tier t${r.tier}" title="${esc(r.metro)}">${esc(r.metro)}</span>`).join("")}${w.length > 18 ? `<span class="tmeta">+${w.length - 18} more</span>` : ""}</div>
     </div>`;
   }).join("");
+}
+
+/* ---------- divisions with a wave right now ---------- */
+function activeWaves(a) {
+  // A wave is "live" if its latest restock is recent enough that it could still grow
+  const now = Date.now();
+  return a.big.filter(w => now - toDate(w[w.length - 1].time) <= WAVE_GAP_MIN * 60000);
+}
+function renderWaveHighlight(a) {
+  const live = activeWaves(a);
+  const divs = new Set(live.map(w => w.region));
+  d3.selectAll("#states path").classed("wave", f => divs.has(divisionOf(f)));
+  const layer = d3.select("#waveLayer");
+  layer.selectAll("*").remove();
+  if (usTopo) {
+    divs.forEach(div => {
+      const geoms = usTopo.objects.states.geometries.filter(g => divisionOf(g) === div);
+      if (!geoms.length) return;
+      const merged = topojson.merge(usTopo, geoms);
+      const path = d3.geoPath();
+      layer.append("path").attr("class", "waveline").attr("d", path(merged));
+      const [x, y] = path.centroid(merged);
+      if (isFinite(x)) layer.append("text").attr("class", "divlabel").attr("x", x).attr("y", y).text(div);
+    });
+  }
+  const bar = document.getElementById("waveBar");
+  if (!live.length) { bar.classList.remove("on"); bar.innerHTML = ""; }
+  else {
+    bar.classList.add("on");
+    bar.innerHTML = live.map(w => {
+      const metros = [...new Set(w.map(r => r.metro || r.city))];
+      return `<b>Wave now: ${esc(w.region)}</b> <span>${w.length} restocks since ${pretty(w[0].time, tzOf(w[0].store_id, w[0].state))} (${esc(metros.slice(0, 4).join(", "))}${metros.length > 4 ? ", …" : ""})</span>`;
+    }).join("<br>");
+  }
+  styleForZoom();
 }
 
 /* ---------- loop ---------- */
@@ -626,7 +687,7 @@ async function load() {
     await mapReady;
     renderStatus(); drawStores(); renderNow();
     const a = analyse();
-    renderLead(a); renderDurations(a); renderHours(a); renderWaves(a);
+    renderLead(a); renderDurations(a); renderHours(a); renderWaves(a); renderWaveHighlight(a);
     if (!state.last_sweep) document.getElementById("nowList").innerHTML = '<div class="empty">Waiting for the first national sweep to finish.</div>';
     fetchedAt = Date.now();
     err.style.display = "none";

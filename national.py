@@ -22,16 +22,19 @@ ASSIGN_MILES = 50      # a store belongs to a metro if it's this close to the me
 WAVE_GAP_MIN = 45      # restocks in the same region closer together than this form a wave
 WAVE_MIN = 2           # restocks needed for a regional wave
 
-# US Census regions
-REGION = {}
-for _r, _states in {
-    "Northeast": "CT ME MA NH RI VT NJ NY PA",
-    "Midwest": "IL IN MI OH WI IA KS MN MO NE ND SD",
-    "South": "DE DC FL GA MD NC SC VA WV AL KY MS TN AR LA OK TX",
-    "West": "AZ CO ID MT NV NM UT WY AK CA HI OR WA",
-}.items():
-    for _s in _states.split():
-        REGION[_s] = _r
+# The 9 US Census divisions
+DIVISIONS = {
+    "New England": "CT ME MA NH RI VT",
+    "Middle Atlantic": "NJ NY PA",
+    "East North Central": "IL IN MI OH WI",
+    "West North Central": "IA KS MN MO NE ND SD",
+    "South Atlantic": "DE DC FL GA MD NC SC VA WV",
+    "East South Central": "AL KY MS TN",
+    "West South Central": "AR LA OK TX",
+    "Mountain": "AZ CO ID MT NV NM UT WY",
+    "Pacific": "AK CA HI OR WA",
+}
+REGION = {s: d for d, states in DIVISIONS.items() for s in states.split()}
 
 # Fallback time zone per state, used only if Apple didn't say (split states use the main zone)
 STATE_TZ = {s: "America/New_York" for s in "CT ME MA NH RI VT NJ NY PA DE DC FL GA MD NC SC VA WV MI OH IN KY".split()}
@@ -135,7 +138,7 @@ def analyse(rows, stores, since=None):
     restocks = [r for r in rows if r["status"] == "available"]
     # waves: within one region, restocks within WAVE_GAP_MIN of the previous one
     waves = []
-    for region in ("Northeast", "Midwest", "South", "West"):
+    for region in DIVISIONS:
         cur = []
         for r in (x for x in restocks if REGION.get(x.get("state", "")) == region):
             t = parse_time(r["time"])
@@ -163,7 +166,7 @@ def analyse(rows, stores, since=None):
         "durations": {t: [m for tt, m in spans if tt == t] for t in "123"},
         "lead": lead, "hours": hours, "waves": len(waves),
         "by_region": {g: sum(1 for w in waves if REGION.get(w[0].get("state", "")) == g)
-                      for g in ("Northeast", "Midwest", "South", "West")},
+                      for g in DIVISIONS},
     }
 
 
