@@ -1,0 +1,20 @@
+{
+ "stock": {
+  "Country Club Plaza": "unavailable",
+  "Leawood": "unavailable",
+  "Village Pointe": "unavailable",
+  "Jordan Creek": "unavailable",
+  "Woodland Hills": "unavailable",
+  "West County": "unavailable",
+  "Saint Louis Galleria": "unavailable",
+  "Penn Square": "unavailable",
+  "The Promenade at Chenal": "unavailable",
+  "Saddle Creek": "unavailable",
+  "Hilldale": "unavailable",
+  "Main Place": "unavailable"
+ },
+ "checks": 0,
+ "errors": 0,
+ "events": 0,
+ "last_heartbeat": "2026-10-27"
+}
