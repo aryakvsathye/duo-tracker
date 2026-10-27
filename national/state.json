@@ -3894,9 +3894,9 @@
    "state": "NY",
    "lat": 42.914661,
    "lon": -78.762075,
-   "metro": "",
-   "tier": 0,
-   "miles": 176.6,
+   "metro": "Buffalo",
+   "tier": 3,
+   "miles": 0.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4177,9 +4177,9 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-27T16:53:46.539567-05:00",
- "sweep_seconds": 215,
- "metros_ok": 44,
+ "last_sweep": "2026-10-27T16:57:39.728655-05:00",
+ "sweep_seconds": 150,
+ "metros_ok": 45,
  "metros": [
   {
    "metro": "New York",
@@ -4432,7 +4432,7 @@
    "tier": 3
   }
  ],
- "retries": 5,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4441,13 +4441,12 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Louisville": 1,
-  "Birmingham": 1,
-  "Richmond": 1,
-  "Honolulu": 1,
-  "Tucson": 1
- },
- "skipped": [],
- "last_error": "2026-10-27T16:53-05:00: Louisville: HTTP 541; Birmingham: HTTP 541; Richmond: HTTP 541; Honolulu: HTTP 541; Tucson: HTTP 541"
+ "metro_skip": {},
+ "skipped": [
+  "Louisville",
+  "Birmingham",
+  "Richmond",
+  "Honolulu",
+  "Tucson"
+ ]
 }
