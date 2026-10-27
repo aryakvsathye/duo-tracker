@@ -19,7 +19,27 @@ SPACING = 2.0          # seconds between requests to Apple
 MAX_FAILS = 2          # consecutive failures before giving up on a sweep
 BACKOFF_MIN = 30       # minutes to pause after Apple starts refusing
 ASSIGN_MILES = 50      # a store belongs to a metro if it's this close to the metro's ZIP
-WAVE_GAP_MIN = 45      # restocks closer together than this belong to the same wave
+WAVE_GAP_MIN = 45      # restocks in the same region closer together than this form a wave
+WAVE_MIN = 2           # restocks needed for a regional wave
+
+# US Census regions
+REGION = {}
+for _r, _states in {
+    "Northeast": "CT ME MA NH RI VT NJ NY PA",
+    "Midwest": "IL IN MI OH WI IA KS MN MO NE ND SD",
+    "South": "DE DC FL GA MD NC SC VA WV AL KY MS TN AR LA OK TX",
+    "West": "AZ CO ID MT NV NM UT WY AK CA HI OR WA",
+}.items():
+    for _s in _states.split():
+        REGION[_s] = _r
+
+# Fallback time zone per state, used only if Apple didn't say (split states use the main zone)
+STATE_TZ = {s: "America/New_York" for s in "CT ME MA NH RI VT NJ NY PA DE DC FL GA MD NC SC VA WV MI OH IN KY".split()}
+STATE_TZ.update({s: "America/Chicago" for s in "IL WI IA KS MN MO NE ND SD AL MS TN AR LA OK TX".split()})
+STATE_TZ.update({s: "America/Denver" for s in "CO MT NM UT WY ID".split()})
+STATE_TZ.update({"AZ": "America/Phoenix", "CA": "America/Los_Angeles", "NV": "America/Los_Angeles",
+                 "OR": "America/Los_Angeles", "WA": "America/Los_Angeles", "AK": "America/Anchorage",
+                 "HI": "Pacific/Honolulu"})
 
 # Tiers by metro population (approximate): T1 >= 4.5M, T2 1.5-4.5M, T3 < 1.5M
 METROS = [
@@ -94,7 +114,13 @@ def log_events(rows):
 
 
 # ---------- analysis (shared by the weekly summary; the page does the same in JS) ----------
-def analyse(rows, since=None):
+def local_time(r, stores):
+    """The event's time in the store's own time zone."""
+    tz = (stores.get(r["store_id"]) or {}).get("tz") or STATE_TZ.get(r.get("state", ""), "America/Chicago")
+    return parse_time(r["time"]).astimezone(ZoneInfo(tz))
+
+
+def analyse(rows, stores, since=None):
     rows = [r for r in rows if r["tier"] in ("1", "2", "3")
             and (since is None or parse_time(r["time"]) >= since)]
     # durations: first "available" to the next "unavailable" per store
@@ -107,18 +133,21 @@ def analyse(rows, since=None):
             mins = max(1, round((parse_time(r["time"]) - parse_time(start["time"])).total_seconds() / 60))
             spans.append((start["tier"], mins))
     restocks = [r for r in rows if r["status"] == "available"]
-    # waves: restocks within WAVE_GAP_MIN of the previous one
-    waves, cur = [], []
-    for r in restocks:
-        t = parse_time(r["time"])
-        if cur and (t - parse_time(cur[-1]["time"])).total_seconds() / 60 > WAVE_GAP_MIN:
-            waves.append(cur); cur = []
-        cur.append(r)
-    if cur:
-        waves.append(cur)
+    # waves: within one region, restocks within WAVE_GAP_MIN of the previous one
+    waves = []
+    for region in ("Northeast", "Midwest", "South", "West"):
+        cur = []
+        for r in (x for x in restocks if REGION.get(x.get("state", "")) == region):
+            t = parse_time(r["time"])
+            if cur and (t - parse_time(cur[-1]["time"])).total_seconds() / 60 > WAVE_GAP_MIN:
+                waves.append(cur); cur = []
+            cur.append(r)
+        if cur:
+            waves.append(cur)
+    waves = [w for w in waves if len(w) >= WAVE_MIN]
     lead = {"1": [], "2": [], "3": []}   # minutes after the wave's first restock
     for w in waves:
-        if len(w) < 3:
+        if len({r["tier"] for r in w}) < 2:   # tier order only means something with 2+ tiers
             continue
         first = parse_time(w[0]["time"])
         seen = set()
@@ -128,22 +157,25 @@ def analyse(rows, since=None):
                 lead[r["tier"]].append((parse_time(r["time"]) - first).total_seconds() / 60)
     hours = {"1": [0] * 24, "2": [0] * 24, "3": [0] * 24}
     for r in restocks:
-        hours[r["tier"]][parse_time(r["time"]).hour] += 1
+        hours[r["tier"]][local_time(r, stores).hour] += 1
     return {
         "restocks": {t: sum(1 for r in restocks if r["tier"] == t) for t in "123"},
         "durations": {t: [m for tt, m in spans if tt == t] for t in "123"},
-        "lead": lead, "hours": hours, "waves": len([w for w in waves if len(w) >= 3]),
+        "lead": lead, "hours": hours, "waves": len(waves),
+        "by_region": {g: sum(1 for w in waves if REGION.get(w[0].get("state", "")) == g)
+                      for g in ("Northeast", "Midwest", "South", "West")},
     }
 
 
-def weekly_summary(rows, at):
-    a = analyse(rows, since=at - datetime.timedelta(days=7))
+def weekly_summary(rows, at, stores):
+    a = analyse(rows, stores, since=at - datetime.timedelta(days=7))
     total = sum(a["restocks"].values())
     if not total:
         return "No Duo restocks seen across the 50 metros this week."
     parts = [f"{total} restocks across 50 metros this week "
              f"(T1 {a['restocks']['1']}, T2 {a['restocks']['2']}, T3 {a['restocks']['3']}), "
-             f"{a['waves']} wave{'s' if a['waves'] != 1 else ''}."]
+             f"{a['waves']} regional wave{'s' if a['waves'] != 1 else ''}"
+             + (" (" + ", ".join(f"{g} {n}" for g, n in a["by_region"].items() if n) + ")." if a["waves"] else ".")]
     leads = {t: statistics.median(v) for t, v in a["lead"].items() if v}
     if len(leads) >= 2:
         order = sorted(leads, key=leads.get)
@@ -154,7 +186,7 @@ def weekly_summary(rows, at):
         parts.append("Stock lasts about " + ", ".join(f"T{t} {round(m)} min" for t, m in sorted(durs.items())) + ".")
     all_hours = [sum(a["hours"][t][h] for t in "123") for h in range(24)]
     peak = max(range(24), key=lambda h: all_hours[h])
-    parts.append(f"Busiest hour: {peak % 12 or 12}{'am' if peak < 12 else 'pm'} Central.")
+    parts.append(f"Busiest hour: {peak % 12 or 12}{'am' if peak < 12 else 'pm'} local time.")
     kc = [r for r in rows if r["metro"] == "Kansas City" and r["status"] == "available"
           and parse_time(r["time"]) >= at - datetime.timedelta(days=7)]
     parts.append(f"Kansas City: {len(kc)} restock{'s' if len(kc) != 1 else ''}.")
@@ -217,6 +249,9 @@ def main():
             "lat": st.get("storelatitude"), "lon": st.get("storelongitude"),
             "metro": metro if assigned else "", "tier": tier if assigned else 0,
             "miles": round(miles, 1), "status": status,
+            "tz": ((st.get("retailStore") or {}).get("timezone")
+                   or STATE_TZ.get(st.get("state", ""), "America/Chicago")),
+            "region": REGION.get(st.get("state", ""), ""),
         }
         prev = state["stores"].get(sid, {}).get("status")
         if prev is not None and prev != status and status in ("available", "unavailable"):
@@ -243,7 +278,7 @@ def main():
     t = now()
     week = t.strftime("%G-W%V")
     if t.weekday() == 6 and t.hour >= 18 and state.get("last_weekly") != week:
-        push("Duo restocks: week in review", weekly_summary(read_log(), t),
+        push("Duo restocks: week in review", weekly_summary(read_log(), t, state["stores"]),
              priority="default", click="https://aryakvsathye.github.io/duo-tracker/national.html")
         state["last_weekly"] = week
 

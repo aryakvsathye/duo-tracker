@@ -239,14 +239,14 @@
     </section>
 
     <section class="section">
-      <div class="section-head"><h2>When each tier restocks</h2><span>Central time</span></div>
+      <div class="section-head"><h2>When each tier restocks</h2><span>Each store's local time</span></div>
       <div class="panel hours" id="hours"></div>
     </section>
 
     <section class="section">
-      <div class="section-head"><h2>Recent waves</h2><span>Order tiers restocked in</span></div>
+      <div class="section-head"><h2>Recent waves</h2><span>By region, in the order stores restocked</span></div>
       <div class="panel" id="waves"><div class="empty">Loading</div></div>
-      <p class="fine">Tiers are our own groups by metro population: T1 4.5 million and up, T2 1.5 to 4.5 million, T3 under 1.5 million. Apple doesn't publish tiers. Each store belongs to the closest of the 50 metros if it's within 50 miles. A wave is 3 or more restocks with less than 45 minutes between them.</p>
+      <p class="fine">Tiers are our own groups by metro population: T1 4.5 million and up, T2 1.5 to 4.5 million, T3 under 1.5 million. Apple doesn't publish tiers. Each store belongs to the closest of the 50 metros if it's within 50 miles. Regions are the four US Census regions. A wave is 2 or more restocks in the same region with less than 45 minutes between them. Times are shown in each store's local time zone.</p>
     </section>
   </div>
 </main>
@@ -258,6 +258,7 @@ const OWNER = "aryakvsathye", REPO = "duo-tracker", DATA_BRANCH = "data";
 const API = `https://api.github.com/repos/${OWNER}/${REPO}`;
 const REFRESH_MS = 300000;   // the sweep runs every 10 min
 const WAVE_GAP_MIN = 45;
+const WAVE_MIN = 2;   // restocks in one region within 45 min of each other
 const TIERS = ["1", "2", "3"];
 const TIER_VAR = { "1": "var(--t1)", "2": "var(--t2)", "3": "var(--t3)" };
 const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -278,8 +279,43 @@ function parseCsv(text) {
   return lines.filter(Boolean).map(l => { const v = l.split(","); const o = {}; head.forEach((h, i) => o[h] = (v[i] || "").trim()); return o; });
 }
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-function toDate(t) { const [d, hm] = t.split(" "); const [y, m, day] = d.split("-").map(Number); const [h, mi] = hm.split(":").map(Number); return new Date(y, m - 1, day, h, mi); }
-function pretty(t) { const d = toDate(t); let h = d.getHours(); const ap = h >= 12 ? "pm" : "am"; h = h % 12 || 12; return `${DAYS[d.getDay()]} ${h}:${String(d.getMinutes()).padStart(2, "0")} ${ap}`; }
+/* The bots log times as Central wall-clock time ("2026-10-27 09:31"). Turn that into a real
+   moment, then show it in each store's own time zone. */
+function toDate(t) {
+  const [d, hm] = t.split(" "); const [y, m, day] = d.split("-").map(Number); const [h, mi] = hm.split(":").map(Number);
+  const guess = Date.UTC(y, m - 1, day, h, mi);
+  const asCentral = new Date(new Date(guess).toLocaleString("en-US", { timeZone: "America/Chicago" }));
+  const asUTC = new Date(new Date(guess).toLocaleString("en-US", { timeZone: "UTC" }));
+  return new Date(guess + (asUTC - asCentral));
+}
+const STATE_TZ = {};
+"CT ME MA NH RI VT NJ NY PA DE DC FL GA MD NC SC VA WV MI OH IN KY".split(" ").forEach(s => STATE_TZ[s] = "America/New_York");
+"IL WI IA KS MN MO NE ND SD AL MS TN AR LA OK TX".split(" ").forEach(s => STATE_TZ[s] = "America/Chicago");
+"CO MT NM UT WY ID".split(" ").forEach(s => STATE_TZ[s] = "America/Denver");
+Object.assign(STATE_TZ, { AZ: "America/Phoenix", CA: "America/Los_Angeles", NV: "America/Los_Angeles", OR: "America/Los_Angeles", WA: "America/Los_Angeles", AK: "America/Anchorage", HI: "Pacific/Honolulu" });
+const REGION = {};
+Object.entries({
+  Northeast: "CT ME MA NH RI VT NJ NY PA",
+  Midwest: "IL IN MI OH WI IA KS MN MO NE ND SD",
+  South: "DE DC FL GA MD NC SC VA WV AL KY MS TN AR LA OK TX",
+  West: "AZ CO ID MT NV NM UT WY AK CA HI OR WA",
+}).forEach(([r, list]) => list.split(" ").forEach(s => REGION[s] = r));
+const REGIONS = ["Northeast", "Midwest", "South", "West"];
+function tzOf(storeId, stateCode) {
+  return ((state.stores || {})[storeId] || {}).tz || STATE_TZ[stateCode] || "America/Chicago";
+}
+function localParts(date, tz) {
+  const p = Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone: tz, weekday: "short", hour: "numeric", minute: "2-digit", hour12: true, timeZoneName: "short" })
+    .formatToParts(date).map(x => [x.type, x.value]));
+  const hour24 = Number(new Intl.DateTimeFormat("en-US", { timeZone: tz, hour: "numeric", hourCycle: "h23" }).format(date));
+  return { ...p, hour24 };
+}
+function shortZone(z) { return { EST: "ET", EDT: "ET", CST: "CT", CDT: "CT", MST: "MT", MDT: "MT", PST: "PT", PDT: "PT", HST: "HT" }[z] || z; }
+// "Tue 9:31 am ET" in the store's own time zone
+function pretty(t, tz = "America/Chicago", withZone = true) {
+  const p = localParts(toDate(t), tz);
+  return `${p.weekday} ${p.hour}:${p.minute} ${p.dayPeriod.toLowerCase()}${withZone ? " " + shortZone(p.timeZoneName) : ""}`;
+}
 function rel(ms) { const s = Math.max(0, Math.round(ms / 1000)); if (s < 60) return `${s}s ago`; const m = Math.round(s / 60); if (m < 60) return `${m} min ago`; const h = Math.round(m / 60); return h < 48 ? `${h} h ago` : `${Math.round(h / 24)} days ago`; }
 const median = a => { if (!a.length) return null; const s = [...a].sort((x, y) => x - y); return s[Math.floor((s.length - 1) / 2)]; };
 const hr = h => `${h % 12 || 12}${h < 12 ? "am" : "pm"}`;
@@ -298,22 +334,29 @@ function analyse() {
     }
   });
   const restocks = rows.filter(r => r.status === "available");
-  const waves = []; let cur = [];
-  restocks.forEach(r => {
-    if (cur.length && (toDate(r.time) - toDate(cur[cur.length - 1].time)) / 60000 > WAVE_GAP_MIN) { waves.push(cur); cur = []; }
-    cur.push(r);
+  // Waves are found separately in each region, so a Boston and a Phoenix restock never count as one wave
+  const big = [];
+  REGIONS.forEach(region => {
+    let cur = [];
+    restocks.filter(r => REGION[r.state] === region).forEach(r => {
+      if (cur.length && (toDate(r.time) - toDate(cur[cur.length - 1].time)) / 60000 > WAVE_GAP_MIN) { big.push(cur); cur = []; }
+      cur.push(r);
+    });
+    if (cur.length) big.push(cur);
   });
-  if (cur.length) waves.push(cur);
-  const big = waves.filter(w => w.length >= 3);
+  for (let i = big.length - 1; i >= 0; i--) if (big[i].length < WAVE_MIN) big.splice(i, 1);
+  big.forEach(w => w.region = REGION[w[0].state]);
+  big.sort((x, y) => toDate(x[0].time) - toDate(y[0].time));
   const lead = { 1: [], 2: [], 3: [] }, firstCount = { 1: 0, 2: 0, 3: 0 };
-  big.forEach(w => {
+  const tiered = big.filter(w => new Set(w.map(r => r.tier)).size >= 2);   // tier order needs 2+ tiers
+  tiered.forEach(w => {
     const t0 = toDate(w[0].time), seen = new Set();
     firstCount[w[0].tier]++;
     w.forEach(r => { if (!seen.has(r.tier)) { seen.add(r.tier); lead[r.tier].push((toDate(r.time) - t0) / 60000); } });
   });
   const hours = { 1: Array(24).fill(0), 2: Array(24).fill(0), 3: Array(24).fill(0) };
-  restocks.forEach(r => hours[r.tier][toDate(r.time).getHours()]++);
-  return { spans, restocks, big, lead, firstCount, hours };
+  restocks.forEach(r => hours[r.tier][localParts(toDate(r.time), tzOf(r.store_id, r.state)).hour24]++);
+  return { spans, restocks, big, tiered, lead, firstCount, hours };
 }
 
 /* ---------- map ---------- */
@@ -422,7 +465,7 @@ function storeList() {
 }
 function describe(s) {
   const where = s.metro ? `${s.metro}, T${s.tier}` : `${s.city}${s.state ? ", " + s.state : ""}, no tier`;
-  const status = s.status === "available" ? `in stock since ${s.since ? pretty(s.since) : "the last sweep"}` : "no stock";
+  const status = s.status === "available" ? `in stock since ${s.since ? pretty(s.since, s.tz || STATE_TZ[s.state]) : "the last sweep"}` : "no stock";
   return `${s.name} (${where}): ${status}`;
 }
 function drawStores() {
@@ -514,22 +557,22 @@ function renderNow() {
   };
   el.innerHTML = list.map(s => `<div class="srow" data-id="${esc(s.id)}" title="Show on map">
     <div>${s.tier ? tierTag(s.tier) : ""}</div>
-    <div><b>${esc(s.name)}</b><div class="sm">${esc(s.metro || s.city)}${s.state ? ", " + esc(s.state) : ""}</div></div>
+    <div><b>${esc(s.name)}</b><div class="sm">${esc(s.metro || s.city)}${s.state ? ", " + esc(s.state) : ""}${s.since ? `, since ${pretty(s.since, s.tz || STATE_TZ[s.state])}` : ""}</div></div>
     <time>${s.since ? `${Math.max(1, Math.round((Date.now() - toDate(s.since)) / 60000))} min` : "new"}</time>
   </div>`).join("");
 }
 function renderLead(a) {
   const el = document.getElementById("lead");
-  if (!a.big.length) { el.innerHTML = '<div class="empty">Needs a few restock waves first. Each wave shows which tier got stock first, and the pattern builds up over days.</div>'; return; }
+  if (!a.tiered.length) { el.innerHTML = '<div class="empty">Needs a few regional waves that include more than one tier. Each one shows which tier got stock first, and the pattern builds up over days.</div>'; return; }
   const meds = Object.fromEntries(TIERS.map(t => [t, median(a.lead[t])]));
   const max = Math.max(1, ...TIERS.map(t => meds[t] || 0));
   const leader = TIERS.filter(t => meds[t] != null).sort((x, y) => meds[x] - meds[y])[0];
-  el.innerHTML = `<div class="summary">Across <b>${a.big.length} wave${a.big.length > 1 ? "s" : ""}</b>, ${leader ? `<b>T${leader}</b> usually gets stock first.` : ""}</div>` +
+  el.innerHTML = `<div class="summary">Across <b>${a.tiered.length} regional wave${a.tiered.length > 1 ? "s" : ""}</b> with more than one tier, ${leader ? `<b>T${leader}</b> usually gets stock first.` : ""}</div>` +
     TIERS.map(t => {
       const m = meds[t];
       return `<div class="trow">
         ${tierTag(t)}
-        <div><div class="tmeta">First in ${a.firstCount[t]} of ${a.big.length} waves</div>
+        <div><div class="tmeta">First in ${a.firstCount[t]} of ${a.tiered.length} waves</div>
           <div class="tbar"><b style="width:${m == null ? 0 : Math.max(4, 100 * m / max)}%; background:${TIER_VAR[t]}"></b></div></div>
         <div class="tval">${m == null ? "–" : m < 1 ? "First" : `+${Math.round(m)} min`}<small>typical</small></div>
       </div>`;
@@ -561,12 +604,13 @@ function renderHours(a) {
 }
 function renderWaves(a) {
   const el = document.getElementById("waves");
-  if (!a.big.length) { el.innerHTML = '<div class="empty">No waves yet. A wave is 3 or more restocks close together.</div>'; return; }
-  el.innerHTML = a.big.slice(-8).reverse().map(w => {
+  if (!a.big.length) { el.innerHTML = '<div class="empty">No waves yet. A wave is 2 or more restocks in the same region close together.</div>'; return; }
+  const per = REGIONS.map(g => [g, a.big.filter(w => w.region === g).length]).filter(([, n]) => n);
+  el.innerHTML = `<div class="summary">${per.map(([g, n]) => `<b>${g}</b> ${n}`).join(", ")}</div>` + a.big.slice(-8).reverse().map(w => {
     const span = Math.round((toDate(w[w.length - 1].time) - toDate(w[0].time)) / 60000);
     const counts = TIERS.map(t => w.filter(r => r.tier === t).length);
     return `<div class="wave">
-      <div class="wave-top"><b>${pretty(w[0].time)}</b><span>${w.length} restocks over ${span} min (T1 ${counts[0]}, T2 ${counts[1]}, T3 ${counts[2]})</span></div>
+      <div class="wave-top"><b>${w.region}, ${pretty(w[0].time, tzOf(w[0].store_id, w[0].state))}</b><span>${w.length} restocks over ${span} min (T1 ${counts[0]}, T2 ${counts[1]}, T3 ${counts[2]})</span></div>
       <div class="seq">${w.slice(0, 18).map(r => `<span class="tier t${r.tier}" title="${esc(r.metro)}">${esc(r.metro)}</span>`).join("")}${w.length > 18 ? `<span class="tmeta">+${w.length - 18} more</span>` : ""}</div>
     </div>`;
   }).join("");
