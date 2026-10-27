@@ -47,6 +47,7 @@ try:
 except Exception:
     state = {}
 state.setdefault("stock", {})
+state.setdefault("nearby", {})
 state.setdefault("checks", 0)
 state.setdefault("errors", 0)
 state.setdefault("events", 0)
@@ -66,6 +67,7 @@ for i in range(CHECKS):
             headers=headers, timeout=20,
             params={"parts.0": PART, "location": ZIP})
         stores = r.json()["body"]["stores"]
+        nearby = {}
         for st in stores:
             name = st["storeName"]
             miles = float(st.get("storedistance", 999))
@@ -78,6 +80,8 @@ for i in range(CHECKS):
                     log_event(name, miles, status)
                     state["events"] += 1
                 state["stock"][name] = status
+                if miles <= MAX_MILES:
+                    nearby[name] = {"miles": miles, "status": status}
 
             in_stock = status == "available" or TEST
             if miles <= MAX_MILES and in_stock and name not in alerted:
@@ -87,6 +91,10 @@ for i in range(CHECKS):
                      f"Tap to open your bag, choose pickup at {name}.",
                      actions=f"view, Open Bag, {BAG}; view, Buy page, {BUY}")
                 alerted.add(name)
+
+        if not TEST:
+            state["nearby"] = nearby
+            state["last_check"] = now().isoformat()
         state["checks"] += 1
         print(f"Check {i+1}: {r.status_code}, alerted: {sorted(alerted) or 'none'}")
     except Exception as e:
