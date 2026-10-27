@@ -6,3 +6,13 @@ time,store,store_id,city,state,metro,tier,miles,status
 2026-10-27 11:55,Los Cerritos,R300,Cerritos,CA,,0,93.1,available
 2026-10-27 11:55,UTC,R082,San Diego,CA,San Diego,2,7.9,unavailable
 2026-10-27 11:55,Cielo Vista Mall,R492,El Paso,TX,,0,230.6,unavailable
+2026-10-27 11:58,Glendale Galleria,R001,Glendale,CA,Los Angeles,1,10.8,unavailable
+2026-10-27 11:58,Arrowhead,R247,Glendale,AZ,Phoenix,1,14.6,available
+2026-10-27 11:58,El Paseo Village,R297,Palm Desert,CA,,0,78.8,available
+2026-10-27 11:58,Chandler Fashion Center,R026,Chandler,AZ,Phoenix,1,16.1,unavailable
+2026-10-27 11:58,Bay Street,R057,Emeryville,CA,San Francisco,1,7.0,available
+2026-10-27 11:58,Promenade Temecula,R345,Temecula,CA,,0,51.9,available
+2026-10-27 11:58,Fashion Valley,R040,San Diego,CA,San Diego,2,1.3,unavailable
+2026-10-27 11:58,Los Cerritos,R300,Cerritos,CA,,0,93.1,unavailable
+2026-10-27 11:58,Victoria Gardens,R094,Rancho Cucamonga,CA,,0,192.6,available
+2026-10-27 11:58,Valley Plaza,R550,Bakersfield,CA,,0,223.3,available

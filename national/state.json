@@ -243,10 +243,9 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 10.8,
-   "status": "available",
+   "status": "unavailable",
    "tz": "America/Los_Angeles",
-   "region": "Pacific",
-   "since": "2026-10-27 11:55"
+   "region": "Pacific"
   },
   "R451": {
    "name": "The Americana at Brand",
@@ -1362,9 +1361,10 @@
    "metro": "Phoenix",
    "tier": 1,
    "miles": 14.6,
-   "status": "unavailable",
+   "status": "available",
    "tz": "US/Arizona",
-   "region": "Mountain"
+   "region": "Mountain",
+   "since": "2026-10-27 11:58"
   },
   "R026": {
    "name": "Chandler Fashion Center",
@@ -1375,10 +1375,9 @@
    "metro": "Phoenix",
    "tier": 1,
    "miles": 16.1,
-   "status": "available",
+   "status": "unavailable",
    "tz": "US/Arizona",
-   "region": "Mountain",
-   "since": "2026-10-27 11:55"
+   "region": "Mountain"
   },
   "R267": {
    "name": "SanTan Village",
@@ -1415,9 +1414,10 @@
    "metro": "",
    "tier": 0,
    "miles": 78.8,
-   "status": "unavailable",
+   "status": "available",
    "tz": "America/Los_Angeles",
-   "region": "Pacific"
+   "region": "Pacific",
+   "since": "2026-10-27 11:58"
   },
   "R219": {
    "name": "Town Square",
@@ -1688,9 +1688,10 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 7.0,
-   "status": "unavailable",
+   "status": "available",
    "tz": "America/Los_Angeles",
-   "region": "Pacific"
+   "region": "Pacific",
+   "since": "2026-10-27 11:58"
   },
   "R414": {
    "name": "4th Street",
@@ -2182,10 +2183,9 @@
    "metro": "San Diego",
    "tier": 2,
    "miles": 1.3,
-   "status": "available",
+   "status": "unavailable",
    "tz": "America/Los_Angeles",
-   "region": "Pacific",
-   "since": "2026-10-27 11:55"
+   "region": "Pacific"
   },
   "R082": {
    "name": "UTC",
@@ -2222,9 +2222,10 @@
    "metro": "",
    "tier": 0,
    "miles": 51.9,
-   "status": "unavailable",
+   "status": "available",
    "tz": "America/Los_Angeles",
-   "region": "Pacific"
+   "region": "Pacific",
+   "since": "2026-10-27 11:58"
   },
   "R069": {
    "name": "Mission Viejo",
@@ -2300,10 +2301,9 @@
    "metro": "",
    "tier": 0,
    "miles": 93.1,
-   "status": "available",
+   "status": "unavailable",
    "tz": "America/Los_Angeles",
-   "region": "Pacific",
-   "since": "2026-10-27 11:55"
+   "region": "Pacific"
   },
   "R019": {
    "name": "International Plaza",
@@ -2834,9 +2834,10 @@
    "metro": "",
    "tier": 0,
    "miles": 192.6,
-   "status": "unavailable",
+   "status": "available",
    "tz": "America/Los_Angeles",
-   "region": "Pacific"
+   "region": "Pacific",
+   "since": "2026-10-27 11:58"
   },
   "R034": {
    "name": "Pasadena",
@@ -2860,9 +2861,10 @@
    "metro": "",
    "tier": 0,
    "miles": 223.3,
-   "status": "unavailable",
+   "status": "available",
    "tz": "America/Los_Angeles",
-   "region": "Pacific"
+   "region": "Pacific",
+   "since": "2026-10-27 11:58"
   },
   "R028": {
    "name": "Kenwood Towne Centre",
@@ -3021,8 +3023,8 @@
    "region": "Middle Atlantic"
   }
  },
- "last_sweep": "2026-10-27T11:55:55.118173-05:00",
- "sweep_seconds": 161,
+ "last_sweep": "2026-10-27T11:58:51.275247-05:00",
+ "sweep_seconds": 163,
  "metros_ok": 50,
  "metros": [
   {
