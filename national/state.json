@@ -1536,9 +1536,9 @@
    "state": "AL",
    "lat": 33.44726,
    "lon": -86.7285,
-   "metro": "",
-   "tier": 0,
-   "miles": 138.9,
+   "metro": "Birmingham",
+   "tier": 3,
+   "miles": 0.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -1574,7 +1574,7 @@
    "lon": -86.67308,
    "metro": "",
    "tier": 0,
-   "miles": 95.1,
+   "miles": 87.9,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -1932,9 +1932,9 @@
    "state": "AZ",
    "lat": 32.325404,
    "lon": -110.929689,
-   "metro": "",
-   "tier": 0,
-   "miles": 103.7,
+   "metro": "Tucson",
+   "tier": 3,
+   "miles": 1.2,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3519,14 +3519,17 @@
    "metro": "St. Louis",
    "tier": 2,
    "miles": 1.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-10-27 17:03"
+   },
+   "since": "2026-10-27 17:03"
   },
   "R062": {
    "name": "West County",
@@ -3624,9 +3627,9 @@
    "state": "KY",
    "lat": 38.247278,
    "lon": -85.609467,
-   "metro": "",
-   "tier": 0,
-   "miles": 93.5,
+   "metro": "Louisville",
+   "tier": 3,
+   "miles": 1.8,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4004,7 +4007,7 @@
    "lon": -84.528169,
    "metro": "",
    "tier": 0,
-   "miles": 85.5,
+   "miles": 62.5,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4038,9 +4041,9 @@
    "state": "VA",
    "lat": 37.656044,
    "lon": -77.618722,
-   "metro": "",
-   "tier": 0,
-   "miles": 138.4,
+   "metro": "Richmond",
+   "tier": 3,
+   "miles": 1.1,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4058,7 +4061,7 @@
    "lon": -76.071055,
    "metro": "",
    "tier": 0,
-   "miles": 160.9,
+   "miles": 103.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4177,9 +4180,9 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-27T16:57:39.728655-05:00",
- "sweep_seconds": 150,
- "metros_ok": 45,
+ "last_sweep": "2026-10-27T17:03:02.797472-05:00",
+ "sweep_seconds": 169,
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4442,11 +4445,5 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {},
- "skipped": [
-  "Louisville",
-  "Birmingham",
-  "Richmond",
-  "Honolulu",
-  "Tucson"
- ]
+ "skipped": []
 }
