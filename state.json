@@ -13,7 +13,7 @@
   "Hilldale": "unavailable",
   "Main Place": "unavailable"
  },
- "checks": 107,
+ "checks": 116,
  "errors": 0,
  "events": 9,
  "last_heartbeat": "2026-10-27",
@@ -59,7 +59,7 @@
    ]
   }
  },
- "last_check": "2026-10-27T10:20:32.461458-05:00",
+ "last_check": "2026-10-27T10:28:44.289699-05:00",
  "history": [
   {
    "t": "2026-10-27T09:08:09-05:00",
@@ -549,6 +549,78 @@
    "t": "2026-10-27T10:20:32-05:00",
    "ok": true,
    "ms": 420,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T10:20:43-05:00",
+   "ok": true,
+   "ms": 479,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T10:21:43-05:00",
+   "ok": true,
+   "ms": 505,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T10:22:43-05:00",
+   "ok": true,
+   "ms": 516,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T10:23:43-05:00",
+   "ok": true,
+   "ms": 337,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T10:24:43-05:00",
+   "ok": true,
+   "ms": 355,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T10:25:43-05:00",
+   "ok": true,
+   "ms": 462,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T10:26:43-05:00",
+   "ok": true,
+   "ms": 213,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T10:27:43-05:00",
+   "ok": true,
+   "ms": 500,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T10:28:43-05:00",
+   "ok": true,
+   "ms": 353,
    "code": 200,
    "green": [],
    "burst": false
