@@ -1,0 +1,17 @@
+name: Duo stock check
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+concurrency:
+  group: duo-check
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests
+      - run: python check.py
+        env:
+          PART: ${{ secrets.PART }}
+          ZIP: ${{ secrets.ZIP }}
