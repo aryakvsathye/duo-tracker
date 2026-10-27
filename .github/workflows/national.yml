@@ -1,0 +1,44 @@
+name: National sweep
+on:
+  schedule:
+    - cron: "7-57/10 * * * *"   # backup; cron-job.org is the reliable trigger
+  workflow_dispatch:
+concurrency:
+  group: national-sweep      # separate from duo-check, so it never delays the KC bot
+permissions:
+  contents: write
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/checkout@v4
+        with:
+          ref: data
+          path: data
+          fetch-depth: 0
+      - run: pip install requests
+      - run: python national.py
+        env:
+          PART: ${{ secrets.PART }}
+          DATA_DIR: data
+      - name: Save data
+        working-directory: data
+        run: |
+          git config user.name "duo-bot"
+          git config user.email "duo-bot@users.noreply.github.com"
+          [ -d national ] || exit 0
+          git add national
+          git diff --cached --quiet && exit 0
+          git commit -m "Update national data"
+          # The KC bot saves to this branch too, but only touches other files,
+          # so rebasing onto its latest save never conflicts
+          for i in 1 2 3; do
+            git push origin HEAD:data && exit 0
+            git pull --rebase origin data || git rebase --abort
+            sleep 5
+          done
+          exit 1

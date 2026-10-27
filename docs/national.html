@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>National</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="National">
+<meta name="theme-color" content="#15151e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<style>
+  /* Same tokens as the Pit Wall */
+  :root {
+    --carbon: #15151e; --asphalt: #1e1e29; --asphalt-2: #262633; --kerb: #34343f;
+    --chalk: #f2f2f5; --grey: #8d8da0; --grey-2: #5f5f72;
+    --signal: #e10600; --purple: #a160f2; --green: #31c46c; --yellow: #f5c518;
+    /* tier colours: one hue family per tier, used only to tell tiers apart */
+    --t1: #f2f2f5; --t2: #9db4ff; --t3: #c9a36b;
+    --r-lg: 6px; --r-sm: 3px;
+    --wide: "wdth" 125; --narrow: "wdth" 100;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: var(--carbon); }
+  body {
+    background: var(--carbon); color: var(--chalk);
+    font-family: Archivo, -apple-system, system-ui, sans-serif;
+    font-variation-settings: var(--narrow); font-variant-numeric: tabular-nums;
+    font-size: 15px; line-height: 1.45;
+    padding: max(14px, env(safe-area-inset-top)) 16px max(32px, env(safe-area-inset-bottom));
+    max-width: 640px; margin: 0 auto; min-height: 100vh; -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--chalk); outline-offset: 2px; border-radius: var(--r-sm); }
+
+  header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 6px 0 14px; margin-bottom: 18px; border-bottom: 1px solid var(--kerb); }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand-mark { width: 6px; height: 34px; background: var(--signal); transform: skewX(-14deg); }
+  .brand h1 { font-size: 20px; font-weight: 800; font-variation-settings: var(--wide); line-height: 1; letter-spacing: -0.01em; }
+  .brand p { font-size: 13px; color: var(--grey); margin-top: 3px; }
+  .back { font-size: 13px; font-weight: 600; text-decoration: none; border: 1px solid var(--kerb); border-radius: 99px; padding: 6px 12px; white-space: nowrap; }
+
+  .section { margin-top: 28px; }
+  .section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4px 12px; flex-wrap: wrap; margin-bottom: 10px; }
+  .section-head h2 { font-size: 15px; font-weight: 700; font-variation-settings: var(--wide); }
+  .section-head span { font-size: 13px; color: var(--grey); }
+  .panel { background: var(--asphalt); border-radius: var(--r-lg); overflow: hidden; }
+  .empty { padding: 18px 14px; color: var(--grey); font-size: 14px; }
+
+  /* status strip */
+  .strip { display: grid; grid-template-columns: repeat(2, 1fr); }
+  .metric { padding: 12px 14px; }
+  .metric:nth-child(odd) { border-right: 1px solid var(--kerb); }
+  .metric:nth-child(-n+2) { border-bottom: 1px solid var(--kerb); }
+  .metric dt { font-size: 13px; color: var(--grey); }
+  .metric dd { font-size: 22px; font-weight: 700; font-variation-settings: var(--wide); margin-top: 2px; line-height: 1.15; }
+  .good { color: var(--green); } .caution { color: var(--yellow); }
+
+  /* map: the hero */
+  .map { position: relative; }
+  #map { display: block; width: 100%; height: auto; }
+  #map .state { fill: #23232f; stroke: #34343f; stroke-width: 0.7; }
+  #map .dot { stroke: var(--carbon); stroke-width: 1; cursor: pointer; }
+  #map .dot.out { fill-opacity: 0.85; }
+  #map .dot.in { fill: var(--green); }
+  #map .pulse { fill: none; stroke: var(--green); stroke-width: 1.5; animation: ping 2s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+  @keyframes ping { 0% { opacity: .9; transform: scale(1); } 100% { opacity: 0; transform: scale(3.2); } }
+  #map .home { fill: none; stroke: var(--signal); stroke-width: 2; }
+  #map .dot.sel { stroke: var(--chalk); stroke-width: 2; }
+  .map-foot { display: flex; justify-content: space-between; align-items: center; gap: 8px 16px; flex-wrap: wrap; padding: 10px 14px; border-top: 1px solid var(--kerb); }
+  .readout { font-size: 13px; color: var(--grey); min-height: 19px; }
+  .readout.on { color: var(--chalk); }
+  .legend { display: flex; gap: 12px; flex-wrap: wrap; font-size: 12px; color: var(--grey); }
+  .legend i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
+
+  /* tier rows */
+  .trow { display: grid; grid-template-columns: 34px 1fr auto; gap: 2px 12px; padding: 12px 14px; align-items: center; }
+  .trow + .trow { border-top: 1px solid var(--kerb); }
+  .tier { font-size: 13px; font-weight: 800; font-variation-settings: var(--wide); width: 30px; text-align: center; padding: 3px 0; border-radius: var(--r-sm); color: var(--carbon); }
+  .tier.t1 { background: var(--t1); } .tier.t2 { background: var(--t2); } .tier.t3 { background: var(--t3); }
+  .tval { font-size: 18px; font-weight: 700; font-variation-settings: var(--wide); text-align: right; }
+  .tval small { display: block; font-size: 11px; color: var(--grey); font-weight: 500; font-variation-settings: var(--narrow); }
+  .tmeta { color: var(--grey); font-size: 13px; }
+  .tbar { height: 6px; background: var(--asphalt-2); border-radius: 3px; margin-top: 6px; overflow: hidden; }
+  .tbar b { display: block; height: 100%; border-radius: 3px; }
+  .summary { padding: 12px 14px; font-size: 14px; color: var(--grey); border-bottom: 1px solid var(--kerb); }
+  .summary b { color: var(--chalk); }
+
+  /* hour strips */
+  .hours { padding: 14px; }
+  .hrow { display: grid; grid-template-columns: 30px repeat(24, minmax(0, 1fr)); gap: 2px; align-items: center; }
+  .hrow + .hrow { margin-top: 4px; }
+  .hrow .c { height: 18px; border-radius: 1px; background: var(--asphalt-2); }
+  .hlabels { display: grid; grid-template-columns: 30px repeat(24, minmax(0, 1fr)); gap: 2px; margin-top: 6px; font-size: 10px; color: var(--grey-2); white-space: nowrap; }
+
+  /* waves */
+  .wave { padding: 12px 14px; }
+  .wave + .wave { border-top: 1px solid var(--kerb); }
+  .wave-top { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; }
+  .wave-top b { font-weight: 700; }
+  .wave-top span { color: var(--grey); font-size: 13px; }
+  .seq { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+  .seq .tier { width: auto; padding: 2px 6px; font-size: 11px; }
+
+  /* in stock now */
+  .srow { display: grid; grid-template-columns: 34px 1fr auto; gap: 0 12px; padding: 10px 14px; align-items: center; }
+  .srow + .srow { border-top: 1px solid var(--kerb); }
+  .srow b { font-weight: 600; }
+  .srow .sm { color: var(--grey); font-size: 12px; }
+  .srow time { color: var(--green); font-size: 13px; font-weight: 600; white-space: nowrap; }
+
+  .fine { font-size: 12px; color: var(--grey-2); margin-top: 8px; line-height: 1.5; }
+  footer { color: var(--grey-2); font-size: 12px; text-align: center; margin-top: 30px; }
+  .err { background: rgba(225,6,0,.12); border-left: 3px solid var(--signal); color: #ffb0ab; padding: 11px 14px; border-radius: var(--r-sm); font-size: 14px; margin-bottom: 14px; display: none; }
+
+  @media (min-width: 700px) {
+    body { max-width: 860px; }
+    .strip { grid-template-columns: repeat(4, 1fr); }
+    .metric:nth-child(-n+2) { border-bottom: none; }
+    .metric:not(:last-child) { border-right: 1px solid var(--kerb); }
+  }
+  @media (min-width: 1100px) {
+    body { max-width: 1260px; padding-left: 32px; padding-right: 32px; }
+    .layout { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 0 32px; align-items: start; }
+    .col-b > .section:first-child, .col-a > .section:first-child { margin-top: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="brand-mark" aria-hidden="true"></div>
+    <div>
+      <h1>National</h1>
+      <p>iPhone Duo 256GB, Night Sky, 50 metros</p>
+    </div>
+  </div>
+  <a class="back" href="./">Pit Wall</a>
+</header>
+
+<div class="err" id="err" role="alert"></div>
+
+<main class="layout">
+  <div class="col col-a">
+    <section class="section">
+      <dl class="panel strip">
+        <div class="metric"><dt>In stock now</dt><dd id="mInStock">–</dd></div>
+        <div class="metric"><dt>Stores tracked</dt><dd id="mStores">–</dd></div>
+        <div class="metric"><dt>Last sweep</dt><dd id="mSweep">–</dd></div>
+        <div class="metric"><dt>Metros answering</dt><dd id="mMetros">–</dd></div>
+      </dl>
+    </section>
+
+    <section class="section">
+      <div class="panel map">
+        <svg id="map" viewBox="0 0 975 610" role="img" aria-label="Map of Apple Stores tracked, green where the Duo is in stock"></svg>
+        <div class="map-foot">
+          <div class="readout" id="mapReadout">Tap a store for details</div>
+          <div class="legend">
+            <span><i style="background:var(--green)"></i>In stock</span>
+            <span><i style="background:var(--t1)"></i>T1</span>
+            <span><i style="background:var(--t2)"></i>T2</span>
+            <span><i style="background:var(--t3)"></i>T3</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>In stock now</h2><span id="nowNote"></span></div>
+      <div class="panel" id="nowList"><div class="empty">Loading</div></div>
+    </section>
+  </div>
+
+  <div class="col col-b">
+    <section class="section">
+      <div class="section-head"><h2>Who restocks first</h2><span>Minutes after a wave starts</span></div>
+      <div class="panel" id="lead"><div class="empty">Loading</div></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>How long stock lasts</h2><span>In stock to sold out</span></div>
+      <div class="panel" id="durations"><div class="empty">Loading</div></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>When each tier restocks</h2><span>Central time</span></div>
+      <div class="panel hours" id="hours"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>Recent waves</h2><span>Order tiers restocked in</span></div>
+      <div class="panel" id="waves"><div class="empty">Loading</div></div>
+      <p class="fine">Tiers are our own groups by metro population: T1 4.5 million and up, T2 1.5 to 4.5 million, T3 under 1.5 million. Apple doesn't publish tiers. Each store belongs to the closest of the 50 metros if it's within 50 miles. A wave is 3 or more restocks with less than 45 minutes between them.</p>
+    </section>
+  </div>
+</main>
+
+<footer>Data from GitHub, <span id="fetched">not loaded yet</span></footer>
+
+<script>
+const OWNER = "aryakvsathye", REPO = "duo-tracker", DATA_BRANCH = "data";
+const API = `https://api.github.com/repos/${OWNER}/${REPO}`;
+const REFRESH_MS = 300000;   // the sweep runs every 10 min
+const WAVE_GAP_MIN = 45;
+const TIERS = ["1", "2", "3"];
+const TIER_VAR = { "1": "var(--t1)", "2": "var(--t2)", "3": "var(--t3)" };
+const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+let state = {}, events = [], fetchedAt = null, selected = null, mapReady = null;
+
+/* ---------- helpers ---------- */
+async function getFile(path) {
+  const res = await fetch(`${API}/contents/${path}?ref=${DATA_BRANCH}`, { headers: { Accept: "application/vnd.github.raw" }, cache: "no-store" });
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(res.status === 403 ? "GitHub's hourly limit was reached" : `${path} returned ${res.status}`);
+  return res.text();
+}
+function parseCsv(text) {
+  if (!text) return [];
+  const lines = text.trim().split(/\r?\n/);
+  const head = lines.shift().split(",");
+  return lines.filter(Boolean).map(l => { const v = l.split(","); const o = {}; head.forEach((h, i) => o[h] = (v[i] || "").trim()); return o; });
+}
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+function toDate(t) { const [d, hm] = t.split(" "); const [y, m, day] = d.split("-").map(Number); const [h, mi] = hm.split(":").map(Number); return new Date(y, m - 1, day, h, mi); }
+function pretty(t) { const d = toDate(t); let h = d.getHours(); const ap = h >= 12 ? "pm" : "am"; h = h % 12 || 12; return `${DAYS[d.getDay()]} ${h}:${String(d.getMinutes()).padStart(2, "0")} ${ap}`; }
+function rel(ms) { const s = Math.max(0, Math.round(ms / 1000)); if (s < 60) return `${s}s ago`; const m = Math.round(s / 60); if (m < 60) return `${m} min ago`; const h = Math.round(m / 60); return h < 48 ? `${h} h ago` : `${Math.round(h / 24)} days ago`; }
+const median = a => { if (!a.length) return null; const s = [...a].sort((x, y) => x - y); return s[Math.floor((s.length - 1) / 2)]; };
+const hr = h => `${h % 12 || 12}${h < 12 ? "am" : "pm"}`;
+const tierTag = t => `<span class="tier t${t}">T${t}</span>`;
+
+/* ---------- analysis (mirrors national.py) ---------- */
+function analyse() {
+  const rows = events.filter(r => TIERS.includes(r.tier));
+  const opened = {}, spans = [];
+  rows.forEach(r => {
+    if (r.status === "available") { if (!opened[r.store_id]) opened[r.store_id] = r; }
+    else if (r.status === "unavailable" && opened[r.store_id]) {
+      const s = opened[r.store_id];
+      spans.push({ tier: s.tier, mins: Math.max(1, Math.round((toDate(r.time) - toDate(s.time)) / 60000)) });
+      delete opened[r.store_id];
+    }
+  });
+  const restocks = rows.filter(r => r.status === "available");
+  const waves = []; let cur = [];
+  restocks.forEach(r => {
+    if (cur.length && (toDate(r.time) - toDate(cur[cur.length - 1].time)) / 60000 > WAVE_GAP_MIN) { waves.push(cur); cur = []; }
+    cur.push(r);
+  });
+  if (cur.length) waves.push(cur);
+  const big = waves.filter(w => w.length >= 3);
+  const lead = { 1: [], 2: [], 3: [] }, firstCount = { 1: 0, 2: 0, 3: 0 };
+  big.forEach(w => {
+    const t0 = toDate(w[0].time), seen = new Set();
+    firstCount[w[0].tier]++;
+    w.forEach(r => { if (!seen.has(r.tier)) { seen.add(r.tier); lead[r.tier].push((toDate(r.time) - t0) / 60000); } });
+  });
+  const hours = { 1: Array(24).fill(0), 2: Array(24).fill(0), 3: Array(24).fill(0) };
+  restocks.forEach(r => hours[r.tier][toDate(r.time).getHours()]++);
+  return { spans, restocks, big, lead, firstCount, hours };
+}
+
+/* ---------- map ---------- */
+const projection = d3.geoAlbersUsa().scale(1300).translate([487.5, 305]);
+async function drawStates() {
+  const us = await (await fetch("https://cdn.jsdelivr.net/npm/us-atlas@3/states-albers-10m.json")).json();
+  const svg = d3.select("#map");
+  svg.append("g").selectAll("path").data(topojson.feature(us, us.objects.states).features)
+    .join("path").attr("class", "state").attr("d", d3.geoPath());
+  svg.append("g").attr("id", "dots");
+}
+function storeList() {
+  return Object.entries(state.stores || {}).map(([id, s]) => ({ id, ...s }))
+    .filter(s => s.lat != null && s.lon != null && projection([s.lon, s.lat]));
+}
+function describe(s) {
+  const where = s.metro ? `${s.metro}, T${s.tier}` : `${s.city}${s.state ? ", " + s.state : ""}, no tier`;
+  const status = s.status === "available" ? `in stock since ${s.since ? pretty(s.since) : "the last sweep"}` : "no stock";
+  return `${s.name} (${where}): ${status}`;
+}
+function drawStores() {
+  const g = d3.select("#dots");
+  const list = storeList().sort((a, b) => (a.status === "available") - (b.status === "available"));
+  const r = s => s.tier === 1 ? 6 : s.tier === 2 ? 5 : s.tier === 3 ? 4.2 : 3;
+  const fill = s => s.status === "available" ? "var(--green)" : s.tier ? TIER_VAR[String(s.tier)] : "var(--grey-2)";
+  g.selectAll("*").remove();
+  list.filter(s => s.status === "available").forEach(s => {
+    const [x, y] = projection([s.lon, s.lat]);
+    g.append("circle").attr("class", "pulse").attr("cx", x).attr("cy", y).attr("r", r(s));
+  });
+  g.selectAll("circle.dot").data(list, d => d.id).join("circle")
+    .attr("class", s => `dot ${s.status === "available" ? "in" : "out"}${selected === s.id ? " sel" : ""}`)
+    .attr("cx", s => projection([s.lon, s.lat])[0]).attr("cy", s => projection([s.lon, s.lat])[1])
+    .attr("r", r).attr("fill", fill)
+    .attr("fill-opacity", s => s.status === "available" ? 1 : s.tier ? 0.55 : 0.35)
+    .on("click", (e, s) => pick(s)).on("mouseenter", (e, s) => pick(s));
+  const kc = list.find(s => s.metro === "Kansas City" && s.miles <= 15);
+  if (kc) { const [x, y] = projection([kc.lon, kc.lat]); g.append("circle").attr("class", "home").attr("cx", x).attr("cy", y).attr("r", 11); }
+}
+function pick(s) {
+  selected = s.id;
+  d3.selectAll("#dots circle.dot").classed("sel", d => d && d.id === s.id);
+  const out = document.getElementById("mapReadout");
+  out.textContent = describe(s); out.classList.add("on");
+}
+
+/* ---------- sections ---------- */
+function renderStatus() {
+  const list = Object.values(state.stores || {});
+  const inStock = list.filter(s => s.status === "available").length;
+  const m = document.getElementById("mInStock");
+  m.textContent = state.last_sweep ? `${inStock}` : "–";
+  m.className = inStock ? "good" : "";
+  document.getElementById("mStores").textContent = list.length || "–";
+  document.getElementById("mMetros").textContent = state.metros_ok != null ? `${state.metros_ok} of ${(state.metros || []).length || 50}` : "–";
+  document.getElementById("mMetros").className = state.metros_ok != null && state.metros_ok < (state.metros || []).length ? "caution" : "";
+}
+function tickSweep() {
+  const el = document.getElementById("mSweep");
+  if (!state.last_sweep) { el.textContent = "–"; return; }
+  const age = Date.now() - new Date(state.last_sweep);
+  el.textContent = rel(age);
+  el.className = age < 25 * 60000 ? "good" : "caution";
+  if (fetchedAt) document.getElementById("fetched").textContent = "updated " + rel(Date.now() - fetchedAt);
+}
+function renderNow() {
+  const list = storeList().filter(s => s.status === "available")
+    .sort((a, b) => (a.tier || 9) - (b.tier || 9) || (a.since || "").localeCompare(b.since || ""));
+  const el = document.getElementById("nowList");
+  document.getElementById("nowNote").textContent = list.length ? `${list.length} store${list.length > 1 ? "s" : ""}` : "";
+  if (!list.length) { el.innerHTML = '<div class="empty">No stock anywhere in the 50 metros right now.</div>'; return; }
+  el.innerHTML = list.map(s => `<div class="srow">
+    <div>${s.tier ? tierTag(s.tier) : ""}</div>
+    <div><b>${esc(s.name)}</b><div class="sm">${esc(s.metro || s.city)}${s.state ? ", " + esc(s.state) : ""}</div></div>
+    <time>${s.since ? `${Math.max(1, Math.round((Date.now() - toDate(s.since)) / 60000))} min` : "new"}</time>
+  </div>`).join("");
+}
+function renderLead(a) {
+  const el = document.getElementById("lead");
+  if (!a.big.length) { el.innerHTML = '<div class="empty">Needs a few restock waves first. Each wave shows which tier got stock first, and the pattern builds up over days.</div>'; return; }
+  const meds = Object.fromEntries(TIERS.map(t => [t, median(a.lead[t])]));
+  const max = Math.max(1, ...TIERS.map(t => meds[t] || 0));
+  const leader = TIERS.filter(t => meds[t] != null).sort((x, y) => meds[x] - meds[y])[0];
+  el.innerHTML = `<div class="summary">Across <b>${a.big.length} wave${a.big.length > 1 ? "s" : ""}</b>, ${leader ? `<b>T${leader}</b> usually gets stock first.` : ""}</div>` +
+    TIERS.map(t => {
+      const m = meds[t];
+      return `<div class="trow">
+        ${tierTag(t)}
+        <div><div class="tmeta">First in ${a.firstCount[t]} of ${a.big.length} waves</div>
+          <div class="tbar"><b style="width:${m == null ? 0 : Math.max(4, 100 * m / max)}%; background:${TIER_VAR[t]}"></b></div></div>
+        <div class="tval">${m == null ? "–" : m < 1 ? "First" : `+${Math.round(m)} min`}<small>typical</small></div>
+      </div>`;
+    }).join("");
+}
+function renderDurations(a) {
+  const el = document.getElementById("durations");
+  if (!a.spans.length) { el.innerHTML = '<div class="empty">Appears once stores start selling out. Each sell-out shows how long that restock lasted.</div>'; return; }
+  const by = Object.fromEntries(TIERS.map(t => [t, a.spans.filter(s => s.tier === t).map(s => s.mins)]));
+  const max = Math.max(1, ...a.spans.map(s => s.mins));
+  el.innerHTML = TIERS.map(t => {
+    const v = by[t], m = median(v);
+    return `<div class="trow">
+      ${tierTag(t)}
+      <div><div class="tmeta">${v.length ? `${v.length} restock${v.length > 1 ? "s" : ""}, ${Math.min(...v)}–${Math.max(...v)} min` : "No sell-outs yet"}</div>
+        <div class="tbar"><b style="width:${m == null ? 0 : 100 * m / max}%; background:${TIER_VAR[t]}"></b></div></div>
+      <div class="tval">${m == null ? "–" : `${m} min`}<small>typical</small></div>
+    </div>`;
+  }).join("");
+}
+function renderHours(a) {
+  const max = Math.max(1, ...TIERS.flatMap(t => a.hours[t]));
+  const rgb = { 1: "242,242,245", 2: "157,180,255", 3: "201,163,107" };
+  document.getElementById("hours").innerHTML = TIERS.map(t =>
+    `<div class="hrow"><div>${tierTag(t)}</div>${a.hours[t].map((v, h) =>
+      `<div class="c" title="T${t} ${hr(h)}: ${v}" style="${v ? `background: rgba(${rgb[t]},${0.25 + 0.75 * v / max})` : ""}"></div>`).join("")}</div>`).join("") +
+    `<div class="hlabels"><span></span>${Array.from({ length: 24 }, (_, h) => `<span>${h % 6 === 0 ? hr(h) : ""}</span>`).join("")}</div>` +
+    (a.restocks.length ? "" : '<p class="fine">No restocks logged yet. Each restock lights up its tier\'s hour.</p>');
+}
+function renderWaves(a) {
+  const el = document.getElementById("waves");
+  if (!a.big.length) { el.innerHTML = '<div class="empty">No waves yet. A wave is 3 or more restocks close together.</div>'; return; }
+  el.innerHTML = a.big.slice(-8).reverse().map(w => {
+    const span = Math.round((toDate(w[w.length - 1].time) - toDate(w[0].time)) / 60000);
+    const counts = TIERS.map(t => w.filter(r => r.tier === t).length);
+    return `<div class="wave">
+      <div class="wave-top"><b>${pretty(w[0].time)}</b><span>${w.length} restocks over ${span} min (T1 ${counts[0]}, T2 ${counts[1]}, T3 ${counts[2]})</span></div>
+      <div class="seq">${w.slice(0, 18).map(r => `<span class="tier t${r.tier}" title="${esc(r.metro)}">${esc(r.metro)}</span>`).join("")}${w.length > 18 ? `<span class="tmeta">+${w.length - 18} more</span>` : ""}</div>
+    </div>`;
+  }).join("");
+}
+
+/* ---------- loop ---------- */
+async function load() {
+  const err = document.getElementById("err");
+  try {
+    const [s, e] = await Promise.all([getFile("national/state.json"), getFile("national/events.csv")]);
+    state = s ? JSON.parse(s) : {};
+    events = parseCsv(e);
+    await mapReady;
+    renderStatus(); drawStores(); renderNow();
+    const a = analyse();
+    renderLead(a); renderDurations(a); renderHours(a); renderWaves(a);
+    if (!state.last_sweep) document.getElementById("nowList").innerHTML = '<div class="empty">Waiting for the first national sweep to finish.</div>';
+    fetchedAt = Date.now();
+    err.style.display = "none";
+  } catch (x) {
+    err.textContent = `Couldn't load data: ${x.message}. The page will try again in a few minutes.`;
+    err.style.display = "block";
+  }
+  tickSweep();
+}
+mapReady = drawStates().catch(() => {});
+load();
+setInterval(load, REFRESH_MS);
+setInterval(tickSweep, 1000);
+document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
+</script>
+</body>
+</html>
