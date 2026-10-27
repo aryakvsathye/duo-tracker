@@ -58,7 +58,7 @@ night = t.hour >= 22 or t.hour < 7
 if night and not TEST and t.minute % 15 >= 5:
     print("Night mode: skipping this run")
     raise SystemExit(0)
-CHECKS = 1 if (TEST or night) else 10
+CHECKS = 1 if (TEST or night) else 5
 
 alerted, failures = set(), 0
 for i in range(CHECKS):
