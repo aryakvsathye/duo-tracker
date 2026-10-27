@@ -89,6 +89,7 @@
   .gantry.green .bag { color: #03110a; background: var(--green); border-color: var(--green); box-shadow: 0 0 30px rgba(34,224,122,0.45); }
 
   .label { display: flex; justify-content: space-between; align-items: baseline; font-size: 11px; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; margin: 24px 2px 10px; }
+  .label { gap: 4px 12px; flex-wrap: wrap; }
   .label em { font-style: normal; letter-spacing: 0.04em; text-transform: none; }
 
   /* Race control */
@@ -160,20 +161,116 @@
 
   .err { background: #2a0d12; border: 1px solid var(--red); color: #ffb3bb; padding: 12px 14px; border-radius: 12px; font-size: 13px; margin-bottom: 12px; display: none; }
   footer { color: var(--muted); font-size: 11px; text-align: center; margin-top: 26px; line-height: 1.6; }
+
+  /* ---------- responsiveness ---------- */
+  .hdr-right { display: flex; align-items: center; gap: 12px; }
+  .refresh {
+    width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--panel); border: 1px solid var(--line); color: var(--muted); cursor: pointer;
+    -webkit-tap-highlight-color: transparent; transition: color .2s, border-color .2s, transform .15s;
+  }
+  .refresh:hover { color: var(--text); border-color: #36405a; }
+  .refresh.spin svg { animation: spin .8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* tap + hover feedback */
+  a, button, .store, .tile { -webkit-tap-highlight-color: transparent; }
+  .bag, .store .row a, .refresh { transition: transform .12s ease, filter .12s ease, background .2s, box-shadow .3s; }
+  .bag:active, .store .row a:active, .refresh:active { transform: scale(0.96); filter: brightness(1.15); }
+  .store, .tile, .rc, .laps, .heat, .timeline { transition: border-color .25s, transform .2s; }
+  @media (hover: hover) {
+    .store:hover, .tile:hover, .rc:hover, .laps:hover, .heat:hover { border-color: #323a50; }
+    .store .row a:hover { background: #1d2230; }
+    .bag:hover { filter: brightness(1.12); }
+  }
+
+  /* chart inspectors */
+  .bars div, .grid .c { cursor: pointer; transition: opacity .15s, outline-color .15s; }
+  .bars.inspecting div:not(.sel) { opacity: 0.45; }
+  .bars div.sel { outline: 1px solid var(--text); outline-offset: 1px; }
+  .grid .c.sel { outline: 1.5px solid var(--text); }
+  .readout { font-size: 11px; color: var(--muted); margin-top: 8px; min-height: 15px; }
+  .readout.on { color: var(--text); }
+
+  /* change flash when a value updates */
+  .flash { animation: flash .9s ease; }
+  @keyframes flash { 0% { box-shadow: 0 0 0 0 rgba(233,237,244,0.35); } 100% { box-shadow: 0 0 0 10px rgba(233,237,244,0); } }
+
+  /* pull to refresh */
+  .ptr {
+    position: fixed; left: 50%; top: 0; transform: translate(-50%, -48px);
+    font-size: 10px; letter-spacing: .14em; color: var(--muted);
+    background: var(--panel); border: 1px solid var(--line); padding: 8px 12px; border-radius: 99px;
+    z-index: 10; transition: transform .2s, color .2s, opacity .2s; pointer-events: none; opacity: 0;
+  }
+  .ptr.ready { color: var(--green); border-color: rgba(34,224,122,.5); }
+
+  /* fluid sizing */
+  .bulb { width: clamp(26px, 8.6vw, 44px); height: clamp(26px, 8.6vw, 44px); }
+  .verdict { font-size: clamp(22px, 6.6vw, 34px); }
+  .layout { display: block; }
+
+  /* small phones */
+  @media (max-width: 360px) {
+    body { padding-left: 12px; padding-right: 12px; }
+    .lights { gap: 6px; }
+    .store .row { flex-wrap: wrap; }
+    .tile .v { font-size: 17px; }
+  }
+
+  /* landscape phones: lights beside the verdict */
+  @media (max-height: 500px) and (orientation: landscape) {
+    .gantry { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 4px 18px; text-align: left; }
+    .gantry .lights { grid-row: 1 / span 3; }
+    .verdict { margin-top: 0; }
+    .bag { margin-top: 8px; }
+  }
+
+  /* tablets */
+  @media (min-width: 700px) {
+    body { max-width: 760px; }
+    .telemetry { grid-template-columns: repeat(4, 1fr); }
+    .stores { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .bars { height: 110px; }
+  }
+
+  /* desktop: two-column pit wall */
+  @media (min-width: 1040px) {
+    body { max-width: 1240px; padding-left: 28px; padding-right: 28px; }
+    header { margin-bottom: 20px; }
+    .layout { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 0 28px; align-items: start; }
+    .col-a { position: sticky; top: 20px; }
+    .col-a > .gantry:first-child { margin-top: 0; }
+    .col-b > .label:first-child { margin-top: 0; }
+    .stores { grid-template-columns: 1fr; }
+    .telemetry { grid-template-columns: repeat(4, 1fr); }
+    .bars { height: 130px; }
+    .gantry { padding: 26px 18px 20px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
 </style>
 </head>
 <body>
+<div class="ptr mono" id="ptr">↓ PULL TO REFRESH</div>
 
 <header>
   <div>
     <div class="brand">DUO <span>PIT WALL</span></div>
     <div class="sub">iPhone Duo · 256GB · Night Sky</div>
   </div>
-  <div class="live mono" id="live"><i></i><span id="liveText">CONNECTING</span></div>
+  <div class="hdr-right">
+    <div class="live mono" id="live"><i></i><span id="liveText">CONNECTING</span></div>
+    <button class="refresh" id="refresh" aria-label="Refresh now"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 4v5h-5"/></svg></button>
+  </div>
 </header>
 
 <div class="err" id="err"></div>
 
+<main class="layout">
+<div class="col col-a">
 <section class="gantry idle" id="gantry">
   <div class="lights" id="lights"></div>
   <div class="verdict" id="verdict">WAITING FOR DATA</div>
@@ -190,7 +287,9 @@
 
 <div class="label">Grid <em>stores within 50 mi</em></div>
 <div class="stores" id="stores"><div class="empty">Loading…</div></div>
+</div>
 
+<div class="col col-b">
 <div class="label">Telemetry</div>
 <div class="telemetry">
   <div class="tile"><div class="k">Last check</div><div class="v mono" id="lastCheck">–</div></div>
@@ -202,6 +301,7 @@
 <div class="label">Lap times <em class="mono" id="lapSummary"></em></div>
 <div class="laps">
   <div class="bars" id="bars"></div>
+  <div class="readout mono" id="lapReadout">Tap a bar for details</div>
   <div class="laps-legend">
     <span><i style="background:#2b3346"></i>Lap</span>
     <span><i style="background:var(--purple)"></i>Fastest</span>
@@ -214,11 +314,14 @@
 <div class="heat">
   <div class="grid" id="heat"></div>
   <div class="hours mono" id="hours"></div>
+  <div class="readout mono" id="heatReadout">Tap a square for details</div>
   <div class="note" id="heatNote"></div>
 </div>
 
 <div class="label">Race log</div>
 <div class="timeline" id="timeline"><div class="empty">Loading…</div></div>
+</div>
+</main>
 
 <footer class="mono">Live data from GitHub · <span id="fetched">–</span></footer>
 
@@ -389,10 +492,10 @@ function renderLaps(state) {
   const best = good.length ? Math.min(...good.map(l => l.ms)) : null;
   bars.innerHTML = laps.map(l => {
     const tip = `${l.t.slice(11, 16)} · ${l.ok ? l.ms + " ms" : "failed" + (l.code ? " (" + l.code + ")" : "")}`;
-    if (!l.ok) return `<div class="lapfail" style="height:100%" title="${tip}"></div>`;
+    if (!l.ok) return `<div class="lapfail" style="height:100%" data-tip="${tip}"></div>`;
     const h = Math.max(8, Math.round(100 * l.ms / max));
     const cls = (l.green && l.green.length) ? "green" : l.ms === best ? "fast" : "";
-    return `<div class="${cls}" style="height:${h}%" title="${tip}"></div>`;
+    return `<div class="${cls}" style="height:${h}%" data-tip="${tip}"></div>`;
   }).join("");
   const avg = good.length ? Math.round(good.reduce((a, l) => a + l.ms, 0) / good.length) : null;
   const fails = laps.length - good.length;
@@ -419,7 +522,7 @@ function renderHeat() {
       const v = counts[dow][h];
       const style = v ? `background: rgba(34,224,122,${0.25 + 0.75 * v / max}); box-shadow: 0 0 6px rgba(34,224,122,${0.5 * v / max});` : "";
       const now = dow === nowC.dow && h === nowC.hour ? " now" : "";
-      html += `<div class="c${now}" style="${style}" title="${DAYS[dow]} ${h}:00 · ${v}"></div>`;
+      html += `<div class="c${now}" style="${style}" data-tip="${DAYS[dow]} ${h}:00–${h + 1}:00 · ${v} restock${v === 1 ? "" : "s"}"></div>`;
     }
   });
   document.getElementById("heat").innerHTML = html;
@@ -497,6 +600,84 @@ function tick() {
   if (fetchedAt) document.getElementById("fetched").textContent = "updated " + rel(Date.now() - fetchedAt);
 }
 
+/* ---------- interactions ---------- */
+function setupInspector(containerId, readoutId, idleText, inspectClass) {
+  const box = document.getElementById(containerId);
+  const out = document.getElementById(readoutId);
+  const pick = target => {
+    const cell = target.closest("[data-tip]");
+    if (!cell || !box.contains(cell)) return;
+    box.querySelectorAll(".sel").forEach(el => el.classList.remove("sel"));
+    cell.classList.add("sel");
+    if (inspectClass) box.classList.add(inspectClass);
+    out.textContent = cell.dataset.tip;
+    out.classList.add("on");
+  };
+  box.addEventListener("click", e => pick(e.target));
+  box.addEventListener("pointermove", e => { if (e.pointerType === "mouse") pick(e.target); });
+  box.addEventListener("pointerleave", e => {
+    if (e.pointerType !== "mouse") return;
+    box.querySelectorAll(".sel").forEach(el => el.classList.remove("sel"));
+    if (inspectClass) box.classList.remove(inspectClass);
+    out.textContent = idleText; out.classList.remove("on");
+  });
+}
+setupInspector("bars", "lapReadout", "Tap a bar for details", "inspecting");
+setupInspector("heat", "heatReadout", "Tap a square for details", null);
+
+const refreshBtn = document.getElementById("refresh");
+async function manualRefresh() {
+  if (refreshBtn.classList.contains("spin")) return;
+  refreshBtn.classList.add("spin");
+  await load();
+  setTimeout(() => refreshBtn.classList.remove("spin"), 400);
+}
+refreshBtn.addEventListener("click", manualRefresh);
+
+/* pull to refresh (useful when saved to the home screen) */
+(() => {
+  const ptr = document.getElementById("ptr");
+  let startY = null, pulled = 0;
+  window.addEventListener("touchstart", e => { startY = window.scrollY <= 0 ? e.touches[0].clientY : null; pulled = 0; }, { passive: true });
+  window.addEventListener("touchmove", e => {
+    if (startY === null) return;
+    pulled = Math.max(0, e.touches[0].clientY - startY);
+    const y = Math.min(pulled * 0.5, 60) - 48;
+    ptr.style.transform = `translate(-50%, ${y}px)`;
+    ptr.style.opacity = pulled > 10 ? 1 : 0;
+    ptr.classList.toggle("ready", pulled > 90);
+    ptr.textContent = pulled > 90 ? "↻ RELEASE TO REFRESH" : "↓ PULL TO REFRESH";
+  }, { passive: true });
+  window.addEventListener("touchend", () => {
+    if (startY !== null && pulled > 90) manualRefresh();
+    startY = null; pulled = 0;
+    ptr.style.transform = ""; ptr.style.opacity = 0; ptr.classList.remove("ready");
+  });
+})();
+
+/* flash a panel when its contents change */
+let prevSnap = {};
+function flashChanges(state) {
+  const nearby = state.nearby || {};
+  const snap = {
+    gantry: Object.values(nearby).map(s => s.status).join(","),
+    errors: String(state.errors ?? ""),
+    checks: String(state.checks ?? ""),
+  };
+  Object.entries(nearby).forEach(([n, s]) => { snap["store:" + n] = s.status; });
+  const flash = el => { if (!el) return; el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash"); };
+  if (prevSnap.gantry !== undefined) {
+    if (snap.gantry !== prevSnap.gantry) flash(document.getElementById("gantry"));
+    if (snap.errors !== prevSnap.errors) flash(document.getElementById("errors").parentElement);
+    if (snap.checks !== prevSnap.checks) flash(document.getElementById("checks").parentElement);
+    document.querySelectorAll(".store").forEach(el => {
+      const name = el.querySelector(".name").textContent;
+      if (snap["store:" + name] !== prevSnap["store:" + name]) flash(el);
+    });
+  }
+  prevSnap = snap;
+}
+
 /* ---------- loop ---------- */
 async function load() {
   const err = document.getElementById("err");
@@ -517,6 +698,7 @@ async function load() {
     renderHeat();
     renderTimeline();
     renderRun();
+    flashChanges(state);
     fetchedAt = Date.now();
     err.style.display = "none";
   } catch (e) {
