@@ -73,6 +73,11 @@
   }
   .zoom-ctl button:active { background: var(--kerb); }
   .zoom-ctl button svg { width: 15px; height: 15px; }
+  .sw { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: -1px; margin-right: 5px; border: 1px solid rgba(255,255,255,.35); }
+  .sw-ns { background: #2b3550; }
+  .sw-sw { background: #f1eee6; }
+  .colours { display: block; margin-top: 2px; }
+  .colours span { margin-right: 10px; white-space: nowrap; }
   .tip {
     position: absolute; z-index: 5; pointer-events: none; max-width: 260px;
     background: var(--asphalt-2); border: 1px solid var(--kerb); border-radius: var(--r-sm);
@@ -180,7 +185,7 @@
     <div class="brand-mark" aria-hidden="true"></div>
     <div>
       <h1>National</h1>
-      <p>iPhone Duo 256GB, Night Sky, 50 metros</p>
+      <p>iPhone Duo 256GB, Night Sky and Star White, 50 metros</p>
     </div>
   </div>
   <a class="back" href="./">Pit Wall</a>
@@ -209,6 +214,8 @@
           <button class="chip" type="button" data-f="1" aria-pressed="false">T1</button>
           <button class="chip" type="button" data-f="2" aria-pressed="false">T2</button>
           <button class="chip" type="button" data-f="3" aria-pressed="false">T3</button>
+          <button class="chip" type="button" data-f="MK1F4LL/A" aria-pressed="false"><i class="sw sw-ns"></i>Night Sky</button>
+          <button class="chip" type="button" data-f="MK1E4LL/A" aria-pressed="false"><i class="sw sw-sw"></i>Star White</button>
         </div>
         <div class="map-wrap" id="mapWrap" tabindex="0" aria-label="Map. Plus and minus zoom, arrow keys move, 0 resets.">
           <div class="tip" id="tip" role="tooltip"></div>
@@ -271,6 +278,13 @@ const REFRESH_MS = 300000;   // the sweep runs every 10 min
 const WAVE_GAP_MIN = 45;
 const WAVE_MIN = 2;   // restocks in one region within 45 min of each other
 const TIERS = ["1", "2", "3"];
+const PRIMARY = "MK1F4LL/A";
+let COLOURS = { "MK1F4LL/A": "Night Sky", "MK1E4LL/A": "Star White" };
+const colourName = p => COLOURS[p] || p;
+const swatch = p => `<i class="sw ${p === PRIMARY ? "sw-ns" : "sw-sw"}" aria-hidden="true"></i>`;
+const partsOf = s => s.parts || { [PRIMARY]: s.status };
+const inColours = s => Object.entries(partsOf(s)).filter(([, v]) => v === "available").map(([p]) => p);
+const sinceOf = (s, p) => (s.since_by_part || {})[p] || (p === PRIMARY ? s.since : null);
 const TIER_VAR = { "1": "var(--t1)", "2": "var(--t2)", "3": "var(--t3)" };
 const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -287,7 +301,7 @@ function parseCsv(text) {
   if (!text) return [];
   const lines = text.trim().split(/\r?\n/);
   const head = lines.shift().split(",");
-  return lines.filter(Boolean).map(l => { const v = l.split(","); const o = {}; head.forEach((h, i) => o[h] = (v[i] || "").trim()); return o; });
+  return lines.filter(Boolean).map(l => { const v = l.split(","); const o = {}; head.forEach((h, i) => o[h] = (v[i] || "").trim()); o.part = o.part || PRIMARY; return o; });
 }
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 /* The bots log times as Central wall-clock time ("2026-10-27 09:31"). Turn that into a real
@@ -347,14 +361,22 @@ function analyse() {
   const rows = events.filter(r => TIERS.includes(r.tier));
   const opened = {}, spans = [];
   rows.forEach(r => {
-    if (r.status === "available") { if (!opened[r.store_id]) opened[r.store_id] = r; }
-    else if (r.status === "unavailable" && opened[r.store_id]) {
-      const s = opened[r.store_id];
-      spans.push({ tier: s.tier, mins: Math.max(1, Math.round((toDate(r.time) - toDate(s.time)) / 60000)) });
-      delete opened[r.store_id];
+    const key = r.store_id + "|" + r.part;
+    if (r.status === "available") { if (!opened[key]) opened[key] = r; }
+    else if (r.status === "unavailable" && opened[key]) {
+      const s = opened[key];
+      spans.push({ tier: s.tier, part: s.part, mins: Math.max(1, Math.round((toDate(r.time) - toDate(s.time)) / 60000)) });
+      delete opened[key];
     }
   });
-  const restocks = rows.filter(r => r.status === "available");
+  // Both colours arriving at one store in the same sweep count as one restock for waves and hours
+  const seenRestock = new Set();
+  const restocks = rows.filter(r => {
+    if (r.status !== "available") return false;
+    const k = r.store_id + "|" + r.time;
+    if (seenRestock.has(k)) return false;
+    seenRestock.add(k); return true;
+  });
   // Waves are found separately in each region, so a Boston and a Phoenix restock never count as one wave
   const big = [];
   REGIONS.forEach(region => {
@@ -467,6 +489,7 @@ const baseR = s => s.tier === 1 ? 6 : s.tier === 2 ? 5 : s.tier === 3 ? 4.2 : 3;
 function visible(s) {
   if (filter === "all") return true;
   if (filter === "in") return s.status === "available";
+  if (COLOURS[filter]) return partsOf(s)[filter] === "available";
   return String(s.tier) === filter;
 }
 function styleForZoom() {
@@ -476,7 +499,11 @@ function styleForZoom() {
     .attr("r", s => baseR(s) * grow / k)
     .classed("dim", s => !visible(s));
   d3.selectAll("#dots circle.pulse").attr("r", function () { return +this.dataset.r * grow / k; })
-    .classed("dim", function () { return filter !== "all" && filter !== "in" && this.dataset.tier !== filter; });
+    .classed("dim", function () {
+      if (filter === "all" || filter === "in") return false;
+      if (COLOURS[filter]) return !(this.dataset.parts || "").includes(filter);
+      return this.dataset.tier !== filter;
+    });
   d3.selectAll("#dots circle.home").attr("r", 11 * grow / k);
   d3.selectAll("#waveLayer text").attr("font-size", 15 / Math.sqrt(k));
   // Metro names from 2.4x, store names from 5x
@@ -492,7 +519,10 @@ function storeList() {
 }
 function describe(s) {
   const where = s.metro ? `${s.metro}, T${s.tier}` : `${s.city}${s.state ? ", " + s.state : ""}, no tier`;
-  const status = s.status === "available" ? `in stock since ${s.since ? pretty(s.since, s.tz || STATE_TZ[s.state]) : "the last sweep"}` : "no stock";
+  const cols = inColours(s);
+  const status = cols.length
+    ? cols.map(p => `${colourName(p)} in stock since ${sinceOf(s, p) ? pretty(sinceOf(s, p), s.tz || STATE_TZ[s.state]) : "the last sweep"}`).join(", ")
+    : "no stock";
   return `${s.name} (${where}): ${status}`;
 }
 function drawStores() {
@@ -504,7 +534,7 @@ function drawStores() {
   list.filter(s => s.status === "available").forEach(s => {
     const [x, y] = projection([s.lon, s.lat]);
     g.append("circle").attr("class", "pulse").attr("cx", x).attr("cy", y).attr("r", r(s))
-      .attr("data-r", r(s)).attr("data-tier", String(s.tier));
+      .attr("data-r", r(s)).attr("data-tier", String(s.tier)).attr("data-parts", inColours(s).join(" "));
   });
   g.selectAll("circle.dot").data(list, d => d.id).join("circle")
     .attr("class", s => `dot ${s.status === "available" ? "in" : "out"}${selected === s.id ? " sel" : ""}`)
@@ -534,10 +564,10 @@ function showTip(e, s) {
   if (!FINE_POINTER) return;
   const tip = document.getElementById("tip"), wrap = document.getElementById("mapWrap").getBoundingClientRect();
   const where = s.metro ? `${s.metro}, T${s.tier}` : `${s.city}${s.state ? ", " + s.state : ""}, no tier`;
-  const status = s.status === "available"
-    ? `<span class="ok">In stock${s.since ? `, ${Math.max(1, Math.round((Date.now() - toDate(s.since)) / 60000))} min` : ""}</span>`
-    : "<span>No stock</span>";
-  tip.innerHTML = `<b>${esc(s.name)}</b><span>${esc(where)}</span><br>${status}`;
+  const status = `<span class="colours">${Object.entries(partsOf(s)).map(([p, v]) => v === "available"
+    ? `<span class="ok">${swatch(p)}${colourName(p)}${sinceOf(s, p) ? `, ${Math.max(1, Math.round((Date.now() - toDate(sinceOf(s, p))) / 60000))} min` : ""}</span>`
+    : `<span>${swatch(p)}${colourName(p)}: none</span>`).join("")}</span>`;
+  tip.innerHTML = `<b>${esc(s.name)}</b><span>${esc(where)}</span>${status}`;
   let x = e.clientX - wrap.left + 14, y = e.clientY - wrap.top + 14;
   tip.classList.add("on");
   const w = tip.offsetWidth, h = tip.offsetHeight;
@@ -595,7 +625,8 @@ function renderNow() {
   };
   el.innerHTML = list.map(s => `<div class="srow" data-id="${esc(s.id)}" title="Show on map">
     <div>${s.tier ? tierTag(s.tier) : ""}</div>
-    <div><b>${esc(s.name)}</b><div class="sm">${esc(s.metro || s.city)}${s.state ? ", " + esc(s.state) : ""}${s.since ? `, since ${pretty(s.since, s.tz || STATE_TZ[s.state])}` : ""}</div></div>
+    <div><b>${esc(s.name)}</b><div class="sm">${esc(s.metro || s.city)}${s.state ? ", " + esc(s.state) : ""}</div>
+      <div class="sm colours">${inColours(s).map(p => `<span>${swatch(p)}${colourName(p)}${sinceOf(s, p) ? ` since ${pretty(sinceOf(s, p), s.tz || STATE_TZ[s.state])}` : ""}</span>`).join("")}</div></div>
     <time>${s.since ? `${Math.max(1, Math.round((Date.now() - toDate(s.since)) / 60000))} min` : "new"}</time>
   </div>`).join("");
 }
@@ -695,6 +726,7 @@ async function load() {
   try {
     const [s, e] = await Promise.all([getFile("national/state.json"), getFile("national/events.csv")]);
     state = s ? JSON.parse(s) : {};
+    if (state.colours) COLOURS = state.colours;
     events = parseCsv(e);
     await mapReady;
     renderStatus(); drawStores(); renderNow();

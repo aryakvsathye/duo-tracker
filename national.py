@@ -7,7 +7,10 @@ store to its closest metro, and logs each change between in stock and sold out.
 import os, json, csv, time, datetime, statistics, requests
 from zoneinfo import ZoneInfo
 
-PART = os.environ["PART"]
+PART = os.environ["PART"]          # main colour (Night Sky)
+# Every colour tracked; Apple answers for all of them in one request per metro
+COLOURS = {"MK1F4LL/A": "Night Sky", "MK1E4LL/A": "Star White"}
+PARTS = [PART] + [p for p in COLOURS if p != PART]
 TOPIC = "aryak-duo-256-night-sky"
 TZ = ZoneInfo("America/Chicago")
 DATA_DIR = os.environ.get("DATA_DIR", ".")
@@ -98,12 +101,31 @@ def parse_time(s):
 def read_log():
     try:
         with open(LOG_FILE, newline="") as f:
-            return [r for r in csv.DictReader(f) if r.get("time")]
+            rows = [r for r in csv.DictReader(f) if r.get("time")]
     except FileNotFoundError:
         return []
+    for r in rows:                      # rows from before colours were tracked are Night Sky
+        r["part"] = (r.get("part") or "").strip() or PART
+    return rows
 
 
-FIELDS = ["time", "store", "store_id", "city", "state", "metro", "tier", "miles", "status"]
+FIELDS = ["time", "store", "store_id", "city", "state", "metro", "tier", "miles", "status", "part"]
+
+
+def upgrade_log():
+    """Add the 'part' column to a log written before both colours were tracked."""
+    if not os.path.exists(LOG_FILE):
+        return
+    with open(LOG_FILE, newline="") as f:
+        header = next(csv.reader(f), [])
+    if "part" in header:
+        return
+    rows = read_log()
+    with open(LOG_FILE, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=FIELDS, lineterminator="\n", extrasaction="ignore")
+        w.writeheader()
+        w.writerows(rows)
+    print("Event log upgraded with a colour column")
 
 
 def log_events(rows):
@@ -127,16 +149,22 @@ def local_time(r, stores):
 def analyse(rows, stores, since=None):
     rows = [r for r in rows if r["tier"] in ("1", "2", "3")
             and (since is None or parse_time(r["time"]) >= since)]
-    # durations: first "available" to the next "unavailable" per store
+    # durations: first "available" to the next "unavailable" per store and colour
     opened, spans = {}, []
     for r in rows:
+        key = (r["store_id"], r.get("part", PART))
         if r["status"] == "available":
-            opened.setdefault(r["store_id"], r)
-        elif r["status"] == "unavailable" and r["store_id"] in opened:
-            start = opened.pop(r["store_id"])
+            opened.setdefault(key, r)
+        elif r["status"] == "unavailable" and key in opened:
+            start = opened.pop(key)
             mins = max(1, round((parse_time(r["time"]) - parse_time(start["time"])).total_seconds() / 60))
             spans.append((start["tier"], mins))
-    restocks = [r for r in rows if r["status"] == "available"]
+    # a store getting both colours in the same sweep counts as one restock for waves and hours
+    seen, restocks = set(), []
+    for r in rows:
+        if r["status"] == "available" and (r["store_id"], r["time"]) not in seen:
+            seen.add((r["store_id"], r["time"]))
+            restocks.append(r)
     # waves: within one region, restocks within WAVE_GAP_MIN of the previous one
     waves = []
     for region in DIVISIONS:
@@ -200,6 +228,7 @@ def weekly_summary(rows, at, stores):
 # ---------- sweep ----------
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
+    upgrade_log()
     try:
         with open(STATE_FILE) as f:
             state = json.load(f)
@@ -221,7 +250,8 @@ def main():
         """One request; returns (stores, None) or (None, short reason)."""
         try:
             r = requests.get("https://www.apple.com/shop/retail/pickup-message",
-                             headers=headers, timeout=20, params={"parts.0": PART, "location": zip_code})
+                             headers=headers, timeout=20,
+                             params={**{f"parts.{i}": p for i, p in enumerate(PARTS)}, "location": zip_code})
         except Exception as e:
             return None, f"no response ({type(e).__name__})"
         if r.status_code != 200:
@@ -260,38 +290,53 @@ def main():
                 best[sid] = (miles, metro, tier, st)
 
     stamp = now().strftime("%Y-%m-%d %H:%M")
-    events = []
+    events, products = [], {}
     for sid, (miles, metro, tier, st) in best.items():
-        info = st.get("partsAvailability", {}).get(PART, {})
-        status = info.get("pickupDisplay", "unknown")
+        parts = {}
+        for p in PARTS:
+            info = (st.get("partsAvailability") or {}).get(p, {})
+            parts[p] = info.get("pickupDisplay", "unknown")
+            title = ((info.get("messageTypes") or {}).get("regular") or {}).get("storePickupProductTitle")
+            if title:
+                products[p] = title
+        status = "available" if "available" in parts.values() else parts.get(PART, "unknown")
         assigned = miles <= ASSIGN_MILES
         rec = {
             "name": st["storeName"], "city": st.get("city", ""), "state": st.get("state", ""),
             "lat": st.get("storelatitude"), "lon": st.get("storelongitude"),
             "metro": metro if assigned else "", "tier": tier if assigned else 0,
-            "miles": round(miles, 1), "status": status,
+            "miles": round(miles, 1), "status": status, "parts": parts,
             "tz": ((st.get("retailStore") or {}).get("timezone")
                    or STATE_TZ.get(st.get("state", ""), "America/Chicago")),
             "region": REGION.get(st.get("state", ""), ""),
         }
-        prev = state["stores"].get(sid, {}).get("status")
-        if prev is not None and prev != status and status in ("available", "unavailable"):
-            events.append({"time": stamp, "store": rec["name"], "store_id": sid, "city": rec["city"],
-                           "state": rec["state"], "metro": rec["metro"], "tier": rec["tier"],
-                           "miles": rec["miles"], "status": status})
-        if status == "available" and prev != "available":
-            rec["since"] = stamp
-        elif status == "available":
-            rec["since"] = state["stores"].get(sid, {}).get("since", stamp)
+        old = state["stores"].get(sid, {})
+        old_parts = old.get("parts") or ({PART: old["status"]} if "status" in old else {})
+        old_since = old.get("since_by_part") or ({PART: old["since"]} if old.get("since") else {})
+        rec["since_by_part"] = {}
+        for p, st_p in parts.items():
+            prev = old_parts.get(p)
+            if prev is not None and prev != st_p and st_p in ("available", "unavailable"):
+                events.append({"time": stamp, "store": rec["name"], "store_id": sid, "city": rec["city"],
+                               "state": rec["state"], "metro": rec["metro"], "tier": rec["tier"],
+                               "miles": rec["miles"], "status": st_p, "part": p})
+            if st_p == "available":
+                rec["since_by_part"][p] = old_since.get(p, stamp) if prev == "available" else stamp
+        if rec["since_by_part"]:
+            rec["since"] = min(rec["since_by_part"].values())
         state["stores"][sid] = rec
 
     log_events(events)
+    state["products"] = products     # Apple's own names for each part, to confirm part numbers
+    state["colours"] = {p: COLOURS.get(p, p) for p in PARTS}
     state["last_sweep"] = now().isoformat()
     state["sweep_seconds"] = round(time.monotonic() - sweep_start)
     state["metros_ok"] = ok
     state["retries"] = retried
     if problems:
         state["last_error"] = f"{now().isoformat(timespec='minutes')}: " + "; ".join(problems[-5:])
+    else:
+        state.pop("last_error", None)
     state["metros"] = [{"metro": m, "zip": z, "tier": tr} for m, z, tr in METROS]
     if ok == len(METROS):
         state.pop("backoff_until", None)

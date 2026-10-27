@@ -183,6 +183,16 @@
   .rrow.fast.go a { background: var(--green); color: #06210f; border-color: var(--green); }
   .fine { font-size: 12px; color: var(--grey-2); margin-top: 8px; }
 
+  /* ---------- colour swatches ---------- */
+  .sw { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: -1px; margin-right: 5px; border: 1px solid rgba(255,255,255,.35); }
+  .sw-ns { background: #2b3550; }
+  .sw-sw { background: #f1eee6; }
+  .chips { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; align-self: start; }
+  .cchip { font-size: 12px; font-weight: 700; padding: 3px 8px; border-radius: var(--r-sm); white-space: nowrap; font-variation-settings: var(--wide); background: rgba(225,6,0,.16); color: #ff6b63; }
+  .cchip.in { background: var(--green); color: #06210f; }
+  .cchip.unk { background: var(--asphalt-2); color: var(--grey); }
+  .tag-colour { color: var(--grey); font-size: 13px; }
+
   /* ---------- race control strip ---------- */
   .rc { display: grid; grid-template-columns: 4px 1fr auto; align-items: stretch; overflow: hidden; }
   .rc-flag { background: var(--grey-2); }
@@ -377,7 +387,7 @@
     <div class="brand-mark" aria-hidden="true"></div>
     <div>
       <h1>Pit Wall</h1>
-      <p>iPhone Duo 256GB, Night Sky</p>
+      <p>iPhone Duo 256GB, Night Sky and Star White</p>
     </div>
   </div>
   <div class="hdr-right">
@@ -520,6 +530,16 @@ let lastState = {};
 let newestTrigger = null;
 let drive = {};   // store name -> { sec, mi } once your location and routes are known
 const miStr = mi => `${mi.toFixed(1)} mi`;
+// Colours being tracked (the bot saves its own list in state.colours)
+const PRIMARY = "MK1F4LL/A";
+let COLOURS = { "MK1F4LL/A": "Night Sky", "MK1E4LL/A": "Star White" };
+const colourName = p => COLOURS[p] || p;
+const swatch = p => `<i class="sw ${p === PRIMARY ? "sw-ns" : "sw-sw"}" aria-hidden="true"></i>`;
+// Status of one colour at one store, from either the new per-colour state or the old single status
+function stockOf(state, store, part) {
+  const v = (state.stock || {})[store];
+  return v && typeof v === "object" ? v[part] : (part === PRIMARY ? v : undefined);
+}
 const minStr = sec => { const m = Math.round(sec / 60); return m < 60 ? `${m} min` : `${Math.floor(m / 60)} h ${m % 60} min`; };
 let events = [], csvFetchedAt = 0;
 
@@ -550,8 +570,8 @@ function parseCsv(text) {
   if (!text) return [];
   // The bot writes Windows-style line endings (\r\n), so split on either
   return text.trim().split(/\r?\n/).slice(1).filter(Boolean).map(line => {
-    const [time, store, miles, status] = line.split(",").map(x => x.trim());
-    return { time, store, miles: parseFloat(miles), status };
+    const [time, store, miles, status, part] = line.split(",").map(x => x.trim());
+    return { time, store, miles: parseFloat(miles), status, part: part || PRIMARY };
   });
 }
 function rel(ms) {
@@ -635,11 +655,13 @@ function renderLights(state) {
     gantry.className = "panel gantry green";
     verdict.textContent = "Lights out";
     const near = green.slice().sort((a, b) => (drive[a]?.sec ?? 1e9) - (drive[b]?.sec ?? 1e9));
+    const colsAt = n => Object.entries(nearby[n].parts || { [PRIMARY]: "available" }).filter(([, v]) => v === "available").map(([p]) => colourName(p)).join(" and ");
+    const label = n => `${n} (${colsAt(n)})`;
     sub.textContent = drive[near[0]]
       ? (near.length === 1
-          ? `In stock at ${near[0]}, ${minStr(drive[near[0]].sec)} away. Go now.`
-          : `In stock at ${near.join(" and ")}. ${near[0]} is closest, ${minStr(drive[near[0]].sec)} away. Go now.`)
-      : `In stock at ${green.join(" and ")}. Go now.`;
+          ? `In stock at ${label(near[0])}, ${minStr(drive[near[0]].sec)} away. Go now.`
+          : `In stock at ${near.map(label).join(" and ")}. ${near[0]} is closest, ${minStr(drive[near[0]].sec)} away. Go now.`)
+      : `In stock at ${green.map(label).join(" and ")}. Go now.`;
     bagText.textContent = "Open bag and check out";
   } else {
     gantry.className = "panel gantry red";
@@ -683,9 +705,9 @@ function renderStores(state) {
         <div class="row-name">${esc(name)}</div>
         <div class="row-meta">${drive[name] ? `${minStr(drive[name].sec)} drive, ${miStr(drive[name].mi)} from you` : `${miStr(s.miles)} from ZIP 66217`}${s.city ? ", " + esc(s.city) : ""}</div>
         ${hrsText ? `<div class="row-meta">${hrsText}</div>` : ""}
-        ${s.quote ? `<div class="row-quote">${esc(s.quote)}</div>` : ""}
+        ${quoteFor(s) ? `<div class="row-quote">${esc(quoteFor(s))}</div>` : ""}
       </div>
-      <div class="status">${word}</div>
+      <div class="chips">${colourChips(s.parts || { [PRIMARY]: s.status })}</div>
       <div class="row-actions">
         <a href="${maps}">Directions</a>
         ${tel ? `<a href="${tel}">Call store</a>` : ""}
@@ -693,6 +715,17 @@ function renderStores(state) {
       </div>
     </div>`;
   }).join("");
+}
+
+function colourChips(parts) {
+  return Object.entries(parts).map(([p, st]) =>
+    `<span class="cchip ${st === "available" ? "in" : st === "unavailable" ? "" : "unk"}">${swatch(p)}${esc(colourName(p))}${st === "available" ? "" : st === "unavailable" ? ": none" : "?"}</span>`).join("");
+}
+function quoteFor(s) {
+  // Apple's pickup message for a colour that's in stock, otherwise the main colour's
+  const q = s.quotes || {};
+  const inStock = Object.entries(s.parts || {}).find(([, v]) => v === "available");
+  return (inStock && q[inStock[0]]) || q[PRIMARY] || s.quote || "";
 }
 
 function renderTelemetry(state) {
@@ -779,7 +812,7 @@ function renderTimeline() {
     const color = e.status === "available" ? "var(--green)" : e.status === "unavailable" ? "var(--signal)" : "var(--grey-2)";
     const word = e.status === "available" ? "In stock at" : e.status === "unavailable" ? "Sold out at" : esc(e.status) + " at";
     return `<div class="ev"><i style="background:${color}"></i>
-      <div>${word} <b>${esc(e.store)}</b></div><time>${prettyTime(e.time)}</time></div>`;
+      <div>${word} <b>${esc(e.store)}</b> <span class="tag-colour">${swatch(e.part)}${esc(colourName(e.part))}</span></div><time>${prettyTime(e.time)}</time></div>`;
   }).join("");
 }
 
@@ -1096,7 +1129,11 @@ function fieldStores(state) {
   const out = {};
   Object.entries(state.field || {}).forEach(([n, f]) => { out[n] = { ...f }; });
   events.forEach(e => {
-    if (!out[e.store]) out[e.store] = { miles: e.miles, status: (state.stock || {})[e.store] || e.status, city: "", state: "" };
+    if (!out[e.store]) {
+      const parts = Object.fromEntries(Object.keys(COLOURS).map(p => [p, stockOf(state, e.store, p)]).filter(([, v]) => v));
+      const any = Object.values(parts).includes("available");
+      out[e.store] = { miles: e.miles, status: any ? "available" : (parts[PRIMARY] || e.status), parts: Object.keys(parts).length ? parts : null, city: "", state: "" };
+    }
   });
   return Object.entries(out).filter(([, f]) => f.miles > MAX_MILES);
 }
@@ -1119,7 +1156,7 @@ function renderField(state) {
       const changed = lastChange(n);
       return `<div class="frow ${cls}">
         <div class="fname">${esc(n)}</div>
-        <div class="status">${cls === "available" ? "In stock" : "No stock"}</div>
+        <div class="status chips">${f.parts ? colourChips(f.parts) : (cls === "available" ? "In stock" : "No stock")}</div>
         <div class="fmeta">${Math.round(f.miles)} mi${where ? ", " + esc(where) : ""}${changed ? `, changed ${changed}` : ""}</div>
       </div>`;
     }).join("") +
@@ -1136,7 +1173,7 @@ function renderFarLog() {
     const color = e.status === "available" ? "var(--green)" : e.status === "unavailable" ? "var(--signal)" : "var(--grey-2)";
     const word = e.status === "available" ? "In stock at" : e.status === "unavailable" ? "Sold out at" : esc(e.status) + " at";
     return `<div class="ev"><i style="background:${color}"></i>
-      <div>${word} <b>${esc(e.store)}</b> <span style="color:var(--grey)">${Math.round(e.miles)} mi</span></div><time>${prettyTime(e.time)}</time></div>`;
+      <div>${word} <b>${esc(e.store)}</b> <span class="tag-colour">${swatch(e.part)}${esc(colourName(e.part))}, ${Math.round(e.miles)} mi</span></div><time>${prettyTime(e.time)}</time></div>`;
   }).join("");
 }
 document.querySelectorAll(".seg button").forEach(b => b.addEventListener("click", () => {
@@ -1151,11 +1188,12 @@ function restockSpans() {
   // Pair each store's first "available" with its next "unavailable"
   const open = {}, done = [];
   events.forEach(e => {
-    if (e.status === "available") { if (!open[e.store]) open[e.store] = e; }
-    else if (e.status === "unavailable" && open[e.store]) {
-      const start = open[e.store];
-      done.push({ store: e.store, miles: start.miles, start: start.time, mins: Math.max(1, Math.round((toDate(e.time) - toDate(start.time)) / 60000)) });
-      delete open[e.store];
+    const key = e.store + "|" + e.part;
+    if (e.status === "available") { if (!open[key]) open[key] = e; }
+    else if (e.status === "unavailable" && open[key]) {
+      const start = open[key];
+      done.push({ store: e.store, part: e.part, miles: start.miles, start: start.time, mins: Math.max(1, Math.round((toDate(e.time) - toDate(start.time)) / 60000)) });
+      delete open[key];
     }
   });
   return { done, open: Object.values(open) };
@@ -1164,20 +1202,21 @@ function renderDurations(state) {
   const el = document.getElementById("durations");
   const { done, open } = restockSpans();
   const stock = state.stock || {};
-  const live = open.filter(e => (stock[e.store] || e.status) === "available");
+  const live = open.filter(e => (stockOf(state, e.store, e.part) || e.status) === "available");
   if (!done.length && !live.length) { el.innerHTML = '<div class="empty">No finished restocks yet. Once a store sells out, you\'ll see how long its stock lasted.</div>'; return; }
   const mins = done.map(d => d.mins).sort((a, b) => a - b);
   const median = mins.length ? mins[Math.floor((mins.length - 1) / 2)] : null;
   const byStore = {};
-  done.forEach(d => { (byStore[d.store] = byStore[d.store] || { miles: d.miles, list: [] }).list.push(d); });
+  done.forEach(d => { const k = d.store + "|" + d.part; (byStore[k] = byStore[k] || { store: d.store, part: d.part, miles: d.miles, list: [] }).list.push(d); });
   const rows = [];
-  live.forEach(e => rows.push({ store: e.store, miles: e.miles, live: true,
+  live.forEach(e => rows.push({ store: e.store, part: e.part, miles: e.miles, live: true,
     val: `${Math.max(1, Math.round((Date.now() - toDate(e.time)) / 60000))} min`, sub: "in stock so far",
     meta: `Restocked ${prettyTime(e.time)}` }));
-  Object.entries(byStore).sort((a, b) => a[1].miles - b[1].miles).forEach(([store, v]) => {
+  Object.values(byStore).sort((a, b) => a.miles - b.miles).forEach(v => {
+    const store = v.store;
     const ms = v.list.map(d => d.mins);
     const last = v.list[v.list.length - 1];
-    rows.push({ store, miles: v.miles, live: false,
+    rows.push({ store, part: v.part, miles: v.miles, live: false,
       val: ms.length > 1 ? `${Math.min(...ms)}–${Math.max(...ms)} min` : `${ms[0]} min`,
       sub: ms.length > 1 ? `${ms.length} restocks` : "1 restock",
       meta: `Last: ${prettyTime(last.start)}, lasted ${last.mins} min` });
@@ -1187,7 +1226,7 @@ function renderDurations(state) {
     rows.map(r => `<div class="drow${r.live ? " d-live" : ""}${r.miles <= MAX_MILES ? " near" : ""}">
       <div class="dname">${esc(r.store)}</div>
       <div class="dval">${r.val}<small>${r.sub}</small></div>
-      <div class="dmeta">${Math.round(r.miles)} mi, ${esc(r.meta)}</div>
+      <div class="dmeta">${swatch(r.part)}${esc(colourName(r.part))}, ${Math.round(r.miles)} mi, ${esc(r.meta)}</div>
     </div>`).join("");
 }
 
@@ -1242,6 +1281,7 @@ async function load() {
     if (csvText !== undefined) { events = parseCsv(csvText); csvFetchedAt = Date.now(); }
     const state = stateText ? JSON.parse(stateText) : {};
     lastState = state;
+    if (state.colours) COLOURS = state.colours;
     lastRun = run ? run.run : null;
     nextQueued = run ? run.queued : false;
     newestTrigger = run && run.newest ? new Date(run.newest) : null;

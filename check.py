@@ -1,15 +1,23 @@
 import os, json, csv, time, datetime, requests
 from zoneinfo import ZoneInfo
 
-PART = os.environ["PART"]
+PART = os.environ["PART"]          # the main colour (Night Sky), from the repo secret
 ZIP = os.environ["ZIP"]
 TEST = os.environ.get("TEST") == "true"
 # Try mode: check a different part number for real (no fake stock),
 # send real alerts, but leave the saved data untouched.
 TRY_PART = os.environ.get("TRY_PART", "").strip().upper()
-if TRY_PART:
-    PART = TRY_PART
 DRY = TEST or bool(TRY_PART)  # never save data in test or try mode
+
+# Every colour being watched. Apple answers for all of them in one request.
+COLOURS = {"MK1F4LL/A": "Night Sky", "MK1E4LL/A": "Star White"}
+PARTS = [TRY_PART] if TRY_PART else [PART] + [p for p in COLOURS if p != PART]
+PRIMARY = PART
+
+
+def colour(part):
+    return COLOURS.get(part, part)
+
 
 TOPIC = "aryak-duo-256-night-sky"
 MAX_MILES = 50          # only stores this close send stock alerts
@@ -28,6 +36,7 @@ TZ = ZoneInfo("America/Chicago")
 DATA_DIR = os.environ.get("DATA_DIR", ".")   # the workflow points this at the data branch
 STATE_FILE = os.path.join(DATA_DIR, "state.json")
 LOG_FILE = os.path.join(DATA_DIR, "restocks.csv")
+LOG_FIELDS = ["time", "store", "miles", "status", "part"]
 
 BAG = "https://www.apple.com/shop/bag"
 BUY = "https://www.apple.com/shop/buy-iphone"
@@ -64,41 +73,61 @@ def parse_time(s):
 def read_log():
     try:
         with open(LOG_FILE, newline="") as f:
-            return [r for r in csv.DictReader(f) if r.get("time")]
+            rows = [r for r in csv.DictReader(f) if r.get("time")]
     except FileNotFoundError:
         return []
+    for r in rows:                      # rows from before colours were tracked are Night Sky
+        r["part"] = (r.get("part") or "").strip() or PRIMARY
+    return rows
 
 
+def upgrade_log():
+    """Add the 'part' column to a log written before both colours were tracked."""
+    if DRY or not os.path.exists(LOG_FILE):
+        return
+    with open(LOG_FILE, newline="") as f:
+        header = next(csv.reader(f), [])
+    if "part" in header:
+        return
+    rows = read_log()
+    with open(LOG_FILE, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=LOG_FIELDS, extrasaction="ignore")
+        w.writeheader()
+        w.writerows(rows)
+    print("Restock log upgraded with a colour column")
+
+
+upgrade_log()
 log_rows = read_log()
 
 
-def log_event(store, miles, status):
+def log_event(store, miles, status, part):
     stamp = now().strftime("%Y-%m-%d %H:%M")
     new_file = not os.path.exists(LOG_FILE)
     with open(LOG_FILE, "a", newline="") as f:
         w = csv.writer(f)
         if new_file:
-            w.writerow(["time", "store", "miles", "status"])
-        w.writerow([stamp, store, miles, status])
-    log_rows.append({"time": stamp, "store": store, "miles": str(miles), "status": status})
+            w.writerow(LOG_FIELDS)
+        w.writerow([stamp, store, miles, status, part])
+    log_rows.append({"time": stamp, "store": store, "miles": str(miles), "status": status, "part": part})
 
 
 def durations():
-    """Minutes each restock lasted, per store: first 'available' to the next 'unavailable'."""
+    """Minutes each restock lasted, per (store, colour): first 'available' to the next 'unavailable'."""
     opened, out = {}, {}
     for r in log_rows:
-        store, t = r["store"], parse_time(r["time"])
+        key, t = (r["store"], r["part"]), parse_time(r["time"])
         if r["status"] == "available":
-            opened.setdefault(store, t)
-        elif r["status"] == "unavailable" and store in opened:
-            mins = (t - opened.pop(store)).total_seconds() / 60
-            out.setdefault(store, []).append(max(1, round(mins)))
+            opened.setdefault(key, t)
+        elif r["status"] == "unavailable" and key in opened:
+            mins = (t - opened.pop(key)).total_seconds() / 60
+            out.setdefault(key, []).append(max(1, round(mins)))
     return out
 
 
-def lasting_hint(store):
+def lasting_hint(store, part):
     d = durations()
-    own = d.get(store)
+    own = d.get((store, part))
     if own:
         if len(own) == 1:
             return f"Last time it lasted about {own[0]} min."
@@ -110,7 +139,7 @@ def lasting_hint(store):
 
 
 def wave_now(at):
-    """Stores that restocked within the last WAVE_WINDOW minutes, newest restock time."""
+    """Stores that restocked (either colour) within the last WAVE_WINDOW minutes, newest restock time."""
     cutoff = at - datetime.timedelta(minutes=WAVE_WINDOW)
     stores, latest = [], None
     for r in log_rows:
@@ -124,14 +153,19 @@ def wave_now(at):
     return stores, latest
 
 
-def store_details(st, info, miles, status):
+def store_details(st, parts, miles):
     hours = (st.get("storeHours") or {}).get("hours") or []
-    quote = (((info.get("messageTypes") or {}).get("regular") or {})
-             .get("storePickupQuote", ""))
+    quotes = {}
+    for p in PARTS:
+        info = (st.get("partsAvailability") or {}).get(p, {})
+        quotes[p] = (((info.get("messageTypes") or {}).get("regular") or {}).get("storePickupQuote", ""))
+    any_in = any(s == "available" for s in parts.values())
     return {
         "miles": miles,
-        "status": status,
-        "quote": quote,
+        "status": "available" if any_in else (parts.get(PARTS[0]) or "unknown"),
+        "parts": parts,
+        "quotes": quotes,
+        "quote": quotes.get(PARTS[0], ""),
         "phone": st.get("phoneNumber", ""),
         "lat": st.get("storelatitude"),
         "lon": st.get("storelongitude"),
@@ -151,6 +185,10 @@ except Exception:
 for key, default in [("stock", {}), ("nearby", {}), ("field", {}), ("history", []),
                      ("checks", 0), ("errors", 0), ("events", 0)]:
     state.setdefault(key, default)
+# Older state kept one status per store (Night Sky); now it's one per colour
+for name, v in list(state["stock"].items()):
+    if isinstance(v, str):
+        state["stock"][name] = {PRIMARY: v}
 
 # Night mode: 10pm-7am, roughly one check every 15 minutes
 t = now()
@@ -197,6 +235,8 @@ def update_wave():
 
 # ---------- check loop ----------
 alerted, failures, attempts = set(), 0, 0
+params = {f"parts.{i}": p for i, p in enumerate(PARTS)}
+params["location"] = ZIP
 i = -1
 while True:
     i += 1
@@ -205,58 +245,69 @@ while True:
     lap = {"t": now().isoformat(timespec="seconds"), "ok": False, "ms": None, "code": None}
     try:
         r = requests.get("https://www.apple.com/shop/retail/pickup-message",
-            headers=headers, timeout=20,
-            params={"parts.0": PART, "location": ZIP})
+            headers=headers, timeout=20, params=params)
         lap["ms"] = round((time.monotonic() - started) * 1000)
         lap["code"] = r.status_code
         stores = r.json()["body"]["stores"]
-        nearby, field = {}, {}
+        nearby, field, products = {}, {}, {}
         for st in stores:
             name = st["storeName"]
             miles = float(st.get("storedistance", 999))
-            info = st.get("partsAvailability", {}).get(PART, {})
-            status = info.get("pickupDisplay", "unknown")
+            parts = {}
+            for part in PARTS:
+                info = (st.get("partsAvailability") or {}).get(part, {})
+                status = info.get("pickupDisplay", "unknown")
+                parts[part] = status
+                title = (((info.get("messageTypes") or {}).get("regular") or {})
+                         .get("storePickupProductTitle"))
+                if title:
+                    products[part] = title
+
+                if not DRY:
+                    prev = state["stock"].get(name, {}).get(part)
+                    if prev is not None and prev != status:
+                        log_event(name, miles, status, part)
+                        state["events"] += 1
+
+                if TRY_PART:
+                    print(f"  {name} ({miles} mi): {status} [{title or part}]")
+
+                in_stock = status == "available" or (TEST and part == PARTS[0])
+                if miles <= MAX_MILES and in_stock and (name, part) not in alerted:
+                    if TRY_PART:
+                        t_title = f"[TRY] {title or part} in stock: {name}"
+                        body = (f"Try mode with {part}: Apple shows it available at {name} "
+                                f"({miles} mi). Your Duo bot is working end to end.")
+                    else:
+                        tag = "[TEST] " if TEST else ""
+                        t_title = f"{tag}Duo {colour(part)} in stock: {name}"
+                        body = (f"{colour(part)} 256GB at Apple {name} ({miles} mi). "
+                                f"Tap to open your bag, choose pickup at {name}. "
+                                f"{lasting_hint(name, part)}").strip()
+                    push(t_title, body, actions=f"view, Open Bag, {BAG}; view, Buy page, {BUY}")
+                    alerted.add((name, part))
 
             if not DRY:
-                prev = state["stock"].get(name)
-                if prev is not None and prev != status:
-                    log_event(name, miles, status)
-                    state["events"] += 1
-                state["stock"][name] = status
+                state["stock"][name] = parts
+                any_in = any(s == "available" for s in parts.values())
                 if miles <= MAX_MILES:
-                    nearby[name] = store_details(st, info, miles, status)
-                field[name] = {"miles": miles, "status": status,
-                               "city": st.get("city", ""), "state": st.get("state", "")}
-
-            product = (((info.get("messageTypes") or {}).get("regular") or {})
-                       .get("storePickupProductTitle") or "iPhone Duo 256GB Night Sky")
-            if TRY_PART:
-                print(f"  {name} ({miles} mi): {status} [{product}]")
-
-            in_stock = status == "available" or TEST
-            if miles <= MAX_MILES and in_stock and name not in alerted:
-                if TRY_PART:
-                    title = f"[TRY] {product} in stock: {name}"
-                    body = (f"Try mode with {PART}: Apple shows it available at {name} "
-                            f"({miles} mi). Your Duo bot is working end to end.")
-                else:
-                    tag = "[TEST] " if TEST else ""
-                    title = f"{tag}Duo in stock: {name}"
-                    body = (f"Night Sky 256GB at Apple {name} ({miles} mi). "
-                            f"Tap to open your bag, choose pickup at {name}. {lasting_hint(name)}").strip()
-                push(title, body, actions=f"view, Open Bag, {BAG}; view, Buy page, {BUY}")
-                alerted.add(name)
+                    nearby[name] = store_details(st, parts, miles)
+                field[name] = {"miles": miles, "status": "available" if any_in else parts.get(PARTS[0], "unknown"),
+                               "parts": parts, "city": st.get("city", ""), "state": st.get("state", "")}
 
         lap["ok"] = True
         lap["green"] = sorted(n for n, s in nearby.items() if s["status"] == "available")
         if not DRY:
             state["nearby"] = nearby
             state["field"] = field
+            state["products"] = products     # Apple's own names for each part, to confirm part numbers
+            state["colours"] = {p: colour(p) for p in PARTS}
             state["last_check"] = now().isoformat()
             update_wave()
         state["checks"] += 1
         print(f"Check {i+1}: {r.status_code} in {lap['ms']} ms, "
-              f"alerted: {sorted(alerted) or 'none'}{', burst' if burst_active() else ''}")
+              f"alerted: {sorted(f'{n} ({colour(p)})' for n, p in alerted) or 'none'}"
+              f"{', burst' if burst_active() else ''}")
     except Exception as e:
         failures += 1
         state["errors"] += 1
