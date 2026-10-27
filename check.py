@@ -7,6 +7,7 @@ TEST = os.environ.get("TEST") == "true"
 TOPIC = "aryak-duo-256-night-sky"
 MAX_MILES = 50
 GAP = 60
+HISTORY = 60  # checks kept for the lap chart
 TZ = ZoneInfo("America/Chicago")
 STATE_FILE = "state.json"
 LOG_FILE = "restocks.csv"
@@ -40,17 +41,32 @@ def log_event(store, miles, status):
             w.writerow(["time", "store", "miles", "status"])
         w.writerow([now().strftime("%Y-%m-%d %H:%M"), store, miles, status])
 
+def store_details(st, info, miles, status):
+    hours = (st.get("storeHours") or {}).get("hours") or []
+    quote = (((info.get("messageTypes") or {}).get("regular") or {})
+             .get("storePickupQuote", ""))
+    return {
+        "miles": miles,
+        "status": status,
+        "quote": quote,
+        "phone": st.get("phoneNumber", ""),
+        "lat": st.get("storelatitude"),
+        "lon": st.get("storelongitude"),
+        "address": (st.get("address") or {}).get("address2", ""),
+        "city": st.get("city", ""),
+        "hours": [{"days": h.get("storeDays", ""), "time": h.get("storeTimings", "")}
+                  for h in hours],
+    }
+
 # Load saved state
 try:
     with open(STATE_FILE) as f:
         state = json.load(f)
 except Exception:
     state = {}
-state.setdefault("stock", {})
-state.setdefault("nearby", {})
-state.setdefault("checks", 0)
-state.setdefault("errors", 0)
-state.setdefault("events", 0)
+for key, default in [("stock", {}), ("nearby", {}), ("history", []),
+                     ("checks", 0), ("errors", 0), ("events", 0)]:
+    state.setdefault(key, default)
 
 # Night mode: 10pm-7am, roughly one check every 15 minutes
 t = now()
@@ -62,10 +78,14 @@ CHECKS = 1 if (TEST or night) else 5
 
 alerted, failures = set(), 0
 for i in range(CHECKS):
+    started = time.monotonic()
+    lap = {"t": now().isoformat(timespec="seconds"), "ok": False, "ms": None, "code": None}
     try:
         r = requests.get("https://www.apple.com/shop/retail/pickup-message",
             headers=headers, timeout=20,
             params={"parts.0": PART, "location": ZIP})
+        lap["ms"] = round((time.monotonic() - started) * 1000)
+        lap["code"] = r.status_code
         stores = r.json()["body"]["stores"]
         nearby = {}
         for st in stores:
@@ -81,7 +101,7 @@ for i in range(CHECKS):
                     state["events"] += 1
                 state["stock"][name] = status
                 if miles <= MAX_MILES:
-                    nearby[name] = {"miles": miles, "status": status}
+                    nearby[name] = store_details(st, info, miles, status)
 
             in_stock = status == "available" or TEST
             if miles <= MAX_MILES and in_stock and name not in alerted:
@@ -92,15 +112,21 @@ for i in range(CHECKS):
                      actions=f"view, Open Bag, {BAG}; view, Buy page, {BUY}")
                 alerted.add(name)
 
+        lap["ok"] = True
+        lap["green"] = sorted(n for n, s in nearby.items() if s["status"] == "available")
         if not TEST:
             state["nearby"] = nearby
             state["last_check"] = now().isoformat()
         state["checks"] += 1
-        print(f"Check {i+1}: {r.status_code}, alerted: {sorted(alerted) or 'none'}")
+        print(f"Check {i+1}: {r.status_code} in {lap['ms']} ms, alerted: {sorted(alerted) or 'none'}")
     except Exception as e:
         failures += 1
         state["errors"] += 1
+        if lap["ms"] is None:
+            lap["ms"] = round((time.monotonic() - started) * 1000)
         print(f"Check {i+1}: error {e}")
+    if not TEST:
+        state["history"] = (state["history"] + [lap])[-HISTORY:]
     if i < CHECKS - 1:
         time.sleep(GAP)
 
