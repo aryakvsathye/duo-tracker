@@ -379,7 +379,7 @@
     </section>
 
     <section class="section">
-      <div class="section-head"><h2>Timing tower</h2><span>Stores within 50 mi, nearest first</span></div>
+      <div class="section-head"><h2>Timing tower</h2><span id="towerNote">Stores within 50 mi, nearest first</span></div>
       <div class="panel tower" id="stores"><div class="empty">Loading stores</div></div>
     </section>
   </div>
@@ -447,6 +447,10 @@ const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const API = `https://api.github.com/repos/${OWNER}/${REPO}`;
 
 let lastCheckAt = null, fetchedAt = null, lastRun = null, nextQueued = false;
+let lastState = {};
+let drive = {};   // store name -> { sec, mi } once your location and routes are known
+const miStr = mi => `${mi.toFixed(1)} mi`;
+const minStr = sec => { const m = Math.round(sec / 60); return m < 60 ? `${m} min` : `${Math.floor(m / 60)} h ${m % 60} min`; };
 let events = [], csvFetchedAt = 0;
 
 /* ---------- helpers ---------- */
@@ -554,7 +558,12 @@ function renderLights(state) {
   } else if (green.length) {
     gantry.className = "panel gantry green";
     verdict.textContent = "Lights out";
-    sub.textContent = `In stock at ${green.join(" and ")}. Go now.`;
+    const near = green.slice().sort((a, b) => (drive[a]?.sec ?? 1e9) - (drive[b]?.sec ?? 1e9));
+    sub.textContent = drive[near[0]]
+      ? (near.length === 1
+          ? `In stock at ${near[0]}, ${minStr(drive[near[0]].sec)} away. Go now.`
+          : `In stock at ${near.join(" and ")}. ${near[0]} is closest, ${minStr(drive[near[0]].sec)} away. Go now.`)
+      : `In stock at ${green.join(" and ")}. Go now.`;
     bagText.textContent = "Open bag and check out";
   } else {
     gantry.className = "panel gantry red";
@@ -566,7 +575,13 @@ function renderLights(state) {
 
 function renderStores(state) {
   const nearby = state.nearby || {};
-  const names = Object.keys(nearby).sort((a, b) => nearby[a].miles - nearby[b].miles);
+  const located = Object.keys(nearby).some(n => drive[n]);
+  const names = Object.keys(nearby).sort((a, b) => located
+    ? (drive[a]?.sec ?? 1e9) - (drive[b]?.sec ?? 1e9)
+    : nearby[a].miles - nearby[b].miles);
+  document.getElementById("towerNote").textContent = located
+    ? "Stores within 50 mi, fastest drive first"
+    : "Stores within 50 mi, nearest first";
   const el = document.getElementById("stores");
   if (!names.length) { el.innerHTML = '<div class="empty">Stores appear here after the next check finishes.</div>'; return; }
   el.innerHTML = names.map((name, i) => {
@@ -581,7 +596,7 @@ function renderStores(state) {
       <div class="pos">P${i + 1}</div>
       <div class="row-main">
         <div class="row-name">${esc(name)}</div>
-        <div class="row-meta">${s.miles.toFixed(1)} mi${s.city ? ", " + esc(s.city) : ""}</div>
+        <div class="row-meta">${drive[name] ? `${minStr(drive[name].sec)} drive, ${miStr(drive[name].mi)} from you` : `${miStr(s.miles)} from ZIP 66217`}${s.city ? ", " + esc(s.city) : ""}</div>
         ${hrsText ? `<div class="row-meta">${hrsText}</div>` : ""}
         ${s.quote ? `<div class="row-quote">${esc(s.quote)}</div>` : ""}
       </div>
@@ -864,8 +879,11 @@ async function planRoutes() {
       return { name, sec: rt.duration, meters: rt.distance, coords: rt.geometry.coordinates, steps: (rt.legs[0] || {}).steps || [] };
     }));
     routes.sort((a, b) => a.sec - b.sec);
+    drive = Object.fromEntries(routes.map(r => [r.name, { sec: r.sec, mi: r.meters / 1609.34 }]));
     setRouteMsg("");
     drawTrack();
+    renderLights(lastState);
+    renderStores(lastState);
   } catch (e) {
     setRouteMsg("Couldn't plan routes right now. Tap Locate me to try again.");
   }
@@ -986,6 +1004,7 @@ async function load() {
     ]);
     if (csvText !== undefined) { events = parseCsv(csvText); csvFetchedAt = Date.now(); }
     const state = stateText ? JSON.parse(stateText) : {};
+    lastState = state;
     lastRun = run ? run.run : null;
     nextQueued = run ? run.queued : false;
     renderLights(state);
