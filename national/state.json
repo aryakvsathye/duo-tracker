@@ -4113,17 +4113,14 @@
    "metro": "Honolulu",
    "tier": 3,
    "miles": 0.4,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "Pacific/Honolulu",
    "region": "Pacific",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-10-27 14:37"
-   },
-   "since": "2026-10-27 14:37"
+   "since_by_part": {}
   },
   "R210": {
    "name": "Kahala",
@@ -4180,8 +4177,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-27T14:42:54.835130-05:00",
- "sweep_seconds": 163,
+ "last_sweep": "2026-10-27T14:48:03.173362-05:00",
+ "sweep_seconds": 170,
  "metros_ok": 50,
  "metros": [
   {
