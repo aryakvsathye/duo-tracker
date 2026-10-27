@@ -7,109 +7,163 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Pit Wall">
-<meta name="theme-color" content="#0a0c10">
+<meta name="theme-color" content="#07080b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0a0c10;
-    --panel: #12151c;
-    --panel-2: #181c25;
-    --line: #232937;
-    --text: #e8ecf3;
-    --muted: #7d8699;
+    --bg: #07080b;
+    --panel: #10131a;
+    --panel-2: #161a23;
+    --line: #222838;
+    --text: #e9edf4;
+    --muted: #7a8396;
     --green: #22e07a;
-    --red: #ff3b4e;
+    --red: #ff2d45;
     --amber: #ffb020;
-    --grey: #4a5266;
-    --accent: #ff3b4e;
+    --purple: #b46cff;
+    --grey: #3d4457;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: var(--bg); }
   body {
-    background: var(--bg);
+    background:
+      radial-gradient(120% 60% at 50% -10%, rgba(255,45,69,0.10), transparent 60%),
+      var(--bg);
     color: var(--text);
     font-family: Inter, -apple-system, system-ui, sans-serif;
-    padding: max(16px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
+    padding: max(14px, env(safe-area-inset-top)) 16px max(28px, env(safe-area-inset-bottom));
     max-width: 640px;
     margin: 0 auto;
+    min-height: 100vh;
     -webkit-font-smoothing: antialiased;
   }
+  body.green {
+    background:
+      radial-gradient(120% 60% at 50% -10%, rgba(34,224,122,0.22), transparent 60%),
+      var(--bg);
+  }
   .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
- 
-  header { display: flex; align-items: flex-end; justify-content: space-between; margin: 8px 0 18px; }
-  .brand { font-weight: 800; font-size: 22px; letter-spacing: 0.04em; }
-  .brand span { color: var(--accent); }
-  .sub { color: var(--muted); font-size: 13px; margin-top: 2px; }
+
+  header { display: flex; align-items: center; justify-content: space-between; margin: 6px 0 14px; }
+  .brand { font-weight: 900; font-size: 20px; letter-spacing: 0.05em; font-style: italic; }
+  .brand span { color: var(--red); }
+  body.green .brand span { color: var(--green); }
+  .sub { color: var(--muted); font-size: 12px; margin-top: 2px; }
   .live { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--muted); letter-spacing: 0.12em; }
   .live i { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 10px var(--green); animation: pulse 1.6s infinite; }
   .live.stale i { background: var(--amber); box-shadow: 0 0 10px var(--amber); }
   .live.down i { background: var(--red); box-shadow: 0 0 10px var(--red); }
   @keyframes pulse { 50% { opacity: 0.3; } }
- 
-  .label { font-size: 11px; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; margin: 22px 0 10px; }
- 
-  .stores { display: grid; gap: 10px; }
-  .store {
-    background: var(--panel);
+
+  /* Start lights */
+  .gantry {
+    background: linear-gradient(#0d0f14, #090b0f);
     border: 1px solid var(--line);
-    border-radius: 14px;
-    padding: 16px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: 4px 12px;
-    position: relative;
-    overflow: hidden;
+    border-radius: 18px;
+    padding: 18px 14px 16px;
+    text-align: center;
   }
-  .store::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--grey); }
-  .store.available::before { background: var(--green); box-shadow: 0 0 24px var(--green); }
-  .store.unavailable::before { background: var(--red); }
-  .store .name { font-weight: 600; font-size: 17px; }
-  .store .meta { color: var(--muted); font-size: 12px; grid-column: 1; }
-  .lights { display: flex; gap: 5px; grid-row: 1 / span 2; grid-column: 2; }
-  .lights b { width: 14px; height: 14px; border-radius: 50%; background: #2a0d12; }
-  .available .lights b { background: var(--green); box-shadow: 0 0 12px var(--green); }
-  .unavailable .lights b { background: var(--red); box-shadow: 0 0 8px rgba(255,59,78,0.6); }
-  .unknown .lights b { background: var(--grey); }
-  .store .state { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; grid-column: 1; }
-  .available .state { color: var(--green); }
-  .unavailable .state { color: var(--red); }
-  .unknown .state { color: var(--muted); }
- 
+  .lights { display: flex; justify-content: center; gap: 10px; }
+  .pod { background: #050608; border-radius: 12px; padding: 7px 6px; display: grid; gap: 6px; border: 1px solid #1a1e29; }
+  .bulb { width: 34px; height: 34px; border-radius: 50%; background: #1b0a0e; transition: background 0.4s, box-shadow 0.4s; }
+  .bulb.dim { background: #14171f; }
+  .gantry.red .bulb.lit { background: var(--red); box-shadow: 0 0 16px var(--red), inset 0 -4px 8px rgba(0,0,0,0.35); animation: sweep 5s infinite; }
+  .gantry.red .pod:nth-child(2) .bulb.lit { animation-delay: 0.25s; }
+  .gantry.red .pod:nth-child(3) .bulb.lit { animation-delay: 0.5s; }
+  .gantry.red .pod:nth-child(4) .bulb.lit { animation-delay: 0.75s; }
+  .gantry.red .pod:nth-child(5) .bulb.lit { animation-delay: 1s; }
+  @keyframes sweep { 0%, 70%, 100% { filter: brightness(0.75); } 80% { filter: brightness(1.25); } }
+  .gantry.green .bulb.lit { background: var(--green); box-shadow: 0 0 22px var(--green), inset 0 -4px 8px rgba(0,0,0,0.3); animation: go 0.9s infinite alternate; }
+  @keyframes go { to { filter: brightness(1.35); } }
+  .gantry.idle .bulb.lit { background: #2a2f3d; }
+  .verdict { margin-top: 14px; font-weight: 900; font-style: italic; font-size: 26px; letter-spacing: 0.03em; }
+  .gantry.red .verdict { color: var(--text); }
+  .gantry.green .verdict { color: var(--green); text-shadow: 0 0 18px rgba(34,224,122,0.6); }
+  .verdict-sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
   .bag {
-    display: block; text-align: center; margin-top: 12px;
-    padding: 15px; border-radius: 14px; font-weight: 800; letter-spacing: 0.06em;
+    display: block; text-align: center; margin-top: 14px;
+    padding: 14px; border-radius: 12px; font-weight: 800; letter-spacing: 0.08em; font-size: 14px;
     text-decoration: none; color: var(--muted); background: var(--panel-2); border: 1px solid var(--line);
   }
-  .bag.go { color: #04120a; background: var(--green); border-color: var(--green); box-shadow: 0 0 30px rgba(34,224,122,0.4); }
- 
+  .gantry.green .bag { color: #03110a; background: var(--green); border-color: var(--green); box-shadow: 0 0 30px rgba(34,224,122,0.45); }
+
+  .label { display: flex; justify-content: space-between; align-items: baseline; font-size: 11px; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; margin: 24px 2px 10px; }
+  .label em { font-style: normal; letter-spacing: 0.04em; text-transform: none; }
+
+  /* Race control */
+  .rc { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px; display: grid; grid-template-columns: 1fr auto; gap: 6px 12px; align-items: center; }
+  .flag { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; letter-spacing: 0.08em; font-size: 13px; }
+  .flag i { width: 22px; height: 15px; border-radius: 2px; background: var(--grey); }
+  .flag.running i { background: var(--green); animation: pulse 1.2s infinite; }
+  .flag.queued i { background: var(--amber); }
+  .flag.done i { background: repeating-conic-gradient(#fff 0 25%, #111 0 50%) 0 0 / 7.5px 7.5px; }
+  .flag.fail i { background: var(--red); }
+  .rc .detail { color: var(--muted); font-size: 12px; grid-column: 1; }
+  .rc .next { grid-row: 1 / span 2; grid-column: 2; text-align: right; }
+  .rc .next b { display: block; font-size: 24px; font-weight: 700; }
+  .rc .next span { font-size: 10px; color: var(--muted); letter-spacing: 0.12em; }
+
+  /* Stores */
+  .stores { display: grid; gap: 10px; }
+  .store { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px 14px 12px 18px; position: relative; overflow: hidden; }
+  .store::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--grey); }
+  .store.available { border-color: rgba(34,224,122,0.5); }
+  .store.available::before { background: var(--green); box-shadow: 0 0 24px var(--green); }
+  .store.unavailable::before { background: var(--red); }
+  .store .top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+  .store .name { font-weight: 700; font-size: 17px; }
+  .pill { font-size: 10px; font-weight: 800; letter-spacing: 0.12em; padding: 4px 8px; border-radius: 99px; white-space: nowrap; }
+  .available .pill { background: rgba(34,224,122,0.15); color: var(--green); }
+  .unavailable .pill { background: rgba(255,45,69,0.12); color: var(--red); }
+  .unknown .pill { background: var(--panel-2); color: var(--muted); }
+  .store .meta { color: var(--muted); font-size: 12px; margin-top: 4px; }
+  .store .quote { font-size: 12px; margin-top: 8px; color: #b9c0cf; }
+  .store .row { display: flex; gap: 8px; margin-top: 12px; }
+  .store .row a { flex: 1; text-align: center; font-size: 12px; font-weight: 600; padding: 9px 6px; border-radius: 10px; background: var(--panel-2); border: 1px solid var(--line); color: var(--text); text-decoration: none; }
+  .open { color: var(--green); } .closed { color: var(--muted); }
+
+  /* Tiles */
   .telemetry { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .tile { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
   .tile .k { font-size: 10px; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; }
   .tile .v { font-size: 20px; font-weight: 700; margin-top: 4px; }
   .tile .v.small { font-size: 15px; }
-  .ok { color: var(--green); } .warn { color: var(--amber); } .bad { color: var(--red); }
- 
+  .ok { color: var(--green); } .warn { color: var(--amber); } .bad { color: var(--red); } .pb { color: var(--purple); }
+
+  /* Lap chart */
+  .laps { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
+  .bars { display: flex; align-items: flex-end; gap: 2px; height: 80px; }
+  .bars div { flex: 1; min-width: 2px; border-radius: 2px 2px 0 0; background: #2b3346; }
+  .bars div.fast { background: var(--purple); box-shadow: 0 0 6px rgba(180,108,255,0.6); }
+  .bars div.lapfail { background: var(--red); opacity: 0.85; }
+  .bars div.green { background: var(--green); box-shadow: 0 0 6px var(--green); }
+  .laps-legend { display: flex; gap: 14px; margin-top: 10px; font-size: 11px; color: var(--muted); flex-wrap: wrap; }
+  .laps-legend i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
+
+  /* Heatmap */
   .heat { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px; overflow: hidden; }
   .grid { display: grid; grid-template-columns: 28px repeat(24, 1fr); gap: 2px; }
   .grid .d { font-size: 9px; color: var(--muted); display: flex; align-items: center; }
   .grid .c { aspect-ratio: 1; border-radius: 2px; background: var(--panel-2); }
+  .grid .c.now { outline: 1px solid var(--muted); }
   .hours { display: grid; grid-template-columns: 28px repeat(24, 1fr); gap: 2px; margin-top: 4px; font-size: 8px; color: var(--muted); }
-  .heat-note { font-size: 12px; color: var(--muted); margin-top: 10px; }
- 
+  .note { font-size: 12px; color: var(--muted); margin-top: 10px; }
+
+  /* Timeline */
   .timeline { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
   .ev { display: grid; grid-template-columns: 14px 1fr auto; gap: 10px; align-items: center; padding: 11px 14px; border-bottom: 1px solid var(--line); font-size: 13px; }
   .ev:last-child { border-bottom: none; }
   .ev i { width: 8px; height: 8px; border-radius: 50%; }
   .ev .t { color: var(--muted); font-size: 11px; }
   .empty { padding: 16px; color: var(--muted); font-size: 13px; text-align: center; }
- 
+
   .err { background: #2a0d12; border: 1px solid var(--red); color: #ffb3bb; padding: 12px 14px; border-radius: 12px; font-size: 13px; margin-bottom: 12px; display: none; }
-  footer { color: var(--muted); font-size: 11px; text-align: center; margin-top: 24px; }
+  footer { color: var(--muted); font-size: 11px; text-align: center; margin-top: 26px; line-height: 1.6; }
 </style>
 </head>
 <body>
- 
+
 <header>
   <div>
     <div class="brand">DUO <span>PIT WALL</span></div>
@@ -117,52 +171,87 @@
   </div>
   <div class="live mono" id="live"><i></i><span id="liveText">CONNECTING</span></div>
 </header>
- 
+
 <div class="err" id="err"></div>
- 
-<div class="label">Grid · stores within 50 mi</div>
+
+<section class="gantry idle" id="gantry">
+  <div class="lights" id="lights"></div>
+  <div class="verdict" id="verdict">WAITING FOR DATA</div>
+  <div class="verdict-sub" id="verdictSub">&nbsp;</div>
+  <a class="bag" id="bag" href="https://www.apple.com/shop/bag">OPEN BAG</a>
+</section>
+
+<div class="label">Race control <em class="mono" id="runNo"></em></div>
+<div class="rc">
+  <div class="flag" id="flag"><i></i><span id="flagText">–</span></div>
+  <div class="detail" id="runDetail">–</div>
+  <div class="next mono"><b id="countdown">–:––</b><span>NEXT RUN</span></div>
+</div>
+
+<div class="label">Grid <em>stores within 50 mi</em></div>
 <div class="stores" id="stores"><div class="empty">Loading…</div></div>
-<a class="bag" id="bag" href="https://www.apple.com/shop/bag">NO STOCK · OPEN BAG</a>
- 
+
 <div class="label">Telemetry</div>
 <div class="telemetry">
   <div class="tile"><div class="k">Last check</div><div class="v mono" id="lastCheck">–</div></div>
   <div class="tile"><div class="k">Session</div><div class="v small" id="mode">–</div></div>
-  <div class="tile"><div class="k">Checks since 8am ping</div><div class="v mono" id="checks">–</div></div>
+  <div class="tile"><div class="k">Checks since 8am</div><div class="v mono" id="checks">–</div></div>
   <div class="tile"><div class="k">Errors</div><div class="v mono" id="errors">–</div></div>
 </div>
- 
-<div class="label">Restock heatmap · when stock appears</div>
+
+<div class="label">Lap times <em class="mono" id="lapSummary"></em></div>
+<div class="laps">
+  <div class="bars" id="bars"></div>
+  <div class="laps-legend">
+    <span><i style="background:#2b3346"></i>Lap</span>
+    <span><i style="background:var(--purple)"></i>Fastest</span>
+    <span><i style="background:var(--green)"></i>Stock seen</span>
+    <span><i style="background:var(--red)"></i>Failed</span>
+  </div>
+</div>
+
+<div class="label">Restock heatmap</div>
 <div class="heat">
   <div class="grid" id="heat"></div>
   <div class="hours mono" id="hours"></div>
-  <div class="heat-note" id="heatNote"></div>
+  <div class="note" id="heatNote"></div>
 </div>
- 
+
 <div class="label">Race log</div>
 <div class="timeline" id="timeline"><div class="empty">Loading…</div></div>
- 
-<footer class="mono">Refreshes every 2 min · <span id="fetched">–</span></footer>
- 
+
+<footer class="mono">Live data from GitHub · <span id="fetched">–</span></footer>
+
 <script>
 const OWNER = "aryakvsathye";
 const REPO = "duo-tracker";
 const BRANCH = "main";
+const WORKFLOW = "check.yml";
 const MAX_MILES = 50;
-const REFRESH_MS = 120000;
- 
+const REFRESH_MS = 150000;        // state + run status (GitHub allows 60 calls/hour)
+const CSV_REFRESH_MS = 600000;    // restock log changes rarely
+const TRIGGER_MIN = 5;
+
 const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-let lastCheckAt = null;
-let fetchedAt = null;
- 
+const API = `https://api.github.com/repos/${OWNER}/${REPO}`;
+
+let lastCheckAt = null, fetchedAt = null, lastRun = null;
+let events = [], csvFetchedAt = 0;
+
+/* ---------- helpers ---------- */
 async function getFile(path) {
-  const url = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}?ref=${BRANCH}`;
-  const res = await fetch(url, { headers: { Accept: "application/vnd.github.raw" }, cache: "no-store" });
+  const res = await fetch(`${API}/contents/${path}?ref=${BRANCH}`,
+    { headers: { Accept: "application/vnd.github.raw" }, cache: "no-store" });
   if (res.status === 404) return null;
-  if (!res.ok) throw new Error(`${path}: HTTP ${res.status}`);
+  if (!res.ok) throw new Error(res.status === 403 ? "GitHub rate limit, waiting" : `${path}: HTTP ${res.status}`);
   return res.text();
 }
- 
+async function getRun() {
+  const res = await fetch(`${API}/actions/workflows/${WORKFLOW}/runs?per_page=1`, { cache: "no-store" });
+  if (!res.ok) return null;
+  const data = await res.json();
+  return (data.workflow_runs || [])[0] || null;
+}
 function parseCsv(text) {
   if (!text) return [];
   return text.trim().split("\n").slice(1).filter(Boolean).map(line => {
@@ -170,7 +259,6 @@ function parseCsv(text) {
     return { time, store, miles: parseFloat(miles), status };
   });
 }
- 
 function rel(ms) {
   const s = Math.max(0, Math.round(ms / 1000));
   if (s < 60) return `${s}s ago`;
@@ -180,130 +268,264 @@ function rel(ms) {
   if (h < 48) return `${h}h ago`;
   return `${Math.round(h / 24)}d ago`;
 }
- 
-function nightNow() {
-  const h = Number(new Intl.DateTimeFormat("en-US", { hour: "numeric", hour12: false, timeZone: "America/Chicago" }).format(new Date()));
-  return h >= 22 || h < 7;
+function clock(ms) {
+  const s = Math.max(0, Math.round(ms / 1000));
+  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 }
- 
-function renderStores(state, events) {
+function chicago() {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Chicago", weekday: "short", hour: "numeric", minute: "numeric", hour12: false
+  }).formatToParts(new Date());
+  const get = t => parts.find(p => p.type === t).value;
+  return { dow: DAYS.indexOf(get("weekday")), hour: Number(get("hour")) % 24, minute: Number(get("minute")) };
+}
+const isNight = () => { const h = chicago().hour; return h >= 22 || h < 7; };
+function esc(s) { return String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+
+/* ---------- store hours ---------- */
+function dayRange(spec) {
+  const clean = spec.replace(":", "").trim();
+  const [a, b] = clean.split("-").map(s => DAYS.indexOf(s.trim().slice(0, 3)));
+  if (a < 0) return [];
+  if (b === undefined || b < 0) return [a];
+  const out = []; let d = a;
+  while (true) { out.push(d); if (d === b) break; d = (d + 1) % 7; }
+  return out;
+}
+function toMin(t) {
+  const m = t.trim().match(/(\d+):(\d+)\s*(AM|PM)/i);
+  if (!m) return null;
+  let h = Number(m[1]) % 12; if (m[3].toUpperCase() === "PM") h += 12;
+  return h * 60 + Number(m[2]);
+}
+function todayHours(hours) {
+  const { dow, hour, minute } = chicago();
+  const entry = (hours || []).find(h => dayRange(h.days).includes(dow));
+  if (!entry) return null;
+  const [o, c] = entry.time.split("-");
+  const open = toMin(o), close = toMin(c), nowMin = hour * 60 + minute;
+  const isOpen = open !== null && close !== null && nowMin >= open && nowMin < close;
+  return { text: entry.time, isOpen };
+}
+
+/* ---------- renderers ---------- */
+function renderLights(state) {
+  const nearby = state.nearby || {};
+  const names = Object.keys(nearby);
+  const green = names.filter(n => nearby[n].status === "available");
+  const gantry = document.getElementById("gantry");
+  const lights = document.getElementById("lights");
+  if (!lights.children.length) {
+    lights.innerHTML = Array.from({ length: 5 }, () =>
+      `<div class="pod"><div class="bulb dim"></div><div class="bulb lit"></div></div>`).join("");
+  }
+  document.body.classList.toggle("green", green.length > 0);
+  const verdict = document.getElementById("verdict");
+  const sub = document.getElementById("verdictSub");
+  const bag = document.getElementById("bag");
+  if (!names.length) {
+    gantry.className = "gantry idle";
+    verdict.textContent = "FORMATION LAP";
+    sub.textContent = "Waiting for the first check with the new script";
+    bag.textContent = "OPEN BAG";
+  } else if (green.length) {
+    gantry.className = "gantry green";
+    verdict.textContent = "LIGHTS OUT";
+    sub.textContent = `In stock at ${green.join(" & ")} · go go go`;
+    bag.textContent = "OPEN BAG NOW";
+  } else {
+    gantry.className = "gantry red";
+    verdict.textContent = "HOLDING ON THE GRID";
+    sub.textContent = `No stock at ${names.length} nearby store${names.length > 1 ? "s" : ""}`;
+    bag.textContent = "OPEN BAG";
+  }
+}
+
+function renderStores(state) {
   const nearby = state.nearby || {};
   const names = Object.keys(nearby).sort((a, b) => nearby[a].miles - nearby[b].miles);
   const el = document.getElementById("stores");
   if (!names.length) { el.innerHTML = '<div class="empty">Waiting for the first check with the new script…</div>'; return; }
- 
-  let anyGreen = false;
   el.innerHTML = names.map(name => {
     const s = nearby[name];
     const cls = s.status === "available" ? "available" : s.status === "unavailable" ? "unavailable" : "unknown";
-    if (cls === "available") anyGreen = true;
-    const last = [...events].reverse().find(e => e.store === name);
-    const since = last ? `since ${last.time.slice(5)}` : "no changes logged yet";
     const word = cls === "available" ? "IN STOCK" : cls === "unavailable" ? "NO STOCK" : "UNKNOWN";
+    const last = [...events].reverse().find(e => e.store === name);
+    const since = last ? `changed ${last.time.slice(5)}` : "no changes logged yet";
+    const hrs = todayHours(s.hours);
+    const hrsText = hrs ? `<span class="${hrs.isOpen ? "open" : "closed"}">${hrs.isOpen ? "Open" : "Closed"}</span> · ${esc(hrs.text)}` : "";
+    const maps = s.lat ? `https://maps.apple.com/?daddr=${s.lat},${s.lon}` : `https://maps.apple.com/?q=${encodeURIComponent("Apple " + name)}`;
+    const tel = s.phone ? `tel:${s.phone.replace(/[^\d+]/g, "")}` : null;
     return `<div class="store ${cls}">
-      <div class="name">${name}</div>
-      <div class="lights"><b></b><b></b><b></b></div>
-      <div class="state mono">${word}</div>
-      <div class="meta">${s.miles.toFixed(1)} mi · ${since}</div>
+      <div class="top"><div class="name">${esc(name)}</div><div class="pill mono">${word}</div></div>
+      <div class="meta">${s.miles.toFixed(1)} mi${s.city ? " · " + esc(s.city) : ""} · ${since}</div>
+      ${hrsText ? `<div class="meta">${hrsText}</div>` : ""}
+      ${s.quote ? `<div class="quote">${esc(s.quote)}</div>` : ""}
+      <div class="row">
+        <a href="${maps}">Directions</a>
+        ${tel ? `<a href="${tel}">Call</a>` : ""}
+        <a href="https://www.apple.com/shop/bag">Bag</a>
+      </div>
     </div>`;
   }).join("");
- 
-  const bag = document.getElementById("bag");
-  bag.classList.toggle("go", anyGreen);
-  bag.textContent = anyGreen ? "LIGHTS OUT · OPEN BAG NOW" : "NO STOCK · OPEN BAG";
 }
- 
+
 function renderTelemetry(state) {
   lastCheckAt = state.last_check ? new Date(state.last_check) : null;
   document.getElementById("checks").textContent = state.checks ?? "–";
   const errs = document.getElementById("errors");
   errs.textContent = state.errors ?? "–";
   errs.className = "v mono " + ((state.errors || 0) > 0 ? "warn" : "ok");
-  const mode = document.getElementById("mode");
-  mode.textContent = nightNow() ? "🌙 Night · every 15m" : "☀️ Day · every 1m";
-  tick();
+  document.getElementById("mode").textContent = isNight() ? "🌙 Night · 15m" : "☀️ Day · 1m";
 }
- 
-function renderHeat(events) {
+
+function renderLaps(state) {
+  const laps = state.history || [];
+  const bars = document.getElementById("bars");
+  const summary = document.getElementById("lapSummary");
+  if (!laps.length) { bars.innerHTML = ""; summary.textContent = "no laps yet"; return; }
+  const good = laps.filter(l => l.ok && l.ms);
+  const max = Math.max(...good.map(l => l.ms), 1);
+  const best = good.length ? Math.min(...good.map(l => l.ms)) : null;
+  bars.innerHTML = laps.map(l => {
+    const tip = `${l.t.slice(11, 16)} · ${l.ok ? l.ms + " ms" : "failed" + (l.code ? " (" + l.code + ")" : "")}`;
+    if (!l.ok) return `<div class="lapfail" style="height:100%" title="${tip}"></div>`;
+    const h = Math.max(8, Math.round(100 * l.ms / max));
+    const cls = (l.green && l.green.length) ? "green" : l.ms === best ? "fast" : "";
+    return `<div class="${cls}" style="height:${h}%" title="${tip}"></div>`;
+  }).join("");
+  const avg = good.length ? Math.round(good.reduce((a, l) => a + l.ms, 0) / good.length) : null;
+  const fails = laps.length - good.length;
+  summary.innerHTML = good.length
+    ? `best <span class="pb">${best}ms</span> · avg ${avg}ms${fails ? ` · <span class="bad">${fails} fail</span>` : ""}`
+    : `<span class="bad">${fails} failed</span>`;
+}
+
+function renderHeat() {
   const counts = Array.from({ length: 7 }, () => Array(24).fill(0));
   const restocks = events.filter(e => e.status === "available" && e.miles <= MAX_MILES);
   restocks.forEach(e => {
     const [d, t] = e.time.split(" ");
     const [y, m, day] = d.split("-").map(Number);
-    const dow = new Date(y, m - 1, day).getDay();
-    const hr = Number(t.split(":")[0]);
-    counts[dow][hr]++;
+    counts[new Date(y, m - 1, day).getDay()][Number(t.split(":")[0])]++;
   });
   const max = Math.max(1, ...counts.flat());
   const order = [1, 2, 3, 4, 5, 6, 0];
+  const nowC = chicago();
   let html = "";
   order.forEach(dow => {
     html += `<div class="d mono">${DAYS[dow]}</div>`;
     for (let h = 0; h < 24; h++) {
       const v = counts[dow][h];
       const style = v ? `background: rgba(34,224,122,${0.25 + 0.75 * v / max}); box-shadow: 0 0 6px rgba(34,224,122,${0.5 * v / max});` : "";
-      html += `<div class="c" style="${style}" title="${DAYS[dow]} ${h}:00 · ${v}"></div>`;
+      const now = dow === nowC.dow && h === nowC.hour ? " now" : "";
+      html += `<div class="c${now}" style="${style}" title="${DAYS[dow]} ${h}:00 · ${v}"></div>`;
     }
   });
   document.getElementById("heat").innerHTML = html;
   document.getElementById("hours").innerHTML = "<span></span>" +
     Array.from({ length: 24 }, (_, h) => `<span>${h % 6 === 0 ? h : ""}</span>`).join("");
- 
   const note = document.getElementById("heatNote");
   if (!restocks.length) {
-    note.textContent = "No nearby restocks logged yet. Patterns show up here after the first few.";
+    note.textContent = "No nearby restocks logged yet. The outlined square is right now.";
   } else {
     let best = [0, 0, 0];
     order.forEach(dow => counts[dow].forEach((v, h) => { if (v > best[0]) best = [v, dow, h]; }));
-    note.textContent = `${restocks.length} nearby restock${restocks.length > 1 ? "s" : ""} logged · hottest slot: ${DAYS[best[1]]} ${best[2]}:00–${best[2] + 1}:00`;
+    note.textContent = `${restocks.length} nearby restock${restocks.length > 1 ? "s" : ""} · hottest slot ${DAYS[best[1]]} ${best[2]}:00–${best[2] + 1}:00`;
   }
 }
- 
-function renderTimeline(events) {
+
+function renderTimeline() {
   const el = document.getElementById("timeline");
   const recent = events.filter(e => e.miles <= MAX_MILES).slice(-20).reverse();
   if (!recent.length) { el.innerHTML = '<div class="empty">No stock changes at nearby stores yet.</div>'; return; }
   el.innerHTML = recent.map(e => {
     const color = e.status === "available" ? "var(--green)" : e.status === "unavailable" ? "var(--red)" : "var(--grey)";
-    const word = e.status === "available" ? "In stock" : e.status === "unavailable" ? "Sold out" : e.status;
+    const word = e.status === "available" ? "In stock" : e.status === "unavailable" ? "Sold out" : esc(e.status);
     return `<div class="ev"><i style="background:${color}; box-shadow: 0 0 8px ${color}"></i>
-      <div><b>${word}</b> · ${e.store}</div><div class="t mono">${e.time.slice(5)}</div></div>`;
+      <div><b>${word}</b> · ${esc(e.store)}</div><div class="t mono">${e.time.slice(5)}</div></div>`;
   }).join("");
 }
- 
+
+function renderRun() {
+  const flag = document.getElementById("flag");
+  const flagText = document.getElementById("flagText");
+  const detail = document.getElementById("runDetail");
+  document.getElementById("runNo").textContent = lastRun ? `run #${lastRun.run_number}` : "";
+  if (!lastRun) { flag.className = "flag"; flagText.textContent = "NO SIGNAL"; detail.textContent = "Couldn't read run status"; return; }
+  const started = new Date(lastRun.run_started_at || lastRun.created_at);
+  const via = lastRun.event === "workflow_dispatch" ? "cron-job.org / manual" : lastRun.event === "schedule" ? "GitHub schedule" : lastRun.event;
+  if (lastRun.status === "in_progress") {
+    flag.className = "flag running"; flagText.textContent = "GREEN FLAG · ON TRACK";
+    detail.textContent = `Checking now · ${clock(Date.now() - started)} elapsed · via ${via}`;
+  } else if (lastRun.status === "queued" || lastRun.status === "waiting" || lastRun.status === "pending") {
+    flag.className = "flag queued"; flagText.textContent = "YELLOW · IN PIT LANE";
+    detail.textContent = `Queued ${rel(Date.now() - started)} · via ${via}`;
+  } else if (lastRun.conclusion === "success") {
+    const ended = new Date(lastRun.updated_at);
+    flag.className = "flag done"; flagText.textContent = "CHEQUERED · RUN COMPLETE";
+    detail.textContent = `Finished ${rel(Date.now() - ended)} · via ${via}`;
+  } else {
+    flag.className = "flag fail"; flagText.textContent = `RED FLAG · ${(lastRun.conclusion || "error").toUpperCase()}`;
+    detail.textContent = `Last run ${rel(Date.now() - started)} · check the Actions tab`;
+  }
+}
+
 function tick() {
   const live = document.getElementById("live");
   const liveText = document.getElementById("liveText");
   const lc = document.getElementById("lastCheck");
-  if (!lastCheckAt) { lc.textContent = "–"; liveText.textContent = "NO DATA"; live.className = "live mono down"; return; }
-  const age = Date.now() - lastCheckAt.getTime();
-  lc.textContent = rel(age);
-  const limit = (nightNow() ? 35 : 25) * 60000;
-  if (age < limit) { live.className = "live mono"; liveText.textContent = "LIVE"; lc.className = "v mono ok"; }
-  else if (age < limit * 3) { live.className = "live mono stale"; liveText.textContent = "DELAYED"; lc.className = "v mono warn"; }
-  else { live.className = "live mono down"; liveText.textContent = "STALLED"; lc.className = "v mono bad"; }
+  if (lastCheckAt) {
+    const age = Date.now() - lastCheckAt.getTime();
+    lc.textContent = rel(age);
+    const limit = (isNight() ? 35 : 15) * 60000;
+    if (age < limit) { live.className = "live mono"; liveText.textContent = "LIVE"; lc.className = "v mono ok"; }
+    else if (age < limit * 3) { live.className = "live mono stale"; liveText.textContent = "DELAYED"; lc.className = "v mono warn"; }
+    else { live.className = "live mono down"; liveText.textContent = "STALLED"; lc.className = "v mono bad"; }
+  } else {
+    lc.textContent = "–"; live.className = "live mono down"; liveText.textContent = "NO DATA";
+  }
+  const cd = document.getElementById("countdown");
+  if (lastRun) {
+    const created = new Date(lastRun.created_at).getTime();
+    let next = created + TRIGGER_MIN * 60000;
+    while (next < Date.now() - 30000) next += TRIGGER_MIN * 60000;
+    const left = next - Date.now();
+    cd.textContent = left > 0 ? clock(left) : "now";
+  }
+  if (lastRun && lastRun.status === "in_progress") renderRun();
   if (fetchedAt) document.getElementById("fetched").textContent = "updated " + rel(Date.now() - fetchedAt);
 }
- 
+
+/* ---------- loop ---------- */
 async function load() {
   const err = document.getElementById("err");
   try {
-    const [stateText, csvText] = await Promise.all([getFile("state.json"), getFile("restocks.csv")]);
+    const needCsv = Date.now() - csvFetchedAt > CSV_REFRESH_MS;
+    const [stateText, run, csvText] = await Promise.all([
+      getFile("state.json"),
+      getRun().catch(() => null),
+      needCsv ? getFile("restocks.csv") : Promise.resolve(undefined),
+    ]);
+    if (csvText !== undefined) { events = parseCsv(csvText); csvFetchedAt = Date.now(); }
     const state = stateText ? JSON.parse(stateText) : {};
-    const events = parseCsv(csvText);
-    renderStores(state, events);
+    lastRun = run;
+    renderLights(state);
+    renderStores(state);
     renderTelemetry(state);
-    renderHeat(events);
-    renderTimeline(events);
+    renderLaps(state);
+    renderHeat();
+    renderTimeline();
+    renderRun();
     fetchedAt = Date.now();
     err.style.display = "none";
   } catch (e) {
-    err.textContent = "Couldn't reach GitHub: " + e.message + ". Retrying in 2 minutes.";
+    err.textContent = "Couldn't reach GitHub: " + e.message + ". Retrying shortly.";
     err.style.display = "block";
   }
   tick();
 }
- 
+
 load();
 setInterval(load, REFRESH_MS);
 setInterval(tick, 1000);
