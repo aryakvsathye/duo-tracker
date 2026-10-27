@@ -8,6 +8,10 @@ on:
         description: "Send a fake in-stock alert"
         type: boolean
         default: false
+      part:
+        description: "Try a different part number (real check, nothing saved)"
+        type: string
+        default: ""
 concurrency:
   group: duo-check
 permissions:
@@ -25,8 +29,9 @@ jobs:
           PART: ${{ secrets.PART }}
           ZIP: ${{ secrets.ZIP }}
           TEST: ${{ inputs.test }}
+          TRY_PART: ${{ inputs.part }}
       - name: Save log
-        if: ${{ !inputs.test }}
+        if: ${{ !inputs.test && !inputs.part }}
         run: |
           git config user.name "duo-bot"
           git config user.email "duo-bot@users.noreply.github.com"
