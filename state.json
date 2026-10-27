@@ -13,8 +13,19 @@
   "Hilldale": "unavailable",
   "Main Place": "unavailable"
  },
- "checks": 0,
+ "checks": 5,
  "errors": 0,
  "events": 0,
- "last_heartbeat": "2026-10-27"
+ "last_heartbeat": "2026-10-27",
+ "nearby": {
+  "Country Club Plaza": {
+   "miles": 10.11,
+   "status": "unavailable"
+  },
+  "Leawood": {
+   "miles": 10.47,
+   "status": "unavailable"
+  }
+ },
+ "last_check": "2026-10-27T08:26:48.641971-05:00"
 }
