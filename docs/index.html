@@ -503,8 +503,9 @@ async function getRun() {
 }
 function parseCsv(text) {
   if (!text) return [];
-  return text.trim().split("\n").slice(1).filter(Boolean).map(line => {
-    const [time, store, miles, status] = line.split(",");
+  // The bot writes Windows-style line endings (\r\n), so split on either
+  return text.trim().split(/\r?\n/).slice(1).filter(Boolean).map(line => {
+    const [time, store, miles, status] = line.split(",").map(x => x.trim());
     return { time, store, miles: parseFloat(miles), status };
   });
 }
