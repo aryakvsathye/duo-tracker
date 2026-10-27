@@ -1,19 +1,55 @@
 {
  "stock": {
-  "Country Club Plaza": "unavailable",
-  "Leawood": "unavailable",
-  "Village Pointe": "unavailable",
-  "Jordan Creek": "unavailable",
-  "Woodland Hills": "unavailable",
-  "West County": "unavailable",
-  "Saint Louis Galleria": "unavailable",
-  "Penn Square": "unavailable",
-  "The Promenade at Chenal": "unavailable",
-  "Saddle Creek": "unavailable",
-  "Hilldale": "unavailable",
-  "Main Place": "unavailable"
+  "Country Club Plaza": {
+   "MK1F4LL/A": "unavailable",
+   "MK1E4LL/A": "unavailable"
+  },
+  "Leawood": {
+   "MK1F4LL/A": "unavailable",
+   "MK1E4LL/A": "unavailable"
+  },
+  "Village Pointe": {
+   "MK1F4LL/A": "unavailable",
+   "MK1E4LL/A": "unavailable"
+  },
+  "Jordan Creek": {
+   "MK1F4LL/A": "unavailable",
+   "MK1E4LL/A": "unavailable"
+  },
+  "Woodland Hills": {
+   "MK1F4LL/A": "unavailable",
+   "MK1E4LL/A": "unavailable"
+  },
+  "West County": {
+   "MK1F4LL/A": "unavailable",
+   "MK1E4LL/A": "unavailable"
+  },
+  "Saint Louis Galleria": {
+   "MK1F4LL/A": "unavailable",
+   "MK1E4LL/A": "unavailable"
+  },
+  "Penn Square": {
+   "MK1F4LL/A": "unavailable",
+   "MK1E4LL/A": "unavailable"
+  },
+  "The Promenade at Chenal": {
+   "MK1F4LL/A": "unavailable",
+   "MK1E4LL/A": "unavailable"
+  },
+  "Saddle Creek": {
+   "MK1F4LL/A": "unavailable",
+   "MK1E4LL/A": "unavailable"
+  },
+  "Hilldale": {
+   "MK1F4LL/A": "unavailable",
+   "MK1E4LL/A": "unavailable"
+  },
+  "Main Place": {
+   "MK1F4LL/A": "unavailable",
+   "MK1E4LL/A": "unavailable"
+  }
  },
- "checks": 260,
+ "checks": 269,
  "errors": 0,
  "events": 9,
  "last_heartbeat": "2026-10-27",
@@ -21,6 +57,14 @@
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "quotes": {
+    "MK1F4LL/A": "Currently unavailable at Apple Country Club Plaza",
+    "MK1E4LL/A": "Currently unavailable at Apple Country Club Plaza"
+   },
    "quote": "Currently unavailable at Apple Country Club Plaza",
    "phone": "816-448 9200",
    "lat": 39.0413,
@@ -41,6 +85,14 @@
   "Leawood": {
    "miles": 10.47,
    "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "quotes": {
+    "MK1F4LL/A": "Currently unavailable at Apple Leawood",
+    "MK1E4LL/A": "Currently unavailable at Apple Leawood"
+   },
    "quote": "Currently unavailable at Apple Leawood",
    "phone": "913-234 9800",
    "lat": 38.91131,
@@ -59,80 +111,8 @@
    ]
   }
  },
- "last_check": "2026-10-27T12:41:03.341258-05:00",
+ "last_check": "2026-10-27T12:49:24.921497-05:00",
  "history": [
-  {
-   "t": "2026-10-27T11:18:24-05:00",
-   "ok": true,
-   "ms": 384,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-27T11:19:24-05:00",
-   "ok": true,
-   "ms": 508,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-27T11:20:24-05:00",
-   "ok": true,
-   "ms": 553,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-27T11:21:24-05:00",
-   "ok": true,
-   "ms": 440,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-27T11:22:24-05:00",
-   "ok": true,
-   "ms": 329,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-27T11:23:24-05:00",
-   "ok": true,
-   "ms": 449,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-27T11:24:24-05:00",
-   "ok": true,
-   "ms": 403,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-27T11:25:24-05:00",
-   "ok": true,
-   "ms": 317,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-27T11:26:24-05:00",
-   "ok": true,
-   "ms": 344,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-10-27T11:26:47-05:00",
    "ok": true,
@@ -780,81 +760,209 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-10-27T12:41:24-05:00",
+   "ok": true,
+   "ms": 281,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:42:24-05:00",
+   "ok": true,
+   "ms": 424,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:43:24-05:00",
+   "ok": true,
+   "ms": 237,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:44:24-05:00",
+   "ok": true,
+   "ms": 328,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:45:24-05:00",
+   "ok": true,
+   "ms": 260,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:46:24-05:00",
+   "ok": true,
+   "ms": 223,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:47:24-05:00",
+   "ok": true,
+   "ms": 240,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:48:24-05:00",
+   "ok": true,
+   "ms": 311,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-27T12:49:24-05:00",
+   "ok": true,
+   "ms": 330,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
    "city": "Kansas City",
    "state": "MO"
   },
   "Leawood": {
    "miles": 10.47,
    "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
    "city": "Leawood",
    "state": "KS"
   },
   "Village Pointe": {
    "miles": 171.88,
    "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
    "city": "Omaha",
    "state": "NE"
   },
   "Jordan Creek": {
    "miles": 183.62,
    "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
    "city": "West Des Moines",
    "state": "IA"
   },
   "Woodland Hills": {
    "miles": 212.92,
    "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
    "city": "Tulsa",
    "state": "OK"
   },
   "West County": {
    "miles": 234.82,
    "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
    "city": "Saint Louis",
    "state": "MO"
   },
   "Saint Louis Galleria": {
    "miles": 239.77,
    "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
    "city": "Saint Louis",
    "state": "MO"
   },
   "Penn Square": {
    "miles": 285.34,
    "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
    "city": "Oklahoma City",
    "state": "OK"
   },
   "The Promenade at Chenal": {
    "miles": 320.42,
    "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
    "city": "Little Rock",
    "state": "AR"
   },
   "Saddle Creek": {
    "miles": 385.15,
    "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
    "city": "Germantown",
    "state": "TN"
   },
   "Hilldale": {
    "miles": 394.05,
    "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
    "city": "Madison",
    "state": "WI"
   },
   "Main Place": {
    "miles": 397.06,
    "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
    "city": "Naperville",
    "state": "IL"
   }
  },
- "token_expires": "2026-11-26"
+ "token_expires": "2026-11-26",
+ "products": {
+  "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
+  "MK1E4LL/A": "iPhone Duo 256GB Star White"
+ },
+ "colours": {
+  "MK1F4LL/A": "Night Sky",
+  "MK1E4LL/A": "Star White"
+ }
 }
