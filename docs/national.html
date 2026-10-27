@@ -8,6 +8,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="National">
 <meta name="theme-color" content="#15151e">
+<link rel="icon" id="favicon" type="image/svg+xml" href="icons/national.svg">
+<link rel="apple-touch-icon" href="icons/national-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
@@ -691,6 +693,23 @@ function activeWaves(a) {
   const now = Date.now();
   return a.big.filter(w => now - toDate(w[w.length - 1].time) <= WAVE_GAP_MIN * 60000);
 }
+// Tab icon: a 3x3 grid laid out roughly like the map (west to east, north to south).
+// Divisions with a live wave light up green; with none, it shows the plain icon.
+const ICON_CELL = { "Pacific": 0, "West North Central": 1, "New England": 2, "Mountain": 3, "East North Central": 4,
+  "Middle Atlantic": 5, "West South Central": 6, "East South Central": 7, "South Atlantic": 8 };
+function setNationalIcon(divs) {
+  const fav = document.getElementById("favicon"); if (!fav) return;
+  if (!divs.size) {
+    if (!fav.href.endsWith("icons/national.svg")) fav.href = "icons/national.svg";
+    document.title = "National";
+    return;
+  }
+  const lit = new Set([...divs].map(d => ICON_CELL[d]));
+  const cells = Array.from({ length: 9 }, (_, i) =>
+    `<rect x="${8 + (i % 3) * 17}" y="${8 + Math.floor(i / 3) * 17}" width="14" height="14" rx="3" fill="${lit.has(i) ? "#31c46c" : "#55556a"}"/>`).join("");
+  fav.href = "data:image/svg+xml," + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#15151e"/>${cells}</svg>`);
+  document.title = `Wave: ${[...divs].join(", ")} · National`;
+}
 function renderWaveHighlight(a) {
   const live = activeWaves(a);
   const divs = new Set(live.map(w => w.region));
@@ -708,6 +727,7 @@ function renderWaveHighlight(a) {
       if (isFinite(x)) layer.append("text").attr("class", "divlabel").attr("x", x).attr("y", y).text(div);
     });
   }
+  setNationalIcon(divs);
   const bar = document.getElementById("waveBar");
   if (!live.length) { bar.classList.remove("on"); bar.innerHTML = ""; }
   else {

@@ -8,6 +8,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Pit Wall">
 <meta name="theme-color" content="#15151e">
+<link rel="icon" id="favicon" type="image/svg+xml" href="icons/pitwall.svg">
+<link rel="apple-touch-icon" href="icons/pitwall-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
@@ -643,6 +645,11 @@ function renderLights(state) {
     lights.innerHTML = Array.from({ length: 5 }, () =>
       `<div class="pod"><div class="lamp"></div><div class="lamp on"></div></div>`).join("");
   }
+  // Tab icon and title follow the start lights, so a background tab shows when stock lands
+  const fav = document.getElementById("favicon");
+  const wantIcon = green.length ? "icons/pitwall-green.svg" : "icons/pitwall.svg";
+  if (fav && !fav.href.endsWith(wantIcon)) fav.href = wantIcon;
+  document.title = green.length ? `In stock: ${green.join(", ")} · Pit Wall` : "Pit Wall";
   const verdict = document.getElementById("verdict");
   const sub = document.getElementById("verdictSub");
   const bagText = document.getElementById("bagText");
