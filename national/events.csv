@@ -32,3 +32,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-27 12:22,Tacoma Mall,R339,Tacoma,WA,Seattle,2,29.2,unavailable,MK1F4LL/A
 2026-10-27 12:22,Boise Towne Square,R303,Boise,ID,,0,299.0,unavailable,MK1F4LL/A
 2026-10-27 12:22,Valley Plaza,R550,Bakersfield,CA,,0,223.3,unavailable,MK1F4LL/A
+2026-10-27 13:07,Boise Towne Square,R303,Boise,ID,,0,299.0,available,MK1F4LL/A
+2026-10-27 13:07,Boise Towne Square,R303,Boise,ID,,0,299.0,available,MK1E4LL/A
