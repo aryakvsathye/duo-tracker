@@ -3894,9 +3894,9 @@
    "state": "NY",
    "lat": 42.914661,
    "lon": -78.762075,
-   "metro": "",
-   "tier": 0,
-   "miles": 176.6,
+   "metro": "Buffalo",
+   "tier": 3,
+   "miles": 0.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4177,9 +4177,9 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-27T18:37:54.777522-05:00",
- "sweep_seconds": 165,
- "metros_ok": 49,
+ "last_sweep": "2026-10-27T18:43:00.621129-05:00",
+ "sweep_seconds": 169,
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4442,7 +4442,5 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {},
- "skipped": [
-  "Buffalo"
- ]
+ "skipped": []
 }
