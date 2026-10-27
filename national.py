@@ -20,8 +20,8 @@ LOG_FILE = os.path.join(OUT_DIR, "events.csv")
 
 SPACING = 3.0          # seconds between requests to Apple
 RETRY_WAIT = 10        # seconds before retrying a metro that failed once
-SKIP_MIN = 10          # a metro that fails even after its retry sits out for this long
-                       # (with sweeps every 10 min: skipped next sweep, tried again the one after)
+SKIP_SWEEPS = 1        # a metro that fails even after its retry sits out this many sweeps,
+                       # then is tried again (counted in sweeps, so it works at any cadence)
 ABORT_AFTER = 5        # if this many metros in a row fail, Apple is refusing everything:
                        # stop this sweep early (the next sweep still runs as normal)
 ASSIGN_MILES = 50      # a store belongs to a metro if it's this close to the metro's ZIP
@@ -244,8 +244,10 @@ def main():
         print("Night: sweeping every 30 min, skipping this one")
         return
     state.pop("backoff_until", None)          # old whole-sweep pause, no longer used
-    skip = state.get("metro_skip") or {}      # metro -> skip until (ISO time)
-    skip = {m: u for m, u in skip.items() if datetime.datetime.fromisoformat(u) > t}
+    # metro -> sweeps left to sit out (older saves stored a time instead; treat those as 1)
+    skip = {m: (n if isinstance(n, int) else 1) for m, n in (state.get("metro_skip") or {}).items()}
+    sitting_out = {m for m, n in skip.items() if n > 0}
+    skip = {m: n - 1 for m, n in skip.items() if n - 1 > 0}   # this sweep uses up one
 
     def fetch(zip_code):
         """One request; returns (stores, None) or (None, short reason)."""
@@ -266,7 +268,7 @@ def main():
     fails, ok, retried, sweep_start = 0, 0, 0, time.monotonic()
     problems, skipped, first = [], [], True
     for metro, zip_code, tier in METROS:
-        if metro in skip:
+        if metro in sitting_out:
             skipped.append(metro)
             continue
         if not first:
@@ -281,8 +283,8 @@ def main():
         if stores is None:
             fails += 1
             problems.append(f"{metro}: {why}")
-            skip[metro] = (now() + datetime.timedelta(minutes=SKIP_MIN)).isoformat()
-            print(f"{metro}: failed again ({why}), skipping it for {SKIP_MIN} min")
+            skip[metro] = SKIP_SWEEPS
+            print(f"{metro}: failed again ({why}), sitting out the next sweep")
             if fails >= ABORT_AFTER:
                 print(f"{ABORT_AFTER} metros in a row failed, ending this sweep early")
                 break
