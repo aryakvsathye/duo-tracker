@@ -323,7 +323,7 @@
           <div class="rc-title" id="flagText">No signal yet</div>
           <div class="rc-detail" id="runDetail">Reading run status from GitHub</div>
         </div>
-        <div class="rc-next"><b id="countdown">–:––</b><span>next run</span></div>
+        <div class="rc-next"><b id="countdown">–:––</b><span id="countdownLabel">next check</span></div>
       </div>
     </section>
 
@@ -388,12 +388,14 @@ const WORKFLOW = "check.yml";
 const MAX_MILES = 50;
 const REFRESH_MS = 150000;        // state + run status (GitHub allows 60 calls/hour)
 const CSV_REFRESH_MS = 600000;    // restock log changes rarely
-const TRIGGER_MIN = 5;
+const GAP_S = 60;          // seconds between checks (matches check.py)
+const RUN_CHECKS = 9;      // checks per daytime run (9 min window in check.py)
+const SETUP_S = 25;        // rough time from run start to first check (checkout + pip)
 
 const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const API = `https://api.github.com/repos/${OWNER}/${REPO}`;
 
-let lastCheckAt = null, fetchedAt = null, lastRun = null;
+let lastCheckAt = null, fetchedAt = null, lastRun = null, nextQueued = false;
 let events = [], csvFetchedAt = 0;
 
 /* ---------- helpers ---------- */
@@ -405,10 +407,14 @@ async function getFile(path) {
   return res.text();
 }
 async function getRun() {
-  const res = await fetch(`${API}/actions/workflows/${WORKFLOW}/runs?per_page=1`, { cache: "no-store" });
+  // Look at the last few runs: with back-to-back runs the newest one is
+  // usually queued, while the one actually checking is just behind it.
+  const res = await fetch(`${API}/actions/workflows/${WORKFLOW}/runs?per_page=5`, { cache: "no-store" });
   if (!res.ok) return null;
-  const data = await res.json();
-  return (data.workflow_runs || [])[0] || null;
+  const runs = (await res.json()).workflow_runs || [];
+  const isQueued = r => ["queued", "waiting", "pending", "requested"].includes(r.status);
+  const active = runs.find(r => r.status === "in_progress");
+  return { run: active || runs[0] || null, queued: runs.some(isQueued) };
 }
 function parseCsv(text) {
   if (!text) return [];
@@ -620,6 +626,20 @@ function renderTimeline() {
   }).join("");
 }
 
+function runProgress() {
+  // Estimate where the active run is: first check ~SETUP_S after start,
+  // then one every GAP_S, RUN_CHECKS in a daytime run (1 at night).
+  if (!lastRun || lastRun.status !== "in_progress") return null;
+  const started = new Date(lastRun.run_started_at || lastRun.created_at).getTime();
+  const total = isNight() ? 1 : RUN_CHECKS;
+  const first = started + SETUP_S * 1000;
+  const now = Date.now();
+  if (now < first) return { done: 0, total, next: first, started };
+  const done = Math.min(total, Math.floor((now - first) / (GAP_S * 1000)) + 1);
+  const next = done < total ? first + done * GAP_S * 1000 : null;
+  return { done, total, next, started };
+}
+
 function renderRun() {
   const rc = document.getElementById("rc");
   const title = document.getElementById("flagText");
@@ -629,8 +649,10 @@ function renderRun() {
   const started = new Date(lastRun.run_started_at || lastRun.created_at);
   const via = lastRun.event === "workflow_dispatch" ? "started by cron-job.org or by hand" : lastRun.event === "schedule" ? "started by GitHub's schedule" : lastRun.event;
   if (lastRun.status === "in_progress") {
+    const p = runProgress();
     rc.className = "panel rc running"; title.textContent = "Green flag, checking now";
-    detail.textContent = `${clock(Date.now() - started)} in, ${via}`;
+    const step = p.done === 0 ? "Starting up" : p.next ? `Check ${p.done} of ${p.total}` : "Saving results";
+    detail.textContent = `${step}, ${clock(Date.now() - p.started)} in${nextQueued ? ", next run queued" : ""}`;
   } else if (["queued", "waiting", "pending", "requested"].includes(lastRun.status)) {
     rc.className = "panel rc queued"; title.textContent = "Yellow flag, waiting to start";
     detail.textContent = `Queued ${rel(Date.now() - started)}, ${via}`;
@@ -658,11 +680,17 @@ function tick() {
     lc.textContent = "–"; live.className = "live down"; liveText.textContent = "No data";
   }
   const cd = document.getElementById("countdown");
-  if (lastRun) {
-    let next = new Date(lastRun.created_at).getTime() + TRIGGER_MIN * 60000;
-    while (next < Date.now() - 30000) next += TRIGGER_MIN * 60000;
-    const left = next - Date.now();
-    cd.textContent = left > 0 ? clock(left) : "Now";
+  const cdLabel = document.getElementById("countdownLabel");
+  const p = runProgress();
+  if (p && p.next) {
+    cd.textContent = clock(Math.max(0, p.next - Date.now()));
+    cdLabel.textContent = p.done === 0 ? "first check" : "next check";
+  } else if (p || (lastRun && ["queued", "waiting", "pending", "requested"].includes(lastRun.status))) {
+    cd.textContent = "Soon";
+    cdLabel.textContent = nextQueued || (lastRun && lastRun.status !== "in_progress") ? "next run starting" : "next run";
+  } else {
+    cd.textContent = "–";
+    cdLabel.textContent = isNight() ? "night mode" : "waiting for a run";
   }
   if (lastRun && lastRun.status === "in_progress") renderRun();
   if (fetchedAt) document.getElementById("fetched").textContent = "updated " + rel(Date.now() - fetchedAt);
@@ -755,7 +783,8 @@ async function load() {
     ]);
     if (csvText !== undefined) { events = parseCsv(csvText); csvFetchedAt = Date.now(); }
     const state = stateText ? JSON.parse(stateText) : {};
-    lastRun = run;
+    lastRun = run ? run.run : null;
+    nextQueued = run ? run.queued : false;
     renderLights(state);
     renderStores(state);
     renderTelemetry(state);
