@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Pit Wall</title>
+<title>KC Pit Wall</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Pit Wall">
@@ -649,7 +649,7 @@ function renderLights(state) {
   const fav = document.getElementById("favicon");
   const wantIcon = green.length ? "icons/pitwall-green.svg" : "icons/pitwall.svg";
   if (fav && !fav.href.endsWith(wantIcon)) fav.href = wantIcon;
-  document.title = green.length ? `In stock: ${green.join(", ")} · Pit Wall` : "Pit Wall";
+  document.title = green.length ? `In stock: ${green.join(", ")} · KC Pit Wall` : "KC Pit Wall";
   const verdict = document.getElementById("verdict");
   const sub = document.getElementById("verdictSub");
   const bagText = document.getElementById("bagText");
