@@ -11,11 +11,11 @@
   "The Promenade at Chenal": "unavailable",
   "Saddle Creek": "unavailable",
   "Hilldale": "unavailable",
-  "Main Place": "available"
+  "Main Place": "unavailable"
  },
- "checks": 62,
+ "checks": 71,
  "errors": 0,
- "events": 2,
+ "events": 3,
  "last_heartbeat": "2026-10-27",
  "nearby": {
   "Country Club Plaza": {
@@ -59,15 +59,8 @@
    ]
   }
  },
- "last_check": "2026-10-27T09:31:21.217111-05:00",
+ "last_check": "2026-10-27T09:39:32.446088-05:00",
  "history": [
-  {
-   "t": "2026-10-27T08:40:10-05:00",
-   "ok": true,
-   "ms": 372,
-   "code": 200,
-   "green": []
-  },
   {
    "t": "2026-10-27T08:41:11-05:00",
    "ok": true,
@@ -422,6 +415,69 @@
    "t": "2026-10-27T09:31:20-05:00",
    "ok": true,
    "ms": 340,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:31:31-05:00",
+   "ok": true,
+   "ms": 332,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:32:31-05:00",
+   "ok": true,
+   "ms": 535,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:33:31-05:00",
+   "ok": true,
+   "ms": 339,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:34:31-05:00",
+   "ok": true,
+   "ms": 182,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:35:31-05:00",
+   "ok": true,
+   "ms": 195,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:36:31-05:00",
+   "ok": true,
+   "ms": 159,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:37:31-05:00",
+   "ok": true,
+   "ms": 543,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:38:31-05:00",
+   "ok": true,
+   "ms": 195,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:39:31-05:00",
+   "ok": true,
+   "ms": 563,
    "code": 200,
    "green": []
   }
