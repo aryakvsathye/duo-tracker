@@ -72,7 +72,7 @@ try:
         state = json.load(f)
 except Exception:
     state = {}
-for key, default in [("stock", {}), ("nearby", {}), ("history", []),
+for key, default in [("stock", {}), ("nearby", {}), ("field", {}), ("history", []),
                      ("checks", 0), ("errors", 0), ("events", 0)]:
     state.setdefault(key, default)
 
@@ -99,7 +99,7 @@ while True:
         lap["ms"] = round((time.monotonic() - started) * 1000)
         lap["code"] = r.status_code
         stores = r.json()["body"]["stores"]
-        nearby = {}
+        nearby, field = {}, {}
         for st in stores:
             name = st["storeName"]
             miles = float(st.get("storedistance", 999))
@@ -114,6 +114,8 @@ while True:
                 state["stock"][name] = status
                 if miles <= MAX_MILES:
                     nearby[name] = store_details(st, info, miles, status)
+                field[name] = {"miles": miles, "status": status,
+                               "city": st.get("city", ""), "state": st.get("state", "")}
 
             product = (((info.get("messageTypes") or {}).get("regular") or {})
                        .get("storePickupProductTitle") or "iPhone Duo 256GB Night Sky")
@@ -138,6 +140,7 @@ while True:
         lap["green"] = sorted(n for n, s in nearby.items() if s["status"] == "available")
         if not DRY:
             state["nearby"] = nearby
+            state["field"] = field
             state["last_check"] = now().isoformat()
         state["checks"] += 1
         print(f"Check {i+1}: {r.status_code} in {lap['ms']} ms, alerted: {sorted(alerted) or 'none'}")

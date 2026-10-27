@@ -265,6 +265,29 @@
   .hours { white-space: nowrap; display: grid; grid-template-columns: 30px repeat(24, minmax(0, 1fr)); gap: 2px; margin-top: 5px; font-size: 10px; color: var(--grey-2); }
   .note { font-size: 13px; color: var(--grey); margin-top: 4px; }
 
+  /* ---------- scope toggle ---------- */
+  .seg { display: inline-flex; background: var(--asphalt); border: 1px solid var(--kerb); border-radius: 99px; padding: 2px; }
+  .seg button {
+    border: 0; background: none; cursor: pointer; font-size: 13px; font-weight: 600; color: var(--grey);
+    padding: 4px 12px; border-radius: 99px; -webkit-tap-highlight-color: transparent; transition: background .2s, color .2s;
+  }
+  .seg button[aria-pressed="true"] { background: var(--asphalt-2); color: var(--chalk); }
+
+  /* ---------- rest of the field ---------- */
+  .field-sum { padding: 12px 14px; font-size: 14px; color: var(--grey); border-bottom: 1px solid var(--kerb); }
+  .field-sum b { color: var(--green); }
+  .frow { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 10px 14px 10px 17px; position: relative; align-items: center; }
+  .frow + .frow { border-top: 1px solid var(--kerb); }
+  .frow::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: transparent; }
+  .frow.available::before { background: var(--green); }
+  .frow .fname { font-weight: 600; font-size: 15px; }
+  .frow .fmeta { grid-column: 1; color: var(--grey); font-size: 12px; }
+  .frow .status { grid-row: 1 / span 2; grid-column: 2; align-self: center; }
+  .frow.available .status { background: var(--green); color: #06210f; }
+  .frow.unavailable .status { background: transparent; color: var(--grey); padding-right: 0; }
+  .field-more { display: block; width: 100%; background: none; border: 0; border-top: 1px solid var(--kerb); color: var(--grey); font-size: 13px; font-weight: 600; padding: 10px; cursor: pointer; }
+  .hint-far { color: var(--yellow); }
+
   /* ---------- race log ---------- */
   .log { overflow: hidden; }
   .ev { display: grid; grid-template-columns: 10px 1fr auto; gap: 12px; align-items: center; padding: 11px 14px; font-size: 14px; }
@@ -413,7 +436,7 @@
     </section>
 
     <section class="section">
-      <div class="section-head"><h2>When stock appears</h2><span>Central time</span></div>
+      <div class="section-head"><h2>When stock appears</h2><div class="seg" role="group" aria-label="Which stores"><button type="button" data-scope="near" aria-pressed="true">Nearby</button><button type="button" data-scope="region" aria-pressed="false">Region</button></div></div>
       <div class="panel heat">
         <div class="grid" id="heat"></div>
         <div class="hours" id="hours"></div>
@@ -425,6 +448,13 @@
     <section class="section">
       <div class="section-head"><h2>Race log</h2><span>Nearby stores</span></div>
       <div class="panel log" id="timeline"><div class="empty">Loading</div></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>Rest of the field</h2><span>Other stores Apple checks, no alerts</span></div>
+      <div class="panel log" id="field"><div class="empty">Loading</div></div>
+      <div class="section-head" style="margin-top:18px"><h2>Regional log</h2><span>Stores beyond 50 mi</span></div>
+      <div class="panel log" id="farlog"><div class="empty">Loading</div></div>
     </section>
   </div>
 </main>
@@ -568,7 +598,11 @@ function renderLights(state) {
   } else {
     gantry.className = "panel gantry red";
     verdict.textContent = "Holding on the grid";
-    sub.textContent = names.length === 2 ? "No stock at either nearby store" : `No stock at ${names.length} nearby stores`;
+    const base = names.length === 2 ? "No stock at either nearby store" : `No stock at ${names.length} nearby stores`;
+    const far = farInStock(state);
+    sub.innerHTML = far.length
+      ? `${base}. <span class="hint-far">In stock at ${far.length === 1 ? esc(far[0]) : far.length + " stores"} elsewhere in the region.</span>`
+      : base;
     bagText.textContent = "Open bag";
   }
 }
@@ -645,9 +679,10 @@ function renderLaps(state) {
     : `<span class="bad">All ${fails} checks failed</span>`;
 }
 
+let heatScope = "near";
 function renderHeat() {
   const counts = Array.from({ length: 7 }, () => Array(24).fill(0));
-  const restocks = events.filter(e => e.status === "available" && e.miles <= MAX_MILES);
+  const restocks = events.filter(e => e.status === "available" && (heatScope === "region" || e.miles <= MAX_MILES));
   restocks.forEach(e => {
     const [d, t] = e.time.split(" ");
     const [y, m, day] = d.split("-").map(Number);
@@ -672,11 +707,13 @@ function renderHeat() {
     Array.from({ length: 24 }, (_, h) => `<span>${h % 6 === 0 ? hr(h) : ""}</span>`).join("");
   const note = document.getElementById("heatNote");
   if (!restocks.length) {
-    note.textContent = "No restocks logged yet. The outlined square is the current hour.";
+    note.textContent = heatScope === "region"
+      ? "No restocks logged anywhere yet. The outlined square is the current hour."
+      : "No nearby restocks logged yet. Switch to Region to see stores further away.";
   } else {
     let best = [0, 0, 0];
     order.forEach(dow => counts[dow].forEach((v, h) => { if (v > best[0]) best = [v, dow, h]; }));
-    note.textContent = `${restocks.length} restock${restocks.length > 1 ? "s" : ""} logged. Busiest hour so far: ${DAYS[best[1]]} ${hr(best[2])}.`;
+    note.textContent = `${restocks.length} ${heatScope === "region" ? "regional" : "nearby"} restock${restocks.length > 1 ? "s" : ""} logged. Busiest hour so far: ${DAYS[best[1]]} ${hr(best[2])}.`;
   }
 }
 
@@ -992,6 +1029,62 @@ function updateRouteStores(state) {
 
 document.getElementById("locate").addEventListener("click", locate);
 
+/* ---------- rest of the field ---------- */
+let fieldExpanded = false;
+function fieldStores(state) {
+  // Prefer the bot's full store list; fall back to what the restock log knows
+  const out = {};
+  Object.entries(state.field || {}).forEach(([n, f]) => { out[n] = { ...f }; });
+  events.forEach(e => {
+    if (!out[e.store]) out[e.store] = { miles: e.miles, status: (state.stock || {})[e.store] || e.status, city: "", state: "" };
+  });
+  return Object.entries(out).filter(([, f]) => f.miles > MAX_MILES);
+}
+function farInStock(state) {
+  return fieldStores(state).filter(([, f]) => f.status === "available").map(([n]) => n);
+}
+function renderField(state) {
+  const el = document.getElementById("field");
+  const list = fieldStores(state).sort((a, b) =>
+    (b[1].status === "available") - (a[1].status === "available") || a[1].miles - b[1].miles);
+  if (!list.length) { el.innerHTML = '<div class="empty">Other stores appear here after the next check finishes.</div>'; return; }
+  const green = list.filter(([, f]) => f.status === "available").length;
+  const lastChange = name => { const e = [...events].reverse().find(x => x.store === name); return e ? prettyTime(e.time) : null; };
+  const shown = fieldExpanded ? list : list.slice(0, Math.max(5, green));
+  el.innerHTML =
+    `<div class="field-sum">${green ? `<b>In stock at ${green} of ${list.length}</b> other stores right now.` : `No stock at the other ${list.length} stores right now.`} These don't send alerts.</div>` +
+    shown.map(([n, f]) => {
+      const cls = f.status === "available" ? "available" : "unavailable";
+      const where = [f.city, f.state].filter(Boolean).join(", ");
+      const changed = lastChange(n);
+      return `<div class="frow ${cls}">
+        <div class="fname">${esc(n)}</div>
+        <div class="status">${cls === "available" ? "In stock" : "No stock"}</div>
+        <div class="fmeta">${Math.round(f.miles)} mi${where ? ", " + esc(where) : ""}${changed ? `, changed ${changed}` : ""}</div>
+      </div>`;
+    }).join("") +
+    (list.length > shown.length || fieldExpanded
+      ? `<button class="field-more" type="button" id="fieldMore">${fieldExpanded ? "Show fewer" : `Show all ${list.length} stores`}</button>` : "");
+  const more = document.getElementById("fieldMore");
+  if (more) more.addEventListener("click", () => { fieldExpanded = !fieldExpanded; renderField(lastState); });
+}
+function renderFarLog() {
+  const el = document.getElementById("farlog");
+  const recent = events.filter(e => e.miles > MAX_MILES).slice(-10).reverse();
+  if (!recent.length) { el.innerHTML = '<div class="empty">No stock changes at faraway stores yet.</div>'; return; }
+  el.innerHTML = recent.map(e => {
+    const color = e.status === "available" ? "var(--green)" : e.status === "unavailable" ? "var(--signal)" : "var(--grey-2)";
+    const word = e.status === "available" ? "In stock at" : e.status === "unavailable" ? "Sold out at" : esc(e.status) + " at";
+    return `<div class="ev"><i style="background:${color}"></i>
+      <div>${word} <b>${esc(e.store)}</b> <span style="color:var(--grey)">${Math.round(e.miles)} mi</span></div><time>${prettyTime(e.time)}</time></div>`;
+  }).join("");
+}
+document.querySelectorAll(".seg button").forEach(b => b.addEventListener("click", () => {
+  heatScope = b.dataset.scope;
+  document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  renderHeat();
+}));
+
 /* ---------- loop ---------- */
 async function load() {
   const err = document.getElementById("err");
@@ -1014,6 +1107,8 @@ async function load() {
     renderLaps(state);
     renderHeat();
     renderTimeline();
+    renderField(state);
+    renderFarLog();
     renderRun();
     flashChanges(state);
     fetchedAt = Date.now();
