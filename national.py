@@ -15,9 +15,10 @@ OUT_DIR = os.path.join(DATA_DIR, "national")
 STATE_FILE = os.path.join(OUT_DIR, "state.json")
 LOG_FILE = os.path.join(OUT_DIR, "events.csv")
 
-SPACING = 2.0          # seconds between requests to Apple
-MAX_FAILS = 2          # consecutive failures before giving up on a sweep
-BACKOFF_MIN = 30       # minutes to pause after Apple starts refusing
+SPACING = 3.0          # seconds between requests to Apple
+RETRY_WAIT = 10        # seconds before retrying a metro that failed once
+MAX_FAILS = 3          # metros in a row that fail even after a retry before giving up
+BACKOFF_MIN = 15       # minutes to pause after Apple starts refusing
 ASSIGN_MILES = 50      # a store belongs to a metro if it's this close to the metro's ZIP
 WAVE_GAP_MIN = 45      # restocks in the same region closer together than this form a wave
 WAVE_MIN = 2           # restocks needed for a regional wave
@@ -216,25 +217,42 @@ def main():
         print(f"Backing off until {backoff}")
         return
 
-    best = {}   # store_id -> (miles, metro, tier, store dict)
-    fails, ok, sweep_start = 0, 0, time.monotonic()
-    for i, (metro, zip_code, tier) in enumerate(METROS):
-        if i:
-            time.sleep(SPACING)
+    def fetch(zip_code):
+        """One request; returns (stores, None) or (None, short reason)."""
         try:
             r = requests.get("https://www.apple.com/shop/retail/pickup-message",
                              headers=headers, timeout=20, params={"parts.0": PART, "location": zip_code})
-            stores = r.json()["body"]["stores"]
-            fails, ok = 0, ok + 1
         except Exception as e:
+            return None, f"no response ({type(e).__name__})"
+        if r.status_code != 200:
+            return None, f"HTTP {r.status_code}"
+        try:
+            return r.json()["body"]["stores"], None
+        except Exception:
+            return None, "HTTP 200 but not store data"
+
+    best = {}   # store_id -> (miles, metro, tier, store dict)
+    fails, ok, retried, sweep_start = 0, 0, 0, time.monotonic()
+    problems = []
+    for i, (metro, zip_code, tier) in enumerate(METROS):
+        if i:
+            time.sleep(SPACING)
+        stores, why = fetch(zip_code)
+        if stores is None:
+            print(f"{metro}: {why}, retrying in {RETRY_WAIT} s")
+            time.sleep(RETRY_WAIT)
+            retried += 1
+            stores, why = fetch(zip_code)
+        if stores is None:
             fails += 1
-            print(f"{metro}: failed ({e})")
+            problems.append(f"{metro}: {why}")
+            print(f"{metro}: failed again ({why})")
             if fails >= MAX_FAILS:
                 state["backoff_until"] = (now() + datetime.timedelta(minutes=BACKOFF_MIN)).isoformat()
-                state["last_error"] = f"{now().isoformat(timespec='minutes')}: stopped after {metro}"
-                print("Apple is refusing requests, backing off")
+                print(f"{MAX_FAILS} metros in a row failed, pausing for {BACKOFF_MIN} min")
                 break
             continue
+        fails, ok = 0, ok + 1
         for st in stores:
             sid = st.get("storeNumber") or st["storeName"]
             miles = float(st.get("storedistance", 999))
@@ -271,6 +289,9 @@ def main():
     state["last_sweep"] = now().isoformat()
     state["sweep_seconds"] = round(time.monotonic() - sweep_start)
     state["metros_ok"] = ok
+    state["retries"] = retried
+    if problems:
+        state["last_error"] = f"{now().isoformat(timespec='minutes')}: " + "; ".join(problems[-5:])
     state["metros"] = [{"metro": m, "zip": z, "tier": tr} for m, z, tr in METROS]
     if ok == len(METROS):
         state.pop("backoff_until", None)

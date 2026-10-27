@@ -197,6 +197,7 @@
         <div class="metric"><dt>Last sweep</dt><dd id="mSweep">–</dd></div>
         <div class="metric"><dt>Metros answering</dt><dd id="mMetros">–</dd></div>
       </dl>
+      <p class="fine" id="sweepNote" hidden></p>
     </section>
 
     <section class="section">
@@ -562,6 +563,17 @@ function renderStatus() {
   document.getElementById("mStores").textContent = list.length || "–";
   document.getElementById("mMetros").textContent = state.metros_ok != null ? `${state.metros_ok} of ${(state.metros || []).length || 50}` : "–";
   document.getElementById("mMetros").className = state.metros_ok != null && state.metros_ok < (state.metros || []).length ? "caution" : "";
+  // Explain gaps: a pause after Apple refused requests, or metros that failed last sweep
+  const note = document.getElementById("sweepNote");
+  const paused = state.backoff_until && new Date(state.backoff_until) > new Date();
+  if (paused) {
+    const until = new Date(state.backoff_until).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" });
+    note.textContent = `Sweeps paused until ${until} CT because Apple refused several requests in a row. Your Kansas City checks run separately and aren't affected.`;
+    note.hidden = false;
+  } else if (state.metros_ok != null && state.metros_ok < (state.metros || []).length && state.last_error) {
+    note.textContent = `Last sweep missed some metros: ${state.last_error.replace(/^[^ ]+: /, "")}.`;
+    note.hidden = false;
+  } else note.hidden = true;
 }
 function tickSweep() {
   const el = document.getElementById("mSweep");
