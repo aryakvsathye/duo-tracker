@@ -42,3 +42,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-27 13:52,Park Meadows,R228,Lone Tree,CO,Denver,2,12.2,unavailable,MK1E4LL/A
 2026-10-27 14:32,Kahala,R210,Honolulu,HI,Honolulu,3,4.0,available,MK1F4LL/A
 2026-10-27 14:32,Kahala,R210,Honolulu,HI,Honolulu,3,4.0,available,MK1E4LL/A
+2026-10-27 14:37,Ala Moana,R073,Honolulu,HI,Honolulu,3,0.4,available,MK1F4LL/A
+2026-10-27 14:37,Kahala,R210,Honolulu,HI,Honolulu,3,4.0,unavailable,MK1F4LL/A
+2026-10-27 14:37,Kahala,R210,Honolulu,HI,Honolulu,3,4.0,unavailable,MK1E4LL/A
