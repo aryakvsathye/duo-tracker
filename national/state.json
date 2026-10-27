@@ -9,7 +9,9 @@
    "metro": "New York",
    "tier": 1,
    "miles": 0.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R095": {
    "name": "Fifth Avenue",
@@ -20,7 +22,9 @@
    "metro": "New York",
    "tier": 1,
    "miles": 0.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R415": {
    "name": "Grand Central",
@@ -31,7 +35,9 @@
    "metro": "New York",
    "tier": 1,
    "miles": 1.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R582": {
    "name": "Upper East Side",
@@ -42,7 +48,9 @@
    "metro": "New York",
    "tier": 1,
    "miles": 1.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R250": {
    "name": "West 14th Street",
@@ -53,7 +61,9 @@
    "metro": "New York",
    "tier": 1,
    "miles": 2.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R032": {
    "name": "SoHo",
@@ -64,7 +74,9 @@
    "metro": "New York",
    "tier": 1,
    "miles": 3.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R594": {
    "name": "Williamsburg",
@@ -75,7 +87,9 @@
    "metro": "New York",
    "tier": 1,
    "miles": 3.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R654": {
    "name": "World Trade Center",
@@ -86,7 +100,9 @@
    "metro": "New York",
    "tier": 1,
    "miles": 4.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R755": {
    "name": "American Dream",
@@ -97,7 +113,9 @@
    "metro": "New York",
    "tier": 1,
    "miles": 5.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R715": {
    "name": "Downtown Brooklyn",
@@ -108,7 +126,9 @@
    "metro": "New York",
    "tier": 1,
    "miles": 5.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R612": {
    "name": "Queens Center",
@@ -119,7 +139,9 @@
    "metro": "New York",
    "tier": 1,
    "miles": 6.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R753": {
    "name": "The Mall at Bay Plaza",
@@ -130,7 +152,9 @@
    "metro": "New York",
    "tier": 1,
    "miles": 10.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R108": {
    "name": "Century City",
@@ -141,7 +165,9 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 0.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R124": {
    "name": "Beverly Center",
@@ -152,7 +178,9 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 2.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R050": {
    "name": "The Grove",
@@ -163,7 +191,9 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 3.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R051": {
    "name": "Third Street Promenade",
@@ -174,7 +204,9 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 5.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R148": {
    "name": "Sherman Oaks",
@@ -185,7 +217,9 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 7.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R720": {
    "name": "Tower Theatre",
@@ -196,7 +230,9 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 9.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R001": {
    "name": "Glendale Galleria",
@@ -207,7 +243,10 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 10.8,
-   "status": "unavailable"
+   "status": "available",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific",
+   "since": "2026-10-27 11:55"
   },
   "R451": {
    "name": "The Americana at Brand",
@@ -218,7 +257,9 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 10.8,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R122": {
    "name": "Manhattan Village",
@@ -229,7 +270,9 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 11.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R189": {
    "name": "Topanga",
@@ -240,7 +283,9 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 14.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R023": {
    "name": "Northridge",
@@ -251,7 +296,9 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 14.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R777": {
    "name": "Del Amo",
@@ -262,7 +309,9 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 15.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R035": {
    "name": "Michigan Avenue",
@@ -273,7 +322,9 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 0.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East North Central"
   },
   "R284": {
    "name": "Lincoln Park",
@@ -284,7 +335,9 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 1.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East North Central"
   },
   "R089": {
    "name": "Old Orchard",
@@ -295,7 +348,9 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 12.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East North Central"
   },
   "R056": {
    "name": "Oakbrook",
@@ -306,7 +361,9 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 17.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East North Central"
   },
   "R237": {
    "name": "Orland Square Mall",
@@ -317,7 +374,9 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 22.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East North Central"
   },
   "R018": {
    "name": "Woodfield",
@@ -328,7 +387,9 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 23.8,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East North Central"
   },
   "R348": {
    "name": "Main Place",
@@ -339,7 +400,9 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 28.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East North Central"
   },
   "R258": {
    "name": "Deer Park",
@@ -350,7 +413,9 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 28.8,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East North Central"
   },
   "R360": {
    "name": "University Park Mall",
@@ -361,7 +426,9 @@
    "metro": "",
    "tier": 0,
    "miles": 74.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East North Central"
   },
   "R059": {
    "name": "Mayfair",
@@ -371,8 +438,10 @@
    "lon": -88.04479,
    "metro": "",
    "tier": 0,
-   "miles": 83.5,
-   "status": "unavailable"
+   "miles": 71.6,
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East North Central"
   },
   "R257": {
    "name": "Bayshore",
@@ -382,8 +451,10 @@
    "lon": -87.915186,
    "metro": "",
    "tier": 0,
-   "miles": 86.0,
-   "status": "unavailable"
+   "miles": 78.2,
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East North Central"
   },
   "R229": {
    "name": "Hilldale",
@@ -391,10 +462,12 @@
    "state": "WI",
    "lat": 43.072144281456,
    "lon": -89.452947378159,
-   "metro": "",
-   "tier": 0,
-   "miles": 123.7,
-   "status": "unavailable"
+   "metro": "Madison",
+   "tier": 3,
+   "miles": 0.6,
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East North Central"
   },
   "R144": {
    "name": "NorthPark Center",
@@ -405,7 +478,9 @@
    "metro": "Dallas",
    "tier": 1,
    "miles": 1.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R042": {
    "name": "Knox Street",
@@ -416,7 +491,9 @@
    "metro": "Dallas",
    "tier": 1,
    "miles": 3.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R746": {
    "name": "Galleria Dallas",
@@ -427,7 +504,9 @@
    "metro": "Dallas",
    "tier": 1,
    "miles": 4.8,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R151": {
    "name": "Southlake Town Square",
@@ -438,7 +517,9 @@
    "metro": "Dallas",
    "tier": 1,
    "miles": 20.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R316": {
    "name": "University Park Village",
@@ -449,7 +530,9 @@
    "metro": "Dallas",
    "tier": 1,
    "miles": 34.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R216": {
    "name": "Domain NORTHSIDE",
@@ -460,7 +543,9 @@
    "metro": "Austin",
    "tier": 2,
    "miles": 9.3,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R130": {
    "name": "Penn Square",
@@ -471,7 +556,9 @@
    "metro": "Oklahoma City",
    "tier": 3,
    "miles": 1.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R085": {
    "name": "Barton Creek",
@@ -482,7 +569,9 @@
    "metro": "Austin",
    "tier": 2,
    "miles": 2.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R126": {
    "name": "The Woodlands",
@@ -493,7 +582,9 @@
    "metro": "Houston",
    "tier": 1,
    "miles": 28.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R321": {
    "name": "Willowbrook Mall",
@@ -504,7 +595,9 @@
    "metro": "Houston",
    "tier": 1,
    "miles": 15.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R164": {
    "name": "Memorial City",
@@ -515,7 +608,9 @@
    "metro": "Houston",
    "tier": 1,
    "miles": 4.8,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R233": {
    "name": "Woodland Hills",
@@ -526,7 +621,9 @@
    "metro": "Tulsa",
    "tier": 3,
    "miles": 1.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R058": {
    "name": "Houston Galleria",
@@ -537,7 +634,9 @@
    "metro": "Houston",
    "tier": 1,
    "miles": 0.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R437": {
    "name": "Highland Village",
@@ -548,7 +647,9 @@
    "metro": "Houston",
    "tier": 1,
    "miles": 1.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R205": {
    "name": "First Colony Mall",
@@ -559,7 +660,9 @@
    "metro": "Houston",
    "tier": 1,
    "miles": 14.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R204": {
    "name": "Baybrook",
@@ -570,7 +673,9 @@
    "metro": "Houston",
    "tier": 1,
    "miles": 24.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R290": {
    "name": "North Star",
@@ -581,7 +686,9 @@
    "metro": "San Antonio",
    "tier": 2,
    "miles": 1.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R131": {
    "name": "La Cantera",
@@ -592,7 +699,9 @@
    "metro": "San Antonio",
    "tier": 2,
    "miles": 8.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R516": {
    "name": "Carnegie Library",
@@ -603,7 +712,9 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 0.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R287": {
    "name": "Georgetown",
@@ -614,7 +725,9 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 2.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R129": {
    "name": "Pentagon City",
@@ -625,7 +738,9 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 3.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R036": {
    "name": "Clarendon",
@@ -636,7 +751,9 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 4.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R112": {
    "name": "Bethesda Row",
@@ -647,7 +764,9 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 6.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R084": {
    "name": "Montgomery Mall",
@@ -658,7 +777,9 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 10.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R010": {
    "name": "Tysons Corner",
@@ -669,7 +790,9 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 10.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R221": {
    "name": "Fairfax Corner",
@@ -680,7 +803,9 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 18.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R271": {
    "name": "Reston",
@@ -691,7 +816,9 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 18.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R168": {
    "name": "Columbia",
@@ -702,7 +829,9 @@
    "metro": "Baltimore",
    "tier": 2,
    "miles": 17.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R598": {
    "name": "Stonebridge Potomac Town Center",
@@ -713,7 +842,9 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 24.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R142": {
    "name": "Annapolis",
@@ -724,7 +855,9 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 26.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R162": {
    "name": "Walnut Street",
@@ -735,7 +868,9 @@
    "metro": "Philadelphia",
    "tier": 1,
    "miles": 0.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R166": {
    "name": "Suburban Square",
@@ -746,7 +881,9 @@
    "metro": "Philadelphia",
    "tier": 1,
    "miles": 7.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R206": {
    "name": "Cherry Hill",
@@ -757,7 +894,9 @@
    "metro": "Philadelphia",
    "tier": 1,
    "miles": 8.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R234": {
    "name": "Willow Grove Park",
@@ -768,7 +907,9 @@
    "metro": "Philadelphia",
    "tier": 1,
    "miles": 13.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R088": {
    "name": "Sagemore",
@@ -779,7 +920,9 @@
    "metro": "Philadelphia",
    "tier": 1,
    "miles": 14.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R065": {
    "name": "King of Prussia",
@@ -790,7 +933,9 @@
    "metro": "Philadelphia",
    "tier": 1,
    "miles": 14.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R102": {
    "name": "Christiana Mall",
@@ -801,7 +946,9 @@
    "metro": "Philadelphia",
    "tier": 1,
    "miles": 31.8,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R549": {
    "name": "Quaker Bridge",
@@ -812,7 +959,9 @@
    "metro": "Philadelphia",
    "tier": 1,
    "miles": 34.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R281": {
    "name": "Lehigh Valley",
@@ -823,7 +972,9 @@
    "metro": "Philadelphia",
    "tier": 1,
    "miles": 49.3,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R138": {
    "name": "Freehold Raceway Mall",
@@ -834,7 +985,9 @@
    "metro": "",
    "tier": 0,
    "miles": 50.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R104": {
    "name": "Bridgewater",
@@ -845,7 +998,9 @@
    "metro": "",
    "tier": 0,
    "miles": 52.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R067": {
    "name": "Menlo Park",
@@ -856,7 +1011,9 @@
    "metro": "",
    "tier": 0,
    "miles": 60.3,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R006": {
    "name": "Lenox Square",
@@ -867,7 +1024,9 @@
    "metro": "Atlanta",
    "tier": 1,
    "miles": 0.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R184": {
    "name": "Perimeter",
@@ -878,7 +1037,9 @@
    "metro": "Atlanta",
    "tier": 1,
    "miles": 5.3,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R591": {
    "name": "Cumberland Mall",
@@ -889,7 +1050,9 @@
    "metro": "Atlanta",
    "tier": 1,
    "miles": 6.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R080": {
    "name": "Avalon",
@@ -900,7 +1063,9 @@
    "metro": "Atlanta",
    "tier": 1,
    "miles": 16.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R259": {
    "name": "Mall of Georgia",
@@ -911,7 +1076,9 @@
    "metro": "Atlanta",
    "tier": 1,
    "miles": 26.3,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R364": {
    "name": "Augusta",
@@ -922,7 +1089,9 @@
    "metro": "",
    "tier": 0,
    "miles": 133.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R355": {
    "name": "Haywood Mall",
@@ -933,7 +1102,9 @@
    "metro": "",
    "tier": 0,
    "miles": 89.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R225": {
    "name": "The Summit",
@@ -941,10 +1112,12 @@
    "state": "AL",
    "lat": 33.44726,
    "lon": -86.7285,
-   "metro": "",
-   "tier": 0,
-   "miles": 138.9,
-   "status": "unavailable"
+   "metro": "Birmingham",
+   "tier": 3,
+   "miles": 0.6,
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East South Central"
   },
   "R203": {
    "name": "West Town Mall",
@@ -955,7 +1128,9 @@
    "metro": "",
    "tier": 0,
    "miles": 144.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East South Central"
   },
   "R266": {
    "name": "Bridge Street",
@@ -965,8 +1140,10 @@
    "lon": -86.67308,
    "metro": "",
    "tier": 0,
-   "miles": 95.1,
-   "status": "unavailable"
+   "miles": 87.9,
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East South Central"
   },
   "R513": {
    "name": "CoolSprings Galleria",
@@ -977,7 +1154,9 @@
    "metro": "Nashville",
    "tier": 2,
    "miles": 8.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East South Central"
   },
   "R123": {
    "name": "Green Hills",
@@ -988,7 +1167,9 @@
    "metro": "Nashville",
    "tier": 2,
    "miles": 1.8,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East South Central"
   },
   "R623": {
    "name": "Brickell City Centre",
@@ -999,7 +1180,9 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 0.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R752": {
    "name": "Miami Worldcenter",
@@ -1010,7 +1193,9 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 1.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R115": {
    "name": "Lincoln Road",
@@ -1021,7 +1206,9 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 3.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R312": {
    "name": "Dadeland",
@@ -1032,7 +1219,9 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 9.3,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R012": {
    "name": "The Falls",
@@ -1043,7 +1232,9 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 12.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R087": {
    "name": "Aventura",
@@ -1054,7 +1245,9 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 13.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R214": {
    "name": "The Galleria",
@@ -1065,7 +1258,9 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 26.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R074": {
    "name": "Boca Raton",
@@ -1076,7 +1271,9 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 41.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R024": {
    "name": "Wellington Green",
@@ -1087,7 +1284,9 @@
    "metro": "",
    "tier": 0,
    "miles": 60.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R127": {
    "name": "The Gardens Mall",
@@ -1098,7 +1297,9 @@
    "metro": "",
    "tier": 0,
    "miles": 75.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R169": {
    "name": "Waterside Shops",
@@ -1109,7 +1310,9 @@
    "metro": "",
    "tier": 0,
    "miles": 104.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R185": {
    "name": "Coconut Point",
@@ -1120,7 +1323,9 @@
    "metro": "",
    "tier": 0,
    "miles": 109.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R031": {
    "name": "Scottsdale Fashion Square",
@@ -1131,7 +1336,9 @@
    "metro": "Phoenix",
    "tier": 1,
    "miles": 6.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "US/Arizona",
+   "region": "Mountain"
   },
   "R292": {
    "name": "Scottsdale Quarter",
@@ -1142,7 +1349,9 @@
    "metro": "Phoenix",
    "tier": 1,
    "miles": 10.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "US/Arizona",
+   "region": "Mountain"
   },
   "R247": {
    "name": "Arrowhead",
@@ -1153,7 +1362,9 @@
    "metro": "Phoenix",
    "tier": 1,
    "miles": 14.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "US/Arizona",
+   "region": "Mountain"
   },
   "R026": {
    "name": "Chandler Fashion Center",
@@ -1164,7 +1375,10 @@
    "metro": "Phoenix",
    "tier": 1,
    "miles": 16.1,
-   "status": "unavailable"
+   "status": "available",
+   "tz": "US/Arizona",
+   "region": "Mountain",
+   "since": "2026-10-27 11:55"
   },
   "R267": {
    "name": "SanTan Village",
@@ -1175,7 +1389,9 @@
    "metro": "Phoenix",
    "tier": 1,
    "miles": 21.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "US/Arizona",
+   "region": "Mountain"
   },
   "R086": {
    "name": "La Encantada",
@@ -1183,10 +1399,12 @@
    "state": "AZ",
    "lat": 32.325404,
    "lon": -110.929689,
-   "metro": "",
-   "tier": 0,
-   "miles": 103.7,
-   "status": "unavailable"
+   "metro": "Tucson",
+   "tier": 3,
+   "miles": 1.2,
+   "status": "unavailable",
+   "tz": "US/Arizona",
+   "region": "Mountain"
   },
   "R297": {
    "name": "El Paseo Village",
@@ -1197,7 +1415,9 @@
    "metro": "",
    "tier": 0,
    "miles": 78.8,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R219": {
    "name": "Town Square",
@@ -1208,7 +1428,9 @@
    "metro": "Las Vegas",
    "tier": 2,
    "miles": 3.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Mountain"
   },
   "R161": {
    "name": "The Forum Shops",
@@ -1219,7 +1441,9 @@
    "metro": "Las Vegas",
    "tier": 2,
    "miles": 0.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Mountain"
   },
   "R064": {
    "name": "Fashion Show",
@@ -1230,7 +1454,9 @@
    "metro": "Las Vegas",
    "tier": 2,
    "miles": 0.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Mountain"
   },
   "R650": {
    "name": "Summerlin",
@@ -1241,7 +1467,9 @@
    "metro": "Las Vegas",
    "tier": 2,
    "miles": 9.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Mountain"
   },
   "R213": {
    "name": "Otay Ranch",
@@ -1252,7 +1480,9 @@
    "metro": "San Diego",
    "tier": 2,
    "miles": 14.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R149": {
    "name": "Boylston Street",
@@ -1263,7 +1493,9 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 0.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "New England"
   },
   "R021": {
    "name": "CambridgeSide",
@@ -1274,7 +1506,9 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 1.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "New England"
   },
   "R076": {
    "name": "Chestnut Hill",
@@ -1285,7 +1519,9 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 5.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "New England"
   },
   "R110": {
    "name": "South Shore",
@@ -1296,7 +1532,9 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 9.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "New England"
   },
   "R346": {
    "name": "Legacy Place",
@@ -1307,7 +1545,9 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 9.8,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "New England"
   },
   "R155": {
    "name": "Burlington",
@@ -1318,7 +1558,9 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 11.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "New England"
   },
   "R011": {
    "name": "MarketStreet",
@@ -1329,7 +1571,9 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 11.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "New England"
   },
   "R137": {
    "name": "Derby Street",
@@ -1340,7 +1584,9 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 14.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "New England"
   },
   "R232": {
    "name": "Natick",
@@ -1351,7 +1597,9 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 16.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "New England"
   },
   "R027": {
    "name": "Rockingham Park",
@@ -1362,7 +1610,9 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 29.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "New England"
   },
   "R354": {
    "name": "Pheasant Lane",
@@ -1373,7 +1623,9 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 30.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "New England"
   },
   "R622": {
    "name": "The Shops at Blackstone Valley",
@@ -1384,7 +1636,9 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 37.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "New England"
   },
   "R075": {
    "name": "Union Square",
@@ -1395,7 +1649,9 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 0.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R217": {
    "name": "Chestnut Street",
@@ -1406,7 +1662,9 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 1.8,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R033": {
    "name": "Stonestown",
@@ -1417,7 +1675,9 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 5.8,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R057": {
    "name": "Bay Street",
@@ -1428,7 +1688,9 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 7.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R414": {
    "name": "4th Street",
@@ -1439,7 +1701,9 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 8.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R071": {
    "name": "Corte Madera",
@@ -1450,7 +1714,9 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 11.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R029": {
    "name": "Burlingame",
@@ -1461,7 +1727,9 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 15.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R231": {
    "name": "Hillsdale",
@@ -1472,7 +1740,9 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 18.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R014": {
    "name": "Broadway Plaza",
@@ -1483,7 +1753,9 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 20.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R101": {
    "name": "Stoneridge Mall",
@@ -1494,7 +1766,9 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 27.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R099": {
    "name": "Stanford Shopping Center",
@@ -1505,7 +1779,9 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 27.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R002": {
    "name": "Palo Alto",
@@ -1516,7 +1792,9 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 27.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R055": {
    "name": "Somerset",
@@ -1527,7 +1805,9 @@
    "metro": "Detroit",
    "tier": 2,
    "miles": 0.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East North Central"
   },
   "R041": {
    "name": "Twelve Oaks",
@@ -1538,7 +1818,9 @@
    "metro": "Detroit",
    "tier": 2,
    "miles": 15.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East North Central"
   },
   "R763": {
    "name": "Downtown Detroit",
@@ -1549,7 +1831,9 @@
    "metro": "Detroit",
    "tier": 2,
    "miles": 16.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East North Central"
   },
   "R230": {
    "name": "Briarwood",
@@ -1560,7 +1844,9 @@
    "metro": "Detroit",
    "tier": 2,
    "miles": 36.3,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East North Central"
   },
   "R299": {
    "name": "Franklin Park Mall",
@@ -1571,7 +1857,9 @@
    "metro": "",
    "tier": 0,
    "miles": 64.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East North Central"
   },
   "R616": {
    "name": "Eastwood Towne Center",
@@ -1582,7 +1870,9 @@
    "metro": "",
    "tier": 0,
    "miles": 69.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East North Central"
   },
   "R192": {
    "name": "Crocker Park",
@@ -1593,7 +1883,9 @@
    "metro": "Cleveland",
    "tier": 2,
    "miles": 22.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East North Central"
   },
   "R081": {
    "name": "Eton",
@@ -1604,7 +1896,9 @@
    "metro": "Cleveland",
    "tier": 2,
    "miles": 2.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East North Central"
   },
   "R132": {
    "name": "Woodland",
@@ -1615,7 +1909,9 @@
    "metro": "",
    "tier": 0,
    "miles": 124.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East North Central"
   },
   "R353": {
    "name": "Summit Mall",
@@ -1626,7 +1922,9 @@
    "metro": "Cleveland",
    "tier": 2,
    "miles": 24.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East North Central"
   },
   "R417": {
    "name": "Polaris Fashion Place",
@@ -1637,7 +1935,9 @@
    "metro": "Columbus",
    "tier": 2,
    "miles": 9.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East North Central"
   },
   "R003": {
    "name": "Bellevue Square",
@@ -1648,7 +1948,9 @@
    "metro": "Seattle",
    "tier": 2,
    "miles": 2.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R072": {
    "name": "University Village",
@@ -1659,7 +1961,9 @@
    "metro": "Seattle",
    "tier": 2,
    "miles": 3.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R106": {
    "name": "Southcenter",
@@ -1670,7 +1974,9 @@
    "metro": "Seattle",
    "tier": 2,
    "miles": 10.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R100": {
    "name": "Alderwood",
@@ -1681,7 +1987,9 @@
    "metro": "Seattle",
    "tier": 2,
    "miles": 15.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R339": {
    "name": "Tacoma Mall",
@@ -1692,7 +2000,9 @@
    "metro": "Seattle",
    "tier": 2,
    "miles": 29.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R077": {
    "name": "Pioneer Place",
@@ -1703,7 +2013,9 @@
    "metro": "Portland",
    "tier": 2,
    "miles": 4.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R090": {
    "name": "Washington Square",
@@ -1714,7 +2026,9 @@
    "metro": "Portland",
    "tier": 2,
    "miles": 3.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R134": {
    "name": "Bridgeport Village",
@@ -1725,7 +2039,9 @@
    "metro": "Portland",
    "tier": 2,
    "miles": 7.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R420": {
    "name": "River Park Square",
@@ -1736,7 +2052,9 @@
    "metro": "",
    "tier": 0,
    "miles": 225.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R303": {
    "name": "Boise Towne Square",
@@ -1746,8 +2064,10 @@
    "lon": -116.2782,
    "metro": "",
    "tier": 0,
-   "miles": 344.9,
-   "status": "unavailable"
+   "miles": 299.0,
+   "status": "unavailable",
+   "tz": "America/Denver",
+   "region": "Mountain"
   },
   "R186": {
    "name": "Shayden Summit",
@@ -1758,7 +2078,9 @@
    "metro": "",
    "tier": 0,
    "miles": 448.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Mountain"
   },
   "R298": {
    "name": "Roseville",
@@ -1769,7 +2091,9 @@
    "metro": "Sacramento",
    "tier": 2,
    "miles": 14.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R007": {
    "name": "Mall of America",
@@ -1780,7 +2104,9 @@
    "metro": "Minneapolis",
    "tier": 2,
    "miles": 1.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West North Central"
   },
   "R054": {
    "name": "Southdale",
@@ -1791,7 +2117,9 @@
    "metro": "Minneapolis",
    "tier": 2,
    "miles": 5.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West North Central"
   },
   "R022": {
    "name": "Rosedale Center",
@@ -1802,7 +2130,9 @@
    "metro": "Minneapolis",
    "tier": 2,
    "miles": 12.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West North Central"
   },
   "R183": {
    "name": "Ridgedale",
@@ -1813,7 +2143,9 @@
    "metro": "Minneapolis",
    "tier": 2,
    "miles": 13.3,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West North Central"
   },
   "R109": {
    "name": "Jordan Creek",
@@ -1821,10 +2153,12 @@
    "state": "IA",
    "lat": 41.570044,
    "lon": -93.803773,
-   "metro": "",
-   "tier": 0,
-   "miles": 124.8,
-   "status": "unavailable"
+   "metro": "Des Moines",
+   "tier": 3,
+   "miles": 0.6,
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West North Central"
   },
   "R190": {
    "name": "Village Pointe",
@@ -1835,7 +2169,9 @@
    "metro": "Omaha",
    "tier": 3,
    "miles": 0.3,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West North Central"
   },
   "R040": {
    "name": "Fashion Valley",
@@ -1846,7 +2182,10 @@
    "metro": "San Diego",
    "tier": 2,
    "miles": 1.3,
-   "status": "unavailable"
+   "status": "available",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific",
+   "since": "2026-10-27 11:55"
   },
   "R082": {
    "name": "UTC",
@@ -1857,8 +2196,9 @@
    "metro": "San Diego",
    "tier": 2,
    "miles": 7.9,
-   "status": "available",
-   "since": "2026-10-27 11:31"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R294": {
    "name": "Carlsbad",
@@ -1869,7 +2209,9 @@
    "metro": "San Diego",
    "tier": 2,
    "miles": 21.8,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R345": {
    "name": "Promenade Temecula",
@@ -1880,7 +2222,9 @@
    "metro": "",
    "tier": 0,
    "miles": 51.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R069": {
    "name": "Mission Viejo",
@@ -1891,7 +2235,9 @@
    "metro": "",
    "tier": 0,
    "miles": 62.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R146": {
    "name": "Irvine Spectrum Center",
@@ -1902,7 +2248,9 @@
    "metro": "",
    "tier": 0,
    "miles": 69.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R015": {
    "name": "Fashion Island",
@@ -1913,7 +2261,9 @@
    "metro": "",
    "tier": 0,
    "miles": 72.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R004": {
    "name": "South Coast Plaza",
@@ -1924,7 +2274,9 @@
    "metro": "",
    "tier": 0,
    "miles": 76.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R156": {
    "name": "Brea Mall",
@@ -1935,7 +2287,9 @@
    "metro": "",
    "tier": 0,
    "miles": 89.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R300": {
    "name": "Los Cerritos",
@@ -1946,7 +2300,10 @@
    "metro": "",
    "tier": 0,
    "miles": 93.1,
-   "status": "unavailable"
+   "status": "available",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific",
+   "since": "2026-10-27 11:55"
   },
   "R019": {
    "name": "International Plaza",
@@ -1957,7 +2314,9 @@
    "metro": "Tampa",
    "tier": 2,
    "miles": 1.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R289": {
    "name": "Brandon",
@@ -1968,7 +2327,9 @@
    "metro": "Tampa",
    "tier": 2,
    "miles": 13.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R615": {
    "name": "University Town Center",
@@ -1979,7 +2340,9 @@
    "metro": "Tampa",
    "tier": 2,
    "miles": 40.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R053": {
    "name": "Millenia",
@@ -1990,7 +2353,9 @@
    "metro": "Orlando",
    "tier": 2,
    "miles": 3.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R143": {
    "name": "Florida Mall",
@@ -2001,7 +2366,9 @@
    "metro": "Orlando",
    "tier": 2,
    "miles": 4.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R291": {
    "name": "Altamonte",
@@ -2012,7 +2379,9 @@
    "metro": "Orlando",
    "tier": 2,
    "miles": 16.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R111": {
    "name": "St. Johns Town Center",
@@ -2023,7 +2392,9 @@
    "metro": "",
    "tier": 0,
    "miles": 124.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R047": {
    "name": "Cherry Creek",
@@ -2034,7 +2405,9 @@
    "metro": "Denver",
    "tier": 2,
    "miles": 0.8,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Denver",
+   "region": "Mountain"
   },
   "R030": {
    "name": "Aspen Grove",
@@ -2045,7 +2418,9 @@
    "metro": "Denver",
    "tier": 2,
    "miles": 10.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Denver",
+   "region": "Mountain"
   },
   "R228": {
    "name": "Park Meadows",
@@ -2056,7 +2431,9 @@
    "metro": "Denver",
    "tier": 2,
    "miles": 12.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Denver",
+   "region": "Mountain"
   },
   "R182": {
    "name": "FlatIron Crossing",
@@ -2067,7 +2444,9 @@
    "metro": "Denver",
    "tier": 2,
    "miles": 17.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Denver",
+   "region": "Mountain"
   },
   "R172": {
    "name": "Twenty Ninth Street",
@@ -2078,7 +2457,9 @@
    "metro": "Denver",
    "tier": 2,
    "miles": 25.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Denver",
+   "region": "Mountain"
   },
   "R338": {
    "name": "The Promenade Shops at Briargate",
@@ -2089,7 +2470,9 @@
    "metro": "",
    "tier": 0,
    "miles": 53.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Denver",
+   "region": "Mountain"
   },
   "R177": {
    "name": "ABQ Uptown",
@@ -2097,10 +2480,12 @@
    "state": "NM",
    "lat": 35.10299,
    "lon": -106.56682,
-   "metro": "",
-   "tier": 0,
-   "miles": 331.7,
-   "status": "unavailable"
+   "metro": "Albuquerque",
+   "tier": 3,
+   "miles": 0.7,
+   "status": "unavailable",
+   "tz": "America/Denver",
+   "region": "Mountain"
   },
   "R461": {
    "name": "Fashion Place",
@@ -2108,10 +2493,12 @@
    "state": "UT",
    "lat": 40.636147,
    "lon": -111.8876,
-   "metro": "",
-   "tier": 0,
-   "miles": 371.3,
-   "status": "unavailable"
+   "metro": "Salt Lake City",
+   "tier": 3,
+   "miles": 8.3,
+   "status": "unavailable",
+   "tz": "America/Denver",
+   "region": "Mountain"
   },
   "R125": {
    "name": "City Creek Center",
@@ -2119,10 +2506,12 @@
    "state": "UT",
    "lat": 40.768413,
    "lon": -111.892042,
-   "metro": "",
-   "tier": 0,
-   "miles": 372.9,
-   "status": "unavailable"
+   "metro": "Salt Lake City",
+   "tier": 3,
+   "miles": 0.9,
+   "status": "unavailable",
+   "tz": "America/Denver",
+   "region": "Mountain"
   },
   "R599": {
    "name": "Station Park",
@@ -2130,10 +2519,12 @@
    "state": "UT",
    "lat": 40.983221,
    "lon": -111.906456,
-   "metro": "",
-   "tier": 0,
-   "miles": 376.2,
-   "status": "unavailable"
+   "metro": "Salt Lake City",
+   "tier": 3,
+   "miles": 15.7,
+   "status": "unavailable",
+   "tz": "America/Denver",
+   "region": "Mountain"
   },
   "R304": {
    "name": "Park City",
@@ -2144,7 +2535,9 @@
    "metro": "Baltimore",
    "tier": 2,
    "miles": 48.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R114": {
    "name": "Saint Louis Galleria",
@@ -2155,7 +2548,9 @@
    "metro": "St. Louis",
    "tier": 2,
    "miles": 1.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West North Central"
   },
   "R062": {
    "name": "West County",
@@ -2166,7 +2561,9 @@
    "metro": "St. Louis",
    "tier": 2,
    "miles": 6.8,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West North Central"
   },
   "R097": {
    "name": "Country Club Plaza",
@@ -2177,7 +2574,9 @@
    "metro": "Kansas City",
    "tier": 2,
    "miles": 10.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West North Central"
   },
   "R283": {
    "name": "Leawood",
@@ -2188,7 +2587,9 @@
    "metro": "Kansas City",
    "tier": 2,
    "miles": 10.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West North Central"
   },
   "R066": {
    "name": "The Fashion Mall at Keystone",
@@ -2199,7 +2600,9 @@
    "metro": "Indianapolis",
    "tier": 2,
    "miles": 1.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Indianapolis",
+   "region": "East North Central"
   },
   "R020": {
    "name": "Saddle Creek",
@@ -2207,10 +2610,12 @@
    "state": "TN",
    "lat": 35.09344,
    "lon": -89.812433,
-   "metro": "",
-   "tier": 0,
-   "miles": 180.8,
-   "status": "unavailable"
+   "metro": "Memphis",
+   "tier": 3,
+   "miles": 0.6,
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East South Central"
   },
   "R264": {
    "name": "Oxmoor",
@@ -2218,10 +2623,12 @@
    "state": "KY",
    "lat": 38.247278,
    "lon": -85.609467,
-   "metro": "",
-   "tier": 0,
-   "miles": 93.5,
-   "status": "unavailable"
+   "metro": "Louisville",
+   "tier": 3,
+   "miles": 1.8,
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East South Central"
   },
   "R133": {
    "name": "Downtown Nashville",
@@ -2232,7 +2639,9 @@
    "metro": "Nashville",
    "tier": 2,
    "miles": 6.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East South Central"
   },
   "R083": {
    "name": "SouthPark",
@@ -2243,7 +2652,9 @@
    "metro": "Charlotte",
    "tier": 2,
    "miles": 2.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R796": {
    "name": "Birkdale Village",
@@ -2254,7 +2665,9 @@
    "metro": "Charlotte",
    "tier": 2,
    "miles": 19.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R293": {
    "name": "Friendly Center",
@@ -2265,7 +2678,9 @@
    "metro": "",
    "tier": 0,
    "miles": 65.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R049": {
    "name": "Southpoint",
@@ -2276,7 +2691,9 @@
    "metro": "Raleigh",
    "tier": 2,
    "miles": 14.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R116": {
    "name": "Crabtree Valley Mall",
@@ -2287,7 +2704,9 @@
    "metro": "Raleigh",
    "tier": 2,
    "miles": 1.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R318": {
    "name": "Charleston",
@@ -2298,7 +2717,9 @@
    "metro": "",
    "tier": 0,
    "miles": 172.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R070": {
    "name": "Arden Fair",
@@ -2309,7 +2730,9 @@
    "metro": "Sacramento",
    "tier": 2,
    "miles": 1.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R322": {
    "name": "Vintage Faire",
@@ -2320,7 +2743,9 @@
    "metro": "",
    "tier": 0,
    "miles": 67.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R044": {
    "name": "Montgomery Village",
@@ -2331,7 +2756,9 @@
    "metro": "",
    "tier": 0,
    "miles": 68.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R413": {
    "name": "Ross Park",
@@ -2342,7 +2769,9 @@
    "metro": "Pittsburgh",
    "tier": 2,
    "miles": 2.2,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R096": {
    "name": "Shadyside",
@@ -2353,7 +2782,9 @@
    "metro": "Pittsburgh",
    "tier": 2,
    "miles": 9.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R147": {
    "name": "South Hills Village",
@@ -2364,7 +2795,9 @@
    "metro": "Pittsburgh",
    "tier": 2,
    "miles": 14.1,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R009": {
    "name": "Easton Town Center",
@@ -2375,7 +2808,9 @@
    "metro": "Columbus",
    "tier": 2,
    "miles": 2.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East North Central"
   },
   "R016": {
    "name": "Walden Galleria",
@@ -2383,10 +2818,12 @@
    "state": "NY",
    "lat": 42.914661,
    "lon": -78.762075,
-   "metro": "",
-   "tier": 0,
-   "miles": 176.6,
-   "status": "unavailable"
+   "metro": "Buffalo",
+   "tier": 3,
+   "miles": 0.6,
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R094": {
    "name": "Victoria Gardens",
@@ -2397,7 +2834,9 @@
    "metro": "",
    "tier": 0,
    "miles": 192.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R034": {
    "name": "Pasadena",
@@ -2408,7 +2847,9 @@
    "metro": "",
    "tier": 0,
    "miles": 216.7,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R550": {
    "name": "Valley Plaza",
@@ -2419,7 +2860,9 @@
    "metro": "",
    "tier": 0,
    "miles": 223.3,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Los_Angeles",
+   "region": "Pacific"
   },
   "R028": {
    "name": "Kenwood Towne Centre",
@@ -2430,7 +2873,9 @@
    "metro": "Cincinnati",
    "tier": 2,
    "miles": 0.8,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East North Central"
   },
   "R518": {
    "name": "The Greene",
@@ -2441,7 +2886,9 @@
    "metro": "Cincinnati",
    "tier": 2,
    "miles": 36.9,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East North Central"
   },
   "R288": {
    "name": "Fritz Farm",
@@ -2451,8 +2898,10 @@
    "lon": -84.528169,
    "metro": "",
    "tier": 0,
-   "miles": 85.5,
-   "status": "unavailable"
+   "miles": 62.5,
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "East South Central"
   },
   "R286": {
    "name": "The Promenade at Chenal",
@@ -2460,10 +2909,12 @@
    "state": "AR",
    "lat": 34.76635,
    "lon": -92.45902,
-   "metro": "",
-   "tier": 0,
-   "miles": 211.7,
-   "status": "unavailable"
+   "metro": "Little Rock",
+   "tier": 3,
+   "miles": 3.3,
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "West South Central"
   },
   "R078": {
    "name": "Short Pump Town Center",
@@ -2471,10 +2922,12 @@
    "state": "VA",
    "lat": 37.656044,
    "lon": -77.618722,
-   "metro": "",
-   "tier": 0,
-   "miles": 138.4,
-   "status": "unavailable"
+   "metro": "Richmond",
+   "tier": 3,
+   "miles": 1.1,
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R614": {
    "name": "Lynnhaven Mall",
@@ -2484,8 +2937,10 @@
    "lon": -76.071055,
    "metro": "",
    "tier": 0,
-   "miles": 160.9,
-   "status": "unavailable"
+   "miles": 103.6,
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "South Atlantic"
   },
   "R324": {
    "name": "Renaissance at Colony Park",
@@ -2496,7 +2951,9 @@
    "metro": "",
    "tier": 0,
    "miles": 184.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/Chicago",
+   "region": "East South Central"
   },
   "R492": {
    "name": "Cielo Vista Mall",
@@ -2507,8 +2964,9 @@
    "metro": "",
    "tier": 0,
    "miles": 230.6,
-   "status": "available",
-   "since": "2026-10-27 11:17"
+   "status": "unavailable",
+   "tz": "America/Denver",
+   "region": "West South Central"
   },
   "R073": {
    "name": "Ala Moana",
@@ -2519,7 +2977,9 @@
    "metro": "Honolulu",
    "tier": 3,
    "miles": 0.4,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "Pacific/Honolulu",
+   "region": "Pacific"
   },
   "R210": {
    "name": "Kahala",
@@ -2530,7 +2990,9 @@
    "metro": "Honolulu",
    "tier": 3,
    "miles": 4.0,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "Pacific/Honolulu",
+   "region": "Pacific"
   },
   "R140": {
    "name": "Eastview",
@@ -2541,7 +3003,9 @@
    "metro": "",
    "tier": 0,
    "miles": 67.5,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   },
   "R107": {
    "name": "Syracuse",
@@ -2552,12 +3016,14 @@
    "metro": "",
    "tier": 0,
    "miles": 131.6,
-   "status": "unavailable"
+   "status": "unavailable",
+   "tz": "America/New_York",
+   "region": "Middle Atlantic"
   }
  },
- "last_sweep": "2026-10-27T11:31:46.639304-05:00",
- "sweep_seconds": 93,
- "metros_ok": 38,
+ "last_sweep": "2026-10-27T11:55:55.118173-05:00",
+ "sweep_seconds": 161,
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -2810,5 +3276,6 @@
    "tier": 3
   }
  ],
- "last_error": "2026-10-27T11:31-05:00: stopped after Little Rock"
+ "last_error": "2026-10-27T11:31-05:00: stopped after Little Rock",
+ "retries": 0
 }
