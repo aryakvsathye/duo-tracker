@@ -7,6 +7,8 @@ TEST = os.environ.get("TEST") == "true"
 TOPIC = "aryak-duo-256-night-sky"
 MAX_MILES = 50
 GAP = 60
+RUN_SECONDS = 540  # keep checking for 9 min, longer than the 5-min trigger,
+                   # so the next run is always queued and starts the moment this one ends
 HISTORY = 60  # checks kept for the lap chart
 TZ = ZoneInfo("America/Chicago")
 STATE_FILE = "state.json"
@@ -74,10 +76,14 @@ night = t.hour >= 22 or t.hour < 7
 if night and not TEST and t.minute % 15 >= 5:
     print("Night mode: skipping this run")
     raise SystemExit(0)
-CHECKS = 1 if (TEST or night) else 5
+single = TEST or night
+run_start = time.monotonic()
 
-alerted, failures = set(), 0
-for i in range(CHECKS):
+alerted, failures, attempts = set(), 0, 0
+i = -1
+while True:
+    i += 1
+    attempts += 1
     started = time.monotonic()
     lap = {"t": now().isoformat(timespec="seconds"), "ok": False, "ms": None, "code": None}
     try:
@@ -127,13 +133,16 @@ for i in range(CHECKS):
         print(f"Check {i+1}: error {e}")
     if not TEST:
         state["history"] = (state["history"] + [lap])[-HISTORY:]
-    if i < CHECKS - 1:
-        time.sleep(GAP)
+    # Stop when another full gap would run past the window
+    if single or time.monotonic() - run_start + GAP > RUN_SECONDS:
+        break
+    # Sleep so checks start a minute apart, however long Apple took
+    time.sleep(max(0, GAP - (time.monotonic() - started)))
 
 t = now()
 
 # Failure alert, roughly once an hour while broken
-if failures == CHECKS and not TEST and t.minute < 5:
+if failures == attempts and not TEST and t.minute < 5:
     push("Duo checker failing",
          "All checks failed this run. Apple may be blocking it.",
          priority="low", click="https://github.com")
