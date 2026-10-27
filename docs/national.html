@@ -62,8 +62,30 @@
 
   /* map: the hero */
   .map { position: relative; }
+  .map-wrap { position: relative; }
+  #map { touch-action: pan-y; cursor: grab; }
+  #map.zoomed { touch-action: none; }
+  #map:active { cursor: grabbing; }
+  .zoom-ctl { position: absolute; top: 10px; right: 10px; display: grid; gap: 1px; background: var(--kerb); border-radius: var(--r-sm); overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.35); }
+  .zoom-ctl button {
+    width: 34px; height: 34px; border: 0; background: var(--asphalt-2); color: var(--chalk); cursor: pointer;
+    font-size: 18px; font-weight: 600; display: grid; place-items: center; -webkit-tap-highlight-color: transparent;
+  }
+  .zoom-ctl button:active { background: var(--kerb); }
+  .zoom-ctl button svg { width: 15px; height: 15px; }
+  .map-hint { position: absolute; left: 10px; bottom: 10px; font-size: 11px; color: var(--grey); background: rgba(21,21,30,.75); padding: 3px 8px; border-radius: 99px; pointer-events: none; transition: opacity .4s; }
+  .map-hint.gone { opacity: 0; }
+  .filters { display: flex; gap: 6px; flex-wrap: wrap; padding: 10px 14px; border-bottom: 1px solid var(--kerb); }
+  .chip { border: 1px solid var(--kerb); background: none; color: var(--grey); font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 99px; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+  .chip[aria-pressed="true"] { background: var(--chalk); color: var(--carbon); border-color: var(--chalk); }
+  #map .lbl { fill: var(--chalk); font-family: Archivo, system-ui, sans-serif; font-weight: 600; paint-order: stroke; stroke: var(--carbon); pointer-events: none; }
+  #map .lbl.metro { fill: var(--grey); font-weight: 700; }
+  #map .dim { opacity: 0.12; }
+  .srow { cursor: pointer; }
+  @media (hover: hover) { .srow:hover { background: var(--asphalt-2); } }
   #map { display: block; width: 100%; height: auto; }
   #map .state { fill: #23232f; stroke: #34343f; stroke-width: 0.7; }
+  #map circle { vector-effect: non-scaling-stroke; }
   #map .dot { stroke: var(--carbon); stroke-width: 1; cursor: pointer; }
   #map .dot.out { fill-opacity: 0.85; }
   #map .dot.in { fill: var(--green); }
@@ -158,7 +180,22 @@
 
     <section class="section">
       <div class="panel map">
-        <svg id="map" viewBox="0 0 975 610" role="img" aria-label="Map of Apple Stores tracked, green where the Duo is in stock"></svg>
+        <div class="filters" role="group" aria-label="Show stores">
+          <button class="chip" type="button" data-f="all" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-f="in" aria-pressed="false">In stock</button>
+          <button class="chip" type="button" data-f="1" aria-pressed="false">T1</button>
+          <button class="chip" type="button" data-f="2" aria-pressed="false">T2</button>
+          <button class="chip" type="button" data-f="3" aria-pressed="false">T3</button>
+        </div>
+        <div class="map-wrap">
+          <svg id="map" viewBox="0 0 975 610" role="img" aria-label="Map of Apple Stores tracked, green where the Duo is in stock"></svg>
+          <div class="zoom-ctl">
+            <button type="button" id="zin" aria-label="Zoom in">+</button>
+            <button type="button" id="zout" aria-label="Zoom out">−</button>
+            <button type="button" id="zreset" aria-label="Show the whole country"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+          </div>
+          <div class="map-hint" id="mapHint">Pinch or use + to zoom, drag to move</div>
+        </div>
         <div class="map-foot">
           <div class="readout" id="mapReadout">Tap a store for details</div>
           <div class="legend">
@@ -271,9 +308,77 @@ const projection = d3.geoAlbersUsa().scale(1300).translate([487.5, 305]);
 async function drawStates() {
   const us = await (await fetch("https://cdn.jsdelivr.net/npm/us-atlas@3/states-albers-10m.json")).json();
   const svg = d3.select("#map");
-  svg.append("g").selectAll("path").data(topojson.feature(us, us.objects.states).features)
+  const world = svg.append("g").attr("id", "world");
+  world.append("g").selectAll("path").data(topojson.feature(us, us.objects.states).features)
     .join("path").attr("class", "state").attr("d", d3.geoPath());
-  svg.append("g").attr("id", "dots");
+  world.append("g").attr("id", "metroLabels");
+  world.append("g").attr("id", "dots");
+  world.append("g").attr("id", "storeLabels");
+  setupZoom(svg, world);
+}
+
+/* ---------- zoom and pan ---------- */
+let zoom = null, zk = 1, filter = "all";
+function setupZoom(svg, world) {
+  zoom = d3.zoom()
+    .scaleExtent([1, 14])
+    .translateExtent([[-60, -60], [1035, 670]])
+    // On phones, one finger scrolls the page until you zoom in; pinch always zooms.
+    // On computers, plain scrolling scrolls the page; ctrl/cmd + scroll or a trackpad pinch zooms.
+    .filter(e => {
+      if (e.type === "wheel") return e.ctrlKey || e.metaKey;
+      if (e.type === "touchstart") return e.touches.length > 1 || zk > 1;
+      return !e.button;
+    })
+    .on("zoom", e => {
+      world.attr("transform", e.transform);
+      const was = zk; zk = e.transform.k;
+      svg.classed("zoomed", zk > 1.01);
+      if ((was < 2.4) !== (zk < 2.4) || (was < 5) !== (zk < 5) || Math.abs(was - zk) > 0.01) styleForZoom();
+      document.getElementById("mapHint").classList.add("gone");
+    });
+  svg.call(zoom).on("dblclick.zoom", null);
+  svg.on("dblclick", e => {
+    const [x, y] = d3.pointer(e, world.node());
+    svg.transition().duration(450).call(zoom.scaleTo, Math.min(14, zk * 2.2), [x, y]);
+  });
+  document.getElementById("zin").onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1.8);
+  document.getElementById("zout").onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1 / 1.8);
+  document.getElementById("zreset").onclick = () => svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+  document.querySelectorAll(".chip").forEach(c => c.addEventListener("click", () => {
+    filter = c.dataset.f;
+    document.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", String(x === c)));
+    styleForZoom();
+  }));
+}
+function flyTo(s) {
+  const p = projection([s.lon, s.lat]); if (!p || !zoom) return;
+  const svg = d3.select("#map"), k = Math.max(zk, 6);
+  svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity.translate(487.5 - p[0] * k, 305 - p[1] * k).scale(k));
+  pick(s);
+  document.getElementById("map").scrollIntoView({ behavior: "smooth", block: "center" });
+}
+const baseR = s => s.tier === 1 ? 6 : s.tier === 2 ? 5 : s.tier === 3 ? 4.2 : 3;
+function visible(s) {
+  if (filter === "all") return true;
+  if (filter === "in") return s.status === "available";
+  return String(s.tier) === filter;
+}
+function styleForZoom() {
+  // Keep dots and text the same size on screen at any zoom (they grow a little, not 14x)
+  const k = zk, grow = Math.sqrt(k);
+  d3.selectAll("#dots circle.dot")
+    .attr("r", s => baseR(s) * grow / k)
+    .classed("dim", s => !visible(s));
+  d3.selectAll("#dots circle.pulse").attr("r", function () { return +this.dataset.r * grow / k; })
+    .classed("dim", function () { return filter !== "all" && filter !== "in" && this.dataset.tier !== filter; });
+  d3.selectAll("#dots circle.home").attr("r", 11 * grow / k);
+  // Metro names from 2.4x, store names from 5x
+  d3.selectAll("#metroLabels text").attr("font-size", 12 / k).attr("stroke-width", 3 / k).attr("dy", -9 / k)
+    .attr("display", zk >= 2.4 && zk < 5 ? null : "none");
+  d3.selectAll("#storeLabels text").attr("font-size", 11 / k).attr("stroke-width", 3 / k)
+    .attr("dx", 7 / k).attr("dy", 4 / k)
+    .attr("display", s => zk >= 5 && visible(s) ? null : "none");
 }
 function storeList() {
   return Object.entries(state.stores || {}).map(([id, s]) => ({ id, ...s }))
@@ -287,12 +392,13 @@ function describe(s) {
 function drawStores() {
   const g = d3.select("#dots");
   const list = storeList().sort((a, b) => (a.status === "available") - (b.status === "available"));
-  const r = s => s.tier === 1 ? 6 : s.tier === 2 ? 5 : s.tier === 3 ? 4.2 : 3;
+  const r = baseR;
   const fill = s => s.status === "available" ? "var(--green)" : s.tier ? TIER_VAR[String(s.tier)] : "var(--grey-2)";
   g.selectAll("*").remove();
   list.filter(s => s.status === "available").forEach(s => {
     const [x, y] = projection([s.lon, s.lat]);
-    g.append("circle").attr("class", "pulse").attr("cx", x).attr("cy", y).attr("r", r(s));
+    g.append("circle").attr("class", "pulse").attr("cx", x).attr("cy", y).attr("r", r(s))
+      .attr("data-r", r(s)).attr("data-tier", String(s.tier));
   });
   g.selectAll("circle.dot").data(list, d => d.id).join("circle")
     .attr("class", s => `dot ${s.status === "available" ? "in" : "out"}${selected === s.id ? " sel" : ""}`)
@@ -302,6 +408,18 @@ function drawStores() {
     .on("click", (e, s) => pick(s)).on("mouseenter", (e, s) => pick(s));
   const kc = list.find(s => s.metro === "Kansas City" && s.miles <= 15);
   if (kc) { const [x, y] = projection([kc.lon, kc.lat]); g.append("circle").attr("class", "home").attr("cx", x).attr("cy", y).attr("r", 11); }
+
+  // labels: one per metro (at the average of its stores), one per store
+  const byMetro = d3.groups(list.filter(s => s.metro), s => s.metro).map(([m, ss]) => {
+    const pts = ss.map(s => projection([s.lon, s.lat]));
+    return { m, x: d3.mean(pts, p => p[0]), y: d3.min(pts, p => p[1]) };
+  });
+  d3.select("#metroLabels").selectAll("text").data(byMetro, d => d.m).join("text")
+    .attr("class", "lbl metro").attr("x", d => d.x).attr("y", d => d.y).attr("text-anchor", "middle").text(d => d.m);
+  d3.select("#storeLabels").selectAll("text").data(list, d => d.id).join("text")
+    .attr("class", "lbl").attr("x", s => projection([s.lon, s.lat])[0]).attr("y", s => projection([s.lon, s.lat])[1])
+    .text(s => s.name);
+  styleForZoom();
 }
 function pick(s) {
   selected = s.id;
@@ -335,7 +453,11 @@ function renderNow() {
   const el = document.getElementById("nowList");
   document.getElementById("nowNote").textContent = list.length ? `${list.length} store${list.length > 1 ? "s" : ""}` : "";
   if (!list.length) { el.innerHTML = '<div class="empty">No stock anywhere in the 50 metros right now.</div>'; return; }
-  el.innerHTML = list.map(s => `<div class="srow">
+  el.onclick = e => {
+    const row = e.target.closest(".srow"); if (!row) return;
+    const s = storeList().find(x => x.id === row.dataset.id); if (s) flyTo(s);
+  };
+  el.innerHTML = list.map(s => `<div class="srow" data-id="${esc(s.id)}" title="Show on map">
     <div>${s.tier ? tierTag(s.tier) : ""}</div>
     <div><b>${esc(s.name)}</b><div class="sm">${esc(s.metro || s.city)}${s.state ? ", " + esc(s.state) : ""}</div></div>
     <time>${s.since ? `${Math.max(1, Math.round((Date.now() - toDate(s.since)) / 60000))} min` : "new"}</time>
