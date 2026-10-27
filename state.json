@@ -13,19 +13,88 @@
   "Hilldale": "unavailable",
   "Main Place": "unavailable"
  },
- "checks": 10,
+ "checks": 15,
  "errors": 0,
  "events": 0,
  "last_heartbeat": "2026-10-27",
  "nearby": {
   "Country Club Plaza": {
    "miles": 10.11,
-   "status": "unavailable"
+   "status": "unavailable",
+   "quote": "Currently unavailable at Apple Country Club Plaza",
+   "phone": "816-448 9200",
+   "lat": 39.0413,
+   "lon": -94.590172,
+   "address": "227 Nichols Road",
+   "city": "Kansas City",
+   "hours": [
+    {
+     "days": "Mon-Sat:",
+     "time": "10:00 AM-7:00 PM"
+    },
+    {
+     "days": "Sun:",
+     "time": "12:00 PM-6:00 PM"
+    }
+   ]
   },
   "Leawood": {
    "miles": 10.47,
-   "status": "unavailable"
+   "status": "unavailable",
+   "quote": "Currently unavailable at Apple Leawood",
+   "phone": "913-234 9800",
+   "lat": 38.91131,
+   "lon": -94.6378,
+   "address": "4529 West 119th Street",
+   "city": "Leawood",
+   "hours": [
+    {
+     "days": "Mon-Sat:",
+     "time": "10:00 AM-8:00 PM"
+    },
+    {
+     "days": "Sun:",
+     "time": "11:00 AM-6:00 PM"
+    }
+   ]
   }
  },
- "last_check": "2026-10-27T08:35:11.548588-05:00"
+ "last_check": "2026-10-27T08:44:12.969100-05:00",
+ "history": [
+  {
+   "t": "2026-10-27T08:40:10-05:00",
+   "ok": true,
+   "ms": 372,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T08:41:11-05:00",
+   "ok": true,
+   "ms": 568,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T08:42:11-05:00",
+   "ok": true,
+   "ms": 297,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T08:43:12-05:00",
+   "ok": true,
+   "ms": 374,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T08:44:12-05:00",
+   "ok": true,
+   "ms": 401,
+   "code": 200,
+   "green": []
+  }
+ ]
 }
