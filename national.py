@@ -20,8 +20,10 @@ LOG_FILE = os.path.join(OUT_DIR, "events.csv")
 
 SPACING = 3.0          # seconds between requests to Apple
 RETRY_WAIT = 10        # seconds before retrying a metro that failed once
-MAX_FAILS = 3          # metros in a row that fail even after a retry before giving up
-BACKOFF_MIN = 15       # minutes to pause after Apple starts refusing
+SKIP_MIN = 10          # a metro that fails even after its retry sits out for this long
+                       # (with sweeps every 10 min: skipped next sweep, tried again the one after)
+ABORT_AFTER = 5        # if this many metros in a row fail, Apple is refusing everything:
+                       # stop this sweep early (the next sweep still runs as normal)
 ASSIGN_MILES = 50      # a store belongs to a metro if it's this close to the metro's ZIP
 WAVE_GAP_MIN = 45      # restocks in the same region closer together than this form a wave
 WAVE_MIN = 2           # restocks needed for a regional wave
@@ -241,10 +243,9 @@ def main():
     if night and t.minute % 30 >= 10:
         print("Night: sweeping every 30 min, skipping this one")
         return
-    backoff = state.get("backoff_until")
-    if backoff and t < datetime.datetime.fromisoformat(backoff):
-        print(f"Backing off until {backoff}")
-        return
+    state.pop("backoff_until", None)          # old whole-sweep pause, no longer used
+    skip = state.get("metro_skip") or {}      # metro -> skip until (ISO time)
+    skip = {m: u for m, u in skip.items() if datetime.datetime.fromisoformat(u) > t}
 
     def fetch(zip_code):
         """One request; returns (stores, None) or (None, short reason)."""
@@ -263,10 +264,14 @@ def main():
 
     best = {}   # store_id -> (miles, metro, tier, store dict)
     fails, ok, retried, sweep_start = 0, 0, 0, time.monotonic()
-    problems = []
-    for i, (metro, zip_code, tier) in enumerate(METROS):
-        if i:
+    problems, skipped, first = [], [], True
+    for metro, zip_code, tier in METROS:
+        if metro in skip:
+            skipped.append(metro)
+            continue
+        if not first:
             time.sleep(SPACING)
+        first = False
         stores, why = fetch(zip_code)
         if stores is None:
             print(f"{metro}: {why}, retrying in {RETRY_WAIT} s")
@@ -276,10 +281,10 @@ def main():
         if stores is None:
             fails += 1
             problems.append(f"{metro}: {why}")
-            print(f"{metro}: failed again ({why})")
-            if fails >= MAX_FAILS:
-                state["backoff_until"] = (now() + datetime.timedelta(minutes=BACKOFF_MIN)).isoformat()
-                print(f"{MAX_FAILS} metros in a row failed, pausing for {BACKOFF_MIN} min")
+            skip[metro] = (now() + datetime.timedelta(minutes=SKIP_MIN)).isoformat()
+            print(f"{metro}: failed again ({why}), skipping it for {SKIP_MIN} min")
+            if fails >= ABORT_AFTER:
+                print(f"{ABORT_AFTER} metros in a row failed, ending this sweep early")
                 break
             continue
         fails, ok = 0, ok + 1
@@ -333,14 +338,14 @@ def main():
     state["sweep_seconds"] = round(time.monotonic() - sweep_start)
     state["metros_ok"] = ok
     state["retries"] = retried
+    state["metro_skip"] = skip
+    state["skipped"] = skipped
     if problems:
         state["last_error"] = f"{now().isoformat(timespec='minutes')}: " + "; ".join(problems[-5:])
     else:
         state.pop("last_error", None)
     state["metros"] = [{"metro": m, "zip": z, "tier": tr} for m, z, tr in METROS]
-    if ok == len(METROS):
-        state.pop("backoff_until", None)
-    print(f"Swept {ok}/{len(METROS)} metros, {len(best)} stores, {len(events)} changes "
+    print(f"Swept {ok}/{len(METROS)} metros ({len(skipped)} sitting out), {len(best)} stores, {len(events)} changes "
           f"in {state['sweep_seconds']} s")
 
     # Weekly summary: Sunday after 6pm Central, once per week

@@ -595,17 +595,17 @@ function renderStatus() {
   document.getElementById("mStores").textContent = list.length || "–";
   document.getElementById("mMetros").textContent = state.metros_ok != null ? `${state.metros_ok} of ${(state.metros || []).length || 50}` : "–";
   document.getElementById("mMetros").className = state.metros_ok != null && state.metros_ok < (state.metros || []).length ? "caution" : "";
-  // Explain gaps: a pause after Apple refused requests, or metros that failed last sweep
+  // Explain gaps: metros sitting out after failing, or metros that failed in the last sweep
   const note = document.getElementById("sweepNote");
-  const paused = state.backoff_until && new Date(state.backoff_until) > new Date();
-  if (paused) {
-    const until = new Date(state.backoff_until).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" });
-    note.textContent = `Sweeps paused until ${until} CT because Apple refused several requests in a row. Your Kansas City checks run separately and aren't affected.`;
-    note.hidden = false;
-  } else if (state.metros_ok != null && state.metros_ok < (state.metros || []).length && state.last_error) {
-    note.textContent = `Last sweep missed some metros: ${state.last_error.replace(/^[^ ]+: /, "")}.`;
-    note.hidden = false;
-  } else note.hidden = true;
+  const sitting = state.skipped || [];
+  const failed = state.metros_ok != null && state.last_error ? state.last_error.replace(/^[^ ]+: /, "") : "";
+  const total = (state.metros || []).length || 50;
+  const parts = [];
+  if (sitting.length) parts.push(`Sat out the last sweep after failing the one before: ${sitting.join(", ")}. They're tried again next sweep.`);
+  if (failed) parts.push(`Failed in the last sweep, so they sit out the next one: ${failed}.`);
+  note.textContent = parts.join(" ");
+  note.hidden = !parts.length;
+  document.getElementById("mMetros").textContent = state.metros_ok != null ? `${state.metros_ok} of ${total}` : "–";
 }
 function tickSweep() {
   const el = document.getElementById("mSweep");
