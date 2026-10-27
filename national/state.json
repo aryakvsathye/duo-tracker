@@ -3357,17 +3357,14 @@
    "metro": "Denver",
    "tier": 2,
    "miles": 12.2,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Denver",
    "region": "Mountain",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-10-27 13:47"
-   },
-   "since": "2026-10-27 13:47"
+   "since_by_part": {}
   },
   "R182": {
    "name": "FlatIron Crossing",
@@ -4180,8 +4177,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-27T13:47:58.515330-05:00",
- "sweep_seconds": 165,
+ "last_sweep": "2026-10-27T13:52:59.196109-05:00",
+ "sweep_seconds": 161,
  "metros_ok": 50,
  "metros": [
   {
