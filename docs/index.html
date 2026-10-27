@@ -142,6 +142,45 @@
   .gantry.green .bag { background: var(--green); color: #06210f; border-color: var(--green); }
   .bag svg { width: 16px; height: 16px; }
 
+  /* ---------- fastest route ---------- */
+  .link-btn {
+    background: none; border: 1px solid var(--kerb); border-radius: 99px; cursor: pointer;
+    font-size: 13px; font-weight: 600; color: var(--chalk); padding: 5px 12px;
+    display: inline-flex; align-items: center; gap: 6px; -webkit-tap-highlight-color: transparent;
+    transition: border-color .2s, transform .12s;
+  }
+  .link-btn:active { transform: scale(0.96); }
+  .link-btn svg { width: 14px; height: 14px; }
+  .link-btn.busy svg { animation: spin 1s linear infinite; }
+  .route { overflow: hidden; }
+  #track { display: block; width: 100%; height: auto; background: #18181f; }
+  #track[hidden] { display: none; }
+  .trk-base { fill: none; stroke: #2e2e3a; stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; }
+  .trk-edge { fill: none; stroke: #45455400; }
+  .trk-slow { fill: none; stroke: #5a5a6c; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 6 7; }
+  .trk-fast-base { fill: none; stroke: #34343f; stroke-width: 17; stroke-linecap: round; stroke-linejoin: round; }
+  .trk-kerb { fill: none; stroke: var(--signal); stroke-width: 19; stroke-linecap: butt; stroke-linejoin: round; stroke-dasharray: 5 5; opacity: .55; }
+  .trk-line { fill: none; stroke: var(--chalk); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+  .trk-line.go { stroke: var(--green); }
+  .trk-line.draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: drawline 1.4s ease-out forwards; }
+  @keyframes drawline { to { stroke-dashoffset: 0; } }
+  .trk-label { font: 600 16px Archivo, system-ui, sans-serif; fill: var(--chalk); paint-order: stroke; stroke: #18181f; stroke-width: 4px; }
+  .trk-label.muted { fill: var(--grey); }
+  .trk-sector { font: 700 14px Archivo, system-ui, sans-serif; fill: var(--yellow); paint-order: stroke; stroke: #18181f; stroke-width: 4px; }
+  .route-msg { padding: 12px 14px; font-size: 14px; color: var(--grey); }
+  .route-msg:empty { display: none; }
+  .rrow { display: grid; grid-template-columns: 38px 1fr auto; gap: 0 12px; padding: 12px 14px 12px 0; border-top: 1px solid var(--kerb); align-items: center; }
+  .rrow .pos { padding-top: 0; }
+  .rrow b { font-weight: 700; font-size: 16px; }
+  .rrow .rmeta { color: var(--grey); font-size: 13px; margin-top: 2px; }
+  .rrow .sectors { display: flex; gap: 12px; font-size: 12px; color: var(--grey); margin-top: 4px; }
+  .rrow .sectors span b { font-size: 12px; color: var(--chalk); font-weight: 600; margin-left: 3px; }
+  .rrow .go-tag { color: var(--green); font-weight: 700; }
+  .rrow a { font-size: 13px; font-weight: 600; padding: 8px 12px; border: 1px solid var(--kerb); border-radius: var(--r-sm); text-decoration: none; white-space: nowrap; }
+  .rrow.fast a { background: var(--chalk); color: var(--carbon); border-color: var(--chalk); }
+  .rrow.fast.go a { background: var(--green); color: #06210f; border-color: var(--green); }
+  .fine { font-size: 12px; color: var(--grey-2); margin-top: 8px; }
+
   /* ---------- race control strip ---------- */
   .rc { display: grid; grid-template-columns: 4px 1fr auto; align-items: stretch; overflow: hidden; }
   .rc-flag { background: var(--grey-2); }
@@ -272,7 +311,6 @@
   @media (min-width: 1040px) {
     body { max-width: 1260px; padding-left: 32px; padding-right: 32px; }
     .layout { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 0 32px; align-items: start; }
-    .col-a { position: sticky; top: 20px; }
     .col-b > .section:first-child { margin-top: 0; }
     .col-a > .gantry { margin-top: 0; }
     .axis, .bars-wrap { height: 150px; }
@@ -313,6 +351,19 @@
         <p id="verdictSub">&nbsp;</p>
       </div>
       <a class="bag" id="bag" href="https://www.apple.com/shop/bag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span id="bagText">Open bag</span></a>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Fastest route</h2>
+        <button class="link-btn" id="locate" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7"/></svg>Locate me</button>
+      </div>
+      <div class="panel route">
+        <svg id="track" viewBox="0 0 600 380" role="img" aria-label="Driving routes from your location to the nearest Apple stores" hidden></svg>
+        <div class="route-msg" id="routeMsg">Allow location to see your drive to each store.</div>
+        <div id="routeList"></div>
+      </div>
+      <p class="fine">Drive times come from OpenStreetMap routing and don't include live traffic. Your location is rounded to about 100 m and only used to plan these routes.</p>
     </section>
 
     <section class="section">
@@ -771,6 +822,158 @@ function flashChanges(state) {
   prevSnap = snap;
 }
 
+/* ---------- fastest route ---------- */
+const OSRM = "https://router.project-osrm.org/route/v1/driving";
+let here = null, routes = [], lastNearby = {}, routeWanted = false, routeDrawnOnce = false;
+
+function setRouteMsg(t) { document.getElementById("routeMsg").textContent = t; }
+function routeBusy(on) { document.getElementById("locate").classList.toggle("busy", on); }
+function mins(sec) { const m = Math.round(sec / 60); return m < 60 ? `${m} min` : `${Math.floor(m / 60)} h ${m % 60} min`; }
+function mmss(sec) { const s = Math.round(sec); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`; }
+
+function locate() {
+  if (!("geolocation" in navigator)) { setRouteMsg("This browser can't share your location."); return; }
+  routeWanted = true;
+  routeBusy(true);
+  setRouteMsg("Finding your location…");
+  navigator.geolocation.getCurrentPosition(pos => {
+    here = { lat: +pos.coords.latitude.toFixed(3), lon: +pos.coords.longitude.toFixed(3) };
+    planRoutes();
+  }, err => {
+    routeBusy(false);
+    setRouteMsg(err.code === 1
+      ? "Location is blocked for this page. Allow location for this site in your phone's settings, then tap Locate me."
+      : "Couldn't get your location. Tap Locate me to try again.");
+  }, { enableHighAccuracy: false, timeout: 15000, maximumAge: 60000 });
+}
+
+async function planRoutes() {
+  if (!here) return;
+  const stores = Object.entries(lastNearby).filter(([, s]) => s.lat != null && s.lon != null);
+  if (!stores.length) { setRouteMsg("Got your location. Routes appear once store data loads."); return; }
+  setRouteMsg("Planning the fastest routes…");
+  routeBusy(true);
+  try {
+    routes = await Promise.all(stores.map(async ([name, s]) => {
+      const url = `${OSRM}/${here.lon},${here.lat};${s.lon},${s.lat}?overview=full&geometries=geojson&steps=true`;
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`routing returned ${res.status}`);
+      const data = await res.json();
+      const rt = data.routes && data.routes[0];
+      if (!rt) throw new Error("no route found");
+      return { name, sec: rt.duration, meters: rt.distance, coords: rt.geometry.coordinates, steps: (rt.legs[0] || {}).steps || [] };
+    }));
+    routes.sort((a, b) => a.sec - b.sec);
+    setRouteMsg("");
+    drawTrack();
+  } catch (e) {
+    setRouteMsg("Couldn't plan routes right now. Tap Locate me to try again.");
+  }
+  routeBusy(false);
+}
+
+function sectorsFor(route) {
+  // Split the drive into three roughly equal-time sectors at step boundaries
+  const total = route.sec, out = [], marks = [];
+  let acc = 0, last = 0, target = total / 3;
+  route.steps.forEach((st, i) => {
+    acc += st.duration;
+    if (out.length < 2 && acc >= target && i < route.steps.length - 1) {
+      out.push(acc - last); last = acc; target = total * (out.length + 1) / 3;
+      const loc = route.steps[i + 1].maneuver.location;
+      marks.push(loc);
+    }
+  });
+  out.push(total - last);
+  return { times: out, marks };
+}
+
+function drawTrack() {
+  const svg = document.getElementById("track");
+  if (!routes.length) { svg.setAttribute("hidden", ""); document.getElementById("routeList").innerHTML = ""; return; }
+  const W = 600, H = 380, PAD = 42;
+  const pts = [[here.lon, here.lat]];
+  routes.forEach(r => r.coords.forEach(c => pts.push(c)));
+  const lons = pts.map(p => p[0]), lats = pts.map(p => p[1]);
+  const minLon = Math.min(...lons), maxLon = Math.max(...lons), minLat = Math.min(...lats), maxLat = Math.max(...lats);
+  const kx = Math.cos(((minLat + maxLat) / 2) * Math.PI / 180);
+  const spanX = Math.max((maxLon - minLon) * kx, 1e-4), spanY = Math.max(maxLat - minLat, 1e-4);
+  const scale = Math.min((W - PAD * 2) / spanX, (H - PAD * 2) / spanY);
+  const ox = (W - spanX * scale) / 2, oy = (H - spanY * scale) / 2;
+  const P = ([lon, lat]) => [ox + (lon - minLon) * kx * scale, oy + (maxLat - lat) * scale];
+  const path = coords => coords.map((c, i) => { const [x, y] = P(c); return `${i ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`; }).join("");
+
+  const stockAt = n => (lastNearby[n] || {}).status === "available";
+  const fast = routes[0];
+  const sec = sectorsFor(fast);
+  let g = "";
+
+  // slower routes first, underneath
+  routes.slice(1).forEach(r => {
+    g += `<path class="trk-base" d="${path(r.coords)}"/><path class="trk-slow" d="${path(r.coords)}"/>`;
+  });
+  // fastest route: kerbs, asphalt, racing line
+  const fd = path(fast.coords);
+  const animate = !routeDrawnOnce;
+  g += `<path class="trk-kerb" d="${fd}"/><path class="trk-fast-base" d="${fd}"/>`;
+  g += `<path class="trk-line${stockAt(fast.name) ? " go" : ""}${animate ? " draw" : ""}" pathLength="1" d="${fd}"/>`;
+
+  // sector markers
+  sec.marks.forEach((m, i) => {
+    const [x, y] = P(m);
+    g += `<line x1="${x - 9}" y1="${y}" x2="${x + 9}" y2="${y}" stroke="var(--yellow)" stroke-width="3" stroke-linecap="round"/>`;
+    g += `<text class="trk-sector" x="${x + 12}" y="${y - 6}">S${i + 2}</text>`;
+  });
+
+  // store markers
+  routes.forEach((r, i) => {
+    const end = r.coords[r.coords.length - 1];
+    const [x, y] = P(end);
+    const col = stockAt(r.name) ? "var(--green)" : i === 0 ? "var(--chalk)" : "var(--grey)";
+    g += `<circle cx="${x}" cy="${y}" r="8" fill="#18181f" stroke="${col}" stroke-width="3"/>`;
+    const anchor = x > W - 140 ? "end" : "start";
+    const dx = anchor === "end" ? -14 : 14;
+    g += `<text class="trk-label${i ? " muted" : ""}" x="${x + dx}" y="${y + 4}" text-anchor="${anchor}">P${i + 1} ${esc(r.name)}</text>`;
+  });
+
+  // start / finish: chequered block where you are
+  const [sx, sy] = P([here.lon, here.lat]);
+  g += `<defs><pattern id="chq" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#f2f2f5"/><rect width="3" height="3" fill="#15151e"/><rect x="3" y="3" width="3" height="3" fill="#15151e"/></pattern></defs>`;
+  g += `<rect x="${sx - 9}" y="${sy - 9}" width="18" height="18" rx="2" fill="url(#chq)" stroke="#15151e" stroke-width="2"/>`;
+  g += `<text class="trk-label" x="${sx}" y="${sy + 26}" text-anchor="middle">You</text>`;
+
+  svg.innerHTML = g;
+  svg.removeAttribute("hidden");
+  routeDrawnOnce = true;
+
+  document.getElementById("routeList").innerHTML = routes.map((r, i) => {
+    const s = lastNearby[r.name] || {};
+    const go = stockAt(r.name);
+    const secs = i === 0 ? sectorsFor(r).times : null;
+    const maps = `https://maps.apple.com/?saddr=${here.lat},${here.lon}&daddr=${s.lat},${s.lon}&dirflg=d`;
+    return `<div class="rrow${i === 0 ? " fast" : ""}${go ? " go" : ""}">
+      <div class="pos">P${i + 1}</div>
+      <div>
+        <b>${esc(r.name)}</b>
+        <div class="rmeta">${mins(r.sec)}, ${(r.meters / 1609.34).toFixed(1)} mi${go ? ', <span class="go-tag">in stock</span>' : ""}${i > 0 ? `, +${mins(r.sec - routes[0].sec)}` : ""}</div>
+        ${secs ? `<div class="sectors">${secs.map((t, k) => `<span>S${k + 1}<b>${mmss(t)}</b></span>`).join("")}</div>` : ""}
+      </div>
+      <a href="${maps}">${go ? "Drive now" : "Directions"}</a>
+    </div>`;
+  }).join("");
+}
+
+function updateRouteStores(state) {
+  const next = state.nearby || {};
+  const hadStores = Object.keys(lastNearby).length > 0;
+  lastNearby = next;
+  if (!here) return;
+  if (!routes.length || !hadStores) planRoutes();   // first time we have both location and stores
+  else drawTrack();                                  // just refresh stock highlights
+}
+
+document.getElementById("locate").addEventListener("click", locate);
+
 /* ---------- loop ---------- */
 async function load() {
   const err = document.getElementById("err");
@@ -786,6 +989,7 @@ async function load() {
     lastRun = run ? run.run : null;
     nextQueued = run ? run.queued : false;
     renderLights(state);
+    updateRouteStores(state);
     renderStores(state);
     renderTelemetry(state);
     renderLaps(state);
@@ -803,6 +1007,7 @@ async function load() {
 }
 
 load();
+locate();   // ask for location each time the page opens
 setInterval(load, REFRESH_MS);
 setInterval(tick, 1000);
 document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
