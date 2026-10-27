@@ -4,6 +4,12 @@ from zoneinfo import ZoneInfo
 PART = os.environ["PART"]
 ZIP = os.environ["ZIP"]
 TEST = os.environ.get("TEST") == "true"
+# Try mode: check a different part number for real (no fake stock),
+# send real alerts, but leave state.json and the restock log untouched.
+TRY_PART = os.environ.get("TRY_PART", "").strip().upper()
+if TRY_PART:
+    PART = TRY_PART
+DRY = TEST or bool(TRY_PART)  # never save state in test or try mode
 TOPIC = "aryak-duo-256-night-sky"
 MAX_MILES = 50
 GAP = 60
@@ -73,10 +79,10 @@ for key, default in [("stock", {}), ("nearby", {}), ("history", []),
 # Night mode: 10pm-7am, roughly one check every 15 minutes
 t = now()
 night = t.hour >= 22 or t.hour < 7
-if night and not TEST and t.minute % 15 >= 5:
+if night and not DRY and t.minute % 15 >= 5:
     print("Night mode: skipping this run")
     raise SystemExit(0)
-single = TEST or night
+single = DRY or night
 run_start = time.monotonic()
 
 alerted, failures, attempts = set(), 0, 0
@@ -100,7 +106,7 @@ while True:
             info = st.get("partsAvailability", {}).get(PART, {})
             status = info.get("pickupDisplay", "unknown")
 
-            if not TEST:
+            if not DRY:
                 prev = state["stock"].get(name)
                 if prev is not None and prev != status:
                     log_event(name, miles, status)
@@ -109,18 +115,28 @@ while True:
                 if miles <= MAX_MILES:
                     nearby[name] = store_details(st, info, miles, status)
 
+            product = (((info.get("messageTypes") or {}).get("regular") or {})
+                       .get("storePickupProductTitle") or "iPhone Duo 256GB Night Sky")
+            if TRY_PART:
+                print(f"  {name} ({miles} mi): {status} [{product}]")
+
             in_stock = status == "available" or TEST
             if miles <= MAX_MILES and in_stock and name not in alerted:
-                tag = "[TEST] " if TEST else ""
-                push(f"{tag}Duo in stock: {name}",
-                     f"Night Sky 256GB at Apple {name} ({miles} mi). "
-                     f"Tap to open your bag, choose pickup at {name}.",
-                     actions=f"view, Open Bag, {BAG}; view, Buy page, {BUY}")
+                if TRY_PART:
+                    title = f"[TRY] {product} in stock: {name}"
+                    body = (f"Try mode with {PART}: Apple shows it available at {name} "
+                            f"({miles} mi). Your Duo bot is working end to end.")
+                else:
+                    tag = "[TEST] " if TEST else ""
+                    title = f"{tag}Duo in stock: {name}"
+                    body = (f"Night Sky 256GB at Apple {name} ({miles} mi). "
+                            f"Tap to open your bag, choose pickup at {name}.")
+                push(title, body, actions=f"view, Open Bag, {BAG}; view, Buy page, {BUY}")
                 alerted.add(name)
 
         lap["ok"] = True
         lap["green"] = sorted(n for n, s in nearby.items() if s["status"] == "available")
-        if not TEST:
+        if not DRY:
             state["nearby"] = nearby
             state["last_check"] = now().isoformat()
         state["checks"] += 1
@@ -131,7 +147,7 @@ while True:
         if lap["ms"] is None:
             lap["ms"] = round((time.monotonic() - started) * 1000)
         print(f"Check {i+1}: error {e}")
-    if not TEST:
+    if not DRY:
         state["history"] = (state["history"] + [lap])[-HISTORY:]
     # Stop when another full gap would run past the window
     if single or time.monotonic() - run_start + GAP > RUN_SECONDS:
@@ -142,20 +158,20 @@ while True:
 t = now()
 
 # Failure alert, roughly once an hour while broken
-if failures == attempts and not TEST and t.minute < 5:
+if failures == attempts and not DRY and t.minute < 5:
     push("Duo checker failing",
          "All checks failed this run. Apple may be blocking it.",
          priority="low", click="https://github.com")
 
 # Daily heartbeat after 8am
 today = t.strftime("%Y-%m-%d")
-if not TEST and t.hour >= 8 and state.get("last_heartbeat") != today:
+if not DRY and t.hour >= 8 and state.get("last_heartbeat") != today:
     push("Duo checker: still running",
          f"{state['checks']} checks, {state['errors']} errors, "
          f"{state['events']} stock changes since last update.",
          priority="low", click="https://github.com")
     state.update(checks=0, errors=0, events=0, last_heartbeat=today)
 
-if not TEST:
+if not DRY:
     with open(STATE_FILE, "w") as f:
         json.dump(state, f, indent=1)
