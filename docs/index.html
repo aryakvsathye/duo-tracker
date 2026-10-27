@@ -3,327 +3,382 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Duo Pit Wall</title>
+<title>Pit Wall</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Pit Wall">
-<meta name="theme-color" content="#07080b">
+<meta name="theme-color" content="#15151e">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
 <style>
+  /*
+    Design tokens
+    Carbon / Asphalt / Kerb: the dark neutrals of a broadcast timing screen.
+    Signal red is the brand colour. Purple, green and yellow keep their
+    F1 timing meanings: fastest, good, caution.
+  */
   :root {
-    --bg: #07080b;
-    --panel: #10131a;
-    --panel-2: #161a23;
-    --line: #222838;
-    --text: #e9edf4;
-    --muted: #7a8396;
-    --green: #22e07a;
-    --red: #ff2d45;
-    --amber: #ffb020;
-    --purple: #b46cff;
-    --grey: #3d4457;
+    --carbon: #15151e;
+    --asphalt: #1e1e29;
+    --asphalt-2: #262633;
+    --kerb: #34343f;
+    --chalk: #f2f2f5;
+    --grey: #8d8da0;
+    --grey-2: #5f5f72;
+    --signal: #e10600;
+    --purple: #a160f2;
+    --green: #31c46c;
+    --yellow: #f5c518;
+
+    --r-lg: 6px;
+    --r-sm: 3px;
+    --wide: "wdth" 125;
+    --narrow: "wdth" 100;
+    --cond: "wdth" 75;
   }
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { background: var(--bg); }
+  html { background: var(--carbon); }
   body {
-    background:
-      radial-gradient(120% 60% at 50% -10%, rgba(255,45,69,0.10), transparent 60%),
-      var(--bg);
-    color: var(--text);
-    font-family: Inter, -apple-system, system-ui, sans-serif;
-    padding: max(14px, env(safe-area-inset-top)) 16px max(28px, env(safe-area-inset-bottom));
+    background: var(--carbon);
+    color: var(--chalk);
+    font-family: Archivo, -apple-system, system-ui, sans-serif;
+    font-variation-settings: var(--narrow);
+    font-variant-numeric: tabular-nums;
+    font-size: 15px;
+    line-height: 1.45;
+    padding: max(14px, env(safe-area-inset-top)) 16px max(32px, env(safe-area-inset-bottom));
     max-width: 640px;
     margin: 0 auto;
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
   }
-  body.green {
-    background:
-      radial-gradient(120% 60% at 50% -10%, rgba(34,224,122,0.22), transparent 60%),
-      var(--bg);
+  a { color: inherit; }
+  button { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--chalk); outline-offset: 2px; border-radius: var(--r-sm); }
+
+  /* ---------- header ---------- */
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 6px 0 14px; margin-bottom: 18px;
+    border-bottom: 1px solid var(--kerb);
   }
-  .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
-
-  header { display: flex; align-items: center; justify-content: space-between; margin: 6px 0 14px; }
-  .brand { font-weight: 900; font-size: 20px; letter-spacing: 0.05em; font-style: italic; }
-  .brand span { color: var(--red); }
-  body.green .brand span { color: var(--green); }
-  .sub { color: var(--muted); font-size: 12px; margin-top: 2px; }
-  .live { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--muted); letter-spacing: 0.12em; }
-  .live i { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 10px var(--green); animation: pulse 1.6s infinite; }
-  .live.stale i { background: var(--amber); box-shadow: 0 0 10px var(--amber); }
-  .live.down i { background: var(--red); box-shadow: 0 0 10px var(--red); }
-  @keyframes pulse { 50% { opacity: 0.3; } }
-
-  /* Start lights */
-  .gantry {
-    background: linear-gradient(#0d0f14, #090b0f);
-    border: 1px solid var(--line);
-    border-radius: 18px;
-    padding: 18px 14px 16px;
-    text-align: center;
-  }
-  .lights { display: flex; justify-content: center; gap: 10px; }
-  .pod { background: #050608; border-radius: 12px; padding: 7px 6px; display: grid; gap: 6px; border: 1px solid #1a1e29; }
-  .bulb { width: 34px; height: 34px; border-radius: 50%; background: #1b0a0e; transition: background 0.4s, box-shadow 0.4s; }
-  .bulb.dim { background: #14171f; }
-  .gantry.red .bulb.lit { background: var(--red); box-shadow: 0 0 16px var(--red), inset 0 -4px 8px rgba(0,0,0,0.35); animation: sweep 5s infinite; }
-  .gantry.red .pod:nth-child(2) .bulb.lit { animation-delay: 0.25s; }
-  .gantry.red .pod:nth-child(3) .bulb.lit { animation-delay: 0.5s; }
-  .gantry.red .pod:nth-child(4) .bulb.lit { animation-delay: 0.75s; }
-  .gantry.red .pod:nth-child(5) .bulb.lit { animation-delay: 1s; }
-  @keyframes sweep { 0%, 70%, 100% { filter: brightness(0.75); } 80% { filter: brightness(1.25); } }
-  .gantry.green .bulb.lit { background: var(--green); box-shadow: 0 0 22px var(--green), inset 0 -4px 8px rgba(0,0,0,0.3); animation: go 0.9s infinite alternate; }
-  @keyframes go { to { filter: brightness(1.35); } }
-  .gantry.idle .bulb.lit { background: #2a2f3d; }
-  .verdict { margin-top: 14px; font-weight: 900; font-style: italic; font-size: 26px; letter-spacing: 0.03em; }
-  .gantry.red .verdict { color: var(--text); }
-  .gantry.green .verdict { color: var(--green); text-shadow: 0 0 18px rgba(34,224,122,0.6); }
-  .verdict-sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
-  .bag {
-    display: block; text-align: center; margin-top: 14px;
-    padding: 14px; border-radius: 12px; font-weight: 800; letter-spacing: 0.08em; font-size: 14px;
-    text-decoration: none; color: var(--muted); background: var(--panel-2); border: 1px solid var(--line);
-  }
-  .gantry.green .bag { color: #03110a; background: var(--green); border-color: var(--green); box-shadow: 0 0 30px rgba(34,224,122,0.45); }
-
-  .label { display: flex; justify-content: space-between; align-items: baseline; font-size: 11px; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; margin: 24px 2px 10px; }
-  .label { gap: 4px 12px; flex-wrap: wrap; }
-  .label em { font-style: normal; letter-spacing: 0.04em; text-transform: none; }
-
-  /* Race control */
-  .rc { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px; display: grid; grid-template-columns: 1fr auto; gap: 6px 12px; align-items: center; }
-  .flag { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; letter-spacing: 0.08em; font-size: 13px; }
-  .flag i { width: 22px; height: 15px; border-radius: 2px; background: var(--grey); }
-  .flag.running i { background: var(--green); animation: pulse 1.2s infinite; }
-  .flag.queued i { background: var(--amber); }
-  .flag.done i { background: repeating-conic-gradient(#fff 0 25%, #111 0 50%) 0 0 / 7.5px 7.5px; }
-  .flag.fail i { background: var(--red); }
-  .rc .detail { color: var(--muted); font-size: 12px; grid-column: 1; }
-  .rc .next { grid-row: 1 / span 2; grid-column: 2; text-align: right; }
-  .rc .next b { display: block; font-size: 24px; font-weight: 700; }
-  .rc .next span { font-size: 10px; color: var(--muted); letter-spacing: 0.12em; }
-
-  /* Stores */
-  .stores { display: grid; gap: 10px; }
-  .store { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px 14px 12px 18px; position: relative; overflow: hidden; }
-  .store::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--grey); }
-  .store.available { border-color: rgba(34,224,122,0.5); }
-  .store.available::before { background: var(--green); box-shadow: 0 0 24px var(--green); }
-  .store.unavailable::before { background: var(--red); }
-  .store .top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
-  .store .name { font-weight: 700; font-size: 17px; }
-  .pill { font-size: 10px; font-weight: 800; letter-spacing: 0.12em; padding: 4px 8px; border-radius: 99px; white-space: nowrap; }
-  .available .pill { background: rgba(34,224,122,0.15); color: var(--green); }
-  .unavailable .pill { background: rgba(255,45,69,0.12); color: var(--red); }
-  .unknown .pill { background: var(--panel-2); color: var(--muted); }
-  .store .meta { color: var(--muted); font-size: 12px; margin-top: 4px; }
-  .store .quote { font-size: 12px; margin-top: 8px; color: #b9c0cf; }
-  .store .row { display: flex; gap: 8px; margin-top: 12px; }
-  .store .row a { flex: 1; text-align: center; font-size: 12px; font-weight: 600; padding: 9px 6px; border-radius: 10px; background: var(--panel-2); border: 1px solid var(--line); color: var(--text); text-decoration: none; }
-  .open { color: var(--green); } .closed { color: var(--muted); }
-
-  /* Tiles */
-  .telemetry { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-  .tile { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
-  .tile .k { font-size: 10px; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; }
-  .tile .v { font-size: 20px; font-weight: 700; margin-top: 4px; }
-  .tile .v.small { font-size: 15px; }
-  .ok { color: var(--green); } .warn { color: var(--amber); } .bad { color: var(--red); } .pb { color: var(--purple); }
-
-  /* Lap chart */
-  .laps { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
-  .bars { display: flex; align-items: flex-end; gap: 2px; height: 80px; }
-  .bars div { flex: 1; min-width: 2px; border-radius: 2px 2px 0 0; background: #2b3346; }
-  .bars div.fast { background: var(--purple); box-shadow: 0 0 6px rgba(180,108,255,0.6); }
-  .bars div.lapfail { background: var(--red); opacity: 0.85; }
-  .bars div.green { background: var(--green); box-shadow: 0 0 6px var(--green); }
-  .laps-legend { display: flex; gap: 14px; margin-top: 10px; font-size: 11px; color: var(--muted); flex-wrap: wrap; }
-  .laps-legend i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
-
-  /* Heatmap */
-  .heat { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px; overflow: hidden; }
-  .grid { display: grid; grid-template-columns: 28px repeat(24, 1fr); gap: 2px; }
-  .grid .d { font-size: 9px; color: var(--muted); display: flex; align-items: center; }
-  .grid .c { aspect-ratio: 1; border-radius: 2px; background: var(--panel-2); }
-  .grid .c.now { outline: 1px solid var(--muted); }
-  .hours { display: grid; grid-template-columns: 28px repeat(24, 1fr); gap: 2px; margin-top: 4px; font-size: 8px; color: var(--muted); }
-  .note { font-size: 12px; color: var(--muted); margin-top: 10px; }
-
-  /* Timeline */
-  .timeline { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
-  .ev { display: grid; grid-template-columns: 14px 1fr auto; gap: 10px; align-items: center; padding: 11px 14px; border-bottom: 1px solid var(--line); font-size: 13px; }
-  .ev:last-child { border-bottom: none; }
-  .ev i { width: 8px; height: 8px; border-radius: 50%; }
-  .ev .t { color: var(--muted); font-size: 11px; }
-  .empty { padding: 16px; color: var(--muted); font-size: 13px; text-align: center; }
-
-  .err { background: #2a0d12; border: 1px solid var(--red); color: #ffb3bb; padding: 12px 14px; border-radius: 12px; font-size: 13px; margin-bottom: 12px; display: none; }
-  footer { color: var(--muted); font-size: 11px; text-align: center; margin-top: 26px; line-height: 1.6; }
-
-  /* ---------- responsiveness ---------- */
-  .hdr-right { display: flex; align-items: center; gap: 12px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand-mark { width: 6px; height: 34px; background: var(--signal); transform: skewX(-14deg); }
+  .brand h1 { font-size: 20px; font-weight: 800; font-variation-settings: var(--wide); line-height: 1; letter-spacing: -0.01em; }
+  .brand p { font-size: 13px; color: var(--grey); margin-top: 3px; }
+  .hdr-right { display: flex; align-items: center; gap: 14px; }
+  .live { display: flex; align-items: center; gap: 7px; font-size: 13px; color: var(--grey); }
+  .live i { width: 7px; height: 7px; border-radius: 50%; background: var(--green); }
+  .live.ok i { animation: beat 2s ease-in-out infinite; }
+  .live.stale i { background: var(--yellow); }
+  .live.down i { background: var(--signal); }
+  @keyframes beat { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
   .refresh {
-    width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center;
-    background: var(--panel); border: 1px solid var(--line); color: var(--muted); cursor: pointer;
-    -webkit-tap-highlight-color: transparent; transition: color .2s, border-color .2s, transform .15s;
+    width: 34px; height: 34px; display: grid; place-items: center; cursor: pointer;
+    background: transparent; border: 1px solid var(--kerb); border-radius: 50%; color: var(--grey);
+    -webkit-tap-highlight-color: transparent; transition: color .2s, border-color .2s, transform .12s;
   }
-  .refresh:hover { color: var(--text); border-color: #36405a; }
+  .refresh:hover { color: var(--chalk); border-color: var(--grey-2); }
+  .refresh:active { transform: scale(0.92); }
   .refresh.spin svg { animation: spin .8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* tap + hover feedback */
-  a, button, .store, .tile { -webkit-tap-highlight-color: transparent; }
-  .bag, .store .row a, .refresh { transition: transform .12s ease, filter .12s ease, background .2s, box-shadow .3s; }
-  .bag:active, .store .row a:active, .refresh:active { transform: scale(0.96); filter: brightness(1.15); }
-  .store, .tile, .rc, .laps, .heat, .timeline { transition: border-color .25s, transform .2s; }
-  @media (hover: hover) {
-    .store:hover, .tile:hover, .rc:hover, .laps:hover, .heat:hover { border-color: #323a50; }
-    .store .row a:hover { background: #1d2230; }
-    .bag:hover { filter: brightness(1.12); }
+  /* ---------- sections ---------- */
+  .section { margin-top: 28px; }
+  .section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4px 12px; flex-wrap: wrap; margin-bottom: 10px; }
+  .section-head h2 { font-size: 15px; font-weight: 700; font-variation-settings: var(--wide); letter-spacing: -0.005em; }
+  .section-head span { font-size: 13px; color: var(--grey); }
+  .panel { background: var(--asphalt); border-radius: var(--r-lg); }
+
+  /* ---------- start lights (the hero) ---------- */
+  .gantry { padding: 22px 18px 18px; position: relative; overflow: hidden; }
+  .gantry::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(80% 70% at 50% 18%, rgba(225,6,0,0.16), transparent 70%);
+    transition: opacity .6s;
   }
+  .gantry.green::after { background: radial-gradient(80% 70% at 50% 18%, rgba(49,196,108,0.2), transparent 70%); }
+  .gantry.idle::after { opacity: 0; }
+  .beam { height: 8px; background: #0c0c12; border-radius: 2px; margin: 0 6% 0; }
+  .lights { display: flex; justify-content: center; gap: clamp(8px, 2.6vw, 16px); }
+  .pod {
+    background: #0c0c12; border-radius: 10px; padding: 8px 7px 10px;
+    display: grid; gap: 7px; position: relative;
+  }
+  .pod::before { content: ""; position: absolute; left: 50%; top: -10px; width: 4px; height: 10px; background: #0c0c12; transform: translateX(-50%); }
+  .lamp {
+    width: clamp(26px, 8.2vw, 42px); height: clamp(26px, 8.2vw, 42px); border-radius: 50%;
+    background: radial-gradient(circle at 50% 35%, #2a2a33, #18181f 70%);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.6);
+    transition: background .35s, box-shadow .35s;
+  }
+  .gantry.red .lamp.on {
+    background: radial-gradient(circle at 50% 32%, #ff6a5c 0%, var(--signal) 45%, #8a0400 100%);
+    box-shadow: 0 0 18px rgba(225,6,0,.55), inset 0 -3px 6px rgba(0,0,0,.35);
+  }
+  .gantry.green .lamp.on {
+    background: radial-gradient(circle at 50% 32%, #9ff0bf 0%, var(--green) 45%, #146b38 100%);
+    box-shadow: 0 0 22px rgba(49,196,108,.6), inset 0 -3px 6px rgba(0,0,0,.3);
+  }
+  .verdict { position: relative; z-index: 1; text-align: center; margin-top: 18px; }
+  .verdict h3 {
+    font-size: clamp(26px, 7.4vw, 40px); font-weight: 850; line-height: 1.02;
+    font-variation-settings: var(--wide); letter-spacing: -0.02em;
+  }
+  .gantry.green .verdict h3 { color: var(--green); }
+  .verdict p { color: var(--grey); font-size: 14px; margin-top: 6px; }
+  .bag {
+    position: relative; z-index: 1;
+    display: flex; justify-content: center; align-items: center; gap: 10px;
+    margin-top: 18px; padding: 14px; border-radius: var(--r-sm);
+    font-weight: 700; font-size: 15px; text-decoration: none;
+    font-variation-settings: var(--wide);
+    background: var(--asphalt-2); color: var(--chalk); border: 1px solid var(--kerb);
+    transition: transform .12s, background .25s, color .25s, border-color .25s;
+  }
+  .bag:active { transform: scale(0.98); }
+  .gantry.green .bag { background: var(--green); color: #06210f; border-color: var(--green); }
+  .bag svg { width: 16px; height: 16px; }
 
-  /* chart inspectors */
-  .bars div, .grid .c { cursor: pointer; transition: opacity .15s, outline-color .15s; }
-  .bars.inspecting div:not(.sel) { opacity: 0.45; }
-  .bars div.sel { outline: 1px solid var(--text); outline-offset: 1px; }
-  .grid .c.sel { outline: 1.5px solid var(--text); }
-  .readout { font-size: 11px; color: var(--muted); margin-top: 8px; min-height: 15px; }
-  .readout.on { color: var(--text); }
+  /* ---------- race control strip ---------- */
+  .rc { display: grid; grid-template-columns: 4px 1fr auto; align-items: stretch; overflow: hidden; }
+  .rc-flag { background: var(--grey-2); }
+  .rc.running .rc-flag { background: var(--green); }
+  .rc.queued .rc-flag { background: var(--yellow); }
+  .rc.done .rc-flag { background: repeating-conic-gradient(var(--chalk) 0 25%, #0c0c12 0 50%) 0 0 / 6px 6px; }
+  .rc.fail .rc-flag { background: var(--signal); }
+  .rc-body { padding: 12px 14px; min-width: 0; }
+  .rc-title { font-weight: 700; font-size: 15px; }
+  .rc-detail { color: var(--grey); font-size: 13px; margin-top: 2px; }
+  .rc-next { padding: 12px 16px; text-align: right; border-left: 1px solid var(--kerb); display: flex; flex-direction: column; justify-content: center; }
+  .rc-next b { font-size: 24px; font-weight: 700; font-variation-settings: var(--wide); line-height: 1; }
+  .rc-next span { font-size: 12px; color: var(--grey); margin-top: 4px; }
 
-  /* change flash when a value updates */
-  .flash { animation: flash .9s ease; }
-  @keyframes flash { 0% { box-shadow: 0 0 0 0 rgba(233,237,244,0.35); } 100% { box-shadow: 0 0 0 10px rgba(233,237,244,0); } }
+  /* ---------- timing tower ---------- */
+  .tower { overflow: hidden; }
+  .row { display: grid; grid-template-columns: 38px 1fr auto; gap: 0 12px; padding: 14px 14px 14px 0; position: relative; }
+  .row + .row { border-top: 1px solid var(--kerb); }
+  .row::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--grey-2); }
+  .row.available::before { background: var(--green); }
+  .row.unavailable::before { background: var(--signal); }
+  .pos { font-size: 17px; font-weight: 800; font-variation-settings: var(--wide); color: var(--grey); text-align: center; padding-top: 1px; }
+  .row-main { min-width: 0; }
+  .row-name { font-size: 17px; font-weight: 700; line-height: 1.2; }
+  .row-meta { color: var(--grey); font-size: 13px; margin-top: 3px; }
+  .row-meta .open { color: var(--green); }
+  .row-quote { font-size: 13px; color: #c4c4d2; margin-top: 6px; }
+  .status { align-self: start; font-size: 12px; font-weight: 700; padding: 4px 9px; border-radius: var(--r-sm); white-space: nowrap; font-variation-settings: var(--wide); }
+  .available .status { background: var(--green); color: #06210f; }
+  .unavailable .status { background: rgba(225,6,0,.16); color: #ff6b63; }
+  .unknown .status { background: var(--asphalt-2); color: var(--grey); }
+  .row-actions { grid-column: 2 / span 2; display: flex; gap: 8px; margin-top: 12px; }
+  .row-actions a {
+    flex: 1; text-align: center; font-size: 13px; font-weight: 600; padding: 8px 6px;
+    border: 1px solid var(--kerb); border-radius: var(--r-sm); text-decoration: none;
+    transition: background .2s, transform .12s;
+  }
+  .row-actions a:active { transform: scale(0.97); }
+  @media (hover: hover) { .row-actions a:hover { background: var(--asphalt-2); } }
+
+  /* ---------- telemetry strip ---------- */
+  .strip { display: grid; grid-template-columns: repeat(2, 1fr); }
+  .metric { padding: 12px 14px; }
+  .metric:nth-child(odd) { border-right: 1px solid var(--kerb); }
+  .metric:nth-child(-n+2) { border-bottom: 1px solid var(--kerb); }
+  .metric dt { font-size: 13px; color: var(--grey); }
+  .metric dd { font-size: 22px; font-weight: 700; font-variation-settings: var(--wide); margin-top: 2px; line-height: 1.15; }
+  .metric dd.small { font-size: 17px; }
+  .good { color: var(--green); } .caution { color: var(--yellow); } .bad { color: #ff6b63; } .fastest { color: var(--purple); }
+
+  /* ---------- lap chart ---------- */
+  .chart { padding: 14px 14px 12px; }
+  .plot { display: grid; grid-template-columns: 40px 1fr; gap: 8px; }
+  .axis { display: flex; flex-direction: column; justify-content: space-between; font-size: 11px; color: var(--grey-2); text-align: right; height: 110px; }
+  .bars-wrap { position: relative; height: 110px; }
+  .bars-wrap::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(var(--kerb), var(--kerb)) 0 0 / 100% 1px no-repeat,
+                linear-gradient(var(--kerb), var(--kerb)) 0 50% / 100% 1px no-repeat,
+                linear-gradient(var(--kerb), var(--kerb)) 0 100% / 100% 1px no-repeat;
+    opacity: 0.6;
+  }
+  .bars { position: relative; display: flex; align-items: flex-end; gap: 2px; height: 100%; }
+  .bars div { flex: 1; min-width: 2px; border-radius: 1px 1px 0 0; background: #4a4a5c; cursor: pointer; transition: opacity .15s; }
+  .bars div.fast { background: var(--purple); }
+  .bars div.lapfail { background: var(--signal); opacity: 0.8; }
+  .bars div.green { background: var(--green); }
+  .bars.inspecting div:not(.sel) { opacity: 0.35; }
+  .bars div.sel { outline: 1px solid var(--chalk); outline-offset: 1px; }
+  .readout { font-size: 13px; color: var(--grey); margin-top: 10px; min-height: 19px; }
+  .readout.on { color: var(--chalk); }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 8px; font-size: 12px; color: var(--grey); }
+  .legend i { display: inline-block; width: 10px; height: 3px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+
+  /* ---------- heatmap ---------- */
+  .heat { padding: 14px; }
+  .grid { display: grid; grid-template-columns: 30px repeat(24, minmax(0, 1fr)); gap: 2px; }
+  .grid .d { font-size: 11px; color: var(--grey); display: flex; align-items: center; }
+  .grid .c { aspect-ratio: 1; border-radius: 1px; background: var(--asphalt-2); cursor: pointer; max-height: 26px; }
+  .grid .c.now { box-shadow: inset 0 0 0 1px var(--grey); }
+  .grid .c.sel { box-shadow: inset 0 0 0 1.5px var(--chalk); }
+  .hours { white-space: nowrap; display: grid; grid-template-columns: 30px repeat(24, minmax(0, 1fr)); gap: 2px; margin-top: 5px; font-size: 10px; color: var(--grey-2); }
+  .note { font-size: 13px; color: var(--grey); margin-top: 4px; }
+
+  /* ---------- race log ---------- */
+  .log { overflow: hidden; }
+  .ev { display: grid; grid-template-columns: 10px 1fr auto; gap: 12px; align-items: center; padding: 11px 14px; font-size: 14px; }
+  .ev + .ev { border-top: 1px solid var(--kerb); }
+  .ev i { width: 8px; height: 8px; border-radius: 50%; }
+  .ev time { color: var(--grey); font-size: 13px; }
+  .empty { padding: 18px 14px; color: var(--grey); font-size: 14px; }
+
+  .err { background: rgba(225,6,0,.12); border-left: 3px solid var(--signal); color: #ffb0ab; padding: 11px 14px; border-radius: var(--r-sm); font-size: 14px; margin-bottom: 14px; display: none; }
+  footer { color: var(--grey-2); font-size: 12px; text-align: center; margin-top: 30px; }
+
+  /* change pulse when data updates */
+  .flash { animation: flash 1s ease; }
+  @keyframes flash { 0% { box-shadow: 0 0 0 0 rgba(242,242,245,.28); } 100% { box-shadow: 0 0 0 10px rgba(242,242,245,0); } }
 
   /* pull to refresh */
   .ptr {
-    position: fixed; left: 50%; top: 0; transform: translate(-50%, -48px);
-    font-size: 10px; letter-spacing: .14em; color: var(--muted);
-    background: var(--panel); border: 1px solid var(--line); padding: 8px 12px; border-radius: 99px;
-    z-index: 10; transition: transform .2s, color .2s, opacity .2s; pointer-events: none; opacity: 0;
+    position: fixed; left: 50%; top: 0; transform: translate(-50%, -48px); opacity: 0;
+    font-size: 13px; color: var(--grey); background: var(--asphalt); border: 1px solid var(--kerb);
+    padding: 7px 14px; border-radius: 99px; z-index: 10; pointer-events: none;
+    transition: transform .2s, opacity .2s, color .2s;
   }
-  .ptr.ready { color: var(--green); border-color: rgba(34,224,122,.5); }
+  .ptr.ready { color: var(--green); }
 
-  /* fluid sizing */
-  .bulb { width: clamp(26px, 8.6vw, 44px); height: clamp(26px, 8.6vw, 44px); }
-  .verdict { font-size: clamp(22px, 6.6vw, 34px); }
-  .layout { display: block; }
-
-  /* small phones */
+  /* ---------- responsive ---------- */
   @media (max-width: 360px) {
     body { padding-left: 12px; padding-right: 12px; }
-    .lights { gap: 6px; }
-    .store .row { flex-wrap: wrap; }
-    .tile .v { font-size: 17px; }
+    .row-actions { flex-wrap: wrap; }
+    .rc-next b { font-size: 20px; }
   }
-
-  /* landscape phones: lights beside the verdict */
   @media (max-height: 500px) and (orientation: landscape) {
-    .gantry { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 4px 18px; text-align: left; }
-    .gantry .lights { grid-row: 1 / span 3; }
-    .verdict { margin-top: 0; }
-    .bag { margin-top: 8px; }
+    .gantry { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 0 24px; }
+    .gantry .rig { grid-row: 1 / span 2; }
+    .verdict { text-align: left; margin-top: 0; }
+    .bag { margin-top: 12px; }
   }
-
-  /* tablets */
   @media (min-width: 700px) {
-    body { max-width: 760px; }
-    .telemetry { grid-template-columns: repeat(4, 1fr); }
-    .stores { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-    .bars { height: 110px; }
+    body { max-width: 780px; }
+    .strip { grid-template-columns: repeat(4, 1fr); }
+    .metric:nth-child(-n+2) { border-bottom: none; }
+    .metric:not(:last-child) { border-right: 1px solid var(--kerb); }
+    .axis, .bars-wrap { height: 130px; }
   }
-
-  /* desktop: two-column pit wall */
   @media (min-width: 1040px) {
-    body { max-width: 1240px; padding-left: 28px; padding-right: 28px; }
-    header { margin-bottom: 20px; }
-    .layout { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 0 28px; align-items: start; }
+    body { max-width: 1260px; padding-left: 32px; padding-right: 32px; }
+    .layout { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 0 32px; align-items: start; }
     .col-a { position: sticky; top: 20px; }
-    .col-a > .gantry:first-child { margin-top: 0; }
-    .col-b > .label:first-child { margin-top: 0; }
-    .stores { grid-template-columns: 1fr; }
-    .telemetry { grid-template-columns: repeat(4, 1fr); }
-    .bars { height: 130px; }
-    .gantry { padding: 26px 18px 20px; }
+    .col-b > .section:first-child { margin-top: 0; }
+    .col-a > .gantry { margin-top: 0; }
+    .axis, .bars-wrap { height: 150px; }
   }
-
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation: none !important; transition: none !important; }
   }
 </style>
 </head>
 <body>
-<div class="ptr mono" id="ptr">↓ PULL TO REFRESH</div>
+<div class="ptr" id="ptr">Pull to refresh</div>
 
 <header>
-  <div>
-    <div class="brand">DUO <span>PIT WALL</span></div>
-    <div class="sub">iPhone Duo · 256GB · Night Sky</div>
+  <div class="brand">
+    <div class="brand-mark" aria-hidden="true"></div>
+    <div>
+      <h1>Pit Wall</h1>
+      <p>iPhone Duo 256GB, Night Sky</p>
+    </div>
   </div>
   <div class="hdr-right">
-    <div class="live mono" id="live"><i></i><span id="liveText">CONNECTING</span></div>
-    <button class="refresh" id="refresh" aria-label="Refresh now"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 4v5h-5"/></svg></button>
+    <div class="live" id="live"><i></i><span id="liveText">Connecting</span></div>
+    <button class="refresh" id="refresh" aria-label="Refresh now"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 4v5h-5"/></svg></button>
   </div>
 </header>
 
-<div class="err" id="err"></div>
+<div class="err" id="err" role="alert"></div>
 
 <main class="layout">
-<div class="col col-a">
-<section class="gantry idle" id="gantry">
-  <div class="lights" id="lights"></div>
-  <div class="verdict" id="verdict">WAITING FOR DATA</div>
-  <div class="verdict-sub" id="verdictSub">&nbsp;</div>
-  <a class="bag" id="bag" href="https://www.apple.com/shop/bag">OPEN BAG</a>
-</section>
+  <div class="col col-a">
+    <section class="panel gantry idle" id="gantry" aria-live="polite">
+      <div class="rig">
+        <div class="beam" aria-hidden="true"></div>
+        <div class="lights" id="lights" aria-hidden="true"></div>
+      </div>
+      <div class="verdict">
+        <h3 id="verdict">Waiting for data</h3>
+        <p id="verdictSub">&nbsp;</p>
+      </div>
+      <a class="bag" id="bag" href="https://www.apple.com/shop/bag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span id="bagText">Open bag</span></a>
+    </section>
 
-<div class="label">Race control <em class="mono" id="runNo"></em></div>
-<div class="rc">
-  <div class="flag" id="flag"><i></i><span id="flagText">–</span></div>
-  <div class="detail" id="runDetail">–</div>
-  <div class="next mono"><b id="countdown">–:––</b><span>NEXT RUN</span></div>
-</div>
+    <section class="section">
+      <div class="section-head"><h2>Race control</h2><span id="runNo"></span></div>
+      <div class="panel rc" id="rc">
+        <div class="rc-flag" aria-hidden="true"></div>
+        <div class="rc-body">
+          <div class="rc-title" id="flagText">No signal yet</div>
+          <div class="rc-detail" id="runDetail">Reading run status from GitHub</div>
+        </div>
+        <div class="rc-next"><b id="countdown">–:––</b><span>next run</span></div>
+      </div>
+    </section>
 
-<div class="label">Grid <em>stores within 50 mi</em></div>
-<div class="stores" id="stores"><div class="empty">Loading…</div></div>
-</div>
-
-<div class="col col-b">
-<div class="label">Telemetry</div>
-<div class="telemetry">
-  <div class="tile"><div class="k">Last check</div><div class="v mono" id="lastCheck">–</div></div>
-  <div class="tile"><div class="k">Session</div><div class="v small" id="mode">–</div></div>
-  <div class="tile"><div class="k">Checks since 8am</div><div class="v mono" id="checks">–</div></div>
-  <div class="tile"><div class="k">Errors</div><div class="v mono" id="errors">–</div></div>
-</div>
-
-<div class="label">Lap times <em class="mono" id="lapSummary"></em></div>
-<div class="laps">
-  <div class="bars" id="bars"></div>
-  <div class="readout mono" id="lapReadout">Tap a bar for details</div>
-  <div class="laps-legend">
-    <span><i style="background:#2b3346"></i>Lap</span>
-    <span><i style="background:var(--purple)"></i>Fastest</span>
-    <span><i style="background:var(--green)"></i>Stock seen</span>
-    <span><i style="background:var(--red)"></i>Failed</span>
+    <section class="section">
+      <div class="section-head"><h2>Timing tower</h2><span>Stores within 50 mi, nearest first</span></div>
+      <div class="panel tower" id="stores"><div class="empty">Loading stores</div></div>
+    </section>
   </div>
-</div>
 
-<div class="label">Restock heatmap</div>
-<div class="heat">
-  <div class="grid" id="heat"></div>
-  <div class="hours mono" id="hours"></div>
-  <div class="readout mono" id="heatReadout">Tap a square for details</div>
-  <div class="note" id="heatNote"></div>
-</div>
+  <div class="col col-b">
+    <section class="section">
+      <div class="section-head"><h2>Telemetry</h2></div>
+      <dl class="panel strip">
+        <div class="metric"><dt>Last check</dt><dd id="lastCheck">–</dd></div>
+        <div class="metric"><dt>Checking</dt><dd class="small" id="mode">–</dd></div>
+        <div class="metric"><dt>Checks since 8am</dt><dd id="checks">–</dd></div>
+        <div class="metric"><dt>Errors</dt><dd id="errors">–</dd></div>
+      </dl>
+    </section>
 
-<div class="label">Race log</div>
-<div class="timeline" id="timeline"><div class="empty">Loading…</div></div>
-</div>
+    <section class="section">
+      <div class="section-head"><h2>Lap times</h2><span id="lapSummary"></span></div>
+      <div class="panel chart">
+        <div class="plot">
+          <div class="axis" id="axis"><span></span><span></span><span>0</span></div>
+          <div class="bars-wrap"><div class="bars" id="bars"></div></div>
+        </div>
+        <div class="readout" id="lapReadout">Tap a bar to see that check</div>
+        <div class="legend">
+          <span><i style="background:#4a4a5c"></i>Check</span>
+          <span><i style="background:var(--purple)"></i>Fastest</span>
+          <span><i style="background:var(--green)"></i>Stock seen</span>
+          <span><i style="background:var(--signal)"></i>Failed</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>When stock appears</h2><span>Central time</span></div>
+      <div class="panel heat">
+        <div class="grid" id="heat"></div>
+        <div class="hours" id="hours"></div>
+        <div class="readout" id="heatReadout">Tap a square to see that hour</div>
+        <div class="note" id="heatNote"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>Race log</h2><span>Nearby stores</span></div>
+      <div class="panel log" id="timeline"><div class="empty">Loading</div></div>
+    </section>
+  </div>
 </main>
 
-<footer class="mono">Live data from GitHub · <span id="fetched">–</span></footer>
+<footer>Data from GitHub, <span id="fetched">not loaded yet</span></footer>
 
 <script>
 const OWNER = "aryakvsathye";
@@ -346,7 +401,7 @@ async function getFile(path) {
   const res = await fetch(`${API}/contents/${path}?ref=${BRANCH}`,
     { headers: { Accept: "application/vnd.github.raw" }, cache: "no-store" });
   if (res.status === 404) return null;
-  if (!res.ok) throw new Error(res.status === 403 ? "GitHub rate limit, waiting" : `${path}: HTTP ${res.status}`);
+  if (!res.ok) throw new Error(res.status === 403 ? "GitHub's hourly limit was reached" : `${path} returned ${res.status}`);
   return res.text();
 }
 async function getRun() {
@@ -366,14 +421,22 @@ function rel(ms) {
   const s = Math.max(0, Math.round(ms / 1000));
   if (s < 60) return `${s}s ago`;
   const m = Math.round(s / 60);
-  if (m < 60) return `${m}m ago`;
+  if (m < 60) return `${m} min ago`;
   const h = Math.round(m / 60);
-  if (h < 48) return `${h}h ago`;
-  return `${Math.round(h / 24)}d ago`;
+  if (h < 48) return `${h} h ago`;
+  return `${Math.round(h / 24)} days ago`;
 }
 function clock(ms) {
   const s = Math.max(0, Math.round(ms / 1000));
   return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+}
+function prettyTime(t) {
+  // "2026-10-27 07:45" -> "Tue 7:45 am"
+  const [d, hm] = t.split(" ");
+  const [y, m, day] = d.split("-").map(Number);
+  let [h, min] = hm.split(":").map(Number);
+  const ap = h >= 12 ? "pm" : "am"; h = h % 12 || 12;
+  return `${DAYS[new Date(y, m - 1, day).getDay()]} ${h}:${String(min).padStart(2, "0")} ${ap}`;
 }
 function chicago() {
   const parts = new Intl.DateTimeFormat("en-US", {
@@ -408,7 +471,8 @@ function todayHours(hours) {
   const [o, c] = entry.time.split("-");
   const open = toMin(o), close = toMin(c), nowMin = hour * 60 + minute;
   const isOpen = open !== null && close !== null && nowMin >= open && nowMin < close;
-  return { text: entry.time, isOpen };
+  const tidy = entry.time.replace(/:00/g, "").replace(/\s?AM/gi, " am").replace(/\s?PM/gi, " pm").replace("-", "–");
+  return { text: tidy, isOpen };
 }
 
 /* ---------- renderers ---------- */
@@ -420,27 +484,26 @@ function renderLights(state) {
   const lights = document.getElementById("lights");
   if (!lights.children.length) {
     lights.innerHTML = Array.from({ length: 5 }, () =>
-      `<div class="pod"><div class="bulb dim"></div><div class="bulb lit"></div></div>`).join("");
+      `<div class="pod"><div class="lamp"></div><div class="lamp on"></div></div>`).join("");
   }
-  document.body.classList.toggle("green", green.length > 0);
   const verdict = document.getElementById("verdict");
   const sub = document.getElementById("verdictSub");
-  const bag = document.getElementById("bag");
+  const bagText = document.getElementById("bagText");
   if (!names.length) {
-    gantry.className = "gantry idle";
-    verdict.textContent = "FORMATION LAP";
-    sub.textContent = "Waiting for the first check with the new script";
-    bag.textContent = "OPEN BAG";
+    gantry.className = "panel gantry idle";
+    verdict.textContent = "Formation lap";
+    sub.textContent = "Waiting for the first check to finish";
+    bagText.textContent = "Open bag";
   } else if (green.length) {
-    gantry.className = "gantry green";
-    verdict.textContent = "LIGHTS OUT";
-    sub.textContent = `In stock at ${green.join(" & ")} · go go go`;
-    bag.textContent = "OPEN BAG NOW";
+    gantry.className = "panel gantry green";
+    verdict.textContent = "Lights out";
+    sub.textContent = `In stock at ${green.join(" and ")}. Go now.`;
+    bagText.textContent = "Open bag and check out";
   } else {
-    gantry.className = "gantry red";
-    verdict.textContent = "HOLDING ON THE GRID";
-    sub.textContent = `No stock at ${names.length} nearby store${names.length > 1 ? "s" : ""}`;
-    bag.textContent = "OPEN BAG";
+    gantry.className = "panel gantry red";
+    verdict.textContent = "Holding on the grid";
+    sub.textContent = names.length === 2 ? "No stock at either nearby store" : `No stock at ${names.length} nearby stores`;
+    bagText.textContent = "Open bag";
   }
 }
 
@@ -448,26 +511,28 @@ function renderStores(state) {
   const nearby = state.nearby || {};
   const names = Object.keys(nearby).sort((a, b) => nearby[a].miles - nearby[b].miles);
   const el = document.getElementById("stores");
-  if (!names.length) { el.innerHTML = '<div class="empty">Waiting for the first check with the new script…</div>'; return; }
-  el.innerHTML = names.map(name => {
+  if (!names.length) { el.innerHTML = '<div class="empty">Stores appear here after the next check finishes.</div>'; return; }
+  el.innerHTML = names.map((name, i) => {
     const s = nearby[name];
     const cls = s.status === "available" ? "available" : s.status === "unavailable" ? "unavailable" : "unknown";
-    const word = cls === "available" ? "IN STOCK" : cls === "unavailable" ? "NO STOCK" : "UNKNOWN";
-    const last = [...events].reverse().find(e => e.store === name);
-    const since = last ? `changed ${last.time.slice(5)}` : "no changes logged yet";
+    const word = cls === "available" ? "In stock" : cls === "unavailable" ? "No stock" : "Unknown";
     const hrs = todayHours(s.hours);
-    const hrsText = hrs ? `<span class="${hrs.isOpen ? "open" : "closed"}">${hrs.isOpen ? "Open" : "Closed"}</span> · ${esc(hrs.text)}` : "";
+    const hrsText = hrs ? `<span class="${hrs.isOpen ? "open" : ""}">${hrs.isOpen ? "Open now" : "Closed now"}</span>, ${esc(hrs.text)}` : "";
     const maps = s.lat ? `https://maps.apple.com/?daddr=${s.lat},${s.lon}` : `https://maps.apple.com/?q=${encodeURIComponent("Apple " + name)}`;
     const tel = s.phone ? `tel:${s.phone.replace(/[^\d+]/g, "")}` : null;
-    return `<div class="store ${cls}">
-      <div class="top"><div class="name">${esc(name)}</div><div class="pill mono">${word}</div></div>
-      <div class="meta">${s.miles.toFixed(1)} mi${s.city ? " · " + esc(s.city) : ""} · ${since}</div>
-      ${hrsText ? `<div class="meta">${hrsText}</div>` : ""}
-      ${s.quote ? `<div class="quote">${esc(s.quote)}</div>` : ""}
-      <div class="row">
+    return `<div class="row ${cls}" data-store="${esc(name)}">
+      <div class="pos">P${i + 1}</div>
+      <div class="row-main">
+        <div class="row-name">${esc(name)}</div>
+        <div class="row-meta">${s.miles.toFixed(1)} mi${s.city ? ", " + esc(s.city) : ""}</div>
+        ${hrsText ? `<div class="row-meta">${hrsText}</div>` : ""}
+        ${s.quote ? `<div class="row-quote">${esc(s.quote)}</div>` : ""}
+      </div>
+      <div class="status">${word}</div>
+      <div class="row-actions">
         <a href="${maps}">Directions</a>
-        ${tel ? `<a href="${tel}">Call</a>` : ""}
-        <a href="https://www.apple.com/shop/bag">Bag</a>
+        ${tel ? `<a href="${tel}">Call store</a>` : ""}
+        <a href="https://www.apple.com/shop/bag">Open bag</a>
       </div>
     </div>`;
   }).join("");
@@ -478,30 +543,34 @@ function renderTelemetry(state) {
   document.getElementById("checks").textContent = state.checks ?? "–";
   const errs = document.getElementById("errors");
   errs.textContent = state.errors ?? "–";
-  errs.className = "v mono " + ((state.errors || 0) > 0 ? "warn" : "ok");
-  document.getElementById("mode").textContent = isNight() ? "🌙 Night · 15m" : "☀️ Day · 1m";
+  errs.className = (state.errors || 0) > 0 ? "caution" : "good";
+  document.getElementById("mode").textContent = isNight() ? "Every 15 min (night)" : "Every minute";
 }
 
 function renderLaps(state) {
   const laps = state.history || [];
   const bars = document.getElementById("bars");
   const summary = document.getElementById("lapSummary");
-  if (!laps.length) { bars.innerHTML = ""; summary.textContent = "no laps yet"; return; }
+  const axis = document.getElementById("axis");
+  if (!laps.length) { bars.innerHTML = ""; summary.textContent = "No checks recorded yet"; return; }
   const good = laps.filter(l => l.ok && l.ms);
-  const max = Math.max(...good.map(l => l.ms), 1);
+  const top = Math.max(500, Math.ceil(Math.max(...good.map(l => l.ms), 1) / 250) * 250);
+  axis.innerHTML = `<span>${top}</span><span>${top / 2}</span><span>0 ms</span>`;
   const best = good.length ? Math.min(...good.map(l => l.ms)) : null;
   bars.innerHTML = laps.map(l => {
-    const tip = `${l.t.slice(11, 16)} · ${l.ok ? l.ms + " ms" : "failed" + (l.code ? " (" + l.code + ")" : "")}`;
-    if (!l.ok) return `<div class="lapfail" style="height:100%" data-tip="${tip}"></div>`;
-    const h = Math.max(8, Math.round(100 * l.ms / max));
-    const cls = (l.green && l.green.length) ? "green" : l.ms === best ? "fast" : "";
-    return `<div class="${cls}" style="height:${h}%" data-tip="${tip}"></div>`;
+    const when = l.t.slice(11, 16);
+    if (!l.ok) return `<div class="lapfail" style="height:100%" data-tip="${when}, check failed${l.code ? " (" + l.code + ")" : ""}"></div>`;
+    const h = Math.max(4, Math.round(100 * l.ms / top));
+    const sawStock = l.green && l.green.length;
+    const cls = sawStock ? "green" : l.ms === best ? "fast" : "";
+    const tip = `${when}, ${l.ms} ms${sawStock ? ", stock at " + l.green.join(" and ") : ""}${l.ms === best ? ", fastest" : ""}`;
+    return `<div class="${cls}" style="height:${h}%" data-tip="${esc(tip)}"></div>`;
   }).join("");
   const avg = good.length ? Math.round(good.reduce((a, l) => a + l.ms, 0) / good.length) : null;
   const fails = laps.length - good.length;
   summary.innerHTML = good.length
-    ? `best <span class="pb">${best}ms</span> · avg ${avg}ms${fails ? ` · <span class="bad">${fails} fail</span>` : ""}`
-    : `<span class="bad">${fails} failed</span>`;
+    ? `Best <span class="fastest">${best} ms</span>, average ${avg} ms${fails ? `, <span class="bad">${fails} failed</span>` : ""}`
+    : `<span class="bad">All ${fails} checks failed</span>`;
 }
 
 function renderHeat() {
@@ -515,62 +584,62 @@ function renderHeat() {
   const max = Math.max(1, ...counts.flat());
   const order = [1, 2, 3, 4, 5, 6, 0];
   const nowC = chicago();
+  const hr = h => `${h % 12 || 12}${h < 12 ? "am" : "pm"}`;
   let html = "";
   order.forEach(dow => {
-    html += `<div class="d mono">${DAYS[dow]}</div>`;
+    html += `<div class="d">${DAYS[dow]}</div>`;
     for (let h = 0; h < 24; h++) {
       const v = counts[dow][h];
-      const style = v ? `background: rgba(34,224,122,${0.25 + 0.75 * v / max}); box-shadow: 0 0 6px rgba(34,224,122,${0.5 * v / max});` : "";
+      const style = v ? `background: rgba(49,196,108,${0.3 + 0.7 * v / max});` : "";
       const now = dow === nowC.dow && h === nowC.hour ? " now" : "";
-      html += `<div class="c${now}" style="${style}" data-tip="${DAYS[dow]} ${h}:00–${h + 1}:00 · ${v} restock${v === 1 ? "" : "s"}"></div>`;
+      html += `<div class="c${now}" style="${style}" data-tip="${DAYS[dow]} ${hr(h)}–${hr((h + 1) % 24)}: ${v} restock${v === 1 ? "" : "s"}${now ? " (now)" : ""}"></div>`;
     }
   });
   document.getElementById("heat").innerHTML = html;
   document.getElementById("hours").innerHTML = "<span></span>" +
-    Array.from({ length: 24 }, (_, h) => `<span>${h % 6 === 0 ? h : ""}</span>`).join("");
+    Array.from({ length: 24 }, (_, h) => `<span>${h % 6 === 0 ? hr(h) : ""}</span>`).join("");
   const note = document.getElementById("heatNote");
   if (!restocks.length) {
-    note.textContent = "No nearby restocks logged yet. The outlined square is right now.";
+    note.textContent = "No restocks logged yet. The outlined square is the current hour.";
   } else {
     let best = [0, 0, 0];
     order.forEach(dow => counts[dow].forEach((v, h) => { if (v > best[0]) best = [v, dow, h]; }));
-    note.textContent = `${restocks.length} nearby restock${restocks.length > 1 ? "s" : ""} · hottest slot ${DAYS[best[1]]} ${best[2]}:00–${best[2] + 1}:00`;
+    note.textContent = `${restocks.length} restock${restocks.length > 1 ? "s" : ""} logged. Busiest hour so far: ${DAYS[best[1]]} ${hr(best[2])}.`;
   }
 }
 
 function renderTimeline() {
   const el = document.getElementById("timeline");
   const recent = events.filter(e => e.miles <= MAX_MILES).slice(-20).reverse();
-  if (!recent.length) { el.innerHTML = '<div class="empty">No stock changes at nearby stores yet.</div>'; return; }
+  if (!recent.length) { el.innerHTML = '<div class="empty">No stock changes yet. Every restock and sell-out will be listed here.</div>'; return; }
   el.innerHTML = recent.map(e => {
-    const color = e.status === "available" ? "var(--green)" : e.status === "unavailable" ? "var(--red)" : "var(--grey)";
-    const word = e.status === "available" ? "In stock" : e.status === "unavailable" ? "Sold out" : esc(e.status);
-    return `<div class="ev"><i style="background:${color}; box-shadow: 0 0 8px ${color}"></i>
-      <div><b>${word}</b> · ${esc(e.store)}</div><div class="t mono">${e.time.slice(5)}</div></div>`;
+    const color = e.status === "available" ? "var(--green)" : e.status === "unavailable" ? "var(--signal)" : "var(--grey-2)";
+    const word = e.status === "available" ? "In stock at" : e.status === "unavailable" ? "Sold out at" : esc(e.status) + " at";
+    return `<div class="ev"><i style="background:${color}"></i>
+      <div>${word} <b>${esc(e.store)}</b></div><time>${prettyTime(e.time)}</time></div>`;
   }).join("");
 }
 
 function renderRun() {
-  const flag = document.getElementById("flag");
-  const flagText = document.getElementById("flagText");
+  const rc = document.getElementById("rc");
+  const title = document.getElementById("flagText");
   const detail = document.getElementById("runDetail");
-  document.getElementById("runNo").textContent = lastRun ? `run #${lastRun.run_number}` : "";
-  if (!lastRun) { flag.className = "flag"; flagText.textContent = "NO SIGNAL"; detail.textContent = "Couldn't read run status"; return; }
+  document.getElementById("runNo").textContent = lastRun ? `Run ${lastRun.run_number}` : "";
+  if (!lastRun) { rc.className = "panel rc"; title.textContent = "No signal"; detail.textContent = "Couldn't read run status from GitHub"; return; }
   const started = new Date(lastRun.run_started_at || lastRun.created_at);
-  const via = lastRun.event === "workflow_dispatch" ? "cron-job.org / manual" : lastRun.event === "schedule" ? "GitHub schedule" : lastRun.event;
+  const via = lastRun.event === "workflow_dispatch" ? "started by cron-job.org or by hand" : lastRun.event === "schedule" ? "started by GitHub's schedule" : lastRun.event;
   if (lastRun.status === "in_progress") {
-    flag.className = "flag running"; flagText.textContent = "GREEN FLAG · ON TRACK";
-    detail.textContent = `Checking now · ${clock(Date.now() - started)} elapsed · via ${via}`;
-  } else if (lastRun.status === "queued" || lastRun.status === "waiting" || lastRun.status === "pending") {
-    flag.className = "flag queued"; flagText.textContent = "YELLOW · IN PIT LANE";
-    detail.textContent = `Queued ${rel(Date.now() - started)} · via ${via}`;
+    rc.className = "panel rc running"; title.textContent = "Green flag, checking now";
+    detail.textContent = `${clock(Date.now() - started)} in, ${via}`;
+  } else if (["queued", "waiting", "pending", "requested"].includes(lastRun.status)) {
+    rc.className = "panel rc queued"; title.textContent = "Yellow flag, waiting to start";
+    detail.textContent = `Queued ${rel(Date.now() - started)}, ${via}`;
   } else if (lastRun.conclusion === "success") {
-    const ended = new Date(lastRun.updated_at);
-    flag.className = "flag done"; flagText.textContent = "CHEQUERED · RUN COMPLETE";
-    detail.textContent = `Finished ${rel(Date.now() - ended)} · via ${via}`;
+    rc.className = "panel rc done"; title.textContent = "Chequered flag, run finished";
+    detail.textContent = `Finished ${rel(Date.now() - new Date(lastRun.updated_at))}`;
   } else {
-    flag.className = "flag fail"; flagText.textContent = `RED FLAG · ${(lastRun.conclusion || "error").toUpperCase()}`;
-    detail.textContent = `Last run ${rel(Date.now() - started)} · check the Actions tab`;
+    rc.className = "panel rc fail"; title.textContent = `Red flag, run ${lastRun.conclusion || "failed"}`;
+    detail.textContent = `${rel(Date.now() - started)}. Open the Actions tab to see why.`;
   }
 }
 
@@ -582,19 +651,18 @@ function tick() {
     const age = Date.now() - lastCheckAt.getTime();
     lc.textContent = rel(age);
     const limit = (isNight() ? 35 : 15) * 60000;
-    if (age < limit) { live.className = "live mono"; liveText.textContent = "LIVE"; lc.className = "v mono ok"; }
-    else if (age < limit * 3) { live.className = "live mono stale"; liveText.textContent = "DELAYED"; lc.className = "v mono warn"; }
-    else { live.className = "live mono down"; liveText.textContent = "STALLED"; lc.className = "v mono bad"; }
+    if (age < limit) { live.className = "live ok"; liveText.textContent = "Live"; lc.className = "good"; }
+    else if (age < limit * 3) { live.className = "live stale"; liveText.textContent = "Delayed"; lc.className = "caution"; }
+    else { live.className = "live down"; liveText.textContent = "Stalled"; lc.className = "bad"; }
   } else {
-    lc.textContent = "–"; live.className = "live mono down"; liveText.textContent = "NO DATA";
+    lc.textContent = "–"; live.className = "live down"; liveText.textContent = "No data";
   }
   const cd = document.getElementById("countdown");
   if (lastRun) {
-    const created = new Date(lastRun.created_at).getTime();
-    let next = created + TRIGGER_MIN * 60000;
+    let next = new Date(lastRun.created_at).getTime() + TRIGGER_MIN * 60000;
     while (next < Date.now() - 30000) next += TRIGGER_MIN * 60000;
     const left = next - Date.now();
-    cd.textContent = left > 0 ? clock(left) : "now";
+    cd.textContent = left > 0 ? clock(left) : "Now";
   }
   if (lastRun && lastRun.status === "in_progress") renderRun();
   if (fetchedAt) document.getElementById("fetched").textContent = "updated " + rel(Date.now() - fetchedAt);
@@ -604,6 +672,11 @@ function tick() {
 function setupInspector(containerId, readoutId, idleText, inspectClass) {
   const box = document.getElementById(containerId);
   const out = document.getElementById(readoutId);
+  const clear = () => {
+    box.querySelectorAll(".sel").forEach(el => el.classList.remove("sel"));
+    if (inspectClass) box.classList.remove(inspectClass);
+    out.textContent = idleText; out.classList.remove("on");
+  };
   const pick = target => {
     const cell = target.closest("[data-tip]");
     if (!cell || !box.contains(cell)) return;
@@ -615,15 +688,10 @@ function setupInspector(containerId, readoutId, idleText, inspectClass) {
   };
   box.addEventListener("click", e => pick(e.target));
   box.addEventListener("pointermove", e => { if (e.pointerType === "mouse") pick(e.target); });
-  box.addEventListener("pointerleave", e => {
-    if (e.pointerType !== "mouse") return;
-    box.querySelectorAll(".sel").forEach(el => el.classList.remove("sel"));
-    if (inspectClass) box.classList.remove(inspectClass);
-    out.textContent = idleText; out.classList.remove("on");
-  });
+  box.addEventListener("pointerleave", e => { if (e.pointerType === "mouse") clear(); });
 }
-setupInspector("bars", "lapReadout", "Tap a bar for details", "inspecting");
-setupInspector("heat", "heatReadout", "Tap a square for details", null);
+setupInspector("bars", "lapReadout", "Tap a bar to see that check", "inspecting");
+setupInspector("heat", "heatReadout", "Tap a square to see that hour", null);
 
 const refreshBtn = document.getElementById("refresh");
 async function manualRefresh() {
@@ -634,7 +702,6 @@ async function manualRefresh() {
 }
 refreshBtn.addEventListener("click", manualRefresh);
 
-/* pull to refresh (useful when saved to the home screen) */
 (() => {
   const ptr = document.getElementById("ptr");
   let startY = null, pulled = 0;
@@ -642,11 +709,10 @@ refreshBtn.addEventListener("click", manualRefresh);
   window.addEventListener("touchmove", e => {
     if (startY === null) return;
     pulled = Math.max(0, e.touches[0].clientY - startY);
-    const y = Math.min(pulled * 0.5, 60) - 48;
-    ptr.style.transform = `translate(-50%, ${y}px)`;
+    ptr.style.transform = `translate(-50%, ${Math.min(pulled * 0.5, 60) - 48}px)`;
     ptr.style.opacity = pulled > 10 ? 1 : 0;
     ptr.classList.toggle("ready", pulled > 90);
-    ptr.textContent = pulled > 90 ? "↻ RELEASE TO REFRESH" : "↓ PULL TO REFRESH";
+    ptr.textContent = pulled > 90 ? "Release to refresh" : "Pull to refresh";
   }, { passive: true });
   window.addEventListener("touchend", () => {
     if (startY !== null && pulled > 90) manualRefresh();
@@ -655,7 +721,6 @@ refreshBtn.addEventListener("click", manualRefresh);
   });
 })();
 
-/* flash a panel when its contents change */
 let prevSnap = {};
 function flashChanges(state) {
   const nearby = state.nearby || {};
@@ -670,8 +735,8 @@ function flashChanges(state) {
     if (snap.gantry !== prevSnap.gantry) flash(document.getElementById("gantry"));
     if (snap.errors !== prevSnap.errors) flash(document.getElementById("errors").parentElement);
     if (snap.checks !== prevSnap.checks) flash(document.getElementById("checks").parentElement);
-    document.querySelectorAll(".store").forEach(el => {
-      const name = el.querySelector(".name").textContent;
+    document.querySelectorAll(".row[data-store]").forEach(el => {
+      const name = el.dataset.store;
       if (snap["store:" + name] !== prevSnap["store:" + name]) flash(el);
     });
   }
@@ -702,7 +767,7 @@ async function load() {
     fetchedAt = Date.now();
     err.style.display = "none";
   } catch (e) {
-    err.textContent = "Couldn't reach GitHub: " + e.message + ". Retrying shortly.";
+    err.textContent = `Couldn't load data: ${e.message}. The page will try again in a couple of minutes, or tap refresh.`;
     err.style.display = "block";
   }
   tick();
