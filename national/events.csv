@@ -25,3 +25,10 @@ time,store,store_id,city,state,metro,tier,miles,status
 2026-10-27 12:03,Boise Towne Square,R303,Boise,ID,,0,299.0,available
 2026-10-27 12:03,Promenade Temecula,R345,Temecula,CA,,0,51.9,unavailable
 2026-10-27 12:03,Victoria Gardens,R094,Rancho Cucamonga,CA,,0,192.6,unavailable
+2026-10-27 12:22,Third Street Promenade,R051,Santa Monica,CA,Los Angeles,1,5.5,unavailable
+2026-10-27 12:22,The Americana at Brand,R451,Glendale,CA,Los Angeles,1,10.8,unavailable
+2026-10-27 12:22,Arrowhead,R247,Glendale,AZ,Phoenix,1,14.6,unavailable
+2026-10-27 12:22,Otay Ranch,R213,Chula Vista,CA,San Diego,2,14.6,unavailable
+2026-10-27 12:22,Tacoma Mall,R339,Tacoma,WA,Seattle,2,29.2,unavailable
+2026-10-27 12:22,Boise Towne Square,R303,Boise,ID,,0,299.0,unavailable
+2026-10-27 12:22,Valley Plaza,R550,Bakersfield,CA,,0,223.3,unavailable
