@@ -47,3 +47,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-27 14:37,Kahala,R210,Honolulu,HI,Honolulu,3,4.0,unavailable,MK1E4LL/A
 2026-10-27 14:48,Ala Moana,R073,Honolulu,HI,Honolulu,3,0.4,unavailable,MK1F4LL/A
 2026-10-27 17:03,Saint Louis Galleria,R114,Saint Louis,MO,St. Louis,2,1.2,available,MK1F4LL/A
+2026-10-27 17:07,Saint Louis Galleria,R114,Saint Louis,MO,St. Louis,2,1.2,unavailable,MK1F4LL/A

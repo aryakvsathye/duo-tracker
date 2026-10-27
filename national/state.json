@@ -3519,17 +3519,14 @@
    "metro": "St. Louis",
    "tier": 2,
    "miles": 1.2,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-10-27 17:03"
-   },
-   "since": "2026-10-27 17:03"
+   "since_by_part": {}
   },
   "R062": {
    "name": "West County",
@@ -4180,8 +4177,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-27T17:03:02.797472-05:00",
- "sweep_seconds": 169,
+ "last_sweep": "2026-10-27T17:07:58.591354-05:00",
+ "sweep_seconds": 168,
  "metros_ok": 50,
  "metros": [
   {
