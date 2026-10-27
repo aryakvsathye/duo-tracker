@@ -3,7 +3,7 @@
   "Country Club Plaza": "unavailable",
   "Leawood": "unavailable",
   "Village Pointe": "unavailable",
-  "Jordan Creek": "unavailable",
+  "Jordan Creek": "available",
   "Woodland Hills": "unavailable",
   "West County": "unavailable",
   "Saint Louis Galleria": "unavailable",
@@ -11,11 +11,11 @@
   "The Promenade at Chenal": "unavailable",
   "Saddle Creek": "unavailable",
   "Hilldale": "unavailable",
-  "Main Place": "unavailable"
+  "Main Place": "available"
  },
- "checks": 53,
+ "checks": 62,
  "errors": 0,
- "events": 0,
+ "events": 2,
  "last_heartbeat": "2026-10-27",
  "nearby": {
   "Country Club Plaza": {
@@ -59,7 +59,7 @@
    ]
   }
  },
- "last_check": "2026-10-27T09:23:11.325754-05:00",
+ "last_check": "2026-10-27T09:31:21.217111-05:00",
  "history": [
   {
    "t": "2026-10-27T08:40:10-05:00",
@@ -359,6 +359,69 @@
    "t": "2026-10-27T09:23:11-05:00",
    "ok": true,
    "ms": 219,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:23:20-05:00",
+   "ok": true,
+   "ms": 357,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:24:20-05:00",
+   "ok": true,
+   "ms": 450,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:25:20-05:00",
+   "ok": true,
+   "ms": 301,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:26:20-05:00",
+   "ok": true,
+   "ms": 477,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:27:20-05:00",
+   "ok": true,
+   "ms": 270,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:28:20-05:00",
+   "ok": true,
+   "ms": 460,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:29:20-05:00",
+   "ok": true,
+   "ms": 314,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:30:20-05:00",
+   "ok": true,
+   "ms": 426,
+   "code": 200,
+   "green": []
+  },
+  {
+   "t": "2026-10-27T09:31:20-05:00",
+   "ok": true,
+   "ms": 340,
    "code": 200,
    "green": []
   }
