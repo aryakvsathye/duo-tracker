@@ -2907,14 +2907,17 @@
    "metro": "Minneapolis",
    "tier": 2,
    "miles": 1.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-10-28 10:07"
+   },
+   "since": "2026-10-28 10:07"
   },
   "R054": {
    "name": "Southdale",
@@ -4177,8 +4180,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T10:03:04.315713-05:00",
- "sweep_seconds": 168,
+ "last_sweep": "2026-10-28T10:07:57.258461-05:00",
+ "sweep_seconds": 166,
  "metros_ok": 50,
  "metros": [
   {
