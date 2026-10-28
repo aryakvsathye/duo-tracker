@@ -149,8 +149,8 @@ def local_time(r, stores):
 
 
 def analyse(rows, stores, since=None):
-    rows = [r for r in rows if r["tier"] in ("1", "2", "3")
-            and (since is None or parse_time(r["time"]) >= since)]
+    every = [r for r in rows if since is None or parse_time(r["time"]) >= since]
+    rows = [r for r in every if r["tier"] in ("1", "2", "3")]   # tier stats use the 50 metros only
     # durations: first "available" to the next "unavailable" per store and colour
     opened, spans = {}, []
     for r in rows:
@@ -162,16 +162,17 @@ def analyse(rows, stores, since=None):
             mins = max(1, round((parse_time(r["time"]) - parse_time(start["time"])).total_seconds() / 60))
             spans.append((start["tier"], mins))
     # a store getting both colours in the same sweep counts as one restock for waves and hours
-    seen, restocks = set(), []
-    for r in rows:
+    seen, all_restocks = set(), []
+    for r in every:                     # waves use every store, tiered or not
         if r["status"] == "available" and (r["store_id"], r["time"]) not in seen:
             seen.add((r["store_id"], r["time"]))
-            restocks.append(r)
+            all_restocks.append(r)
+    restocks = [r for r in all_restocks if r["tier"] in ("1", "2", "3")]
     # waves: within one region, restocks within WAVE_GAP_MIN of the previous one
     waves = []
     for region in DIVISIONS:
         cur = []
-        for r in (x for x in restocks if REGION.get(x.get("state", "")) == region):
+        for r in (x for x in all_restocks if REGION.get(x.get("state", "")) == region):
             t = parse_time(r["time"])
             if cur and (t - parse_time(cur[-1]["time"])).total_seconds() / 60 > WAVE_GAP_MIN:
                 waves.append(cur); cur = []
@@ -181,6 +182,7 @@ def analyse(rows, stores, since=None):
     waves = [w for w in waves if len(w) >= WAVE_MIN]
     lead = {"1": [], "2": [], "3": []}   # minutes after the wave's first restock
     for w in waves:
+        w = [r for r in w if r["tier"] in ("1", "2", "3")]
         if len({r["tier"] for r in w}) < 2:   # tier order only means something with 2+ tiers
             continue
         first = parse_time(w[0]["time"])

@@ -131,6 +131,7 @@
   .trow { display: grid; grid-template-columns: 34px 1fr auto; gap: 2px 12px; padding: 12px 14px; align-items: center; }
   .trow + .trow { border-top: 1px solid var(--kerb); }
   .tier { font-size: 13px; font-weight: 800; font-variation-settings: var(--wide); width: 30px; text-align: center; padding: 3px 0; border-radius: var(--r-sm); color: var(--carbon); }
+  .tier.tx { background: var(--asphalt-2); color: var(--grey); }
   .tier.t1 { background: var(--t1); } .tier.t2 { background: var(--t2); } .tier.t3 { background: var(--t3); }
   .tval { font-size: 18px; font-weight: 700; font-variation-settings: var(--wide); text-align: right; }
   .tval small { display: block; font-size: 11px; color: var(--grey); font-weight: 500; font-variation-settings: var(--narrow); }
@@ -366,6 +367,8 @@ const tierTag = t => `<span class="tier t${t}">T${t}</span>`;
 
 /* ---------- analysis (mirrors national.py) ---------- */
 function analyse() {
+  // Tier stats (durations, who's first, hours) use stores in one of the 50 metros.
+  // Waves use every store, tiered or not, so a division's wave isn't missed.
   const rows = events.filter(r => TIERS.includes(r.tier));
   const opened = {}, spans = [];
   rows.forEach(r => {
@@ -379,17 +382,18 @@ function analyse() {
   });
   // Both colours arriving at one store in the same sweep count as one restock for waves and hours
   const seenRestock = new Set();
-  const restocks = rows.filter(r => {
+  const allRestocks = events.filter(r => {
     if (r.status !== "available") return false;
     const k = r.store_id + "|" + r.time;
     if (seenRestock.has(k)) return false;
     seenRestock.add(k); return true;
   });
+  const restocks = allRestocks.filter(r => TIERS.includes(r.tier));
   // Waves are found separately in each region, so a Boston and a Phoenix restock never count as one wave
   const big = [];
   REGIONS.forEach(region => {
     let cur = [];
-    restocks.filter(r => REGION[r.state] === region).forEach(r => {
+    allRestocks.filter(r => REGION[r.state] === region).forEach(r => {
       if (cur.length && (toDate(r.time) - toDate(cur[cur.length - 1].time)) / 60000 > WAVE_GAP_MIN) { big.push(cur); cur = []; }
       cur.push(r);
     });
@@ -399,7 +403,8 @@ function analyse() {
   big.forEach(w => w.region = REGION[w[0].state]);
   big.sort((x, y) => toDate(x[0].time) - toDate(y[0].time));
   const lead = { 1: [], 2: [], 3: [] }, firstCount = { 1: 0, 2: 0, 3: 0 };
-  const tiered = big.filter(w => new Set(w.map(r => r.tier)).size >= 2);   // tier order needs 2+ tiers
+  // Tier order only uses the tiered stores in a wave, and needs 2+ tiers
+  const tiered = big.map(w => w.filter(r => TIERS.includes(r.tier))).filter(w => new Set(w.map(r => r.tier)).size >= 2);
   tiered.forEach(w => {
     const t0 = toDate(w[0].time), seen = new Set();
     firstCount[w[0].tier]++;
@@ -745,9 +750,10 @@ function renderWaves(a) {
   el.innerHTML = `<div class="summary">${per.map(([g, n]) => `<b>${g}</b> ${n}`).join(", ")}</div>` + a.big.slice(-8).reverse().map(w => {
     const span = Math.round((toDate(w[w.length - 1].time) - toDate(w[0].time)) / 60000);
     const counts = TIERS.map(t => w.filter(r => r.tier === t).length);
+    const others = w.length - counts.reduce((x, y) => x + y, 0);
     return `<div class="wave">
-      <div class="wave-top"><b>${w.region}, ${pretty(w[0].time, tzOf(w[0].store_id, w[0].state))}</b><span>${w.length} restocks over ${span} min (T1 ${counts[0]}, T2 ${counts[1]}, T3 ${counts[2]})</span></div>
-      <div class="seq">${w.slice(0, 18).map(r => `<span class="tier t${r.tier}" title="${esc(r.metro)}">${esc(r.metro)}</span>`).join("")}${w.length > 18 ? `<span class="tmeta">+${w.length - 18} more</span>` : ""}</div>
+      <div class="wave-top"><b>${w.region}, ${pretty(w[0].time, tzOf(w[0].store_id, w[0].state))}</b><span>${w.length} restocks over ${span} min (T1 ${counts[0]}, T2 ${counts[1]}, T3 ${counts[2]}${others ? `, ${others} other` : ""})</span></div>
+      <div class="seq">${w.slice(0, 18).map(r => `<span class="tier t${TIERS.includes(r.tier) ? r.tier : "x"}" title="${esc(r.store)}">${esc(r.metro || r.city)}</span>`).join("")}${w.length > 18 ? `<span class="tmeta">+${w.length - 18} more</span>` : ""}</div>
     </div>`;
   }).join("");
 }
