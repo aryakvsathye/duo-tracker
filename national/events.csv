@@ -134,3 +134,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-28 11:31,Chandler Fashion Center,R026,Chandler,AZ,Phoenix,1,16.1,unavailable,MK1F4LL/A
 2026-10-28 11:36,Stoneridge Mall,R101,Pleasanton,CA,San Francisco,1,27.0,available,MK1F4LL/A
 2026-10-28 11:37,Stoneridge Mall,R101,Pleasanton,CA,San Francisco,1,27.0,unavailable,MK1F4LL/A
+2026-10-28 12:11,Arrowhead,R247,Glendale,AZ,Phoenix,1,14.6,available,MK1F4LL/A
+2026-10-28 12:11,Arrowhead,R247,Glendale,AZ,Phoenix,1,14.6,available,MK1E4LL/A
