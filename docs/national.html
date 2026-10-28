@@ -144,7 +144,13 @@
   .hours { padding: 14px; }
   .hrow { display: grid; grid-template-columns: 30px repeat(24, minmax(0, 1fr)); gap: 2px; align-items: center; }
   .hrow + .hrow { margin-top: 4px; }
-  .hrow .c { height: 18px; border-radius: 1px; background: var(--asphalt-2); }
+  .hrow .c { height: 22px; border-radius: 2px; background: var(--asphalt-2); cursor: pointer; -webkit-tap-highlight-color: transparent; }
+  .hrow .c.sel { box-shadow: inset 0 0 0 2px var(--chalk); }
+  @media (hover: hover) and (pointer: fine) { .hrow .c:hover { box-shadow: inset 0 0 0 2px var(--chalk); } }
+  .hours .readout { margin-top: 10px; }
+  .hours .readout b { color: var(--chalk); font-weight: 700; }
+  #map .dot.hl { stroke: var(--chalk); stroke-width: 2.5; fill-opacity: 1 !important; }
+  #map .faded { opacity: 0.12; }
   .hlabels { display: grid; grid-template-columns: 30px repeat(24, minmax(0, 1fr)); gap: 2px; margin-top: 6px; font-size: 10px; color: var(--grey-2); white-space: nowrap; }
 
   /* waves */
@@ -664,15 +670,74 @@ function renderDurations(a) {
     </div>`;
   }).join("");
 }
+// Restocks behind each box of the hours chart: "tier|hour" -> restock rows
+let hourIndex = {}, hourSel = null;
 function renderHours(a) {
   const max = Math.max(1, ...TIERS.flatMap(t => a.hours[t]));
   const rgb = { 1: "242,242,245", 2: "157,180,255", 3: "201,163,107" };
+  hourIndex = {};
+  a.restocks.forEach(r => {
+    const h = localParts(toDate(r.time), tzOf(r.store_id, r.state)).hour24;
+    (hourIndex[r.tier + "|" + h] = hourIndex[r.tier + "|" + h] || []).push(r);
+  });
+  const idle = FINE_POINTER ? "Hover over a box to see its stores on the map" : "Tap a box to see which stores restocked then";
   document.getElementById("hours").innerHTML = TIERS.map(t =>
     `<div class="hrow"><div>${tierTag(t)}</div>${a.hours[t].map((v, h) =>
-      `<div class="c" title="T${t} ${hr(h)}: ${v}" style="${v ? `background: rgba(${rgb[t]},${0.25 + 0.75 * v / max})` : ""}"></div>`).join("")}</div>`).join("") +
+      `<div class="c${hourSel === t + "|" + h ? " sel" : ""}" data-key="${t}|${h}" role="button" tabindex="-1" aria-label="T${t} ${hr(h)}: ${v} restocks" style="${v ? `background: rgba(${rgb[t]},${0.25 + 0.75 * v / max})` : ""}"></div>`).join("")}</div>`).join("") +
     `<div class="hlabels"><span></span>${Array.from({ length: 24 }, (_, h) => `<span>${h % 6 === 0 ? hr(h) : ""}</span>`).join("")}</div>` +
+    `<div class="readout" id="hoursReadout">${idle}</div>` +
     (a.restocks.length ? "" : '<p class="fine">No restocks logged yet. Each restock lights up its tier\'s hour.</p>');
+  if (hourSel) showHour(hourSel, false);
 }
+function hourText(key) {
+  const [t, h] = key.split("|").map(Number);
+  const rows = hourIndex[key] || [];
+  const label = `T${t}, ${hr(h)}–${hr((h + 1) % 24)} local`;
+  if (!rows.length) return `<b>${label}:</b> no restocks yet`;
+  // count restocks per store, most first
+  const per = {};
+  rows.forEach(r => { const k = r.store_id; (per[k] = per[k] || { name: r.store, metro: r.metro, n: 0 }).n++; });
+  const list = Object.values(per).sort((x, y) => y.n - x.n)
+    .map(p => `${esc(p.name)}${p.metro ? ` (${esc(p.metro)})` : ""}${p.n > 1 ? ` ×${p.n}` : ""}`);
+  return `<b>${label}: ${rows.length} restock${rows.length > 1 ? "s" : ""}.</b> ${list.join(", ")}`;
+}
+// Light up the stores behind one box on the map; null puts the map back
+function highlightStores(ids) {
+  d3.selectAll("#dots circle.dot").classed("hl", d => !!ids && ids.has(d.id)).classed("faded", d => !!ids && !ids.has(d.id));
+  d3.selectAll("#dots circle.pulse, #dots circle.home").classed("faded", !!ids);
+  d3.selectAll("#storeLabels text").classed("faded", function (d) { return !!ids && !ids.has(d.id); });
+  if (ids) d3.selectAll("#dots circle.dot.hl").raise();
+}
+function showHour(key, persist = true) {
+  if (persist) hourSel = key;
+  document.querySelectorAll("#hours .c").forEach(c => c.classList.toggle("sel", c.dataset.key === hourSel));
+  const out = document.getElementById("hoursReadout");
+  out.innerHTML = hourText(key); out.classList.add("on");
+  const rows = hourIndex[key] || [];
+  highlightStores(rows.length ? new Set(rows.map(r => r.store_id)) : null);
+}
+function clearHour() {
+  const out = document.getElementById("hoursReadout");
+  if (hourSel) { showHour(hourSel, false); return; }   // a tapped/clicked box stays selected
+  document.querySelectorAll("#hours .c.sel").forEach(c => c.classList.remove("sel"));
+  out.textContent = FINE_POINTER ? "Hover over a box to see its stores on the map" : "Tap a box to see which stores restocked then";
+  out.classList.remove("on");
+  highlightStores(null);
+}
+(() => {
+  const box = document.getElementById("hours");
+  box.addEventListener("click", e => {
+    const c = e.target.closest(".c"); if (!c) return;
+    if (hourSel === c.dataset.key) { hourSel = null; clearHour(); return; }   // tap again to clear
+    showHour(c.dataset.key);
+  });
+  box.addEventListener("pointerover", e => {
+    if (e.pointerType !== "mouse") return;
+    const c = e.target.closest(".c"); if (c) showHour(c.dataset.key, false);
+  });
+  box.addEventListener("pointerleave", e => { if (e.pointerType === "mouse") clearHour(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && hourSel) { hourSel = null; clearHour(); } });
+})();
 function renderWaves(a) {
   const el = document.getElementById("waves");
   if (!a.big.length) { el.innerHTML = '<div class="empty">No waves yet. A wave is 2 or more restocks in the same division close together.</div>'; return; }
@@ -752,6 +817,7 @@ async function load() {
     renderStatus(); drawStores(); renderNow();
     const a = analyse();
     renderLead(a); renderDurations(a); renderHours(a); renderWaves(a); renderWaveHighlight(a);
+    if (hourSel) showHour(hourSel, false);
     if (!state.last_sweep) document.getElementById("nowList").innerHTML = '<div class="empty">Waiting for the first national sweep to finish.</div>';
     fetchedAt = Date.now();
     err.style.display = "none";
