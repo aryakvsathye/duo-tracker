@@ -4177,8 +4177,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T08:23:41.055796-05:00",
- "sweep_seconds": 206,
+ "last_sweep": "2026-10-28T08:27:41.619594-05:00",
+ "sweep_seconds": 151,
  "metros_ok": 46,
  "metros": [
   {
@@ -4432,7 +4432,7 @@
    "tier": 3
   }
  ],
- "retries": 4,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4441,12 +4441,11 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Richmond": 1,
-  "Honolulu": 1,
-  "Tucson": 1,
-  "Buffalo": 1
- },
- "skipped": [],
- "last_error": "2026-10-28T08:23-05:00: Richmond: HTTP 541; Honolulu: HTTP 541; Tucson: HTTP 541; Buffalo: HTTP 541"
+ "metro_skip": {},
+ "skipped": [
+  "Richmond",
+  "Honolulu",
+  "Tucson",
+  "Buffalo"
+ ]
 }
