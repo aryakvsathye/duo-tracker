@@ -4177,8 +4177,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T12:19:30.168491-05:00",
- "metros_ok": 31,
+ "last_sweep": "2026-10-28T12:19:40.435258-05:00",
+ "metros_ok": 32,
  "metros": [
   {
    "metro": "New York",
@@ -4481,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 2,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4491,38 +4491,7 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {},
- "skipped": [
-  "Albuquerque",
-  "Austin",
-  "Buffalo",
-  "Chicago",
-  "Cincinnati",
-  "Cleveland",
-  "Columbus",
-  "Dallas",
-  "Des Moines",
-  "Indianapolis",
-  "Kansas City",
-  "Las Vegas",
-  "Little Rock",
-  "Madison",
-  "Minneapolis",
-  "Nashville",
-  "New York",
-  "Oklahoma City",
-  "Omaha",
-  "Pittsburgh",
-  "Portland",
-  "Raleigh",
-  "Richmond",
-  "Sacramento",
-  "Salt Lake City",
-  "San Diego",
-  "San Francisco",
-  "Seattle",
-  "Tucson",
-  "Tulsa"
- ],
+ "skipped": [],
  "checked_at": {
   "New York": "2026-10-28T12:13:13.449185-05:00",
   "Los Angeles": "2026-10-28T12:16:48.398424-05:00",
@@ -4559,7 +4528,7 @@
   "Cleveland": "2026-10-28T12:19:22.840071-05:00",
   "Nashville": "2026-10-28T12:13:13.449379-05:00",
   "Raleigh": "2026-10-28T12:19:30.168390-05:00",
-  "Oklahoma City": "2026-10-28T12:13:13.448544-05:00",
+  "Oklahoma City": "2026-10-28T12:19:40.435161-05:00",
   "Tulsa": "2026-10-28T12:13:13.448593-05:00",
   "Omaha": "2026-10-28T12:18:36.555041-05:00",
   "Des Moines": "2026-10-28T12:19:00.965636-05:00",
@@ -4611,7 +4580,7 @@
   "Cleveland": "2026-10-28T12:19:22.840080-05:00",
   "Nashville": "2026-10-28T11:37:40.395686-05:00",
   "Raleigh": "2026-10-28T12:19:30.168400-05:00",
-  "Oklahoma City": "2026-10-28T11:36:07.116010-05:00",
+  "Oklahoma City": "2026-10-28T12:19:40.435170-05:00",
   "Tulsa": "2026-10-28T11:36:12.513911-05:00",
   "Omaha": "2026-10-28T12:18:36.555050-05:00",
   "Des Moines": "2026-10-28T12:19:00.965646-05:00",
