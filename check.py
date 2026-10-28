@@ -158,15 +158,18 @@ def wave_now(at):
 def send_regional(found):
     """One quiet notification for every regional store that just got stock in this check."""
     by_store = {}
-    for name, part, miles, city, st_code in found:
-        e = by_store.setdefault(name, {"parts": [], "miles": miles, "where": ", ".join(x for x in (city, st_code) if x)})
+    for name, part, miles, city, st_code, zip_code in found:
+        e = by_store.setdefault(name, {"parts": [], "miles": miles, "zip": zip_code,
+                                       "where": ", ".join(x for x in (city, st_code) if x)})
         if part not in e["parts"]:
             e["parts"].append(part)
     lines = [f"{' and '.join(colour(p) for p in e['parts'])} at {n}"
-             f"{', ' + e['where'] if e['where'] else ''} ({round(e['miles'])} mi)"
+             f"{', ' + e['where'] if e['where'] else ''}{' ' + e['zip'] if e['zip'] else ''} ({round(e['miles'])} mi)"
              for n, e in sorted(by_store.items(), key=lambda kv: kv[1]["miles"])]
     tag = "[TEST] " if TEST else ""
-    title = (f"{tag}Regional restock: {next(iter(by_store))}" if len(by_store) == 1
+    first = next(iter(by_store))
+    title = (f"{tag}Regional restock: {first}" + (f" ({by_store[first]['zip']})" if by_store[first]["zip"] else "")
+             if len(by_store) == 1
              else f"{tag}Regional restocks at {len(by_store)} stores")
     push(title, "; ".join(lines) + ". Nothing in Kansas City yet, but it could follow, so keep your bag ready.",
          priority="low", click=SITE)
@@ -278,6 +281,7 @@ while True:
         for st in stores:
             name = st["storeName"]
             miles = float(st.get("storedistance", 999))
+            zip_code = ((st.get("address") or {}).get("postalCode") or "").strip()
             parts = {}
             for part in PARTS:
                 info = (st.get("partsAvailability") or {}).get(part, {})
@@ -294,9 +298,9 @@ while True:
                         log_event(name, miles, status, part)
                         state["events"] += 1
                         if status == "available" and MAX_MILES < miles <= REGIONAL_MILES:
-                            regional_new.append((name, part, miles, st.get("city", ""), st.get("state", "")))
+                            regional_new.append((name, part, miles, st.get("city", ""), st.get("state", ""), zip_code))
                 if TEST and name == test_far:
-                    regional_new.append((name, part, miles, st.get("city", ""), st.get("state", "")))
+                    regional_new.append((name, part, miles, st.get("city", ""), st.get("state", ""), zip_code))
 
                 if TRY_PART:
                     print(f"  {name} ({miles} mi): {status} [{title or part}]")
@@ -309,8 +313,9 @@ while True:
                                 f"({miles} mi). Your Duo bot is working end to end.")
                     else:
                         tag = "[TEST] " if TEST else ""
-                        t_title = f"{tag}Duo {colour(part)} in stock: {name}"
-                        body = (f"{colour(part)} 256GB at Apple {name} ({miles} mi). "
+                        t_title = f"{tag}Duo {colour(part)} in stock: {name}" + (f" ({zip_code})" if zip_code else "")
+                        body = ((f"Pickup ZIP {zip_code}. " if zip_code else "") +
+                                f"{colour(part)} 256GB at Apple {name} ({miles} mi). "
                                 f"Tap to open your bag, choose pickup at {name}. "
                                 f"{lasting_hint(name, part)}").strip()
                     push(t_title, body, actions=f"view, Open Bag, {BAG}; view, Buy page, {BUY}")
