@@ -86,3 +86,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-28 01:02,Lincoln Road,R115,Miami Beach,FL,Miami,1,3.6,unavailable,MK1E4LL/A
 2026-10-28 01:02,Aventura,R087,Aventura,FL,Miami,1,13.6,unavailable,MK1E4LL/A
 2026-10-28 01:02,Lynnhaven Mall,R614,Virginia Beach,VA,,0,103.6,unavailable,MK1F4LL/A
+2026-10-28 01:32,Orland Square Mall,R237,Orland Park,IL,Chicago,1,22.4,available,MK1E4LL/A
