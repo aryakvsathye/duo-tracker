@@ -4180,261 +4180,311 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T10:27:39.503811-05:00",
- "metros_ok": 43,
+ "last_sweep": "2026-10-28T10:28:01.399455-05:00",
+ "metros_ok": 47,
  "metros": [
   {
    "metro": "New York",
    "zip": "10019",
-   "tier": 1
+   "tier": 1,
+   "state": "NY"
   },
   {
    "metro": "Los Angeles",
    "zip": "90067",
-   "tier": 1
+   "tier": 1,
+   "state": "CA"
   },
   {
    "metro": "Chicago",
    "zip": "60611",
-   "tier": 1
+   "tier": 1,
+   "state": "IL"
   },
   {
    "metro": "Dallas",
    "zip": "75225",
-   "tier": 1
+   "tier": 1,
+   "state": "TX"
   },
   {
    "metro": "Houston",
    "zip": "77056",
-   "tier": 1
+   "tier": 1,
+   "state": "TX"
   },
   {
    "metro": "Washington",
    "zip": "20001",
-   "tier": 1
+   "tier": 1,
+   "state": "DC"
   },
   {
    "metro": "Philadelphia",
    "zip": "19103",
-   "tier": 1
+   "tier": 1,
+   "state": "PA"
   },
   {
    "metro": "Atlanta",
    "zip": "30326",
-   "tier": 1
+   "tier": 1,
+   "state": "GA"
   },
   {
    "metro": "Miami",
    "zip": "33131",
-   "tier": 1
+   "tier": 1,
+   "state": "FL"
   },
   {
    "metro": "Phoenix",
    "zip": "85016",
-   "tier": 1
+   "tier": 1,
+   "state": "AZ"
   },
   {
    "metro": "Boston",
    "zip": "02116",
-   "tier": 1
+   "tier": 1,
+   "state": "MA"
   },
   {
    "metro": "San Francisco",
    "zip": "94108",
-   "tier": 1
+   "tier": 1,
+   "state": "CA"
   },
   {
    "metro": "Detroit",
    "zip": "48084",
-   "tier": 2
+   "tier": 2,
+   "state": "MI"
   },
   {
    "metro": "Seattle",
    "zip": "98004",
-   "tier": 2
+   "tier": 2,
+   "state": "WA"
   },
   {
    "metro": "Minneapolis",
    "zip": "55425",
-   "tier": 2
+   "tier": 2,
+   "state": "MN"
   },
   {
    "metro": "San Diego",
    "zip": "92108",
-   "tier": 2
+   "tier": 2,
+   "state": "CA"
   },
   {
    "metro": "Tampa",
    "zip": "33607",
-   "tier": 2
+   "tier": 2,
+   "state": "FL"
   },
   {
    "metro": "Denver",
    "zip": "80206",
-   "tier": 2
+   "tier": 2,
+   "state": "CO"
   },
   {
    "metro": "Baltimore",
    "zip": "21204",
-   "tier": 2
+   "tier": 2,
+   "state": "MD"
   },
   {
    "metro": "St. Louis",
    "zip": "63117",
-   "tier": 2
+   "tier": 2,
+   "state": "MO"
   },
   {
    "metro": "Orlando",
    "zip": "32819",
-   "tier": 2
+   "tier": 2,
+   "state": "FL"
   },
   {
    "metro": "Charlotte",
    "zip": "28211",
-   "tier": 2
+   "tier": 2,
+   "state": "NC"
   },
   {
    "metro": "San Antonio",
    "zip": "78216",
-   "tier": 2
+   "tier": 2,
+   "state": "TX"
   },
   {
    "metro": "Portland",
    "zip": "97225",
-   "tier": 2
+   "tier": 2,
+   "state": "OR"
   },
   {
    "metro": "Sacramento",
    "zip": "95815",
-   "tier": 2
+   "tier": 2,
+   "state": "CA"
   },
   {
    "metro": "Pittsburgh",
    "zip": "15237",
-   "tier": 2
+   "tier": 2,
+   "state": "PA"
   },
   {
    "metro": "Austin",
    "zip": "78746",
-   "tier": 2
+   "tier": 2,
+   "state": "TX"
   },
   {
    "metro": "Las Vegas",
    "zip": "89109",
-   "tier": 2
+   "tier": 2,
+   "state": "NV"
   },
   {
    "metro": "Cincinnati",
    "zip": "45236",
-   "tier": 2
+   "tier": 2,
+   "state": "OH"
   },
   {
    "metro": "Kansas City",
    "zip": "66217",
-   "tier": 2
+   "tier": 2,
+   "state": "KS"
   },
   {
    "metro": "Columbus",
    "zip": "43219",
-   "tier": 2
+   "tier": 2,
+   "state": "OH"
   },
   {
    "metro": "Indianapolis",
    "zip": "46240",
-   "tier": 2
+   "tier": 2,
+   "state": "IN"
   },
   {
    "metro": "Cleveland",
    "zip": "44122",
-   "tier": 2
+   "tier": 2,
+   "state": "OH"
   },
   {
    "metro": "Nashville",
    "zip": "37215",
-   "tier": 2
+   "tier": 2,
+   "state": "TN"
   },
   {
    "metro": "Raleigh",
    "zip": "27612",
-   "tier": 2
+   "tier": 2,
+   "state": "NC"
   },
   {
    "metro": "Oklahoma City",
    "zip": "73118",
-   "tier": 3
+   "tier": 3,
+   "state": "OK"
   },
   {
    "metro": "Tulsa",
    "zip": "74133",
-   "tier": 3
+   "tier": 3,
+   "state": "OK"
   },
   {
    "metro": "Omaha",
    "zip": "68118",
-   "tier": 3
+   "tier": 3,
+   "state": "NE"
   },
   {
    "metro": "Des Moines",
    "zip": "50266",
-   "tier": 3
+   "tier": 3,
+   "state": "IA"
   },
   {
    "metro": "Little Rock",
    "zip": "72223",
-   "tier": 3
+   "tier": 3,
+   "state": "AR"
   },
   {
    "metro": "Memphis",
    "zip": "38138",
-   "tier": 3
+   "tier": 3,
+   "state": "TN"
   },
   {
    "metro": "Madison",
    "zip": "53705",
-   "tier": 3
+   "tier": 3,
+   "state": "WI"
   },
   {
    "metro": "Albuquerque",
    "zip": "87110",
-   "tier": 3
+   "tier": 3,
+   "state": "NM"
   },
   {
    "metro": "Salt Lake City",
    "zip": "84111",
-   "tier": 3
+   "tier": 3,
+   "state": "UT"
   },
   {
    "metro": "Louisville",
    "zip": "40222",
-   "tier": 3
+   "tier": 3,
+   "state": "KY"
   },
   {
    "metro": "Birmingham",
    "zip": "35243",
-   "tier": 3
+   "tier": 3,
+   "state": "AL"
   },
   {
    "metro": "Richmond",
    "zip": "23233",
-   "tier": 3
+   "tier": 3,
+   "state": "VA"
   },
   {
    "metro": "Honolulu",
    "zip": "96814",
-   "tier": 3
+   "tier": 3,
+   "state": "HI"
   },
   {
    "metro": "Tucson",
    "zip": "85718",
-   "tier": 3
+   "tier": 3,
+   "state": "AZ"
   },
   {
    "metro": "Buffalo",
    "zip": "14225",
-   "tier": 3
+   "tier": 3,
+   "state": "NY"
   }
  ],
- "retries": 3,
+ "retries": 5,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4444,17 +4494,23 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Honolulu": 1,
-  "Tucson": 1,
-  "Buffalo": 1
+  "New York": 1,
+  "Los Angeles": 1,
+  "Chicago": 1,
+  "Kansas City": 1,
+  "Dallas": 1
  },
- "skipped": [],
- "last_error": "2026-10-28T10:23-05:00: Honolulu: HTTP 541; Tucson: HTTP 541; Buffalo: HTTP 541",
+ "skipped": [
+  "Buffalo",
+  "Honolulu",
+  "Tucson"
+ ],
+ "last_error": "2026-10-28T10:29-05:00: New York: HTTP 541; Los Angeles: HTTP 541; Chicago: HTTP 541; Kansas City: HTTP 541; Dallas: HTTP 541",
  "checked_at": {
-  "New York": "2026-10-28T10:25:16.573201-05:00",
-  "Los Angeles": "2026-10-28T10:25:19.807083-05:00",
-  "Chicago": "2026-10-28T10:25:23.165668-05:00",
-  "Dallas": "2026-10-28T10:25:26.444570-05:00",
+  "New York": "2026-10-28T10:28:14.670233-05:00",
+  "Los Angeles": "2026-10-28T10:28:27.830245-05:00",
+  "Chicago": "2026-10-28T10:28:41.017656-05:00",
+  "Dallas": "2026-10-28T10:29:07.704027-05:00",
   "Houston": "2026-10-28T10:25:29.833695-05:00",
   "Washington": "2026-10-28T10:25:33.089421-05:00",
   "Philadelphia": "2026-10-28T10:25:36.469312-05:00",
@@ -4465,12 +4521,12 @@
   "San Francisco": "2026-10-28T10:25:52.931630-05:00",
   "Detroit": "2026-10-28T10:25:56.273244-05:00",
   "Seattle": "2026-10-28T10:25:59.535163-05:00",
-  "Minneapolis": "2026-10-28T10:26:02.746552-05:00",
+  "Minneapolis": "2026-10-28T10:27:58.015386-05:00",
   "San Diego": "2026-10-28T10:26:07.839076-05:00",
   "Tampa": "2026-10-28T10:26:11.284903-05:00",
   "Denver": "2026-10-28T10:26:14.557618-05:00",
   "Baltimore": "2026-10-28T10:26:17.820774-05:00",
-  "St. Louis": "2026-10-28T10:26:21.405722-05:00",
+  "St. Louis": "2026-10-28T10:28:01.399318-05:00",
   "Orlando": "2026-10-28T10:26:24.665345-05:00",
   "Charlotte": "2026-10-28T10:26:28.008302-05:00",
   "San Antonio": "2026-10-28T10:26:31.302197-05:00",
@@ -4480,7 +4536,7 @@
   "Austin": "2026-10-28T10:26:44.548385-05:00",
   "Las Vegas": "2026-10-28T10:26:48.066584-05:00",
   "Cincinnati": "2026-10-28T10:26:51.348943-05:00",
-  "Kansas City": "2026-10-28T10:26:56.200196-05:00",
+  "Kansas City": "2026-10-28T10:28:54.354852-05:00",
   "Columbus": "2026-10-28T10:26:59.579678-05:00",
   "Indianapolis": "2026-10-28T10:27:02.876833-05:00",
   "Cleveland": "2026-10-28T10:27:06.176764-05:00",
@@ -4493,7 +4549,14 @@
   "Little Rock": "2026-10-28T10:27:29.624580-05:00",
   "Memphis": "2026-10-28T10:27:32.924212-05:00",
   "Madison": "2026-10-28T10:27:36.188325-05:00",
-  "Albuquerque": "2026-10-28T10:27:39.503702-05:00"
+  "Albuquerque": "2026-10-28T10:27:39.503702-05:00",
+  "Salt Lake City": "2026-10-28T10:27:44.337493-05:00",
+  "Louisville": "2026-10-28T10:27:47.693654-05:00",
+  "Birmingham": "2026-10-28T10:27:51.355253-05:00",
+  "Richmond": "2026-10-28T10:27:54.737076-05:00",
+  "Honolulu": "2026-10-28T10:27:57.738629-05:00",
+  "Tucson": "2026-10-28T10:27:57.739570-05:00",
+  "Buffalo": "2026-10-28T10:27:57.740346-05:00"
  },
  "ok_at": {
   "New York": "2026-10-28T10:25:16.573218-05:00",
@@ -4510,12 +4573,12 @@
   "San Francisco": "2026-10-28T10:25:52.931646-05:00",
   "Detroit": "2026-10-28T10:25:56.273260-05:00",
   "Seattle": "2026-10-28T10:25:59.535179-05:00",
-  "Minneapolis": "2026-10-28T10:26:02.746569-05:00",
+  "Minneapolis": "2026-10-28T10:27:58.015403-05:00",
   "San Diego": "2026-10-28T10:26:07.839094-05:00",
   "Tampa": "2026-10-28T10:26:11.284920-05:00",
   "Denver": "2026-10-28T10:26:14.557634-05:00",
   "Baltimore": "2026-10-28T10:26:17.820791-05:00",
-  "St. Louis": "2026-10-28T10:26:21.405738-05:00",
+  "St. Louis": "2026-10-28T10:28:01.399337-05:00",
   "Orlando": "2026-10-28T10:26:24.665361-05:00",
   "Charlotte": "2026-10-28T10:26:28.008319-05:00",
   "San Antonio": "2026-10-28T10:26:31.302212-05:00",
@@ -4538,10 +4601,16 @@
   "Little Rock": "2026-10-28T10:27:29.624596-05:00",
   "Memphis": "2026-10-28T10:27:32.924228-05:00",
   "Madison": "2026-10-28T10:27:36.188341-05:00",
-  "Albuquerque": "2026-10-28T10:27:39.503717-05:00"
+  "Albuquerque": "2026-10-28T10:27:39.503717-05:00",
+  "Salt Lake City": "2026-10-28T10:27:44.337509-05:00",
+  "Louisville": "2026-10-28T10:27:47.693671-05:00",
+  "Birmingham": "2026-10-28T10:27:51.355270-05:00",
+  "Richmond": "2026-10-28T10:27:54.737093-05:00"
  },
  "hot": [
   "East South Central",
   "West North Central"
- ]
+ ],
+ "slow_until": "2026-10-28T11:29:07.704054-05:00",
+ "cycle_seconds": 150
 }
