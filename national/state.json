@@ -1536,9 +1536,9 @@
    "state": "AL",
    "lat": 33.44726,
    "lon": -86.7285,
-   "metro": "",
-   "tier": 0,
-   "miles": 138.9,
+   "metro": "Birmingham",
+   "tier": 3,
+   "miles": 0.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -1574,7 +1574,7 @@
    "lon": -86.67308,
    "metro": "",
    "tier": 0,
-   "miles": 95.1,
+   "miles": 87.9,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -1932,9 +1932,9 @@
    "state": "AZ",
    "lat": 32.325404,
    "lon": -110.929689,
-   "metro": "",
-   "tier": 0,
-   "miles": 103.7,
+   "metro": "Tucson",
+   "tier": 3,
+   "miles": 1.2,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3428,7 +3428,7 @@
    "lon": -106.56682,
    "metro": "",
    "tier": 0,
-   "miles": 331.7,
+   "miles": 315.8,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3894,9 +3894,9 @@
    "state": "NY",
    "lat": 42.914661,
    "lon": -78.762075,
-   "metro": "",
-   "tier": 0,
-   "miles": 176.6,
+   "metro": "Buffalo",
+   "tier": 3,
+   "miles": 0.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4038,9 +4038,9 @@
    "state": "VA",
    "lat": 37.656044,
    "lon": -77.618722,
-   "metro": "",
-   "tier": 0,
-   "miles": 138.4,
+   "metro": "Richmond",
+   "tier": 3,
+   "miles": 1.1,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4058,7 +4058,7 @@
    "lon": -76.071055,
    "metro": "",
    "tier": 0,
-   "miles": 160.9,
+   "miles": 103.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4076,7 +4076,7 @@
    "lon": -90.14758,
    "metro": "",
    "tier": 0,
-   "miles": 212.1,
+   "miles": 209.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4094,7 +4094,7 @@
    "lon": -106.3794,
    "metro": "",
    "tier": 0,
-   "miles": 230.6,
+   "miles": 268.4,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4177,9 +4177,9 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-27T23:03:37.155392-05:00",
- "sweep_seconds": 201,
- "metros_ok": 40,
+ "last_sweep": "2026-10-27T23:07:42.698234-05:00",
+ "sweep_seconds": 150,
+ "metros_ok": 45,
  "metros": [
   {
    "metro": "New York",
@@ -4432,7 +4432,7 @@
    "tier": 3
   }
  ],
- "retries": 5,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4441,13 +4441,12 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Memphis": 1,
-  "Madison": 1,
-  "Albuquerque": 1,
-  "Salt Lake City": 1,
-  "Louisville": 1
- },
- "skipped": [],
- "last_error": "2026-10-27T23:03-05:00: Memphis: HTTP 541; Madison: HTTP 541; Albuquerque: HTTP 541; Salt Lake City: HTTP 541; Louisville: HTTP 541"
+ "metro_skip": {},
+ "skipped": [
+  "Memphis",
+  "Madison",
+  "Albuquerque",
+  "Salt Lake City",
+  "Louisville"
+ ]
 }
