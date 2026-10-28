@@ -124,3 +124,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-28 10:30,The Summit,R225,Birmingham,AL,Birmingham,3,0.6,unavailable,MK1F4LL/A
 2026-10-28 10:51,Village Pointe,R190,Omaha,NE,Omaha,3,0.3,available,MK1F4LL/A
 2026-10-28 10:55,Village Pointe,R190,Omaha,NE,Omaha,3,0.3,unavailable,MK1F4LL/A
+2026-10-28 11:18,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,available,MK1F4LL/A
+2026-10-28 11:18,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,available,MK1E4LL/A
