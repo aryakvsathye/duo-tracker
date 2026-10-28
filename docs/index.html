@@ -590,8 +590,22 @@ async function getRun() {
   const runs = (await res.json()).workflow_runs || [];
   const isQueued = r => ["queued", "waiting", "pending", "requested"].includes(r.status);
   const active = runs.find(r => r.status === "in_progress");
+  // A run waits in the queue for a few minutes after it's triggered, and GitHub's
+  // run_started_at is the trigger time. The job's own start time is when checking
+  // really began (what the Actions page counts from). Look it up once per run.
+  if (active) {
+    if (jobStart.id !== active.id) {
+      try {
+        const jr = await gh(`${API}/actions/runs/${active.id}/jobs?per_page=1`);
+        const job = jr.ok ? ((await jr.json()).jobs || [])[0] : null;
+        if (job && job.started_at) jobStart = { id: active.id, at: job.started_at };
+      } catch (e) { if (e instanceof LimitError) throw e; }
+    }
+    if (jobStart.id === active.id) active.job_started_at = jobStart.at;
+  }
   return { run: active || runs[0] || null, queued: runs.some(isQueued), newest: runs[0] ? runs[0].created_at : null };
 }
+let jobStart = { id: null, at: null };
 function parseCsv(text) {
   if (!text) return [];
   // The bot writes Windows-style line endings (\r\n), so split on either
@@ -856,7 +870,7 @@ function runProgress() {
   // Estimate where the active run is: first check ~SETUP_S after start,
   // then one every GAP_S, RUN_CHECKS in a daytime run (1 at night).
   if (!lastRun || lastRun.status !== "in_progress") return null;
-  const started = new Date(lastRun.run_started_at || lastRun.created_at).getTime();
+  const started = new Date(lastRun.job_started_at || lastRun.run_started_at || lastRun.created_at).getTime();
   const gap = waveActive(lastState) ? BURST_GAP_S : GAP_S;
   const total = isNight() ? 1 : Math.floor(RUN_S / gap);
   const first = started + SETUP_S * 1000;
@@ -873,7 +887,7 @@ function renderRun() {
   const detail = document.getElementById("runDetail");
   document.getElementById("runNo").textContent = lastRun ? `Run ${lastRun.run_number}` : "";
   if (!lastRun) { rc.className = "panel rc"; title.textContent = "No signal"; detail.textContent = "Couldn't read run status from GitHub"; return; }
-  const started = new Date(lastRun.run_started_at || lastRun.created_at);
+  const started = new Date(lastRun.job_started_at || lastRun.run_started_at || lastRun.created_at);
   const via = lastRun.event === "workflow_dispatch" ? "started by cron-job.org or by hand" : lastRun.event === "schedule" ? "started by GitHub's schedule" : lastRun.event;
   if (lastRun.status === "in_progress") {
     const p = runProgress();
