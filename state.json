@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 90,
+ "checks": 105,
  "errors": 0,
- "events": 2,
+ "events": 4,
  "last_heartbeat": "2026-10-28",
  "nearby": {
   "Country Club Plaza": {
@@ -171,128 +171,8 @@
    ]
   }
  },
- "last_check": "2026-10-28T09:29:30.885396-05:00",
+ "last_check": "2026-10-28T09:38:30.512769-05:00",
  "history": [
-  {
-   "t": "2026-10-28T08:06:43-05:00",
-   "ok": true,
-   "ms": 365,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-28T08:07:43-05:00",
-   "ok": true,
-   "ms": 304,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-28T08:08:43-05:00",
-   "ok": true,
-   "ms": 461,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-28T08:09:43-05:00",
-   "ok": true,
-   "ms": 367,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-28T08:10:43-05:00",
-   "ok": true,
-   "ms": 273,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-28T08:11:43-05:00",
-   "ok": true,
-   "ms": 304,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-28T08:12:43-05:00",
-   "ok": true,
-   "ms": 355,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-28T08:13:43-05:00",
-   "ok": true,
-   "ms": 261,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-28T08:14:43-05:00",
-   "ok": true,
-   "ms": 334,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-28T08:15:00-05:00",
-   "ok": true,
-   "ms": 438,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-28T08:16:00-05:00",
-   "ok": true,
-   "ms": 602,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-28T08:17:00-05:00",
-   "ok": true,
-   "ms": 652,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-28T08:18:00-05:00",
-   "ok": true,
-   "ms": 723,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-28T08:19:00-05:00",
-   "ok": true,
-   "ms": 489,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-28T08:20:00-05:00",
-   "ok": true,
-   "ms": 400,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-10-28T08:21:00-05:00",
    "ok": true,
@@ -892,6 +772,126 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-10-28T09:29:48-05:00",
+   "ok": true,
+   "ms": 422,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-28T09:30:48-05:00",
+   "ok": true,
+   "ms": 362,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-28T09:31:48-05:00",
+   "ok": true,
+   "ms": 369,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-28T09:32:48-05:00",
+   "ok": true,
+   "ms": 473,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-28T09:33:48-05:00",
+   "ok": true,
+   "ms": 291,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-28T09:34:48-05:00",
+   "ok": true,
+   "ms": 297,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-28T09:35:48-05:00",
+   "ok": true,
+   "ms": 370,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-10-28T09:36:08-05:00",
+   "ok": true,
+   "ms": 390,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-10-28T09:36:28-05:00",
+   "ok": true,
+   "ms": 274,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-10-28T09:36:48-05:00",
+   "ok": true,
+   "ms": 288,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-10-28T09:37:08-05:00",
+   "ok": true,
+   "ms": 590,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-10-28T09:37:28-05:00",
+   "ok": true,
+   "ms": 270,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-10-28T09:37:48-05:00",
+   "ok": true,
+   "ms": 315,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-10-28T09:38:08-05:00",
+   "ok": true,
+   "ms": 302,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-10-28T09:38:28-05:00",
+   "ok": true,
+   "ms": 2394,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
@@ -1024,5 +1024,14 @@
  "colours": {
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
- }
+ },
+ "wave": {
+  "since": "2026-10-28T09:35:48.576340-05:00",
+  "stores": [
+   "Penn Square",
+   "West County"
+  ],
+  "until": "2026-10-28T10:05:00-05:00"
+ },
+ "wave_alerted_at": "2026-10-28T09:35:48.576340-05:00"
 }
