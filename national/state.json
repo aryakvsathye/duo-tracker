@@ -693,18 +693,14 @@
    "metro": "Dallas",
    "tier": 1,
    "miles": 4.8,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-10-28 09:57",
-    "MK1E4LL/A": "2026-10-28 09:57"
-   },
-   "since": "2026-10-28 09:57"
+   "since_by_part": {}
   },
   "R151": {
    "name": "Southlake Town Square",
@@ -856,9 +852,9 @@
    "state": "OK",
    "lat": 36.06342,
    "lon": -95.88056,
-   "metro": "",
-   "tier": 0,
-   "miles": 99.7,
+   "metro": "Tulsa",
+   "tier": 3,
+   "miles": 1.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -2980,9 +2976,9 @@
    "state": "IA",
    "lat": 41.570044,
    "lon": -93.803773,
-   "metro": "",
-   "tier": 0,
-   "miles": 183.6,
+   "metro": "Des Moines",
+   "tier": 3,
+   "miles": 0.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -2998,9 +2994,9 @@
    "state": "NE",
    "lat": 41.261188,
    "lon": -96.183078,
-   "metro": "",
-   "tier": 0,
-   "miles": 171.9,
+   "metro": "Omaha",
+   "tier": 3,
+   "miles": 0.3,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3610,9 +3606,9 @@
    "state": "TN",
    "lat": 35.09344,
    "lon": -89.812433,
-   "metro": "",
-   "tier": 0,
-   "miles": 180.8,
+   "metro": "Memphis",
+   "tier": 3,
+   "miles": 0.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4024,9 +4020,9 @@
    "state": "AR",
    "lat": 34.76635,
    "lon": -92.45902,
-   "metro": "",
-   "tier": 0,
-   "miles": 291.0,
+   "metro": "Little Rock",
+   "tier": 3,
+   "miles": 3.3,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4080,7 +4076,7 @@
    "lon": -90.14758,
    "metro": "",
    "tier": 0,
-   "miles": 209.6,
+   "miles": 184.0,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4181,9 +4177,9 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T09:57:41.010097-05:00",
- "sweep_seconds": 150,
- "metros_ok": 45,
+ "last_sweep": "2026-10-28T10:03:04.315713-05:00",
+ "sweep_seconds": 168,
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4446,11 +4442,5 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {},
- "skipped": [
-  "Tulsa",
-  "Omaha",
-  "Des Moines",
-  "Little Rock",
-  "Memphis"
- ]
+ "skipped": []
 }
