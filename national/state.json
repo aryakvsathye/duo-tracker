@@ -1485,17 +1485,14 @@
    "metro": "Atlanta",
    "tier": 1,
    "miles": 26.3,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-10-28 08:52"
-   },
-   "since": "2026-10-28 08:52"
+   "since_by_part": {}
   },
   "R364": {
    "name": "Augusta",
@@ -4180,8 +4177,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T08:52:54.485206-05:00",
- "sweep_seconds": 164,
+ "last_sweep": "2026-10-28T08:57:57.010754-05:00",
+ "sweep_seconds": 168,
  "metros_ok": 50,
  "metros": [
   {
