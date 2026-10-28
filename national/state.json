@@ -2241,17 +2241,14 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 30.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "New England",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-10-28 08:33"
-   },
-   "since": "2026-10-28 08:33"
+   "since_by_part": {}
   },
   "R622": {
    "name": "The Shops at Blackstone Valley",
@@ -4180,8 +4177,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T08:33:00.841731-05:00",
- "sweep_seconds": 167,
+ "last_sweep": "2026-10-28T08:37:55.160294-05:00",
+ "sweep_seconds": 166,
  "metros_ok": 50,
  "metros": [
   {
