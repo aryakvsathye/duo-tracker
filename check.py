@@ -21,7 +21,7 @@ def colour(part):
 
 TOPIC = "aryak-duo-256-night-sky"
 MAX_MILES = 50          # only stores this close send stock alerts
-REGIONAL_MILES = 400    # stores beyond MAX_MILES up to this send a soft (silent) update instead
+REGIONAL_MILES = 300    # stores beyond MAX_MILES up to this send a soft (silent) update instead
 GAP = 60                # seconds between checks normally
 BURST_GAP = 20          # seconds between checks during a restock wave
 BURST_MINUTES = 30      # how long burst mode lasts after the latest restock in a wave
