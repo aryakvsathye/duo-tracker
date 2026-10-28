@@ -4059,17 +4059,14 @@
    "metro": "",
    "tier": 0,
    "miles": 160.9,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-10-28 08:13"
-   },
-   "since": "2026-10-28 08:13"
+   "since_by_part": {}
   },
   "R324": {
    "name": "Renaissance at Colony Park",
@@ -4180,8 +4177,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T08:13:42.081679-05:00",
- "sweep_seconds": 207,
+ "last_sweep": "2026-10-28T08:17:41.926286-05:00",
+ "sweep_seconds": 151,
  "metros_ok": 46,
  "metros": [
   {
@@ -4435,7 +4432,7 @@
    "tier": 3
   }
  ],
- "retries": 4,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4444,12 +4441,11 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Richmond": 1,
-  "Honolulu": 1,
-  "Tucson": 1,
-  "Buffalo": 1
- },
- "skipped": [],
- "last_error": "2026-10-28T08:13-05:00: Richmond: HTTP 541; Honolulu: HTTP 541; Tucson: HTTP 541; Buffalo: HTTP 541"
+ "metro_skip": {},
+ "skipped": [
+  "Richmond",
+  "Honolulu",
+  "Tucson",
+  "Buffalo"
+ ]
 }
