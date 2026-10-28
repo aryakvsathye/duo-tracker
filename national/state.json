@@ -1521,14 +1521,17 @@
    "metro": "",
    "tier": 0,
    "miles": 89.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-10-28 09:07"
+   },
+   "since": "2026-10-28 09:07"
   },
   "R225": {
    "name": "The Summit",
@@ -1665,14 +1668,18 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 3.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-10-28 09:07",
+    "MK1E4LL/A": "2026-10-28 09:07"
+   },
+   "since": "2026-10-28 09:07"
   },
   "R312": {
    "name": "Dadeland",
@@ -4177,8 +4184,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T09:02:56.953180-05:00",
- "sweep_seconds": 162,
+ "last_sweep": "2026-10-28T09:07:57.679086-05:00",
+ "sweep_seconds": 167,
  "metros_ok": 50,
  "metros": [
   {

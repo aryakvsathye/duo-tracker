@@ -104,3 +104,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-28 08:52,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,unavailable,MK1F4LL/A
 2026-10-28 08:52,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,unavailable,MK1F4LL/A
 2026-10-28 08:57,Mall of Georgia,R259,Buford,GA,Atlanta,1,26.3,unavailable,MK1F4LL/A
+2026-10-28 09:07,Haywood Mall,R355,Greenville,SC,,0,89.9,available,MK1F4LL/A
+2026-10-28 09:07,Lincoln Road,R115,Miami Beach,FL,Miami,1,3.6,available,MK1F4LL/A
+2026-10-28 09:07,Lincoln Road,R115,Miami Beach,FL,Miami,1,3.6,available,MK1E4LL/A
