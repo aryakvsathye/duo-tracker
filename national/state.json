@@ -1536,9 +1536,9 @@
    "state": "AL",
    "lat": 33.44726,
    "lon": -86.7285,
-   "metro": "Birmingham",
-   "tier": 3,
-   "miles": 0.6,
+   "metro": "",
+   "tier": 0,
+   "miles": 138.9,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -1574,7 +1574,7 @@
    "lon": -86.67308,
    "metro": "",
    "tier": 0,
-   "miles": 87.9,
+   "miles": 95.1,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3624,9 +3624,9 @@
    "state": "KY",
    "lat": 38.247278,
    "lon": -85.609467,
-   "metro": "Louisville",
-   "tier": 3,
-   "miles": 1.8,
+   "metro": "",
+   "tier": 0,
+   "miles": 93.5,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4004,7 +4004,7 @@
    "lon": -84.528169,
    "metro": "",
    "tier": 0,
-   "miles": 62.5,
+   "miles": 85.5,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4038,9 +4038,9 @@
    "state": "VA",
    "lat": 37.656044,
    "lon": -77.618722,
-   "metro": "Richmond",
-   "tier": 3,
-   "miles": 1.1,
+   "metro": "",
+   "tier": 0,
+   "miles": 138.4,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4058,7 +4058,7 @@
    "lon": -76.071055,
    "metro": "",
    "tier": 0,
-   "miles": 103.6,
+   "miles": 160.9,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4177,9 +4177,9 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T06:08:16.320549-05:00",
- "sweep_seconds": 185,
- "metros_ok": 48,
+ "last_sweep": "2026-10-28T06:33:30.018174-05:00",
+ "sweep_seconds": 197,
+ "metros_ok": 44,
  "metros": [
   {
    "metro": "New York",
@@ -4432,7 +4432,7 @@
    "tier": 3
   }
  ],
- "retries": 2,
+ "retries": 4,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4442,9 +4442,14 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Tucson": 1,
-  "Buffalo": 1
+  "Louisville": 1,
+  "Birmingham": 1,
+  "Richmond": 1,
+  "Honolulu": 1
  },
- "skipped": [],
- "last_error": "2026-10-28T06:08-05:00: Tucson: HTTP 541; Buffalo: HTTP 541"
+ "skipped": [
+  "Tucson",
+  "Buffalo"
+ ],
+ "last_error": "2026-10-28T06:33-05:00: Louisville: HTTP 541; Birmingham: HTTP 541; Richmond: HTTP 541; Honolulu: HTTP 541"
 }
