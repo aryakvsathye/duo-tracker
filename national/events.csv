@@ -100,3 +100,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-28 08:37,Pheasant Lane,R354,Nashua,NH,Boston,1,30.5,unavailable,MK1F4LL/A
 2026-10-28 08:47,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,available,MK1F4LL/A
 2026-10-28 08:47,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,available,MK1F4LL/A
+2026-10-28 08:52,Mall of Georgia,R259,Buford,GA,Atlanta,1,26.3,available,MK1F4LL/A
+2026-10-28 08:52,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,unavailable,MK1F4LL/A
+2026-10-28 08:52,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,unavailable,MK1F4LL/A
