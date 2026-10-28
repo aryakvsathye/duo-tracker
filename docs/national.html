@@ -273,7 +273,7 @@
     <section class="section">
       <div class="section-head"><h2>Recent waves</h2><span>By region, in the order stores restocked</span></div>
       <div class="panel" id="waves"><div class="empty">Loading</div></div>
-      <p class="fine">Tiers are our own groups by metro population: T1 4.5 million and up, T2 1.5 to 4.5 million, T3 under 1.5 million. Apple doesn't publish tiers. Each store belongs to the closest of the 50 metros if it's within 50 miles. Regions are the nine US Census divisions. A wave is 2 or more restocks in the same division with less than 45 minutes between them. Each metro is checked about every 3 minutes, every minute while its division has a live restock, and every 30 minutes overnight. Restocks the Kansas City bot sees (its 12 stores, checked every 20 to 60 seconds) are included too. Times are shown in each store's local time zone.</p>
+      <p class="fine">Tiers are our own groups by metro population: T1 4.5 million and up, T2 1.5 to 4.5 million, T3 under 1.5 million. Apple doesn't publish tiers. Each store belongs to the closest of the 50 metros if it's within 50 miles. Regions are the nine US Census divisions. A wave is 2 or more restocks in the same division with less than 45 minutes between them. Each metro is checked every few minutes (as fast as Apple allows), every minute or so while its division has a live restock, and every 30 minutes overnight. Restocks the Kansas City bot sees (its 12 stores, checked every 20 to 60 seconds) are included too. Times are shown in each store's local time zone.</p>
     </section>
   </div>
 </main>
@@ -651,6 +651,7 @@ function renderStatus() {
   const slow = state.slow_until && new Date(state.slow_until) > Date.now();
   if (slow) parts.push(`Apple refused several requests in a row, so every metro is being checked only every 5 min until ${new Date(state.slow_until).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" })} Central.`);
   else if ((state.hot || []).length) parts.push(`Checking every minute in ${state.hot.join(" and ")}, which had a restock in the last 30 min.`);
+  if (state.pace > 3) parts.push(`Pace: one request every ${state.pace} s (fastest is 3 s); it eases back after Apple blocks requests and speeds up again after 2 clean hours.`);
   if (sitting.length) parts.push(`Sat out a turn after failing: ${sitting.join(", ")}.`);
   if (failed) parts.push(`Recently failed, so they sit out their next turn: ${failed}.`);
   note.textContent = parts.join(" ");

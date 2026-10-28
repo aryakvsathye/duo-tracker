@@ -21,7 +21,11 @@ OUT_DIR = os.path.join(DATA_DIR, "national")
 STATE_FILE = os.path.join(OUT_DIR, "state.json")
 LOG_FILE = os.path.join(OUT_DIR, "events.csv")
 
-SPACING = 3.0          # seconds between requests to Apple: never faster than this
+SPACING = 3.0          # fastest pace: seconds between requests to Apple
+MAX_SPACING = 7.0      # slowest pace it backs off to
+# The pace adjusts itself to what Apple tolerates: every block slows it by 1 s,
+# and every 2 hours without one speeds it up by 0.5 s (never faster than SPACING)
+SPEED_UP_AFTER = 7200
 RUN_SECONDS = 270      # each run checks for 4.5 min (runs are triggered every 5 min)
 CYCLE = 150            # each metro is checked about this often (50 metros x 3 s)
 BURST_INTERVAL = 60    # ...and this often if its division has had a restock recently
@@ -31,8 +35,8 @@ NIGHT_INTERVAL = 1800  # 10pm-7am Central: each metro every 30 min, no bursts
 RETRY_WAIT = 10        # seconds before retrying a metro that failed once
 SKIP_TURNS = 1         # a metro that fails even after its retry sits out its next turn
 ABORT_AFTER = 5        # this many metros failing in a row = Apple is refusing everything:
-SLOW_MINUTES = 60      # end the run, then check every metro only every 5 min for an hour
-SLOW_INTERVAL = 300
+SLOW_MINUTES = 20      # end the run, then check every metro only every 5 min for 20 min
+SLOW_INTERVAL = 300    # (Apple's blocks usually last 10-15 min)
 SAVE_EVERY = 45        # save to GitHub at least this often during a run...
 SAVE_AFTER_CHANGE = 15 # ...and within this many seconds of a stock change
 ASSIGN_MILES = 50      # a store belongs to a metro if it's this close to the metro's ZIP
@@ -428,6 +432,14 @@ def main():
     checked = state.setdefault("checked_at", {})        # metro -> last time it was asked
     ok_at = state.setdefault("ok_at", {})               # metro -> last time it answered
     skip = {m: (n if isinstance(n, int) else 1) for m, n in (state.get("metro_skip") or {}).items()}
+    pace = float(state.get("pace") or SPACING)
+    if state.get("pace_since") and (now() - datetime.datetime.fromisoformat(state["pace_since"])).total_seconds() > SPEED_UP_AFTER \
+            and pace > SPACING:
+        pace = max(SPACING, pace - 0.5)
+        state["pace_since"] = now().isoformat()
+        print(f"No blocks for 2 h: speeding up to one request every {pace:g} s")
+    state["pace"] = pace
+    state.setdefault("pace_since", now().isoformat())
     log = read_log()
     products, problems, skipped_now = {}, [], []
     requests_made, retried, fails_in_row = 0, 0, 0
@@ -486,9 +498,13 @@ def main():
             print(f"{metro}: failed again ({why}), sitting out its next turn")
             if fails_in_row >= ABORT_AFTER:
                 state["slow_until"] = (now() + datetime.timedelta(minutes=SLOW_MINUTES)).isoformat()
-                print(f"{ABORT_AFTER} metros in a row failed: ending this run and slowing down for {SLOW_MINUTES} min")
+                state["pace"] = min(MAX_SPACING, pace + 1)
+                state["pace_since"] = now().isoformat()
+                state["blocks"] = (state.get("blocks") or [])[-19:] + [now().isoformat(timespec="minutes")]
+                print(f"{ABORT_AFTER} metros in a row failed: ending this run, slowing down for {SLOW_MINUTES} min, "
+                      f"then one request every {state['pace']:g} s")
                 break
-            time.sleep(SPACING)
+            time.sleep(pace)
             continue
         fails_in_row = 0
         ok_at[metro] = now().isoformat()
@@ -506,7 +522,7 @@ def main():
                                      (now() - datetime.datetime.fromisoformat(ok_at[m])).total_seconds() < 2 * interval(m) + 60)
             save_to_github(state)
             last_save, unsaved_change_at = time.monotonic(), None
-        time.sleep(SPACING)
+        time.sleep(pace)
 
     t = now()
     if products:
