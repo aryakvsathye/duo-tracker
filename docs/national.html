@@ -299,11 +299,36 @@ const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 let state = {}, events = [], fetchedAt = null, selected = null, mapReady = null;
 
+/* ---------- GitHub requests ----------
+   GitHub's free API allows 60 requests an hour per internet connection, shared
+   by every tab and page on it. To stay well under that:
+   - "no-cache" makes the browser ask "has this changed?" using the file's ETag;
+     GitHub answers "not modified" for free, without using up the limit.
+   - Pages don't refresh while their tab is hidden.
+   - If the limit is hit, no more requests until GitHub says it resets. */
+let limitedUntil = 0;
+class LimitError extends Error {}
+async function gh(url, headers = {}) {
+  if (Date.now() < limitedUntil) throw new LimitError("limit");
+  const res = await fetch(url, { headers, cache: "no-cache" });
+  if ((res.status === 403 || res.status === 429) && res.headers.get("x-ratelimit-remaining") === "0") {
+    limitedUntil = (Number(res.headers.get("x-ratelimit-reset")) * 1000) || Date.now() + 15 * 60000;
+    throw new LimitError("limit");
+  }
+  return res;
+}
+function limitMessage() {
+  const until = new Date(limitedUntil).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+  return `GitHub's free hourly limit for this internet connection is used up until ${until}. ` +
+    (fetchedAt ? `Showing data from ${rel(Date.now() - fetchedAt)}. ` : "") +
+    "The page picks up again by itself after that. Alerts on your phone aren't affected.";
+}
+
 /* ---------- helpers ---------- */
 async function getFile(path) {
-  const res = await fetch(`${API}/contents/${path}?ref=${DATA_BRANCH}`, { headers: { Accept: "application/vnd.github.raw" }, cache: "no-store" });
+  const res = await gh(`${API}/contents/${path}?ref=${DATA_BRANCH}`, { Accept: "application/vnd.github.raw" });
   if (res.status === 404) return null;
-  if (!res.ok) throw new Error(res.status === 403 ? "GitHub's hourly limit was reached" : `${path} returned ${res.status}`);
+  if (!res.ok) throw new Error(`${path} returned ${res.status}`);
   return res.text();
 }
 function parseCsv(text) {
@@ -814,6 +839,7 @@ function renderWaveHighlight(a) {
 /* ---------- loop ---------- */
 async function load() {
   const err = document.getElementById("err");
+  if (document.hidden && fetchedAt) return;   // no refreshing in background tabs
   try {
     const [s, e] = await Promise.all([getFile("national/state.json"), getFile("national/events.csv")]);
     state = s ? JSON.parse(s) : {};
@@ -828,7 +854,7 @@ async function load() {
     fetchedAt = Date.now();
     err.style.display = "none";
   } catch (x) {
-    err.textContent = `Couldn't load data: ${x.message}. The page will try again in a few minutes.`;
+    err.textContent = x instanceof LimitError ? limitMessage() : `Couldn't load data: ${x.message}. The page will try again in a few minutes.`;
     err.style.display = "block";
   }
   tickSweep();
@@ -837,7 +863,8 @@ mapReady = drawStates().catch(() => {});
 load();
 setInterval(load, REFRESH_MS);
 setInterval(tickSweep, 1000);
-document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
+// Coming back to the tab: refresh if the data is more than 30 s old
+document.addEventListener("visibilitychange", () => { if (!document.hidden && Date.now() - (fetchedAt || 0) > 30000) load(); });
 </script>
 </body>
 </html>

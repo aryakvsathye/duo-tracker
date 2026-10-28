@@ -545,6 +545,31 @@ function stockOf(state, store, part) {
 const minStr = sec => { const m = Math.round(sec / 60); return m < 60 ? `${m} min` : `${Math.floor(m / 60)} h ${m % 60} min`; };
 let events = [], csvFetchedAt = 0;
 
+/* ---------- GitHub requests ----------
+   GitHub's free API allows 60 requests an hour per internet connection, shared
+   by every tab and page on it. To stay well under that:
+   - "no-cache" makes the browser ask "has this changed?" using the file's ETag;
+     GitHub answers "not modified" for free, without using up the limit.
+   - Pages don't refresh while their tab is hidden.
+   - If the limit is hit, no more requests until GitHub says it resets. */
+let limitedUntil = 0;
+class LimitError extends Error {}
+async function gh(url, headers = {}) {
+  if (Date.now() < limitedUntil) throw new LimitError("limit");
+  const res = await fetch(url, { headers, cache: "no-cache" });
+  if ((res.status === 403 || res.status === 429) && res.headers.get("x-ratelimit-remaining") === "0") {
+    limitedUntil = (Number(res.headers.get("x-ratelimit-reset")) * 1000) || Date.now() + 15 * 60000;
+    throw new LimitError("limit");
+  }
+  return res;
+}
+function limitMessage() {
+  const until = new Date(limitedUntil).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+  return `GitHub's free hourly limit for this internet connection is used up until ${until}. ` +
+    (fetchedAt ? `Showing data from ${rel(Date.now() - fetchedAt)}. ` : "") +
+    "The page picks up again by itself after that. Alerts on your phone aren't affected.";
+}
+
 /* ---------- helpers ---------- */
 async function getFile(path) {
   const text = await getFileFrom(path, DATA_BRANCH);
@@ -552,16 +577,15 @@ async function getFile(path) {
   return text !== null ? text : getFileFrom(path, BRANCH);
 }
 async function getFileFrom(path, ref) {
-  const res = await fetch(`${API}/contents/${path}?ref=${ref}`,
-    { headers: { Accept: "application/vnd.github.raw" }, cache: "no-store" });
+  const res = await gh(`${API}/contents/${path}?ref=${ref}`, { Accept: "application/vnd.github.raw" });
   if (res.status === 404) return null;
-  if (!res.ok) throw new Error(res.status === 403 ? "GitHub's hourly limit was reached" : `${path} returned ${res.status}`);
+  if (!res.ok) throw new Error(`${path} returned ${res.status}`);
   return res.text();
 }
 async function getRun() {
   // Look at the last few runs: with back-to-back runs the newest one is
   // usually queued, while the one actually checking is just behind it.
-  const res = await fetch(`${API}/actions/workflows/${WORKFLOW}/runs?per_page=5`, { cache: "no-store" });
+  const res = await gh(`${API}/actions/workflows/${WORKFLOW}/runs?per_page=5`);
   if (!res.ok) return null;
   const runs = (await res.json()).workflow_runs || [];
   const isQueued = r => ["queued", "waiting", "pending", "requested"].includes(r.status);
@@ -928,7 +952,7 @@ const refreshBtn = document.getElementById("refresh");
 async function manualRefresh() {
   if (refreshBtn.classList.contains("spin")) return;
   refreshBtn.classList.add("spin");
-  await load();
+  await load(true);
   setTimeout(() => refreshBtn.classList.remove("spin"), 400);
 }
 refreshBtn.addEventListener("click", manualRefresh);
@@ -1276,13 +1300,14 @@ function renderHealth(state) {
 }
 
 /* ---------- loop ---------- */
-async function load() {
+async function load(force = false) {
   const err = document.getElementById("err");
+  if (document.hidden && fetchedAt && !force) return;   // no refreshing in background tabs
   try {
     const needCsv = Date.now() - csvFetchedAt > CSV_REFRESH_MS;
     const [stateText, run, csvText] = await Promise.all([
       getFile("state.json"),
-      getRun().catch(() => null),
+      getRun().catch(e => { if (e instanceof LimitError) throw e; return null; }),
       needCsv ? getFile("restocks.csv") : Promise.resolve(undefined),
     ]);
     if (csvText !== undefined) { events = parseCsv(csvText); csvFetchedAt = Date.now(); }
@@ -1308,7 +1333,8 @@ async function load() {
     fetchedAt = Date.now();
     err.style.display = "none";
   } catch (e) {
-    err.textContent = `Couldn't load data: ${e.message}. The page will try again in a couple of minutes, or tap refresh.`;
+    err.textContent = e instanceof LimitError ? limitMessage()
+      : `Couldn't load data: ${e.message}. The page will try again in a couple of minutes, or tap refresh.`;
     err.style.display = "block";
   }
   tick();
@@ -1318,7 +1344,8 @@ load();
 locate();   // ask for location each time the page opens
 setInterval(load, REFRESH_MS);
 setInterval(tick, 1000);
-document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
+// Coming back to the tab: refresh if the data is more than 30 s old
+document.addEventListener("visibilitychange", () => { if (!document.hidden && Date.now() - (fetchedAt || 0) > 30000) load(); });
 </script>
 </body>
 </html>
