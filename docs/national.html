@@ -308,16 +308,18 @@ let state = {}, events = [], fetchedAt = null, selected = null, mapReady = null;
    - If the limit is hit, no more requests until GitHub says it resets. */
 // Cloudflare relay that makes these requests with a read-only token (5,000 an hour).
 // Empty = talk to GitHub directly. If the relay ever fails, the page falls back to GitHub.
-const RELAY = "";
+const RELAY = "https://duo-relay.aryak-sathye.workers.dev";
+let source = "";   // where the last data came from: "relay" or "github"
 let limitedUntil = 0;
 class LimitError extends Error {}
 async function gh(url, headers = {}) {
   if (RELAY && url.startsWith("https://api.github.com/")) {
     try {
       const res = await fetch(RELAY.replace(/\/$/, "") + url.slice("https://api.github.com".length), { headers, cache: "no-cache" });
-      if (res.ok || res.status === 404) return res;
+      if (res.ok || res.status === 404) { source = "relay"; return res; }
     } catch (e) { /* relay unreachable: use GitHub directly below */ }
   }
+  source = "github";
   if (Date.now() < limitedUntil) throw new LimitError("limit");
   const res = await fetch(url, { headers, cache: "no-cache" });
   if ((res.status === 403 || res.status === 429) && res.headers.get("x-ratelimit-remaining") === "0") {
@@ -658,7 +660,8 @@ function tickSweep() {
   const age = Date.now() - new Date(state.last_sweep);
   el.textContent = rel(age);
   el.className = age < 25 * 60000 ? "good" : "caution";
-  if (fetchedAt) document.getElementById("fetched").textContent = "updated " + rel(Date.now() - fetchedAt);
+  if (fetchedAt) document.getElementById("fetched").textContent = "updated " + rel(Date.now() - fetchedAt) +
+    (source === "relay" ? " via the Cloudflare relay" : source === "github" && RELAY ? " directly (relay not answering)" : "");
 }
 function renderNow() {
   const list = storeList().filter(s => s.status === "available")

@@ -554,16 +554,18 @@ let events = [], csvFetchedAt = 0;
    - If the limit is hit, no more requests until GitHub says it resets. */
 // Cloudflare relay that makes these requests with a read-only token (5,000 an hour).
 // Empty = talk to GitHub directly. If the relay ever fails, the page falls back to GitHub.
-const RELAY = "";
+const RELAY = "https://duo-relay.aryak-sathye.workers.dev";
+let source = "";   // where the last data came from: "relay" or "github"
 let limitedUntil = 0;
 class LimitError extends Error {}
 async function gh(url, headers = {}) {
   if (RELAY && url.startsWith("https://api.github.com/")) {
     try {
       const res = await fetch(RELAY.replace(/\/$/, "") + url.slice("https://api.github.com".length), { headers, cache: "no-cache" });
-      if (res.ok || res.status === 404) return res;
+      if (res.ok || res.status === 404) { source = "relay"; return res; }
     } catch (e) { /* relay unreachable: use GitHub directly below */ }
   }
+  source = "github";
   if (Date.now() < limitedUntil) throw new LimitError("limit");
   const res = await fetch(url, { headers, cache: "no-cache" });
   if ((res.status === 403 || res.status === 429) && res.headers.get("x-ratelimit-remaining") === "0") {
@@ -1311,6 +1313,10 @@ function renderHealth(state) {
     rows.push(age < limit ? ["good", "Data saves", `Saved ${rel(Date.now() - lastCheckAt)}`]
       : ["caution", "Data saves", `Nothing saved for ${Math.round(age)} min. Open the Actions tab.`]);
   } else rows.push(["", "Data saves", "No data yet"]);
+  // Where the page gets its data
+  rows.push(!RELAY ? ["", "Data relay", "Off, reading GitHub directly"]
+    : source === "relay" ? ["good", "Data relay", "Cloudflare relay answering"]
+    : ["caution", "Data relay", "Relay not answering, reading GitHub directly"]);
   // Token
   const expires = new Date((state.token_expires || TOKEN_EXPIRES) + "T00:00:00");
   const days = Math.ceil((expires - Date.now()) / 86400000);
