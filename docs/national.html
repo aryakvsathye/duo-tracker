@@ -208,7 +208,7 @@
       <dl class="panel strip">
         <div class="metric"><dt>In stock now</dt><dd id="mInStock">–</dd></div>
         <div class="metric"><dt>Stores tracked</dt><dd id="mStores">–</dd></div>
-        <div class="metric"><dt>Last sweep</dt><dd id="mSweep">–</dd></div>
+        <div class="metric"><dt>Last check</dt><dd id="mSweep">–</dd></div>
         <div class="metric"><dt>Metros answering</dt><dd id="mMetros">–</dd></div>
       </dl>
       <p class="fine" id="sweepNote" hidden></p>
@@ -273,7 +273,7 @@
     <section class="section">
       <div class="section-head"><h2>Recent waves</h2><span>By region, in the order stores restocked</span></div>
       <div class="panel" id="waves"><div class="empty">Loading</div></div>
-      <p class="fine">Tiers are our own groups by metro population: T1 4.5 million and up, T2 1.5 to 4.5 million, T3 under 1.5 million. Apple doesn't publish tiers. Each store belongs to the closest of the 50 metros if it's within 50 miles. Regions are the nine US Census divisions. A wave is 2 or more restocks in the same division with less than 45 minutes between them. Times are shown in each store's local time zone.</p>
+      <p class="fine">Tiers are our own groups by metro population: T1 4.5 million and up, T2 1.5 to 4.5 million, T3 under 1.5 million. Apple doesn't publish tiers. Each store belongs to the closest of the 50 metros if it's within 50 miles. Regions are the nine US Census divisions. A wave is 2 or more restocks in the same division with less than 45 minutes between them. Each metro is checked about every 3 minutes, every minute while its division has a live restock, and every 30 minutes overnight. Restocks the Kansas City bot sees (its 12 stores, checked every 20 to 60 seconds) are included too. Times are shown in each store's local time zone.</p>
     </section>
   </div>
 </main>
@@ -283,7 +283,7 @@
 <script>
 const OWNER = "aryakvsathye", REPO = "duo-tracker", DATA_BRANCH = "data";
 const API = `https://api.github.com/repos/${OWNER}/${REPO}`;
-const REFRESH_MS = 300000;   // the sweep runs every 10 min
+const REFRESH_MS = 60000;    // the bot checks continuously and saves within ~15 s of a change
 const WAVE_GAP_MIN = 45;
 const WAVE_MIN = 2;   // restocks in one region within 45 min of each other
 const TIERS = ["1", "2", "3"];
@@ -570,7 +570,7 @@ function describe(s) {
   const where = s.metro ? `${s.metro}, T${s.tier}` : `${s.city}${s.state ? ", " + s.state : ""}, no tier`;
   const cols = inColours(s);
   const status = cols.length
-    ? cols.map(p => `${colourName(p)} in stock since ${sinceOf(s, p) ? pretty(sinceOf(s, p), s.tz || STATE_TZ[s.state]) : "the last sweep"}`).join(", ")
+    ? cols.map(p => `${colourName(p)} in stock since ${sinceOf(s, p) ? pretty(sinceOf(s, p), s.tz || STATE_TZ[s.state]) : "the last check"}`).join(", ")
     : "no stock";
   return `${s.name} (${where}): ${status}`;
 }
@@ -648,8 +648,11 @@ function renderStatus() {
   const failed = state.metros_ok != null && state.last_error ? state.last_error.replace(/^[^ ]+: /, "") : "";
   const total = (state.metros || []).length || 50;
   const parts = [];
-  if (sitting.length) parts.push(`Sat out the last sweep after failing the one before: ${sitting.join(", ")}. They're tried again next sweep.`);
-  if (failed) parts.push(`Failed in the last sweep, so they sit out the next one: ${failed}.`);
+  const slow = state.slow_until && new Date(state.slow_until) > Date.now();
+  if (slow) parts.push(`Apple refused several requests in a row, so every metro is being checked only every 5 min until ${new Date(state.slow_until).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" })} Central.`);
+  else if ((state.hot || []).length) parts.push(`Checking every minute in ${state.hot.join(" and ")}, which had a restock in the last 30 min.`);
+  if (sitting.length) parts.push(`Sat out a turn after failing: ${sitting.join(", ")}.`);
+  if (failed) parts.push(`Recently failed, so they sit out their next turn: ${failed}.`);
   note.textContent = parts.join(" ");
   note.hidden = !parts.length;
   document.getElementById("mMetros").textContent = state.metros_ok != null ? `${state.metros_ok} of ${total}` : "–";
@@ -659,7 +662,7 @@ function tickSweep() {
   if (!state.last_sweep) { el.textContent = "–"; return; }
   const age = Date.now() - new Date(state.last_sweep);
   el.textContent = rel(age);
-  el.className = age < 25 * 60000 ? "good" : "caution";
+  el.className = age < 10 * 60000 ? "good" : "caution";
   if (fetchedAt) document.getElementById("fetched").textContent = "updated " + rel(Date.now() - fetchedAt) +
     (source === "relay" ? " via the Cloudflare relay" : source === "github" && RELAY ? " directly (relay not answering)" : "");
 }
@@ -882,25 +885,69 @@ function renderWaveHighlight(a) {
   styleForZoom();
 }
 
+/* ---------- the Kansas City bot's checks ----------
+   The KC bot checks its 12 stores every 20-60 s, so it catches short restocks (like
+   West County's 2 minutes) that national checks can miss. Its log is folded in here,
+   and its newer readings override the national status of those stores. */
+function mergeKC(national, kc, kcRows) {
+  const byName = {};
+  Object.entries(state.stores || {}).forEach(([id, v]) => byName[v.name] = [id, v]);
+  const field = (kc && kc.field) || {};
+  const extra = kcRows.map(r => {
+    const [id, v] = byName[r.store] || [null, null];
+    const st = (v && v.state) || (field[r.store] || {}).state;
+    if (!st) return null;
+    return { time: r.time, store: r.store, store_id: id || "kc:" + r.store, city: (v && v.city) || (field[r.store] || {}).city || "",
+      state: st, metro: (v && v.metro) || "", tier: String((v && v.tier) || 0), miles: String((v && v.miles) || ""),
+      status: r.status, part: r.part || PRIMARY, source: "kc" };
+  }).filter(Boolean);
+  // Same change seen by both bots: keep the first of any run of the same status per store and colour
+  const last = {}, out = [];
+  [...national, ...extra].sort((a, b) => a.time.localeCompare(b.time)).forEach(r => {
+    const k = r.store_id + "|" + r.part;
+    if (last[k] === r.status) return;
+    last[k] = r.status; out.push(r);
+  });
+  // Current status: trust whichever bot looked at the store more recently
+  const kcAt = kc && kc.last_check ? new Date(kc.last_check) : null;
+  if (kcAt) Object.entries(field).forEach(([name, f]) => {
+    const [id, v] = byName[name] || [];
+    if (!v || !f.parts) return;
+    const natAt = new Date((state.checked_at || {})[v.metro] || state.last_sweep || 0);
+    if (kcAt <= natAt) return;
+    const since = { ...(v.since_by_part || {}) };
+    Object.entries(f.parts).forEach(([p, st]) => {
+      if (st !== "available") { delete since[p]; return; }
+      if (!since[p]) { const r = out.filter(x => x.store_id === id && x.part === p && x.status === "available").pop(); if (r) since[p] = r.time; }
+    });
+    const avail = Object.values(f.parts).includes("available");
+    state.stores[id] = { ...v, parts: { ...(v.parts || {}), ...f.parts }, since_by_part: since,
+      status: avail ? "available" : (f.parts[PRIMARY] || v.status),
+      since: Object.values(since).sort()[0] || null };
+  });
+  return out;
+}
+
 /* ---------- loop ---------- */
 async function load() {
   const err = document.getElementById("err");
   if (document.hidden && fetchedAt) return;   // no refreshing in background tabs
   try {
-    const [s, e] = await Promise.all([getFile("national/state.json"), getFile("national/events.csv")]);
+    const [s, e, ks, ke] = await Promise.all([getFile("national/state.json"), getFile("national/events.csv"),
+      getFile("state.json").catch(() => null), getFile("restocks.csv").catch(() => null)]);
     state = s ? JSON.parse(s) : {};
     if (state.colours) COLOURS = state.colours;
-    events = parseCsv(e);
+    events = mergeKC(parseCsv(e), ks ? JSON.parse(ks) : null, parseCsv(ke));
     await mapReady;
     renderStatus(); drawStores(); renderNow();
     const a = analyse();
     renderLead(a); renderDurations(a); renderHours(a); renderWaves(a); renderWaveHighlight(a);
     if (hourSel) showHour(hourSel, false);
-    if (!state.last_sweep) document.getElementById("nowList").innerHTML = '<div class="empty">Waiting for the first national sweep to finish.</div>';
+    if (!state.last_sweep) document.getElementById("nowList").innerHTML = '<div class="empty">Waiting for the first national check.</div>';
     fetchedAt = Date.now();
     err.style.display = "none";
   } catch (x) {
-    err.textContent = x instanceof LimitError ? limitMessage() : `Couldn't load data: ${x.message}. The page will try again in a few minutes.`;
+    err.textContent = x instanceof LimitError ? limitMessage() : `Couldn't load data: ${x.message}. The page will try again in a minute.`;
     err.style.display = "block";
   }
   tickSweep();

@@ -1,10 +1,13 @@
-"""National sweep: Duo pickup stock across ~50 US metros, grouped into tiers.
+"""National tracker: Duo pickup stock across ~50 US metros, grouped into tiers.
 
 Runs separately from check.py (the Kansas City bot) so it can never slow it down.
-Each sweep asks Apple for the 12 stores nearest each metro's ZIP, assigns every
-store to its closest metro, and logs each change between in stock and sold out.
+Each request asks Apple for the 12 stores nearest one metro's ZIP. Instead of a
+sweep every 5 minutes, each run checks continuously at a steady one request every
+3 seconds: every metro comes round about every 2.5 minutes, and metros in a
+Census division with a live restock wave every minute. Each store is assigned to
+its closest metro, and every change between in stock and sold out is logged.
 """
-import os, json, csv, time, datetime, statistics, requests
+import os, json, csv, time, datetime, statistics, subprocess, requests
 from zoneinfo import ZoneInfo
 
 PART = os.environ["PART"]          # main colour (Night Sky)
@@ -18,15 +21,37 @@ OUT_DIR = os.path.join(DATA_DIR, "national")
 STATE_FILE = os.path.join(OUT_DIR, "state.json")
 LOG_FILE = os.path.join(OUT_DIR, "events.csv")
 
-SPACING = 3.0          # seconds between requests to Apple
+SPACING = 3.0          # seconds between requests to Apple: never faster than this
+RUN_SECONDS = 270      # each run checks for 4.5 min (runs are triggered every 5 min)
+CYCLE = 150            # each metro is checked about this often (50 metros x 3 s)
+BURST_INTERVAL = 60    # ...and this often if its division has had a restock recently
+BURST_MINUTES = 30     # a division stays "hot" this long after its latest restock
+MAX_BURST_DIVS = 2     # at most this many divisions get the faster checks at once
+NIGHT_INTERVAL = 1800  # 10pm-7am Central: each metro every 30 min, no bursts
 RETRY_WAIT = 10        # seconds before retrying a metro that failed once
-SKIP_SWEEPS = 1        # a metro that fails even after its retry sits out this many sweeps,
-                       # then is tried again (counted in sweeps, so it works at any cadence)
-ABORT_AFTER = 5        # if this many metros in a row fail, Apple is refusing everything:
-                       # stop this sweep early (the next sweep still runs as normal)
+SKIP_TURNS = 1         # a metro that fails even after its retry sits out its next turn
+ABORT_AFTER = 5        # this many metros failing in a row = Apple is refusing everything:
+SLOW_MINUTES = 60      # end the run, then check every metro only every 5 min for an hour
+SLOW_INTERVAL = 300
+SAVE_EVERY = 45        # save to GitHub at least this often during a run...
+SAVE_AFTER_CHANGE = 15 # ...and within this many seconds of a stock change
 ASSIGN_MILES = 50      # a store belongs to a metro if it's this close to the metro's ZIP
 WAVE_GAP_MIN = 45      # restocks in the same region closer together than this form a wave
 WAVE_MIN = 2           # restocks needed for a regional wave
+
+# State of each metro's ZIP, to know its Census division
+METRO_STATE = {
+    "New York": "NY", "Los Angeles": "CA", "Chicago": "IL", "Dallas": "TX", "Houston": "TX",
+    "Washington": "DC", "Philadelphia": "PA", "Atlanta": "GA", "Miami": "FL", "Phoenix": "AZ",
+    "Boston": "MA", "San Francisco": "CA", "Detroit": "MI", "Seattle": "WA", "Minneapolis": "MN",
+    "San Diego": "CA", "Tampa": "FL", "Denver": "CO", "Baltimore": "MD", "St. Louis": "MO",
+    "Orlando": "FL", "Charlotte": "NC", "San Antonio": "TX", "Portland": "OR", "Sacramento": "CA",
+    "Pittsburgh": "PA", "Austin": "TX", "Las Vegas": "NV", "Cincinnati": "OH", "Kansas City": "KS",
+    "Columbus": "OH", "Indianapolis": "IN", "Cleveland": "OH", "Nashville": "TN", "Raleigh": "NC",
+    "Oklahoma City": "OK", "Tulsa": "OK", "Omaha": "NE", "Des Moines": "IA", "Little Rock": "AR",
+    "Memphis": "TN", "Madison": "WI", "Albuquerque": "NM", "Salt Lake City": "UT", "Louisville": "KY",
+    "Birmingham": "AL", "Richmond": "VA", "Honolulu": "HI", "Tucson": "AZ", "Buffalo": "NY",
+}
 
 # The 9 US Census divisions
 DIVISIONS = {
@@ -141,11 +166,65 @@ def log_events(rows):
         w.writerows(rows)
 
 
+# ---------- the Kansas City bot's checks ----------
+# check.py watches the 12 stores nearest Kansas City every 20-60 s and logs to
+# restocks.csv on the same branch. Its restocks are folded in here (and on the
+# national page), so short restocks between national checks aren't missed.
+KC_LOG = os.path.join(DATA_DIR, "restocks.csv")
+KC_STATE = os.path.join(DATA_DIR, "state.json")
+
+
+def kc_rows(stores):
+    """The KC bot's log as national-style rows, matched to national stores by name."""
+    try:
+        with open(KC_LOG, newline="") as f:
+            raw = [r for r in csv.DictReader(f) if r.get("time")]
+    except FileNotFoundError:
+        return []
+    try:
+        with open(KC_STATE) as f:
+            kc_field = json.load(f).get("field", {})
+    except Exception:
+        kc_field = {}
+    by_name = {v.get("name"): (sid, v) for sid, v in stores.items()}
+    out = []
+    for r in raw:
+        name = r.get("store", "").strip()
+        sid, v = by_name.get(name, (None, None))
+        st_code = (v or {}).get("state") or (kc_field.get(name) or {}).get("state", "")
+        if not st_code:
+            continue
+        out.append({"time": r["time"], "store": name, "store_id": sid or f"kc:{name}",
+                    "city": (v or {}).get("city") or (kc_field.get(name) or {}).get("city", ""),
+                    "state": st_code, "metro": (v or {}).get("metro", ""), "tier": str((v or {}).get("tier", 0)),
+                    "miles": str((v or {}).get("miles", "")), "status": r.get("status", "").strip(),
+                    "part": (r.get("part") or "").strip() or PART, "source": "kc"})
+    return out
+
+
+def merged_rows(national, stores):
+    """National events plus the KC bot's, with repeats of the same change dropped:
+    per store and colour, keep only the first of any run of the same status."""
+    rows = sorted(national + kc_rows(stores), key=lambda r: r["time"])
+    last, out = {}, []
+    for r in rows:
+        key = (r["store_id"], r.get("part", PART))
+        if last.get(key) == r["status"]:
+            continue
+        last[key] = r["status"]
+        out.append(r)
+    return out
+
+
 # ---------- analysis (shared by the weekly summary; the page does the same in JS) ----------
 def local_time(r, stores):
     """The event's time in the store's own time zone."""
     tz = (stores.get(r["store_id"]) or {}).get("tz") or STATE_TZ.get(r.get("state", ""), "America/Chicago")
-    return parse_time(r["time"]).astimezone(ZoneInfo(tz))
+    try:
+        zone = ZoneInfo(tz)
+    except Exception:                   # an old-style name like US/Arizona this system lacks
+        zone = ZoneInfo(STATE_TZ.get(r.get("state", ""), "America/Chicago"))
+    return parse_time(r["time"]).astimezone(zone)
 
 
 def analyse(rows, stores, since=None):
@@ -229,83 +308,64 @@ def weekly_summary(rows, at, stores):
     return " ".join(parts)
 
 
-# ---------- sweep ----------
-def main():
-    os.makedirs(OUT_DIR, exist_ok=True)
-    upgrade_log()
+# ---------- continuous checking ----------
+def fetch(zip_code):
+    """One request; returns (stores, None) or (None, short reason)."""
     try:
-        with open(STATE_FILE) as f:
-            state = json.load(f)
+        r = requests.get("https://www.apple.com/shop/retail/pickup-message",
+                         headers=headers, timeout=20,
+                         params={**{f"parts.{i}": p for i, p in enumerate(PARTS)}, "location": zip_code})
+    except Exception as e:
+        return None, f"no response ({type(e).__name__})"
+    if r.status_code != 200:
+        return None, f"HTTP {r.status_code}"
+    try:
+        return r.json()["body"]["stores"], None
     except Exception:
-        state = {}
-    state.setdefault("stores", {})
+        return None, "HTTP 200 but not store data"
 
-    t = now()
-    night = t.hour >= 22 or t.hour < 7
-    if night and t.minute % 30 >= 10:
-        print("Night: sweeping every 30 min, skipping this one")
+
+def save_to_github(state):
+    """Write the files and push them to the data branch mid-run, so the page is current."""
+    with open(STATE_FILE, "w") as f:
+        json.dump(state, f, indent=1)
+    if not os.path.isdir(os.path.join(DATA_DIR, ".git")):
         return
-    state.pop("backoff_until", None)          # old whole-sweep pause, no longer used
-    # metro -> sweeps left to sit out (older saves stored a time instead; treat those as 1)
-    skip = {m: (n if isinstance(n, int) else 1) for m, n in (state.get("metro_skip") or {}).items()}
-    sitting_out = {m for m, n in skip.items() if n > 0}
-    skip = {m: n - 1 for m, n in skip.items() if n - 1 > 0}   # this sweep uses up one
+    git = lambda *a: subprocess.run(["git", "-c", "user.name=duo-bot",
+                                     "-c", "user.email=duo-bot@users.noreply.github.com", *a],
+                                    cwd=DATA_DIR, capture_output=True, text=True, timeout=60)
+    try:
+        git("add", "national")
+        if git("diff", "--cached", "--quiet").returncode == 0:
+            return
+        git("commit", "-m", "Update national data")
+        # Pick up the KC bot's latest saves too, so its restocks feed the hot divisions
+        if git("pull", "--rebase", "origin", "data").returncode != 0:
+            git("rebase", "--abort")
+        for _ in range(3):
+            if git("push", "origin", "HEAD:data").returncode == 0:
+                return
+            if git("pull", "--rebase", "origin", "data").returncode != 0:
+                git("rebase", "--abort")
+            time.sleep(2)
+        print("Couldn't save mid-run; the end-of-run save will catch it")
+    except Exception as e:
+        print(f"Mid-run save failed ({e}); the end-of-run save will catch it")
 
-    def fetch(zip_code):
-        """One request; returns (stores, None) or (None, short reason)."""
-        try:
-            r = requests.get("https://www.apple.com/shop/retail/pickup-message",
-                             headers=headers, timeout=20,
-                             params={**{f"parts.{i}": p for i, p in enumerate(PARTS)}, "location": zip_code})
-        except Exception as e:
-            return None, f"no response ({type(e).__name__})"
-        if r.status_code != 200:
-            return None, f"HTTP {r.status_code}"
-        try:
-            return r.json()["body"]["stores"], None
-        except Exception:
-            return None, "HTTP 200 but not store data"
 
-    best = {}   # store_id -> (miles, metro, tier, store dict)
-    fails, ok, retried, sweep_start = 0, 0, 0, time.monotonic()
-    problems, skipped, first = [], [], True
-    for metro, zip_code, tier in METROS:
-        if metro in sitting_out:
-            skipped.append(metro)
-            continue
-        if not first:
-            time.sleep(SPACING)
-        first = False
-        stores, why = fetch(zip_code)
-        if stores is None:
-            print(f"{metro}: {why}, retrying in {RETRY_WAIT} s")
-            time.sleep(RETRY_WAIT)
-            retried += 1
-            stores, why = fetch(zip_code)
-        if stores is None:
-            fails += 1
-            problems.append(f"{metro}: {why}")
-            skip[metro] = SKIP_SWEEPS
-            print(f"{metro}: failed again ({why}), sitting out the next sweep")
-            if fails >= ABORT_AFTER:
-                print(f"{ABORT_AFTER} metros in a row failed, ending this sweep early")
-                break
-            continue
-        fails, ok = 0, ok + 1
-        for st in stores:
-            sid = st.get("storeNumber") or st["storeName"]
-            miles = float(st.get("storedistance", 999))
-            if sid not in best or miles < best[sid][0]:
-                best[sid] = (miles, metro, tier, st)
-
-    stamp = now().strftime("%Y-%m-%d %H:%M")
-    events, products = [], {}
-    for sid, (miles, metro, tier, st) in best.items():
-        # If this store's own metro sat out (or failed) this sweep, another metro's search
-        # may have found it from further away. Keep its usual metro, tier and distance.
+def apply_result(state, metro, tier, stores, stamp, products):
+    """Update every store in one metro's answer; return the stock changes it shows."""
+    events = []
+    for st in stores:
+        sid = st.get("storeNumber") or st["storeName"]
+        miles = float(st.get("storedistance", 999))
         old = state["stores"].get(sid) or {}
-        if old.get("metro") and miles > old.get("miles", 1e9) + 1:
-            miles, metro, tier = old["miles"], old["metro"], old["tier"]
+        # A store belongs to the closest metro that has found it. If it's already
+        # assigned somewhere closer (or its own metro is sitting out), keep that.
+        if old and old.get("miles") is not None and old["miles"] <= miles + 1:
+            miles, metro_s, tier_s = old["miles"], old.get("metro", ""), old.get("tier", 0)
+        else:
+            metro_s, tier_s = (metro, tier) if miles <= ASSIGN_MILES else ("", 0)
         parts = {}
         for p in PARTS:
             info = (st.get("partsAvailability") or {}).get(p, {})
@@ -313,18 +373,16 @@ def main():
             title = ((info.get("messageTypes") or {}).get("regular") or {}).get("storePickupProductTitle")
             if title:
                 products[p] = title
-        status = "available" if "available" in parts.values() else parts.get(PART, "unknown")
-        assigned = miles <= ASSIGN_MILES
         rec = {
             "name": st["storeName"], "city": st.get("city", ""), "state": st.get("state", ""),
             "lat": st.get("storelatitude"), "lon": st.get("storelongitude"),
-            "metro": metro if assigned else "", "tier": tier if assigned else 0,
-            "miles": round(miles, 1), "status": status, "parts": parts,
+            "metro": metro_s, "tier": tier_s, "miles": round(miles, 1),
+            "status": "available" if "available" in parts.values() else parts.get(PART, "unknown"),
+            "parts": parts,
             "tz": ((st.get("retailStore") or {}).get("timezone")
                    or STATE_TZ.get(st.get("state", ""), "America/Chicago")),
             "region": REGION.get(st.get("state", ""), ""),
         }
-        old = state["stores"].get(sid, {})
         old_parts = old.get("parts") or ({PART: old["status"]} if "status" in old else {})
         old_since = old.get("since_by_part") or ({PART: old["since"]} if old.get("since") else {})
         rec["since_by_part"] = {}
@@ -339,29 +397,142 @@ def main():
         if rec["since_by_part"]:
             rec["since"] = min(rec["since_by_part"].values())
         state["stores"][sid] = rec
+    return events
 
-    log_events(events)
-    state["products"] = products     # Apple's own names for each part, to confirm part numbers
+
+def hot_divisions(rows, at):
+    """Divisions with a restock in the last BURST_MINUTES, most recent first (max MAX_BURST_DIVS)."""
+    latest = {}
+    cutoff = at - datetime.timedelta(minutes=BURST_MINUTES)
+    for r in rows:
+        if r.get("status") != "available":
+            continue
+        t = parse_time(r["time"])
+        div = REGION.get(r.get("state", ""))
+        if div and t >= cutoff and (div not in latest or t > latest[div]):
+            latest[div] = t
+    return [d for d, _ in sorted(latest.items(), key=lambda kv: kv[1], reverse=True)][:MAX_BURST_DIVS]
+
+
+def main():
+    os.makedirs(OUT_DIR, exist_ok=True)
+    upgrade_log()
+    try:
+        with open(STATE_FILE) as f:
+            state = json.load(f)
+    except Exception:
+        state = {}
+    state.setdefault("stores", {})
+    for old_key in ("backoff_until", "sweep_seconds"):
+        state.pop(old_key, None)
+    checked = state.setdefault("checked_at", {})        # metro -> last time it was asked
+    ok_at = state.setdefault("ok_at", {})               # metro -> last time it answered
+    skip = {m: (n if isinstance(n, int) else 1) for m, n in (state.get("metro_skip") or {}).items()}
+    log = read_log()
+    products, problems, skipped_now = {}, [], []
+    requests_made, retried, fails_in_row = 0, 0, 0
+    run_start = time.monotonic()
+    last_save = run_start
+    unsaved_change_at = None
+
+    def due(metro, interval):
+        last = checked.get(metro)
+        return (datetime.datetime.fromisoformat(last) + datetime.timedelta(seconds=interval)) if last else now() - datetime.timedelta(days=1)
+
+    while time.monotonic() - run_start < RUN_SECONDS:
+        t = now()
+        night = t.hour >= 22 or t.hour < 7
+        slow = state.get("slow_until") and t < datetime.datetime.fromisoformat(state["slow_until"])
+        hot = [] if (night or slow) else hot_divisions(merged_rows(log, state["stores"]), t)
+        state["hot"] = hot
+
+        def interval(metro):
+            if night:
+                return NIGHT_INTERVAL
+            if slow:
+                return SLOW_INTERVAL
+            return BURST_INTERVAL if REGION.get(METRO_STATE.get(metro, "")) in hot else CYCLE
+
+        # The most overdue metro goes next
+        metro, zip_code, tier = min(METROS, key=lambda m: due(m[0], interval(m[0])))
+        wait = (due(metro, interval(metro)) - t).total_seconds()
+        if wait > 0:
+            if time.monotonic() - run_start + wait > RUN_SECONDS:
+                break
+            time.sleep(min(wait, 30))
+            continue
+
+        if skip.get(metro):                              # failed last time: sit this turn out
+            skip[metro] -= 1
+            if not skip[metro]:
+                del skip[metro]
+            checked[metro] = now().isoformat()
+            skipped_now.append(metro)
+            continue
+
+        stores, why = fetch(zip_code)
+        requests_made += 1
+        if stores is None:
+            print(f"{metro}: {why}, retrying in {RETRY_WAIT} s")
+            time.sleep(RETRY_WAIT)
+            retried += 1
+            stores, why = fetch(zip_code)
+            requests_made += 1
+        checked[metro] = now().isoformat()
+        if stores is None:
+            fails_in_row += 1
+            problems.append(f"{metro}: {why}")
+            skip[metro] = SKIP_TURNS
+            print(f"{metro}: failed again ({why}), sitting out its next turn")
+            if fails_in_row >= ABORT_AFTER:
+                state["slow_until"] = (now() + datetime.timedelta(minutes=SLOW_MINUTES)).isoformat()
+                print(f"{ABORT_AFTER} metros in a row failed: ending this run and slowing down for {SLOW_MINUTES} min")
+                break
+            time.sleep(SPACING)
+            continue
+        fails_in_row = 0
+        ok_at[metro] = now().isoformat()
+        events = apply_result(state, metro, tier, stores, now().strftime("%Y-%m-%d %H:%M"), products)
+        if events:
+            log_events(events)
+            log.extend({**e, "tier": str(e["tier"]), "miles": str(e["miles"])} for e in events)
+            unsaved_change_at = unsaved_change_at or time.monotonic()
+            print(f"{metro}: {len(events)} change(s): " + ", ".join(f"{e['store']} {e['status']}" for e in events))
+
+        state["last_sweep"] = now().isoformat()
+        elapsed_since_save = time.monotonic() - last_save
+        if (unsaved_change_at and time.monotonic() - unsaved_change_at >= SAVE_AFTER_CHANGE) or elapsed_since_save >= SAVE_EVERY:
+            state["metros_ok"] = sum(1 for m, _, _ in METROS if m in ok_at and
+                                     (now() - datetime.datetime.fromisoformat(ok_at[m])).total_seconds() < 2 * interval(m) + 60)
+            save_to_github(state)
+            last_save, unsaved_change_at = time.monotonic(), None
+        time.sleep(SPACING)
+
+    t = now()
+    if products:
+        state["products"] = products     # Apple's own names for each part, to confirm part numbers
     state["colours"] = {p: COLOURS.get(p, p) for p in PARTS}
-    state["last_sweep"] = now().isoformat()
-    state["sweep_seconds"] = round(time.monotonic() - sweep_start)
-    state["metros_ok"] = ok
+    night = t.hour >= 22 or t.hour < 7
+    window = (NIGHT_INTERVAL if night else CYCLE * 2) + 60
+    state["metros_ok"] = sum(1 for m, _, _ in METROS
+                             if m in ok_at and (t - datetime.datetime.fromisoformat(ok_at[m])).total_seconds() < window)
     state["retries"] = retried
     state["metro_skip"] = skip
-    state["skipped"] = skipped
+    state["skipped"] = sorted(set(skipped_now))
+    state["cycle_seconds"] = CYCLE
     if problems:
-        state["last_error"] = f"{now().isoformat(timespec='minutes')}: " + "; ".join(problems[-5:])
+        state["last_error"] = f"{t.isoformat(timespec='minutes')}: " + "; ".join(problems[-5:])
     else:
         state.pop("last_error", None)
-    state["metros"] = [{"metro": m, "zip": z, "tier": tr} for m, z, tr in METROS]
-    print(f"Swept {ok}/{len(METROS)} metros ({len(skipped)} sitting out), {len(best)} stores, {len(events)} changes "
-          f"in {state['sweep_seconds']} s")
+    state["metros"] = [{"metro": m, "zip": z, "tier": tr, "state": METRO_STATE.get(m, "")} for m, z, tr in METROS]
+    print(f"Run done: {requests_made} requests, {state['metros_ok']}/{len(METROS)} metros answering, "
+          f"hot divisions: {state.get('hot') or 'none'}{', SLOW MODE' if state.get('slow_until') and t < datetime.datetime.fromisoformat(state['slow_until']) else ''}")
 
     # Weekly summary: Sunday after 6pm Central, once per week
     t = now()
     week = t.strftime("%G-W%V")
     if t.weekday() == 6 and t.hour >= 18 and state.get("last_weekly") != week:
-        push("Duo restocks: week in review", weekly_summary(read_log(), t, state["stores"]),
+        push("Duo restocks: week in review", weekly_summary(merged_rows(read_log(), state["stores"]), t, state["stores"]),
              priority="default", click="https://aryakvsathye.github.io/duo-tracker/national.html")
         state["last_weekly"] = week
 
