@@ -2763,14 +2763,17 @@
    "metro": "Seattle",
    "tier": 2,
    "miles": 29.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-10-28 03:32"
+   },
+   "since": "2026-10-28 03:32"
   },
   "R077": {
    "name": "Pioneer Place",
@@ -4177,8 +4180,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T03:08:43.050878-05:00",
- "sweep_seconds": 207,
+ "last_sweep": "2026-10-28T03:32:49.218338-05:00",
+ "sweep_seconds": 154,
  "metros_ok": 46,
  "metros": [
   {
@@ -4432,7 +4435,7 @@
    "tier": 3
   }
  ],
- "retries": 4,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4441,12 +4444,11 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Richmond": 1,
-  "Honolulu": 1,
-  "Tucson": 1,
-  "Buffalo": 1
- },
- "skipped": [],
- "last_error": "2026-10-28T03:08-05:00: Richmond: HTTP 541; Honolulu: HTTP 541; Tucson: HTTP 541; Buffalo: HTTP 541"
+ "metro_skip": {},
+ "skipped": [
+  "Richmond",
+  "Honolulu",
+  "Tucson",
+  "Buffalo"
+ ]
 }
