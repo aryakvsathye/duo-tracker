@@ -126,3 +126,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-28 10:55,Village Pointe,R190,Omaha,NE,Omaha,3,0.3,unavailable,MK1F4LL/A
 2026-10-28 11:18,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,available,MK1F4LL/A
 2026-10-28 11:18,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,available,MK1E4LL/A
+2026-10-28 11:21,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,unavailable,MK1F4LL/A
+2026-10-28 11:21,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,unavailable,MK1E4LL/A
+2026-10-28 11:21,South Coast Plaza,R004,Costa Mesa,CA,,0,76.9,available,MK1F4LL/A
