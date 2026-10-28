@@ -207,14 +207,17 @@
    "metro": "New York",
    "tier": 1,
    "miles": 10.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-10-28 09:13"
+   },
+   "since": "2026-10-28 09:13"
   },
   "R108": {
    "name": "Century City",
@@ -1521,17 +1524,14 @@
    "metro": "",
    "tier": 0,
    "miles": 89.9,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-10-28 09:07"
-   },
-   "since": "2026-10-28 09:07"
+   "since_by_part": {}
   },
   "R225": {
    "name": "The Summit",
@@ -1668,18 +1668,14 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 3.6,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-10-28 09:07",
-    "MK1E4LL/A": "2026-10-28 09:07"
-   },
-   "since": "2026-10-28 09:07"
+   "since_by_part": {}
   },
   "R312": {
    "name": "Dadeland",
@@ -4184,8 +4180,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T09:07:57.679086-05:00",
- "sweep_seconds": 167,
+ "last_sweep": "2026-10-28T09:13:01.223563-05:00",
+ "sweep_seconds": 166,
  "metros_ok": 50,
  "metros": [
   {
