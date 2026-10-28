@@ -207,17 +207,14 @@
    "metro": "New York",
    "tier": 1,
    "miles": 10.6,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-10-28 09:13"
-   },
-   "since": "2026-10-28 09:13"
+   "since_by_part": {}
   },
   "R108": {
    "name": "Century City",
@@ -4180,8 +4177,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T09:13:01.223563-05:00",
- "sweep_seconds": 166,
+ "last_sweep": "2026-10-28T09:17:54.587241-05:00",
+ "sweep_seconds": 164,
  "metros_ok": 50,
  "metros": [
   {
