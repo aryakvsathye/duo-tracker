@@ -21,6 +21,7 @@ def colour(part):
 
 TOPIC = "aryak-duo-256-night-sky"
 MAX_MILES = 50          # only stores this close send stock alerts
+REGIONAL_MILES = 400    # stores beyond MAX_MILES up to this send a soft (silent) update instead
 GAP = 60                # seconds between checks normally
 BURST_GAP = 20          # seconds between checks during a restock wave
 BURST_MINUTES = 30      # how long burst mode lasts after the latest restock in a wave
@@ -39,6 +40,7 @@ LOG_FILE = os.path.join(DATA_DIR, "restocks.csv")
 LOG_FIELDS = ["time", "store", "miles", "status", "part"]
 
 BAG = "https://www.apple.com/shop/bag"
+SITE = "https://aryakvsathye.github.io/duo-tracker/"
 BUY = "https://www.apple.com/shop/buy-iphone"
 
 headers = {
@@ -153,6 +155,24 @@ def wave_now(at):
     return stores, latest
 
 
+def send_regional(found):
+    """One quiet notification for every regional store that just got stock in this check."""
+    by_store = {}
+    for name, part, miles, city, st_code in found:
+        e = by_store.setdefault(name, {"parts": [], "miles": miles, "where": ", ".join(x for x in (city, st_code) if x)})
+        if part not in e["parts"]:
+            e["parts"].append(part)
+    lines = [f"{' and '.join(colour(p) for p in e['parts'])} at {n}"
+             f"{', ' + e['where'] if e['where'] else ''} ({round(e['miles'])} mi)"
+             for n, e in sorted(by_store.items(), key=lambda kv: kv[1]["miles"])]
+    tag = "[TEST] " if TEST else ""
+    title = (f"{tag}Regional restock: {next(iter(by_store))}" if len(by_store) == 1
+             else f"{tag}Regional restocks at {len(by_store)} stores")
+    push(title, "; ".join(lines) + ". Nothing in Kansas City yet, but it could follow, so keep your bag ready.",
+         priority="low", click=SITE)
+    print(f"Regional update: {lines}")
+
+
 def store_details(st, parts, miles):
     hours = (st.get("storeHours") or {}).get("hours") or []
     quotes = {}
@@ -250,6 +270,11 @@ while True:
         lap["code"] = r.status_code
         stores = r.json()["body"]["stores"]
         nearby, field, products = {}, {}, {}
+        regional_new = []
+        # Test mode fakes stock for both colours at the nearest store, plus one regional store
+        by_dist = sorted(stores, key=lambda x: float(x.get("storedistance", 999)))
+        test_near = next((x["storeName"] for x in by_dist if float(x.get("storedistance", 999)) <= MAX_MILES), None)
+        test_far = next((x["storeName"] for x in by_dist if MAX_MILES < float(x.get("storedistance", 999)) <= REGIONAL_MILES), None)
         for st in stores:
             name = st["storeName"]
             miles = float(st.get("storedistance", 999))
@@ -268,11 +293,15 @@ while True:
                     if prev is not None and prev != status:
                         log_event(name, miles, status, part)
                         state["events"] += 1
+                        if status == "available" and MAX_MILES < miles <= REGIONAL_MILES:
+                            regional_new.append((name, part, miles, st.get("city", ""), st.get("state", "")))
+                if TEST and name == test_far:
+                    regional_new.append((name, part, miles, st.get("city", ""), st.get("state", "")))
 
                 if TRY_PART:
                     print(f"  {name} ({miles} mi): {status} [{title or part}]")
 
-                in_stock = status == "available" or (TEST and part == PARTS[0])
+                in_stock = status == "available" or (TEST and name == test_near)
                 if miles <= MAX_MILES and in_stock and (name, part) not in alerted:
                     if TRY_PART:
                         t_title = f"[TRY] {title or part} in stock: {name}"
@@ -295,6 +324,8 @@ while True:
                 field[name] = {"miles": miles, "status": "available" if any_in else parts.get(PARTS[0], "unknown"),
                                "parts": parts, "city": st.get("city", ""), "state": st.get("state", "")}
 
+        if regional_new:
+            send_regional(regional_new)
         lap["ok"] = True
         lap["green"] = sorted(n for n, s in nearby.items() if s["status"] == "available")
         if not DRY:
