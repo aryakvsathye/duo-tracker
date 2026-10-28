@@ -20,7 +20,7 @@ def colour(part):
 
 
 TOPIC = "aryak-duo-256-night-sky"
-MAX_MILES = 50          # only stores this close send stock alerts
+MAX_MILES = 200         # stores this close send urgent stock alerts (worth the drive)
 REGIONAL_MILES = 300    # stores beyond MAX_MILES up to this send a soft (silent) update instead
 GAP = 60                # seconds between checks normally
 BURST_GAP = 20          # seconds between checks during a restock wave
@@ -171,7 +171,7 @@ def send_regional(found):
     title = (f"{tag}Regional restock: {first}" + (f" ({by_store[first]['zip']})" if by_store[first]["zip"] else "")
              if len(by_store) == 1
              else f"{tag}Regional restocks at {len(by_store)} stores")
-    push(title, "; ".join(lines) + ". Nothing in Kansas City yet, but it could follow, so keep your bag ready.",
+    push(title, "; ".join(lines) + ". Nothing within driving range yet, but it could follow, so keep your bag ready.",
          priority="low", click=SITE)
     print(f"Regional update: {lines}")
 
