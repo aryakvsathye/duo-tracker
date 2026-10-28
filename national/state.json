@@ -602,7 +602,7 @@
    "lon": -88.04479,
    "metro": "",
    "tier": 0,
-   "miles": 83.5,
+   "miles": 71.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -620,7 +620,7 @@
    "lon": -87.915186,
    "metro": "",
    "tier": 0,
-   "miles": 86.0,
+   "miles": 78.2,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -636,9 +636,9 @@
    "state": "WI",
    "lat": 43.072144281456,
    "lon": -89.452947378159,
-   "metro": "",
-   "tier": 0,
-   "miles": 123.7,
+   "metro": "Madison",
+   "tier": 3,
+   "miles": 0.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -2976,9 +2976,9 @@
    "state": "IA",
    "lat": 41.570044,
    "lon": -93.803773,
-   "metro": "",
-   "tier": 0,
-   "miles": 183.6,
+   "metro": "Des Moines",
+   "tier": 3,
+   "miles": 0.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -2994,9 +2994,9 @@
    "state": "NE",
    "lat": 41.261188,
    "lon": -96.183078,
-   "metro": "",
-   "tier": 0,
-   "miles": 171.9,
+   "metro": "Omaha",
+   "tier": 3,
+   "miles": 0.3,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3606,9 +3606,9 @@
    "state": "TN",
    "lat": 35.09344,
    "lon": -89.812433,
-   "metro": "",
-   "tier": 0,
-   "miles": 180.8,
+   "metro": "Memphis",
+   "tier": 3,
+   "miles": 0.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4020,9 +4020,9 @@
    "state": "AR",
    "lat": 34.76635,
    "lon": -92.45902,
-   "metro": "",
-   "tier": 0,
-   "miles": 211.7,
+   "metro": "Little Rock",
+   "tier": 3,
+   "miles": 3.3,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4076,7 +4076,7 @@
    "lon": -90.14758,
    "metro": "",
    "tier": 0,
-   "miles": 209.6,
+   "miles": 184.0,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4177,9 +4177,9 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T01:02:44.796476-05:00",
- "sweep_seconds": 149,
- "metros_ok": 45,
+ "last_sweep": "2026-10-28T01:07:55.677127-05:00",
+ "sweep_seconds": 166,
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4442,11 +4442,5 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {},
- "skipped": [
-  "Omaha",
-  "Des Moines",
-  "Little Rock",
-  "Memphis",
-  "Madison"
- ]
+ "skipped": []
 }
