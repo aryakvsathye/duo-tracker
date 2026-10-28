@@ -513,14 +513,17 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 22.4,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "East North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-10-27 21:03"
+   },
+   "since": "2026-10-27 21:03"
   },
   "R018": {
    "name": "Woodfield",
@@ -4177,8 +4180,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-27T20:57:53.533811-05:00",
- "sweep_seconds": 163,
+ "last_sweep": "2026-10-27T21:03:10.486582-05:00",
+ "sweep_seconds": 175,
  "metros_ok": 50,
  "metros": [
   {
