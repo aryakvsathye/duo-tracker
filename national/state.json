@@ -1719,14 +1719,17 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 13.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-10-28 00:07"
+   },
+   "since": "2026-10-28 00:07"
   },
   "R214": {
    "name": "The Galleria",
@@ -3735,14 +3738,18 @@
    "metro": "Raleigh",
    "tier": 2,
    "miles": 1.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-10-28 00:07",
+    "MK1E4LL/A": "2026-10-28 00:07"
+   },
+   "since": "2026-10-28 00:07"
   },
   "R318": {
    "name": "Charleston",
@@ -4177,8 +4184,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T00:02:58.056654-05:00",
- "sweep_seconds": 165,
+ "last_sweep": "2026-10-28T00:07:54.891311-05:00",
+ "sweep_seconds": 166,
  "metros_ok": 50,
  "metros": [
   {
