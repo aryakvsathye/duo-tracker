@@ -432,6 +432,10 @@ def main():
     checked = state.setdefault("checked_at", {})        # metro -> last time it was asked
     ok_at = state.setdefault("ok_at", {})               # metro -> last time it answered
     skip = {m: (n if isinstance(n, int) else 1) for m, n in (state.get("metro_skip") or {}).items()}
+    # A slow mode longer than SLOW_MINUTES is left over from an older setting: drop it
+    if state.get("slow_until") and datetime.datetime.fromisoformat(state["slow_until"]) > now() + datetime.timedelta(minutes=SLOW_MINUTES):
+        print(f"Clearing an old slow mode (was until {state['slow_until'][11:16]})")
+        state.pop("slow_until")
     pace = float(state.get("pace") or SPACING)
     if state.get("pace_since") and (now() - datetime.datetime.fromisoformat(state["pace_since"])).total_seconds() > SPEED_UP_AFTER \
             and pace > SPACING:
