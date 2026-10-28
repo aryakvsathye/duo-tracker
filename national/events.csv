@@ -114,3 +114,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-28 09:17,The Mall at Bay Plaza,R753,Bronx,NY,New York,1,10.6,unavailable,MK1F4LL/A
 2026-10-28 09:28,Penn Square,R130,Oklahoma City,OK,Oklahoma City,3,1.2,available,MK1E4LL/A
 2026-10-28 09:33,Penn Square,R130,Oklahoma City,OK,,0,188.8,unavailable,MK1E4LL/A
+2026-10-28 09:57,Galleria Dallas,R746,Dallas,TX,Dallas,1,4.8,available,MK1F4LL/A
+2026-10-28 09:57,Galleria Dallas,R746,Dallas,TX,Dallas,1,4.8,available,MK1E4LL/A
