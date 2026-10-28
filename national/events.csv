@@ -121,3 +121,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-28 10:07,Mall of America,R007,Bloomington,MN,Minneapolis,2,1.2,available,MK1F4LL/A
 2026-10-28 10:12,Mall of America,R007,Bloomington,MN,Minneapolis,2,1.2,unavailable,MK1F4LL/A
 2026-10-28 10:27,The Summit,R225,Birmingham,AL,Birmingham,3,0.6,available,MK1F4LL/A
+2026-10-28 10:30,The Summit,R225,Birmingham,AL,Birmingham,3,0.6,unavailable,MK1F4LL/A
