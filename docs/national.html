@@ -801,22 +801,56 @@ function activeWaves(a) {
   const now = Date.now();
   return a.big.filter(w => now - toDate(w[w.length - 1].time) <= WAVE_GAP_MIN * 60000);
 }
-// Tab icon: a 3x3 grid laid out roughly like the map (west to east, north to south).
-// Divisions with a live wave light up green; with none, it shows the plain icon.
-const ICON_CELL = { "Pacific": 0, "West North Central": 1, "New England": 2, "Mountain": 3, "East North Central": 4,
-  "Middle Atlantic": 5, "West South Central": 6, "East South Central": 7, "South Atlantic": 8 };
+// Tab icon: a tiny map of the lower 48, split into the nine Census divisions.
+// Divisions with a live wave are green; the red dot is Kansas City.
+// Built once from the map data the page already loads, rounded to half-pixels
+// so the icon stays small.
+let iconGeo = null;
+function buildIconGeo() {
+  if (!usTopo) return null;
+  const byDiv = {};
+  usTopo.objects.states.geometries.forEach(g => {
+    const code = FIPS[String(g.id).padStart(2, "0")];
+    if (!code || code === "AK" || code === "HI") return;          // insets would clutter a 16 px icon
+    const d = REGION[code]; if (d) (byDiv[d] = byDiv[d] || []).push(g);
+  });
+  const merged = Object.entries(byDiv).map(([d, gs]) => [d, topojson.merge(usTopo, gs)]);
+  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+  merged.forEach(([, m]) => m.coordinates.forEach(poly => poly.forEach(ring => ring.forEach(([x, y]) => {
+    x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y);
+  }))));
+  const k = Math.min(61 / (x1 - x0), 61 / (y1 - y0));
+  const dx = (64 - (x1 - x0) * k) / 2 - x0 * k, dy = (64 - (y1 - y0) * k) / 2 - y0 * k;
+  const pt = ([x, y]) => [Math.round((x * k + dx) * 2) / 2, Math.round((y * k + dy) * 2) / 2];
+  const shapes = merged.map(([div, m]) => {
+    let d = "";
+    m.coordinates.forEach(poly => poly.forEach(ring => {
+      // Smooth for a 16 px icon: keep a point only once it's 1.6 units from the last one,
+      // and skip islands smaller than about 2 x 2 units
+      const pts = [];
+      ring.forEach(c => { const q = pt(c), l = pts[pts.length - 1]; if (!l || Math.hypot(q[0] - l[0], q[1] - l[1]) >= 1.6) pts.push(q); });
+      const xs = pts.map(q => q[0]), ys = pts.map(q => q[1]);
+      if (pts.length >= 4 && (Math.max(...xs) - Math.min(...xs)) * (Math.max(...ys) - Math.min(...ys)) >= 4)
+        d += "M" + pts.map(q => q.join(" ")).join("L") + "Z";
+    }));
+    return { div, d };
+  });
+  const kc = projection([-94.6, 39.0]);
+  return { shapes, kc: kc ? pt(kc) : null };
+}
 function setNationalIcon(divs) {
   const fav = document.getElementById("favicon"); if (!fav) return;
-  if (!divs.size) {
+  if (!iconGeo) iconGeo = buildIconGeo();
+  if (!iconGeo) {                                               // map data didn't load: keep the plain icon
     if (!fav.href.endsWith("icons/national.svg")) fav.href = "icons/national.svg";
-    document.title = "National";
-    return;
+  } else {
+    const paths = iconGeo.shapes.map(s =>
+      `<path d="${s.d}" fill="${divs.has(s.div) ? "#31c46c" : "#8a8aa0"}" stroke="#15151e" stroke-width="0.9" stroke-linejoin="round"/>`).join("");
+    const dot = iconGeo.kc ? `<circle cx="${iconGeo.kc[0]}" cy="${iconGeo.kc[1]}" r="3" fill="#e10600" stroke="#15151e" stroke-width="1"/>` : "";
+    fav.href = "data:image/svg+xml," + encodeURIComponent(
+      `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="10" fill="#15151e"/>${paths}${dot}</svg>`);
   }
-  const lit = new Set([...divs].map(d => ICON_CELL[d]));
-  const cells = Array.from({ length: 9 }, (_, i) =>
-    `<rect x="${8 + (i % 3) * 17}" y="${8 + Math.floor(i / 3) * 17}" width="14" height="14" rx="3" fill="${lit.has(i) ? "#31c46c" : "#55556a"}"/>`).join("");
-  fav.href = "data:image/svg+xml," + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#15151e"/>${cells}</svg>`);
-  document.title = `Wave: ${[...divs].join(", ")} · National`;
+  document.title = divs.size ? `Wave: ${[...divs].join(", ")} · National` : "National";
 }
 function renderWaveHighlight(a) {
   const live = activeWaves(a);

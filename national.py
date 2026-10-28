@@ -301,6 +301,11 @@ def main():
     stamp = now().strftime("%Y-%m-%d %H:%M")
     events, products = [], {}
     for sid, (miles, metro, tier, st) in best.items():
+        # If this store's own metro sat out (or failed) this sweep, another metro's search
+        # may have found it from further away. Keep its usual metro, tier and distance.
+        old = state["stores"].get(sid) or {}
+        if old.get("metro") and miles > old.get("miles", 1e9) + 1:
+            miles, metro, tier = old["miles"], old["metro"], old["tier"]
         parts = {}
         for p in PARTS:
             info = (st.get("partsAvailability") or {}).get(p, {})
