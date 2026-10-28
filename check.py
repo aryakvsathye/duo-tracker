@@ -1,4 +1,4 @@
-import os, json, csv, time, datetime, requests
+import os, json, csv, time, datetime, subprocess, requests
 from zoneinfo import ZoneInfo
 
 PART = os.environ["PART"]          # the main colour (Night Sky), from the repo secret
@@ -101,6 +101,33 @@ def upgrade_log():
 
 upgrade_log()
 log_rows = read_log()
+
+
+def save_now():
+    """Save straight away when stock changes, instead of waiting for the run to end,
+    so the Pit Wall shows a restock within a minute of the alert."""
+    if DRY or not os.path.isdir(os.path.join(DATA_DIR, ".git")):
+        return
+    with open(STATE_FILE, "w") as f:
+        json.dump(state, f, indent=1)
+    git = lambda *a: subprocess.run(["git", "-c", "user.name=duo-bot",
+                                     "-c", "user.email=duo-bot@users.noreply.github.com", *a],
+                                    cwd=DATA_DIR, capture_output=True, text=True, timeout=60)
+    try:
+        git("add", "state.json", "restocks.csv")
+        if git("diff", "--cached", "--quiet").returncode == 0:
+            return
+        git("commit", "-m", "Update stock data (stock change)")
+        for _ in range(3):
+            if git("push", "origin", "HEAD:data").returncode == 0:
+                print("Saved stock change straight away")
+                return
+            if git("pull", "--rebase", "origin", "data").returncode != 0:
+                git("rebase", "--abort")
+            time.sleep(3)
+        print("Couldn't save straight away; the end-of-run save will catch it")
+    except Exception as e:
+        print(f"Save straight away failed ({e}); the end-of-run save will catch it")
 
 
 def log_event(store, miles, status, part):
@@ -266,6 +293,7 @@ while True:
     attempts += 1
     started = time.monotonic()
     lap = {"t": now().isoformat(timespec="seconds"), "ok": False, "ms": None, "code": None}
+    logged_before = len(log_rows)
     try:
         r = requests.get("https://www.apple.com/shop/retail/pickup-message",
             headers=headers, timeout=20, params=params)
@@ -340,6 +368,8 @@ while True:
             state["colours"] = {p: colour(p) for p in PARTS}
             state["last_check"] = now().isoformat()
             update_wave()
+            if len(log_rows) > logged_before:
+                save_now()
         state["checks"] += 1
         print(f"Check {i+1}: {r.status_code} in {lap['ms']} ms, "
               f"alerted: {sorted(f'{n} ({colour(p)})' for n, p in alerted) or 'none'}"

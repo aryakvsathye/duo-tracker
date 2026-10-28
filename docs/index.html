@@ -518,7 +518,7 @@ const DATA_BRANCH = "data";   // the bot saves state.json and restocks.csv here
 const WORKFLOW = "check.yml";
 const MAX_MILES = 200;   // matches check.py: stores this close send urgent alerts
 const REFRESH_MS = 150000;        // state + run status (GitHub allows 60 calls/hour)
-const CSV_REFRESH_MS = 600000;    // restock log changes rarely
+const CSV_REFRESH_MS = 0;         // re-read the restock log every refresh (unchanged = free)
 const GAP_S = 60;          // seconds between checks (matches check.py)
 const BURST_GAP_S = 20;    // during a restock wave
 const RUN_S = 540;         // each run keeps checking for 9 min
