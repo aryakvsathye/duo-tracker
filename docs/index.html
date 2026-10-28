@@ -552,9 +552,18 @@ let events = [], csvFetchedAt = 0;
      GitHub answers "not modified" for free, without using up the limit.
    - Pages don't refresh while their tab is hidden.
    - If the limit is hit, no more requests until GitHub says it resets. */
+// Cloudflare relay that makes these requests with a read-only token (5,000 an hour).
+// Empty = talk to GitHub directly. If the relay ever fails, the page falls back to GitHub.
+const RELAY = "";
 let limitedUntil = 0;
 class LimitError extends Error {}
 async function gh(url, headers = {}) {
+  if (RELAY && url.startsWith("https://api.github.com/")) {
+    try {
+      const res = await fetch(RELAY.replace(/\/$/, "") + url.slice("https://api.github.com".length), { headers, cache: "no-cache" });
+      if (res.ok || res.status === 404) return res;
+    } catch (e) { /* relay unreachable: use GitHub directly below */ }
+  }
   if (Date.now() < limitedUntil) throw new LimitError("limit");
   const res = await fetch(url, { headers, cache: "no-cache" });
   if ((res.status === 403 || res.status === 429) && res.headers.get("x-ratelimit-remaining") === "0") {
