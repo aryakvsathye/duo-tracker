@@ -3267,14 +3267,17 @@
    "metro": "Orlando",
    "tier": 2,
    "miles": 4.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-10-28 08:47"
+   },
+   "since": "2026-10-28 08:47"
   },
   "R291": {
    "name": "Altamonte",
@@ -3303,14 +3306,17 @@
    "metro": "",
    "tier": 0,
    "miles": 124.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-10-28 08:47"
+   },
+   "since": "2026-10-28 08:47"
   },
   "R047": {
    "name": "Cherry Creek",
@@ -4177,8 +4183,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T08:43:50.768350-05:00",
- "sweep_seconds": 214,
+ "last_sweep": "2026-10-28T08:47:41.503265-05:00",
+ "sweep_seconds": 150,
  "metros_ok": 45,
  "metros": [
   {
@@ -4432,7 +4438,7 @@
    "tier": 3
   }
  ],
- "retries": 5,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4441,13 +4447,12 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Birmingham": 1,
-  "Richmond": 1,
-  "Honolulu": 1,
-  "Tucson": 1,
-  "Buffalo": 1
- },
- "skipped": [],
- "last_error": "2026-10-28T08:43-05:00: Birmingham: HTTP 541; Richmond: HTTP 541; Honolulu: HTTP 541; Tucson: HTTP 541; Buffalo: HTTP 541"
+ "metro_skip": {},
+ "skipped": [
+  "Birmingham",
+  "Richmond",
+  "Honolulu",
+  "Tucson",
+  "Buffalo"
+ ]
 }
