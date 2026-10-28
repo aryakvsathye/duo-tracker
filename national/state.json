@@ -602,7 +602,7 @@
    "lon": -88.04479,
    "metro": "",
    "tier": 0,
-   "miles": 71.6,
+   "miles": 83.5,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -620,7 +620,7 @@
    "lon": -87.915186,
    "metro": "",
    "tier": 0,
-   "miles": 78.2,
+   "miles": 86.0,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -636,9 +636,9 @@
    "state": "WI",
    "lat": 43.072144281456,
    "lon": -89.452947378159,
-   "metro": "Madison",
-   "tier": 3,
-   "miles": 0.6,
+   "metro": "",
+   "tier": 0,
+   "miles": 123.7,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -762,20 +762,17 @@
    "state": "OK",
    "lat": 35.52485,
    "lon": -97.54551,
-   "metro": "Oklahoma City",
-   "tier": 3,
-   "miles": 1.2,
-   "status": "available",
+   "metro": "",
+   "tier": 0,
+   "miles": 188.8,
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-10-28 09:28"
-   },
-   "since": "2026-10-28 09:28"
+   "since_by_part": {}
   },
   "R085": {
    "name": "Barton Creek",
@@ -855,9 +852,9 @@
    "state": "OK",
    "lat": 36.06342,
    "lon": -95.88056,
-   "metro": "Tulsa",
-   "tier": 3,
-   "miles": 1.6,
+   "metro": "",
+   "tier": 0,
+   "miles": 212.9,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -2855,7 +2852,7 @@
    "lon": -116.2782,
    "metro": "",
    "tier": 0,
-   "miles": 299.0,
+   "miles": 344.9,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -2979,9 +2976,9 @@
    "state": "IA",
    "lat": 41.570044,
    "lon": -93.803773,
-   "metro": "Des Moines",
-   "tier": 3,
-   "miles": 0.6,
+   "metro": "",
+   "tier": 0,
+   "miles": 183.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -2997,9 +2994,9 @@
    "state": "NE",
    "lat": 41.261188,
    "lon": -96.183078,
-   "metro": "Omaha",
-   "tier": 3,
-   "miles": 0.3,
+   "metro": "",
+   "tier": 0,
+   "miles": 171.9,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3429,9 +3426,9 @@
    "state": "NM",
    "lat": 35.10299,
    "lon": -106.56682,
-   "metro": "Albuquerque",
-   "tier": 3,
-   "miles": 0.7,
+   "metro": "",
+   "tier": 0,
+   "miles": 331.7,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3447,9 +3444,9 @@
    "state": "UT",
    "lat": 40.636147,
    "lon": -111.8876,
-   "metro": "Salt Lake City",
-   "tier": 3,
-   "miles": 8.3,
+   "metro": "",
+   "tier": 0,
+   "miles": 371.3,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3465,9 +3462,9 @@
    "state": "UT",
    "lat": 40.768413,
    "lon": -111.892042,
-   "metro": "Salt Lake City",
-   "tier": 3,
-   "miles": 0.9,
+   "metro": "",
+   "tier": 0,
+   "miles": 372.9,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3483,9 +3480,9 @@
    "state": "UT",
    "lat": 40.983221,
    "lon": -111.906456,
-   "metro": "Salt Lake City",
-   "tier": 3,
-   "miles": 15.7,
+   "metro": "",
+   "tier": 0,
+   "miles": 376.2,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3609,9 +3606,9 @@
    "state": "TN",
    "lat": 35.09344,
    "lon": -89.812433,
-   "metro": "Memphis",
-   "tier": 3,
-   "miles": 0.6,
+   "metro": "",
+   "tier": 0,
+   "miles": 180.8,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3627,9 +3624,9 @@
    "state": "KY",
    "lat": 38.247278,
    "lon": -85.609467,
-   "metro": "Louisville",
-   "tier": 3,
-   "miles": 1.8,
+   "metro": "",
+   "tier": 0,
+   "miles": 93.5,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3701,7 +3698,7 @@
    "lon": -79.83615,
    "metro": "",
    "tier": 0,
-   "miles": 65.4,
+   "miles": 83.0,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3717,9 +3714,9 @@
    "state": "NC",
    "lat": 35.905106,
    "lon": -78.943003,
-   "metro": "Raleigh",
-   "tier": 2,
-   "miles": 14.0,
+   "metro": "",
+   "tier": 0,
+   "miles": 115.8,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3735,9 +3732,9 @@
    "state": "NC",
    "lat": 35.840118,
    "lon": -78.679187,
-   "metro": "Raleigh",
-   "tier": 2,
-   "miles": 1.5,
+   "metro": "",
+   "tier": 0,
+   "miles": 127.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4007,7 +4004,7 @@
    "lon": -84.528169,
    "metro": "",
    "tier": 0,
-   "miles": 62.5,
+   "miles": 85.5,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4023,9 +4020,9 @@
    "state": "AR",
    "lat": 34.76635,
    "lon": -92.45902,
-   "metro": "Little Rock",
-   "tier": 3,
-   "miles": 3.3,
+   "metro": "",
+   "tier": 0,
+   "miles": 320.4,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4180,9 +4177,9 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T09:28:42.586844-05:00",
- "sweep_seconds": 212,
- "metros_ok": 45,
+ "last_sweep": "2026-10-28T09:33:11.334662-05:00",
+ "sweep_seconds": 179,
+ "metros_ok": 34,
  "metros": [
   {
    "metro": "New York",
@@ -4445,12 +4442,12 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Birmingham": 1,
-  "Richmond": 1,
-  "Honolulu": 1,
-  "Tucson": 1,
-  "Buffalo": 1
+  "Raleigh": 1,
+  "Oklahoma City": 1,
+  "Tulsa": 1,
+  "Omaha": 1,
+  "Des Moines": 1
  },
  "skipped": [],
- "last_error": "2026-10-28T09:28-05:00: Birmingham: HTTP 541; Richmond: HTTP 541; Honolulu: HTTP 541; Tucson: HTTP 541; Buffalo: HTTP 541"
+ "last_error": "2026-10-28T09:33-05:00: Raleigh: HTTP 541; Oklahoma City: HTTP 541; Tulsa: HTTP 541; Omaha: HTTP 541; Des Moines: HTTP 541"
 }
