@@ -131,3 +131,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-28 11:21,South Coast Plaza,R004,Costa Mesa,CA,,0,76.9,available,MK1F4LL/A
 2026-10-28 11:27,South Coast Plaza,R004,Costa Mesa,CA,,0,76.9,unavailable,MK1F4LL/A
 2026-10-28 11:28,Chandler Fashion Center,R026,Chandler,AZ,Phoenix,1,16.1,available,MK1F4LL/A
+2026-10-28 11:31,Chandler Fashion Center,R026,Chandler,AZ,Phoenix,1,16.1,unavailable,MK1F4LL/A
