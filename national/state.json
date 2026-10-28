@@ -762,9 +762,9 @@
    "state": "OK",
    "lat": 35.52485,
    "lon": -97.54551,
-   "metro": "",
-   "tier": 0,
-   "miles": 188.8,
+   "metro": "Oklahoma City",
+   "tier": 3,
+   "miles": 1.2,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -852,9 +852,9 @@
    "state": "OK",
    "lat": 36.06342,
    "lon": -95.88056,
-   "metro": "",
-   "tier": 0,
-   "miles": 209.3,
+   "metro": "Tulsa",
+   "tier": 3,
+   "miles": 1.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -2976,9 +2976,9 @@
    "state": "IA",
    "lat": 41.570044,
    "lon": -93.803773,
-   "metro": "",
-   "tier": 0,
-   "miles": 183.6,
+   "metro": "Des Moines",
+   "tier": 3,
+   "miles": 0.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -2994,9 +2994,9 @@
    "state": "NE",
    "lat": 41.261188,
    "lon": -96.183078,
-   "metro": "",
-   "tier": 0,
-   "miles": 171.9,
+   "metro": "Omaha",
+   "tier": 3,
+   "miles": 0.3,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3698,7 +3698,7 @@
    "lon": -79.83615,
    "metro": "",
    "tier": 0,
-   "miles": 83.0,
+   "miles": 65.4,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3714,9 +3714,9 @@
    "state": "NC",
    "lat": 35.905106,
    "lon": -78.943003,
-   "metro": "",
-   "tier": 0,
-   "miles": 115.8,
+   "metro": "Raleigh",
+   "tier": 2,
+   "miles": 14.0,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3732,9 +3732,9 @@
    "state": "NC",
    "lat": 35.840118,
    "lon": -78.679187,
-   "metro": "",
-   "tier": 0,
-   "miles": 127.6,
+   "metro": "Raleigh",
+   "tier": 2,
+   "miles": 1.5,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4177,9 +4177,9 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T09:37:37.688617-05:00",
- "sweep_seconds": 147,
- "metros_ok": 45,
+ "last_sweep": "2026-10-28T09:42:55.553605-05:00",
+ "sweep_seconds": 164,
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4442,11 +4442,5 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {},
- "skipped": [
-  "Raleigh",
-  "Oklahoma City",
-  "Tulsa",
-  "Omaha",
-  "Des Moines"
- ]
+ "skipped": []
 }
