@@ -602,7 +602,7 @@
    "lon": -88.04479,
    "metro": "",
    "tier": 0,
-   "miles": 83.5,
+   "miles": 71.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -620,7 +620,7 @@
    "lon": -87.915186,
    "metro": "",
    "tier": 0,
-   "miles": 86.0,
+   "miles": 78.2,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -636,9 +636,9 @@
    "state": "WI",
    "lat": 43.072144281456,
    "lon": -89.452947378159,
-   "metro": "",
-   "tier": 0,
-   "miles": 123.7,
+   "metro": "Madison",
+   "tier": 3,
+   "miles": 0.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -2852,7 +2852,7 @@
    "lon": -116.2782,
    "metro": "",
    "tier": 0,
-   "miles": 344.9,
+   "miles": 299.0,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3426,9 +3426,9 @@
    "state": "NM",
    "lat": 35.10299,
    "lon": -106.56682,
-   "metro": "",
-   "tier": 0,
-   "miles": 315.8,
+   "metro": "Albuquerque",
+   "tier": 3,
+   "miles": 0.7,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3444,9 +3444,9 @@
    "state": "UT",
    "lat": 40.636147,
    "lon": -111.8876,
-   "metro": "",
-   "tier": 0,
-   "miles": 371.3,
+   "metro": "Salt Lake City",
+   "tier": 3,
+   "miles": 8.3,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3462,9 +3462,9 @@
    "state": "UT",
    "lat": 40.768413,
    "lon": -111.892042,
-   "metro": "",
-   "tier": 0,
-   "miles": 372.9,
+   "metro": "Salt Lake City",
+   "tier": 3,
+   "miles": 0.9,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3480,9 +3480,9 @@
    "state": "UT",
    "lat": 40.983221,
    "lon": -111.906456,
-   "metro": "",
-   "tier": 0,
-   "miles": 376.2,
+   "metro": "Salt Lake City",
+   "tier": 3,
+   "miles": 15.7,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3606,9 +3606,9 @@
    "state": "TN",
    "lat": 35.09344,
    "lon": -89.812433,
-   "metro": "",
-   "tier": 0,
-   "miles": 153.7,
+   "metro": "Memphis",
+   "tier": 3,
+   "miles": 0.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -3624,9 +3624,9 @@
    "state": "KY",
    "lat": 38.247278,
    "lon": -85.609467,
-   "metro": "",
-   "tier": 0,
-   "miles": 93.5,
+   "metro": "Louisville",
+   "tier": 3,
+   "miles": 1.8,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4004,7 +4004,7 @@
    "lon": -84.528169,
    "metro": "",
    "tier": 0,
-   "miles": 85.5,
+   "miles": 62.5,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4076,7 +4076,7 @@
    "lon": -90.14758,
    "metro": "",
    "tier": 0,
-   "miles": 209.6,
+   "miles": 184.0,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4094,7 +4094,7 @@
    "lon": -106.3794,
    "metro": "",
    "tier": 0,
-   "miles": 268.4,
+   "miles": 230.6,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -4177,9 +4177,9 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-10-28T02:37:38.827317-05:00",
- "sweep_seconds": 149,
- "metros_ok": 45,
+ "last_sweep": "2026-10-28T03:02:57.269990-05:00",
+ "sweep_seconds": 165,
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4442,11 +4442,5 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {},
- "skipped": [
-  "Memphis",
-  "Madison",
-  "Albuquerque",
-  "Salt Lake City",
-  "Louisville"
- ]
+ "skipped": []
 }
