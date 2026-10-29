@@ -161,3 +161,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-29 08:56,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,unavailable,MK1F4LL/A
 2026-10-29 08:57,Avalon,R080,Alpharetta,GA,Atlanta,1,16.1,unavailable,MK1F4LL/A
 2026-10-29 08:57,Easton Town Center,R009,Columbus,OH,Columbus,2,2.7,unavailable,MK1F4LL/A
+2026-10-29 09:01,Somerset,R055,Troy,MI,Detroit,2,0.6,available,MK1F4LL/A
+2026-10-29 09:01,Somerset,R055,Troy,MI,Detroit,2,0.6,available,MK1E4LL/A
+2026-10-29 09:01,Woodland,R132,Grand Rapids,MI,,0,124.9,unavailable,MK1F4LL/A
