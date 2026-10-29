@@ -171,3 +171,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-29 09:32,Somerset,R055,Troy,MI,Detroit,2,0.6,available,MK1F4LL/A
 2026-10-29 09:33,Cumberland Mall,R591,Atlanta,GA,Atlanta,1,6.5,available,MK1F4LL/A
 2026-10-29 09:33,Mall of Georgia,R259,Buford,GA,Atlanta,1,26.3,available,MK1F4LL/A
+2026-10-29 09:34,Somerset,R055,Troy,MI,Detroit,2,0.6,unavailable,MK1F4LL/A
