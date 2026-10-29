@@ -117,7 +117,14 @@ def now():
     return datetime.datetime.now(TZ)
 
 
+# Duo bought (Village Pointe, Oct 28): no more notifications. Set True to turn them back on.
+ALERTS = False
+
+
 def push(title, msg, priority="low", click="https://github.com"):
+    if not ALERTS:
+        print(f"(alerts off) {title}")
+        return
     try:
         requests.post(f"https://ntfy.sh/{TOPIC}", data=msg.encode(),
                       headers={"Title": title, "Priority": priority, "Click": click}, timeout=15)

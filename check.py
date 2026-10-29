@@ -57,7 +57,14 @@ def now():
     return datetime.datetime.now(TZ)
 
 
+# Duo bought (Village Pointe, Oct 28): no more notifications. Set True to turn them back on.
+ALERTS = False
+
+
 def push(title, msg, priority="urgent", actions=None, click=BAG):
+    if not ALERTS:
+        print(f"(alerts off) {title}")
+        return
     h = {"Title": title, "Priority": priority, "Click": click}
     if actions:
         h["Actions"] = actions
