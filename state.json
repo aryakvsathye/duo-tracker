@@ -45,13 +45,13 @@
    "MK1E4LL/A": "unavailable"
   },
   "Main Place": {
-   "MK1F4LL/A": "unavailable",
+   "MK1F4LL/A": "available",
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 324,
+ "checks": 327,
  "errors": 0,
- "events": 2,
+ "events": 3,
  "last_heartbeat": "2026-10-29",
  "nearby": {
   "Country Club Plaza": {
@@ -171,32 +171,8 @@
    ]
   }
  },
- "last_check": "2026-10-29T13:06:06.047616-05:00",
+ "last_check": "2026-10-29T13:09:27.519107-05:00",
  "history": [
-  {
-   "t": "2026-10-29T11:42:58-05:00",
-   "ok": true,
-   "ms": 501,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-29T11:43:58-05:00",
-   "ok": true,
-   "ms": 360,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-29T11:44:58-05:00",
-   "ok": true,
-   "ms": 666,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-10-29T11:45:58-05:00",
    "ok": true,
@@ -892,9 +868,43 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-10-29T13:06:26-05:00",
+   "ok": true,
+   "ms": 703,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-29T13:07:26-05:00",
+   "ok": true,
+   "ms": 581,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-29T13:08:26-05:00",
+   "ok": true,
+   "ms": 462,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
+  "Main Place": {
+   "miles": 397.06,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Naperville",
+   "state": "IL"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -1004,16 +1014,6 @@
    },
    "city": "Madison",
    "state": "WI"
-  },
-  "Main Place": {
-   "miles": 397.06,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Naperville",
-   "state": "IL"
   }
  },
  "token_expires": "2026-11-26",
