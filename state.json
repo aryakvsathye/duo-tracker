@@ -46,12 +46,12 @@
   },
   "Main Place": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   }
  },
- "checks": 675,
+ "checks": 679,
  "errors": 0,
- "events": 4,
+ "events": 5,
  "last_heartbeat": "2026-10-29",
  "nearby": {
   "Country Club Plaza": {
@@ -171,40 +171,8 @@
    ]
   }
  },
- "last_check": "2026-10-29T18:30:07.650474-05:00",
+ "last_check": "2026-10-29T18:34:30.582323-05:00",
  "history": [
-  {
-   "t": "2026-10-29T17:07:19-05:00",
-   "ok": true,
-   "ms": 5269,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-29T17:08:19-05:00",
-   "ok": true,
-   "ms": 468,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-29T17:09:19-05:00",
-   "ok": true,
-   "ms": 308,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-10-29T17:10:19-05:00",
-   "ok": true,
-   "ms": 5302,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-10-29T17:11:19-05:00",
    "ok": true,
@@ -892,9 +860,51 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-10-29T18:30:29-05:00",
+   "ok": true,
+   "ms": 388,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-29T18:31:29-05:00",
+   "ok": true,
+   "ms": 436,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-29T18:32:29-05:00",
+   "ok": true,
+   "ms": 472,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-29T18:33:29-05:00",
+   "ok": true,
+   "ms": 529,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
+  "Main Place": {
+   "miles": 397.06,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Naperville",
+   "state": "IL"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -1004,16 +1014,6 @@
    },
    "city": "Madison",
    "state": "WI"
-  },
-  "Main Place": {
-   "miles": 397.06,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Naperville",
-   "state": "IL"
   }
  },
  "token_expires": "2026-11-26",
