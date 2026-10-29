@@ -4178,7 +4178,7 @@
   }
  },
  "last_sweep": "2026-10-29T09:40:55.538168-05:00",
- "metros_ok": 50,
+ "metros_ok": 45,
  "metros": [
   {
    "metro": "New York",
@@ -4481,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 5,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4619,6 +4619,5 @@
   "2026-10-28T15:56-05:00",
   "2026-10-28T21:32-05:00",
   "2026-10-29T09:36-05:00"
- ],
- "last_error": "2026-10-29T09:36-05:00: Orlando: HTTP 541; Charlotte: HTTP 541; Raleigh: HTTP 541; St. Louis: HTTP 541; Louisville: HTTP 541"
+ ]
 }
