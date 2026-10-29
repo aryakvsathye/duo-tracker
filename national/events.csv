@@ -155,3 +155,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-29 08:54,Pentagon City,R129,Arlington,VA,Washington,1,3.9,available,MK1F4LL/A
 2026-10-29 08:55,Easton Town Center,R009,Columbus,OH,Columbus,2,2.7,available,MK1F4LL/A
 2026-10-29 08:55,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,available,MK1F4LL/A
+2026-10-29 08:56,Pentagon City,R129,Arlington,VA,Washington,1,3.9,unavailable,MK1F4LL/A
