@@ -4481,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 3,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4490,12 +4490,12 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Des Moines": 1,
-  "Denver": 1,
-  "Washington": 1
- },
- "skipped": [],
+ "metro_skip": {},
+ "skipped": [
+  "Denver",
+  "Des Moines",
+  "Washington"
+ ],
  "checked_at": {
   "New York": "2026-10-29T08:46:47.737080-05:00",
   "Los Angeles": "2026-10-29T08:48:02.900977-05:00",
@@ -4618,6 +4618,5 @@
   "2026-10-28T12:06-05:00",
   "2026-10-28T15:56-05:00",
   "2026-10-28T21:32-05:00"
- ],
- "last_error": "2026-10-29T08:44-05:00: Des Moines: HTTP 541; Denver: HTTP 541; Washington: HTTP 541"
+ ]
 }
