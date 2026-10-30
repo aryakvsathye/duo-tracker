@@ -280,3 +280,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-30 12:33,Easton Town Center,R009,Columbus,OH,Columbus,2,2.7,unavailable,MK1E4LL/A
 2026-10-30 13:05,Aventura,R087,Aventura,FL,Miami,1,13.6,available,MK1F4LL/A
 2026-10-30 13:09,Aventura,R087,Aventura,FL,Miami,1,13.6,unavailable,MK1F4LL/A
+2026-10-30 13:37,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,available,MK1F4LL/A
+2026-10-30 13:37,Wellington Green,R024,Wellington,FL,,0,60.9,available,MK1E4LL/A
