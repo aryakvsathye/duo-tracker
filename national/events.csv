@@ -291,3 +291,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-30 16:10,Barton Creek,R085,Austin,TX,Austin,2,2.7,available,MK1E4LL/A
 2026-10-30 16:12,Barton Creek,R085,Austin,TX,Austin,2,2.7,unavailable,MK1E4LL/A
 2026-10-30 16:36,Rosedale Center,R022,Roseville,MN,Minneapolis,2,12.6,available,MK1F4LL/A
+2026-10-30 16:38,Rosedale Center,R022,Roseville,MN,Minneapolis,2,12.6,unavailable,MK1F4LL/A
