@@ -252,3 +252,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-30 09:18,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,unavailable,MK1F4LL/A
 2026-10-30 09:31,Brandon,R289,Brandon,FL,Tampa,2,13.0,available,MK1F4LL/A
 2026-10-30 09:32,Brandon,R289,Brandon,FL,Tampa,2,13.0,unavailable,MK1F4LL/A
+2026-10-30 09:38,Memorial City,R164,Houston,TX,Houston,1,4.8,available,MK1E4LL/A
+2026-10-30 09:38,Memorial City,R164,Houston,TX,Houston,1,4.8,unavailable,MK1E4LL/A
