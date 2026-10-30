@@ -265,3 +265,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-30 11:22,Southcenter,R106,Tukwila,WA,Seattle,2,10.7,available,MK1E4LL/A
 2026-10-30 11:26,Southcenter,R106,Tukwila,WA,Seattle,2,10.7,unavailable,MK1E4LL/A
 2026-10-30 11:35,Stoneridge Mall,R101,Pleasanton,CA,San Francisco,1,27.0,available,MK1E4LL/A
+2026-10-30 11:38,Stoneridge Mall,R101,Pleasanton,CA,San Francisco,1,27.0,unavailable,MK1E4LL/A
