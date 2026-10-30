@@ -201,3 +201,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-30 07:18,Tysons Corner,R010,McLean,VA,Washington,1,10.9,available,MK1F4LL/A
 2026-10-30 07:20,Tysons Corner,R010,McLean,VA,Washington,1,10.9,unavailable,MK1F4LL/A
 2026-10-30 07:47,Boca Raton,R074,Boca Raton,FL,Miami,1,41.6,available,MK1E4LL/A
+2026-10-30 07:50,Boca Raton,R074,Boca Raton,FL,Miami,1,41.6,unavailable,MK1E4LL/A
