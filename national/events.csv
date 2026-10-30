@@ -243,3 +243,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-30 08:57,Easton Town Center,R009,Columbus,OH,Columbus,2,2.7,unavailable,MK1E4LL/A
 2026-10-30 08:57,Reston,R271,Reston,VA,Washington,1,18.6,unavailable,MK1F4LL/A
 2026-10-30 08:58,Wellington Green,R024,Wellington,FL,,0,60.9,available,MK1F4LL/A
+2026-10-30 09:00,The Gardens Mall,R127,Palm Beach Gardens,FL,,0,75.1,available,MK1F4LL/A
+2026-10-30 09:00,Wellington Green,R024,Wellington,FL,,0,60.9,unavailable,MK1F4LL/A
