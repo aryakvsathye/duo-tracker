@@ -218,3 +218,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-30 08:35,Lenox Square,R006,Atlanta,GA,Atlanta,1,0.1,unavailable,MK1F4LL/A
 2026-10-30 08:35,Lenox Square,R006,Atlanta,GA,Atlanta,1,0.1,unavailable,MK1E4LL/A
 2026-10-30 08:35,Pheasant Lane,R354,Nashua,NH,Boston,1,30.5,available,MK1E4LL/A
+2026-10-30 08:38,Queens Center,R612,Elmhurst,NY,New York,1,6.5,unavailable,MK1E4LL/A
