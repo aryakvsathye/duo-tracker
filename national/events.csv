@@ -283,3 +283,8 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-30 13:37,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,available,MK1F4LL/A
 2026-10-30 13:37,Wellington Green,R024,Wellington,FL,,0,60.9,available,MK1E4LL/A
 2026-10-30 13:39,Wellington Green,R024,Wellington,FL,,0,60.9,unavailable,MK1E4LL/A
+2026-10-30 13:40,Ala Moana,R073,Honolulu,HI,Honolulu,3,0.4,unavailable,MK1F4LL/A
+2026-10-30 13:40,Ala Moana,R073,Honolulu,HI,Honolulu,3,0.4,unavailable,MK1E4LL/A
+2026-10-30 13:40,Kahala,R210,Honolulu,HI,Honolulu,3,4.0,unavailable,MK1F4LL/A
+2026-10-30 13:40,Kahala,R210,Honolulu,HI,Honolulu,3,4.0,unavailable,MK1E4LL/A
+2026-10-30 13:40,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,unavailable,MK1F4LL/A
