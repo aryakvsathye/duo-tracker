@@ -255,3 +255,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-30 09:38,Memorial City,R164,Houston,TX,Houston,1,4.8,available,MK1E4LL/A
 2026-10-30 09:38,Memorial City,R164,Houston,TX,Houston,1,4.8,unavailable,MK1E4LL/A
 2026-10-30 09:50,Barton Creek,R085,Austin,TX,Austin,2,2.7,available,MK1E4LL/A
+2026-10-30 09:52,Barton Creek,R085,Austin,TX,Austin,2,2.7,unavailable,MK1E4LL/A
