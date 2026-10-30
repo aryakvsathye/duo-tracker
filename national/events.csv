@@ -213,3 +213,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-30 08:15,Dadeland,R312,Miami,FL,Miami,1,9.3,unavailable,MK1F4LL/A
 2026-10-30 08:15,Dadeland,R312,Miami,FL,Miami,1,9.3,unavailable,MK1E4LL/A
 2026-10-30 08:32,Queens Center,R612,Elmhurst,NY,New York,1,6.5,available,MK1E4LL/A
+2026-10-30 08:32,Lenox Square,R006,Atlanta,GA,Atlanta,1,0.1,available,MK1F4LL/A
+2026-10-30 08:32,Lenox Square,R006,Atlanta,GA,Atlanta,1,0.1,available,MK1E4LL/A
