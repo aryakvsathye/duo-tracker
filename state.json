@@ -50,7 +50,7 @@
   }
  },
  "checks": 916,
- "errors": 0,
+ "errors": 1,
  "events": 6,
  "last_heartbeat": "2026-10-29",
  "nearby": {
@@ -173,14 +173,6 @@
  },
  "last_check": "2026-10-29T23:45:10.871622-05:00",
  "history": [
-  {
-   "t": "2026-10-29T20:50:28-05:00",
-   "ok": true,
-   "ms": 326,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-10-29T20:51:28-05:00",
    "ok": true,
@@ -891,6 +883,13 @@
    "ms": 513,
    "code": 200,
    "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-10-30T00:00:12-05:00",
+   "ok": false,
+   "ms": 436,
+   "code": 541,
    "burst": false
   }
  ],
