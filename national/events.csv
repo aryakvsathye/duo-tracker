@@ -221,3 +221,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-30 08:38,Queens Center,R612,Elmhurst,NY,New York,1,6.5,unavailable,MK1E4LL/A
 2026-10-30 08:38,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,available,MK1E4LL/A
 2026-10-30 08:40,Pheasant Lane,R354,Nashua,NH,Boston,1,30.5,unavailable,MK1E4LL/A
+2026-10-30 08:43,Mall of Georgia,R259,Buford,GA,Atlanta,1,26.3,available,MK1F4LL/A
+2026-10-30 08:43,Lincoln Road,R115,Miami Beach,FL,Miami,1,3.6,available,MK1F4LL/A
+2026-10-30 08:43,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,unavailable,MK1E4LL/A
