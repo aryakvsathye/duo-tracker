@@ -220,3 +220,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-30 08:35,Pheasant Lane,R354,Nashua,NH,Boston,1,30.5,available,MK1E4LL/A
 2026-10-30 08:38,Queens Center,R612,Elmhurst,NY,New York,1,6.5,unavailable,MK1E4LL/A
 2026-10-30 08:38,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,available,MK1E4LL/A
+2026-10-30 08:40,Pheasant Lane,R354,Nashua,NH,Boston,1,30.5,unavailable,MK1E4LL/A
