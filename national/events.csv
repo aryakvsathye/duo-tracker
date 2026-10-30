@@ -247,3 +247,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-30 09:00,Wellington Green,R024,Wellington,FL,,0,60.9,unavailable,MK1F4LL/A
 2026-10-30 09:02,The Gardens Mall,R127,Palm Beach Gardens,FL,,0,75.1,unavailable,MK1F4LL/A
 2026-10-30 09:03,Millenia,R053,Orlando,FL,Orlando,2,3.5,available,MK1F4LL/A
+2026-10-30 09:05,Millenia,R053,Orlando,FL,Orlando,2,3.5,unavailable,MK1F4LL/A
