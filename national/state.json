@@ -4178,7 +4178,7 @@
   }
  },
  "last_sweep": "2026-10-29T22:30:12.773095-05:00",
- "metros_ok": 49,
+ "metros_ok": 48,
  "metros": [
   {
    "metro": "New York",
@@ -4493,9 +4493,7 @@
  "metro_skip": {
   "Austin": 1
  },
- "skipped": [
-  "Boston"
- ],
+ "skipped": [],
  "checked_at": {
   "New York": "2026-10-29T22:27:12.463724-05:00",
   "Los Angeles": "2026-10-29T22:28:11.385803-05:00",
