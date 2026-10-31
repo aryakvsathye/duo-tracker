@@ -305,3 +305,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-31 12:42,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,available,MK1E4LL/A
 2026-10-31 12:44,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,unavailable,MK1E4LL/A
 2026-10-31 15:03,NorthPark Center,R144,Dallas,TX,Dallas,1,1.0,available,MK1F4LL/A
+2026-10-31 15:06,NorthPark Center,R144,Dallas,TX,Dallas,1,1.0,unavailable,MK1F4LL/A
