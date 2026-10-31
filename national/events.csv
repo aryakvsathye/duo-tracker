@@ -306,3 +306,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-10-31 12:44,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,unavailable,MK1E4LL/A
 2026-10-31 15:03,NorthPark Center,R144,Dallas,TX,Dallas,1,1.0,available,MK1F4LL/A
 2026-10-31 15:06,NorthPark Center,R144,Dallas,TX,Dallas,1,1.0,unavailable,MK1F4LL/A
+2026-10-31 15:20,Brea Mall,R156,Brea,CA,,0,89.9,available,MK1E4LL/A
+2026-10-31 15:20,Fashion Show,R064,Las Vegas,NV,Las Vegas,2,0.6,available,MK1F4LL/A
+2026-10-31 15:20,Brea Mall,R156,Brea,CA,,0,89.9,unavailable,MK1E4LL/A
