@@ -354,3 +354,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-01 13:07,Vintage Faire,R322,Modesto,CA,,0,67.2,unavailable,MK1E4LL/A
 2026-11-01 13:08,Northridge,R023,Northridge,CA,Los Angeles,1,14.9,available,MK1E4LL/A
 2026-11-01 13:10,UTC,R082,San Diego,CA,San Diego,2,7.9,available,MK1E4LL/A
+2026-11-01 13:11,Northridge,R023,Northridge,CA,Los Angeles,1,14.9,unavailable,MK1E4LL/A
