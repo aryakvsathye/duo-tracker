@@ -34,7 +34,7 @@
   },
   "The Promenade at Chenal": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Saddle Creek": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 243,
+ "checks": 249,
  "errors": 0,
- "events": 0,
+ "events": 1,
  "last_heartbeat": "2026-11-01",
  "nearby": {
   "Country Club Plaza": {
@@ -171,56 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-01T11:50:48.184708-06:00",
+ "last_check": "2026-11-01T11:57:06.987207-06:00",
  "history": [
-  {
-   "t": "2026-11-01T10:27:57-06:00",
-   "ok": true,
-   "ms": 681,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-01T10:28:57-06:00",
-   "ok": true,
-   "ms": 504,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-01T10:29:57-06:00",
-   "ok": true,
-   "ms": 494,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-01T10:30:57-06:00",
-   "ok": true,
-   "ms": 510,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-01T10:31:57-06:00",
-   "ok": true,
-   "ms": 443,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-01T10:32:57-06:00",
-   "ok": true,
-   "ms": 431,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-01T10:33:57-06:00",
    "ok": true,
@@ -892,9 +844,67 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-01T11:51:06-06:00",
+   "ok": true,
+   "ms": 377,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-01T11:52:06-06:00",
+   "ok": true,
+   "ms": 380,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-01T11:53:06-06:00",
+   "ok": true,
+   "ms": 375,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-01T11:54:06-06:00",
+   "ok": true,
+   "ms": 304,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-01T11:55:06-06:00",
+   "ok": true,
+   "ms": 544,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-01T11:56:06-06:00",
+   "ok": true,
+   "ms": 366,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
+  "The Promenade at Chenal": {
+   "miles": 320.42,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Little Rock",
+   "state": "AR"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -974,16 +984,6 @@
    },
    "city": "Oklahoma City",
    "state": "OK"
-  },
-  "The Promenade at Chenal": {
-   "miles": 320.42,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Little Rock",
-   "state": "AR"
   },
   "Saddle Creek": {
    "miles": 385.15,
