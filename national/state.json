@@ -4181,7 +4181,7 @@
   }
  },
  "last_sweep": "2026-11-01T12:29:54.212748-06:00",
- "metros_ok": 50,
+ "metros_ok": 45,
  "metros": [
   {
    "metro": "New York",
@@ -4484,7 +4484,7 @@
    "state": "NY"
   }
  ],
- "retries": 5,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4494,13 +4494,14 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Albuquerque": 1,
-  "Louisville": 1,
-  "Oklahoma City": 1,
-  "Honolulu": 1,
   "Washington": 1
  },
- "skipped": [],
+ "skipped": [
+  "Albuquerque",
+  "Honolulu",
+  "Louisville",
+  "Oklahoma City"
+ ],
  "checked_at": {
   "New York": "2026-11-01T12:26:00.117937-06:00",
   "Los Angeles": "2026-11-01T12:25:49.260370-06:00",
@@ -4537,19 +4538,19 @@
   "Cleveland": "2026-11-01T12:27:43.824945-06:00",
   "Nashville": "2026-11-01T12:29:16.384076-06:00",
   "Raleigh": "2026-11-01T12:29:43.193074-06:00",
-  "Oklahoma City": "2026-11-01T12:25:03.947568-06:00",
+  "Oklahoma City": "2026-11-01T12:30:03.947953-06:00",
   "Tulsa": "2026-11-01T12:26:55.298102-06:00",
   "Omaha": "2026-11-01T12:25:54.863270-06:00",
   "Des Moines": "2026-11-01T12:27:54.290456-06:00",
   "Little Rock": "2026-11-01T12:27:21.507250-06:00",
   "Memphis": "2026-11-01T12:29:21.792728-06:00",
   "Madison": "2026-11-01T12:26:05.581149-06:00",
-  "Albuquerque": "2026-11-01T12:24:34.439240-06:00",
+  "Albuquerque": "2026-11-01T12:30:00.557302-06:00",
   "Salt Lake City": "2026-11-01T12:28:10.075825-06:00",
-  "Louisville": "2026-11-01T12:24:49.381503-06:00",
+  "Louisville": "2026-11-01T12:30:00.557410-06:00",
   "Birmingham": "2026-11-01T12:27:05.718706-06:00",
   "Richmond": "2026-11-01T12:29:54.212638-06:00",
-  "Honolulu": "2026-11-01T12:25:18.251595-06:00",
+  "Honolulu": "2026-11-01T12:30:18.251986-06:00",
   "Tucson": "2026-11-01T12:28:27.632359-06:00",
   "Buffalo": "2026-11-01T12:28:04.837295-06:00"
  },
@@ -4631,6 +4632,5 @@
   "2026-11-01T07:03-06:00",
   "2026-11-01T07:49-06:00",
   "2026-11-01T12:25-06:00"
- ],
- "last_error": "2026-11-01T12:25-06:00: Albuquerque: HTTP 541; Louisville: HTTP 541; Oklahoma City: HTTP 541; Honolulu: HTTP 541; Washington: HTTP 541"
+ ]
 }
