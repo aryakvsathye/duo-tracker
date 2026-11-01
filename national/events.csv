@@ -349,3 +349,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-01 13:00,Northridge,R023,Northridge,CA,Los Angeles,1,14.9,unavailable,MK1E4LL/A
 2026-11-01 13:00,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,unavailable,MK1E4LL/A
 2026-11-01 13:03,Vintage Faire,R322,Modesto,CA,,0,67.2,available,MK1E4LL/A
+2026-11-01 13:04,Beverly Center,R124,Los Angeles,CA,Los Angeles,1,2.5,unavailable,MK1E4LL/A
