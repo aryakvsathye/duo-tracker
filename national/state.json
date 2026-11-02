@@ -4481,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 0,
+ "retries": 1,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4490,7 +4490,9 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {},
+ "metro_skip": {
+  "Des Moines": 1
+ },
  "skipped": [],
  "checked_at": {
   "New York": "2026-11-01T19:05:57.592166-06:00",
@@ -4531,7 +4533,7 @@
   "Oklahoma City": "2026-11-01T19:06:08.369539-06:00",
   "Tulsa": "2026-11-01T19:06:15.324394-06:00",
   "Omaha": "2026-11-01T19:05:46.751565-06:00",
-  "Des Moines": "2026-11-01T19:03:08.985237-06:00",
+  "Des Moines": "2026-11-01T19:08:05.091354-06:00",
   "Little Rock": "2026-11-01T19:06:58.531444-06:00",
   "Memphis": "2026-11-01T19:04:56.655482-06:00",
   "Madison": "2026-11-01T19:06:26.311974-06:00",
@@ -4623,5 +4625,6 @@
   "2026-11-01T12:25-06:00",
   "2026-11-01T15:23-06:00"
  ],
- "last_weekly": "2026-W44"
+ "last_weekly": "2026-W44",
+ "last_error": "2026-11-01T19:08-06:00: Des Moines: HTTP 541"
 }
