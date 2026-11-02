@@ -4178,7 +4178,7 @@
   }
  },
  "last_sweep": "2026-11-02T07:54:32.130058-06:00",
- "metros_ok": 50,
+ "metros_ok": 45,
  "metros": [
   {
    "metro": "New York",
@@ -4481,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 5,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4491,14 +4491,13 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "St. Louis": 1,
-  "Kansas City": 1,
-  "Nashville": 1,
-  "Cleveland": 1,
   "Las Vegas": 1
  },
  "skipped": [
-  "Indianapolis"
+  "Cleveland",
+  "Kansas City",
+  "Nashville",
+  "St. Louis"
  ],
  "checked_at": {
   "New York": "2026-11-02T07:52:16.932813-06:00",
@@ -4520,7 +4519,7 @@
   "Tampa": "2026-11-02T07:51:57.723508-06:00",
   "Denver": "2026-11-02T07:54:23.320414-06:00",
   "Baltimore": "2026-11-02T07:52:34.415742-06:00",
-  "St. Louis": "2026-11-02T07:48:56.054484-06:00",
+  "St. Louis": "2026-11-02T07:54:37.873797-06:00",
   "Orlando": "2026-11-02T07:52:52.058574-06:00",
   "Charlotte": "2026-11-02T07:53:11.524132-06:00",
   "San Antonio": "2026-11-02T07:51:17.884006-06:00",
@@ -4530,11 +4529,11 @@
   "Austin": "2026-11-02T07:51:40.173131-06:00",
   "Las Vegas": "2026-11-02T07:49:50.223120-06:00",
   "Cincinnati": "2026-11-02T07:53:24.740578-06:00",
-  "Kansas City": "2026-11-02T07:49:09.445214-06:00",
+  "Kansas City": "2026-11-02T07:54:37.873894-06:00",
   "Columbus": "2026-11-02T07:53:33.491166-06:00",
   "Indianapolis": "2026-11-02T07:53:37.949900-06:00",
-  "Cleveland": "2026-11-02T07:49:36.626798-06:00",
-  "Nashville": "2026-11-02T07:49:23.027886-06:00",
+  "Cleveland": "2026-11-02T07:54:37.874057-06:00",
+  "Nashville": "2026-11-02T07:54:37.873977-06:00",
   "Raleigh": "2026-11-02T07:53:20.371324-06:00",
   "Oklahoma City": "2026-11-02T07:52:25.630478-06:00",
   "Tulsa": "2026-11-02T07:52:29.960127-06:00",
@@ -4631,6 +4630,5 @@
   "2026-11-01T15:23-06:00",
   "2026-11-02T07:49-06:00"
  ],
- "last_weekly": "2026-W44",
- "last_error": "2026-11-02T07:49-06:00: St. Louis: HTTP 541; Kansas City: HTTP 541; Nashville: HTTP 541; Cleveland: HTTP 541; Las Vegas: HTTP 541"
+ "last_weekly": "2026-W44"
 }
