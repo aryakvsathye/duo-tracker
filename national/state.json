@@ -4178,7 +4178,7 @@
   }
  },
  "last_sweep": "2026-11-02T13:05:31.348946-06:00",
- "metros_ok": 47,
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4481,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 0,
+ "retries": 1,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4490,7 +4490,9 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {},
+ "metro_skip": {
+  "Indianapolis": 1
+ },
  "skipped": [],
  "checked_at": {
   "New York": "2026-11-02T13:03:03.597771-06:00",
@@ -4524,7 +4526,7 @@
   "Cincinnati": "2026-11-02T13:04:36.388092-06:00",
   "Kansas City": "2026-11-02T13:01:32.365925-06:00",
   "Columbus": "2026-11-02T13:05:07.667499-06:00",
-  "Indianapolis": "2026-11-02T12:59:58.128468-06:00",
+  "Indianapolis": "2026-11-02T13:05:50.966976-06:00",
   "Cleveland": "2026-11-02T13:02:51.839554-06:00",
   "Nashville": "2026-11-02T13:04:24.513330-06:00",
   "Raleigh": "2026-11-02T13:02:01.719720-06:00",
@@ -4625,5 +4627,6 @@
   "2026-11-02T09:09-06:00",
   "2026-11-02T11:43-06:00"
  ],
- "last_weekly": "2026-W44"
+ "last_weekly": "2026-W44",
+ "last_error": "2026-11-02T13:05-06:00: Indianapolis: HTTP 541"
 }
