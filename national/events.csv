@@ -471,3 +471,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-03 14:33,Wellington Green,R024,Wellington,FL,,0,60.9,available,MK1F4LL/A
 2026-11-03 14:34,Wellington Green,R024,Wellington,FL,,0,60.9,unavailable,MK1F4LL/A
 2026-11-03 16:23,Woodland Hills,R233,Tulsa,OK,Tulsa,3,1.6,available,MK1E4LL/A
+2026-11-03 16:24,Woodland Hills,R233,Tulsa,OK,Tulsa,3,1.6,unavailable,MK1E4LL/A
