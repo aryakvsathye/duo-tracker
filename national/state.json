@@ -855,14 +855,17 @@
    "metro": "Tulsa",
    "tier": 3,
    "miles": 1.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-03 10:58"
+   },
+   "since": "2026-11-03 10:58"
   },
   "R058": {
    "name": "Houston Galleria",
@@ -3771,17 +3774,14 @@
    "metro": "Sacramento",
    "tier": 2,
    "miles": 1.2,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-03 10:53"
-   },
-   "since": "2026-11-03 10:53"
+   "since_by_part": {}
   },
   "R322": {
    "name": "Vintage Faire",
@@ -3792,18 +3792,14 @@
    "metro": "",
    "tier": 0,
    "miles": 67.2,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-03 10:53",
-    "MK1E4LL/A": "2026-11-03 10:53"
-   },
-   "since": "2026-11-03 10:53"
+   "since_by_part": {}
   },
   "R044": {
    "name": "Montgomery Village",
@@ -3814,18 +3810,14 @@
    "metro": "",
    "tier": 0,
    "miles": 68.2,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-03 10:53",
-    "MK1E4LL/A": "2026-11-03 10:53"
-   },
-   "since": "2026-11-03 10:53"
+   "since_by_part": {}
   },
   "R413": {
    "name": "Ross Park",
@@ -4188,8 +4180,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-03T10:58:09.313470-06:00",
- "metros_ok": 46,
+ "last_sweep": "2026-11-03T10:58:31.958339-06:00",
+ "metros_ok": 47,
  "metros": [
   {
    "metro": "New York",
@@ -4512,8 +4504,8 @@
   "Dallas": "2026-11-03T10:54:13.041292-06:00",
   "Houston": "2026-11-03T10:55:39.743465-06:00",
   "Washington": "2026-11-03T10:58:09.313353-06:00",
-  "Philadelphia": "2026-11-03T10:52:21.774994-06:00",
-  "Atlanta": "2026-11-03T10:52:27.083226-06:00",
+  "Philadelphia": "2026-11-03T10:58:26.729647-06:00",
+  "Atlanta": "2026-11-03T10:58:31.958230-06:00",
   "Miami": "2026-11-03T10:52:32.375245-06:00",
   "Phoenix": "2026-11-03T10:57:47.926609-06:00",
   "Boston": "2026-11-03T10:58:04.013964-06:00",
@@ -4530,12 +4522,12 @@
   "Charlotte": "2026-11-03T10:53:47.938737-06:00",
   "San Antonio": "2026-11-03T10:55:55.894237-06:00",
   "Portland": "2026-11-03T10:56:52.015438-06:00",
-  "Sacramento": "2026-11-03T10:53:31.813109-06:00",
+  "Sacramento": "2026-11-03T10:58:16.125615-06:00",
   "Pittsburgh": "2026-11-03T10:53:37.136148-06:00",
   "Austin": "2026-11-03T10:56:27.583024-06:00",
   "Las Vegas": "2026-11-03T10:54:34.172550-06:00",
   "Cincinnati": "2026-11-03T10:57:26.519827-06:00",
-  "Kansas City": "2026-11-03T10:52:11.131042-06:00",
+  "Kansas City": "2026-11-03T10:58:21.453343-06:00",
   "Columbus": "2026-11-03T10:52:43.189948-06:00",
   "Indianapolis": "2026-11-03T10:53:12.158084-06:00",
   "Cleveland": "2026-11-03T10:54:23.511541-06:00",
@@ -4564,8 +4556,8 @@
   "Dallas": "2026-11-03T10:54:13.041314-06:00",
   "Houston": "2026-11-03T10:55:39.743486-06:00",
   "Washington": "2026-11-03T10:58:09.313372-06:00",
-  "Philadelphia": "2026-11-03T10:52:21.775013-06:00",
-  "Atlanta": "2026-11-03T10:52:27.083246-06:00",
+  "Philadelphia": "2026-11-03T10:58:26.729669-06:00",
+  "Atlanta": "2026-11-03T10:58:31.958248-06:00",
   "Miami": "2026-11-03T10:52:32.375267-06:00",
   "Phoenix": "2026-11-03T10:57:47.926629-06:00",
   "Boston": "2026-11-03T10:58:04.013989-06:00",
@@ -4582,12 +4574,12 @@
   "Charlotte": "2026-11-03T10:53:47.938758-06:00",
   "San Antonio": "2026-11-03T10:55:55.894258-06:00",
   "Portland": "2026-11-03T10:56:52.015458-06:00",
-  "Sacramento": "2026-11-03T10:53:31.813129-06:00",
+  "Sacramento": "2026-11-03T10:58:16.125636-06:00",
   "Pittsburgh": "2026-11-03T10:53:37.136169-06:00",
   "Austin": "2026-11-03T10:56:27.583044-06:00",
   "Las Vegas": "2026-11-03T10:54:34.172570-06:00",
   "Cincinnati": "2026-11-03T10:57:26.519849-06:00",
-  "Kansas City": "2026-11-03T10:52:11.131062-06:00",
+  "Kansas City": "2026-11-03T10:58:21.453362-06:00",
   "Columbus": "2026-11-03T10:52:43.189969-06:00",
   "Indianapolis": "2026-11-03T10:53:12.158106-06:00",
   "Cleveland": "2026-11-03T10:54:23.511562-06:00",
@@ -4610,8 +4602,8 @@
   "Buffalo": "2026-11-03T10:54:02.377954-06:00"
  },
  "hot": [
-  "Pacific",
-  "Mountain"
+  "West South Central",
+  "Pacific"
  ],
  "cycle_seconds": 150,
  "pace": 5.0,

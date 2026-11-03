@@ -447,3 +447,9 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-03 10:53,Montgomery Village,R044,Santa Rosa,CA,,0,68.2,available,MK1F4LL/A
 2026-11-03 10:53,Montgomery Village,R044,Santa Rosa,CA,,0,68.2,available,MK1E4LL/A
 2026-11-03 10:54,Town Square,R219,Las Vegas,NV,Las Vegas,2,3.6,unavailable,MK1E4LL/A
+2026-11-03 10:58,Arden Fair,R070,Sacramento,CA,Sacramento,2,1.2,unavailable,MK1F4LL/A
+2026-11-03 10:58,Vintage Faire,R322,Modesto,CA,,0,67.2,unavailable,MK1F4LL/A
+2026-11-03 10:58,Vintage Faire,R322,Modesto,CA,,0,67.2,unavailable,MK1E4LL/A
+2026-11-03 10:58,Montgomery Village,R044,Santa Rosa,CA,,0,68.2,unavailable,MK1F4LL/A
+2026-11-03 10:58,Montgomery Village,R044,Santa Rosa,CA,,0,68.2,unavailable,MK1E4LL/A
+2026-11-03 10:58,Woodland Hills,R233,Tulsa,OK,Tulsa,3,1.6,available,MK1F4LL/A
