@@ -17,7 +17,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "Woodland Hills": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   },
   "West County": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 174,
+ "checks": 177,
  "errors": 9,
- "events": 3,
+ "events": 4,
  "last_heartbeat": "2026-11-03",
  "nearby": {
   "Country Club Plaza": {
@@ -171,32 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-03T10:58:26.492379-06:00",
+ "last_check": "2026-11-03T11:01:26.508789-06:00",
  "history": [
-  {
-   "t": "2026-11-03T09:34:18-06:00",
-   "ok": true,
-   "ms": 376,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-03T09:35:18-06:00",
-   "ok": true,
-   "ms": 267,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-03T09:36:18-06:00",
-   "ok": true,
-   "ms": 466,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-03T09:37:18-06:00",
    "ok": true,
@@ -894,19 +870,33 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-03T10:58:26-06:00",
+   "ok": true,
+   "ms": 488,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-03T10:59:26-06:00",
+   "ok": true,
+   "ms": 380,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-03T11:00:26-06:00",
+   "ok": true,
+   "ms": 531,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
-  "Woodland Hills": {
-   "miles": 212.92,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Tulsa",
-   "state": "OK"
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -946,6 +936,16 @@
    },
    "city": "West Des Moines",
    "state": "IA"
+  },
+  "Woodland Hills": {
+   "miles": 212.92,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Tulsa",
+   "state": "OK"
   },
   "West County": {
    "miles": 234.82,
