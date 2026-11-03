@@ -4178,7 +4178,7 @@
   }
  },
  "last_sweep": "2026-11-03T17:09:20.833071-06:00",
- "metros_ok": 47,
+ "metros_ok": 49,
  "metros": [
   {
    "metro": "New York",
@@ -4481,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 0,
+ "retries": 1,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4491,9 +4491,11 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Philadelphia": 1
+  "Sacramento": 1
  },
- "skipped": [],
+ "skipped": [
+  "Philadelphia"
+ ],
  "checked_at": {
   "New York": "2026-11-03T17:06:56.806911-06:00",
   "Los Angeles": "2026-11-03T17:07:46.153354-06:00",
@@ -4519,7 +4521,7 @@
   "Charlotte": "2026-11-03T17:07:25.528488-06:00",
   "San Antonio": "2026-11-03T17:09:10.924352-06:00",
   "Portland": "2026-11-03T17:09:20.832959-06:00",
-  "Sacramento": "2026-11-03T17:06:01.182287-06:00",
+  "Sacramento": "2026-11-03T17:09:38.544698-06:00",
   "Pittsburgh": "2026-11-03T17:05:36.967185-06:00",
   "Austin": "2026-11-03T17:04:43.728761-06:00",
   "Las Vegas": "2026-11-03T17:06:41.046144-06:00",
@@ -4628,5 +4630,6 @@
   "2026-11-03T07:59-06:00",
   "2026-11-03T14:26-06:00"
  ],
- "last_weekly": "2026-W44"
+ "last_weekly": "2026-W44",
+ "last_error": "2026-11-03T17:09-06:00: Sacramento: HTTP 541"
 }
