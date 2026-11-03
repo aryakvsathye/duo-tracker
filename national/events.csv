@@ -475,3 +475,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-03 16:55,Vintage Faire,R322,Modesto,CA,,0,67.2,available,MK1F4LL/A
 2026-11-03 16:55,Vintage Faire,R322,Modesto,CA,,0,67.2,available,MK1E4LL/A
 2026-11-03 16:55,Southdale,R054,Edina,MN,Minneapolis,2,5.2,available,MK1E4LL/A
+2026-11-03 16:58,Vintage Faire,R322,Modesto,CA,,0,67.2,unavailable,MK1E4LL/A
+2026-11-03 16:59,Southdale,R054,Edina,MN,Minneapolis,2,5.2,unavailable,MK1E4LL/A
