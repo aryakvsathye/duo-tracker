@@ -4481,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 4,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4491,17 +4491,18 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Minneapolis": 1,
-  "Tulsa": 1,
-  "Las Vegas": 1,
-  "Los Angeles": 1,
-  "St. Louis": 1,
-  "Phoenix": 1,
-  "Madison": 1,
-  "Memphis": 1,
   "Raleigh": 1
  },
- "skipped": [],
+ "skipped": [
+  "Las Vegas",
+  "Los Angeles",
+  "Madison",
+  "Memphis",
+  "Minneapolis",
+  "Phoenix",
+  "St. Louis",
+  "Tulsa"
+ ],
  "checked_at": {
   "New York": "2026-11-03T08:07:14.166352-06:00",
   "Los Angeles": "2026-11-03T08:05:41.499117-06:00",
@@ -4512,7 +4513,7 @@
   "Philadelphia": "2026-11-03T08:07:26.135509-06:00",
   "Atlanta": "2026-11-03T08:06:56.334946-06:00",
   "Miami": "2026-11-03T08:07:20.107950-06:00",
-  "Phoenix": "2026-11-03T08:04:06.987549-06:00",
+  "Phoenix": "2026-11-03T08:09:23.244394-06:00",
   "Boston": "2026-11-03T08:06:07.385826-06:00",
   "San Francisco": "2026-11-03T08:05:53.940181-06:00",
   "Detroit": "2026-11-03T08:06:48.771668-06:00",
@@ -4543,8 +4544,8 @@
   "Omaha": "2026-11-03T08:06:25.012014-06:00",
   "Des Moines": "2026-11-03T08:09:04.209017-06:00",
   "Little Rock": "2026-11-03T08:06:30.979956-06:00",
-  "Memphis": "2026-11-03T08:04:39.036684-06:00",
-  "Madison": "2026-11-03T08:04:22.922711-06:00",
+  "Memphis": "2026-11-03T08:09:39.036931-06:00",
+  "Madison": "2026-11-03T08:09:23.244446-06:00",
   "Albuquerque": "2026-11-03T08:06:13.259897-06:00",
   "Salt Lake City": "2026-11-03T08:08:26.823674-06:00",
   "Louisville": "2026-11-03T08:05:30.167050-06:00",
@@ -4633,6 +4634,5 @@
   "2026-11-02T22:59-06:00",
   "2026-11-03T07:59-06:00"
  ],
- "last_weekly": "2026-W44",
- "last_error": "2026-11-03T08:05-06:00: Phoenix: HTTP 541; Madison: HTTP 541; Memphis: HTTP 541; Raleigh: HTTP 541"
+ "last_weekly": "2026-W44"
 }
