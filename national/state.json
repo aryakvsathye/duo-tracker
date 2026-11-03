@@ -4178,7 +4178,7 @@
   }
  },
  "last_sweep": "2026-11-03T14:30:48.193827-06:00",
- "metros_ok": 50,
+ "metros_ok": 44,
  "metros": [
   {
    "metro": "New York",
@@ -4481,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 5,
+ "retries": 1,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4495,7 +4495,8 @@
   "San Antonio": 1,
   "Austin": 1,
   "Oklahoma City": 1,
-  "Madison": 1
+  "Madison": 1,
+  "Denver": 1
  },
  "skipped": [],
  "checked_at": {
@@ -4516,7 +4517,7 @@
   "Minneapolis": "2026-11-03T14:30:21.624851-06:00",
   "San Diego": "2026-11-03T14:27:53.988985-06:00",
   "Tampa": "2026-11-03T14:28:09.952567-06:00",
-  "Denver": "2026-11-03T14:24:52.890659-06:00",
+  "Denver": "2026-11-03T14:31:05.572631-06:00",
   "Baltimore": "2026-11-03T14:28:27.615251-06:00",
   "St. Louis": "2026-11-03T14:30:42.937451-06:00",
   "Orlando": "2026-11-03T14:28:38.372862-06:00",
@@ -4630,5 +4631,5 @@
   "2026-11-03T14:26-06:00"
  ],
  "last_weekly": "2026-W44",
- "last_error": "2026-11-03T14:26-06:00: Houston: HTTP 541; San Antonio: HTTP 541; Austin: HTTP 541; Oklahoma City: HTTP 541; Madison: HTTP 541"
+ "last_error": "2026-11-03T14:31-06:00: Denver: HTTP 541"
 }
