@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 54,
+ "checks": 63,
  "errors": 9,
  "events": 0,
  "last_heartbeat": "2026-11-03",
@@ -171,80 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-03T08:57:07.882403-06:00",
+ "last_check": "2026-11-03T09:13:57.068210-06:00",
  "history": [
-  {
-   "t": "2026-11-03T07:41:59-06:00",
-   "ok": true,
-   "ms": 409,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-03T07:42:59-06:00",
-   "ok": true,
-   "ms": 472,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-03T07:43:59-06:00",
-   "ok": true,
-   "ms": 297,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-03T07:44:59-06:00",
-   "ok": true,
-   "ms": 351,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-03T07:45:59-06:00",
-   "ok": true,
-   "ms": 362,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-03T07:46:59-06:00",
-   "ok": true,
-   "ms": 737,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-03T07:47:59-06:00",
-   "ok": true,
-   "ms": 438,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-03T07:48:59-06:00",
-   "ok": true,
-   "ms": 425,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-03T07:49:59-06:00",
-   "ok": true,
-   "ms": 481,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-03T07:50:22-06:00",
    "ok": true,
@@ -882,6 +810,78 @@
    "ok": false,
    "ms": 239,
    "code": 541,
+   "burst": false
+  },
+  {
+   "t": "2026-11-03T09:05:56-06:00",
+   "ok": true,
+   "ms": 624,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-03T09:06:56-06:00",
+   "ok": true,
+   "ms": 437,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-03T09:07:56-06:00",
+   "ok": true,
+   "ms": 455,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-03T09:08:56-06:00",
+   "ok": true,
+   "ms": 372,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-03T09:09:56-06:00",
+   "ok": true,
+   "ms": 386,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-03T09:10:56-06:00",
+   "ok": true,
+   "ms": 481,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-03T09:11:56-06:00",
+   "ok": true,
+   "ms": 517,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-03T09:12:56-06:00",
+   "ok": true,
+   "ms": 374,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-03T09:13:56-06:00",
+   "ok": true,
+   "ms": 448,
+   "code": 200,
+   "green": [],
    "burst": false
   }
  ],
