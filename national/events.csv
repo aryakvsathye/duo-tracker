@@ -437,3 +437,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-03 09:52,Michigan Avenue,R035,Chicago,IL,Chicago,1,0.5,available,MK1E4LL/A
 2026-11-03 09:56,Michigan Avenue,R035,Chicago,IL,Chicago,1,0.5,unavailable,MK1E4LL/A
 2026-11-03 09:58,Leawood,R283,Leawood,KS,Kansas City,2,10.5,available,MK1F4LL/A
+2026-11-03 10:01,Leawood,R283,Leawood,KS,Kansas City,2,10.5,unavailable,MK1F4LL/A
