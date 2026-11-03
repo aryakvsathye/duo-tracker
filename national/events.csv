@@ -421,3 +421,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-03 08:52,Tysons Corner,R010,McLean,VA,Washington,1,10.9,available,MK1F4LL/A
 2026-11-03 08:55,Tysons Corner,R010,McLean,VA,Washington,1,10.9,unavailable,MK1F4LL/A
 2026-11-03 09:00,Walden Galleria,R016,Buffalo,NY,Buffalo,3,0.6,available,MK1E4LL/A
+2026-11-03 09:06,Walden Galleria,R016,Buffalo,NY,Buffalo,3,0.6,unavailable,MK1E4LL/A
