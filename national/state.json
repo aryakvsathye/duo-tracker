@@ -3774,14 +3774,17 @@
    "metro": "Sacramento",
    "tier": 2,
    "miles": 1.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-03 10:53"
+   },
+   "since": "2026-11-03 10:53"
   },
   "R322": {
    "name": "Vintage Faire",
@@ -3792,14 +3795,18 @@
    "metro": "",
    "tier": 0,
    "miles": 67.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-03 10:53",
+    "MK1E4LL/A": "2026-11-03 10:53"
+   },
+   "since": "2026-11-03 10:53"
   },
   "R044": {
    "name": "Montgomery Village",
@@ -3810,14 +3817,18 @@
    "metro": "",
    "tier": 0,
    "miles": 68.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-03 10:53",
+    "MK1E4LL/A": "2026-11-03 10:53"
+   },
+   "since": "2026-11-03 10:53"
   },
   "R413": {
    "name": "Ross Park",
@@ -4180,8 +4191,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-03T10:53:12.158203-06:00",
- "metros_ok": 49,
+ "last_sweep": "2026-11-03T10:53:47.938851-06:00",
+ "metros_ok": 46,
  "metros": [
   {
    "metro": "New York",
@@ -4514,16 +4525,16 @@
   "Seattle": "2026-11-03T10:51:40.948999-06:00",
   "Minneapolis": "2026-11-03T10:51:05.536928-06:00",
   "San Diego": "2026-11-03T10:52:05.679250-06:00",
-  "Tampa": "2026-11-03T10:47:57.383504-06:00",
+  "Tampa": "2026-11-03T10:53:21.116613-06:00",
   "Denver": "2026-11-03T10:53:06.835294-06:00",
-  "Baltimore": "2026-11-03T10:48:02.723955-06:00",
+  "Baltimore": "2026-11-03T10:53:26.475022-06:00",
   "St. Louis": "2026-11-03T10:51:30.341598-06:00",
-  "Orlando": "2026-11-03T10:48:18.936539-06:00",
-  "Charlotte": "2026-11-03T10:48:24.258794-06:00",
+  "Orlando": "2026-11-03T10:53:42.560092-06:00",
+  "Charlotte": "2026-11-03T10:53:47.938737-06:00",
   "San Antonio": "2026-11-03T10:49:34.766716-06:00",
   "Portland": "2026-11-03T10:52:16.448625-06:00",
-  "Sacramento": "2026-11-03T10:48:08.151386-06:00",
-  "Pittsburgh": "2026-11-03T10:48:13.551484-06:00",
+  "Sacramento": "2026-11-03T10:53:31.813109-06:00",
+  "Pittsburgh": "2026-11-03T10:53:37.136148-06:00",
   "Austin": "2026-11-03T10:50:22.708741-06:00",
   "Las Vegas": "2026-11-03T10:50:38.901249-06:00",
   "Cincinnati": "2026-11-03T10:51:14.333932-06:00",
@@ -4566,16 +4577,16 @@
   "Seattle": "2026-11-03T10:51:40.949019-06:00",
   "Minneapolis": "2026-11-03T10:51:05.536947-06:00",
   "San Diego": "2026-11-03T10:52:05.679271-06:00",
-  "Tampa": "2026-11-03T10:47:57.383547-06:00",
+  "Tampa": "2026-11-03T10:53:21.116633-06:00",
   "Denver": "2026-11-03T10:53:06.835315-06:00",
-  "Baltimore": "2026-11-03T10:48:02.723976-06:00",
+  "Baltimore": "2026-11-03T10:53:26.475043-06:00",
   "St. Louis": "2026-11-03T10:51:30.341618-06:00",
-  "Orlando": "2026-11-03T10:48:18.936559-06:00",
-  "Charlotte": "2026-11-03T10:48:24.258815-06:00",
+  "Orlando": "2026-11-03T10:53:42.560114-06:00",
+  "Charlotte": "2026-11-03T10:53:47.938758-06:00",
   "San Antonio": "2026-11-03T10:49:34.766737-06:00",
   "Portland": "2026-11-03T10:52:16.448645-06:00",
-  "Sacramento": "2026-11-03T10:48:08.151405-06:00",
-  "Pittsburgh": "2026-11-03T10:48:13.551501-06:00",
+  "Sacramento": "2026-11-03T10:53:31.813129-06:00",
+  "Pittsburgh": "2026-11-03T10:53:37.136169-06:00",
   "Austin": "2026-11-03T10:29:07.512050-06:00",
   "Las Vegas": "2026-11-03T10:50:38.901271-06:00",
   "Cincinnati": "2026-11-03T10:51:14.333951-06:00",
@@ -4602,6 +4613,7 @@
   "Buffalo": "2026-11-03T10:48:34.963167-06:00"
  },
  "hot": [
+  "Pacific",
   "Mountain"
  ],
  "cycle_seconds": 150,
