@@ -3987,14 +3987,17 @@
    "metro": "Cincinnati",
    "tier": 2,
    "miles": 36.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "East North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-04 12:19"
+   },
+   "since": "2026-11-04 12:19"
   },
   "R288": {
    "name": "Fritz Farm",
@@ -4177,7 +4180,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-04T12:19:38.234298-06:00",
+ "last_sweep": "2026-11-04T12:19:44.244661-06:00",
  "metros_ok": 49,
  "metros": [
   {
@@ -4481,7 +4484,7 @@
    "state": "NY"
   }
  ],
- "retries": 1,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4490,10 +4493,10 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Indianapolis": 1
- },
- "skipped": [],
+ "metro_skip": {},
+ "skipped": [
+  "Indianapolis"
+ ],
  "checked_at": {
   "New York": "2026-11-04T12:18:38.780825-06:00",
   "Los Angeles": "2026-11-04T12:19:10.991838-06:00",
@@ -4539,7 +4542,7 @@
   "Madison": "2026-11-04T12:17:35.837421-06:00",
   "Albuquerque": "2026-11-04T12:19:32.565381-06:00",
   "Salt Lake City": "2026-11-04T12:17:08.043690-06:00",
-  "Louisville": "2026-11-04T12:15:32.705414-06:00",
+  "Louisville": "2026-11-04T12:19:44.244395-06:00",
   "Birmingham": "2026-11-04T12:15:41.474574-06:00",
   "Richmond": "2026-11-04T12:16:27.197914-06:00",
   "Honolulu": "2026-11-04T12:19:02.255219-06:00",
@@ -4591,7 +4594,7 @@
   "Madison": "2026-11-04T12:17:35.837440-06:00",
   "Albuquerque": "2026-11-04T12:19:32.565400-06:00",
   "Salt Lake City": "2026-11-04T12:17:08.043713-06:00",
-  "Louisville": "2026-11-04T12:15:32.705432-06:00",
+  "Louisville": "2026-11-04T12:19:44.244413-06:00",
   "Birmingham": "2026-11-04T12:15:41.474593-06:00",
   "Richmond": "2026-11-04T12:16:27.197934-06:00",
   "Honolulu": "2026-11-04T12:19:02.255236-06:00",
@@ -4628,6 +4631,5 @@
   "2026-11-03T21:46-06:00",
   "2026-11-04T01:59-06:00"
  ],
- "last_weekly": "2026-W44",
- "last_error": "2026-11-04T12:14-06:00: Indianapolis: HTTP 541"
+ "last_weekly": "2026-W44"
 }
