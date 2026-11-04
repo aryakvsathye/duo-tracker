@@ -534,3 +534,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-04 08:56,Southlake Town Square,R151,Southlake,TX,Dallas,1,20.4,available,MK1E4LL/A
 2026-11-04 08:56,Southlake Town Square,R151,Southlake,TX,Dallas,1,20.4,unavailable,MK1E4LL/A
 2026-11-04 08:57,MarketStreet,R011,Lynnfield,MA,Boston,1,11.6,available,MK1F4LL/A
+2026-11-04 08:57,Ross Park,R413,Pittsburgh,PA,Pittsburgh,2,2.2,available,MK1F4LL/A
+2026-11-04 08:57,Summit Mall,R353,Akron,OH,Cleveland,2,24.0,unavailable,MK1F4LL/A
