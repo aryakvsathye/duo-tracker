@@ -618,3 +618,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-04 09:56,Lincoln Park,R284,Chicago,IL,Chicago,1,1.7,available,MK1E4LL/A
 2026-11-04 09:56,Ridgedale,R183,Minnetonka,MN,Minneapolis,2,13.3,available,MK1E4LL/A
 2026-11-04 09:56,Woodland Hills,R233,Tulsa,OK,Tulsa,3,1.6,available,MK1F4LL/A
+2026-11-04 09:57,Easton Town Center,R009,Columbus,OH,Columbus,2,2.7,available,MK1E4LL/A
+2026-11-04 09:57,Polaris Fashion Place,R417,Columbus,OH,Columbus,2,9.5,available,MK1E4LL/A
+2026-11-04 09:57,Scottsdale Quarter,R292,Scottsdale,AZ,Phoenix,1,10.0,available,MK1E4LL/A
