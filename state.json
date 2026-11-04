@@ -34,7 +34,7 @@
   },
   "The Promenade at Chenal": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Saddle Creek": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 412,
+ "checks": 427,
  "errors": 0,
- "events": 57,
+ "events": 58,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Country Club Plaza": {
@@ -171,140 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T11:19:02.637111-06:00",
+ "last_check": "2026-11-04T11:24:02.573238-06:00",
  "history": [
-  {
-   "t": "2026-11-04T10:48:42-06:00",
-   "ok": true,
-   "ms": 231,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:49:02-06:00",
-   "ok": true,
-   "ms": 248,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:49:22-06:00",
-   "ok": true,
-   "ms": 405,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:49:42-06:00",
-   "ok": true,
-   "ms": 265,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:50:02-06:00",
-   "ok": true,
-   "ms": 365,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:50:22-06:00",
-   "ok": true,
-   "ms": 297,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:50:42-06:00",
-   "ok": true,
-   "ms": 268,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:51:02-06:00",
-   "ok": true,
-   "ms": 637,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:51:22-06:00",
-   "ok": true,
-   "ms": 307,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:51:40-06:00",
-   "ok": true,
-   "ms": 323,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:52:00-06:00",
-   "ok": true,
-   "ms": 285,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:52:20-06:00",
-   "ok": true,
-   "ms": 306,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:52:40-06:00",
-   "ok": true,
-   "ms": 272,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:53:00-06:00",
-   "ok": true,
-   "ms": 471,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:53:20-06:00",
-   "ok": true,
-   "ms": 384,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-04T10:53:40-06:00",
    "ok": true,
@@ -924,19 +792,129 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T11:19:02-06:00",
+   "ok": true,
+   "ms": 413,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:19:22-06:00",
+   "ok": true,
+   "ms": 333,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:19:42-06:00",
+   "ok": true,
+   "ms": 308,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:20:02-06:00",
+   "ok": true,
+   "ms": 230,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:20:22-06:00",
+   "ok": true,
+   "ms": 246,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:20:42-06:00",
+   "ok": true,
+   "ms": 241,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:21:02-06:00",
+   "ok": true,
+   "ms": 260,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:21:22-06:00",
+   "ok": true,
+   "ms": 290,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:21:42-06:00",
+   "ok": true,
+   "ms": 269,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:22:02-06:00",
+   "ok": true,
+   "ms": 300,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:22:22-06:00",
+   "ok": true,
+   "ms": 303,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:22:42-06:00",
+   "ok": true,
+   "ms": 245,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:23:02-06:00",
+   "ok": true,
+   "ms": 255,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:23:22-06:00",
+   "ok": true,
+   "ms": 285,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:23:42-06:00",
+   "ok": true,
+   "ms": 252,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
-  "The Promenade at Chenal": {
-   "miles": 320.42,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Little Rock",
-   "state": "AR"
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -1016,6 +994,16 @@
    },
    "city": "Oklahoma City",
    "state": "OK"
+  },
+  "The Promenade at Chenal": {
+   "miles": 320.42,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Little Rock",
+   "state": "AR"
   },
   "Saddle Creek": {
    "miles": 385.15,
