@@ -18,7 +18,7 @@
   },
   "Woodland Hills": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "West County": {
    "MK1F4LL/A": "unavailable",
@@ -51,7 +51,7 @@
  },
  "checks": 412,
  "errors": 0,
- "events": 56,
+ "events": 57,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Country Club Plaza": {
@@ -171,7 +171,7 @@
    ]
   }
  },
- "last_check": "2026-11-04T11:18:45.006420-06:00",
+ "last_check": "2026-11-04T11:19:02.637111-06:00",
  "history": [
   {
    "t": "2026-11-04T10:48:42-06:00",
@@ -927,16 +927,6 @@
   }
  ],
  "field": {
-  "Woodland Hills": {
-   "miles": 212.92,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Tulsa",
-   "state": "OK"
-  },
   "The Promenade at Chenal": {
    "miles": 320.42,
    "status": "available",
@@ -986,6 +976,16 @@
    },
    "city": "West Des Moines",
    "state": "IA"
+  },
+  "Woodland Hills": {
+   "miles": 212.92,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Tulsa",
+   "state": "OK"
   },
   "West County": {
    "miles": 234.82,
