@@ -705,3 +705,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-04 10:56,FlatIron Crossing,R182,Broomfield,CO,Denver,2,17.1,unavailable,MK1E4LL/A
 2026-11-04 10:56,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,unavailable,MK1E4LL/A
 2026-11-04 10:56,Southpoint,R049,Durham,NC,Raleigh,2,14.0,available,MK1E4LL/A
+2026-11-04 10:57,Sherman Oaks,R148,Sherman Oaks,CA,Los Angeles,1,7.0,available,MK1F4LL/A
+2026-11-04 10:57,Sherman Oaks,R148,Sherman Oaks,CA,Los Angeles,1,7.0,available,MK1E4LL/A
