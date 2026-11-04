@@ -809,3 +809,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-04 13:55,SanTan Village,R267,Gilbert,AZ,Phoenix,1,21.6,available,MK1E4LL/A
 2026-11-04 13:57,Jordan Creek,R109,West Des Moines,IA,Des Moines,3,0.6,available,MK1E4LL/A
 2026-11-04 13:58,Woodland Hills,R233,Tulsa,OK,Tulsa,3,1.6,available,MK1F4LL/A
+2026-11-04 14:00,Woodland Hills,R233,Tulsa,OK,Tulsa,3,1.6,unavailable,MK1F4LL/A
