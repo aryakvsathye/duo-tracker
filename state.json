@@ -17,7 +17,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "Woodland Hills": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   },
   "West County": {
@@ -34,7 +34,7 @@
   },
   "The Promenade at Chenal": {
    "MK1F4LL/A": "available",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Saddle Creek": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 169,
+ "checks": 177,
  "errors": 0,
- "events": 21,
+ "events": 23,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Leawood": {
@@ -171,72 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T09:57:09.714219-06:00",
+ "last_check": "2026-11-04T10:00:09.624177-06:00",
  "history": [
-  {
-   "t": "2026-11-04T09:20:45-06:00",
-   "ok": true,
-   "ms": 316,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T09:21:45-06:00",
-   "ok": true,
-   "ms": 471,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T09:22:06-06:00",
-   "ok": true,
-   "ms": 393,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T09:23:06-06:00",
-   "ok": true,
-   "ms": 313,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T09:24:06-06:00",
-   "ok": true,
-   "ms": 506,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T09:25:06-06:00",
-   "ok": true,
-   "ms": 409,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T09:26:06-06:00",
-   "ok": true,
-   "ms": 408,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T09:27:06-06:00",
-   "ok": true,
-   "ms": 423,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-04T09:28:06-06:00",
    "ok": true,
@@ -976,6 +912,86 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T09:57:29-06:00",
+   "ok": true,
+   "ms": 340,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:57:49-06:00",
+   "ok": true,
+   "ms": 304,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:58:09-06:00",
+   "ok": true,
+   "ms": 269,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:58:29-06:00",
+   "ok": true,
+   "ms": 459,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:58:49-06:00",
+   "ok": true,
+   "ms": 280,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:59:09-06:00",
+   "ok": true,
+   "ms": 273,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:59:29-06:00",
+   "ok": true,
+   "ms": 518,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:59:49-06:00",
+   "ok": true,
+   "ms": 270,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -988,16 +1004,6 @@
    },
    "city": "Leawood",
    "state": "KS"
-  },
-  "Woodland Hills": {
-   "miles": 212.92,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Tulsa",
-   "state": "OK"
   },
   "West County": {
    "miles": 234.82,
@@ -1014,7 +1020,7 @@
    "status": "available",
    "parts": {
     "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "city": "Little Rock",
    "state": "AR"
@@ -1048,6 +1054,16 @@
    },
    "city": "West Des Moines",
    "state": "IA"
+  },
+  "Woodland Hills": {
+   "miles": 212.92,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Tulsa",
+   "state": "OK"
   },
   "Saint Louis Galleria": {
    "miles": 239.77,
@@ -1112,10 +1128,9 @@
  "wave": {
   "since": "2026-11-04T09:31:28.434980-06:00",
   "stores": [
-   "The Promenade at Chenal",
-   "Saint Louis Galleria",
    "Main Place",
    "Leawood",
+   "Saint Louis Galleria",
    "Woodland Hills"
   ],
   "until": "2026-11-04T10:26:00-06:00"
