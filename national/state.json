@@ -4487,7 +4487,7 @@
    "state": "NY"
   }
  ],
- "retries": 3,
+ "retries": 2,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4497,17 +4497,20 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Salt Lake City": 1,
-  "Portland": 1,
-  "Dallas": 1
+  "Indianapolis": 1,
+  "Houston": 1
  },
- "skipped": [],
+ "skipped": [
+  "Dallas",
+  "Portland",
+  "Salt Lake City"
+ ],
  "checked_at": {
   "New York": "2026-11-04T11:24:00.547151-06:00",
   "Los Angeles": "2026-11-04T11:22:46.739763-06:00",
   "Chicago": "2026-11-04T11:21:41.032287-06:00",
   "Dallas": "2026-11-04T11:24:24.626619-06:00",
-  "Houston": "2026-11-04T11:20:30.006732-06:00",
+  "Houston": "2026-11-04T11:24:57.132757-06:00",
   "Washington": "2026-11-04T11:23:14.683683-06:00",
   "Philadelphia": "2026-11-04T11:24:10.348504-06:00",
   "Atlanta": "2026-11-04T11:23:19.514130-06:00",
@@ -4534,7 +4537,7 @@
   "Cincinnati": "2026-11-04T11:23:34.093207-06:00",
   "Kansas City": "2026-11-04T11:21:26.525310-06:00",
   "Columbus": "2026-11-04T11:23:50.885610-06:00",
-  "Indianapolis": "2026-11-04T11:20:25.167655-06:00",
+  "Indianapolis": "2026-11-04T11:24:42.057493-06:00",
   "Cleveland": "2026-11-04T11:20:59.373410-06:00",
   "Nashville": "2026-11-04T11:22:17.463455-06:00",
   "Raleigh": "2026-11-04T11:21:55.605686-06:00",
@@ -4637,5 +4640,5 @@
   "2026-11-04T01:59-06:00"
  ],
  "last_weekly": "2026-W44",
- "last_error": "2026-11-04T11:20-06:00: Salt Lake City: HTTP 541; Portland: HTTP 541; Dallas: HTTP 541"
+ "last_error": "2026-11-04T11:25-06:00: Indianapolis: HTTP 541; Houston: HTTP 541"
 }
