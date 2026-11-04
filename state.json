@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 411,
+ "checks": 412,
  "errors": 0,
  "events": 56,
  "last_heartbeat": "2026-11-04",
@@ -173,14 +173,6 @@
  },
  "last_check": "2026-11-04T11:18:45.006420-06:00",
  "history": [
-  {
-   "t": "2026-11-04T10:48:22-06:00",
-   "ok": true,
-   "ms": 341,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-04T10:48:42-06:00",
    "ok": true,
@@ -921,6 +913,14 @@
    "t": "2026-11-04T11:18:24-06:00",
    "ok": true,
    "ms": 401,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:18:44-06:00",
+   "ok": true,
+   "ms": 588,
    "code": 200,
    "green": [],
    "burst": true
