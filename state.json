@@ -22,7 +22,7 @@
   },
   "West County": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 261,
+ "checks": 262,
  "errors": 0,
- "events": 39,
+ "events": 40,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Country Club Plaza": {
@@ -171,18 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T10:28:25.021170-06:00",
+ "last_check": "2026-11-04T10:28:45.186530-06:00",
  "history": [
-  {
-   "t": "2026-11-04T09:58:09-06:00",
-   "ok": true,
-   "ms": 269,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
   {
    "t": "2026-11-04T09:58:29-06:00",
    "ok": true,
@@ -944,9 +934,27 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T10:28:24-06:00",
+   "ok": true,
+   "ms": 271,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
+  "West County": {
+   "miles": 234.82,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
+  },
   "The Promenade at Chenal": {
    "miles": 320.42,
    "status": "available",
@@ -1006,16 +1014,6 @@
    },
    "city": "Tulsa",
    "state": "OK"
-  },
-  "West County": {
-   "miles": 234.82,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
   },
   "Saint Louis Galleria": {
    "miles": 239.77,
