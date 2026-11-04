@@ -22,7 +22,7 @@
   },
   "West County": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 263,
+ "checks": 265,
  "errors": 0,
- "events": 41,
+ "events": 42,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Leawood": {
@@ -171,28 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T10:29:05.134772-06:00",
+ "last_check": "2026-11-04T10:29:45.235581-06:00",
  "history": [
-  {
-   "t": "2026-11-04T09:58:49-06:00",
-   "ok": true,
-   "ms": 280,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T09:59:09-06:00",
-   "ok": true,
-   "ms": 273,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
   {
    "t": "2026-11-04T09:59:29-06:00",
    "ok": true,
@@ -940,6 +920,26 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T10:29:04-06:00",
+   "ok": true,
+   "ms": 384,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T10:29:24-06:00",
+   "ok": true,
+   "ms": 524,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -952,16 +952,6 @@
    },
    "city": "Leawood",
    "state": "KS"
-  },
-  "West County": {
-   "miles": 234.82,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
   },
   "The Promenade at Chenal": {
    "miles": 320.42,
@@ -1012,6 +1002,16 @@
    },
    "city": "Tulsa",
    "state": "OK"
+  },
+  "West County": {
+   "miles": 234.82,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
   },
   "Saint Louis Galleria": {
    "miles": 239.77,
