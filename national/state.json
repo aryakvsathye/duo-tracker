@@ -3897,14 +3897,17 @@
    "metro": "Buffalo",
    "tier": 3,
    "miles": 0.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-04 17:24"
+   },
+   "since": "2026-11-04 17:24"
   },
   "R094": {
    "name": "Victoria Gardens",
@@ -4177,8 +4180,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-04T17:24:20.108283-06:00",
- "metros_ok": 46,
+ "last_sweep": "2026-11-04T17:24:35.345352-06:00",
+ "metros_ok": 45,
  "metros": [
   {
    "metro": "New York",
@@ -4493,7 +4496,7 @@
  "metro_skip": {},
  "skipped": [],
  "checked_at": {
-  "New York": "2026-11-04T17:18:55.198035-06:00",
+  "New York": "2026-11-04T17:24:35.345263-06:00",
   "Los Angeles": "2026-11-04T17:20:25.966808-06:00",
   "Chicago": "2026-11-04T17:20:39.852215-06:00",
   "Dallas": "2026-11-04T17:20:19.076913-06:00",
@@ -4542,10 +4545,10 @@
   "Richmond": "2026-11-04T17:20:46.726449-06:00",
   "Honolulu": "2026-11-04T17:19:15.523811-06:00",
   "Tucson": "2026-11-04T17:18:48.467138-06:00",
-  "Buffalo": "2026-11-04T17:17:59.051196-06:00"
+  "Buffalo": "2026-11-04T17:24:28.493968-06:00"
  },
  "ok_at": {
-  "New York": "2026-11-04T17:18:55.198055-06:00",
+  "New York": "2026-11-04T17:24:35.345273-06:00",
   "Los Angeles": "2026-11-04T17:20:25.966819-06:00",
   "Chicago": "2026-11-04T17:20:39.852227-06:00",
   "Dallas": "2026-11-04T17:20:19.076924-06:00",
@@ -4594,9 +4597,10 @@
   "Richmond": "2026-11-04T17:20:46.726459-06:00",
   "Honolulu": "2026-11-04T17:19:15.523829-06:00",
   "Tucson": "2026-11-04T17:18:48.467158-06:00",
-  "Buffalo": "2026-11-04T17:17:59.051215-06:00"
+  "Buffalo": "2026-11-04T17:24:28.493981-06:00"
  },
  "hot": [
+  "Middle Atlantic",
   "East South Central"
  ],
  "cycle_seconds": 150,
