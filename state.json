@@ -46,12 +46,12 @@
   },
   "Main Place": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 98,
+ "checks": 103,
  "errors": 0,
- "events": 9,
+ "events": 10,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Leawood": {
@@ -171,48 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T09:33:48.410114-06:00",
+ "last_check": "2026-11-04T09:35:28.433990-06:00",
  "history": [
-  {
-   "t": "2026-11-04T08:14:52-06:00",
-   "ok": true,
-   "ms": 432,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T08:15:12-06:00",
-   "ok": true,
-   "ms": 468,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T08:16:12-06:00",
-   "ok": true,
-   "ms": 616,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T08:17:12-06:00",
-   "ok": true,
-   "ms": 455,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T08:18:12-06:00",
-   "ok": true,
-   "ms": 396,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-04T08:19:12-06:00",
    "ok": true,
@@ -906,6 +866,56 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T09:33:48-06:00",
+   "ok": true,
+   "ms": 268,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:34:08-06:00",
+   "ok": true,
+   "ms": 338,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:34:28-06:00",
+   "ok": true,
+   "ms": 370,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:34:48-06:00",
+   "ok": true,
+   "ms": 352,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:35:08-06:00",
+   "ok": true,
+   "ms": 241,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -928,16 +938,6 @@
    },
    "city": "Saint Louis",
    "state": "MO"
-  },
-  "Main Place": {
-   "miles": 397.06,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Naperville",
-   "state": "IL"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -1028,6 +1028,16 @@
    },
    "city": "Madison",
    "state": "WI"
+  },
+  "Main Place": {
+   "miles": 397.06,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Naperville",
+   "state": "IL"
   }
  },
  "token_expires": "2026-11-26",
