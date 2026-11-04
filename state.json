@@ -26,7 +26,7 @@
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Penn Square": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 116,
+ "checks": 118,
  "errors": 0,
- "events": 12,
+ "events": 13,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Leawood": {
@@ -171,24 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T09:39:48.818556-06:00",
+ "last_check": "2026-11-04T09:40:29.117679-06:00",
  "history": [
-  {
-   "t": "2026-11-04T08:31:33-06:00",
-   "ok": true,
-   "ms": 750,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T08:31:59-06:00",
-   "ok": true,
-   "ms": 328,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-04T08:32:59-06:00",
    "ok": true,
@@ -942,6 +926,26 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T09:39:48-06:00",
+   "ok": true,
+   "ms": 394,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:40:08-06:00",
+   "ok": true,
+   "ms": 298,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -957,6 +961,16 @@
   },
   "West County": {
    "miles": 234.82,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
+  },
+  "Saint Louis Galleria": {
+   "miles": 239.77,
    "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -1015,16 +1029,6 @@
    "city": "Tulsa",
    "state": "OK"
   },
-  "Saint Louis Galleria": {
-   "miles": 239.77,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
-  },
   "Penn Square": {
    "miles": 285.34,
    "status": "unavailable",
@@ -1081,9 +1085,10 @@
    "Leawood",
    "Main Place",
    "West County",
-   "The Promenade at Chenal"
+   "The Promenade at Chenal",
+   "Saint Louis Galleria"
   ],
-  "until": "2026-11-04T10:09:00-06:00"
+  "until": "2026-11-04T10:10:00-06:00"
  },
  "wave_alerted_at": "2026-10-28T09:35:48.576340-05:00"
 }
