@@ -767,3 +767,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-04 11:59,Twenty Ninth Street,R172,Boulder,CO,Denver,2,25.6,available,MK1E4LL/A
 2026-11-04 12:00,Valley Plaza,R550,Bakersfield,CA,,0,223.3,available,MK1F4LL/A
 2026-11-04 12:00,Valley Plaza,R550,Bakersfield,CA,,0,223.3,available,MK1E4LL/A
+2026-11-04 12:01,Fashion Island,R015,Newport Beach,CA,,0,72.0,unavailable,MK1E4LL/A
+2026-11-04 12:01,Vintage Faire,R322,Modesto,CA,,0,67.2,unavailable,MK1E4LL/A
+2026-11-04 12:01,Stonestown,R033,San Francisco,CA,San Francisco,1,5.8,unavailable,MK1F4LL/A
