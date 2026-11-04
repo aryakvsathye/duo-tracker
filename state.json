@@ -34,7 +34,7 @@
   },
   "The Promenade at Chenal": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Saddle Creek": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 395,
+ "checks": 411,
  "errors": 0,
- "events": 55,
+ "events": 56,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Country Club Plaza": {
@@ -171,156 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T11:13:24.805529-06:00",
+ "last_check": "2026-11-04T11:18:45.006420-06:00",
  "history": [
-  {
-   "t": "2026-11-04T10:43:02-06:00",
-   "ok": true,
-   "ms": 639,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:43:22-06:00",
-   "ok": true,
-   "ms": 387,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:43:42-06:00",
-   "ok": true,
-   "ms": 306,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:44:02-06:00",
-   "ok": true,
-   "ms": 250,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:44:22-06:00",
-   "ok": true,
-   "ms": 663,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:44:42-06:00",
-   "ok": true,
-   "ms": 229,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:45:02-06:00",
-   "ok": true,
-   "ms": 278,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:45:22-06:00",
-   "ok": true,
-   "ms": 530,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:45:42-06:00",
-   "ok": true,
-   "ms": 320,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:46:02-06:00",
-   "ok": true,
-   "ms": 256,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:46:22-06:00",
-   "ok": true,
-   "ms": 400,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:46:42-06:00",
-   "ok": true,
-   "ms": 319,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:47:02-06:00",
-   "ok": true,
-   "ms": 315,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:47:22-06:00",
-   "ok": true,
-   "ms": 228,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:47:42-06:00",
-   "ok": true,
-   "ms": 331,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:48:02-06:00",
-   "ok": true,
-   "ms": 336,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-04T10:48:22-06:00",
    "ok": true,
@@ -944,6 +796,134 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T11:13:24-06:00",
+   "ok": true,
+   "ms": 389,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:13:44-06:00",
+   "ok": true,
+   "ms": 377,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:14:04-06:00",
+   "ok": true,
+   "ms": 327,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:14:24-06:00",
+   "ok": true,
+   "ms": 286,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:14:44-06:00",
+   "ok": true,
+   "ms": 589,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:15:04-06:00",
+   "ok": true,
+   "ms": 289,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:15:24-06:00",
+   "ok": true,
+   "ms": 372,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:15:44-06:00",
+   "ok": true,
+   "ms": 323,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:16:04-06:00",
+   "ok": true,
+   "ms": 253,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:16:24-06:00",
+   "ok": true,
+   "ms": 620,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:16:44-06:00",
+   "ok": true,
+   "ms": 405,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:17:04-06:00",
+   "ok": true,
+   "ms": 316,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:17:24-06:00",
+   "ok": true,
+   "ms": 362,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:17:44-06:00",
+   "ok": true,
+   "ms": 389,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:18:04-06:00",
+   "ok": true,
+   "ms": 598,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:18:24-06:00",
+   "ok": true,
+   "ms": 401,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
@@ -956,6 +936,16 @@
    },
    "city": "Tulsa",
    "state": "OK"
+  },
+  "The Promenade at Chenal": {
+   "miles": 320.42,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Little Rock",
+   "state": "AR"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -1027,16 +1017,6 @@
    "city": "Oklahoma City",
    "state": "OK"
   },
-  "The Promenade at Chenal": {
-   "miles": 320.42,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Little Rock",
-   "state": "AR"
-  },
   "Saddle Creek": {
    "miles": 385.15,
    "status": "unavailable",
@@ -1081,9 +1061,10 @@
   "since": "2026-11-04T09:31:28.434980-06:00",
   "stores": [
    "Leawood",
-   "Woodland Hills"
+   "Woodland Hills",
+   "The Promenade at Chenal"
   ],
-  "until": "2026-11-04T11:41:00-06:00"
+  "until": "2026-11-04T11:48:00-06:00"
  },
  "wave_alerted_at": "2026-11-04T10:45:02.469791-06:00"
 }
