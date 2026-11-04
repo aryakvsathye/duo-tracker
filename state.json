@@ -45,13 +45,13 @@
    "MK1E4LL/A": "unavailable"
   },
   "Main Place": {
-   "MK1F4LL/A": "unavailable",
+   "MK1F4LL/A": "available",
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 118,
+ "checks": 123,
  "errors": 0,
- "events": 13,
+ "events": 14,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Leawood": {
@@ -171,48 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T09:40:29.117679-06:00",
+ "last_check": "2026-11-04T09:42:08.786942-06:00",
  "history": [
-  {
-   "t": "2026-11-04T08:32:59-06:00",
-   "ok": true,
-   "ms": 547,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T08:33:59-06:00",
-   "ok": true,
-   "ms": 281,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T08:34:59-06:00",
-   "ok": true,
-   "ms": 304,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T08:35:59-06:00",
-   "ok": true,
-   "ms": 266,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T08:36:59-06:00",
-   "ok": true,
-   "ms": 264,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-04T08:37:59-06:00",
    "ok": true,
@@ -946,6 +906,56 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T09:40:28-06:00",
+   "ok": true,
+   "ms": 693,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:40:48-06:00",
+   "ok": true,
+   "ms": 410,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:41:08-06:00",
+   "ok": true,
+   "ms": 391,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:41:28-06:00",
+   "ok": true,
+   "ms": 486,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:41:48-06:00",
+   "ok": true,
+   "ms": 325,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -988,6 +998,16 @@
    },
    "city": "Little Rock",
    "state": "AR"
+  },
+  "Main Place": {
+   "miles": 397.06,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Naperville",
+   "state": "IL"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -1058,16 +1078,6 @@
    },
    "city": "Madison",
    "state": "WI"
-  },
-  "Main Place": {
-   "miles": 397.06,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Naperville",
-   "state": "IL"
   }
  },
  "token_expires": "2026-11-26",
@@ -1088,7 +1098,7 @@
    "The Promenade at Chenal",
    "Saint Louis Galleria"
   ],
-  "until": "2026-11-04T10:10:00-06:00"
+  "until": "2026-11-04T10:12:00-06:00"
  },
  "wave_alerted_at": "2026-10-28T09:35:48.576340-05:00"
 }
