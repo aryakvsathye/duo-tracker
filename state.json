@@ -46,12 +46,12 @@
   },
   "Main Place": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   }
  },
- "checks": 97,
+ "checks": 98,
  "errors": 0,
- "events": 8,
+ "events": 9,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Leawood": {
@@ -171,16 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T09:33:28.549069-06:00",
+ "last_check": "2026-11-04T09:33:48.410114-06:00",
  "history": [
-  {
-   "t": "2026-11-04T08:13:52-06:00",
-   "ok": true,
-   "ms": 416,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-04T08:14:52-06:00",
    "ok": true,
@@ -904,6 +896,16 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T09:33:28-06:00",
+   "ok": true,
+   "ms": 407,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -926,6 +928,16 @@
    },
    "city": "Saint Louis",
    "state": "MO"
+  },
+  "Main Place": {
+   "miles": 397.06,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Naperville",
+   "state": "IL"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -1016,16 +1028,6 @@
    },
    "city": "Madison",
    "state": "WI"
-  },
-  "Main Place": {
-   "miles": 397.06,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Naperville",
-   "state": "IL"
   }
  },
  "token_expires": "2026-11-26",
@@ -1044,7 +1046,7 @@
    "Main Place",
    "West County"
   ],
-  "until": "2026-11-04T10:02:00-06:00"
+  "until": "2026-11-04T10:03:00-06:00"
  },
  "wave_alerted_at": "2026-10-28T09:35:48.576340-05:00"
 }
