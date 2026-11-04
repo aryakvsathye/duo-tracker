@@ -3576,14 +3576,17 @@
    "metro": "Kansas City",
    "tier": 2,
    "miles": 10.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-04 10:29"
+   },
+   "since": "2026-11-04 10:29"
   },
   "R066": {
    "name": "The Fashion Mall at Keystone",
@@ -4026,14 +4029,17 @@
    "metro": "Little Rock",
    "tier": 3,
    "miles": 3.3,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-04 10:29"
+   },
+   "since": "2026-11-04 10:29"
   },
   "R078": {
    "name": "Short Pump Town Center",
@@ -4180,8 +4186,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-04T10:29:00.202777-06:00",
- "metros_ok": 43,
+ "last_sweep": "2026-11-04T10:29:11.474876-06:00",
+ "metros_ok": 47,
  "metros": [
   {
    "metro": "New York",
@@ -4484,7 +4490,7 @@
    "state": "NY"
   }
  ],
- "retries": 1,
+ "retries": 2,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4494,14 +4500,11 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Orlando": 1
+  "Orlando": 1,
+  "Sacramento": 1,
+  "Omaha": 1
  },
- "skipped": [
-  "Baltimore",
-  "Oklahoma City",
-  "Portland",
-  "Sacramento"
- ],
+ "skipped": [],
  "checked_at": {
   "New York": "2026-11-04T10:27:38.782530-06:00",
   "Los Angeles": "2026-11-04T10:26:28.849019-06:00",
@@ -4526,13 +4529,13 @@
   "Orlando": "2026-11-04T10:24:51.131054-06:00",
   "Charlotte": "2026-11-04T10:25:20.229418-06:00",
   "San Antonio": "2026-11-04T10:27:33.911503-06:00",
-  "Portland": "2026-11-04T10:24:05.245189-06:00",
-  "Sacramento": "2026-11-04T10:24:10.057200-06:00",
+  "Portland": "2026-11-04T10:29:11.474774-06:00",
+  "Sacramento": "2026-11-04T10:29:26.240899-06:00",
   "Pittsburgh": "2026-11-04T10:28:28.340873-06:00",
   "Austin": "2026-11-04T10:27:49.977144-06:00",
   "Las Vegas": "2026-11-04T10:25:39.410597-06:00",
   "Cincinnati": "2026-11-04T10:26:43.032520-06:00",
-  "Kansas City": "2026-11-04T10:25:34.547727-06:00",
+  "Kansas City": "2026-11-04T10:29:06.737490-06:00",
   "Columbus": "2026-11-04T10:27:24.359918-06:00",
   "Indianapolis": "2026-11-04T10:28:23.502786-06:00",
   "Cleveland": "2026-11-04T10:28:45.821649-06:00",
@@ -4540,7 +4543,7 @@
   "Raleigh": "2026-11-04T10:25:25.040203-06:00",
   "Oklahoma City": "2026-11-04T10:26:24.117170-06:00",
   "Tulsa": "2026-11-04T10:27:00.368539-06:00",
-  "Omaha": "2026-11-04T10:25:49.110600-06:00",
+  "Omaha": "2026-11-04T10:29:40.960766-06:00",
   "Des Moines": "2026-11-04T10:25:53.968604-06:00",
   "Little Rock": "2026-11-04T10:27:09.976783-06:00",
   "Memphis": "2026-11-04T10:27:45.121686-06:00",
@@ -4578,13 +4581,13 @@
   "Orlando": "2026-11-04T10:20:13.990096-06:00",
   "Charlotte": "2026-11-04T10:25:20.229440-06:00",
   "San Antonio": "2026-11-04T10:27:33.911523-06:00",
-  "Portland": "2026-11-04T10:14:06.860409-06:00",
+  "Portland": "2026-11-04T10:29:11.474793-06:00",
   "Sacramento": "2026-11-04T10:14:11.676848-06:00",
   "Pittsburgh": "2026-11-04T10:28:28.340892-06:00",
   "Austin": "2026-11-04T10:27:49.977165-06:00",
   "Las Vegas": "2026-11-04T10:25:39.410619-06:00",
   "Cincinnati": "2026-11-04T10:26:43.032540-06:00",
-  "Kansas City": "2026-11-04T10:25:34.547748-06:00",
+  "Kansas City": "2026-11-04T10:29:06.737509-06:00",
   "Columbus": "2026-11-04T10:27:24.359938-06:00",
   "Indianapolis": "2026-11-04T10:28:23.502806-06:00",
   "Cleveland": "2026-11-04T10:28:45.821680-06:00",
@@ -4637,5 +4640,5 @@
   "2026-11-04T01:59-06:00"
  ],
  "last_weekly": "2026-W44",
- "last_error": "2026-11-04T10:24-06:00: Orlando: HTTP 541"
+ "last_error": "2026-11-04T10:29-06:00: Sacramento: HTTP 541; Omaha: HTTP 541"
 }
