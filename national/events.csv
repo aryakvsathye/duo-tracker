@@ -571,3 +571,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-04 09:26,Altamonte,R291,Altamonte Springs,FL,Orlando,2,16.0,available,MK1E4LL/A
 2026-11-04 09:26,Domain NORTHSIDE,R216,Austin,TX,Austin,2,9.3,unavailable,MK1E4LL/A
 2026-11-04 09:27,Lynnhaven Mall,R614,Virginia Beach,VA,,0,103.6,unavailable,MK1E4LL/A
+2026-11-04 09:28,Scottsdale Quarter,R292,Scottsdale,AZ,Phoenix,1,10.0,available,MK1E4LL/A
+2026-11-04 09:28,Waterside Shops,R169,Naples,FL,,0,104.7,available,MK1E4LL/A
