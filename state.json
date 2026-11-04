@@ -26,7 +26,7 @@
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Penn Square": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 162,
+ "checks": 163,
  "errors": 0,
- "events": 18,
+ "events": 19,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Leawood": {
@@ -171,16 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T09:55:09.679786-06:00",
+ "last_check": "2026-11-04T09:55:29.521750-06:00",
  "history": [
-  {
-   "t": "2026-11-04T09:13:45-06:00",
-   "ok": true,
-   "ms": 4039,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-04T09:14:45-06:00",
    "ok": true,
@@ -962,6 +954,16 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T09:55:09-06:00",
+   "ok": true,
+   "ms": 513,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -977,6 +979,16 @@
   },
   "West County": {
    "miles": 234.82,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
+  },
+  "Saint Louis Galleria": {
+   "miles": 239.77,
    "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -1034,16 +1046,6 @@
    },
    "city": "Tulsa",
    "state": "OK"
-  },
-  "Saint Louis Galleria": {
-   "miles": 239.77,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
   },
   "Penn Square": {
    "miles": 285.34,
