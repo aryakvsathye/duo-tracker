@@ -45,13 +45,13 @@
    "MK1E4LL/A": "unavailable"
   },
   "Main Place": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 123,
+ "checks": 124,
  "errors": 0,
- "events": 14,
+ "events": 15,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Leawood": {
@@ -171,16 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T09:42:08.786942-06:00",
+ "last_check": "2026-11-04T09:42:28.983837-06:00",
  "history": [
-  {
-   "t": "2026-11-04T08:37:59-06:00",
-   "ok": true,
-   "ms": 253,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-04T08:38:59-06:00",
    "ok": true,
@@ -956,6 +948,16 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T09:42:08-06:00",
+   "ok": true,
+   "ms": 362,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -998,16 +1000,6 @@
    },
    "city": "Little Rock",
    "state": "AR"
-  },
-  "Main Place": {
-   "miles": 397.06,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Naperville",
-   "state": "IL"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -1078,6 +1070,16 @@
    },
    "city": "Madison",
    "state": "WI"
+  },
+  "Main Place": {
+   "miles": 397.06,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Naperville",
+   "state": "IL"
   }
  },
  "token_expires": "2026-11-26",
