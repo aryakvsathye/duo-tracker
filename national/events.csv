@@ -497,3 +497,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-04 08:05,Upper East Side,R582,New York,NY,New York,1,1.2,available,MK1E4LL/A
 2026-11-04 08:17,Upper East Side,R582,New York,NY,New York,1,1.2,unavailable,MK1E4LL/A
 2026-11-04 08:32,Queens Center,R612,Elmhurst,NY,New York,1,6.5,available,MK1E4LL/A
+2026-11-04 08:33,MarketStreet,R011,Lynnfield,MA,Boston,1,11.6,available,MK1E4LL/A
+2026-11-04 08:33,The Shops at Blackstone Valley,R622,Millbury,MA,Boston,1,37.4,available,MK1E4LL/A
