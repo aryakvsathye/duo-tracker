@@ -855,17 +855,14 @@
    "metro": "Tulsa",
    "tier": 3,
    "miles": 1.6,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-04 09:56"
-   },
-   "since": "2026-11-04 09:56"
+   "since_by_part": {}
   },
   "R058": {
    "name": "Houston Galleria",
@@ -2683,17 +2680,14 @@
    "metro": "Columbus",
    "tier": 2,
    "miles": 9.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-04 09:57"
-   },
-   "since": "2026-11-04 09:57"
+   "since_by_part": {}
   },
   "R003": {
    "name": "Bellevue Square",
@@ -3898,17 +3892,14 @@
    "metro": "Columbus",
    "tier": 2,
    "miles": 2.7,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-04 09:56"
-   },
-   "since": "2026-11-04 09:56"
+   "since_by_part": {}
   },
   "R016": {
    "name": "Walden Galleria",
@@ -4051,13 +4042,12 @@
    "status": "available",
    "parts": {
     "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
    "since_by_part": {
-    "MK1F4LL/A": "2026-11-04 09:40",
-    "MK1E4LL/A": "2026-11-04 09:40"
+    "MK1F4LL/A": "2026-11-04 09:40"
    },
    "since": "2026-11-04 09:40"
   },
@@ -4206,8 +4196,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-04T09:59:45.461300-06:00",
- "metros_ok": 50,
+ "last_sweep": "2026-11-04T10:00:34.202498-06:00",
+ "metros_ok": 48,
  "metros": [
   {
    "metro": "New York",
@@ -4523,7 +4513,7 @@
  "skipped": [],
  "checked_at": {
   "New York": "2026-11-04T09:56:06.664908-06:00",
-  "Los Angeles": "2026-11-04T09:54:40.846354-06:00",
+  "Los Angeles": "2026-11-04T10:00:23.562850-06:00",
   "Chicago": "2026-11-04T09:56:57.919175-06:00",
   "Dallas": "2026-11-04T09:55:31.520128-06:00",
   "Houston": "2026-11-04T09:55:44.980746-06:00",
@@ -4554,16 +4544,16 @@
   "Kansas City": "2026-11-04T09:56:29.465024-06:00",
   "Columbus": "2026-11-04T09:58:47.780727-06:00",
   "Indianapolis": "2026-11-04T09:59:45.461054-06:00",
-  "Cleveland": "2026-11-04T09:56:34.824521-06:00",
+  "Cleveland": "2026-11-04T10:00:28.888398-06:00",
   "Nashville": "2026-11-04T09:57:30.073044-06:00",
   "Raleigh": "2026-11-04T09:58:37.128699-06:00",
-  "Oklahoma City": "2026-11-04T09:54:35.447181-06:00",
+  "Oklahoma City": "2026-11-04T10:00:18.119355-06:00",
   "Tulsa": "2026-11-04T09:55:15.601498-06:00",
   "Omaha": "2026-11-04T09:56:45.678765-06:00",
   "Des Moines": "2026-11-04T09:57:13.925578-06:00",
   "Little Rock": "2026-11-04T09:55:20.935508-06:00",
   "Memphis": "2026-11-04T09:59:00.028606-06:00",
-  "Madison": "2026-11-04T09:56:40.260045-06:00",
+  "Madison": "2026-11-04T10:00:34.202358-06:00",
   "Albuquerque": "2026-11-04T09:57:24.685702-06:00",
   "Salt Lake City": "2026-11-04T09:57:47.529377-06:00",
   "Louisville": "2026-11-04T09:59:05.296333-06:00",
@@ -4575,7 +4565,7 @@
  },
  "ok_at": {
   "New York": "2026-11-04T09:56:06.664927-06:00",
-  "Los Angeles": "2026-11-04T09:54:40.846374-06:00",
+  "Los Angeles": "2026-11-04T10:00:23.562874-06:00",
   "Chicago": "2026-11-04T09:56:57.919195-06:00",
   "Dallas": "2026-11-04T09:55:31.520149-06:00",
   "Houston": "2026-11-04T09:55:44.980765-06:00",
@@ -4606,16 +4596,16 @@
   "Kansas City": "2026-11-04T09:56:29.465044-06:00",
   "Columbus": "2026-11-04T09:58:47.780748-06:00",
   "Indianapolis": "2026-11-04T09:59:45.461071-06:00",
-  "Cleveland": "2026-11-04T09:56:34.824541-06:00",
+  "Cleveland": "2026-11-04T10:00:28.888419-06:00",
   "Nashville": "2026-11-04T09:57:30.073063-06:00",
   "Raleigh": "2026-11-04T09:58:37.128717-06:00",
-  "Oklahoma City": "2026-11-04T09:54:35.447206-06:00",
+  "Oklahoma City": "2026-11-04T10:00:18.119376-06:00",
   "Tulsa": "2026-11-04T09:55:15.601518-06:00",
   "Omaha": "2026-11-04T09:56:45.678817-06:00",
   "Des Moines": "2026-11-04T09:57:13.925598-06:00",
   "Little Rock": "2026-11-04T09:55:20.935528-06:00",
   "Memphis": "2026-11-04T09:59:00.028624-06:00",
-  "Madison": "2026-11-04T09:56:40.260063-06:00",
+  "Madison": "2026-11-04T10:00:34.202380-06:00",
   "Albuquerque": "2026-11-04T09:57:24.685720-06:00",
   "Salt Lake City": "2026-11-04T09:57:47.529396-06:00",
   "Louisville": "2026-11-04T09:59:05.296350-06:00",
