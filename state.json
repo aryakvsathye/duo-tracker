@@ -17,7 +17,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "Woodland Hills": {
-   "MK1F4LL/A": "unavailable",
+   "MK1F4LL/A": "available",
    "MK1E4LL/A": "unavailable"
   },
   "West County": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 166,
+ "checks": 167,
  "errors": 0,
- "events": 20,
+ "events": 21,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Leawood": {
@@ -171,16 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T09:56:29.517731-06:00",
+ "last_check": "2026-11-04T09:56:49.673865-06:00",
  "history": [
-  {
-   "t": "2026-11-04T09:17:45-06:00",
-   "ok": true,
-   "ms": 430,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-04T09:18:45-06:00",
    "ok": true,
@@ -970,6 +962,16 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T09:56:29-06:00",
+   "ok": true,
+   "ms": 351,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -982,6 +984,16 @@
    },
    "city": "Leawood",
    "state": "KS"
+  },
+  "Woodland Hills": {
+   "miles": 212.92,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Tulsa",
+   "state": "OK"
   },
   "West County": {
    "miles": 234.82,
@@ -1032,16 +1044,6 @@
    },
    "city": "West Des Moines",
    "state": "IA"
-  },
-  "Woodland Hills": {
-   "miles": 212.92,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Tulsa",
-   "state": "OK"
   },
   "Saint Louis Galleria": {
    "miles": 239.77,
@@ -1109,9 +1111,10 @@
    "The Promenade at Chenal",
    "Saint Louis Galleria",
    "Main Place",
-   "Leawood"
+   "Leawood",
+   "Woodland Hills"
   ],
-  "until": "2026-11-04T10:25:00-06:00"
+  "until": "2026-11-04T10:26:00-06:00"
  },
  "wave_alerted_at": "2026-11-04T09:43:08.813834-06:00"
 }
