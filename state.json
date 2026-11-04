@@ -17,7 +17,7 @@
    "MK1E4LL/A": "available"
   },
   "Woodland Hills": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   },
   "West County": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 716,
+ "checks": 722,
  "errors": 0,
- "events": 70,
+ "events": 71,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Jordan Creek": {
@@ -171,56 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T13:57:59.019725-06:00",
+ "last_check": "2026-11-04T13:59:59.010191-06:00",
  "history": [
-  {
-   "t": "2026-11-04T13:15:16-06:00",
-   "ok": true,
-   "ms": 403,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T13:15:36-06:00",
-   "ok": true,
-   "ms": 318,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T13:15:56-06:00",
-   "ok": true,
-   "ms": 355,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T13:16:16-06:00",
-   "ok": true,
-   "ms": 464,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T13:16:36-06:00",
-   "ok": true,
-   "ms": 336,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T13:16:56-06:00",
-   "ok": true,
-   "ms": 438,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-04T13:17:16-06:00",
    "ok": true,
@@ -892,6 +844,66 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-04T13:57:58-06:00",
+   "ok": true,
+   "ms": 513,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:58:18-06:00",
+   "ok": true,
+   "ms": 417,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:58:38-06:00",
+   "ok": true,
+   "ms": 403,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:58:58-06:00",
+   "ok": true,
+   "ms": 328,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:59:18-06:00",
+   "ok": true,
+   "ms": 460,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:59:38-06:00",
+   "ok": true,
+   "ms": 340,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -904,16 +916,6 @@
    },
    "city": "West Des Moines",
    "state": "IA"
-  },
-  "Woodland Hills": {
-   "miles": 212.92,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Tulsa",
-   "state": "OK"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -944,6 +946,16 @@
    },
    "city": "Omaha",
    "state": "NE"
+  },
+  "Woodland Hills": {
+   "miles": 212.92,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Tulsa",
+   "state": "OK"
   },
   "West County": {
    "miles": 234.82,
