@@ -26,7 +26,7 @@
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Penn Square": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 126,
+ "checks": 130,
  "errors": 0,
- "events": 16,
+ "events": 17,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Country Club Plaza": {
@@ -171,40 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T09:43:08.813821-06:00",
+ "last_check": "2026-11-04T09:44:28.933656-06:00",
  "history": [
-  {
-   "t": "2026-11-04T08:40:21-06:00",
-   "ok": true,
-   "ms": 463,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T08:41:21-06:00",
-   "ok": true,
-   "ms": 396,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T08:42:21-06:00",
-   "ok": true,
-   "ms": 416,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T08:43:21-06:00",
-   "ok": true,
-   "ms": 408,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-04T08:44:21-06:00",
    "ok": true,
@@ -962,21 +930,43 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T09:43:08-06:00",
+   "ok": true,
+   "ms": 388,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:43:28-06:00",
+   "ok": true,
+   "ms": 264,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:43:48-06:00",
+   "ok": true,
+   "ms": 263,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T09:44:08-06:00",
+   "ok": true,
+   "ms": 481,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
   "West County": {
    "miles": 234.82,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
-  },
-  "Saint Louis Galleria": {
-   "miles": 239.77,
    "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -1044,6 +1034,16 @@
    },
    "city": "Tulsa",
    "state": "OK"
+  },
+  "Saint Louis Galleria": {
+   "miles": 239.77,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
   },
   "Penn Square": {
    "miles": 285.34,
