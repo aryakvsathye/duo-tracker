@@ -33,7 +33,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "The Promenade at Chenal": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   },
   "Saddle Creek": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 181,
+ "checks": 184,
  "errors": 0,
- "events": 25,
+ "events": 26,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Country Club Plaza": {
@@ -171,38 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T10:01:29.603955-06:00",
+ "last_check": "2026-11-04T10:02:29.545079-06:00",
  "history": [
-  {
-   "t": "2026-11-04T09:31:28-06:00",
-   "ok": true,
-   "ms": 293,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T09:31:48-06:00",
-   "ok": true,
-   "ms": 243,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T09:32:08-06:00",
-   "ok": true,
-   "ms": 535,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
   {
    "t": "2026-11-04T09:32:28-06:00",
    "ok": true,
@@ -1000,19 +970,33 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T10:01:29-06:00",
+   "ok": true,
+   "ms": 290,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T10:01:49-06:00",
+   "ok": true,
+   "ms": 279,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T10:02:09-06:00",
+   "ok": true,
+   "ms": 275,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
-  "The Promenade at Chenal": {
-   "miles": 320.42,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Little Rock",
-   "state": "AR"
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -1093,6 +1077,16 @@
    "city": "Oklahoma City",
    "state": "OK"
   },
+  "The Promenade at Chenal": {
+   "miles": 320.42,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Little Rock",
+   "state": "AR"
+  },
   "Saddle Creek": {
    "miles": 385.15,
    "status": "unavailable",
@@ -1136,7 +1130,6 @@
  "wave": {
   "since": "2026-11-04T09:31:28.434980-06:00",
   "stores": [
-   "Main Place",
    "Leawood",
    "Saint Louis Galleria",
    "Woodland Hills"
