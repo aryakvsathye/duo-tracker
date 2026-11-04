@@ -34,7 +34,7 @@
   },
   "The Promenade at Chenal": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Saddle Creek": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 441,
+ "checks": 443,
  "errors": 0,
- "events": 59,
+ "events": 60,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Leawood": {
@@ -171,24 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T11:28:42.136050-06:00",
+ "last_check": "2026-11-04T11:29:22.119005-06:00",
  "history": [
-  {
-   "t": "2026-11-04T10:58:20-06:00",
-   "ok": true,
-   "ms": 558,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T10:58:40-06:00",
-   "ok": true,
-   "ms": 279,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-04T10:59:00-06:00",
    "ok": true,
@@ -912,6 +896,26 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T11:28:41-06:00",
+   "ok": true,
+   "ms": 513,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T11:29:01-06:00",
+   "ok": true,
+   "ms": 312,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -924,6 +928,16 @@
    },
    "city": "Leawood",
    "state": "KS"
+  },
+  "The Promenade at Chenal": {
+   "miles": 320.42,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Little Rock",
+   "state": "AR"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -995,16 +1009,6 @@
    "city": "Oklahoma City",
    "state": "OK"
   },
-  "The Promenade at Chenal": {
-   "miles": 320.42,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Little Rock",
-   "state": "AR"
-  },
   "Saddle Creek": {
    "miles": 385.15,
    "status": "unavailable",
@@ -1052,7 +1056,7 @@
    "Woodland Hills",
    "The Promenade at Chenal"
   ],
-  "until": "2026-11-04T11:58:00-06:00"
+  "until": "2026-11-04T11:59:00-06:00"
  },
  "wave_alerted_at": "2026-11-04T10:45:02.469791-06:00"
 }
