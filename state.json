@@ -18,7 +18,7 @@
   },
   "Woodland Hills": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "West County": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 613,
+ "checks": 630,
  "errors": 0,
- "events": 67,
+ "events": 68,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Country Club Plaza": {
@@ -171,144 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T13:10:36.788725-06:00",
+ "last_check": "2026-11-04T13:16:36.375343-06:00",
  "history": [
-  {
-   "t": "2026-11-04T11:56:13-06:00",
-   "ok": true,
-   "ms": 389,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T11:56:33-06:00",
-   "ok": true,
-   "ms": 353,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T11:56:53-06:00",
-   "ok": true,
-   "ms": 297,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T11:57:13-06:00",
-   "ok": true,
-   "ms": 309,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T11:57:33-06:00",
-   "ok": true,
-   "ms": 335,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T11:57:53-06:00",
-   "ok": true,
-   "ms": 402,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T11:58:13-06:00",
-   "ok": true,
-   "ms": 361,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T11:58:33-06:00",
-   "ok": true,
-   "ms": 478,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T11:58:53-06:00",
-   "ok": true,
-   "ms": 493,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-04T11:59:13-06:00",
-   "ok": true,
-   "ms": 292,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T12:00:13-06:00",
-   "ok": true,
-   "ms": 457,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T12:01:13-06:00",
-   "ok": true,
-   "ms": 429,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T12:02:13-06:00",
-   "ok": true,
-   "ms": 323,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T12:03:13-06:00",
-   "ok": true,
-   "ms": 418,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T12:03:34-06:00",
-   "ok": true,
-   "ms": 445,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T12:04:34-06:00",
-   "ok": true,
-   "ms": 451,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-04T12:05:34-06:00",
-   "ok": true,
-   "ms": 438,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-04T12:06:34-06:00",
    "ok": true,
@@ -896,19 +760,145 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T13:10:56-06:00",
+   "ok": true,
+   "ms": 521,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:11:16-06:00",
+   "ok": true,
+   "ms": 332,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:11:36-06:00",
+   "ok": true,
+   "ms": 378,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:11:56-06:00",
+   "ok": true,
+   "ms": 288,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:12:16-06:00",
+   "ok": true,
+   "ms": 336,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:12:36-06:00",
+   "ok": true,
+   "ms": 307,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:12:56-06:00",
+   "ok": true,
+   "ms": 308,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:13:16-06:00",
+   "ok": true,
+   "ms": 341,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:13:36-06:00",
+   "ok": true,
+   "ms": 356,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:13:56-06:00",
+   "ok": true,
+   "ms": 322,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:14:16-06:00",
+   "ok": true,
+   "ms": 372,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:14:36-06:00",
+   "ok": true,
+   "ms": 365,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:14:56-06:00",
+   "ok": true,
+   "ms": 349,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:15:16-06:00",
+   "ok": true,
+   "ms": 403,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:15:36-06:00",
+   "ok": true,
+   "ms": 318,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:15:56-06:00",
+   "ok": true,
+   "ms": 355,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-04T13:16:16-06:00",
+   "ok": true,
+   "ms": 464,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
-  "Woodland Hills": {
-   "miles": 212.92,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Tulsa",
-   "state": "OK"
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -948,6 +938,16 @@
    },
    "city": "West Des Moines",
    "state": "IA"
+  },
+  "Woodland Hills": {
+   "miles": 212.92,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Tulsa",
+   "state": "OK"
   },
   "West County": {
    "miles": 234.82,
