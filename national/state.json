@@ -459,17 +459,14 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 1.7,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "East North Central",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-04 09:56"
-   },
-   "since": "2026-11-04 09:56"
+   "since_by_part": {}
   },
   "R089": {
    "name": "Old Orchard",
@@ -4014,13 +4011,12 @@
    "miles": 36.9,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "East North Central",
    "since_by_part": {
-    "MK1F4LL/A": "2026-11-04 09:58",
     "MK1E4LL/A": "2026-11-04 09:58"
    },
    "since": "2026-11-04 09:58"
@@ -4210,8 +4206,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-04T09:59:38.642956-06:00",
- "metros_ok": 48,
+ "last_sweep": "2026-11-04T09:59:45.461300-06:00",
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4557,7 +4553,7 @@
   "Cincinnati": "2026-11-04T09:58:31.781089-06:00",
   "Kansas City": "2026-11-04T09:56:29.465024-06:00",
   "Columbus": "2026-11-04T09:58:47.780727-06:00",
-  "Indianapolis": "2026-11-04T09:55:26.204063-06:00",
+  "Indianapolis": "2026-11-04T09:59:45.461054-06:00",
   "Cleveland": "2026-11-04T09:56:34.824521-06:00",
   "Nashville": "2026-11-04T09:57:30.073044-06:00",
   "Raleigh": "2026-11-04T09:58:37.128699-06:00",
@@ -4609,7 +4605,7 @@
   "Cincinnati": "2026-11-04T09:58:31.781108-06:00",
   "Kansas City": "2026-11-04T09:56:29.465044-06:00",
   "Columbus": "2026-11-04T09:58:47.780748-06:00",
-  "Indianapolis": "2026-11-04T09:55:26.204082-06:00",
+  "Indianapolis": "2026-11-04T09:59:45.461071-06:00",
   "Cleveland": "2026-11-04T09:56:34.824541-06:00",
   "Nashville": "2026-11-04T09:57:30.073063-06:00",
   "Raleigh": "2026-11-04T09:58:37.128717-06:00",
