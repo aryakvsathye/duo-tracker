@@ -33,8 +33,8 @@
    "MK1E4LL/A": "unavailable"
   },
   "The Promenade at Chenal": {
-   "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1F4LL/A": "available",
+   "MK1E4LL/A": "available"
   },
   "Saddle Creek": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 115,
+ "checks": 116,
  "errors": 0,
- "events": 10,
+ "events": 12,
  "last_heartbeat": "2026-11-04",
  "nearby": {
   "Leawood": {
@@ -171,16 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-04T09:39:08.453689-06:00",
+ "last_check": "2026-11-04T09:39:48.818556-06:00",
  "history": [
-  {
-   "t": "2026-11-04T08:30:33-06:00",
-   "ok": true,
-   "ms": 427,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-04T08:31:33-06:00",
    "ok": true,
@@ -940,6 +932,16 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-04T09:39:28-06:00",
+   "ok": true,
+   "ms": 492,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -962,6 +964,16 @@
    },
    "city": "Saint Louis",
    "state": "MO"
+  },
+  "The Promenade at Chenal": {
+   "miles": 320.42,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Little Rock",
+   "state": "AR"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -1023,16 +1035,6 @@
    "city": "Oklahoma City",
    "state": "OK"
   },
-  "The Promenade at Chenal": {
-   "miles": 320.42,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Little Rock",
-   "state": "AR"
-  },
   "Saddle Creek": {
    "miles": 385.15,
    "status": "unavailable",
@@ -1078,9 +1080,10 @@
   "stores": [
    "Leawood",
    "Main Place",
-   "West County"
+   "West County",
+   "The Promenade at Chenal"
   ],
-  "until": "2026-11-04T10:03:00-06:00"
+  "until": "2026-11-04T10:09:00-06:00"
  },
  "wave_alerted_at": "2026-10-28T09:35:48.576340-05:00"
 }
