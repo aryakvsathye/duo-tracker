@@ -607,14 +607,17 @@
    "metro": "",
    "tier": 0,
    "miles": 71.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "East North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-05 07:10"
+   },
+   "since": "2026-11-05 07:10"
   },
   "R257": {
    "name": "Bayshore",
@@ -1561,18 +1564,14 @@
    "metro": "",
    "tier": 0,
    "miles": 144.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East South Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-05 07:05",
-    "MK1E4LL/A": "2026-11-05 07:03"
-   },
-   "since": "2026-11-05 07:03"
+   "since_by_part": {}
   },
   "R266": {
    "name": "Bridge Street",
@@ -4185,8 +4184,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-05T07:09:04.628256-06:00",
- "metros_ok": 45,
+ "last_sweep": "2026-11-05T07:10:57.296426-06:00",
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4509,13 +4508,13 @@
  "checked_at": {
   "New York": "2026-11-05T07:09:32.868603-06:00",
   "Los Angeles": "2026-11-05T07:08:23.751604-06:00",
-  "Chicago": "2026-11-05T07:05:52.577881-06:00",
+  "Chicago": "2026-11-05T07:10:53.075115-06:00",
   "Dallas": "2026-11-05T07:08:55.959632-06:00",
   "Houston": "2026-11-05T07:06:46.100944-06:00",
   "Washington": "2026-11-05T07:09:19.224208-06:00",
   "Philadelphia": "2026-11-05T07:08:15.054651-06:00",
-  "Atlanta": "2026-11-05T07:05:48.310996-06:00",
-  "Miami": "2026-11-05T07:05:56.862325-06:00",
+  "Atlanta": "2026-11-05T07:10:48.632638-06:00",
+  "Miami": "2026-11-05T07:10:57.296321-06:00",
   "Phoenix": "2026-11-05T07:06:54.725332-06:00",
   "Boston": "2026-11-05T07:08:51.712551-06:00",
   "San Francisco": "2026-11-05T07:09:46.253899-06:00",
@@ -4561,13 +4560,13 @@
  "ok_at": {
   "New York": "2026-11-05T07:02:13.536557-06:00",
   "Los Angeles": "2026-11-05T07:08:23.751623-06:00",
-  "Chicago": "2026-11-05T07:05:52.577901-06:00",
+  "Chicago": "2026-11-05T07:10:53.075135-06:00",
   "Dallas": "2026-11-05T07:08:55.959649-06:00",
   "Houston": "2026-11-05T07:06:46.100984-06:00",
   "Washington": "2026-11-05T07:00:41.327364-06:00",
   "Philadelphia": "2026-11-05T07:08:15.054667-06:00",
-  "Atlanta": "2026-11-05T07:05:48.311015-06:00",
-  "Miami": "2026-11-05T07:05:56.862346-06:00",
+  "Atlanta": "2026-11-05T07:10:48.632655-06:00",
+  "Miami": "2026-11-05T07:10:57.296338-06:00",
   "Phoenix": "2026-11-05T07:06:54.725352-06:00",
   "Boston": "2026-11-05T07:08:51.712575-06:00",
   "San Francisco": "2026-11-05T07:00:44.639354-06:00",
