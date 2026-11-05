@@ -1054,3 +1054,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-05 11:01,Bridge Street,R266,Huntsville,AL,,0,87.9,available,MK1E4LL/A
 2026-11-05 11:02,Sherman Oaks,R148,Sherman Oaks,CA,Los Angeles,1,7.0,available,MK1F4LL/A
 2026-11-05 11:02,Sherman Oaks,R148,Sherman Oaks,CA,Los Angeles,1,7.0,available,MK1E4LL/A
+2026-11-05 11:03,Fairfax Corner,R221,Fairfax,VA,Washington,1,18.5,unavailable,MK1F4LL/A
