@@ -1671,14 +1671,17 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 3.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-05 09:03"
+   },
+   "since": "2026-11-05 09:03"
   },
   "R312": {
    "name": "Dadeland",
@@ -1689,14 +1692,17 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 9.3,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-05 09:03"
+   },
+   "since": "2026-11-05 09:03"
   },
   "R012": {
    "name": "The Falls",
@@ -1817,13 +1823,12 @@
    "miles": 104.7,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
    "since_by_part": {
-    "MK1F4LL/A": "2026-11-05 08:58",
     "MK1E4LL/A": "2026-11-05 08:58"
    },
    "since": "2026-11-05 08:58"
@@ -2563,17 +2568,14 @@
    "metro": "Detroit",
    "tier": 2,
    "miles": 36.3,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-05 08:59"
-   },
-   "since": "2026-11-05 08:59"
+   "since_by_part": {}
   },
   "R299": {
    "name": "Franklin Park Mall",
@@ -3235,14 +3237,18 @@
    "metro": "Tampa",
    "tier": 2,
    "miles": 13.0,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-05 09:03",
+    "MK1E4LL/A": "2026-11-05 09:03"
+   },
+   "since": "2026-11-05 09:03"
   },
   "R615": {
    "name": "University Town Center",
@@ -4202,8 +4208,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-05T09:03:32.276467-06:00",
- "metros_ok": 50,
+ "last_sweep": "2026-11-05T09:04:00.649513-06:00",
+ "metros_ok": 46,
  "metros": [
   {
    "metro": "New York",
@@ -4526,17 +4532,17 @@
   "Washington": "2026-11-05T09:01:27.411447-06:00",
   "Philadelphia": "2026-11-05T09:02:17.455073-06:00",
   "Atlanta": "2026-11-05T09:01:43.411253-06:00",
-  "Miami": "2026-11-05T08:58:29.902501-06:00",
+  "Miami": "2026-11-05T09:03:49.914294-06:00",
   "Phoenix": "2026-11-05T09:00:48.656173-06:00",
   "Boston": "2026-11-05T09:03:32.276208-06:00",
   "San Francisco": "2026-11-05T09:03:10.461346-06:00",
-  "Detroit": "2026-11-05T08:58:22.824200-06:00",
+  "Detroit": "2026-11-05T09:03:44.503124-06:00",
   "Seattle": "2026-11-05T08:59:09.008509-06:00",
   "Minneapolis": "2026-11-05T09:00:20.561462-06:00",
   "San Diego": "2026-11-05T08:59:16.240793-06:00",
-  "Tampa": "2026-11-05T08:58:35.362365-06:00",
+  "Tampa": "2026-11-05T09:03:55.291307-06:00",
   "Denver": "2026-11-05T09:02:01.112285-06:00",
-  "Baltimore": "2026-11-05T08:58:40.693070-06:00",
+  "Baltimore": "2026-11-05T09:04:00.649397-06:00",
   "St. Louis": "2026-11-05T09:00:36.636648-06:00",
   "Orlando": "2026-11-05T08:58:46.048938-06:00",
   "Charlotte": "2026-11-05T08:58:53.062763-06:00",
@@ -4547,7 +4553,7 @@
   "Austin": "2026-11-05T09:01:37.882995-06:00",
   "Las Vegas": "2026-11-05T09:02:33.541814-06:00",
   "Cincinnati": "2026-11-05T08:59:21.739798-06:00",
-  "Kansas City": "2026-11-05T08:58:17.417554-06:00",
+  "Kansas City": "2026-11-05T09:03:39.131612-06:00",
   "Columbus": "2026-11-05T09:00:25.850743-06:00",
   "Indianapolis": "2026-11-05T09:00:59.289033-06:00",
   "Cleveland": "2026-11-05T09:01:04.589417-06:00",
@@ -4578,17 +4584,17 @@
   "Washington": "2026-11-05T09:01:27.411464-06:00",
   "Philadelphia": "2026-11-05T09:02:17.455090-06:00",
   "Atlanta": "2026-11-05T09:01:43.411271-06:00",
-  "Miami": "2026-11-05T08:58:29.902523-06:00",
+  "Miami": "2026-11-05T09:03:49.914312-06:00",
   "Phoenix": "2026-11-05T09:00:48.656192-06:00",
   "Boston": "2026-11-05T09:03:32.276227-06:00",
   "San Francisco": "2026-11-05T09:03:10.461363-06:00",
-  "Detroit": "2026-11-05T08:58:22.824223-06:00",
+  "Detroit": "2026-11-05T09:03:44.503143-06:00",
   "Seattle": "2026-11-05T08:59:09.008532-06:00",
   "Minneapolis": "2026-11-05T09:00:20.561479-06:00",
   "San Diego": "2026-11-05T08:59:16.240813-06:00",
-  "Tampa": "2026-11-05T08:58:35.362386-06:00",
+  "Tampa": "2026-11-05T09:03:55.291326-06:00",
   "Denver": "2026-11-05T09:02:01.112304-06:00",
-  "Baltimore": "2026-11-05T08:58:40.693093-06:00",
+  "Baltimore": "2026-11-05T09:04:00.649414-06:00",
   "St. Louis": "2026-11-05T09:00:36.636664-06:00",
   "Orlando": "2026-11-05T08:58:46.048960-06:00",
   "Charlotte": "2026-11-05T08:58:53.062786-06:00",
@@ -4599,7 +4605,7 @@
   "Austin": "2026-11-05T09:01:37.883012-06:00",
   "Las Vegas": "2026-11-05T09:02:33.541832-06:00",
   "Cincinnati": "2026-11-05T08:59:21.739820-06:00",
-  "Kansas City": "2026-11-05T08:58:17.417578-06:00",
+  "Kansas City": "2026-11-05T09:03:39.131633-06:00",
   "Columbus": "2026-11-05T09:00:25.850762-06:00",
   "Indianapolis": "2026-11-05T09:00:59.289051-06:00",
   "Cleveland": "2026-11-05T09:01:04.589435-06:00",
@@ -4621,7 +4627,10 @@
   "Tucson": "2026-11-05T09:00:31.316194-06:00",
   "Buffalo": "2026-11-05T09:03:26.882987-06:00"
  },
- "hot": [],
+ "hot": [
+  "New England",
+  "South Atlantic"
+ ],
  "cycle_seconds": 150,
  "pace": 5.0,
  "pace_since": "2026-11-05T08:43:52.155272-06:00",
