@@ -4491,12 +4491,11 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Atlanta": 1,
-  "Miami": 1
+  "Salt Lake City": 1
  },
  "skipped": [
-  "San Francisco",
-  "Washington"
+  "Atlanta",
+  "Miami"
  ],
  "checked_at": {
   "New York": "2026-11-05T07:37:34.704214-06:00",
@@ -4542,7 +4541,7 @@
   "Memphis": "2026-11-05T07:36:40.504159-06:00",
   "Madison": "2026-11-05T07:39:21.032546-06:00",
   "Albuquerque": "2026-11-05T07:38:29.592217-06:00",
-  "Salt Lake City": "2026-11-05T07:35:10.319989-06:00",
+  "Salt Lake City": "2026-11-05T07:39:37.065979-06:00",
   "Louisville": "2026-11-05T07:36:55.319239-06:00",
   "Birmingham": "2026-11-05T07:35:59.226682-06:00",
   "Richmond": "2026-11-05T07:38:25.223835-06:00",
@@ -4633,5 +4632,5 @@
   "2026-11-05T07:04-06:00"
  ],
  "last_weekly": "2026-W44",
- "last_error": "2026-11-05T07:34-06:00: Atlanta: HTTP 541; Miami: HTTP 541"
+ "last_error": "2026-11-05T07:39-06:00: Salt Lake City: HTTP 541"
 }
