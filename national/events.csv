@@ -960,3 +960,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-05 08:53,Bethesda Row,R112,Bethesda,MD,Washington,1,6.5,available,MK1E4LL/A
 2026-11-05 08:54,Polaris Fashion Place,R417,Columbus,OH,Columbus,2,9.5,unavailable,MK1E4LL/A
 2026-11-05 08:54,Bethesda Row,R112,Bethesda,MD,Washington,1,6.5,unavailable,MK1E4LL/A
+2026-11-05 08:58,Eastview,R140,Victor,NY,,0,67.5,available,MK1F4LL/A
+2026-11-05 08:58,Downtown Detroit,R763,Detroit,MI,Detroit,2,16.7,available,MK1E4LL/A
