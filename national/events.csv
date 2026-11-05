@@ -862,3 +862,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-05 07:25,World Trade Center,R654,New York,NY,New York,1,4.1,unavailable,MK1E4LL/A
 2026-11-05 07:28,Ross Park,R413,Pittsburgh,PA,Pittsburgh,2,2.2,available,MK1F4LL/A
 2026-11-05 07:28,Ross Park,R413,Pittsburgh,PA,Pittsburgh,2,2.2,available,MK1E4LL/A
+2026-11-05 07:31,Ross Park,R413,Pittsburgh,PA,Pittsburgh,2,2.2,unavailable,MK1F4LL/A
+2026-11-05 07:31,Mayfair,R059,Wauwatosa,WI,,0,71.6,available,MK1E4LL/A
