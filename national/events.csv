@@ -1098,3 +1098,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-05 15:03,The Summit,R225,Birmingham,AL,Birmingham,3,0.6,available,MK1F4LL/A
 2026-11-05 15:08,The Summit,R225,Birmingham,AL,Birmingham,3,0.6,unavailable,MK1F4LL/A
 2026-11-05 15:10,West Town Mall,R203,Knoxville,TN,,0,144.5,available,MK1E4LL/A
+2026-11-05 15:14,Boise Towne Square,R303,Boise,ID,,0,299.0,unavailable,MK1E4LL/A
+2026-11-05 15:14,West Town Mall,R203,Knoxville,TN,,0,144.5,unavailable,MK1E4LL/A
