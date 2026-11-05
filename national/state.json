@@ -984,14 +984,17 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 0.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-05 08:01"
+   },
+   "since": "2026-11-05 08:01"
   },
   "R287": {
    "name": "Georgetown",
@@ -1002,14 +1005,17 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 2.4,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-05 08:01"
+   },
+   "since": "2026-11-05 08:01"
   },
   "R129": {
    "name": "Pentagon City",
@@ -1074,14 +1080,17 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 10.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-05 08:01"
+   },
+   "since": "2026-11-05 08:01"
   },
   "R010": {
    "name": "Tysons Corner",
@@ -3708,14 +3717,18 @@
    "metro": "",
    "tier": 0,
    "miles": 65.4,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-05 08:01",
+    "MK1E4LL/A": "2026-11-05 08:01"
+   },
+   "since": "2026-11-05 08:01"
   },
   "R049": {
    "name": "Southpoint",
@@ -3744,14 +3757,17 @@
    "metro": "Raleigh",
    "tier": 2,
    "miles": 1.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-05 08:01"
+   },
+   "since": "2026-11-05 08:01"
   },
   "R318": {
    "name": "Charleston",
@@ -4189,8 +4205,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-05T08:01:02.429287-06:00",
- "metros_ok": 40,
+ "last_sweep": "2026-11-05T08:01:30.516430-06:00",
+ "metros_ok": 42,
  "metros": [
   {
    "metro": "New York",
@@ -4519,12 +4535,12 @@
   "Los Angeles": "2026-11-05T07:58:02.148887-06:00",
   "Chicago": "2026-11-05T07:56:35.697524-06:00",
   "Dallas": "2026-11-05T07:58:15.266426-06:00",
-  "Houston": "2026-11-05T07:55:58.798757-06:00",
+  "Houston": "2026-11-05T08:01:08.145792-06:00",
   "Washington": "2026-11-05T08:00:18.647860-06:00",
   "Philadelphia": "2026-11-05T07:58:28.239583-06:00",
   "Atlanta": "2026-11-05T08:00:31.598385-06:00",
   "Miami": "2026-11-05T08:00:44.750406-06:00",
-  "Phoenix": "2026-11-05T07:56:03.170647-06:00",
+  "Phoenix": "2026-11-05T08:01:16.917069-06:00",
   "Boston": "2026-11-05T07:58:10.819989-06:00",
   "San Francisco": "2026-11-05T07:58:23.953852-06:00",
   "Detroit": "2026-11-05T07:57:01.651826-06:00",
@@ -4533,10 +4549,10 @@
   "San Diego": "2026-11-05T08:00:27.257261-06:00",
   "Tampa": "2026-11-05T08:00:57.952053-06:00",
   "Denver": "2026-11-05T07:57:12.434255-06:00",
-  "Baltimore": "2026-11-05T07:57:29.662780-06:00",
+  "Baltimore": "2026-11-05T08:01:12.519344-06:00",
   "St. Louis": "2026-11-05T08:01:02.429175-06:00",
-  "Orlando": "2026-11-05T07:57:33.956541-06:00",
-  "Charlotte": "2026-11-05T07:57:42.397059-06:00",
+  "Orlando": "2026-11-05T08:01:21.222645-06:00",
+  "Charlotte": "2026-11-05T08:01:25.828411-06:00",
   "San Antonio": "2026-11-05T07:56:20.677568-06:00",
   "Portland": "2026-11-05T07:57:38.393725-06:00",
   "Sacramento": "2026-11-05T07:57:42.980059-06:00",
@@ -4548,7 +4564,7 @@
   "Columbus": "2026-11-05T07:57:25.368777-06:00",
   "Indianapolis": "2026-11-05T07:58:38.969348-06:00",
   "Cleveland": "2026-11-05T07:58:43.414396-06:00",
-  "Nashville": "2026-11-05T07:56:16.269096-06:00",
+  "Nashville": "2026-11-05T08:01:30.516313-06:00",
   "Raleigh": "2026-11-05T07:57:57.277020-06:00",
   "Oklahoma City": "2026-11-05T07:56:52.997202-06:00",
   "Tulsa": "2026-11-05T07:57:49.085696-06:00",
@@ -4571,12 +4587,12 @@
   "Los Angeles": "2026-11-05T07:58:02.148910-06:00",
   "Chicago": "2026-11-05T07:56:35.697543-06:00",
   "Dallas": "2026-11-05T07:58:15.266446-06:00",
-  "Houston": "2026-11-05T07:55:58.798777-06:00",
+  "Houston": "2026-11-05T08:01:08.145811-06:00",
   "Washington": "2026-11-05T08:00:18.647878-06:00",
   "Philadelphia": "2026-11-05T07:58:28.239603-06:00",
   "Atlanta": "2026-11-05T08:00:31.598401-06:00",
   "Miami": "2026-11-05T08:00:44.750423-06:00",
-  "Phoenix": "2026-11-05T07:56:03.170669-06:00",
+  "Phoenix": "2026-11-05T08:01:16.917086-06:00",
   "Boston": "2026-11-05T07:58:10.820009-06:00",
   "San Francisco": "2026-11-05T07:58:23.953873-06:00",
   "Detroit": "2026-11-05T07:57:01.651846-06:00",
@@ -4585,10 +4601,10 @@
   "San Diego": "2026-11-05T08:00:27.257277-06:00",
   "Tampa": "2026-11-05T08:00:57.952070-06:00",
   "Denver": "2026-11-05T07:57:12.434275-06:00",
-  "Baltimore": "2026-11-05T07:57:29.662800-06:00",
+  "Baltimore": "2026-11-05T08:01:12.519358-06:00",
   "St. Louis": "2026-11-05T08:01:02.429193-06:00",
-  "Orlando": "2026-11-05T07:57:33.956560-06:00",
-  "Charlotte": "2026-11-05T07:50:25.717806-06:00",
+  "Orlando": "2026-11-05T08:01:21.222660-06:00",
+  "Charlotte": "2026-11-05T08:01:25.828428-06:00",
   "San Antonio": "2026-11-05T07:56:20.677587-06:00",
   "Portland": "2026-11-05T07:57:38.393745-06:00",
   "Sacramento": "2026-11-05T07:57:42.980079-06:00",
@@ -4600,7 +4616,7 @@
   "Columbus": "2026-11-05T07:57:25.368795-06:00",
   "Indianapolis": "2026-11-05T07:58:38.969370-06:00",
   "Cleveland": "2026-11-05T07:58:43.414417-06:00",
-  "Nashville": "2026-11-05T07:56:16.269117-06:00",
+  "Nashville": "2026-11-05T08:01:30.516332-06:00",
   "Raleigh": "2026-11-05T07:50:30.039221-06:00",
   "Oklahoma City": "2026-11-05T07:56:52.997224-06:00",
   "Tulsa": "2026-11-05T07:57:49.085717-06:00",
