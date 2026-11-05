@@ -893,3 +893,8 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-05 08:03,Augusta,R364,Augusta,GA,,0,133.9,available,MK1F4LL/A
 2026-11-05 08:03,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,unavailable,MK1E4LL/A
 2026-11-05 08:03,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,unavailable,MK1F4LL/A
+2026-11-05 08:04,Carnegie Library,R516,Washington,DC,Washington,1,0.5,unavailable,MK1F4LL/A
+2026-11-05 08:04,Friendly Center,R293,Greensboro,NC,,0,65.4,unavailable,MK1F4LL/A
+2026-11-05 08:04,Friendly Center,R293,Greensboro,NC,,0,65.4,unavailable,MK1E4LL/A
+2026-11-05 08:04,Crabtree Valley Mall,R116,Raleigh,NC,Raleigh,2,1.5,unavailable,MK1E4LL/A
+2026-11-05 08:04,Lynnhaven Mall,R614,Virginia Beach,VA,,0,103.6,unavailable,MK1F4LL/A
