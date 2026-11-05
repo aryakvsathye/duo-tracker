@@ -991,3 +991,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-05 09:03,Waterside Shops,R169,Naples,FL,,0,104.7,unavailable,MK1F4LL/A
 2026-11-05 09:03,Brandon,R289,Brandon,FL,Tampa,2,13.0,available,MK1F4LL/A
 2026-11-05 09:03,Brandon,R289,Brandon,FL,Tampa,2,13.0,available,MK1E4LL/A
+2026-11-05 09:04,Brandon,R289,Brandon,FL,Tampa,2,13.0,unavailable,MK1F4LL/A
+2026-11-05 09:04,Mall of Georgia,R259,Buford,GA,Atlanta,1,26.3,available,MK1F4LL/A
+2026-11-05 09:04,Birkdale Village,R796,Huntersville,NC,Charlotte,2,19.5,unavailable,MK1E4LL/A
+2026-11-05 09:04,Haywood Mall,R355,Greenville,SC,,0,89.9,unavailable,MK1F4LL/A
