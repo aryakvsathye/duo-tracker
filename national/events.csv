@@ -902,3 +902,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-05 08:06,Grand Central,R415,New York,NY,New York,1,1.1,unavailable,MK1F4LL/A
 2026-11-05 08:06,Augusta,R364,Augusta,GA,,0,133.9,unavailable,MK1F4LL/A
 2026-11-05 08:11,Crabtree Valley Mall,R116,Raleigh,NC,Raleigh,2,1.5,available,MK1E4LL/A
+2026-11-05 08:14,Crabtree Valley Mall,R116,Raleigh,NC,Raleigh,2,1.5,unavailable,MK1E4LL/A
+2026-11-05 08:14,Stonebridge Potomac Town Center,R598,Woodbridge,VA,Washington,1,24.2,available,MK1F4LL/A
