@@ -189,17 +189,14 @@
    "metro": "New York",
    "tier": 1,
    "miles": 6.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-05 08:35"
-   },
-   "since": "2026-11-05 08:35"
+   "since_by_part": {}
   },
   "R753": {
    "name": "The Mall at Bay Plaza",
@@ -210,14 +207,17 @@
    "metro": "New York",
    "tier": 1,
    "miles": 10.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-05 08:39"
+   },
+   "since": "2026-11-05 08:39"
   },
   "R108": {
    "name": "Century City",
@@ -3990,17 +3990,14 @@
    "metro": "Cincinnati",
    "tier": 2,
    "miles": 36.9,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-05 08:35"
-   },
-   "since": "2026-11-05 08:35"
+   "since_by_part": {}
   },
   "R288": {
    "name": "Fritz Farm",
@@ -4183,7 +4180,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-05T08:38:45.264281-06:00",
+ "last_sweep": "2026-11-05T08:39:09.074899-06:00",
  "metros_ok": 47,
  "metros": [
   {
@@ -4508,7 +4505,7 @@
   "Phoenix"
  ],
  "checked_at": {
-  "New York": "2026-11-05T08:35:14.133029-06:00",
+  "New York": "2026-11-05T08:39:04.745188-06:00",
   "Los Angeles": "2026-11-05T08:36:39.097869-06:00",
   "Chicago": "2026-11-05T08:37:02.180110-06:00",
   "Dallas": "2026-11-05T08:36:47.666938-06:00",
@@ -4539,8 +4536,8 @@
   "Cincinnati": "2026-11-05T08:37:32.159324-06:00",
   "Kansas City": "2026-11-05T08:37:11.086090-06:00",
   "Columbus": "2026-11-05T08:37:46.626279-06:00",
-  "Indianapolis": "2026-11-05T08:36:02.939958-06:00",
-  "Cleveland": "2026-11-05T08:36:08.793774-06:00",
+  "Indianapolis": "2026-11-05T08:38:51.871572-06:00",
+  "Cleveland": "2026-11-05T08:38:56.202126-06:00",
   "Nashville": "2026-11-05T08:38:45.264158-06:00",
   "Raleigh": "2026-11-05T08:38:32.399926-06:00",
   "Oklahoma City": "2026-11-05T08:35:54.361729-06:00",
@@ -4549,18 +4546,18 @@
   "Des Moines": "2026-11-05T08:37:38.314808-06:00",
   "Little Rock": "2026-11-05T08:36:43.440063-06:00",
   "Memphis": "2026-11-05T08:35:31.201581-06:00",
-  "Madison": "2026-11-05T08:36:13.129409-06:00",
+  "Madison": "2026-11-05T08:39:00.476679-06:00",
   "Albuquerque": "2026-11-05T08:36:51.959764-06:00",
   "Salt Lake City": "2026-11-05T08:37:06.596068-06:00",
   "Louisville": "2026-11-05T08:35:50.112981-06:00",
   "Birmingham": "2026-11-05T08:37:32.427474-06:00",
-  "Richmond": "2026-11-05T08:35:18.384056-06:00",
+  "Richmond": "2026-11-05T08:39:09.074783-06:00",
   "Honolulu": "2026-11-05T08:36:30.578987-06:00",
   "Tucson": "2026-11-05T08:37:47.013310-06:00",
   "Buffalo": "2026-11-05T08:38:36.670311-06:00"
  },
  "ok_at": {
-  "New York": "2026-11-05T08:35:14.133047-06:00",
+  "New York": "2026-11-05T08:39:04.745206-06:00",
   "Los Angeles": "2026-11-05T08:36:39.097887-06:00",
   "Chicago": "2026-11-05T08:37:02.180127-06:00",
   "Dallas": "2026-11-05T08:36:47.666955-06:00",
@@ -4591,8 +4588,8 @@
   "Cincinnati": "2026-11-05T08:31:22.840828-06:00",
   "Kansas City": "2026-11-05T08:37:11.086109-06:00",
   "Columbus": "2026-11-05T08:31:27.296789-06:00",
-  "Indianapolis": "2026-11-05T08:36:02.939979-06:00",
-  "Cleveland": "2026-11-05T08:36:08.793792-06:00",
+  "Indianapolis": "2026-11-05T08:38:51.871585-06:00",
+  "Cleveland": "2026-11-05T08:38:56.202146-06:00",
   "Nashville": "2026-11-05T08:38:45.264187-06:00",
   "Raleigh": "2026-11-05T08:38:32.399944-06:00",
   "Oklahoma City": "2026-11-05T08:35:54.361746-06:00",
@@ -4601,19 +4598,19 @@
   "Des Moines": "2026-11-05T08:37:38.314825-06:00",
   "Little Rock": "2026-11-05T08:36:43.440100-06:00",
   "Memphis": "2026-11-05T08:35:31.201600-06:00",
-  "Madison": "2026-11-05T08:36:13.129429-06:00",
+  "Madison": "2026-11-05T08:39:00.476697-06:00",
   "Albuquerque": "2026-11-05T08:36:51.959782-06:00",
   "Salt Lake City": "2026-11-05T08:37:06.596109-06:00",
   "Louisville": "2026-11-05T08:35:50.113000-06:00",
   "Birmingham": "2026-11-05T08:37:32.427494-06:00",
-  "Richmond": "2026-11-05T08:35:18.384093-06:00",
+  "Richmond": "2026-11-05T08:39:09.074801-06:00",
   "Honolulu": "2026-11-05T08:36:30.579004-06:00",
   "Tucson": "2026-11-05T08:37:47.013327-06:00",
   "Buffalo": "2026-11-05T08:38:36.670329-06:00"
  },
  "hot": [
-  "New England",
-  "East North Central"
+  "Middle Atlantic",
+  "New England"
  ],
  "cycle_seconds": 150,
  "pace": 4.0,
