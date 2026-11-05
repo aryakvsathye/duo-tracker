@@ -849,3 +849,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-04 23:26,Bridgeport Village,R134,Tigard,OR,Portland,2,7.0,available,MK1E4LL/A
 2026-11-04 23:29,Bridgeport Village,R134,Tigard,OR,Portland,2,7.0,unavailable,MK1E4LL/A
 2026-11-05 07:01,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,available,MK1E4LL/A
+2026-11-05 07:02,World Trade Center,R654,New York,NY,New York,1,4.1,available,MK1F4LL/A
+2026-11-05 07:02,World Trade Center,R654,New York,NY,New York,1,4.1,available,MK1E4LL/A
