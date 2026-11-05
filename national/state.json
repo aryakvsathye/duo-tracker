@@ -4487,7 +4487,7 @@
    "state": "NY"
   }
  ],
- "retries": 5,
+ "retries": 2,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4497,16 +4497,14 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Salt Lake City": 1,
-  "Buffalo": 1,
-  "New York": 1,
-  "Richmond": 1
+  "Seattle": 1,
+  "San Diego": 1
  },
  "skipped": [
-  "Charlotte",
-  "Kansas City",
-  "Omaha",
-  "Raleigh"
+  "Buffalo",
+  "New York",
+  "Richmond",
+  "Salt Lake City"
  ],
  "checked_at": {
   "New York": "2026-11-05T08:03:10.101404-06:00",
@@ -4522,9 +4520,9 @@
   "Boston": "2026-11-05T08:03:06.097337-06:00",
   "San Francisco": "2026-11-05T08:03:19.164956-06:00",
   "Detroit": "2026-11-05T08:02:12.648153-06:00",
-  "Seattle": "2026-11-05T08:00:22.967619-06:00",
+  "Seattle": "2026-11-05T08:04:33.379294-06:00",
   "Minneapolis": "2026-11-05T08:00:49.333514-06:00",
-  "San Diego": "2026-11-05T08:00:27.257261-06:00",
+  "San Diego": "2026-11-05T08:04:47.572055-06:00",
   "Tampa": "2026-11-05T08:03:56.179788-06:00",
   "Denver": "2026-11-05T08:02:21.157357-06:00",
   "Baltimore": "2026-11-05T08:04:00.746302-06:00",
@@ -4643,5 +4641,5 @@
   "2026-11-05T07:04-06:00"
  ],
  "last_weekly": "2026-W44",
- "last_error": "2026-11-05T07:59-06:00: Salt Lake City: HTTP 541; Buffalo: HTTP 541; New York: HTTP 541; Richmond: HTTP 541"
+ "last_error": "2026-11-05T08:04-06:00: Seattle: HTTP 541; San Diego: HTTP 541"
 }
