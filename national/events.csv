@@ -888,3 +888,8 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-05 08:01,Crabtree Valley Mall,R116,Raleigh,NC,Raleigh,2,1.5,available,MK1E4LL/A
 2026-11-05 08:01,Lynnhaven Mall,R614,Virginia Beach,VA,,0,103.6,available,MK1F4LL/A
 2026-11-05 08:02,Ross Park,R413,Pittsburgh,PA,Pittsburgh,2,2.2,unavailable,MK1E4LL/A
+2026-11-05 08:03,Georgetown,R287,Washington,DC,Washington,1,2.4,unavailable,MK1F4LL/A
+2026-11-05 08:03,Montgomery Mall,R084,Bethesda,MD,Washington,1,10.5,unavailable,MK1F4LL/A
+2026-11-05 08:03,Augusta,R364,Augusta,GA,,0,133.9,available,MK1F4LL/A
+2026-11-05 08:03,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,unavailable,MK1E4LL/A
+2026-11-05 08:03,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,unavailable,MK1F4LL/A
