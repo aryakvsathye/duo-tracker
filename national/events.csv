@@ -1006,3 +1006,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-05 09:11,Waterside Shops,R169,Naples,FL,,0,104.7,available,MK1E4LL/A
 2026-11-05 09:11,Queens Center,R612,Elmhurst,NY,New York,1,6.5,unavailable,MK1F4LL/A
 2026-11-05 09:12,Mall of Georgia,R259,Buford,GA,Atlanta,1,26.3,available,MK1F4LL/A
+2026-11-05 09:13,Mall of Georgia,R259,Buford,GA,Atlanta,1,26.3,unavailable,MK1F4LL/A
