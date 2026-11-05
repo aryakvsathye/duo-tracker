@@ -1025,3 +1025,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-05 09:40,Bayshore,R257,Glendale,WI,,0,78.2,available,MK1E4LL/A
 2026-11-05 09:45,Bayshore,R257,Glendale,WI,,0,78.2,unavailable,MK1E4LL/A
 2026-11-05 09:45,Leawood,R283,Leawood,KS,Kansas City,2,10.5,available,MK1E4LL/A
+2026-11-05 09:46,Cumberland Mall,R591,Atlanta,GA,Atlanta,1,6.5,available,MK1E4LL/A
+2026-11-05 09:46,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,available,MK1F4LL/A
