@@ -4596,10 +4596,7 @@
   "Tucson": "2026-11-04T21:56:49.076673-06:00",
   "Buffalo": "2026-11-04T21:58:19.841142-06:00"
  },
- "hot": [
-  "South Atlantic",
-  "East North Central"
- ],
+ "hot": [],
  "cycle_seconds": 150,
  "pace": 5.5,
  "pace_since": "2026-11-04T20:50:14.290644-06:00",
