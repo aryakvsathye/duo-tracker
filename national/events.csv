@@ -1060,3 +1060,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-05 11:04,Aspen Grove,R030,Littleton,CO,Denver,2,10.7,unavailable,MK1E4LL/A
 2026-11-05 11:05,River Park Square,R420,Spokane,WA,,0,225.2,available,MK1E4LL/A
 2026-11-05 11:06,Bridge Street,R266,Huntsville,AL,,0,87.9,unavailable,MK1E4LL/A
+2026-11-05 11:06,Sherman Oaks,R148,Sherman Oaks,CA,Los Angeles,1,7.0,unavailable,MK1F4LL/A
+2026-11-05 11:06,Sherman Oaks,R148,Sherman Oaks,CA,Los Angeles,1,7.0,unavailable,MK1E4LL/A
