@@ -4491,13 +4491,18 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Salt Lake City": 1,
-  "Atlanta": 1,
-  "Miami": 1,
-  "Pittsburgh": 1,
-  "Buffalo": 1
+  "Indianapolis": 1,
+  "Cleveland": 1,
+  "Madison": 1,
+  "Salt Lake City": 1
  },
- "skipped": [],
+ "skipped": [
+  "Atlanta",
+  "Buffalo",
+  "Miami",
+  "Pittsburgh",
+  "Salt Lake City"
+ ],
  "checked_at": {
   "New York": "2026-11-05T07:48:34.471013-06:00",
   "Los Angeles": "2026-11-05T07:47:50.169600-06:00",
@@ -4530,8 +4535,8 @@
   "Cincinnati": "2026-11-05T07:48:43.375800-06:00",
   "Kansas City": "2026-11-05T07:46:52.601372-06:00",
   "Columbus": "2026-11-05T07:48:47.782650-06:00",
-  "Indianapolis": "2026-11-05T07:46:04.265554-06:00",
-  "Cleveland": "2026-11-05T07:46:08.479473-06:00",
+  "Indianapolis": "2026-11-05T07:49:04.009448-06:00",
+  "Cleveland": "2026-11-05T07:49:18.611508-06:00",
   "Nashville": "2026-11-05T07:46:35.326075-06:00",
   "Raleigh": "2026-11-05T07:45:43.008251-06:00",
   "Oklahoma City": "2026-11-05T07:47:05.442410-06:00",
@@ -4540,9 +4545,9 @@
   "Des Moines": "2026-11-05T07:47:19.846172-06:00",
   "Little Rock": "2026-11-05T07:47:54.486888-06:00",
   "Memphis": "2026-11-05T07:46:43.962694-06:00",
-  "Madison": "2026-11-05T07:46:26.861168-06:00",
+  "Madison": "2026-11-05T07:49:33.214466-06:00",
   "Albuquerque": "2026-11-05T07:48:12.887326-06:00",
-  "Salt Lake City": "2026-11-05T07:45:15.681809-06:00",
+  "Salt Lake City": "2026-11-05T07:49:47.785953-06:00",
   "Louisville": "2026-11-05T07:46:56.832410-06:00",
   "Birmingham": "2026-11-05T07:46:12.733449-06:00",
   "Richmond": "2026-11-05T07:48:08.653963-06:00",
@@ -4633,5 +4638,5 @@
   "2026-11-05T07:04-06:00"
  ],
  "last_weekly": "2026-W44",
- "last_error": "2026-11-05T07:44-06:00: Atlanta: HTTP 541; Miami: HTTP 541; Pittsburgh: HTTP 541; Buffalo: HTTP 541"
+ "last_error": "2026-11-05T07:49-06:00: Indianapolis: HTTP 541; Cleveland: HTTP 541; Madison: HTTP 541; Salt Lake City: HTTP 541"
 }
