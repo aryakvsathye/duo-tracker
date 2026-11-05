@@ -4490,17 +4490,11 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Cleveland": 1,
-  "Madison": 1,
-  "New York": 1
- },
+ "metro_skip": {},
  "skipped": [
-  "Denver",
-  "Philadelphia",
-  "Portland",
-  "Sacramento",
-  "Tulsa"
+  "Cleveland",
+  "Madison",
+  "New York"
  ],
  "checked_at": {
   "New York": "2026-11-05T09:34:44.688560-06:00",
