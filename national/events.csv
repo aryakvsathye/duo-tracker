@@ -1023,3 +1023,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-05 09:37,Downtown Detroit,R763,Detroit,MI,Detroit,2,16.7,unavailable,MK1E4LL/A
 2026-11-05 09:38,Cumberland Mall,R591,Atlanta,GA,Atlanta,1,6.5,unavailable,MK1F4LL/A
 2026-11-05 09:40,Bayshore,R257,Glendale,WI,,0,78.2,available,MK1E4LL/A
+2026-11-05 09:45,Bayshore,R257,Glendale,WI,,0,78.2,unavailable,MK1E4LL/A
+2026-11-05 09:45,Leawood,R283,Leawood,KS,Kansas City,2,10.5,available,MK1E4LL/A
