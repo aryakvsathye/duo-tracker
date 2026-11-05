@@ -981,3 +981,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-05 09:01,Haywood Mall,R355,Greenville,SC,,0,89.9,available,MK1F4LL/A
 2026-11-05 09:02,Crocker Park,R192,Westlake,OH,Cleveland,2,22.4,unavailable,MK1F4LL/A
 2026-11-05 09:02,Montgomery Mall,R084,Bethesda,MD,Washington,1,10.5,unavailable,MK1F4LL/A
+2026-11-05 09:03,Deer Park,R258,Deer Park,IL,Chicago,1,28.8,unavailable,MK1F4LL/A
+2026-11-05 09:03,Eastview,R140,Victor,NY,,0,67.5,unavailable,MK1F4LL/A
+2026-11-05 09:03,Legacy Place,R346,Dedham,MA,Boston,1,9.8,available,MK1E4LL/A
+2026-11-05 09:03,Burlington,R155,Burlington,MA,Boston,1,11.6,available,MK1F4LL/A
