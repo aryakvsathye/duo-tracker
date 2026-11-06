@@ -1120,3 +1120,8 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-06 07:05,Aventura,R087,Aventura,FL,Miami,1,13.6,available,MK1E4LL/A
 2026-11-06 07:08,Aventura,R087,Aventura,FL,Miami,1,13.6,unavailable,MK1F4LL/A
 2026-11-06 07:08,Aventura,R087,Aventura,FL,Miami,1,13.6,unavailable,MK1E4LL/A
+2026-11-06 08:05,Upper West Side,R251,New York,NY,New York,1,0.5,available,MK1F4LL/A
+2026-11-06 08:05,Upper West Side,R251,New York,NY,New York,1,0.5,available,MK1E4LL/A
+2026-11-06 08:05,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,available,MK1F4LL/A
+2026-11-06 08:05,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,available,MK1E4LL/A
+2026-11-06 08:05,Fairfax Corner,R221,Fairfax,VA,Washington,1,18.5,available,MK1F4LL/A
