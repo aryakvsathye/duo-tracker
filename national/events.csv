@@ -1171,3 +1171,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-06 10:30,Deer Park,R258,Deer Park,IL,Chicago,1,28.8,available,MK1F4LL/A
 2026-11-06 10:31,Deer Park,R258,Deer Park,IL,Chicago,1,28.8,unavailable,MK1F4LL/A
 2026-11-06 10:36,Southpoint,R049,Durham,NC,Raleigh,2,14.0,available,MK1F4LL/A
+2026-11-06 10:40,Southpoint,R049,Durham,NC,Raleigh,2,14.0,unavailable,MK1F4LL/A
