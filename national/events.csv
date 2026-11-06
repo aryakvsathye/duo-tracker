@@ -1142,3 +1142,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-06 08:33,Queens Center,R612,Elmhurst,NY,New York,1,6.5,unavailable,MK1F4LL/A
 2026-11-06 08:52,Eastview,R140,Victor,NY,,0,67.5,available,MK1E4LL/A
 2026-11-06 08:56,Waterside Shops,R169,Naples,FL,,0,104.7,available,MK1E4LL/A
+2026-11-06 08:56,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,available,MK1E4LL/A
