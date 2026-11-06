@@ -1201,3 +1201,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-06 12:14,Fritz Farm,R288,Lexington,KY,,0,62.5,available,MK1F4LL/A
 2026-11-06 12:16,Fritz Farm,R288,Lexington,KY,,0,62.5,unavailable,MK1F4LL/A
 2026-11-06 13:06,Tacoma Mall,R339,Tacoma,WA,Seattle,2,29.2,available,MK1E4LL/A
+2026-11-06 13:08,Tacoma Mall,R339,Tacoma,WA,Seattle,2,29.2,unavailable,MK1E4LL/A
