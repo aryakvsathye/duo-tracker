@@ -1127,3 +1127,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-06 08:05,Fairfax Corner,R221,Fairfax,VA,Washington,1,18.5,available,MK1F4LL/A
 2026-11-06 08:06,Dadeland,R312,Miami,FL,Miami,1,9.3,available,MK1F4LL/A
 2026-11-06 08:06,Fairfax Corner,R221,Fairfax,VA,Washington,1,18.5,unavailable,MK1F4LL/A
+2026-11-06 08:08,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,unavailable,MK1F4LL/A
+2026-11-06 08:08,Upper West Side,R251,New York,NY,New York,1,0.5,unavailable,MK1F4LL/A
+2026-11-06 08:08,Upper West Side,R251,New York,NY,New York,1,0.5,unavailable,MK1E4LL/A
