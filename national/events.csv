@@ -1167,3 +1167,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-06 10:06,Domain NORTHSIDE,R216,Austin,TX,Austin,2,9.3,available,MK1F4LL/A
 2026-11-06 10:06,Domain NORTHSIDE,R216,Austin,TX,Austin,2,9.3,unavailable,MK1F4LL/A
 2026-11-06 10:18,Deer Park,R258,Deer Park,IL,Chicago,1,28.8,available,MK1F4LL/A
+2026-11-06 10:21,Deer Park,R258,Deer Park,IL,Chicago,1,28.8,unavailable,MK1F4LL/A
