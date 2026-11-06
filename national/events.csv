@@ -1150,3 +1150,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-06 09:00,Haywood Mall,R355,Greenville,SC,,0,89.9,unavailable,MK1E4LL/A
 2026-11-06 09:02,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,unavailable,MK1E4LL/A
 2026-11-06 09:04,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,unavailable,MK1E4LL/A
+2026-11-06 09:05,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,available,MK1E4LL/A
+2026-11-06 09:05,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,available,MK1E4LL/A
+2026-11-06 09:05,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,available,MK1E4LL/A
