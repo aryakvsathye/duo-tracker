@@ -1165,3 +1165,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-06 10:05,Lincoln Park,R284,Chicago,IL,Chicago,1,1.7,available,MK1F4LL/A
 2026-11-06 10:05,Lincoln Park,R284,Chicago,IL,Chicago,1,1.7,unavailable,MK1F4LL/A
 2026-11-06 10:06,Domain NORTHSIDE,R216,Austin,TX,Austin,2,9.3,available,MK1F4LL/A
+2026-11-06 10:06,Domain NORTHSIDE,R216,Austin,TX,Austin,2,9.3,unavailable,MK1F4LL/A
