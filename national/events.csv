@@ -1299,3 +1299,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-07 09:02,Woodland,R132,Grand Rapids,MI,,0,124.9,available,MK1F4LL/A
 2026-11-07 09:02,Somerset,R055,Troy,MI,Detroit,2,0.6,unavailable,MK1F4LL/A
 2026-11-07 09:02,Kenwood Towne Centre,R028,Cincinnati,OH,Cincinnati,2,0.8,unavailable,MK1F4LL/A
+2026-11-07 09:02,Haywood Mall,R355,Greenville,SC,,0,89.9,unavailable,MK1F4LL/A
