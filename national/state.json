@@ -1071,17 +1071,14 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 10.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-07 08:56"
-   },
-   "since": "2026-11-07 08:56"
+   "since_by_part": {}
   },
   "R010": {
    "name": "Tysons Corner",
@@ -1398,14 +1395,17 @@
    "metro": "",
    "tier": 0,
    "miles": 60.3,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-07 08:58"
+   },
+   "since": "2026-11-07 08:58"
   },
   "R006": {
    "name": "Lenox Square",
@@ -3918,17 +3918,14 @@
    "metro": "Buffalo",
    "tier": 3,
    "miles": 0.6,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-07 08:57"
-   },
-   "since": "2026-11-07 08:57"
+   "since_by_part": {}
   },
   "R094": {
    "name": "Victoria Gardens",
@@ -4204,7 +4201,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-07T08:58:00.552009-06:00",
+ "last_sweep": "2026-11-07T08:58:27.856234-06:00",
  "metros_ok": 46,
  "metros": [
   {
@@ -4526,10 +4523,10 @@
   "Los Angeles": "2026-11-07T08:57:16.109684-06:00",
   "Chicago": "2026-11-07T08:56:42.946070-06:00",
   "Dallas": "2026-11-07T08:57:28.795710-06:00",
-  "Houston": "2026-11-07T08:52:08.817973-06:00",
+  "Houston": "2026-11-07T08:58:27.856128-06:00",
   "Washington": "2026-11-07T08:56:55.592241-06:00",
-  "Philadelphia": "2026-11-07T08:52:53.700396-06:00",
-  "Atlanta": "2026-11-07T08:53:37.566627-06:00",
+  "Philadelphia": "2026-11-07T08:58:08.539909-06:00",
+  "Atlanta": "2026-11-07T08:58:21.442521-06:00",
   "Miami": "2026-11-07T08:53:51.694763-06:00",
   "Phoenix": "2026-11-07T08:54:31.086838-06:00",
   "Boston": "2026-11-07T08:54:24.784397-06:00",
@@ -4547,7 +4544,7 @@
   "San Antonio": "2026-11-07T08:53:12.449336-06:00",
   "Portland": "2026-11-07T08:53:58.020059-06:00",
   "Sacramento": "2026-11-07T08:54:10.820015-06:00",
-  "Pittsburgh": "2026-11-07T08:52:59.941729-06:00",
+  "Pittsburgh": "2026-11-07T08:58:15.064781-06:00",
   "Austin": "2026-11-07T08:53:45.107411-06:00",
   "Las Vegas": "2026-11-07T08:55:17.387875-06:00",
   "Cincinnati": "2026-11-07T08:55:36.580925-06:00",
@@ -4578,10 +4575,10 @@
   "Los Angeles": "2026-11-07T08:57:16.109703-06:00",
   "Chicago": "2026-11-07T08:56:42.946090-06:00",
   "Dallas": "2026-11-07T08:57:28.795728-06:00",
-  "Houston": "2026-11-07T08:52:08.817993-06:00",
+  "Houston": "2026-11-07T08:58:27.856148-06:00",
   "Washington": "2026-11-07T08:56:55.592260-06:00",
-  "Philadelphia": "2026-11-07T08:52:53.700419-06:00",
-  "Atlanta": "2026-11-07T08:53:37.566651-06:00",
+  "Philadelphia": "2026-11-07T08:58:08.539929-06:00",
+  "Atlanta": "2026-11-07T08:58:21.442540-06:00",
   "Miami": "2026-11-07T08:53:51.694785-06:00",
   "Phoenix": "2026-11-07T08:54:31.086861-06:00",
   "Boston": "2026-11-07T08:54:24.784419-06:00",
@@ -4599,7 +4596,7 @@
   "San Antonio": "2026-11-07T08:53:12.449358-06:00",
   "Portland": "2026-11-07T08:53:58.020080-06:00",
   "Sacramento": "2026-11-07T08:54:10.820038-06:00",
-  "Pittsburgh": "2026-11-07T08:52:59.941751-06:00",
+  "Pittsburgh": "2026-11-07T08:58:15.064799-06:00",
   "Austin": "2026-11-07T08:53:45.107433-06:00",
   "Las Vegas": "2026-11-07T08:55:17.387894-06:00",
   "Cincinnati": "2026-11-07T08:55:36.580945-06:00",

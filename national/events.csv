@@ -1287,3 +1287,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-07 08:56,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,unavailable,MK1F4LL/A
 2026-11-07 08:56,Montgomery Mall,R084,Bethesda,MD,Washington,1,10.5,available,MK1F4LL/A
 2026-11-07 08:57,Walden Galleria,R016,Buffalo,NY,Buffalo,3,0.6,available,MK1F4LL/A
+2026-11-07 08:58,Menlo Park,R067,Edison,NJ,,0,60.3,available,MK1F4LL/A
+2026-11-07 08:58,Walden Galleria,R016,Buffalo,NY,Buffalo,3,0.6,unavailable,MK1F4LL/A
+2026-11-07 08:58,Montgomery Mall,R084,Bethesda,MD,Washington,1,10.5,unavailable,MK1F4LL/A
