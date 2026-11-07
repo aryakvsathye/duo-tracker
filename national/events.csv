@@ -1290,3 +1290,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-07 08:58,Menlo Park,R067,Edison,NJ,,0,60.3,available,MK1F4LL/A
 2026-11-07 08:58,Walden Galleria,R016,Buffalo,NY,Buffalo,3,0.6,unavailable,MK1F4LL/A
 2026-11-07 08:58,Montgomery Mall,R084,Bethesda,MD,Washington,1,10.5,unavailable,MK1F4LL/A
+2026-11-07 09:01,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,unavailable,MK1F4LL/A
+2026-11-07 09:01,Millenia,R053,Orlando,FL,Orlando,2,3.5,unavailable,MK1F4LL/A
