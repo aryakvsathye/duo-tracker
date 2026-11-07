@@ -1292,3 +1292,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-07 08:58,Montgomery Mall,R084,Bethesda,MD,Washington,1,10.5,unavailable,MK1F4LL/A
 2026-11-07 09:01,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,unavailable,MK1F4LL/A
 2026-11-07 09:01,Millenia,R053,Orlando,FL,Orlando,2,3.5,unavailable,MK1F4LL/A
+2026-11-07 09:01,Carnegie Library,R516,Washington,DC,Washington,1,0.5,available,MK1F4LL/A
+2026-11-07 09:01,Haywood Mall,R355,Greenville,SC,,0,89.9,available,MK1F4LL/A
