@@ -4180,8 +4180,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-07T07:44:23.303549-06:00",
- "metros_ok": 49,
+ "last_sweep": "2026-11-07T07:44:37.530969-06:00",
+ "metros_ok": 45,
  "metros": [
   {
    "metro": "New York",
@@ -4484,7 +4484,7 @@
    "state": "NY"
   }
  ],
- "retries": 5,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4494,16 +4494,13 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Salt Lake City": 1,
-  "Orlando": 1,
-  "Tucson": 1,
-  "Charlotte": 1,
   "Raleigh": 1
  },
  "skipped": [
-  "Austin",
-  "Portland",
-  "Tampa"
+  "Charlotte",
+  "Orlando",
+  "Salt Lake City",
+  "Tucson"
  ],
  "checked_at": {
   "New York": "2026-11-07T07:43:17.290168-06:00",
@@ -4527,9 +4524,9 @@
   "Baltimore": "2026-11-07T07:44:01.417138-06:00",
   "St. Louis": "2026-11-07T07:41:01.338401-06:00",
   "Orlando": "2026-11-07T07:44:11.789348-06:00",
-  "Charlotte": "2026-11-07T07:39:33.055690-06:00",
+  "Charlotte": "2026-11-07T07:44:33.056109-06:00",
   "San Antonio": "2026-11-07T07:43:50.639457-06:00",
-  "Portland": "2026-11-07T07:39:37.058916-06:00",
+  "Portland": "2026-11-07T07:44:37.530854-06:00",
   "Sacramento": "2026-11-07T07:40:26.852478-06:00",
   "Pittsburgh": "2026-11-07T07:43:56.066024-06:00",
   "Austin": "2026-11-07T07:44:23.303434-06:00",
@@ -4581,7 +4578,7 @@
   "Orlando": "2026-11-07T07:35:35.119100-06:00",
   "Charlotte": "2026-11-07T07:36:16.380575-06:00",
   "San Antonio": "2026-11-07T07:43:50.639474-06:00",
-  "Portland": "2026-11-07T07:30:32.379144-06:00",
+  "Portland": "2026-11-07T07:44:37.530872-06:00",
   "Sacramento": "2026-11-07T07:40:26.852495-06:00",
   "Pittsburgh": "2026-11-07T07:43:56.066041-06:00",
   "Austin": "2026-11-07T07:44:23.303452-06:00",
@@ -4636,6 +4633,5 @@
   "2026-11-07T07:04-06:00",
   "2026-11-07T07:39-06:00"
  ],
- "last_weekly": "2026-W44",
- "last_error": "2026-11-07T07:39-06:00: Salt Lake City: HTTP 541; Orlando: HTTP 541; Tucson: HTTP 541; Charlotte: HTTP 541; Raleigh: HTTP 541"
+ "last_weekly": "2026-W44"
 }
