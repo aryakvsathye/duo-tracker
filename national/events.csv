@@ -1277,3 +1277,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-07 08:50,Millenia,R053,Orlando,FL,Orlando,2,3.5,available,MK1F4LL/A
 2026-11-07 08:50,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,available,MK1F4LL/A
 2026-11-07 08:50,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,available,MK1F4LL/A
+2026-11-07 08:53,Lincoln Road,R115,Miami Beach,FL,Miami,1,3.6,available,MK1F4LL/A
+2026-11-07 08:53,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,unavailable,MK1F4LL/A
