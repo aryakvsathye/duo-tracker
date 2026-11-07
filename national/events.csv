@@ -1294,3 +1294,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-07 09:01,Millenia,R053,Orlando,FL,Orlando,2,3.5,unavailable,MK1F4LL/A
 2026-11-07 09:01,Carnegie Library,R516,Washington,DC,Washington,1,0.5,available,MK1F4LL/A
 2026-11-07 09:01,Haywood Mall,R355,Greenville,SC,,0,89.9,available,MK1F4LL/A
+2026-11-07 09:01,Reston,R271,Reston,VA,Washington,1,18.6,available,MK1F4LL/A
+2026-11-07 09:01,Oxmoor,R264,Louisville,KY,Louisville,3,1.8,available,MK1F4LL/A
+2026-11-07 09:02,Woodland,R132,Grand Rapids,MI,,0,124.9,available,MK1F4LL/A
+2026-11-07 09:02,Somerset,R055,Troy,MI,Detroit,2,0.6,unavailable,MK1F4LL/A
