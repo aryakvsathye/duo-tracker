@@ -1273,3 +1273,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-07 08:41,Syracuse,R107,Syracuse,NY,,0,131.6,unavailable,MK1F4LL/A
 2026-11-07 08:45,Millenia,R053,Orlando,FL,Orlando,2,3.5,unavailable,MK1F4LL/A
 2026-11-07 08:49,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,available,MK1F4LL/A
+2026-11-07 08:50,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,available,MK1F4LL/A
+2026-11-07 08:50,Millenia,R053,Orlando,FL,Orlando,2,3.5,available,MK1F4LL/A
+2026-11-07 08:50,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,available,MK1F4LL/A
+2026-11-07 08:50,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,available,MK1F4LL/A
