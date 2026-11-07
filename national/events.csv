@@ -1282,3 +1282,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-07 08:55,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,available,MK1F4LL/A
 2026-11-07 08:55,Kenwood Towne Centre,R028,Cincinnati,OH,Cincinnati,2,0.8,available,MK1F4LL/A
 2026-11-07 08:55,Easton Town Center,R009,Columbus,OH,Columbus,2,2.7,available,MK1F4LL/A
+2026-11-07 08:55,Somerset,R055,Troy,MI,Detroit,2,0.6,available,MK1F4LL/A
+2026-11-07 08:55,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,unavailable,MK1F4LL/A
+2026-11-07 08:56,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,unavailable,MK1F4LL/A
+2026-11-07 08:56,Montgomery Mall,R084,Bethesda,MD,Washington,1,10.5,available,MK1F4LL/A

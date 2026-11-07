@@ -1071,14 +1071,17 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 10.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-07 08:56"
+   },
+   "since": "2026-11-07 08:56"
   },
   "R010": {
    "name": "Tysons Corner",
@@ -2496,24 +2499,6 @@
    "metro": "Detroit",
    "tier": 2,
    "miles": 0.6,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "tz": "America/New_York",
-   "region": "East North Central",
-   "since_by_part": {}
-  },
-  "R041": {
-   "name": "Twelve Oaks",
-   "city": "Novi",
-   "state": "MI",
-   "lat": 42.4924,
-   "lon": -83.4704,
-   "metro": "Detroit",
-   "tier": 2,
-   "miles": 15.6,
    "status": "available",
    "parts": {
     "MK1F4LL/A": "available",
@@ -2525,6 +2510,24 @@
     "MK1F4LL/A": "2026-11-07 08:55"
    },
    "since": "2026-11-07 08:55"
+  },
+  "R041": {
+   "name": "Twelve Oaks",
+   "city": "Novi",
+   "state": "MI",
+   "lat": 42.4924,
+   "lon": -83.4704,
+   "metro": "Detroit",
+   "tier": 2,
+   "miles": 15.6,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "tz": "America/New_York",
+   "region": "East North Central",
+   "since_by_part": {}
   },
   "R763": {
    "name": "Downtown Detroit",
@@ -3318,17 +3321,14 @@
    "metro": "",
    "tier": 0,
    "miles": 124.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-07 08:50"
-   },
-   "since": "2026-11-07 08:50"
+   "since_by_part": {}
   },
   "R047": {
    "name": "Cherry Creek",
@@ -4201,8 +4201,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-07T08:55:49.303464-06:00",
- "metros_ok": 39,
+ "last_sweep": "2026-11-07T08:56:16.127578-06:00",
+ "metros_ok": 43,
  "metros": [
   {
    "metro": "New York",
@@ -4535,9 +4535,9 @@
   "Seattle": "2026-11-07T08:52:15.051646-06:00",
   "Minneapolis": "2026-11-07T08:55:11.064161-06:00",
   "San Diego": "2026-11-07T08:52:27.554839-06:00",
-  "Tampa": "2026-11-07T08:50:43.806666-06:00",
+  "Tampa": "2026-11-07T08:56:09.694157-06:00",
   "Denver": "2026-11-07T08:54:37.360387-06:00",
-  "Baltimore": "2026-11-07T08:51:02.880258-06:00",
+  "Baltimore": "2026-11-07T08:56:16.127353-06:00",
   "St. Louis": "2026-11-07T08:55:23.700543-06:00",
   "Orlando": "2026-11-07T08:51:10.490180-06:00",
   "Charlotte": "2026-11-07T08:51:16.780103-06:00",
@@ -4551,7 +4551,7 @@
   "Kansas City": "2026-11-07T08:50:50.058059-06:00",
   "Columbus": "2026-11-07T08:55:42.967937-06:00",
   "Indianapolis": "2026-11-07T08:55:49.303364-06:00",
-  "Cleveland": "2026-11-07T08:50:12.398332-06:00",
+  "Cleveland": "2026-11-07T08:55:56.928564-06:00",
   "Nashville": "2026-11-07T08:51:42.188135-06:00",
   "Raleigh": "2026-11-07T08:51:23.048840-06:00",
   "Oklahoma City": "2026-11-07T08:54:04.434837-06:00",
@@ -4560,7 +4560,7 @@
   "Des Moines": "2026-11-07T08:52:46.266227-06:00",
   "Little Rock": "2026-11-07T08:50:18.749588-06:00",
   "Memphis": "2026-11-07T08:51:54.710503-06:00",
-  "Madison": "2026-11-07T08:50:25.026782-06:00",
+  "Madison": "2026-11-07T08:56:03.365770-06:00",
   "Albuquerque": "2026-11-07T08:53:18.709755-06:00",
   "Salt Lake City": "2026-11-07T08:53:24.971928-06:00",
   "Louisville": "2026-11-07T08:52:21.294173-06:00",
@@ -4587,9 +4587,9 @@
   "Seattle": "2026-11-07T08:52:15.051669-06:00",
   "Minneapolis": "2026-11-07T08:55:11.064180-06:00",
   "San Diego": "2026-11-07T08:52:27.554861-06:00",
-  "Tampa": "2026-11-07T08:50:43.806688-06:00",
+  "Tampa": "2026-11-07T08:56:09.694176-06:00",
   "Denver": "2026-11-07T08:54:37.360409-06:00",
-  "Baltimore": "2026-11-07T08:51:02.880279-06:00",
+  "Baltimore": "2026-11-07T08:56:16.127372-06:00",
   "St. Louis": "2026-11-07T08:55:23.700562-06:00",
   "Orlando": "2026-11-07T08:51:10.490223-06:00",
   "Charlotte": "2026-11-07T08:51:16.780124-06:00",
@@ -4603,7 +4603,7 @@
   "Kansas City": "2026-11-07T08:50:50.058080-06:00",
   "Columbus": "2026-11-07T08:55:42.967955-06:00",
   "Indianapolis": "2026-11-07T08:55:49.303383-06:00",
-  "Cleveland": "2026-11-07T08:50:12.398353-06:00",
+  "Cleveland": "2026-11-07T08:55:56.928583-06:00",
   "Nashville": "2026-11-07T08:51:42.188157-06:00",
   "Raleigh": "2026-11-07T08:51:23.048863-06:00",
   "Oklahoma City": "2026-11-07T08:54:04.434861-06:00",
@@ -4612,7 +4612,7 @@
   "Des Moines": "2026-11-07T08:52:46.266249-06:00",
   "Little Rock": "2026-11-07T08:50:18.749610-06:00",
   "Memphis": "2026-11-07T08:51:54.710525-06:00",
-  "Madison": "2026-11-07T08:50:25.026804-06:00",
+  "Madison": "2026-11-07T08:56:03.365788-06:00",
   "Albuquerque": "2026-11-07T08:53:18.709776-06:00",
   "Salt Lake City": "2026-11-07T08:53:24.971948-06:00",
   "Louisville": "2026-11-07T08:52:21.294195-06:00",
