@@ -981,14 +981,17 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 0.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-07 08:09"
+   },
+   "since": "2026-11-07 08:09"
   },
   "R287": {
    "name": "Georgetown",
@@ -1017,14 +1020,17 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 3.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-07 08:09"
+   },
+   "since": "2026-11-07 08:09"
   },
   "R036": {
    "name": "Clarendon",
@@ -1053,14 +1059,17 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 6.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-07 08:09"
+   },
+   "since": "2026-11-07 08:09"
   },
   "R084": {
    "name": "Montgomery Mall",
@@ -1125,14 +1134,17 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 18.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-07 08:09"
+   },
+   "since": "2026-11-07 08:09"
   },
   "R168": {
    "name": "Columbia",
@@ -4177,8 +4189,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-07T08:09:22.400306-06:00",
- "metros_ok": 44,
+ "last_sweep": "2026-11-07T08:09:34.486452-06:00",
+ "metros_ok": 48,
  "metros": [
   {
    "metro": "New York",
@@ -4481,7 +4493,7 @@
    "state": "NY"
   }
  ],
- "retries": 2,
+ "retries": 1,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4492,9 +4504,11 @@
  },
  "metro_skip": {
   "Des Moines": 1,
-  "Raleigh": 1
+  "San Diego": 1
  },
- "skipped": [],
+ "skipped": [
+  "Raleigh"
+ ],
  "checked_at": {
   "New York": "2026-11-07T08:06:46.805056-06:00",
   "Los Angeles": "2026-11-07T08:08:04.779976-06:00",
@@ -4511,7 +4525,7 @@
   "Detroit": "2026-11-07T08:07:42.028916-06:00",
   "Seattle": "2026-11-07T08:09:22.400195-06:00",
   "Minneapolis": "2026-11-07T08:07:09.736496-06:00",
-  "San Diego": "2026-11-07T08:04:09.791959-06:00",
+  "San Diego": "2026-11-07T08:09:49.897881-06:00",
   "Tampa": "2026-11-07T08:06:35.979885-06:00",
   "Denver": "2026-11-07T08:06:58.961369-06:00",
   "Baltimore": "2026-11-07T08:07:31.323831-06:00",
@@ -4540,9 +4554,9 @@
   "Madison": "2026-11-07T08:09:17.016189-06:00",
   "Albuquerque": "2026-11-07T08:05:40.694005-06:00",
   "Salt Lake City": "2026-11-07T08:05:46.100530-06:00",
-  "Louisville": "2026-11-07T08:04:04.449794-06:00",
+  "Louisville": "2026-11-07T08:09:29.048849-06:00",
   "Birmingham": "2026-11-07T08:05:24.525205-06:00",
-  "Richmond": "2026-11-07T08:05:35.370967-06:00",
+  "Richmond": "2026-11-07T08:09:34.486224-06:00",
   "Honolulu": "2026-11-07T08:07:59.414066-06:00",
   "Tucson": "2026-11-07T08:06:09.135520-06:00",
   "Buffalo": "2026-11-07T08:09:11.495215-06:00"
@@ -4592,16 +4606,16 @@
   "Madison": "2026-11-07T08:09:17.016210-06:00",
   "Albuquerque": "2026-11-07T08:05:40.694026-06:00",
   "Salt Lake City": "2026-11-07T08:05:46.100547-06:00",
-  "Louisville": "2026-11-07T08:04:04.449812-06:00",
+  "Louisville": "2026-11-07T08:09:29.048873-06:00",
   "Birmingham": "2026-11-07T08:05:24.525226-06:00",
-  "Richmond": "2026-11-07T08:05:35.370986-06:00",
+  "Richmond": "2026-11-07T08:09:34.486238-06:00",
   "Honolulu": "2026-11-07T08:07:59.414075-06:00",
   "Tucson": "2026-11-07T08:06:09.135543-06:00",
   "Buffalo": "2026-11-07T08:09:11.495239-06:00"
  },
  "hot": [
-  "Middle Atlantic",
-  "South Atlantic"
+  "South Atlantic",
+  "Middle Atlantic"
  ],
  "cycle_seconds": 150,
  "pace": 5.0,
@@ -4630,5 +4644,5 @@
   "2026-11-07T07:39-06:00"
  ],
  "last_weekly": "2026-W44",
- "last_error": "2026-11-07T08:05-06:00: Des Moines: HTTP 541; Raleigh: HTTP 541"
+ "last_error": "2026-11-07T08:09-06:00: San Diego: HTTP 541"
 }
