@@ -1229,3 +1229,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-07 07:00,Franklin Park Mall,R299,Toledo,OH,,0,64.2,available,MK1F4LL/A
 2026-11-07 07:08,Franklin Park Mall,R299,Toledo,OH,,0,64.2,unavailable,MK1F4LL/A
 2026-11-07 07:23,Clarendon,R036,Arlington,VA,Washington,1,4.2,available,MK1F4LL/A
+2026-11-07 07:25,Clarendon,R036,Arlington,VA,Washington,1,4.2,unavailable,MK1F4LL/A
