@@ -4481,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 0,
+ "retries": 1,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4490,7 +4490,9 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {},
+ "metro_skip": {
+  "Tulsa": 1
+ },
  "skipped": [],
  "checked_at": {
   "New York": "2026-11-07T18:33:08.812140-06:00",
@@ -4529,7 +4531,7 @@
   "Nashville": "2026-11-07T18:32:18.230287-06:00",
   "Raleigh": "2026-11-07T18:31:37.722432-06:00",
   "Oklahoma City": "2026-11-07T18:34:13.658669-06:00",
-  "Tulsa": "2026-11-07T18:30:18.324843-06:00",
+  "Tulsa": "2026-11-07T18:34:39.810328-06:00",
   "Omaha": "2026-11-07T18:32:54.250429-06:00",
   "Des Moines": "2026-11-07T18:33:03.982840-06:00",
   "Little Rock": "2026-11-07T18:31:23.096055-06:00",
@@ -4623,5 +4625,6 @@
   "2026-11-07T08:14-06:00",
   "2026-11-07T14:24-06:00"
  ],
- "last_weekly": "2026-W44"
+ "last_weekly": "2026-W44",
+ "last_error": "2026-11-07T18:34-06:00: Tulsa: HTTP 541"
 }
