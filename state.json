@@ -42,16 +42,16 @@
   },
   "Hilldale": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Main Place": {
    "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 173,
+ "checks": 176,
  "errors": 0,
- "events": 3,
+ "events": 4,
  "last_heartbeat": "2026-11-08",
  "nearby": {
   "Country Club Plaza": {
@@ -171,32 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-08T10:47:14.349393-06:00",
+ "last_check": "2026-11-08T10:50:14.273505-06:00",
  "history": [
-  {
-   "t": "2026-11-08T09:23:40-06:00",
-   "ok": true,
-   "ms": 330,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-08T09:24:40-06:00",
-   "ok": true,
-   "ms": 343,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-08T09:25:40-06:00",
-   "ok": true,
-   "ms": 436,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-08T09:26:40-06:00",
    "ok": true,
@@ -892,19 +868,33 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-08T10:47:13-06:00",
+   "ok": true,
+   "ms": 444,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-08T10:48:13-06:00",
+   "ok": true,
+   "ms": 440,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-08T10:49:13-06:00",
+   "ok": true,
+   "ms": 467,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
-  "Hilldale": {
-   "miles": 394.05,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Madison",
-   "state": "WI"
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -1004,6 +994,16 @@
    },
    "city": "Germantown",
    "state": "TN"
+  },
+  "Hilldale": {
+   "miles": 394.05,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Madison",
+   "state": "WI"
   },
   "Main Place": {
    "miles": 397.06,
