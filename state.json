@@ -42,16 +42,16 @@
   },
   "Hilldale": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Main Place": {
    "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 126,
+ "checks": 130,
  "errors": 0,
- "events": 0,
+ "events": 1,
  "last_heartbeat": "2026-11-08",
  "nearby": {
   "Country Club Plaza": {
@@ -171,40 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-08T10:03:03.054309-06:00",
+ "last_check": "2026-11-08T10:07:20.641101-06:00",
  "history": [
-  {
-   "t": "2026-11-08T08:40:05-06:00",
-   "ok": true,
-   "ms": 265,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-08T08:41:05-06:00",
-   "ok": true,
-   "ms": 359,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-08T08:42:05-06:00",
-   "ok": true,
-   "ms": 301,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-08T08:43:05-06:00",
-   "ok": true,
-   "ms": 354,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-08T08:44:05-06:00",
    "ok": true,
@@ -892,9 +860,51 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-08T10:03:20-06:00",
+   "ok": true,
+   "ms": 347,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-08T10:04:20-06:00",
+   "ok": true,
+   "ms": 315,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-08T10:05:20-06:00",
+   "ok": true,
+   "ms": 304,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-08T10:06:20-06:00",
+   "ok": true,
+   "ms": 322,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
+  "Hilldale": {
+   "miles": 394.05,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Madison",
+   "state": "WI"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -994,16 +1004,6 @@
    },
    "city": "Germantown",
    "state": "TN"
-  },
-  "Hilldale": {
-   "miles": 394.05,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Madison",
-   "state": "WI"
   },
   "Main Place": {
    "miles": 397.06,
