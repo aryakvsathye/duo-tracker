@@ -1358,3 +1358,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-08 09:57,South Hills Village,R147,Pittsburgh,PA,Pittsburgh,2,14.1,unavailable,MK1F4LL/A
 2026-11-08 10:07,Hilldale,R229,Madison,WI,Madison,3,0.6,available,MK1E4LL/A
 2026-11-08 10:07,Domain NORTHSIDE,R216,Austin,TX,Austin,2,9.3,available,MK1E4LL/A
+2026-11-08 10:08,Domain NORTHSIDE,R216,Austin,TX,Austin,2,9.3,unavailable,MK1E4LL/A
+2026-11-08 10:08,Hilldale,R229,Madison,WI,Madison,3,0.6,unavailable,MK1E4LL/A
