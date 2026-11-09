@@ -1391,3 +1391,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-09 11:20,Green Hills,R123,Nashville,TN,Nashville,2,1.8,available,MK1E4LL/A
 2026-11-09 11:26,Green Hills,R123,Nashville,TN,Nashville,2,1.8,unavailable,MK1E4LL/A
 2026-11-09 11:55,Vintage Faire,R322,Modesto,CA,,0,67.2,available,MK1F4LL/A
+2026-11-09 11:58,Corte Madera,R071,Corte Madera,CA,San Francisco,1,11.1,available,MK1E4LL/A
+2026-11-09 11:58,Vintage Faire,R322,Modesto,CA,,0,67.2,unavailable,MK1F4LL/A
