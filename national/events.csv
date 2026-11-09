@@ -1413,3 +1413,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-09 16:30,Park City,R304,Lancaster,PA,Baltimore,2,48.5,available,MK1F4LL/A
 2026-11-09 16:36,Park City,R304,Lancaster,PA,Baltimore,2,48.5,unavailable,MK1F4LL/A
 2026-11-09 17:44,NorthPark Center,R144,Dallas,TX,Dallas,1,1.0,available,MK1F4LL/A
+2026-11-09 17:44,NorthPark Center,R144,Dallas,TX,Dallas,1,1.0,unavailable,MK1F4LL/A
