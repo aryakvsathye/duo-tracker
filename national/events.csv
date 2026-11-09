@@ -1399,3 +1399,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-09 12:04,Fashion Show,R064,Las Vegas,NV,Las Vegas,2,0.6,available,MK1E4LL/A
 2026-11-09 12:07,Fashion Show,R064,Las Vegas,NV,Las Vegas,2,0.6,unavailable,MK1E4LL/A
 2026-11-09 12:56,Northridge,R023,Northridge,CA,Los Angeles,1,14.9,available,MK1E4LL/A
+2026-11-09 13:00,Northridge,R023,Northridge,CA,Los Angeles,1,14.9,unavailable,MK1E4LL/A
