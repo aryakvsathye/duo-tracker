@@ -1396,3 +1396,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-09 12:00,Corte Madera,R071,Corte Madera,CA,San Francisco,1,11.1,unavailable,MK1E4LL/A
 2026-11-09 12:02,Broadway Plaza,R014,Walnut Creek,CA,San Francisco,1,20.4,available,MK1E4LL/A
 2026-11-09 12:04,Broadway Plaza,R014,Walnut Creek,CA,San Francisco,1,20.4,unavailable,MK1E4LL/A
+2026-11-09 12:04,Fashion Show,R064,Las Vegas,NV,Las Vegas,2,0.6,available,MK1E4LL/A
