@@ -2,7 +2,7 @@
  "stock": {
   "Country Club Plaza": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Leawood": {
    "MK1F4LL/A": "unavailable",
@@ -49,21 +49,21 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 504,
+ "checks": 508,
  "errors": 0,
- "events": 4,
+ "events": 5,
  "last_heartbeat": "2026-11-09",
  "nearby": {
   "Country Club Plaza": {
    "miles": 10.11,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "quotes": {
     "MK1F4LL/A": "Currently unavailable at Apple Country Club Plaza",
-    "MK1E4LL/A": "Currently unavailable at Apple Country Club Plaza"
+    "MK1E4LL/A": "Today at Apple Country Club Plaza"
    },
    "quote": "Currently unavailable at Apple Country Club Plaza",
    "phone": "816-448 9200",
@@ -171,40 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-09T15:58:45.602791-06:00",
+ "last_check": "2026-11-09T16:11:33.628197-06:00",
  "history": [
-  {
-   "t": "2026-11-09T14:35:39-06:00",
-   "ok": true,
-   "ms": 463,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-09T14:36:39-06:00",
-   "ok": true,
-   "ms": 385,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-09T14:37:39-06:00",
-   "ok": true,
-   "ms": 444,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-09T14:38:39-06:00",
-   "ok": true,
-   "ms": 665,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-09T14:39:39-06:00",
    "ok": true,
@@ -892,15 +860,47 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-09T16:07:33-06:00",
+   "ok": true,
+   "ms": 503,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-09T16:08:33-06:00",
+   "ok": true,
+   "ms": 360,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-09T16:09:33-06:00",
+   "ok": true,
+   "ms": 372,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-09T16:10:33-06:00",
+   "ok": true,
+   "ms": 386,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
   "Country Club Plaza": {
    "miles": 10.11,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "city": "Kansas City",
    "state": "MO"
