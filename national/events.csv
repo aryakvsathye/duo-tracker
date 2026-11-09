@@ -1409,3 +1409,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-09 15:03,International Plaza,R019,Tampa,FL,Tampa,2,1.1,available,MK1F4LL/A
 2026-11-09 15:07,International Plaza,R019,Tampa,FL,Tampa,2,1.1,unavailable,MK1F4LL/A
 2026-11-09 16:11,Country Club Plaza,R097,Kansas City,MO,Kansas City,2,10.1,available,MK1E4LL/A
+2026-11-09 16:18,Country Club Plaza,R097,Kansas City,MO,Kansas City,2,10.1,unavailable,MK1E4LL/A
