@@ -1561,3 +1561,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 09:38,The Mall at Bay Plaza,R753,Bronx,NY,New York,1,10.6,available,MK1E4LL/A
 2026-11-10 09:39,University Park Mall,R360,Mishawaka,IN,,0,74.7,available,MK1E4LL/A
 2026-11-10 09:39,Oxmoor,R264,Louisville,KY,Louisville,3,1.8,available,MK1E4LL/A
+2026-11-10 09:40,University Park Mall,R360,Mishawaka,IN,,0,74.7,unavailable,MK1E4LL/A
