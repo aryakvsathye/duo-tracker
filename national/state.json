@@ -2529,10 +2529,10 @@
    "metro": "Detroit",
    "tier": 2,
    "miles": 16.7,
-   "status": "ineligible",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "ineligible",
-    "MK1E4LL/A": "ineligible"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
@@ -2565,10 +2565,10 @@
    "metro": "",
    "tier": 0,
    "miles": 64.2,
-   "status": "ineligible",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "ineligible",
-    "MK1E4LL/A": "ineligible"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
@@ -2601,10 +2601,10 @@
    "metro": "Cleveland",
    "tier": 2,
    "miles": 22.4,
-   "status": "ineligible",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "ineligible",
-    "MK1E4LL/A": "ineligible"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
@@ -2619,10 +2619,10 @@
    "metro": "Cleveland",
    "tier": 2,
    "miles": 2.4,
-   "status": "ineligible",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "ineligible",
-    "MK1E4LL/A": "ineligible"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
@@ -2655,10 +2655,10 @@
    "metro": "Cleveland",
    "tier": 2,
    "miles": 24.0,
-   "status": "ineligible",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "ineligible",
-    "MK1E4LL/A": "ineligible"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
@@ -2673,10 +2673,10 @@
    "metro": "Columbus",
    "tier": 2,
    "miles": 9.5,
-   "status": "ineligible",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "ineligible",
-    "MK1E4LL/A": "ineligible"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
@@ -3825,10 +3825,10 @@
    "metro": "Pittsburgh",
    "tier": 2,
    "miles": 2.2,
-   "status": "ineligible",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "ineligible",
-    "MK1E4LL/A": "ineligible"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
@@ -3861,10 +3861,10 @@
    "metro": "Pittsburgh",
    "tier": 2,
    "miles": 14.1,
-   "status": "ineligible",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "ineligible",
-    "MK1E4LL/A": "ineligible"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
@@ -3879,10 +3879,10 @@
    "metro": "Columbus",
    "tier": 2,
    "miles": 2.7,
-   "status": "ineligible",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "ineligible",
-    "MK1E4LL/A": "ineligible"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
@@ -4177,8 +4177,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-10T07:09:23.234824-06:00",
- "metros_ok": 45,
+ "last_sweep": "2026-11-10T07:10:59.524237-06:00",
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4509,7 +4509,7 @@
   "Philadelphia": "2026-11-10T07:09:08.381058-06:00",
   "Atlanta": "2026-11-10T07:08:55.531787-06:00",
   "Miami": "2026-11-10T07:08:59.840725-06:00",
-  "Phoenix": "2026-11-10T07:05:54.804269-06:00",
+  "Phoenix": "2026-11-10T07:10:55.153545-06:00",
   "Boston": "2026-11-10T07:06:47.905472-06:00",
   "San Francisco": "2026-11-10T07:07:55.570329-06:00",
   "Detroit": "2026-11-10T07:07:59.807744-06:00",
@@ -4531,15 +4531,15 @@
   "Cincinnati": "2026-11-10T07:08:12.985669-06:00",
   "Kansas City": "2026-11-10T07:06:58.522286-06:00",
   "Columbus": "2026-11-10T07:08:51.159321-06:00",
-  "Indianapolis": "2026-11-10T07:04:45.267257-06:00",
-  "Cleveland": "2026-11-10T07:05:59.090324-06:00",
+  "Indianapolis": "2026-11-10T07:10:11.455779-06:00",
+  "Cleveland": "2026-11-10T07:10:59.523895-06:00",
   "Nashville": "2026-11-10T07:09:31.842923-06:00",
   "Raleigh": "2026-11-10T07:08:26.144306-06:00",
   "Oklahoma City": "2026-11-10T07:07:42.833978-06:00",
   "Tulsa": "2026-11-10T07:08:04.088655-06:00",
   "Omaha": "2026-11-10T07:08:36.340295-06:00",
   "Des Moines": "2026-11-10T07:08:40.629578-06:00",
-  "Little Rock": "2026-11-10T07:04:58.518379-06:00",
+  "Little Rock": "2026-11-10T07:10:11.455845-06:00",
   "Memphis": "2026-11-10T07:07:07.111455-06:00",
   "Madison": "2026-11-10T07:07:32.793778-06:00",
   "Albuquerque": "2026-11-10T07:07:37.063980-06:00",
@@ -4561,7 +4561,7 @@
   "Philadelphia": "2026-11-10T07:09:08.381077-06:00",
   "Atlanta": "2026-11-10T07:08:55.531808-06:00",
   "Miami": "2026-11-10T07:08:59.840744-06:00",
-  "Phoenix": "2026-11-10T07:05:54.804291-06:00",
+  "Phoenix": "2026-11-10T07:10:55.153567-06:00",
   "Boston": "2026-11-10T07:06:47.905491-06:00",
   "San Francisco": "2026-11-10T07:07:55.570348-06:00",
   "Detroit": "2026-11-10T07:07:59.807763-06:00",
@@ -4584,7 +4584,7 @@
   "Kansas City": "2026-11-10T07:06:58.522305-06:00",
   "Columbus": "2026-11-10T07:08:51.159341-06:00",
   "Indianapolis": "2026-11-10T07:00:47.750929-06:00",
-  "Cleveland": "2026-11-10T07:05:59.090344-06:00",
+  "Cleveland": "2026-11-10T07:10:59.523916-06:00",
   "Nashville": "2026-11-10T07:00:44.255714-06:00",
   "Raleigh": "2026-11-10T07:08:26.144324-06:00",
   "Oklahoma City": "2026-11-10T07:07:42.833997-06:00",
