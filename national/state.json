@@ -729,14 +729,17 @@
    "metro": "Dallas",
    "tier": 1,
    "miles": 34.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-10 09:10"
+   },
+   "since": "2026-11-10 09:10"
   },
   "R216": {
    "name": "Domain NORTHSIDE",
@@ -963,14 +966,17 @@
    "metro": "San Antonio",
    "tier": 2,
    "miles": 8.4,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-10 09:10"
+   },
+   "since": "2026-11-10 09:10"
   },
   "R516": {
    "name": "Carnegie Library",
@@ -3231,17 +3237,14 @@
    "metro": "Tampa",
    "tier": 2,
    "miles": 40.9,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-10 09:09"
-   },
-   "since": "2026-11-10 09:09"
+   "since_by_part": {}
   },
   "R053": {
    "name": "Millenia",
@@ -4180,8 +4183,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-10T09:09:40.173406-06:00",
- "metros_ok": 46,
+ "last_sweep": "2026-11-10T09:10:35.013155-06:00",
+ "metros_ok": 38,
  "metros": [
   {
    "metro": "New York",
@@ -4503,7 +4506,7 @@
   "Los Angeles": "2026-11-10T09:07:52.011827-06:00",
   "Chicago": "2026-11-10T09:07:45.603563-06:00",
   "Dallas": "2026-11-10T09:08:54.212163-06:00",
-  "Houston": "2026-11-10T09:03:55.669171-06:00",
+  "Houston": "2026-11-10T09:10:28.534147-06:00",
   "Washington": "2026-11-10T09:06:37.951179-06:00",
   "Philadelphia": "2026-11-10T09:09:02.101717-06:00",
   "Atlanta": "2026-11-10T09:06:52.643008-06:00",
@@ -4519,9 +4522,9 @@
   "Denver": "2026-11-10T09:05:51.407334-06:00",
   "Baltimore": "2026-11-10T09:09:40.173311-06:00",
   "St. Louis": "2026-11-10T09:06:18.931603-06:00",
-  "Orlando": "2026-11-10T09:03:34.546642-06:00",
-  "Charlotte": "2026-11-10T09:03:40.865239-06:00",
-  "San Antonio": "2026-11-10T09:04:01.987087-06:00",
+  "Orlando": "2026-11-10T09:10:15.839377-06:00",
+  "Charlotte": "2026-11-10T09:10:22.222718-06:00",
+  "San Antonio": "2026-11-10T09:10:35.012927-06:00",
   "Portland": "2026-11-10T09:06:12.613701-06:00",
   "Sacramento": "2026-11-10T09:07:05.395073-06:00",
   "Pittsburgh": "2026-11-10T09:04:49.766974-06:00",
@@ -4555,7 +4558,7 @@
   "Los Angeles": "2026-11-10T09:07:52.011843-06:00",
   "Chicago": "2026-11-10T09:07:45.603586-06:00",
   "Dallas": "2026-11-10T09:08:54.212173-06:00",
-  "Houston": "2026-11-10T09:03:55.669189-06:00",
+  "Houston": "2026-11-10T09:10:28.534160-06:00",
   "Washington": "2026-11-10T09:06:37.951191-06:00",
   "Philadelphia": "2026-11-10T09:09:02.101729-06:00",
   "Atlanta": "2026-11-10T09:06:52.643029-06:00",
@@ -4571,9 +4574,9 @@
   "Denver": "2026-11-10T09:05:51.407353-06:00",
   "Baltimore": "2026-11-10T09:09:40.173327-06:00",
   "St. Louis": "2026-11-10T09:06:18.931623-06:00",
-  "Orlando": "2026-11-10T09:03:34.546659-06:00",
-  "Charlotte": "2026-11-10T09:03:40.865256-06:00",
-  "San Antonio": "2026-11-10T09:04:01.987105-06:00",
+  "Orlando": "2026-11-10T09:10:15.839394-06:00",
+  "Charlotte": "2026-11-10T09:10:22.222737-06:00",
+  "San Antonio": "2026-11-10T09:10:35.012946-06:00",
   "Portland": "2026-11-10T09:06:12.613721-06:00",
   "Sacramento": "2026-11-10T09:07:05.395089-06:00",
   "Pittsburgh": "2026-11-10T08:58:22.719676-06:00",
@@ -4602,7 +4605,10 @@
   "Tucson": "2026-11-10T09:09:27.463419-06:00",
   "Buffalo": "2026-11-10T09:05:38.576259-06:00"
  },
- "hot": [],
+ "hot": [
+  "West South Central",
+  "South Atlantic"
+ ],
  "cycle_seconds": 150,
  "pace": 6.0,
  "pace_since": "2026-11-10T08:49:50.359277-06:00",
