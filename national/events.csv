@@ -1610,3 +1610,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 11:41,Stoneridge Mall,R101,Pleasanton,CA,San Francisco,1,27.0,available,MK1E4LL/A
 2026-11-10 11:43,University Village,R072,Seattle,WA,Seattle,2,3.9,available,MK1E4LL/A
 2026-11-10 11:43,International Plaza,R019,Tampa,FL,Tampa,2,1.1,unavailable,MK1F4LL/A
+2026-11-10 11:43,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,available,MK1E4LL/A
