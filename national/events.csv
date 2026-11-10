@@ -1575,3 +1575,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 09:57,Hilldale,R229,Madison,WI,Madison,3,0.6,available,MK1E4LL/A
 2026-11-10 09:57,Old Orchard,R089,Skokie,IL,Chicago,1,12.9,unavailable,MK1E4LL/A
 2026-11-10 09:58,Scottsdale Quarter,R292,Scottsdale,AZ,Phoenix,1,10.0,unavailable,MK1E4LL/A
+2026-11-10 09:58,Hilldale,R229,Madison,WI,Madison,3,0.6,unavailable,MK1E4LL/A
