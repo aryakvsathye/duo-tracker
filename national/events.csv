@@ -1594,3 +1594,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 10:37,Summerlin,R650,Las Vegas,NV,Las Vegas,2,9.4,available,MK1E4LL/A
 2026-11-10 10:38,Summerlin,R650,Las Vegas,NV,Las Vegas,2,9.4,unavailable,MK1E4LL/A
 2026-11-10 10:41,Cherry Creek,R047,Denver,CO,Denver,2,0.8,unavailable,MK1E4LL/A
+2026-11-10 10:46,Fashion Place,R461,Murray,UT,Salt Lake City,3,8.3,available,MK1E4LL/A
+2026-11-10 10:46,Chandler Fashion Center,R026,Chandler,AZ,Phoenix,1,16.1,available,MK1E4LL/A
