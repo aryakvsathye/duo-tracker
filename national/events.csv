@@ -1625,3 +1625,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 12:00,Beverly Center,R124,Los Angeles,CA,Los Angeles,1,2.5,unavailable,MK1E4LL/A
 2026-11-10 12:01,Hillsdale,R231,San Mateo,CA,San Francisco,1,18.4,unavailable,MK1E4LL/A
 2026-11-10 12:01,Palo Alto,R002,Palo Alto,CA,San Francisco,1,27.4,unavailable,MK1E4LL/A
+2026-11-10 12:01,Alderwood,R100,Lynnwood,WA,Seattle,2,15.0,unavailable,MK1E4LL/A
+2026-11-10 12:01,Roseville,R298,Roseville,CA,Sacramento,2,14.6,unavailable,MK1E4LL/A
