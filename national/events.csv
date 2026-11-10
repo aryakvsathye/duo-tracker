@@ -1579,3 +1579,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 10:01,Village Pointe,R190,Omaha,NE,Omaha,3,0.3,available,MK1E4LL/A
 2026-11-10 10:01,Woodfield,R018,Schaumburg,IL,Chicago,1,23.8,available,MK1E4LL/A
 2026-11-10 10:02,Woodfield,R018,Schaumburg,IL,Chicago,1,23.8,unavailable,MK1E4LL/A
+2026-11-10 10:03,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,available,MK1E4LL/A
