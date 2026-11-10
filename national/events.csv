@@ -1603,3 +1603,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 11:12,Town Square,R219,Las Vegas,NV,Las Vegas,2,3.6,available,MK1E4LL/A
 2026-11-10 11:13,Town Square,R219,Las Vegas,NV,Las Vegas,2,3.6,unavailable,MK1E4LL/A
 2026-11-10 11:31,Boylston Street,R149,Boston,MA,Boston,1,0.4,available,MK1E4LL/A
+2026-11-10 11:34,Washington Square,R090,Tigard,OR,Portland,2,3.4,available,MK1E4LL/A
