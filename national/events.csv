@@ -1690,3 +1690,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 16:28,Leawood,R283,Leawood,KS,Kansas City,2,10.5,unavailable,MK1E4LL/A
 2026-11-10 16:28,Country Club Plaza,R097,Kansas City,MO,Kansas City,2,10.1,unavailable,MK1F4LL/A
 2026-11-10 16:28,Country Club Plaza,R097,Kansas City,MO,Kansas City,2,10.1,unavailable,MK1E4LL/A
+2026-11-10 16:28,West County,R062,Saint Louis,MO,St. Louis,2,6.8,unavailable,MK1F4LL/A
+2026-11-10 16:28,West County,R062,Saint Louis,MO,St. Louis,2,6.8,unavailable,MK1E4LL/A
+2026-11-10 16:29,Saint Louis Galleria,R114,Saint Louis,MO,St. Louis,2,1.2,unavailable,MK1F4LL/A
+2026-11-10 16:29,Saint Louis Galleria,R114,Saint Louis,MO,St. Louis,2,1.2,unavailable,MK1E4LL/A
