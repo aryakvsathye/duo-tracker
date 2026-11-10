@@ -14,7 +14,7 @@
   },
   "Jordan Creek": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Woodland Hills": {
    "MK1F4LL/A": "unavailable",
@@ -49,11 +49,43 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 662,
+ "checks": 668,
  "errors": 0,
- "events": 30,
+ "events": 31,
  "last_heartbeat": "2026-11-10",
  "nearby": {
+  "Jordan Creek": {
+   "miles": 183.62,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "quotes": {
+    "MK1F4LL/A": "Currently unavailable at Apple Jordan Creek",
+    "MK1E4LL/A": "Today at Apple Jordan Creek"
+   },
+   "quote": "Currently unavailable at Apple Jordan Creek",
+   "phone": "515-440 9900",
+   "lat": 41.570044,
+   "lon": -93.803773,
+   "address": "101 Jordan Creek Parkway",
+   "city": "West Des Moines",
+   "hours": [
+    {
+     "days": "Mon-Thu:",
+     "time": "10:00 AM-8:00 PM"
+    },
+    {
+     "days": "Sun:",
+     "time": "11:00 AM-6:00 PM"
+    },
+    {
+     "days": "Fri-Sat:",
+     "time": "10:00 AM-9:00 PM"
+    }
+   ]
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -137,90 +169,10 @@
      "time": "10:00 AM-9:00 PM"
     }
    ]
-  },
-  "Jordan Creek": {
-   "miles": 183.62,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "quotes": {
-    "MK1F4LL/A": "Currently unavailable at Apple Jordan Creek",
-    "MK1E4LL/A": "Currently unavailable at Apple Jordan Creek"
-   },
-   "quote": "Currently unavailable at Apple Jordan Creek",
-   "phone": "515-440 9900",
-   "lat": 41.570044,
-   "lon": -93.803773,
-   "address": "101 Jordan Creek Parkway",
-   "city": "West Des Moines",
-   "hours": [
-    {
-     "days": "Mon-Thu:",
-     "time": "10:00 AM-8:00 PM"
-    },
-    {
-     "days": "Sun:",
-     "time": "11:00 AM-6:00 PM"
-    },
-    {
-     "days": "Fri-Sat:",
-     "time": "10:00 AM-9:00 PM"
-    }
-   ]
   }
  },
- "last_check": "2026-11-10T14:01:30.383063-06:00",
+ "last_check": "2026-11-10T14:07:56.579582-06:00",
  "history": [
-  {
-   "t": "2026-11-10T13:21:06-06:00",
-   "ok": true,
-   "ms": 424,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-10T13:21:26-06:00",
-   "ok": true,
-   "ms": 574,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-10T13:21:46-06:00",
-   "ok": true,
-   "ms": 418,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-10T13:22:06-06:00",
-   "ok": true,
-   "ms": 415,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-10T13:22:26-06:00",
-   "ok": true,
-   "ms": 448,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-10T13:22:46-06:00",
-   "ok": true,
-   "ms": 343,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-10T13:23:06-06:00",
    "ok": true,
@@ -892,9 +844,67 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-10T14:01:56-06:00",
+   "ok": true,
+   "ms": 378,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-10T14:02:56-06:00",
+   "ok": true,
+   "ms": 517,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-10T14:03:56-06:00",
+   "ok": true,
+   "ms": 506,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-10T14:04:56-06:00",
+   "ok": true,
+   "ms": 568,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-10T14:05:56-06:00",
+   "ok": true,
+   "ms": 421,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-10T14:06:56-06:00",
+   "ok": true,
+   "ms": 495,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
+  "Jordan Creek": {
+   "miles": 183.62,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "West Des Moines",
+   "state": "IA"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -924,16 +934,6 @@
    },
    "city": "Omaha",
    "state": "NE"
-  },
-  "Jordan Creek": {
-   "miles": 183.62,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "West Des Moines",
-   "state": "IA"
   },
   "Woodland Hills": {
    "miles": 212.92,
