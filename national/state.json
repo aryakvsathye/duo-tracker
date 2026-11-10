@@ -4177,8 +4177,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-10T07:34:33.298040-06:00",
- "metros_ok": 49,
+ "last_sweep": "2026-11-10T07:34:41.039030-06:00",
+ "metros_ok": 45,
  "metros": [
   {
    "metro": "New York",
@@ -4481,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 5,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4490,16 +4490,13 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Omaha": 1,
-  "Des Moines": 1,
-  "Columbus": 1,
-  "Philadelphia": 1,
-  "Orlando": 1
- },
+ "metro_skip": {},
  "skipped": [
-  "Baltimore",
-  "Birmingham"
+  "Columbus",
+  "Des Moines",
+  "Omaha",
+  "Orlando",
+  "Philadelphia"
  ],
  "checked_at": {
   "New York": "2026-11-10T07:33:58.062809-06:00",
@@ -4522,7 +4519,7 @@
   "Denver": "2026-11-10T07:31:14.170465-06:00",
   "Baltimore": "2026-11-10T07:34:33.297924-06:00",
   "St. Louis": "2026-11-10T07:31:30.012692-06:00",
-  "Orlando": "2026-11-10T07:29:43.313824-06:00",
+  "Orlando": "2026-11-10T07:34:46.039325-06:00",
   "Charlotte": "2026-11-10T07:31:45.907724-06:00",
   "San Antonio": "2026-11-10T07:32:45.965749-06:00",
   "Portland": "2026-11-10T07:31:24.688726-06:00",
@@ -4547,7 +4544,7 @@
   "Albuquerque": "2026-11-10T07:33:19.518673-06:00",
   "Salt Lake City": "2026-11-10T07:30:19.217964-06:00",
   "Louisville": "2026-11-10T07:34:08.880578-06:00",
-  "Birmingham": "2026-11-10T07:29:33.007270-06:00",
+  "Birmingham": "2026-11-10T07:34:41.038910-06:00",
   "Richmond": "2026-11-10T07:32:08.778617-06:00",
   "Honolulu": "2026-11-10T07:32:40.686258-06:00",
   "Tucson": "2026-11-10T07:30:24.481113-06:00",
@@ -4599,7 +4596,7 @@
   "Albuquerque": "2026-11-10T07:33:19.518689-06:00",
   "Salt Lake City": "2026-11-10T07:30:19.217980-06:00",
   "Louisville": "2026-11-10T07:34:08.880597-06:00",
-  "Birmingham": "2026-11-10T07:19:21.568917-06:00",
+  "Birmingham": "2026-11-10T07:34:41.038929-06:00",
   "Richmond": "2026-11-10T07:32:08.778637-06:00",
   "Honolulu": "2026-11-10T07:32:40.686279-06:00",
   "Tucson": "2026-11-10T07:30:24.481132-06:00",
@@ -4632,6 +4629,5 @@
   "2026-11-10T07:04-06:00",
   "2026-11-10T07:29-06:00"
  ],
- "last_weekly": "2026-W45",
- "last_error": "2026-11-10T07:29-06:00: Omaha: HTTP 541; Des Moines: HTTP 541; Columbus: HTTP 541; Philadelphia: HTTP 541; Orlando: HTTP 541"
+ "last_weekly": "2026-W45"
 }
