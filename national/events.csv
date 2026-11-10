@@ -1669,3 +1669,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 14:42,Alderwood,R100,Lynnwood,WA,Seattle,2,15.0,available,MK1E4LL/A
 2026-11-10 14:44,Alderwood,R100,Lynnwood,WA,Seattle,2,15.0,unavailable,MK1E4LL/A
 2026-11-10 15:44,Short Pump Town Center,R078,Richmond,VA,Richmond,3,1.1,available,MK1E4LL/A
+2026-11-10 15:45,Short Pump Town Center,R078,Richmond,VA,Richmond,3,1.1,unavailable,MK1E4LL/A
