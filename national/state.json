@@ -993,17 +993,14 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 0.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-10 08:59"
-   },
-   "since": "2026-11-10 08:59"
+   "since_by_part": {}
   },
   "R287": {
    "name": "Georgetown",
@@ -1122,17 +1119,14 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 18.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-10 08:59"
-   },
-   "since": "2026-11-10 08:59"
+   "since_by_part": {}
   },
   "R271": {
    "name": "Reston",
@@ -3324,17 +3318,14 @@
    "metro": "",
    "tier": 0,
    "miles": 124.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-10 08:45"
-   },
-   "since": "2026-11-10 08:45"
+   "since_by_part": {}
   },
   "R047": {
    "name": "Cherry Creek",
@@ -4204,7 +4195,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-10T09:03:14.061223-06:00",
+ "last_sweep": "2026-11-10T09:03:40.865345-06:00",
  "metros_ok": 50,
  "metros": [
   {
@@ -4542,12 +4533,12 @@
   "Seattle": "2026-11-10T08:58:36.991544-06:00",
   "Minneapolis": "2026-11-10T08:58:49.684376-06:00",
   "San Diego": "2026-11-10T08:59:15.142793-06:00",
-  "Tampa": "2026-11-10T08:57:16.829577-06:00",
+  "Tampa": "2026-11-10T09:03:21.901618-06:00",
   "Denver": "2026-11-10T08:59:08.795671-06:00",
-  "Baltimore": "2026-11-10T08:57:23.196777-06:00",
+  "Baltimore": "2026-11-10T09:03:28.215635-06:00",
   "St. Louis": "2026-11-10T08:59:35.900780-06:00",
-  "Orlando": "2026-11-10T08:57:29.682036-06:00",
-  "Charlotte": "2026-11-10T08:57:36.096731-06:00",
+  "Orlando": "2026-11-10T09:03:34.546642-06:00",
+  "Charlotte": "2026-11-10T09:03:40.865239-06:00",
   "San Antonio": "2026-11-10T08:57:57.079852-06:00",
   "Portland": "2026-11-10T08:59:29.487195-06:00",
   "Sacramento": "2026-11-10T09:00:51.848038-06:00",
@@ -4594,12 +4585,12 @@
   "Seattle": "2026-11-10T08:58:36.991567-06:00",
   "Minneapolis": "2026-11-10T08:58:49.684399-06:00",
   "San Diego": "2026-11-10T08:59:15.142815-06:00",
-  "Tampa": "2026-11-10T08:57:16.829600-06:00",
+  "Tampa": "2026-11-10T09:03:21.901635-06:00",
   "Denver": "2026-11-10T08:59:08.795692-06:00",
-  "Baltimore": "2026-11-10T08:57:23.196798-06:00",
+  "Baltimore": "2026-11-10T09:03:28.215652-06:00",
   "St. Louis": "2026-11-10T08:59:35.900804-06:00",
-  "Orlando": "2026-11-10T08:57:29.682057-06:00",
-  "Charlotte": "2026-11-10T08:57:36.096753-06:00",
+  "Orlando": "2026-11-10T09:03:34.546659-06:00",
+  "Charlotte": "2026-11-10T09:03:40.865256-06:00",
   "San Antonio": "2026-11-10T08:57:57.079874-06:00",
   "Portland": "2026-11-10T08:59:29.487218-06:00",
   "Sacramento": "2026-11-10T09:00:51.848055-06:00",
