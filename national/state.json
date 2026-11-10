@@ -4481,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 4,
+ "retries": 2,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4491,14 +4491,14 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Tulsa": 1,
-  "New York": 1,
-  "Cincinnati": 1,
-  "Des Moines": 1
+  "Tucson": 1,
+  "Nashville": 1
  },
  "skipped": [
-  "Louisville",
-  "Omaha"
+  "Cincinnati",
+  "Des Moines",
+  "New York",
+  "Tulsa"
  ],
  "checked_at": {
   "New York": "2026-11-09T21:03:56.161619-06:00",
@@ -4534,7 +4534,7 @@
   "Columbus": "2026-11-09T21:04:06.422927-06:00",
   "Indianapolis": "2026-11-09T21:00:51.635943-06:00",
   "Cleveland": "2026-11-09T21:01:17.452160-06:00",
-  "Nashville": "2026-11-09T21:00:46.802486-06:00",
+  "Nashville": "2026-11-09T21:04:57.023564-06:00",
   "Raleigh": "2026-11-09T21:00:56.457894-06:00",
   "Oklahoma City": "2026-11-09T21:03:16.569518-06:00",
   "Tulsa": "2026-11-09T21:03:56.159003-06:00",
@@ -4549,7 +4549,7 @@
   "Birmingham": "2026-11-09T21:04:20.970416-06:00",
   "Richmond": "2026-11-09T21:01:06.118490-06:00",
   "Honolulu": "2026-11-09T21:02:52.368368-06:00",
-  "Tucson": "2026-11-09T21:00:41.937349-06:00",
+  "Tucson": "2026-11-09T21:04:42.148089-06:00",
   "Buffalo": "2026-11-09T21:02:41.479499-06:00"
  },
  "ok_at": {
@@ -4632,5 +4632,5 @@
   "2026-11-09T16:16-06:00"
  ],
  "last_weekly": "2026-W45",
- "last_error": "2026-11-09T20:59-06:00: Tulsa: HTTP 541; New York: HTTP 541; Cincinnati: HTTP 541; Des Moines: HTTP 541"
+ "last_error": "2026-11-09T21:05-06:00: Tucson: HTTP 541; Nashville: HTTP 541"
 }
