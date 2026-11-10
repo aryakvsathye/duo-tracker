@@ -678,14 +678,17 @@
    "metro": "Dallas",
    "tier": 1,
    "miles": 3.0,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-10 09:02"
+   },
+   "since": "2026-11-10 09:02"
   },
   "R746": {
    "name": "Galleria Dallas",
@@ -696,14 +699,17 @@
    "metro": "Dallas",
    "tier": 1,
    "miles": 4.8,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-10 09:02"
+   },
+   "since": "2026-11-10 09:02"
   },
   "R151": {
    "name": "Southlake Town Square",
@@ -714,14 +720,17 @@
    "metro": "Dallas",
    "tier": 1,
    "miles": 20.4,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-10 09:02"
+   },
+   "since": "2026-11-10 09:02"
   },
   "R316": {
    "name": "University Park Village",
@@ -4198,7 +4207,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-10T09:02:12.883836-06:00",
+ "last_sweep": "2026-11-10T09:02:40.628679-06:00",
  "metros_ok": 50,
  "metros": [
   {
@@ -4520,10 +4529,10 @@
   "Madison"
  ],
  "checked_at": {
-  "New York": "2026-11-10T08:56:30.298560-06:00",
+  "New York": "2026-11-10T09:02:34.264559-06:00",
   "Los Angeles": "2026-11-10T09:01:38.654527-06:00",
   "Chicago": "2026-11-10T09:01:32.300012-06:00",
-  "Dallas": "2026-11-10T08:56:36.757425-06:00",
+  "Dallas": "2026-11-10T09:02:40.628561-06:00",
   "Houston": "2026-11-10T08:57:48.860778-06:00",
   "Washington": "2026-11-10T09:00:26.132893-06:00",
   "Philadelphia": "2026-11-10T08:56:43.167483-06:00",
@@ -4558,8 +4567,8 @@
   "Oklahoma City": "2026-11-10T08:59:02.438130-06:00",
   "Tulsa": "2026-11-10T08:59:23.085100-06:00",
   "Omaha": "2026-11-10T09:02:12.883726-06:00",
-  "Des Moines": "2026-11-10T08:56:23.797196-06:00",
-  "Little Rock": "2026-11-10T08:56:16.008061-06:00",
+  "Des Moines": "2026-11-10T09:02:27.861356-06:00",
+  "Little Rock": "2026-11-10T09:02:21.480647-06:00",
   "Memphis": "2026-11-10T09:00:58.320206-06:00",
   "Madison": "2026-11-10T09:01:19.521681-06:00",
   "Albuquerque": "2026-11-10T09:01:25.868329-06:00",
@@ -4572,10 +4581,10 @@
   "Buffalo": "2026-11-10T08:58:55.996250-06:00"
  },
  "ok_at": {
-  "New York": "2026-11-10T08:56:30.298582-06:00",
+  "New York": "2026-11-10T09:02:34.264577-06:00",
   "Los Angeles": "2026-11-10T09:01:38.654544-06:00",
   "Chicago": "2026-11-10T09:01:32.300029-06:00",
-  "Dallas": "2026-11-10T08:56:36.757446-06:00",
+  "Dallas": "2026-11-10T09:02:40.628580-06:00",
   "Houston": "2026-11-10T08:57:48.860800-06:00",
   "Washington": "2026-11-10T09:00:26.132910-06:00",
   "Philadelphia": "2026-11-10T08:56:43.167505-06:00",
@@ -4610,8 +4619,8 @@
   "Oklahoma City": "2026-11-10T08:59:02.438151-06:00",
   "Tulsa": "2026-11-10T08:59:23.085121-06:00",
   "Omaha": "2026-11-10T09:02:12.883743-06:00",
-  "Des Moines": "2026-11-10T08:56:23.797218-06:00",
-  "Little Rock": "2026-11-10T08:56:16.008101-06:00",
+  "Des Moines": "2026-11-10T09:02:27.861373-06:00",
+  "Little Rock": "2026-11-10T09:02:21.480664-06:00",
   "Memphis": "2026-11-10T09:00:58.320223-06:00",
   "Madison": "2026-11-10T09:01:19.521696-06:00",
   "Albuquerque": "2026-11-10T09:01:25.868345-06:00",
