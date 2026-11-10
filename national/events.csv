@@ -1511,3 +1511,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 08:59,Fairfax Corner,R221,Fairfax,VA,Washington,1,18.5,available,MK1E4LL/A
 2026-11-10 08:59,Carnegie Library,R516,Washington,DC,Washington,1,0.5,available,MK1E4LL/A
 2026-11-10 09:00,Saint Louis Galleria,R114,Saint Louis,MO,St. Louis,2,1.2,available,MK1E4LL/A
+2026-11-10 09:01,University Park Mall,R360,Mishawaka,IN,,0,74.7,available,MK1E4LL/A
