@@ -10,7 +10,7 @@
   },
   "Village Pointe": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Jordan Creek": {
    "MK1F4LL/A": "unavailable",
@@ -49,11 +49,39 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 545,
+ "checks": 555,
  "errors": 0,
- "events": 28,
+ "events": 29,
  "last_heartbeat": "2026-11-10",
  "nearby": {
+  "Village Pointe": {
+   "miles": 171.88,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "quotes": {
+    "MK1F4LL/A": "Currently unavailable at Apple Village Pointe",
+    "MK1E4LL/A": "Today at Apple Village Pointe"
+   },
+   "quote": "Currently unavailable at Apple Village Pointe",
+   "phone": "402-970 4477",
+   "lat": 41.261188,
+   "lon": -96.183078,
+   "address": "17170 Davenport Street",
+   "city": "Omaha",
+   "hours": [
+    {
+     "days": "Sun:",
+     "time": "11:00 AM-5:00 PM"
+    },
+    {
+     "days": "Mon-Sat:",
+     "time": "10:00 AM-9:00 PM"
+    }
+   ]
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -110,34 +138,6 @@
     }
    ]
   },
-  "Village Pointe": {
-   "miles": 171.88,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "quotes": {
-    "MK1F4LL/A": "Currently unavailable at Apple Village Pointe",
-    "MK1E4LL/A": "Currently unavailable at Apple Village Pointe"
-   },
-   "quote": "Currently unavailable at Apple Village Pointe",
-   "phone": "402-970 4477",
-   "lat": 41.261188,
-   "lon": -96.183078,
-   "address": "17170 Davenport Street",
-   "city": "Omaha",
-   "hours": [
-    {
-     "days": "Sun:",
-     "time": "11:00 AM-5:00 PM"
-    },
-    {
-     "days": "Mon-Sat:",
-     "time": "10:00 AM-9:00 PM"
-    }
-   ]
-  },
   "Jordan Creek": {
    "miles": 183.62,
    "status": "unavailable",
@@ -171,88 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-10T13:12:02.321923-06:00",
+ "last_check": "2026-11-10T13:15:22.364464-06:00",
  "history": [
-  {
-   "t": "2026-11-10T12:08:48-06:00",
-   "ok": true,
-   "ms": 391,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T12:09:10-06:00",
-   "ok": true,
-   "ms": 625,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T12:10:10-06:00",
-   "ok": true,
-   "ms": 851,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T12:11:10-06:00",
-   "ok": true,
-   "ms": 422,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T12:12:10-06:00",
-   "ok": true,
-   "ms": 368,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T12:13:10-06:00",
-   "ok": true,
-   "ms": 447,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T12:14:10-06:00",
-   "ok": true,
-   "ms": 460,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T12:15:10-06:00",
-   "ok": true,
-   "ms": 458,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T12:16:10-06:00",
-   "ok": true,
-   "ms": 680,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T12:17:10-06:00",
-   "ok": true,
-   "ms": 439,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-10T12:17:30-06:00",
    "ok": true,
@@ -968,9 +888,99 @@
     "Jordan Creek"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-10T13:12:01-06:00",
+   "ok": true,
+   "ms": 414,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T13:12:21-06:00",
+   "ok": true,
+   "ms": 300,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T13:12:41-06:00",
+   "ok": true,
+   "ms": 311,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T13:13:01-06:00",
+   "ok": true,
+   "ms": 298,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T13:13:21-06:00",
+   "ok": true,
+   "ms": 296,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T13:13:41-06:00",
+   "ok": true,
+   "ms": 270,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T13:14:01-06:00",
+   "ok": true,
+   "ms": 342,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T13:14:21-06:00",
+   "ok": true,
+   "ms": 249,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T13:14:41-06:00",
+   "ok": true,
+   "ms": 468,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T13:15:01-06:00",
+   "ok": true,
+   "ms": 489,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
+  "Village Pointe": {
+   "miles": 171.88,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Omaha",
+   "state": "NE"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -990,16 +1000,6 @@
    },
    "city": "Leawood",
    "state": "KS"
-  },
-  "Village Pointe": {
-   "miles": 171.88,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Omaha",
-   "state": "NE"
   },
   "Jordan Creek": {
    "miles": 183.62,
@@ -1107,7 +1107,7 @@
    "Village Pointe",
    "Jordan Creek"
   ],
-  "until": "2026-11-10T13:41:00-06:00"
+  "until": "2026-11-10T13:45:00-06:00"
  },
  "wave_alerted_at": "2026-11-10T13:10:22.216403-06:00"
 }
