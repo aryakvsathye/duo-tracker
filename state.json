@@ -26,7 +26,7 @@
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Penn Square": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 57,
+ "checks": 74,
  "errors": 0,
- "events": 3,
+ "events": 4,
  "last_heartbeat": "2026-11-10",
  "nearby": {
   "Country Club Plaza": {
@@ -171,144 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-10T09:00:20.057271-06:00",
+ "last_check": "2026-11-10T09:06:00.003319-06:00",
  "history": [
-  {
-   "t": "2026-11-10T07:36:56-06:00",
-   "ok": true,
-   "ms": 454,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T07:37:56-06:00",
-   "ok": true,
-   "ms": 310,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T07:38:56-06:00",
-   "ok": true,
-   "ms": 315,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T07:39:56-06:00",
-   "ok": true,
-   "ms": 343,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T07:40:56-06:00",
-   "ok": true,
-   "ms": 545,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T07:41:56-06:00",
-   "ok": true,
-   "ms": 372,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T07:42:17-06:00",
-   "ok": true,
-   "ms": 664,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T07:43:17-06:00",
-   "ok": true,
-   "ms": 296,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T07:44:17-06:00",
-   "ok": true,
-   "ms": 378,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T07:45:17-06:00",
-   "ok": true,
-   "ms": 309,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T07:46:17-06:00",
-   "ok": true,
-   "ms": 247,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T07:47:17-06:00",
-   "ok": true,
-   "ms": 383,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T07:48:17-06:00",
-   "ok": true,
-   "ms": 316,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T07:49:17-06:00",
-   "ok": true,
-   "ms": 312,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T07:50:17-06:00",
-   "ok": true,
-   "ms": 299,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T07:50:37-06:00",
-   "ok": true,
-   "ms": 336,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T07:51:37-06:00",
-   "ok": true,
-   "ms": 288,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-10T07:52:37-06:00",
    "ok": true,
@@ -894,19 +758,145 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-10T09:00:19-06:00",
+   "ok": true,
+   "ms": 367,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:00:39-06:00",
+   "ok": true,
+   "ms": 369,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:00:59-06:00",
+   "ok": true,
+   "ms": 349,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:01:19-06:00",
+   "ok": true,
+   "ms": 382,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:01:39-06:00",
+   "ok": true,
+   "ms": 506,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:01:59-06:00",
+   "ok": true,
+   "ms": 368,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:02:19-06:00",
+   "ok": true,
+   "ms": 385,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:02:39-06:00",
+   "ok": true,
+   "ms": 344,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:02:59-06:00",
+   "ok": true,
+   "ms": 367,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:03:19-06:00",
+   "ok": true,
+   "ms": 365,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:03:39-06:00",
+   "ok": true,
+   "ms": 347,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:03:59-06:00",
+   "ok": true,
+   "ms": 317,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:04:19-06:00",
+   "ok": true,
+   "ms": 386,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:04:39-06:00",
+   "ok": true,
+   "ms": 311,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:04:59-06:00",
+   "ok": true,
+   "ms": 429,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:05:19-06:00",
+   "ok": true,
+   "ms": 468,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:05:39-06:00",
+   "ok": true,
+   "ms": 415,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
-  "Saint Louis Galleria": {
-   "miles": 239.77,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -959,6 +949,16 @@
   },
   "West County": {
    "miles": 234.82,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
+  },
+  "Saint Louis Galleria": {
+   "miles": 239.77,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
