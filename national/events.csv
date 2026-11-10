@@ -1615,3 +1615,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 11:48,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,unavailable,MK1E4LL/A
 2026-11-10 11:48,University Village,R072,Seattle,WA,Seattle,2,3.9,unavailable,MK1E4LL/A
 2026-11-10 11:51,Glendale Galleria,R001,Glendale,CA,Los Angeles,1,10.8,available,MK1E4LL/A
+2026-11-10 11:55,Beverly Center,R124,Los Angeles,CA,Los Angeles,1,2.5,available,MK1E4LL/A
+2026-11-10 11:55,Glendale Galleria,R001,Glendale,CA,Los Angeles,1,10.8,unavailable,MK1E4LL/A
+2026-11-10 11:56,Hillsdale,R231,San Mateo,CA,San Francisco,1,18.4,available,MK1E4LL/A
+2026-11-10 11:56,Palo Alto,R002,Palo Alto,CA,San Francisco,1,27.4,available,MK1E4LL/A
