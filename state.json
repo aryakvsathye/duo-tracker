@@ -42,16 +42,16 @@
   },
   "Hilldale": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Main Place": {
    "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 226,
+ "checks": 229,
  "errors": 0,
- "events": 14,
+ "events": 15,
  "last_heartbeat": "2026-11-10",
  "nearby": {
   "Country Club Plaza": {
@@ -171,32 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-10T09:56:53.468913-06:00",
+ "last_check": "2026-11-10T09:57:53.447976-06:00",
  "history": [
-  {
-   "t": "2026-11-10T09:26:35-06:00",
-   "ok": true,
-   "ms": 330,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-10T09:26:55-06:00",
-   "ok": true,
-   "ms": 365,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-10T09:27:15-06:00",
-   "ok": true,
-   "ms": 312,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-10T09:27:35-06:00",
    "ok": true,
@@ -892,9 +868,43 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-10T09:56:53-06:00",
+   "ok": true,
+   "ms": 297,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:57:13-06:00",
+   "ok": true,
+   "ms": 335,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:57:33-06:00",
+   "ok": true,
+   "ms": 326,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
+  "Hilldale": {
+   "miles": 394.05,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Madison",
+   "state": "WI"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -995,16 +1005,6 @@
    "city": "Germantown",
    "state": "TN"
   },
-  "Hilldale": {
-   "miles": 394.05,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Madison",
-   "state": "WI"
-  },
   "Main Place": {
    "miles": 397.06,
    "status": "unavailable",
@@ -1028,10 +1028,10 @@
  "wave": {
   "since": "2026-11-10T09:00:20.057281-06:00",
   "stores": [
-   "West County",
-   "Saddle Creek"
+   "Saddle Creek",
+   "Hilldale"
   ],
-  "until": "2026-11-10T10:21:00-06:00"
+  "until": "2026-11-10T10:27:00-06:00"
  },
  "wave_alerted_at": "2026-11-10T09:00:20.057281-06:00"
 }
