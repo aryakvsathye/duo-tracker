@@ -1658,3 +1658,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 14:00,Domain NORTHSIDE,R216,Austin,TX,Austin,2,9.3,available,MK1E4LL/A
 2026-11-10 14:03,Domain NORTHSIDE,R216,Austin,TX,Austin,2,9.3,unavailable,MK1E4LL/A
 2026-11-10 14:03,Rosedale Center,R022,Roseville,MN,Minneapolis,2,12.6,unavailable,MK1E4LL/A
+2026-11-10 14:08,Jordan Creek,R109,West Des Moines,IA,Des Moines,3,0.6,available,MK1E4LL/A
