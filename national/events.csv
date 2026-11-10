@@ -1480,3 +1480,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 08:39,Syracuse,R107,Syracuse,NY,,0,131.6,unavailable,MK1E4LL/A
 2026-11-10 08:41,Willow Grove Park,R234,Willow Grove,PA,Philadelphia,1,13.1,available,MK1E4LL/A
 2026-11-10 08:42,CambridgeSide,R021,Cambridge,MA,Boston,1,1.2,available,MK1E4LL/A
+2026-11-10 08:45,Menlo Park,R067,Edison,NJ,,0,60.3,available,MK1F4LL/A
+2026-11-10 08:45,Willow Grove Park,R234,Willow Grove,PA,Philadelphia,1,13.1,unavailable,MK1E4LL/A
