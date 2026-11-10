@@ -26,7 +26,7 @@
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Penn Square": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 117,
+ "checks": 119,
  "errors": 0,
- "events": 8,
+ "events": 9,
  "last_heartbeat": "2026-11-10",
  "nearby": {
   "Jordan Creek": {
@@ -171,24 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-10T09:20:16.114578-06:00",
+ "last_check": "2026-11-10T09:20:56.077516-06:00",
  "history": [
-  {
-   "t": "2026-11-10T08:32:20-06:00",
-   "ok": true,
-   "ms": 472,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-10T08:33:20-06:00",
-   "ok": true,
-   "ms": 404,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-10T08:34:20-06:00",
    "ok": true,
@@ -894,6 +878,26 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-10T09:20:15-06:00",
+   "ok": true,
+   "ms": 476,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:20:35-06:00",
+   "ok": true,
+   "ms": 440,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -906,16 +910,6 @@
    },
    "city": "West Des Moines",
    "state": "IA"
-  },
-  "Saint Louis Galleria": {
-   "miles": 239.77,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -959,6 +953,16 @@
   },
   "West County": {
    "miles": 234.82,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
+  },
+  "Saint Louis Galleria": {
+   "miles": 239.77,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
