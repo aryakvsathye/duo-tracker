@@ -26,7 +26,7 @@
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Penn Square": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 56,
+ "checks": 57,
  "errors": 0,
- "events": 2,
+ "events": 3,
  "last_heartbeat": "2026-11-10",
  "nearby": {
   "Country Club Plaza": {
@@ -171,16 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-10T08:59:20.056014-06:00",
+ "last_check": "2026-11-10T09:00:20.057271-06:00",
  "history": [
-  {
-   "t": "2026-11-10T07:35:56-06:00",
-   "ok": true,
-   "ms": 467,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-10T07:36:56-06:00",
    "ok": true,
@@ -894,9 +886,27 @@
     "Country Club Plaza"
    ],
    "burst": false
+  },
+  {
+   "t": "2026-11-10T08:59:19-06:00",
+   "ok": true,
+   "ms": 365,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
+  "Saint Louis Galleria": {
+   "miles": 239.77,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -949,16 +959,6 @@
   },
   "West County": {
    "miles": 234.82,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
-  },
-  "Saint Louis Galleria": {
-   "miles": 239.77,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -1028,12 +1028,12 @@
   "MK1E4LL/A": "Star White"
  },
  "wave": {
-  "since": "2026-11-04T13:57:59.019736-06:00",
+  "since": "2026-11-10T09:00:20.057281-06:00",
   "stores": [
-   "Jordan Creek",
-   "Woodland Hills"
+   "Country Club Plaza",
+   "Saint Louis Galleria"
   ],
-  "until": "2026-11-04T14:27:00-06:00"
+  "until": "2026-11-10T09:30:00-06:00"
  },
- "wave_alerted_at": "2026-11-04T14:08:59.232031-06:00"
+ "wave_alerted_at": "2026-11-10T09:00:20.057281-06:00"
 }
