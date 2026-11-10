@@ -1606,3 +1606,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 11:34,Washington Square,R090,Tigard,OR,Portland,2,3.4,available,MK1E4LL/A
 2026-11-10 11:35,Boylston Street,R149,Boston,MA,Boston,1,0.4,unavailable,MK1E4LL/A
 2026-11-10 11:38,Washington Square,R090,Tigard,OR,Portland,2,3.4,unavailable,MK1E4LL/A
+2026-11-10 11:40,International Plaza,R019,Tampa,FL,Tampa,2,1.1,available,MK1F4LL/A
