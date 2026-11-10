@@ -1472,3 +1472,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 08:31,Rockingham Park,R027,Salem,NH,Boston,1,29.9,available,MK1E4LL/A
 2026-11-10 08:34,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,unavailable,MK1E4LL/A
 2026-11-10 08:34,South Hills Village,R147,Pittsburgh,PA,Pittsburgh,2,14.1,unavailable,MK1E4LL/A
+2026-11-10 08:35,Syracuse,R107,Syracuse,NY,,0,131.6,available,MK1E4LL/A
+2026-11-10 08:35,The Woodlands,R126,The Woodlands,TX,Houston,1,28.7,available,MK1E4LL/A
