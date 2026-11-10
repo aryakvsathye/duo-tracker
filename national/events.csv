@@ -1546,3 +1546,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 09:21,Houston Galleria,R058,Houston,TX,Houston,1,0.7,unavailable,MK1E4LL/A
 2026-11-10 09:22,The Mall at Bay Plaza,R753,Bronx,NY,New York,1,10.6,available,MK1E4LL/A
 2026-11-10 09:22,SouthPark,R083,Charlotte,NC,Charlotte,2,2.5,available,MK1E4LL/A
+2026-11-10 09:24,Jordan Creek,R109,West Des Moines,IA,Des Moines,3,0.6,unavailable,MK1E4LL/A
+2026-11-10 09:24,Saint Louis Galleria,R114,Saint Louis,MO,St. Louis,2,1.2,unavailable,MK1E4LL/A
