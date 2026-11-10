@@ -42,16 +42,16 @@
   },
   "Hilldale": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Main Place": {
    "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 229,
+ "checks": 230,
  "errors": 0,
- "events": 15,
+ "events": 16,
  "last_heartbeat": "2026-11-10",
  "nearby": {
   "Country Club Plaza": {
@@ -171,16 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-10T09:57:53.447976-06:00",
+ "last_check": "2026-11-10T09:58:13.564731-06:00",
  "history": [
-  {
-   "t": "2026-11-10T09:27:35-06:00",
-   "ok": true,
-   "ms": 416,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-10T09:27:55-06:00",
    "ok": true,
@@ -892,19 +884,17 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-10T09:57:53-06:00",
+   "ok": true,
+   "ms": 276,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
-  "Hilldale": {
-   "miles": 394.05,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Madison",
-   "state": "WI"
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -1004,6 +994,16 @@
    },
    "city": "Germantown",
    "state": "TN"
+  },
+  "Hilldale": {
+   "miles": 394.05,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Madison",
+   "state": "WI"
   },
   "Main Place": {
    "miles": 397.06,
