@@ -1632,3 +1632,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 12:04,Broadway Plaza,R014,Walnut Creek,CA,San Francisco,1,20.4,available,MK1E4LL/A
 2026-11-10 12:05,Third Street Promenade,R051,Santa Monica,CA,Los Angeles,1,5.5,available,MK1E4LL/A
 2026-11-10 12:06,Broadway Plaza,R014,Walnut Creek,CA,San Francisco,1,20.4,unavailable,MK1E4LL/A
+2026-11-10 12:06,Southcenter,R106,Tukwila,WA,Seattle,2,10.7,available,MK1E4LL/A
