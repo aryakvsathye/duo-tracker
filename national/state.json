@@ -4508,14 +4508,14 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Honolulu": 1,
-  "Madison": 1,
-  "Albuquerque": 1,
-  "Chicago": 1,
-  "Los Angeles": 1
- },
- "skipped": [],
+ "metro_skip": {},
+ "skipped": [
+  "Albuquerque",
+  "Chicago",
+  "Honolulu",
+  "Los Angeles",
+  "Madison"
+ ],
  "checked_at": {
   "New York": "2026-11-10T08:56:30.298560-06:00",
   "Los Angeles": "2026-11-10T08:55:38.999613-06:00",
