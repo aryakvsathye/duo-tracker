@@ -1670,3 +1670,23 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 14:44,Alderwood,R100,Lynnwood,WA,Seattle,2,15.0,unavailable,MK1E4LL/A
 2026-11-10 15:44,Short Pump Town Center,R078,Richmond,VA,Richmond,3,1.1,available,MK1E4LL/A
 2026-11-10 15:45,Short Pump Town Center,R078,Richmond,VA,Richmond,3,1.1,unavailable,MK1E4LL/A
+2026-11-10 16:28,Mall of America,R007,Bloomington,MN,Minneapolis,2,1.2,unavailable,MK1F4LL/A
+2026-11-10 16:28,Mall of America,R007,Bloomington,MN,Minneapolis,2,1.2,unavailable,MK1E4LL/A
+2026-11-10 16:28,Southdale,R054,Edina,MN,Minneapolis,2,5.2,unavailable,MK1F4LL/A
+2026-11-10 16:28,Southdale,R054,Edina,MN,Minneapolis,2,5.2,unavailable,MK1E4LL/A
+2026-11-10 16:28,Rosedale Center,R022,Roseville,MN,Minneapolis,2,12.6,unavailable,MK1F4LL/A
+2026-11-10 16:28,Rosedale Center,R022,Roseville,MN,Minneapolis,2,12.6,unavailable,MK1E4LL/A
+2026-11-10 16:28,Ridgedale,R183,Minnetonka,MN,Minneapolis,2,13.3,unavailable,MK1F4LL/A
+2026-11-10 16:28,Ridgedale,R183,Minnetonka,MN,Minneapolis,2,13.3,unavailable,MK1E4LL/A
+2026-11-10 16:28,Hilldale,R229,Madison,WI,Madison,3,0.6,unavailable,MK1F4LL/A
+2026-11-10 16:28,Hilldale,R229,Madison,WI,Madison,3,0.6,unavailable,MK1E4LL/A
+2026-11-10 16:28,Jordan Creek,R109,West Des Moines,IA,Des Moines,3,0.6,unavailable,MK1F4LL/A
+2026-11-10 16:28,Jordan Creek,R109,West Des Moines,IA,Des Moines,3,0.6,unavailable,MK1E4LL/A
+2026-11-10 16:28,Village Pointe,R190,Omaha,NE,Omaha,3,0.3,unavailable,MK1F4LL/A
+2026-11-10 16:28,Village Pointe,R190,Omaha,NE,Omaha,3,0.3,unavailable,MK1E4LL/A
+2026-11-10 16:28,Main Place,R348,Naperville,IL,Chicago,1,28.5,unavailable,MK1F4LL/A
+2026-11-10 16:28,Main Place,R348,Naperville,IL,Chicago,1,28.5,unavailable,MK1E4LL/A
+2026-11-10 16:28,Leawood,R283,Leawood,KS,Kansas City,2,10.5,unavailable,MK1F4LL/A
+2026-11-10 16:28,Leawood,R283,Leawood,KS,Kansas City,2,10.5,unavailable,MK1E4LL/A
+2026-11-10 16:28,Country Club Plaza,R097,Kansas City,MO,Kansas City,2,10.1,unavailable,MK1F4LL/A
+2026-11-10 16:28,Country Club Plaza,R097,Kansas City,MO,Kansas City,2,10.1,unavailable,MK1E4LL/A
