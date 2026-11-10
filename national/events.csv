@@ -1662,3 +1662,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-10 14:10,NorthPark Center,R144,Dallas,TX,Dallas,1,1.0,available,MK1F4LL/A
 2026-11-10 14:10,NorthPark Center,R144,Dallas,TX,Dallas,1,1.0,unavailable,MK1F4LL/A
 2026-11-10 14:13,Jordan Creek,R109,West Des Moines,IA,Des Moines,3,0.6,unavailable,MK1E4LL/A
+2026-11-10 14:19,NorthPark Center,R144,Dallas,TX,Dallas,1,1.0,available,MK1F4LL/A
+2026-11-10 14:20,NorthPark Center,R144,Dallas,TX,Dallas,1,1.0,unavailable,MK1F4LL/A
