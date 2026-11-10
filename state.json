@@ -42,16 +42,16 @@
   },
   "Hilldale": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Main Place": {
    "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 233,
+ "checks": 236,
  "errors": 0,
- "events": 18,
+ "events": 19,
  "last_heartbeat": "2026-11-10",
  "nearby": {
   "Village Pointe": {
@@ -171,32 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-10T09:59:13.652729-06:00",
+ "last_check": "2026-11-10T10:00:13.519884-06:00",
  "history": [
-  {
-   "t": "2026-11-10T09:28:55-06:00",
-   "ok": true,
-   "ms": 338,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-10T09:29:15-06:00",
-   "ok": true,
-   "ms": 359,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-10T09:29:35-06:00",
-   "ok": true,
-   "ms": 365,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-10T09:29:55-06:00",
    "ok": true,
@@ -892,6 +868,36 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-10T09:59:13-06:00",
+   "ok": true,
+   "ms": 480,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:59:33-06:00",
+   "ok": true,
+   "ms": 339,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-10T09:59:53-06:00",
+   "ok": true,
+   "ms": 282,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -904,16 +910,6 @@
    },
    "city": "Omaha",
    "state": "NE"
-  },
-  "Hilldale": {
-   "miles": 394.05,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Madison",
-   "state": "WI"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -1004,6 +1000,16 @@
    },
    "city": "Germantown",
    "state": "TN"
+  },
+  "Hilldale": {
+   "miles": 394.05,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Madison",
+   "state": "WI"
   },
   "Main Place": {
    "miles": 397.06,
