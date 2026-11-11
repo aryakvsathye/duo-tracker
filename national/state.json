@@ -4177,7 +4177,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-11T16:29:36.580188-06:00",
+ "last_sweep": "2026-11-11T16:29:43.243259-06:00",
  "metros_ok": 46,
  "metros": [
   {
@@ -4481,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 1,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4490,15 +4490,10 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Nashville": 1,
-  "Columbus": 1
- },
+ "metro_skip": {},
  "skipped": [
-  "Austin",
-  "Cleveland",
-  "Indianapolis",
-  "Kansas City"
+  "Columbus",
+  "Nashville"
  ],
  "checked_at": {
   "New York": "2026-11-11T16:28:15.699189-06:00",
@@ -4527,7 +4522,7 @@
   "Portland": "2026-11-11T16:29:10.767912-06:00",
   "Sacramento": "2026-11-11T16:26:52.068011-06:00",
   "Pittsburgh": "2026-11-11T16:29:16.378087-06:00",
-  "Austin": "2026-11-11T16:24:36.324388-06:00",
+  "Austin": "2026-11-11T16:29:43.243156-06:00",
   "Las Vegas": "2026-11-11T16:27:36.456221-06:00",
   "Cincinnati": "2026-11-11T16:28:26.545823-06:00",
   "Kansas City": "2026-11-11T16:29:36.580083-06:00",
@@ -4579,7 +4574,7 @@
   "Portland": "2026-11-11T16:29:10.767927-06:00",
   "Sacramento": "2026-11-11T16:26:52.068028-06:00",
   "Pittsburgh": "2026-11-11T16:29:16.378103-06:00",
-  "Austin": "2026-11-11T16:14:33.620967-06:00",
+  "Austin": "2026-11-11T16:29:43.243173-06:00",
   "Las Vegas": "2026-11-11T16:27:36.456238-06:00",
   "Cincinnati": "2026-11-11T16:28:26.545841-06:00",
   "Kansas City": "2026-11-11T16:29:36.580098-06:00",
@@ -4631,6 +4626,5 @@
   "2026-11-11T12:09-06:00",
   "2026-11-11T16:19-06:00"
  ],
- "last_weekly": "2026-W45",
- "last_error": "2026-11-11T16:24-06:00: Columbus: HTTP 541"
+ "last_weekly": "2026-W45"
 }
