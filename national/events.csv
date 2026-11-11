@@ -1798,3 +1798,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-11 10:03,Saddle Creek,R020,Germantown,TN,Memphis,3,0.6,unavailable,MK1F4LL/A
 2026-11-11 10:04,Cielo Vista Mall,R492,El Paso,TX,,0,230.6,available,MK1E4LL/A
 2026-11-11 10:07,Ridgedale,R183,Minnetonka,MN,Minneapolis,2,13.3,available,MK1F4LL/A
+2026-11-11 10:23,Ridgedale,R183,Minnetonka,MN,Minneapolis,2,13.3,unavailable,MK1F4LL/A
