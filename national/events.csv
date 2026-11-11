@@ -1819,3 +1819,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-11 11:51,The Americana at Brand,R451,Glendale,CA,Los Angeles,1,10.8,available,MK1E4LL/A
 2026-11-11 11:57,Promenade Temecula,R345,Temecula,CA,,0,51.9,available,MK1E4LL/A
 2026-11-11 11:57,The Americana at Brand,R451,Glendale,CA,Los Angeles,1,10.8,unavailable,MK1E4LL/A
+2026-11-11 11:58,Otay Ranch,R213,Chula Vista,CA,San Diego,2,14.6,available,MK1E4LL/A
+2026-11-11 11:58,Promenade Temecula,R345,Temecula,CA,,0,51.9,unavailable,MK1E4LL/A
