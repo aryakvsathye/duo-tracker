@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 70,
+ "checks": 72,
  "errors": 0,
  "events": 1,
  "last_heartbeat": "2026-11-11",
@@ -171,24 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-11T09:12:19.690442-06:00",
+ "last_check": "2026-11-11T09:13:19.691286-06:00",
  "history": [
-  {
-   "t": "2026-11-11T07:48:59-06:00",
-   "ok": true,
-   "ms": 436,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-11T07:49:59-06:00",
-   "ok": true,
-   "ms": 329,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-11T07:50:18-06:00",
    "ok": true,
@@ -891,6 +875,26 @@
    "ms": 360,
    "code": 200,
    "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-11T09:12:19-06:00",
+   "ok": true,
+   "ms": 404,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-11T09:13:19-06:00",
+   "ok": true,
+   "ms": 405,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
    "burst": false
   }
  ],
