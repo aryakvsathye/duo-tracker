@@ -37,7 +37,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "Saddle Creek": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   },
   "Hilldale": {
@@ -51,7 +51,7 @@
  },
  "checks": 126,
  "errors": 0,
- "events": 3,
+ "events": 4,
  "last_heartbeat": "2026-11-11",
  "nearby": {
   "Country Club Plaza": {
@@ -171,7 +171,7 @@
    ]
   }
  },
- "last_check": "2026-11-11T10:03:17.835836-06:00",
+ "last_check": "2026-11-11T10:03:38.372421-06:00",
  "history": [
   {
    "t": "2026-11-11T08:40:17-06:00",
@@ -899,16 +899,6 @@
   }
  ],
  "field": {
-  "Saddle Creek": {
-   "miles": 385.15,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Germantown",
-   "state": "TN"
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -998,6 +988,16 @@
    },
    "city": "Little Rock",
    "state": "AR"
+  },
+  "Saddle Creek": {
+   "miles": 385.15,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Germantown",
+   "state": "TN"
   },
   "Hilldale": {
    "miles": 394.05,
