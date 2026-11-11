@@ -1763,3 +1763,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-11 08:33,Queens Center,R612,Elmhurst,NY,New York,1,6.5,available,MK1E4LL/A
 2026-11-11 08:37,Queens Center,R612,Elmhurst,NY,New York,1,6.5,unavailable,MK1E4LL/A
 2026-11-11 08:41,MarketStreet,R011,Lynnfield,MA,Boston,1,11.6,available,MK1F4LL/A
+2026-11-11 08:45,MarketStreet,R011,Lynnfield,MA,Boston,1,11.6,unavailable,MK1F4LL/A
