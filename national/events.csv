@@ -1791,3 +1791,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-11 09:49,Michigan Avenue,R035,Chicago,IL,Chicago,1,0.5,unavailable,MK1E4LL/A
 2026-11-11 09:55,Lincoln Park,R284,Chicago,IL,Chicago,1,1.7,available,MK1E4LL/A
 2026-11-11 09:57,Lincoln Park,R284,Chicago,IL,Chicago,1,1.7,unavailable,MK1E4LL/A
+2026-11-11 09:57,Saddle Creek,R020,Germantown,TN,Memphis,3,0.6,available,MK1F4LL/A
