@@ -1811,3 +1811,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-11 11:12,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,available,MK1E4LL/A
 2026-11-11 11:16,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,unavailable,MK1E4LL/A
 2026-11-11 11:16,Hilldale,R229,Madison,WI,Madison,3,0.6,available,MK1F4LL/A
+2026-11-11 11:25,Hilldale,R229,Madison,WI,Madison,3,0.6,unavailable,MK1F4LL/A
