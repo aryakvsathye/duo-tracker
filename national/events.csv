@@ -1803,3 +1803,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-11 10:43,Chandler Fashion Center,R026,Chandler,AZ,Phoenix,1,16.1,available,MK1F4LL/A
 2026-11-11 10:44,Chandler Fashion Center,R026,Chandler,AZ,Phoenix,1,16.1,unavailable,MK1F4LL/A
 2026-11-11 10:55,FlatIron Crossing,R182,Broomfield,CO,Denver,2,17.1,available,MK1F4LL/A
+2026-11-11 10:59,Park Meadows,R228,Lone Tree,CO,Denver,2,12.2,available,MK1E4LL/A
+2026-11-11 10:59,FlatIron Crossing,R182,Broomfield,CO,Denver,2,17.1,unavailable,MK1F4LL/A
