@@ -1836,3 +1836,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-11 12:37,Otay Ranch,R213,Chula Vista,CA,San Diego,2,14.6,unavailable,MK1E4LL/A
 2026-11-11 13:06,Twenty Ninth Street,R172,Boulder,CO,Denver,2,25.6,available,MK1E4LL/A
 2026-11-11 13:13,Twenty Ninth Street,R172,Boulder,CO,Denver,2,25.6,unavailable,MK1E4LL/A
+2026-11-11 13:14,Ala Moana,R073,Honolulu,HI,Honolulu,3,0.4,available,MK1F4LL/A
+2026-11-11 13:14,Ala Moana,R073,Honolulu,HI,Honolulu,3,0.4,available,MK1E4LL/A
