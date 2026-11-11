@@ -1852,3 +1852,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-11 15:34,Rosedale Center,R022,Roseville,MN,Minneapolis,2,12.6,unavailable,MK1F4LL/A
 2026-11-11 17:02,Mall of America,R007,Bloomington,MN,Minneapolis,2,1.2,available,MK1E4LL/A
 2026-11-11 17:08,Mall of America,R007,Bloomington,MN,Minneapolis,2,1.2,unavailable,MK1E4LL/A
+2026-11-11 17:53,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,available,MK1F4LL/A
+2026-11-11 17:53,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,available,MK1E4LL/A
