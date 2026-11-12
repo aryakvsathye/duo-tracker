@@ -2010,3 +2010,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-12 10:41,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,available,MK1E4LL/A
 2026-11-12 10:44,Penn Square,R130,Oklahoma City,OK,Oklahoma City,3,1.2,unavailable,MK1F4LL/A
 2026-11-12 10:51,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,unavailable,MK1E4LL/A
+2026-11-12 10:53,Lincoln Park,R284,Chicago,IL,Chicago,1,1.7,available,MK1E4LL/A
+2026-11-12 10:53,Lincoln Park,R284,Chicago,IL,Chicago,1,1.7,unavailable,MK1E4LL/A
