@@ -1889,3 +1889,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-12 08:38,South Shore,R110,Braintree,MA,Boston,1,9.2,available,MK1E4LL/A
 2026-11-12 08:39,Lenox Square,R006,Atlanta,GA,Atlanta,1,0.1,available,MK1F4LL/A
 2026-11-12 08:42,South Shore,R110,Braintree,MA,Boston,1,9.2,unavailable,MK1E4LL/A
+2026-11-12 08:43,Lenox Square,R006,Atlanta,GA,Atlanta,1,0.1,unavailable,MK1F4LL/A
