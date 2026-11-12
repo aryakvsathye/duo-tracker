@@ -2064,3 +2064,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-12 12:09,Valley Plaza,R550,Bakersfield,CA,,0,223.3,unavailable,MK1F4LL/A
 2026-11-12 12:09,The Gardens Mall,R127,Palm Beach Gardens,FL,,0,75.1,available,MK1F4LL/A
 2026-11-12 12:10,Third Street Promenade,R051,Santa Monica,CA,Los Angeles,1,5.5,available,MK1F4LL/A
+2026-11-12 12:14,Woodland Hills,R233,Tulsa,OK,Tulsa,3,1.6,available,MK1F4LL/A
+2026-11-12 12:14,Third Street Promenade,R051,Santa Monica,CA,Los Angeles,1,5.5,unavailable,MK1F4LL/A
