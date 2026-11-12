@@ -2022,3 +2022,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-12 11:09,ABQ Uptown,R177,Albuquerque,NM,Albuquerque,3,0.7,unavailable,MK1F4LL/A
 2026-11-12 11:12,Lincoln Park,R284,Chicago,IL,Chicago,1,1.7,available,MK1E4LL/A
 2026-11-12 11:12,Oakbrook,R056,Oak Brook,IL,Chicago,1,17.4,available,MK1E4LL/A
+2026-11-12 11:13,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,available,MK1E4LL/A
+2026-11-12 11:13,Park City,R304,Lancaster,PA,Baltimore,2,48.5,available,MK1E4LL/A
