@@ -2083,3 +2083,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-12 13:21,International Plaza,R019,Tampa,FL,Tampa,2,1.1,available,MK1F4LL/A
 2026-11-12 13:22,International Plaza,R019,Tampa,FL,Tampa,2,1.1,unavailable,MK1F4LL/A
 2026-11-12 13:25,Park City,R304,Lancaster,PA,Baltimore,2,48.5,available,MK1E4LL/A
+2026-11-12 13:30,Park City,R304,Lancaster,PA,Baltimore,2,48.5,unavailable,MK1E4LL/A
