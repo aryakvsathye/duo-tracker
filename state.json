@@ -17,7 +17,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "Woodland Hills": {
-   "MK1F4LL/A": "unavailable",
+   "MK1F4LL/A": "available",
    "MK1E4LL/A": "unavailable"
   },
   "West County": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 429,
+ "checks": 433,
  "errors": 0,
- "events": 14,
+ "events": 15,
  "last_heartbeat": "2026-11-12",
  "nearby": {
   "Country Club Plaza": {
@@ -171,40 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-12T13:54:02.683040-06:00",
+ "last_check": "2026-11-12T13:58:23.366256-06:00",
  "history": [
-  {
-   "t": "2026-11-12T12:30:44-06:00",
-   "ok": true,
-   "ms": 488,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-12T12:31:44-06:00",
-   "ok": true,
-   "ms": 427,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-12T12:32:44-06:00",
-   "ok": true,
-   "ms": 381,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-12T12:33:44-06:00",
-   "ok": true,
-   "ms": 428,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-12T12:34:44-06:00",
    "ok": true,
@@ -914,9 +882,51 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-12T13:54:22-06:00",
+   "ok": true,
+   "ms": 476,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-12T13:55:22-06:00",
+   "ok": true,
+   "ms": 367,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-12T13:56:22-06:00",
+   "ok": true,
+   "ms": 392,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-12T13:57:22-06:00",
+   "ok": true,
+   "ms": 485,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
+  "Woodland Hills": {
+   "miles": 212.92,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Tulsa",
+   "state": "OK"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -956,16 +966,6 @@
    },
    "city": "West Des Moines",
    "state": "IA"
-  },
-  "Woodland Hills": {
-   "miles": 212.92,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Tulsa",
-   "state": "OK"
   },
   "West County": {
    "miles": 234.82,
@@ -1048,12 +1048,12 @@
   "MK1E4LL/A": "Star White"
  },
  "wave": {
-  "since": "2026-11-12T09:47:10.672495-06:00",
+  "since": "2026-11-12T13:58:23.366268-06:00",
   "stores": [
-   "West County",
-   "The Promenade at Chenal"
+   "Country Club Plaza",
+   "Woodland Hills"
   ],
-  "until": "2026-11-12T10:17:00-06:00"
+  "until": "2026-11-12T14:28:00-06:00"
  },
- "wave_alerted_at": "2026-11-12T09:47:10.672495-06:00"
+ "wave_alerted_at": "2026-11-12T13:58:23.366268-06:00"
 }
