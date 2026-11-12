@@ -1951,3 +1951,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-12 09:20,Lehigh Valley,R281,Whitehall,PA,Philadelphia,1,49.3,available,MK1E4LL/A
 2026-11-12 09:21,Deer Park,R258,Deer Park,IL,Chicago,1,28.8,available,MK1E4LL/A
 2026-11-12 09:22,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,unavailable,MK1F4LL/A
+2026-11-12 09:23,The Mall at Bay Plaza,R753,Bronx,NY,New York,1,10.6,unavailable,MK1F4LL/A
+2026-11-12 09:23,Deer Park,R258,Deer Park,IL,Chicago,1,28.8,unavailable,MK1E4LL/A
