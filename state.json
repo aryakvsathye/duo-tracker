@@ -34,7 +34,7 @@
   },
   "The Promenade at Chenal": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Saddle Creek": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 101,
+ "checks": 105,
  "errors": 0,
- "events": 4,
+ "events": 5,
  "last_heartbeat": "2026-11-12",
  "nearby": {
   "Country Club Plaza": {
@@ -171,40 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-12T09:43:10.602350-06:00",
+ "last_check": "2026-11-12T09:47:10.672482-06:00",
  "history": [
-  {
-   "t": "2026-11-12T08:17:31-06:00",
-   "ok": true,
-   "ms": 417,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-12T08:18:31-06:00",
-   "ok": true,
-   "ms": 359,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-12T08:19:31-06:00",
-   "ok": true,
-   "ms": 351,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-12T08:20:31-06:00",
-   "ok": true,
-   "ms": 370,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-12T08:21:31-06:00",
    "ok": true,
@@ -892,9 +860,51 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-12T09:43:10-06:00",
+   "ok": true,
+   "ms": 386,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-12T09:44:10-06:00",
+   "ok": true,
+   "ms": 678,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-12T09:45:10-06:00",
+   "ok": true,
+   "ms": 402,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-12T09:46:10-06:00",
+   "ok": true,
+   "ms": 399,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
+  "The Promenade at Chenal": {
+   "miles": 320.42,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Little Rock",
+   "state": "AR"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -975,16 +985,6 @@
    "city": "Oklahoma City",
    "state": "OK"
   },
-  "The Promenade at Chenal": {
-   "miles": 320.42,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Little Rock",
-   "state": "AR"
-  },
   "Saddle Creek": {
    "miles": 385.15,
    "status": "unavailable",
@@ -1026,12 +1026,12 @@
   "MK1E4LL/A": "Star White"
  },
  "wave": {
-  "since": "2026-11-11T11:39:32.524693-06:00",
+  "since": "2026-11-12T09:47:10.672495-06:00",
   "stores": [
-   "Hilldale",
-   "Woodland Hills"
+   "West County",
+   "The Promenade at Chenal"
   ],
-  "until": "2026-11-11T12:09:00-06:00"
+  "until": "2026-11-12T10:17:00-06:00"
  },
- "wave_alerted_at": "2026-11-11T11:39:32.524693-06:00"
+ "wave_alerted_at": "2026-11-12T09:47:10.672495-06:00"
 }
