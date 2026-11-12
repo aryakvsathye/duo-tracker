@@ -2095,3 +2095,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-12 14:30,Montgomery Mall,R084,Bethesda,MD,Washington,1,10.5,available,MK1E4LL/A
 2026-11-12 14:35,Montgomery Mall,R084,Bethesda,MD,Washington,1,10.5,unavailable,MK1E4LL/A
 2026-11-12 15:40,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,available,MK1E4LL/A
+2026-11-12 15:43,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,unavailable,MK1E4LL/A
