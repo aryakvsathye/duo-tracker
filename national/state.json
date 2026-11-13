@@ -1935,17 +1935,14 @@
    "metro": "Tucson",
    "tier": 3,
    "miles": 1.2,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "US/Arizona",
    "region": "Mountain",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-13 11:07"
-   },
-   "since": "2026-11-13 11:07"
+   "since_by_part": {}
   },
   "R297": {
    "name": "El Paseo Village",
@@ -2856,14 +2853,17 @@
    "metro": "",
    "tier": 0,
    "miles": 299.0,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Denver",
    "region": "Mountain",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-13 11:12"
+   },
+   "since": "2026-11-13 11:12"
   },
   "R186": {
    "name": "Shayden Summit",
@@ -4180,8 +4180,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-13T11:12:23.946394-06:00",
- "metros_ok": 44,
+ "last_sweep": "2026-11-13T11:12:49.006465-06:00",
+ "metros_ok": 45,
  "metros": [
   {
    "metro": "New York",
@@ -4535,14 +4535,14 @@
   "Tulsa": "2026-11-13T11:12:18.113783-06:00",
   "Omaha": "2026-11-13T11:10:29.996141-06:00",
   "Des Moines": "2026-11-13T11:10:41.555582-06:00",
-  "Little Rock": "2026-11-13T11:06:36.356723-06:00",
+  "Little Rock": "2026-11-13T11:12:43.125540-06:00",
   "Memphis": "2026-11-13T11:09:05.421019-06:00",
   "Madison": "2026-11-13T11:09:40.778371-06:00",
-  "Albuquerque": "2026-11-13T11:07:59.895149-06:00",
-  "Salt Lake City": "2026-11-13T11:08:05.704239-06:00",
+  "Albuquerque": "2026-11-13T11:12:31.359280-06:00",
+  "Salt Lake City": "2026-11-13T11:12:37.298592-06:00",
   "Louisville": "2026-11-13T11:09:11.517363-06:00",
   "Birmingham": "2026-11-13T11:08:42.238523-06:00",
-  "Richmond": "2026-11-13T11:06:42.165012-06:00",
+  "Richmond": "2026-11-13T11:12:49.006351-06:00",
   "Honolulu": "2026-11-13T11:06:53.786791-06:00",
   "Tucson": "2026-11-13T11:08:13.016575-06:00",
   "Buffalo": "2026-11-13T11:09:34.946867-06:00"
@@ -4587,21 +4587,21 @@
   "Tulsa": "2026-11-13T11:12:18.113803-06:00",
   "Omaha": "2026-11-13T11:10:29.996161-06:00",
   "Des Moines": "2026-11-13T11:10:41.555602-06:00",
-  "Little Rock": "2026-11-13T11:06:36.356744-06:00",
+  "Little Rock": "2026-11-13T11:12:43.125561-06:00",
   "Memphis": "2026-11-13T11:09:05.421039-06:00",
   "Madison": "2026-11-13T11:09:40.778391-06:00",
-  "Albuquerque": "2026-11-13T11:07:59.895171-06:00",
-  "Salt Lake City": "2026-11-13T11:08:05.704260-06:00",
+  "Albuquerque": "2026-11-13T11:12:31.359300-06:00",
+  "Salt Lake City": "2026-11-13T11:12:37.298612-06:00",
   "Louisville": "2026-11-13T11:09:11.517387-06:00",
   "Birmingham": "2026-11-13T11:08:42.238543-06:00",
-  "Richmond": "2026-11-13T11:06:42.165033-06:00",
+  "Richmond": "2026-11-13T11:12:49.006372-06:00",
   "Honolulu": "2026-11-13T11:06:53.786813-06:00",
   "Tucson": "2026-11-13T11:08:13.016596-06:00",
   "Buffalo": "2026-11-13T11:09:34.946888-06:00"
  },
  "hot": [
-  "West North Central",
-  "Mountain"
+  "Mountain",
+  "West North Central"
  ],
  "cycle_seconds": 150,
  "pace": 5.5,
