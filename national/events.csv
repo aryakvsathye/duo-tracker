@@ -2432,3 +2432,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 09:56,The Summit,R225,Birmingham,AL,Birmingham,3,0.6,unavailable,MK1F4LL/A
 2026-11-13 09:58,Avalon,R080,Alpharetta,GA,Atlanta,1,16.1,unavailable,MK1F4LL/A
 2026-11-13 09:59,The Summit,R225,Birmingham,AL,Birmingham,3,0.6,unavailable,MK1E4LL/A
+2026-11-13 10:00,Arrowhead,R247,Glendale,AZ,Phoenix,1,14.6,unavailable,MK1F4LL/A
+2026-11-13 10:00,Arrowhead,R247,Glendale,AZ,Phoenix,1,14.6,available,MK1E4LL/A
