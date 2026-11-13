@@ -2694,3 +2694,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 13:20,Bay Street,R057,Emeryville,CA,San Francisco,1,7.0,available,MK1F4LL/A
 2026-11-13 13:21,Bay Street,R057,Emeryville,CA,San Francisco,1,7.0,unavailable,MK1F4LL/A
 2026-11-13 13:27,The Grove,R050,Los Angeles,CA,Los Angeles,1,3.4,available,MK1F4LL/A
+2026-11-13 13:30,The Grove,R050,Los Angeles,CA,Los Angeles,1,3.4,unavailable,MK1F4LL/A
+2026-11-13 13:31,Town Square,R219,Las Vegas,NV,Las Vegas,2,3.6,available,MK1E4LL/A
