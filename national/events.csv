@@ -2328,3 +2328,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 09:11,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,available,MK1E4LL/A
 2026-11-13 09:11,Eton,R081,Woodmere,OH,Cleveland,2,2.4,unavailable,MK1E4LL/A
 2026-11-13 09:11,Eton,R081,Woodmere,OH,Cleveland,2,2.4,available,MK1E4LL/A
+2026-11-13 09:11,NorthPark Center,R144,Dallas,TX,Dallas,1,1.0,available,MK1F4LL/A
+2026-11-13 09:11,Galleria Dallas,R746,Dallas,TX,Dallas,1,4.8,unavailable,MK1E4LL/A
