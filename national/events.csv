@@ -2350,3 +2350,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 09:21,Eton,R081,Woodmere,OH,Cleveland,2,2.4,available,MK1E4LL/A
 2026-11-13 09:22,Leawood,R283,Leawood,KS,Kansas City,2,10.5,available,MK1F4LL/A
 2026-11-13 09:22,Leawood,R283,Leawood,KS,Kansas City,2,10.5,available,MK1E4LL/A
+2026-11-13 09:22,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,available,MK1F4LL/A
+2026-11-13 09:23,Galleria Dallas,R746,Dallas,TX,Dallas,1,4.8,available,MK1E4LL/A
+2026-11-13 09:23,Willowbrook Mall,R321,Houston,TX,Houston,1,15.2,available,MK1F4LL/A
+2026-11-13 09:23,Willowbrook Mall,R321,Houston,TX,Houston,1,15.2,unavailable,MK1F4LL/A
