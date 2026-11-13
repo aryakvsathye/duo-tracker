@@ -26,7 +26,7 @@
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Penn Square": {
    "MK1F4LL/A": "unavailable",
@@ -38,7 +38,7 @@
   },
   "Saddle Creek": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Hilldale": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 126,
+ "checks": 129,
  "errors": 0,
- "events": 7,
+ "events": 9,
  "last_heartbeat": "2026-11-13",
  "nearby": {
   "Country Club Plaza": {
@@ -171,32 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-13T10:04:15.582294-06:00",
+ "last_check": "2026-11-13T10:07:36.093049-06:00",
  "history": [
-  {
-   "t": "2026-11-13T08:40:50-06:00",
-   "ok": true,
-   "ms": 549,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-13T08:41:50-06:00",
-   "ok": true,
-   "ms": 559,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-13T08:42:50-06:00",
-   "ok": true,
-   "ms": 419,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-13T08:43:50-06:00",
    "ok": true,
@@ -910,18 +886,42 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-13T10:04:35-06:00",
+   "ok": true,
+   "ms": 675,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-13T10:05:35-06:00",
+   "ok": true,
+   "ms": 398,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-13T10:06:35-06:00",
+   "ok": true,
+   "ms": 376,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
-  "Saddle Creek": {
-   "miles": 385.15,
+  "Saint Louis Galleria": {
+   "miles": 239.77,
    "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "available"
    },
-   "city": "Germantown",
-   "state": "TN"
+   "city": "Saint Louis",
+   "state": "MO"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -983,16 +983,6 @@
    "city": "Saint Louis",
    "state": "MO"
   },
-  "Saint Louis Galleria": {
-   "miles": 239.77,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
-  },
   "Penn Square": {
    "miles": 285.34,
    "status": "unavailable",
@@ -1012,6 +1002,16 @@
    },
    "city": "Little Rock",
    "state": "AR"
+  },
+  "Saddle Creek": {
+   "miles": 385.15,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Germantown",
+   "state": "TN"
   },
   "Hilldale": {
    "miles": 394.05,
@@ -1044,12 +1044,12 @@
   "MK1E4LL/A": "Star White"
  },
  "wave": {
-  "since": "2026-11-12T13:58:23.366268-06:00",
+  "since": "2026-11-13T10:07:36.093061-06:00",
   "stores": [
-   "Country Club Plaza",
-   "Woodland Hills"
+   "Saddle Creek",
+   "Saint Louis Galleria"
   ],
-  "until": "2026-11-12T14:28:00-06:00"
+  "until": "2026-11-13T10:37:00-06:00"
  },
- "wave_alerted_at": "2026-11-12T13:58:23.366268-06:00"
+ "wave_alerted_at": "2026-11-13T10:07:36.093061-06:00"
 }
