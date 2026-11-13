@@ -2559,3 +2559,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 11:37,Town Square,R219,Las Vegas,NV,Las Vegas,2,3.6,available,MK1E4LL/A
 2026-11-13 11:37,Town Square,R219,Las Vegas,NV,Las Vegas,2,3.6,unavailable,MK1F4LL/A
 2026-11-13 11:37,Menlo Park,R067,Edison,NJ,,0,60.3,available,MK1E4LL/A
+2026-11-13 11:38,Green Hills,R123,Nashville,TN,Nashville,2,1.8,unavailable,MK1F4LL/A
+2026-11-13 11:38,Town Square,R219,Las Vegas,NV,Las Vegas,2,3.6,available,MK1F4LL/A
+2026-11-13 11:38,Town Square,R219,Las Vegas,NV,Las Vegas,2,3.6,unavailable,MK1E4LL/A
