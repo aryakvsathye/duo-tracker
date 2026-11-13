@@ -2603,3 +2603,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 11:54,Washington Square,R090,Tigard,OR,Portland,2,3.4,unavailable,MK1F4LL/A
 2026-11-13 11:54,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,unavailable,MK1E4LL/A
 2026-11-13 11:54,Southcenter,R106,Tukwila,WA,Seattle,2,10.7,unavailable,MK1E4LL/A
+2026-11-13 11:55,Brea Mall,R156,Brea,CA,,0,89.9,unavailable,MK1F4LL/A
+2026-11-13 11:55,Brea Mall,R156,Brea,CA,,0,89.9,unavailable,MK1E4LL/A
+2026-11-13 11:55,Tacoma Mall,R339,Tacoma,WA,Seattle,2,29.2,unavailable,MK1E4LL/A
