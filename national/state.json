@@ -4178,7 +4178,7 @@
   }
  },
  "last_sweep": "2026-11-12T21:38:19.560886-06:00",
- "metros_ok": 47,
+ "metros_ok": 48,
  "metros": [
   {
    "metro": "New York",
@@ -4481,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 2,
+ "retries": 1,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4492,7 +4492,8 @@
  },
  "metro_skip": {
   "Buffalo": 1,
-  "Kansas City": 1
+  "Kansas City": 1,
+  "Pittsburgh": 1
  },
  "skipped": [],
  "checked_at": {
@@ -4521,7 +4522,7 @@
   "San Antonio": "2026-11-12T21:36:09.307524-06:00",
   "Portland": "2026-11-12T21:37:23.915593-06:00",
   "Sacramento": "2026-11-12T21:38:19.560779-06:00",
-  "Pittsburgh": "2026-11-12T21:33:19.306546-06:00",
+  "Pittsburgh": "2026-11-12T21:38:35.960570-06:00",
   "Austin": "2026-11-12T21:36:23.920921-06:00",
   "Las Vegas": "2026-11-12T21:38:14.709357-06:00",
   "Cincinnati": "2026-11-12T21:35:18.214546-06:00",
@@ -4629,5 +4630,5 @@
   "2026-11-12T16:29-06:00"
  ],
  "last_weekly": "2026-W45",
- "last_error": "2026-11-12T21:33-06:00: Buffalo: HTTP 541; Kansas City: HTTP 541"
+ "last_error": "2026-11-12T21:38-06:00: Pittsburgh: HTTP 541"
 }
