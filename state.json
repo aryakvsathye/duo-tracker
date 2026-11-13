@@ -26,7 +26,7 @@
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Penn Square": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 432,
+ "checks": 441,
  "errors": 0,
- "events": 43,
+ "events": 44,
  "last_heartbeat": "2026-11-13",
  "nearby": {
   "Country Club Plaza": {
@@ -171,80 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-13T11:53:01.201309-06:00",
+ "last_check": "2026-11-13T11:56:31.399230-06:00",
  "history": [
-  {
-   "t": "2026-11-13T11:19:18-06:00",
-   "ok": true,
-   "ms": 218,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:19:38-06:00",
-   "ok": true,
-   "ms": 222,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:19:58-06:00",
-   "ok": true,
-   "ms": 286,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:20:18-06:00",
-   "ok": true,
-   "ms": 308,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:20:38-06:00",
-   "ok": true,
-   "ms": 217,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:20:58-06:00",
-   "ok": true,
-   "ms": 276,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:21:18-06:00",
-   "ok": true,
-   "ms": 216,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:21:38-06:00",
-   "ok": true,
-   "ms": 402,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:21:58-06:00",
-   "ok": true,
-   "ms": 228,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-13T11:22:18-06:00",
    "ok": true,
@@ -975,6 +903,96 @@
     "Country Club Plaza"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-13T11:53:31-06:00",
+   "ok": true,
+   "ms": 297,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:53:51-06:00",
+   "ok": true,
+   "ms": 506,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:54:11-06:00",
+   "ok": true,
+   "ms": 507,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:54:31-06:00",
+   "ok": true,
+   "ms": 301,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:54:51-06:00",
+   "ok": true,
+   "ms": 258,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:55:11-06:00",
+   "ok": true,
+   "ms": 514,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:55:31-06:00",
+   "ok": true,
+   "ms": 617,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:55:51-06:00",
+   "ok": true,
+   "ms": 317,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:56:11-06:00",
+   "ok": true,
+   "ms": 276,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -986,6 +1004,16 @@
     "MK1E4LL/A": "available"
    },
    "city": "Kansas City",
+   "state": "MO"
+  },
+  "Saint Louis Galleria": {
+   "miles": 239.77,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Saint Louis",
    "state": "MO"
   },
   "Leawood": {
@@ -1030,16 +1058,6 @@
   },
   "West County": {
    "miles": 234.82,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
-  },
-  "Saint Louis Galleria": {
-   "miles": 239.77,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -1112,9 +1130,10 @@
   "since": "2026-11-13T11:41:18.960654-06:00",
   "stores": [
    "Village Pointe",
-   "Country Club Plaza"
+   "Country Club Plaza",
+   "Saint Louis Galleria"
   ],
-  "until": "2026-11-13T12:17:00-06:00"
+  "until": "2026-11-13T12:26:00-06:00"
  },
  "wave_alerted_at": "2026-11-13T11:07:52.294731-06:00"
 }
