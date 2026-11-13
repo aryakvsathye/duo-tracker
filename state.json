@@ -26,7 +26,7 @@
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Penn Square": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 239,
+ "checks": 241,
  "errors": 0,
- "events": 21,
+ "events": 22,
  "last_heartbeat": "2026-11-13",
  "nearby": {
   "Country Club Plaza": {
@@ -171,24 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-13T10:44:51.705746-06:00",
+ "last_check": "2026-11-13T10:45:31.612329-06:00",
  "history": [
-  {
-   "t": "2026-11-13T10:14:24-06:00",
-   "ok": true,
-   "ms": 393,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:14:44-06:00",
-   "ok": true,
-   "ms": 417,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-13T10:15:04-06:00",
    "ok": true,
@@ -892,9 +876,35 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-13T10:44:51-06:00",
+   "ok": true,
+   "ms": 506,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:45:11-06:00",
+   "ok": true,
+   "ms": 648,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
+  "Saint Louis Galleria": {
+   "miles": 239.77,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
+  },
   "Saddle Creek": {
    "miles": 385.15,
    "status": "available",
@@ -965,16 +975,6 @@
    "city": "Saint Louis",
    "state": "MO"
   },
-  "Saint Louis Galleria": {
-   "miles": 239.77,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
-  },
   "Penn Square": {
    "miles": 285.34,
    "status": "unavailable",
@@ -1031,7 +1031,7 @@
    "Saint Louis Galleria",
    "Saddle Creek"
   ],
-  "until": "2026-11-13T11:14:00-06:00"
+  "until": "2026-11-13T11:15:00-06:00"
  },
  "wave_alerted_at": "2026-11-13T10:07:36.093061-06:00"
 }
