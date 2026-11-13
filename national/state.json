@@ -696,14 +696,17 @@
    "metro": "Dallas",
    "tier": 1,
    "miles": 4.8,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-13 09:06"
+   },
+   "since": "2026-11-13 09:06"
   },
   "R151": {
    "name": "Southlake Town Square",
@@ -714,17 +717,14 @@
    "metro": "Dallas",
    "tier": 1,
    "miles": 20.4,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-13 09:01"
-   },
-   "since": "2026-11-13 09:01"
+   "since_by_part": {}
   },
   "R316": {
    "name": "University Park Village",
@@ -735,14 +735,17 @@
    "metro": "Dallas",
    "tier": 1,
    "miles": 34.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-13 09:06"
+   },
+   "since": "2026-11-13 09:06"
   },
   "R216": {
    "name": "Domain NORTHSIDE",
@@ -4195,8 +4198,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-13T09:06:10.030360-06:00",
- "metros_ok": 46,
+ "last_sweep": "2026-11-13T09:06:38.433184-06:00",
+ "metros_ok": 43,
  "metros": [
   {
    "metro": "New York",
@@ -4514,11 +4517,11 @@
   "New York": "2026-11-13T09:02:24.080840-06:00",
   "Los Angeles": "2026-11-13T09:03:56.072300-06:00",
   "Chicago": "2026-11-13T09:03:16.322858-06:00",
-  "Dallas": "2026-11-13T09:00:53.708525-06:00",
-  "Houston": "2026-11-13T09:00:59.001546-06:00",
+  "Dallas": "2026-11-13T09:06:22.338694-06:00",
+  "Houston": "2026-11-13T09:06:27.657832-06:00",
   "Washington": "2026-11-13T09:06:04.711989-06:00",
   "Philadelphia": "2026-11-13T09:02:40.116592-06:00",
-  "Atlanta": "2026-11-13T09:02:18.767557-06:00",
+  "Atlanta": "2026-11-13T09:06:16.943926-06:00",
   "Miami": "2026-11-13T09:02:29.389269-06:00",
   "Phoenix": "2026-11-13T09:04:17.705363-06:00",
   "Boston": "2026-11-13T09:04:35.330376-06:00",
@@ -4533,11 +4536,11 @@
   "St. Louis": "2026-11-13T09:06:10.030259-06:00",
   "Orlando": "2026-11-13T09:04:01.393614-06:00",
   "Charlotte": "2026-11-13T09:04:12.375691-06:00",
-  "San Antonio": "2026-11-13T09:01:11.479783-06:00",
+  "San Antonio": "2026-11-13T09:06:33.115253-06:00",
   "Portland": "2026-11-13T09:05:48.405886-06:00",
   "Sacramento": "2026-11-13T09:01:16.770573-06:00",
   "Pittsburgh": "2026-11-13T09:02:53.203775-06:00",
-  "Austin": "2026-11-13T09:01:22.094170-06:00",
+  "Austin": "2026-11-13T09:06:38.433083-06:00",
   "Las Vegas": "2026-11-13T09:01:06.221865-06:00",
   "Cincinnati": "2026-11-13T09:03:38.071148-06:00",
   "Kansas City": "2026-11-13T09:01:38.032509-06:00",
@@ -4566,11 +4569,11 @@
   "New York": "2026-11-13T09:02:24.080856-06:00",
   "Los Angeles": "2026-11-13T09:03:56.072318-06:00",
   "Chicago": "2026-11-13T09:03:16.322874-06:00",
-  "Dallas": "2026-11-13T09:00:53.708553-06:00",
-  "Houston": "2026-11-13T09:00:59.001564-06:00",
+  "Dallas": "2026-11-13T09:06:22.338711-06:00",
+  "Houston": "2026-11-13T09:06:27.657850-06:00",
   "Washington": "2026-11-13T09:06:04.712010-06:00",
   "Philadelphia": "2026-11-13T09:02:40.116610-06:00",
-  "Atlanta": "2026-11-13T09:02:18.767574-06:00",
+  "Atlanta": "2026-11-13T09:06:16.943943-06:00",
   "Miami": "2026-11-13T09:02:29.389285-06:00",
   "Phoenix": "2026-11-13T09:04:17.705380-06:00",
   "Boston": "2026-11-13T09:04:35.330392-06:00",
@@ -4585,11 +4588,11 @@
   "St. Louis": "2026-11-13T09:06:10.030277-06:00",
   "Orlando": "2026-11-13T09:04:01.393631-06:00",
   "Charlotte": "2026-11-13T09:04:12.375708-06:00",
-  "San Antonio": "2026-11-13T09:01:11.479800-06:00",
+  "San Antonio": "2026-11-13T09:06:33.115272-06:00",
   "Portland": "2026-11-13T09:05:48.405903-06:00",
   "Sacramento": "2026-11-13T09:01:16.770590-06:00",
   "Pittsburgh": "2026-11-13T09:02:53.203792-06:00",
-  "Austin": "2026-11-13T09:01:22.094187-06:00",
+  "Austin": "2026-11-13T09:06:38.433102-06:00",
   "Las Vegas": "2026-11-13T09:01:06.221883-06:00",
   "Cincinnati": "2026-11-13T09:03:38.071165-06:00",
   "Kansas City": "2026-11-13T09:01:38.032525-06:00",
@@ -4615,8 +4618,8 @@
   "Buffalo": "2026-11-13T09:03:03.734765-06:00"
  },
  "hot": [
-  "East North Central",
-  "South Atlantic"
+  "West South Central",
+  "East North Central"
  ],
  "cycle_seconds": 150,
  "pace": 5.0,
