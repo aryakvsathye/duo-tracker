@@ -1849,17 +1849,14 @@
    "metro": "Phoenix",
    "tier": 1,
    "miles": 6.0,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "US/Arizona",
    "region": "Mountain",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-13 09:42"
-   },
-   "since": "2026-11-13 09:42"
+   "since_by_part": {}
   },
   "R292": {
    "name": "Scottsdale Quarter",
@@ -1888,14 +1885,17 @@
    "metro": "Phoenix",
    "tier": 1,
    "miles": 14.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "US/Arizona",
    "region": "Mountain",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-13 09:54"
+   },
+   "since": "2026-11-13 09:54"
   },
   "R026": {
    "name": "Chandler Fashion Center",
@@ -4190,8 +4190,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-13T09:54:26.166358-06:00",
- "metros_ok": 43,
+ "last_sweep": "2026-11-13T09:54:45.492475-06:00",
+ "metros_ok": 48,
  "metros": [
   {
    "metro": "New York",
@@ -4494,7 +4494,7 @@
    "state": "NY"
   }
  ],
- "retries": 2,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4507,9 +4507,7 @@
   "Boston": 1,
   "Seattle": 1
  },
- "skipped": [
-  "Cleveland"
- ],
+ "skipped": [],
  "checked_at": {
   "New York": "2026-11-13T09:51:02.409886-06:00",
   "Los Angeles": "2026-11-13T09:49:16.060443-06:00",
@@ -4520,7 +4518,7 @@
   "Philadelphia": "2026-11-13T09:52:26.712265-06:00",
   "Atlanta": "2026-11-13T09:54:20.306735-06:00",
   "Miami": "2026-11-13T09:53:14.424515-06:00",
-  "Phoenix": "2026-11-13T09:48:51.170753-06:00",
+  "Phoenix": "2026-11-13T09:54:45.492369-06:00",
   "Boston": "2026-11-13T09:49:39.334198-06:00",
   "San Francisco": "2026-11-13T09:49:23.356129-06:00",
   "Detroit": "2026-11-13T09:51:19.966712-06:00",
@@ -4554,12 +4552,12 @@
   "Memphis": "2026-11-13T09:52:50.140436-06:00",
   "Madison": "2026-11-13T09:50:29.084237-06:00",
   "Albuquerque": "2026-11-13T09:54:26.166091-06:00",
-  "Salt Lake City": "2026-11-13T09:48:39.329032-06:00",
+  "Salt Lake City": "2026-11-13T09:54:33.746348-06:00",
   "Louisville": "2026-11-13T09:53:37.839529-06:00",
   "Birmingham": "2026-11-13T09:50:34.913954-06:00",
   "Richmond": "2026-11-13T09:54:08.709959-06:00",
   "Honolulu": "2026-11-13T09:53:08.682258-06:00",
-  "Tucson": "2026-11-13T09:48:45.246391-06:00",
+  "Tucson": "2026-11-13T09:54:39.656939-06:00",
   "Buffalo": "2026-11-13T09:52:44.298220-06:00"
  },
  "ok_at": {
@@ -4572,7 +4570,7 @@
   "Philadelphia": "2026-11-13T09:52:26.712284-06:00",
   "Atlanta": "2026-11-13T09:54:20.306754-06:00",
   "Miami": "2026-11-13T09:53:14.424534-06:00",
-  "Phoenix": "2026-11-13T09:48:51.170774-06:00",
+  "Phoenix": "2026-11-13T09:54:45.492388-06:00",
   "Boston": "2026-11-13T09:43:35.102412-06:00",
   "San Francisco": "2026-11-13T09:49:23.356136-06:00",
   "Detroit": "2026-11-13T09:51:19.966731-06:00",
@@ -4606,17 +4604,17 @@
   "Memphis": "2026-11-13T09:52:50.140454-06:00",
   "Madison": "2026-11-13T09:50:29.084257-06:00",
   "Albuquerque": "2026-11-13T09:54:26.166113-06:00",
-  "Salt Lake City": "2026-11-13T09:48:39.329196-06:00",
+  "Salt Lake City": "2026-11-13T09:54:33.746369-06:00",
   "Louisville": "2026-11-13T09:53:37.839551-06:00",
   "Birmingham": "2026-11-13T09:50:34.913973-06:00",
   "Richmond": "2026-11-13T09:54:08.709980-06:00",
   "Honolulu": "2026-11-13T09:53:08.682277-06:00",
-  "Tucson": "2026-11-13T09:48:45.246413-06:00",
+  "Tucson": "2026-11-13T09:54:39.656960-06:00",
   "Buffalo": "2026-11-13T09:52:44.298239-06:00"
  },
  "hot": [
-  "East South Central",
-  "East North Central"
+  "Mountain",
+  "East South Central"
  ],
  "cycle_seconds": 150,
  "pace": 5.5,
@@ -4644,6 +4642,5 @@
   "2026-11-13T07:14-06:00",
   "2026-11-13T09:19-06:00"
  ],
- "last_weekly": "2026-W45",
- "last_error": "2026-11-13T09:50-06:00: Boston: HTTP 541; Seattle: HTTP 541"
+ "last_weekly": "2026-W45"
 }
