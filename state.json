@@ -2,7 +2,7 @@
  "stock": {
   "Country Club Plaza": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Leawood": {
    "MK1F4LL/A": "unavailable",
@@ -49,21 +49,21 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 441,
+ "checks": 443,
  "errors": 0,
- "events": 44,
+ "events": 45,
  "last_heartbeat": "2026-11-13",
  "nearby": {
   "Country Club Plaza": {
    "miles": 10.11,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "quotes": {
     "MK1F4LL/A": "Currently unavailable at Apple Country Club Plaza",
-    "MK1E4LL/A": "Today at Apple Country Club Plaza"
+    "MK1E4LL/A": "Currently unavailable at Apple Country Club Plaza"
    },
    "quote": "Currently unavailable at Apple Country Club Plaza",
    "phone": "816-448 9200",
@@ -171,24 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-13T11:56:31.399230-06:00",
+ "last_check": "2026-11-13T11:57:11.366739-06:00",
  "history": [
-  {
-   "t": "2026-11-13T11:22:18-06:00",
-   "ok": true,
-   "ms": 304,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:22:38-06:00",
-   "ok": true,
-   "ms": 328,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-13T11:22:58-06:00",
    "ok": true,
@@ -993,19 +977,29 @@
     "Country Club Plaza"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-13T11:56:31-06:00",
+   "ok": true,
+   "ms": 359,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:56:51-06:00",
+   "ok": true,
+   "ms": 305,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
   }
  ],
  "field": {
-  "Country Club Plaza": {
-   "miles": 10.11,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Kansas City",
-   "state": "MO"
-  },
   "Saint Louis Galleria": {
    "miles": 239.77,
    "status": "available",
@@ -1014,6 +1008,16 @@
     "MK1E4LL/A": "available"
    },
    "city": "Saint Louis",
+   "state": "MO"
+  },
+  "Country Club Plaza": {
+   "miles": 10.11,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Kansas City",
    "state": "MO"
   },
   "Leawood": {
