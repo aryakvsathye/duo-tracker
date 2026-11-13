@@ -2297,3 +2297,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 09:02,Lehigh Valley,R281,Whitehall,PA,Philadelphia,1,49.3,unavailable,MK1F4LL/A
 2026-11-13 09:02,Eton,R081,Woodmere,OH,Cleveland,2,2.4,unavailable,MK1F4LL/A
 2026-11-13 09:03,Bayshore,R257,Glendale,WI,,0,78.2,available,MK1F4LL/A
+2026-11-13 09:03,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,unavailable,MK1E4LL/A
+2026-11-13 09:03,Eton,R081,Woodmere,OH,Cleveland,2,2.4,available,MK1E4LL/A
+2026-11-13 09:03,Carnegie Library,R516,Washington,DC,Washington,1,0.5,available,MK1F4LL/A
