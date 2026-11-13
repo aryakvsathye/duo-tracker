@@ -2372,3 +2372,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 09:28,Barton Creek,R085,Austin,TX,Austin,2,2.7,available,MK1F4LL/A
 2026-11-13 09:28,Willowbrook Mall,R321,Houston,TX,Houston,1,15.2,unavailable,MK1F4LL/A
 2026-11-13 09:28,Barton Creek,R085,Austin,TX,Austin,2,2.7,unavailable,MK1F4LL/A
+2026-11-13 09:28,Barton Creek,R085,Austin,TX,Austin,2,2.7,available,MK1F4LL/A
+2026-11-13 09:28,Eton,R081,Woodmere,OH,Cleveland,2,2.4,available,MK1F4LL/A
+2026-11-13 09:28,Eastview,R140,Victor,NY,,0,67.5,available,MK1F4LL/A
