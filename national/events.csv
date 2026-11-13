@@ -2295,3 +2295,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 09:02,Queens Center,R612,Elmhurst,NY,New York,1,6.5,available,MK1F4LL/A
 2026-11-13 09:02,Millenia,R053,Orlando,FL,Orlando,2,3.5,available,MK1F4LL/A
 2026-11-13 09:02,Lehigh Valley,R281,Whitehall,PA,Philadelphia,1,49.3,unavailable,MK1F4LL/A
+2026-11-13 09:02,Eton,R081,Woodmere,OH,Cleveland,2,2.4,unavailable,MK1F4LL/A
+2026-11-13 09:03,Bayshore,R257,Glendale,WI,,0,78.2,available,MK1F4LL/A
