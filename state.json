@@ -25,7 +25,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "Saint Louis Galleria": {
-   "MK1F4LL/A": "unavailable",
+   "MK1F4LL/A": "available",
    "MK1E4LL/A": "unavailable"
   },
   "Penn Square": {
@@ -51,7 +51,7 @@
  },
  "checks": 228,
  "errors": 0,
- "events": 18,
+ "events": 19,
  "last_heartbeat": "2026-11-13",
  "nearby": {
   "Country Club Plaza": {
@@ -171,7 +171,7 @@
    ]
   }
  },
- "last_check": "2026-11-13T10:40:47.659364-06:00",
+ "last_check": "2026-11-13T10:41:11.547159-06:00",
  "history": [
   {
    "t": "2026-11-13T10:10:35-06:00",
@@ -895,6 +895,16 @@
   }
  ],
  "field": {
+  "Saint Louis Galleria": {
+   "miles": 239.77,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -947,16 +957,6 @@
   },
   "West County": {
    "miles": 234.82,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
-  },
-  "Saint Louis Galleria": {
-   "miles": 239.77,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -1031,7 +1031,7 @@
    "Saint Louis Galleria",
    "Saddle Creek"
   ],
-  "until": "2026-11-13T11:04:00-06:00"
+  "until": "2026-11-13T11:11:00-06:00"
  },
  "wave_alerted_at": "2026-11-13T10:07:36.093061-06:00"
 }
