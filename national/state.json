@@ -1973,13 +1973,12 @@
    "miles": 3.6,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Mountain",
    "since_by_part": {
-    "MK1F4LL/A": "2026-11-13 11:29",
     "MK1E4LL/A": "2026-11-13 11:29"
    },
    "since": "2026-11-13 11:29"
@@ -4187,8 +4186,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-13T11:29:32.935877-06:00",
- "metros_ok": 46,
+ "last_sweep": "2026-11-13T11:29:40.040228-06:00",
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4551,7 +4550,7 @@
   "Birmingham": "2026-11-13T11:26:03.679226-06:00",
   "Richmond": "2026-11-13T11:29:06.482405-06:00",
   "Honolulu": "2026-11-13T11:29:17.018238-06:00",
-  "Tucson": "2026-11-13T11:25:53.146970-06:00",
+  "Tucson": "2026-11-13T11:29:40.040018-06:00",
   "Buffalo": "2026-11-13T11:27:33.669946-06:00"
  },
  "ok_at": {
@@ -4603,12 +4602,12 @@
   "Birmingham": "2026-11-13T11:26:03.679243-06:00",
   "Richmond": "2026-11-13T11:29:06.482421-06:00",
   "Honolulu": "2026-11-13T11:29:17.018255-06:00",
-  "Tucson": "2026-11-13T11:25:53.146984-06:00",
+  "Tucson": "2026-11-13T11:29:40.040031-06:00",
   "Buffalo": "2026-11-13T11:27:33.669959-06:00"
  },
  "hot": [
-  "Mountain",
-  "West North Central"
+  "West North Central",
+  "Mountain"
  ],
  "cycle_seconds": 150,
  "pace": 5.0,
