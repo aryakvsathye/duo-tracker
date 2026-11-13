@@ -2494,3 +2494,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 10:48,Leawood,R283,Leawood,KS,Kansas City,2,10.5,available,MK1E4LL/A
 2026-11-13 10:48,Saint Louis Galleria,R114,Saint Louis,MO,St. Louis,2,1.2,unavailable,MK1E4LL/A
 2026-11-13 10:49,Bridgeport Village,R134,Tigard,OR,Portland,2,7.0,available,MK1E4LL/A
+2026-11-13 10:50,Bridgeport Village,R134,Tigard,OR,Portland,2,7.0,available,MK1F4LL/A
+2026-11-13 10:50,Leawood,R283,Leawood,KS,Kansas City,2,10.5,unavailable,MK1E4LL/A
+2026-11-13 10:50,Saddle Creek,R020,Germantown,TN,Memphis,3,0.6,unavailable,MK1E4LL/A
