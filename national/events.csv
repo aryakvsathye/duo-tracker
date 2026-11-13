@@ -2210,3 +2210,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 08:34,Aventura,R087,Aventura,FL,Miami,1,13.6,available,MK1F4LL/A
 2026-11-13 08:34,Aventura,R087,Aventura,FL,Miami,1,13.6,available,MK1E4LL/A
 2026-11-13 08:36,Queens Center,R612,Elmhurst,NY,New York,1,6.5,unavailable,MK1F4LL/A
+2026-11-13 08:36,Eton,R081,Woodmere,OH,Cleveland,2,2.4,unavailable,MK1F4LL/A
+2026-11-13 08:36,Eton,R081,Woodmere,OH,Cleveland,2,2.4,available,MK1E4LL/A
+2026-11-13 08:36,Eton,R081,Woodmere,OH,Cleveland,2,2.4,available,MK1F4LL/A
