@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 443,
+ "checks": 459,
  "errors": 0,
  "events": 45,
  "last_heartbeat": "2026-11-13",
@@ -171,136 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-13T11:57:11.366739-06:00",
+ "last_check": "2026-11-13T12:02:11.418184-06:00",
  "history": [
-  {
-   "t": "2026-11-13T11:22:58-06:00",
-   "ok": true,
-   "ms": 411,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:23:18-06:00",
-   "ok": true,
-   "ms": 237,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:23:38-06:00",
-   "ok": true,
-   "ms": 276,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:23:58-06:00",
-   "ok": true,
-   "ms": 229,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:24:18-06:00",
-   "ok": true,
-   "ms": 209,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:24:38-06:00",
-   "ok": true,
-   "ms": 229,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:24:58-06:00",
-   "ok": true,
-   "ms": 446,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:25:18-06:00",
-   "ok": true,
-   "ms": 227,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:25:38-06:00",
-   "ok": true,
-   "ms": 347,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:25:58-06:00",
-   "ok": true,
-   "ms": 207,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:26:18-06:00",
-   "ok": true,
-   "ms": 417,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:26:38-06:00",
-   "ok": true,
-   "ms": 262,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:26:58-06:00",
-   "ok": true,
-   "ms": 351,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:27:18-06:00",
-   "ok": true,
-   "ms": 567,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:27:38-06:00",
-   "ok": true,
-   "ms": 337,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:27:58-06:00",
-   "ok": true,
-   "ms": 318,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-13T11:28:18-06:00",
    "ok": true,
@@ -997,6 +869,134 @@
     "Country Club Plaza"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-13T11:57:11-06:00",
+   "ok": true,
+   "ms": 326,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:57:31-06:00",
+   "ok": true,
+   "ms": 311,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:57:51-06:00",
+   "ok": true,
+   "ms": 310,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:58:11-06:00",
+   "ok": true,
+   "ms": 443,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:58:31-06:00",
+   "ok": true,
+   "ms": 313,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:58:51-06:00",
+   "ok": true,
+   "ms": 320,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:59:11-06:00",
+   "ok": true,
+   "ms": 302,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:59:31-06:00",
+   "ok": true,
+   "ms": 274,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:59:51-06:00",
+   "ok": true,
+   "ms": 239,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T12:00:11-06:00",
+   "ok": true,
+   "ms": 265,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T12:00:31-06:00",
+   "ok": true,
+   "ms": 286,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T12:00:51-06:00",
+   "ok": true,
+   "ms": 304,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T12:01:11-06:00",
+   "ok": true,
+   "ms": 313,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T12:01:31-06:00",
+   "ok": true,
+   "ms": 271,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T12:01:51-06:00",
+   "ok": true,
+   "ms": 293,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T12:02:11-06:00",
+   "ok": true,
+   "ms": 376,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
@@ -1133,8 +1133,8 @@
  "wave": {
   "since": "2026-11-13T11:41:18.960654-06:00",
   "stores": [
-   "Village Pointe",
    "Country Club Plaza",
+   "Village Pointe",
    "Saint Louis Galleria"
   ],
   "until": "2026-11-13T12:26:00-06:00"
