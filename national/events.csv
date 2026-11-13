@@ -2379,3 +2379,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 09:29,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,unavailable,MK1E4LL/A
 2026-11-13 09:29,Cumberland Mall,R591,Atlanta,GA,Atlanta,1,6.5,unavailable,MK1F4LL/A
 2026-11-13 09:29,The Gardens Mall,R127,Palm Beach Gardens,FL,,0,75.1,unavailable,MK1E4LL/A
+2026-11-13 09:30,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,available,MK1E4LL/A
+2026-11-13 09:30,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,unavailable,MK1E4LL/A
