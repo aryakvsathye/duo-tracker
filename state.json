@@ -38,7 +38,7 @@
   },
   "Saddle Creek": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Hilldale": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 249,
+ "checks": 251,
  "errors": 0,
- "events": 24,
+ "events": 25,
  "last_heartbeat": "2026-11-13",
  "nearby": {
   "Leawood": {
@@ -171,24 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-13T10:48:11.608121-06:00",
+ "last_check": "2026-11-13T10:48:51.599839-06:00",
  "history": [
-  {
-   "t": "2026-11-13T10:17:44-06:00",
-   "ok": true,
-   "ms": 360,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:18:04-06:00",
-   "ok": true,
-   "ms": 375,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-13T10:18:24-06:00",
    "ok": true,
@@ -892,6 +876,26 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-13T10:48:11-06:00",
+   "ok": true,
+   "ms": 406,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:48:31-06:00",
+   "ok": true,
+   "ms": 525,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -904,16 +908,6 @@
    },
    "city": "Leawood",
    "state": "KS"
-  },
-  "Saddle Creek": {
-   "miles": 385.15,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Germantown",
-   "state": "TN"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -994,6 +988,16 @@
    },
    "city": "Little Rock",
    "state": "AR"
+  },
+  "Saddle Creek": {
+   "miles": 385.15,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Germantown",
+   "state": "TN"
   },
   "Hilldale": {
    "miles": 394.05,
