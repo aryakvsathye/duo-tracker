@@ -4484,7 +4484,7 @@
    "state": "NY"
   }
  ],
- "retries": 1,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4496,9 +4496,7 @@
  "metro_skip": {
   "Atlanta": 1
  },
- "skipped": [
-  "Minneapolis"
- ],
+ "skipped": [],
  "checked_at": {
   "New York": "2026-11-13T14:18:11.437723-06:00",
   "Los Angeles": "2026-11-13T14:20:11.138771-06:00",
@@ -4633,6 +4631,5 @@
   "2026-11-13T07:14-06:00",
   "2026-11-13T09:19-06:00"
  ],
- "last_weekly": "2026-W45",
- "last_error": "2026-11-13T14:15-06:00: Atlanta: HTTP 541"
+ "last_weekly": "2026-W45"
 }
