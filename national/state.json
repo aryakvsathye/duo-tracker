@@ -171,17 +171,14 @@
    "metro": "New York",
    "tier": 1,
    "miles": 5.7,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-13 08:51"
-   },
-   "since": "2026-11-13 08:51"
+   "since_by_part": {}
   },
   "R612": {
    "name": "Queens Center",
@@ -1092,14 +1089,18 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 10.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-13 08:56",
+    "MK1E4LL/A": "2026-11-13 08:56"
+   },
+   "since": "2026-11-13 08:56"
   },
   "R221": {
    "name": "Fairfax Corner",
@@ -4233,7 +4234,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-13T08:56:04.646224-06:00",
+ "last_sweep": "2026-11-13T08:56:27.504227-06:00",
  "metros_ok": 50,
  "metros": [
   {
@@ -4549,11 +4550,11 @@
  "metro_skip": {},
  "skipped": [],
  "checked_at": {
-  "New York": "2026-11-13T08:51:15.850332-06:00",
+  "New York": "2026-11-13T08:56:22.182339-06:00",
   "Los Angeles": "2026-11-13T08:52:27.857535-06:00",
   "Chicago": "2026-11-13T08:54:40.745388-06:00",
-  "Dallas": "2026-11-13T08:51:09.333236-06:00",
-  "Houston": "2026-11-13T08:51:21.161320-06:00",
+  "Dallas": "2026-11-13T08:56:16.845008-06:00",
+  "Houston": "2026-11-13T08:56:27.503951-06:00",
   "Washington": "2026-11-13T08:53:34.030049-06:00",
   "Philadelphia": "2026-11-13T08:51:26.624458-06:00",
   "Atlanta": "2026-11-13T08:53:39.338786-06:00",
@@ -4595,17 +4596,17 @@
   "Salt Lake City": "2026-11-13T08:52:11.869271-06:00",
   "Louisville": "2026-11-13T08:52:00.012959-06:00",
   "Birmingham": "2026-11-13T08:53:28.683543-06:00",
-  "Richmond": "2026-11-13T08:51:04.092839-06:00",
+  "Richmond": "2026-11-13T08:56:11.503767-06:00",
   "Honolulu": "2026-11-13T08:55:53.984044-06:00",
   "Tucson": "2026-11-13T08:52:33.194434-06:00",
   "Buffalo": "2026-11-13T08:51:49.328778-06:00"
  },
  "ok_at": {
-  "New York": "2026-11-13T08:51:15.850349-06:00",
+  "New York": "2026-11-13T08:56:22.182355-06:00",
   "Los Angeles": "2026-11-13T08:52:27.857552-06:00",
   "Chicago": "2026-11-13T08:54:40.745405-06:00",
-  "Dallas": "2026-11-13T08:51:09.333252-06:00",
-  "Houston": "2026-11-13T08:51:21.161338-06:00",
+  "Dallas": "2026-11-13T08:56:16.845026-06:00",
+  "Houston": "2026-11-13T08:56:27.503968-06:00",
   "Washington": "2026-11-13T08:53:34.030065-06:00",
   "Philadelphia": "2026-11-13T08:51:26.624476-06:00",
   "Atlanta": "2026-11-13T08:53:39.338803-06:00",
@@ -4647,14 +4648,14 @@
   "Salt Lake City": "2026-11-13T08:52:11.869289-06:00",
   "Louisville": "2026-11-13T08:52:00.012976-06:00",
   "Birmingham": "2026-11-13T08:53:28.683560-06:00",
-  "Richmond": "2026-11-13T08:51:04.092856-06:00",
+  "Richmond": "2026-11-13T08:56:11.503783-06:00",
   "Honolulu": "2026-11-13T08:55:53.984062-06:00",
   "Tucson": "2026-11-13T08:52:33.194451-06:00",
   "Buffalo": "2026-11-13T08:51:49.328795-06:00"
  },
  "hot": [
-  "East North Central",
-  "West North Central"
+  "South Atlantic",
+  "East North Central"
  ],
  "cycle_seconds": 150,
  "pace": 5.0,
