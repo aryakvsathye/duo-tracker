@@ -2110,3 +2110,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-12 19:28,Domain NORTHSIDE,R216,Austin,TX,Austin,2,9.3,available,MK1E4LL/A
 2026-11-12 19:30,Domain NORTHSIDE,R216,Austin,TX,Austin,2,9.3,unavailable,MK1E4LL/A
 2026-11-12 19:32,Boylston Street,R149,Boston,MA,Boston,1,0.4,unavailable,MK1E4LL/A
+2026-11-12 19:33,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,available,MK1E4LL/A
