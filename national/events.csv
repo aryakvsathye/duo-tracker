@@ -2650,3 +2650,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 12:06,Los Cerritos,R300,Cerritos,CA,,0,93.1,unavailable,MK1F4LL/A
 2026-11-13 12:06,Los Cerritos,R300,Cerritos,CA,,0,93.1,unavailable,MK1E4LL/A
 2026-11-13 12:06,Southcenter,R106,Tukwila,WA,Seattle,2,10.7,unavailable,MK1F4LL/A
+2026-11-13 12:07,Broadway Plaza,R014,Walnut Creek,CA,San Francisco,1,20.4,available,MK1F4LL/A
+2026-11-13 12:07,Broadway Plaza,R014,Walnut Creek,CA,San Francisco,1,20.4,available,MK1E4LL/A
+2026-11-13 12:07,Union Square,R075,San Francisco,CA,San Francisco,1,0.2,unavailable,MK1E4LL/A
