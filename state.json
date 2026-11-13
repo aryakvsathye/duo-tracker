@@ -21,7 +21,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "West County": {
-   "MK1F4LL/A": "unavailable",
+   "MK1F4LL/A": "available",
    "MK1E4LL/A": "unavailable"
   },
   "Saint Louis Galleria": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 45,
+ "checks": 52,
  "errors": 0,
- "events": 0,
+ "events": 1,
  "last_heartbeat": "2026-11-13",
  "nearby": {
   "Country Club Plaza": {
@@ -171,64 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-13T08:48:50.435657-06:00",
+ "last_check": "2026-11-13T08:56:10.992275-06:00",
  "history": [
-  {
-   "t": "2026-11-13T07:25:27-06:00",
-   "ok": true,
-   "ms": 514,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-13T07:26:27-06:00",
-   "ok": true,
-   "ms": 505,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-13T07:27:27-06:00",
-   "ok": true,
-   "ms": 348,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-13T07:28:27-06:00",
-   "ok": true,
-   "ms": 350,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-13T07:29:27-06:00",
-   "ok": true,
-   "ms": 347,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-13T07:30:27-06:00",
-   "ok": true,
-   "ms": 359,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-13T07:31:27-06:00",
-   "ok": true,
-   "ms": 323,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-13T07:32:27-06:00",
    "ok": true,
@@ -892,9 +836,75 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-13T08:49:10-06:00",
+   "ok": true,
+   "ms": 459,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-13T08:50:10-06:00",
+   "ok": true,
+   "ms": 422,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-13T08:51:10-06:00",
+   "ok": true,
+   "ms": 371,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-13T08:52:10-06:00",
+   "ok": true,
+   "ms": 499,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-13T08:53:10-06:00",
+   "ok": true,
+   "ms": 348,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-13T08:54:10-06:00",
+   "ok": true,
+   "ms": 543,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-13T08:55:10-06:00",
+   "ok": true,
+   "ms": 421,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
+  "West County": {
+   "miles": 234.82,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -944,16 +954,6 @@
    },
    "city": "Tulsa",
    "state": "OK"
-  },
-  "West County": {
-   "miles": 234.82,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
   },
   "Saint Louis Galleria": {
    "miles": 239.77,
