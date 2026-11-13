@@ -2286,3 +2286,9 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 09:00,Oxmoor,R264,Louisville,KY,Louisville,3,1.8,unavailable,MK1E4LL/A
 2026-11-13 09:00,Barton Creek,R085,Austin,TX,Austin,2,2.7,unavailable,MK1F4LL/A
 2026-11-13 09:01,Polaris Fashion Place,R417,Columbus,OH,Columbus,2,9.5,unavailable,MK1F4LL/A
+2026-11-13 09:01,Southlake Town Square,R151,Southlake,TX,Dallas,1,20.4,available,MK1F4LL/A
+2026-11-13 09:02,Perimeter,R184,Atlanta,GA,Atlanta,1,5.3,available,MK1E4LL/A
+2026-11-13 09:02,Eton,R081,Woodmere,OH,Cleveland,2,2.4,available,MK1F4LL/A
+2026-11-13 09:02,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,available,MK1F4LL/A
+2026-11-13 09:02,Somerset,R055,Troy,MI,Detroit,2,0.6,unavailable,MK1E4LL/A
+2026-11-13 09:02,Fairfax Corner,R221,Fairfax,VA,Washington,1,18.5,unavailable,MK1E4LL/A
