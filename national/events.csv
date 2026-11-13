@@ -2107,3 +2107,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-12 18:31,Boylston Street,R149,Boston,MA,Boston,1,0.4,available,MK1E4LL/A
 2026-11-12 18:35,Boylston Street,R149,Boston,MA,Boston,1,0.4,unavailable,MK1E4LL/A
 2026-11-12 19:28,Boylston Street,R149,Boston,MA,Boston,1,0.4,available,MK1E4LL/A
+2026-11-12 19:28,Domain NORTHSIDE,R216,Austin,TX,Austin,2,9.3,available,MK1E4LL/A
