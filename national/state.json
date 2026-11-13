@@ -2698,17 +2698,14 @@
    "metro": "Seattle",
    "tier": 2,
    "miles": 2.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-13 11:50"
-   },
-   "since": "2026-11-13 11:50"
+   "since_by_part": {}
   },
   "R072": {
    "name": "University Village",
@@ -2737,17 +2734,14 @@
    "metro": "Seattle",
    "tier": 2,
    "miles": 10.7,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-13 11:46"
-   },
-   "since": "2026-11-13 11:46"
+   "since_by_part": {}
   },
   "R100": {
    "name": "Alderwood",
@@ -2758,14 +2752,18 @@
    "metro": "Seattle",
    "tier": 2,
    "miles": 15.0,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-13 11:54",
+    "MK1E4LL/A": "2026-11-13 11:54"
+   },
+   "since": "2026-11-13 11:54"
   },
   "R339": {
    "name": "Tacoma Mall",
@@ -2778,13 +2776,12 @@
    "miles": 29.2,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
    "since_by_part": {
-    "MK1F4LL/A": "2026-11-13 11:50",
     "MK1E4LL/A": "2026-11-13 11:50"
    },
    "since": "2026-11-13 11:50"
@@ -2818,13 +2815,12 @@
    "miles": 3.4,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
    "since_by_part": {
-    "MK1F4LL/A": "2026-11-13 11:50",
     "MK1E4LL/A": "2026-11-13 11:50"
    },
    "since": "2026-11-13 11:50"
@@ -4208,8 +4204,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-13T11:54:26.947532-06:00",
- "metros_ok": 46,
+ "last_sweep": "2026-11-13T11:54:34.729205-06:00",
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4512,7 +4508,7 @@
    "state": "NY"
   }
  ],
- "retries": 0,
+ "retries": 1,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4521,10 +4517,10 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {},
- "skipped": [
-  "Austin"
- ],
+ "metro_skip": {
+  "Columbus": 1
+ },
+ "skipped": [],
  "checked_at": {
   "New York": "2026-11-13T11:52:34.939050-06:00",
   "Los Angeles": "2026-11-13T11:53:21.156432-06:00",
@@ -4539,7 +4535,7 @@
   "Boston": "2026-11-13T11:52:52.662671-06:00",
   "San Francisco": "2026-11-13T11:53:26.472218-06:00",
   "Detroit": "2026-11-13T11:53:37.279418-06:00",
-  "Seattle": "2026-11-13T11:50:50.391389-06:00",
+  "Seattle": "2026-11-13T11:54:34.728886-06:00",
   "Minneapolis": "2026-11-13T11:52:24.360223-06:00",
   "San Diego": "2026-11-13T11:50:55.754233-06:00",
   "Tampa": "2026-11-13T11:54:21.681580-06:00",
@@ -4556,7 +4552,7 @@
   "Las Vegas": "2026-11-13T11:50:39.773417-06:00",
   "Cincinnati": "2026-11-13T11:53:44.412253-06:00",
   "Kansas City": "2026-11-13T11:49:42.929609-06:00",
-  "Columbus": "2026-11-13T11:49:25.451873-06:00",
+  "Columbus": "2026-11-13T11:54:50.002727-06:00",
   "Indianapolis": "2026-11-13T11:52:19.059651-06:00",
   "Cleveland": "2026-11-13T11:52:29.643434-06:00",
   "Nashville": "2026-11-13T11:53:03.415388-06:00",
@@ -4591,7 +4587,7 @@
   "Boston": "2026-11-13T11:52:52.662693-06:00",
   "San Francisco": "2026-11-13T11:53:26.472241-06:00",
   "Detroit": "2026-11-13T11:53:37.279441-06:00",
-  "Seattle": "2026-11-13T11:50:50.391412-06:00",
+  "Seattle": "2026-11-13T11:54:34.728908-06:00",
   "Minneapolis": "2026-11-13T11:52:24.360246-06:00",
   "San Diego": "2026-11-13T11:50:55.754258-06:00",
   "Tampa": "2026-11-13T11:54:21.681601-06:00",
@@ -4659,5 +4655,6 @@
   "2026-11-13T07:14-06:00",
   "2026-11-13T09:19-06:00"
  ],
- "last_weekly": "2026-W45"
+ "last_weekly": "2026-W45",
+ "last_error": "2026-11-13T11:54-06:00: Columbus: HTTP 541"
 }
