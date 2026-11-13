@@ -225,14 +225,17 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 0.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-13 11:53"
+   },
+   "since": "2026-11-13 11:53"
   },
   "R124": {
    "name": "Beverly Center",
@@ -2475,14 +2478,18 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 27.4,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-13 11:53",
+    "MK1E4LL/A": "2026-11-13 11:53"
+   },
+   "since": "2026-11-13 11:53"
   },
   "R055": {
    "name": "Somerset",
@@ -4201,8 +4208,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-13T11:53:14.096732-06:00",
- "metros_ok": 48,
+ "last_sweep": "2026-11-13T11:53:37.279555-06:00",
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4520,8 +4527,8 @@
  ],
  "checked_at": {
   "New York": "2026-11-13T11:52:34.939050-06:00",
-  "Los Angeles": "2026-11-13T11:49:20.128898-06:00",
-  "Chicago": "2026-11-13T11:48:13.196461-06:00",
+  "Los Angeles": "2026-11-13T11:53:21.156432-06:00",
+  "Chicago": "2026-11-13T11:53:31.878429-06:00",
   "Dallas": "2026-11-13T11:49:36.119628-06:00",
   "Houston": "2026-11-13T11:50:34.394721-06:00",
   "Washington": "2026-11-13T11:52:13.779205-06:00",
@@ -4530,8 +4537,8 @@
   "Miami": "2026-11-13T11:48:57.337561-06:00",
   "Phoenix": "2026-11-13T11:52:42.104632-06:00",
   "Boston": "2026-11-13T11:52:52.662671-06:00",
-  "San Francisco": "2026-11-13T11:49:30.817521-06:00",
-  "Detroit": "2026-11-13T11:48:18.561883-06:00",
+  "San Francisco": "2026-11-13T11:53:26.472218-06:00",
+  "Detroit": "2026-11-13T11:53:37.279418-06:00",
   "Seattle": "2026-11-13T11:50:50.391389-06:00",
   "Minneapolis": "2026-11-13T11:52:24.360223-06:00",
   "San Diego": "2026-11-13T11:50:55.754233-06:00",
@@ -4572,8 +4579,8 @@
  },
  "ok_at": {
   "New York": "2026-11-13T11:52:34.939077-06:00",
-  "Los Angeles": "2026-11-13T11:49:20.128919-06:00",
-  "Chicago": "2026-11-13T11:48:13.196480-06:00",
+  "Los Angeles": "2026-11-13T11:53:21.156454-06:00",
+  "Chicago": "2026-11-13T11:53:31.878453-06:00",
   "Dallas": "2026-11-13T11:49:36.119646-06:00",
   "Houston": "2026-11-13T11:50:34.394745-06:00",
   "Washington": "2026-11-13T11:52:13.779229-06:00",
@@ -4582,8 +4589,8 @@
   "Miami": "2026-11-13T11:48:57.337580-06:00",
   "Phoenix": "2026-11-13T11:52:42.104657-06:00",
   "Boston": "2026-11-13T11:52:52.662693-06:00",
-  "San Francisco": "2026-11-13T11:49:30.817540-06:00",
-  "Detroit": "2026-11-13T11:48:18.561902-06:00",
+  "San Francisco": "2026-11-13T11:53:26.472241-06:00",
+  "Detroit": "2026-11-13T11:53:37.279441-06:00",
   "Seattle": "2026-11-13T11:50:50.391412-06:00",
   "Minneapolis": "2026-11-13T11:52:24.360246-06:00",
   "San Diego": "2026-11-13T11:50:55.754258-06:00",
@@ -4623,8 +4630,8 @@
   "Buffalo": "2026-11-13T11:48:41.438600-06:00"
  },
  "hot": [
-  "East South Central",
-  "Pacific"
+  "Pacific",
+  "East South Central"
  ],
  "cycle_seconds": 150,
  "pace": 5.0,
