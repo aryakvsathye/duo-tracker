@@ -6,7 +6,7 @@
   },
   "Leawood": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Village Pointe": {
    "MK1F4LL/A": "unavailable",
@@ -26,7 +26,7 @@
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Penn Square": {
    "MK1F4LL/A": "unavailable",
@@ -49,11 +49,39 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 241,
+ "checks": 249,
  "errors": 0,
- "events": 22,
+ "events": 24,
  "last_heartbeat": "2026-11-13",
  "nearby": {
+  "Leawood": {
+   "miles": 10.47,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "quotes": {
+    "MK1F4LL/A": "Currently unavailable at Apple Leawood",
+    "MK1E4LL/A": "Today at Apple Leawood"
+   },
+   "quote": "Currently unavailable at Apple Leawood",
+   "phone": "913-234 9800",
+   "lat": 38.91131,
+   "lon": -94.6378,
+   "address": "4529 West 119th Street",
+   "city": "Leawood",
+   "hours": [
+    {
+     "days": "Mon-Sat:",
+     "time": "10:00 AM-8:00 PM"
+    },
+    {
+     "days": "Sun:",
+     "time": "11:00 AM-6:00 PM"
+    }
+   ]
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -79,34 +107,6 @@
     {
      "days": "Sun:",
      "time": "12:00 PM-6:00 PM"
-    }
-   ]
-  },
-  "Leawood": {
-   "miles": 10.47,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "quotes": {
-    "MK1F4LL/A": "Currently unavailable at Apple Leawood",
-    "MK1E4LL/A": "Currently unavailable at Apple Leawood"
-   },
-   "quote": "Currently unavailable at Apple Leawood",
-   "phone": "913-234 9800",
-   "lat": 38.91131,
-   "lon": -94.6378,
-   "address": "4529 West 119th Street",
-   "city": "Leawood",
-   "hours": [
-    {
-     "days": "Mon-Sat:",
-     "time": "10:00 AM-8:00 PM"
-    },
-    {
-     "days": "Sun:",
-     "time": "11:00 AM-6:00 PM"
     }
    ]
   },
@@ -171,72 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-13T10:45:31.612329-06:00",
+ "last_check": "2026-11-13T10:48:11.608121-06:00",
  "history": [
-  {
-   "t": "2026-11-13T10:15:04-06:00",
-   "ok": true,
-   "ms": 488,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:15:24-06:00",
-   "ok": true,
-   "ms": 458,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:15:44-06:00",
-   "ok": true,
-   "ms": 407,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:16:04-06:00",
-   "ok": true,
-   "ms": 425,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:16:24-06:00",
-   "ok": true,
-   "ms": 363,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:16:44-06:00",
-   "ok": true,
-   "ms": 425,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:17:04-06:00",
-   "ok": true,
-   "ms": 369,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:17:24-06:00",
-   "ok": true,
-   "ms": 476,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-13T10:17:44-06:00",
    "ok": true,
@@ -892,18 +828,82 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-13T10:45:31-06:00",
+   "ok": true,
+   "ms": 413,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:45:51-06:00",
+   "ok": true,
+   "ms": 327,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:46:11-06:00",
+   "ok": true,
+   "ms": 354,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:46:31-06:00",
+   "ok": true,
+   "ms": 474,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:46:51-06:00",
+   "ok": true,
+   "ms": 302,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:47:11-06:00",
+   "ok": true,
+   "ms": 330,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:47:31-06:00",
+   "ok": true,
+   "ms": 287,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:47:51-06:00",
+   "ok": true,
+   "ms": 291,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
-  "Saint Louis Galleria": {
-   "miles": 239.77,
+  "Leawood": {
+   "miles": 10.47,
    "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "available"
    },
-   "city": "Saint Louis",
-   "state": "MO"
+   "city": "Leawood",
+   "state": "KS"
   },
   "Saddle Creek": {
    "miles": 385.15,
@@ -924,16 +924,6 @@
    },
    "city": "Kansas City",
    "state": "MO"
-  },
-  "Leawood": {
-   "miles": 10.47,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Leawood",
-   "state": "KS"
   },
   "Village Pointe": {
    "miles": 171.88,
@@ -967,6 +957,16 @@
   },
   "West County": {
    "miles": 234.82,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
+  },
+  "Saint Louis Galleria": {
+   "miles": 239.77,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -1028,10 +1028,11 @@
  "wave": {
   "since": "2026-11-13T10:07:36.093061-06:00",
   "stores": [
+   "Saddle Creek",
    "Saint Louis Galleria",
-   "Saddle Creek"
+   "Leawood"
   ],
-  "until": "2026-11-13T11:15:00-06:00"
+  "until": "2026-11-13T11:18:00-06:00"
  },
  "wave_alerted_at": "2026-11-13T10:07:36.093061-06:00"
 }
