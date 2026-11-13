@@ -2415,3 +2415,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 09:47,Augusta,R364,Augusta,GA,,0,133.9,unavailable,MK1E4LL/A
 2026-11-13 09:48,Arrowhead,R247,Glendale,AZ,Phoenix,1,14.6,unavailable,MK1E4LL/A
 2026-11-13 09:48,Orland Square Mall,R237,Orland Park,IL,Chicago,1,22.4,available,MK1E4LL/A
+2026-11-13 09:50,Orland Square Mall,R237,Orland Park,IL,Chicago,1,22.4,unavailable,MK1E4LL/A
+2026-11-13 09:50,The Summit,R225,Birmingham,AL,Birmingham,3,0.6,available,MK1F4LL/A
+2026-11-13 09:50,The Summit,R225,Birmingham,AL,Birmingham,3,0.6,available,MK1E4LL/A
