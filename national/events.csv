@@ -2240,3 +2240,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 08:51,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,unavailable,MK1F4LL/A
 2026-11-13 08:51,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,available,MK1E4LL/A
 2026-11-13 08:51,Bridgewater,R104,Bridgewater,NJ,,0,52.5,unavailable,MK1E4LL/A
+2026-11-13 08:51,Lehigh Valley,R281,Whitehall,PA,Philadelphia,1,49.3,available,MK1F4LL/A
+2026-11-13 08:52,Oxmoor,R264,Louisville,KY,Louisville,3,1.8,available,MK1E4LL/A
