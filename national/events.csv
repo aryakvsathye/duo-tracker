@@ -2668,3 +2668,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 12:19,Stonestown,R033,San Francisco,CA,San Francisco,1,5.8,unavailable,MK1E4LL/A
 2026-11-13 12:25,Saint Louis Galleria,R114,Saint Louis,MO,St. Louis,2,1.2,available,MK1E4LL/A
 2026-11-13 12:27,University Village,R072,Seattle,WA,Seattle,2,3.9,available,MK1F4LL/A
+2026-11-13 12:27,University Village,R072,Seattle,WA,Seattle,2,3.9,unavailable,MK1F4LL/A
