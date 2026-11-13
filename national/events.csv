@@ -2608,3 +2608,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 11:55,Tacoma Mall,R339,Tacoma,WA,Seattle,2,29.2,unavailable,MK1E4LL/A
 2026-11-13 11:55,Bay Street,R057,Emeryville,CA,San Francisco,1,7.0,available,MK1E4LL/A
 2026-11-13 11:56,El Paseo Village,R297,Palm Desert,CA,,0,78.8,available,MK1E4LL/A
+2026-11-13 11:57,Saint Louis Galleria,R114,Saint Louis,MO,St. Louis,2,1.2,available,MK1E4LL/A
+2026-11-13 11:57,Country Club Plaza,R097,Kansas City,MO,Kansas City,2,10.1,unavailable,MK1E4LL/A
