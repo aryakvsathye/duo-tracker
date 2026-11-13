@@ -2642,3 +2642,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 12:05,Tower Theatre,R720,Los Angeles,CA,Los Angeles,1,9.2,unavailable,MK1E4LL/A
 2026-11-13 12:05,Union Square,R075,San Francisco,CA,San Francisco,1,0.2,available,MK1E4LL/A
 2026-11-13 12:05,Hillsdale,R231,San Mateo,CA,San Francisco,1,18.4,unavailable,MK1F4LL/A
+2026-11-13 12:06,Southcenter,R106,Tukwila,WA,Seattle,2,10.7,available,MK1F4LL/A
+2026-11-13 12:06,Roseville,R298,Roseville,CA,Sacramento,2,14.6,unavailable,MK1E4LL/A
