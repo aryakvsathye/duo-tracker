@@ -2377,3 +2377,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 09:28,Eastview,R140,Victor,NY,,0,67.5,available,MK1F4LL/A
 2026-11-13 09:29,Eton,R081,Woodmere,OH,Cleveland,2,2.4,unavailable,MK1F4LL/A
 2026-11-13 09:29,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,unavailable,MK1E4LL/A
+2026-11-13 09:29,Cumberland Mall,R591,Atlanta,GA,Atlanta,1,6.5,unavailable,MK1F4LL/A
+2026-11-13 09:29,The Gardens Mall,R127,Palm Beach Gardens,FL,,0,75.1,unavailable,MK1E4LL/A

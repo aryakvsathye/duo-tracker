@@ -1457,13 +1457,12 @@
    "miles": 6.5,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
    "since_by_part": {
-    "MK1F4LL/A": "2026-11-13 09:27",
     "MK1E4LL/A": "2026-11-13 09:27"
    },
    "since": "2026-11-13 09:27"
@@ -1801,17 +1800,14 @@
    "metro": "",
    "tier": 0,
    "miles": 75.1,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-13 09:25"
-   },
-   "since": "2026-11-13 09:25"
+   "since_by_part": {}
   },
   "R169": {
    "name": "Waterside Shops",
@@ -4200,7 +4196,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-13T09:29:35.669061-06:00",
+ "last_sweep": "2026-11-13T09:29:48.962469-06:00",
  "metros_ok": 45,
  "metros": [
   {
@@ -4513,14 +4509,14 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Baltimore": 1,
-  "Orlando": 1,
-  "Madison": 1,
-  "Charlotte": 1,
-  "Memphis": 1
- },
- "skipped": [],
+ "metro_skip": {},
+ "skipped": [
+  "Baltimore",
+  "Charlotte",
+  "Madison",
+  "Memphis",
+  "Orlando"
+ ],
  "checked_at": {
   "New York": "2026-11-13T09:27:56.631359-06:00",
   "Los Angeles": "2026-11-13T09:25:51.265928-06:00",
@@ -4530,7 +4526,7 @@
   "Washington": "2026-11-13T09:26:50.587356-06:00",
   "Philadelphia": "2026-11-13T09:28:27.458588-06:00",
   "Atlanta": "2026-11-13T09:27:08.098793-06:00",
-  "Miami": "2026-11-13T09:24:44.822740-06:00",
+  "Miami": "2026-11-13T09:29:48.962226-06:00",
   "Phoenix": "2026-11-13T09:26:08.737762-06:00",
   "Boston": "2026-11-13T09:26:56.314979-06:00",
   "San Francisco": "2026-11-13T09:26:39.125203-06:00",
@@ -4555,7 +4551,7 @@
   "Columbus": "2026-11-13T09:26:44.856157-06:00",
   "Indianapolis": "2026-11-13T09:27:50.886743-06:00",
   "Cleveland": "2026-11-13T09:29:18.429080-06:00",
-  "Nashville": "2026-11-13T09:24:39.020870-06:00",
+  "Nashville": "2026-11-13T09:29:43.179111-06:00",
   "Raleigh": "2026-11-13T09:25:32.233008-06:00",
   "Oklahoma City": "2026-11-13T09:28:53.470402-06:00",
   "Tulsa": "2026-11-13T09:29:01.062866-06:00",
@@ -4582,7 +4578,7 @@
   "Washington": "2026-11-13T09:26:50.587378-06:00",
   "Philadelphia": "2026-11-13T09:28:27.458611-06:00",
   "Atlanta": "2026-11-13T09:27:08.098818-06:00",
-  "Miami": "2026-11-13T09:24:44.822761-06:00",
+  "Miami": "2026-11-13T09:29:48.962247-06:00",
   "Phoenix": "2026-11-13T09:26:08.737789-06:00",
   "Boston": "2026-11-13T09:26:56.315003-06:00",
   "San Francisco": "2026-11-13T09:26:39.125226-06:00",
@@ -4607,7 +4603,7 @@
   "Columbus": "2026-11-13T09:26:44.856178-06:00",
   "Indianapolis": "2026-11-13T09:27:50.886766-06:00",
   "Cleveland": "2026-11-13T09:29:18.429102-06:00",
-  "Nashville": "2026-11-13T09:24:39.020889-06:00",
+  "Nashville": "2026-11-13T09:29:43.179133-06:00",
   "Raleigh": "2026-11-13T09:25:32.233030-06:00",
   "Oklahoma City": "2026-11-13T09:28:53.470439-06:00",
   "Tulsa": "2026-11-13T09:29:01.062887-06:00",
