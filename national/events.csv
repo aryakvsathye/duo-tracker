@@ -2715,3 +2715,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 14:01,Union Square,R075,San Francisco,CA,San Francisco,1,0.2,unavailable,MK1F4LL/A
 2026-11-13 14:02,Willowbrook Mall,R321,Houston,TX,Houston,1,15.2,available,MK1F4LL/A
 2026-11-13 14:03,Union Square,R075,San Francisco,CA,San Francisco,1,0.2,available,MK1F4LL/A
+2026-11-13 14:04,Fashion Island,R015,Newport Beach,CA,,0,72.0,unavailable,MK1F4LL/A
