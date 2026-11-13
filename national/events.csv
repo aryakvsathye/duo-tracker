@@ -2580,3 +2580,13 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 11:47,Village Pointe,R190,Omaha,NE,Omaha,3,0.3,available,MK1F4LL/A
 2026-11-13 11:49,The Americana at Brand,R451,Glendale,CA,Los Angeles,1,10.8,available,MK1E4LL/A
 2026-11-13 11:49,The Grove,R050,Los Angeles,CA,Los Angeles,1,3.4,unavailable,MK1E4LL/A
+2026-11-13 11:50,Fashion Show,R064,Las Vegas,NV,Las Vegas,2,0.6,available,MK1E4LL/A
+2026-11-13 11:50,The Americana at Brand,R451,Glendale,CA,Los Angeles,1,10.8,unavailable,MK1E4LL/A
+2026-11-13 11:50,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,available,MK1E4LL/A
+2026-11-13 11:50,Southcenter,R106,Tukwila,WA,Seattle,2,10.7,unavailable,MK1F4LL/A
+2026-11-13 11:50,Tacoma Mall,R339,Tacoma,WA,Seattle,2,29.2,available,MK1F4LL/A
+2026-11-13 11:50,Tacoma Mall,R339,Tacoma,WA,Seattle,2,29.2,available,MK1E4LL/A
+2026-11-13 11:50,Washington Square,R090,Tigard,OR,Portland,2,3.4,available,MK1F4LL/A
+2026-11-13 11:50,Washington Square,R090,Tigard,OR,Portland,2,3.4,available,MK1E4LL/A
+2026-11-13 11:50,Brea Mall,R156,Brea,CA,,0,89.9,available,MK1F4LL/A
+2026-11-13 11:50,Brea Mall,R156,Brea,CA,,0,89.9,available,MK1E4LL/A
