@@ -2282,3 +2282,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 08:59,Haywood Mall,R355,Greenville,SC,,0,89.9,available,MK1E4LL/A
 2026-11-13 08:59,Charleston,R318,Charleston,SC,,0,172.2,unavailable,MK1F4LL/A
 2026-11-13 09:00,Short Pump Town Center,R078,Richmond,VA,Richmond,3,1.1,unavailable,MK1E4LL/A
+2026-11-13 09:00,Fairfax Corner,R221,Fairfax,VA,Washington,1,18.5,available,MK1E4LL/A
+2026-11-13 09:00,Oxmoor,R264,Louisville,KY,Louisville,3,1.8,unavailable,MK1E4LL/A
+2026-11-13 09:00,Barton Creek,R085,Austin,TX,Austin,2,2.7,unavailable,MK1F4LL/A
