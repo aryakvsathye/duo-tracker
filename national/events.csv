@@ -2256,3 +2256,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 08:55,Eton,R081,Woodmere,OH,Cleveland,2,2.4,unavailable,MK1E4LL/A
 2026-11-13 08:55,Kenwood Towne Centre,R028,Cincinnati,OH,Cincinnati,2,0.8,available,MK1E4LL/A
 2026-11-13 08:55,Easton Town Center,R009,Columbus,OH,Columbus,2,2.7,available,MK1E4LL/A
+2026-11-13 08:55,West County,R062,Saint Louis,MO,St. Louis,2,6.8,available,MK1F4LL/A
+2026-11-13 08:56,Somerset,R055,Troy,MI,Detroit,2,0.6,available,MK1F4LL/A
+2026-11-13 08:56,Somerset,R055,Troy,MI,Detroit,2,0.6,available,MK1E4LL/A
+2026-11-13 08:56,Polaris Fashion Place,R417,Columbus,OH,Columbus,2,9.5,available,MK1F4LL/A
