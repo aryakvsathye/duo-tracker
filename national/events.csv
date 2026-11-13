@@ -2333,3 +2333,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 09:12,West County,R062,Saint Louis,MO,St. Louis,2,6.8,unavailable,MK1F4LL/A
 2026-11-13 09:13,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,unavailable,MK1E4LL/A
 2026-11-13 09:13,Millenia,R053,Orlando,FL,Orlando,2,3.5,unavailable,MK1F4LL/A
+2026-11-13 09:13,Menlo Park,R067,Edison,NJ,,0,60.3,available,MK1E4LL/A
+2026-11-13 09:13,Walden Galleria,R016,Buffalo,NY,Buffalo,3,0.6,available,MK1E4LL/A
+2026-11-13 09:13,Eton,R081,Woodmere,OH,Cleveland,2,2.4,unavailable,MK1E4LL/A

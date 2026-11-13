@@ -1401,14 +1401,17 @@
    "metro": "",
    "tier": 0,
    "miles": 60.3,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-13 09:13"
+   },
+   "since": "2026-11-13 09:13"
   },
   "R006": {
    "name": "Lenox Square",
@@ -2631,17 +2634,14 @@
    "metro": "Cleveland",
    "tier": 2,
    "miles": 2.4,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-13 09:11"
-   },
-   "since": "2026-11-13 09:11"
+   "since_by_part": {}
   },
   "R132": {
    "name": "Woodland",
@@ -3912,14 +3912,17 @@
    "metro": "Buffalo",
    "tier": 3,
    "miles": 0.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-13 09:13"
+   },
+   "since": "2026-11-13 09:13"
   },
   "R094": {
    "name": "Victoria Gardens",
@@ -4192,7 +4195,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-13T09:13:27.593908-06:00",
+ "last_sweep": "2026-11-13T09:13:50.480778-06:00",
  "metros_ok": 49,
  "metros": [
   {
@@ -4514,7 +4517,7 @@
   "Dallas": "2026-11-13T09:11:53.643645-06:00",
   "Houston": "2026-11-13T09:11:58.965680-06:00",
   "Washington": "2026-11-13T09:10:23.489995-06:00",
-  "Philadelphia": "2026-11-13T09:08:26.701133-06:00",
+  "Philadelphia": "2026-11-13T09:13:34.427618-06:00",
   "Atlanta": "2026-11-13T09:10:41.134293-06:00",
   "Miami": "2026-11-13T09:13:11.486820-06:00",
   "Phoenix": "2026-11-13T09:09:38.289109-06:00",
@@ -4529,11 +4532,11 @@
   "Baltimore": "2026-11-13T09:13:22.236131-06:00",
   "St. Louis": "2026-11-13T09:11:36.294115-06:00",
   "Orlando": "2026-11-13T09:13:27.593813-06:00",
-  "Charlotte": "2026-11-13T09:08:32.002217-06:00",
+  "Charlotte": "2026-11-13T09:13:50.480685-06:00",
   "San Antonio": "2026-11-13T09:12:04.360854-06:00",
   "Portland": "2026-11-13T09:11:14.742422-06:00",
   "Sacramento": "2026-11-13T09:12:38.100389-06:00",
-  "Pittsburgh": "2026-11-13T09:08:42.703761-06:00",
+  "Pittsburgh": "2026-11-13T09:13:39.849693-06:00",
   "Austin": "2026-11-13T09:12:09.694110-06:00",
   "Las Vegas": "2026-11-13T09:12:32.746682-06:00",
   "Cincinnati": "2026-11-13T09:11:41.647797-06:00",
@@ -4557,7 +4560,7 @@
   "Richmond": "2026-11-13T09:09:22.268887-06:00",
   "Honolulu": "2026-11-13T09:12:50.060180-06:00",
   "Tucson": "2026-11-13T09:09:32.922786-06:00",
-  "Buffalo": "2026-11-13T09:08:53.349456-06:00"
+  "Buffalo": "2026-11-13T09:13:45.173399-06:00"
  },
  "ok_at": {
   "New York": "2026-11-13T09:13:06.111933-06:00",
@@ -4566,7 +4569,7 @@
   "Dallas": "2026-11-13T09:11:53.643665-06:00",
   "Houston": "2026-11-13T09:11:58.965699-06:00",
   "Washington": "2026-11-13T09:10:23.490020-06:00",
-  "Philadelphia": "2026-11-13T09:08:26.701151-06:00",
+  "Philadelphia": "2026-11-13T09:13:34.427641-06:00",
   "Atlanta": "2026-11-13T09:10:41.134317-06:00",
   "Miami": "2026-11-13T09:13:11.486841-06:00",
   "Phoenix": "2026-11-13T09:09:38.289127-06:00",
@@ -4581,11 +4584,11 @@
   "Baltimore": "2026-11-13T09:13:22.236154-06:00",
   "St. Louis": "2026-11-13T09:11:36.294137-06:00",
   "Orlando": "2026-11-13T09:13:27.593833-06:00",
-  "Charlotte": "2026-11-13T09:08:32.002236-06:00",
+  "Charlotte": "2026-11-13T09:13:50.480701-06:00",
   "San Antonio": "2026-11-13T09:12:04.360878-06:00",
   "Portland": "2026-11-13T09:11:14.742445-06:00",
   "Sacramento": "2026-11-13T09:12:38.100412-06:00",
-  "Pittsburgh": "2026-11-13T09:08:42.703781-06:00",
+  "Pittsburgh": "2026-11-13T09:13:39.849716-06:00",
   "Austin": "2026-11-13T09:12:09.694132-06:00",
   "Las Vegas": "2026-11-13T09:12:32.746705-06:00",
   "Cincinnati": "2026-11-13T09:11:41.647820-06:00",
@@ -4609,11 +4612,11 @@
   "Richmond": "2026-11-13T09:09:22.268905-06:00",
   "Honolulu": "2026-11-13T09:12:50.060194-06:00",
   "Tucson": "2026-11-13T09:09:32.922803-06:00",
-  "Buffalo": "2026-11-13T09:08:53.349495-06:00"
+  "Buffalo": "2026-11-13T09:13:45.173418-06:00"
  },
  "hot": [
-  "East North Central",
-  "West South Central"
+  "Middle Atlantic",
+  "East North Central"
  ],
  "cycle_seconds": 150,
  "pace": 5.0,
