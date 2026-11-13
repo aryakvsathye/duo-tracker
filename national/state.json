@@ -1884,14 +1884,18 @@
    "metro": "Phoenix",
    "tier": 1,
    "miles": 14.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "US/Arizona",
    "region": "Mountain",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-13 09:20",
+    "MK1E4LL/A": "2026-11-13 09:20"
+   },
+   "since": "2026-11-13 09:20"
   },
   "R026": {
    "name": "Chandler Fashion Center",
@@ -1938,14 +1942,17 @@
    "metro": "Tucson",
    "tier": 3,
    "miles": 1.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "US/Arizona",
    "region": "Mountain",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-13 09:20"
+   },
+   "since": "2026-11-13 09:20"
   },
   "R297": {
    "name": "El Paseo Village",
@@ -3666,14 +3673,17 @@
    "metro": "Charlotte",
    "tier": 2,
    "miles": 2.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-13 09:20"
+   },
+   "since": "2026-11-13 09:20"
   },
   "R796": {
    "name": "Birkdale Village",
@@ -4180,8 +4190,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-13T09:18:27.032933-06:00",
- "metros_ok": 48,
+ "last_sweep": "2026-11-13T09:20:34.157766-06:00",
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4536,7 +4546,7 @@
   "Indianapolis": "2026-11-13T09:16:43.445617-06:00",
   "Cleveland": "2026-11-13T09:17:56.898041-06:00",
   "Nashville": "2026-11-13T09:18:15.993253-06:00",
-  "Raleigh": "2026-11-13T09:14:13.311830-06:00",
+  "Raleigh": "2026-11-13T09:20:22.095752-06:00",
   "Oklahoma City": "2026-11-13T09:17:35.670685-06:00",
   "Tulsa": "2026-11-13T09:17:40.563777-06:00",
   "Omaha": "2026-11-13T09:16:14.462092-06:00",
@@ -4544,9 +4554,9 @@
   "Little Rock": "2026-11-13T09:17:45.449069-06:00",
   "Memphis": "2026-11-13T09:19:41.909103-06:00",
   "Madison": "2026-11-13T09:19:11.848542-06:00",
-  "Albuquerque": "2026-11-13T09:14:02.594554-06:00",
-  "Salt Lake City": "2026-11-13T09:14:24.091040-06:00",
-  "Louisville": "2026-11-13T09:14:18.652142-06:00",
+  "Albuquerque": "2026-11-13T09:20:16.179323-06:00",
+  "Salt Lake City": "2026-11-13T09:20:34.157644-06:00",
+  "Louisville": "2026-11-13T09:20:28.105757-06:00",
   "Birmingham": "2026-11-13T09:16:24.196585-06:00",
   "Richmond": "2026-11-13T09:14:36.438130-06:00",
   "Honolulu": "2026-11-13T09:18:11.201135-06:00",
@@ -4588,7 +4598,7 @@
   "Indianapolis": "2026-11-13T09:16:43.445637-06:00",
   "Cleveland": "2026-11-13T09:17:56.898061-06:00",
   "Nashville": "2026-11-13T09:18:15.993273-06:00",
-  "Raleigh": "2026-11-13T09:14:13.311850-06:00",
+  "Raleigh": "2026-11-13T09:20:22.095773-06:00",
   "Oklahoma City": "2026-11-13T09:17:35.670705-06:00",
   "Tulsa": "2026-11-13T09:17:40.563797-06:00",
   "Omaha": "2026-11-13T09:16:14.462113-06:00",
@@ -4596,19 +4606,16 @@
   "Little Rock": "2026-11-13T09:17:45.449091-06:00",
   "Memphis": "2026-11-13T09:13:57.231905-06:00",
   "Madison": "2026-11-13T09:15:19.375721-06:00",
-  "Albuquerque": "2026-11-13T09:14:02.594580-06:00",
-  "Salt Lake City": "2026-11-13T09:14:24.091084-06:00",
-  "Louisville": "2026-11-13T09:14:18.652164-06:00",
+  "Albuquerque": "2026-11-13T09:20:16.179345-06:00",
+  "Salt Lake City": "2026-11-13T09:20:34.157666-06:00",
+  "Louisville": "2026-11-13T09:20:28.105778-06:00",
   "Birmingham": "2026-11-13T09:16:24.196606-06:00",
   "Richmond": "2026-11-13T09:14:36.438150-06:00",
   "Honolulu": "2026-11-13T09:18:11.201152-06:00",
   "Tucson": "2026-11-13T09:14:41.778694-06:00",
   "Buffalo": "2026-11-13T09:17:30.728480-06:00"
  },
- "hot": [
-  "East North Central",
-  "Middle Atlantic"
- ],
+ "hot": [],
  "cycle_seconds": 150,
  "pace": 5.5,
  "pace_since": "2026-11-13T09:19:41.909144-06:00",
