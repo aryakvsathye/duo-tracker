@@ -2743,17 +2743,14 @@
    "metro": "Seattle",
    "tier": 2,
    "miles": 10.7,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-13 12:06"
-   },
-   "since": "2026-11-13 12:06"
+   "since_by_part": {}
   },
   "R100": {
    "name": "Alderwood",
@@ -3039,13 +3036,12 @@
    "miles": 1.3,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
    "since_by_part": {
-    "MK1F4LL/A": "2026-11-13 11:59",
     "MK1E4LL/A": "2026-11-13 11:59"
    },
    "since": "2026-11-13 11:59"
@@ -3097,13 +3093,12 @@
    "miles": 51.9,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
    "since_by_part": {
-    "MK1F4LL/A": "2026-11-13 12:01",
     "MK1E4LL/A": "2026-11-13 11:59"
    },
    "since": "2026-11-13 11:59"
@@ -3189,17 +3184,14 @@
    "metro": "",
    "tier": 0,
    "miles": 89.9,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-13 12:02"
-   },
-   "since": "2026-11-13 12:02"
+   "since_by_part": {}
   },
   "R300": {
    "name": "Los Cerritos",
@@ -3210,18 +3202,14 @@
    "metro": "",
    "tier": 0,
    "miles": 93.1,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-13 12:02",
-    "MK1E4LL/A": "2026-11-13 12:02"
-   },
-   "since": "2026-11-13 12:02"
+   "since_by_part": {}
   },
   "R019": {
    "name": "International Plaza",
@@ -4217,8 +4205,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-13T12:06:18.944736-06:00",
- "metros_ok": 47,
+ "last_sweep": "2026-11-13T12:06:42.239304-06:00",
+ "metros_ok": 49,
  "metros": [
   {
    "metro": "New York",
@@ -4550,19 +4538,19 @@
   "Detroit": "2026-11-13T12:04:13.585775-06:00",
   "Seattle": "2026-11-13T12:06:08.231868-06:00",
   "Minneapolis": "2026-11-13T12:04:56.680663-06:00",
-  "San Diego": "2026-11-13T12:02:43.779506-06:00",
+  "San Diego": "2026-11-13T12:06:26.112706-06:00",
   "Tampa": "2026-11-13T12:05:36.199252-06:00",
   "Denver": "2026-11-13T12:06:02.897387-06:00",
   "Baltimore": "2026-11-13T12:05:41.521338-06:00",
   "St. Louis": "2026-11-13T12:05:46.902116-06:00",
   "Orlando": "2026-11-13T12:06:13.574453-06:00",
-  "Charlotte": "2026-11-13T12:01:25.365447-06:00",
+  "Charlotte": "2026-11-13T12:06:36.819356-06:00",
   "San Antonio": "2026-11-13T12:01:36.006794-06:00",
-  "Portland": "2026-11-13T12:03:00.025103-06:00",
+  "Portland": "2026-11-13T12:06:42.238984-06:00",
   "Sacramento": "2026-11-13T12:03:50.081379-06:00",
   "Pittsburgh": "2026-11-13T12:05:02.105481-06:00",
   "Austin": "2026-11-13T12:01:41.319829-06:00",
-  "Las Vegas": "2026-11-13T12:01:18.235314-06:00",
+  "Las Vegas": "2026-11-13T12:06:31.449268-06:00",
   "Cincinnati": "2026-11-13T12:04:29.559920-06:00",
   "Kansas City": "2026-11-13T12:03:17.693837-06:00",
   "Columbus": "2026-11-13T12:05:52.235091-06:00",
@@ -4602,19 +4590,19 @@
   "Detroit": "2026-11-13T12:04:13.585800-06:00",
   "Seattle": "2026-11-13T12:06:08.231890-06:00",
   "Minneapolis": "2026-11-13T12:04:56.680688-06:00",
-  "San Diego": "2026-11-13T12:02:43.779529-06:00",
+  "San Diego": "2026-11-13T12:06:26.112730-06:00",
   "Tampa": "2026-11-13T12:05:36.199275-06:00",
   "Denver": "2026-11-13T12:06:02.897412-06:00",
   "Baltimore": "2026-11-13T12:05:41.521359-06:00",
   "St. Louis": "2026-11-13T12:05:46.902140-06:00",
   "Orlando": "2026-11-13T12:06:13.574478-06:00",
-  "Charlotte": "2026-11-13T12:01:25.365467-06:00",
+  "Charlotte": "2026-11-13T12:06:36.819382-06:00",
   "San Antonio": "2026-11-13T12:01:36.006818-06:00",
-  "Portland": "2026-11-13T12:03:00.025125-06:00",
+  "Portland": "2026-11-13T12:06:42.239008-06:00",
   "Sacramento": "2026-11-13T12:03:50.081403-06:00",
   "Pittsburgh": "2026-11-13T12:05:02.105504-06:00",
   "Austin": "2026-11-13T12:01:41.319853-06:00",
-  "Las Vegas": "2026-11-13T12:01:18.235360-06:00",
+  "Las Vegas": "2026-11-13T12:06:31.449292-06:00",
   "Cincinnati": "2026-11-13T12:04:29.559943-06:00",
   "Kansas City": "2026-11-13T12:03:17.693860-06:00",
   "Columbus": "2026-11-13T12:05:52.235115-06:00",
