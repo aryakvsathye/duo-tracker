@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 429,
+ "checks": 432,
  "errors": 0,
  "events": 43,
  "last_heartbeat": "2026-11-13",
@@ -171,32 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-13T11:52:21.313437-06:00",
+ "last_check": "2026-11-13T11:53:01.201309-06:00",
  "history": [
-  {
-   "t": "2026-11-13T11:18:18-06:00",
-   "ok": true,
-   "ms": 291,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:18:38-06:00",
-   "ok": true,
-   "ms": 304,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T11:18:58-06:00",
-   "ok": true,
-   "ms": 388,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-13T11:19:18-06:00",
    "ok": true,
@@ -967,6 +943,36 @@
    "green": [
     "Country Club Plaza",
     "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:52:20-06:00",
+   "ok": true,
+   "ms": 377,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:52:40-06:00",
+   "ok": true,
+   "ms": 401,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:53:00-06:00",
+   "ok": true,
+   "ms": 265,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
    ],
    "burst": true
   }
