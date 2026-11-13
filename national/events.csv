@@ -2307,3 +2307,8 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 09:05,Perimeter,R184,Atlanta,GA,Atlanta,1,5.3,unavailable,MK1E4LL/A
 2026-11-13 09:05,Carnegie Library,R516,Washington,DC,Washington,1,0.5,unavailable,MK1F4LL/A
 2026-11-13 09:05,Kenwood Towne Centre,R028,Cincinnati,OH,Cincinnati,2,0.8,unavailable,MK1E4LL/A
+2026-11-13 09:05,Bayshore,R257,Glendale,WI,,0,78.2,unavailable,MK1F4LL/A
+2026-11-13 09:05,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,unavailable,MK1F4LL/A
+2026-11-13 09:05,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,available,MK1E4LL/A
+2026-11-13 09:05,Eton,R081,Woodmere,OH,Cleveland,2,2.4,unavailable,MK1E4LL/A
+2026-11-13 09:05,Easton Town Center,R009,Columbus,OH,Columbus,2,2.7,unavailable,MK1E4LL/A
