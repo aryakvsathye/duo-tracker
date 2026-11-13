@@ -2269,3 +2269,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 08:57,Barton Creek,R085,Austin,TX,Austin,2,2.7,available,MK1F4LL/A
 2026-11-13 08:57,Columbia,R168,Columbia,MD,Baltimore,2,17.7,unavailable,MK1E4LL/A
 2026-11-13 08:57,Augusta,R364,Augusta,GA,,0,133.9,unavailable,MK1E4LL/A
+2026-11-13 08:57,International Plaza,R019,Tampa,FL,Tampa,2,1.1,unavailable,MK1E4LL/A
+2026-11-13 08:57,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,unavailable,MK1F4LL/A
+2026-11-13 08:57,Altamonte,R291,Altamonte Springs,FL,Orlando,2,16.0,unavailable,MK1E4LL/A
