@@ -25,7 +25,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "Saint Louis Galleria": {
-   "MK1F4LL/A": "unavailable",
+   "MK1F4LL/A": "available",
    "MK1E4LL/A": "unavailable"
   },
   "Penn Square": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 282,
+ "checks": 301,
  "errors": 0,
- "events": 26,
+ "events": 27,
  "last_heartbeat": "2026-11-13",
  "nearby": {
   "Country Club Plaza": {
@@ -171,160 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-13T10:58:53.005127-06:00",
+ "last_check": "2026-11-13T11:05:32.330881-06:00",
  "history": [
-  {
-   "t": "2026-11-13T10:28:54-06:00",
-   "ok": true,
-   "ms": 302,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:29:14-06:00",
-   "ok": true,
-   "ms": 244,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:29:34-06:00",
-   "ok": true,
-   "ms": 291,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:29:54-06:00",
-   "ok": true,
-   "ms": 301,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:30:14-06:00",
-   "ok": true,
-   "ms": 241,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:30:34-06:00",
-   "ok": true,
-   "ms": 408,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:30:54-06:00",
-   "ok": true,
-   "ms": 347,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:31:14-06:00",
-   "ok": true,
-   "ms": 361,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:31:34-06:00",
-   "ok": true,
-   "ms": 377,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:32:07-06:00",
-   "ok": true,
-   "ms": 534,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:32:27-06:00",
-   "ok": true,
-   "ms": 517,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:32:47-06:00",
-   "ok": true,
-   "ms": 467,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:33:07-06:00",
-   "ok": true,
-   "ms": 328,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:33:27-06:00",
-   "ok": true,
-   "ms": 317,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:33:47-06:00",
-   "ok": true,
-   "ms": 366,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:34:07-06:00",
-   "ok": true,
-   "ms": 325,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:34:27-06:00",
-   "ok": true,
-   "ms": 427,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:34:47-06:00",
-   "ok": true,
-   "ms": 1949,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:35:07-06:00",
-   "ok": true,
-   "ms": 359,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-13T10:35:27-06:00",
    "ok": true,
@@ -902,9 +750,171 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-13T10:59:11-06:00",
+   "ok": true,
+   "ms": 673,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:59:31-06:00",
+   "ok": true,
+   "ms": 311,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:59:51-06:00",
+   "ok": true,
+   "ms": 324,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:00:11-06:00",
+   "ok": true,
+   "ms": 324,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:00:31-06:00",
+   "ok": true,
+   "ms": 283,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:00:51-06:00",
+   "ok": true,
+   "ms": 747,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:01:11-06:00",
+   "ok": true,
+   "ms": 429,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:01:31-06:00",
+   "ok": true,
+   "ms": 368,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:01:51-06:00",
+   "ok": true,
+   "ms": 474,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:02:11-06:00",
+   "ok": true,
+   "ms": 384,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:02:31-06:00",
+   "ok": true,
+   "ms": 516,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:02:51-06:00",
+   "ok": true,
+   "ms": 728,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:03:11-06:00",
+   "ok": true,
+   "ms": 580,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:03:31-06:00",
+   "ok": true,
+   "ms": 369,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:03:51-06:00",
+   "ok": true,
+   "ms": 339,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:04:11-06:00",
+   "ok": true,
+   "ms": 405,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:04:31-06:00",
+   "ok": true,
+   "ms": 270,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:04:51-06:00",
+   "ok": true,
+   "ms": 343,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T11:05:11-06:00",
+   "ok": true,
+   "ms": 259,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
+  "Saint Louis Galleria": {
+   "miles": 239.77,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -957,16 +967,6 @@
   },
   "West County": {
    "miles": 234.82,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
-  },
-  "Saint Louis Galleria": {
-   "miles": 239.77,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
@@ -1038,11 +1038,10 @@
  "wave": {
   "since": "2026-11-13T10:07:36.093061-06:00",
   "stores": [
-   "Saint Louis Galleria",
-   "Saddle Creek",
-   "Leawood"
+   "Leawood",
+   "Saint Louis Galleria"
   ],
-  "until": "2026-11-13T11:18:00-06:00"
+  "until": "2026-11-13T11:35:00-06:00"
  },
  "wave_alerted_at": "2026-11-13T10:07:36.093061-06:00"
 }
