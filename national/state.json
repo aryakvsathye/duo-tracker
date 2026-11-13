@@ -1596,17 +1596,14 @@
    "metro": "Nashville",
    "tier": 2,
    "miles": 8.9,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "East South Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-13 10:02"
-   },
-   "since": "2026-11-13 10:02"
+   "since_by_part": {}
   },
   "R123": {
    "name": "Green Hills",
@@ -1887,17 +1884,14 @@
    "metro": "Phoenix",
    "tier": 1,
    "miles": 14.6,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "US/Arizona",
    "region": "Mountain",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-13 10:00"
-   },
-   "since": "2026-11-13 10:00"
+   "since_by_part": {}
   },
   "R026": {
    "name": "Chandler Fashion Center",
@@ -1944,17 +1938,14 @@
    "metro": "Tucson",
    "tier": 3,
    "miles": 1.2,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "US/Arizona",
    "region": "Mountain",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-13 09:20"
-   },
-   "since": "2026-11-13 09:20"
+   "since_by_part": {}
   },
   "R297": {
    "name": "El Paseo Village",
@@ -4195,8 +4186,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-13T10:04:43.713158-06:00",
- "metros_ok": 50,
+ "last_sweep": "2026-11-13T10:05:35.290666-06:00",
+ "metros_ok": 41,
  "metros": [
   {
    "metro": "New York",
@@ -4516,9 +4507,9 @@
   "Chicago": "2026-11-13T10:02:44.729963-06:00",
   "Dallas": "2026-11-13T10:03:04.823492-06:00",
   "Houston": "2026-11-13T10:03:10.553474-06:00",
-  "Washington": "2026-11-13T09:58:57.839858-06:00",
+  "Washington": "2026-11-13T10:05:23.639122-06:00",
   "Philadelphia": "2026-11-13T10:04:04.291337-06:00",
-  "Atlanta": "2026-11-13T09:59:03.675677-06:00",
+  "Atlanta": "2026-11-13T10:05:35.290409-06:00",
   "Miami": "2026-11-13T10:01:32.765952-06:00",
   "Phoenix": "2026-11-13T10:00:41.255120-06:00",
   "Boston": "2026-11-13T10:01:15.505245-06:00",
@@ -4553,8 +4544,8 @@
   "Little Rock": "2026-11-13T10:03:52.712219-06:00",
   "Memphis": "2026-11-13T10:02:33.053900-06:00",
   "Madison": "2026-11-13T10:01:45.537103-06:00",
-  "Albuquerque": "2026-11-13T10:00:23.681787-06:00",
-  "Salt Lake City": "2026-11-13T10:00:29.468143-06:00",
+  "Albuquerque": "2026-11-13T10:05:17.869627-06:00",
+  "Salt Lake City": "2026-11-13T10:05:29.481267-06:00",
   "Louisville": "2026-11-13T10:02:38.874402-06:00",
   "Birmingham": "2026-11-13T10:03:46.937501-06:00",
   "Richmond": "2026-11-13T10:04:32.218882-06:00",
@@ -4568,9 +4559,9 @@
   "Chicago": "2026-11-13T10:02:44.729983-06:00",
   "Dallas": "2026-11-13T10:03:04.823507-06:00",
   "Houston": "2026-11-13T10:03:10.553491-06:00",
-  "Washington": "2026-11-13T09:58:57.839878-06:00",
+  "Washington": "2026-11-13T10:05:23.639132-06:00",
   "Philadelphia": "2026-11-13T10:04:04.291350-06:00",
-  "Atlanta": "2026-11-13T09:59:03.675695-06:00",
+  "Atlanta": "2026-11-13T10:05:35.290423-06:00",
   "Miami": "2026-11-13T10:01:32.765972-06:00",
   "Phoenix": "2026-11-13T10:00:41.255140-06:00",
   "Boston": "2026-11-13T10:01:15.505261-06:00",
@@ -4605,8 +4596,8 @@
   "Little Rock": "2026-11-13T10:03:52.712237-06:00",
   "Memphis": "2026-11-13T10:02:33.053912-06:00",
   "Madison": "2026-11-13T10:01:45.537122-06:00",
-  "Albuquerque": "2026-11-13T10:00:23.681803-06:00",
-  "Salt Lake City": "2026-11-13T10:00:29.468163-06:00",
+  "Albuquerque": "2026-11-13T10:05:17.869643-06:00",
+  "Salt Lake City": "2026-11-13T10:05:29.481283-06:00",
   "Louisville": "2026-11-13T10:02:38.874421-06:00",
   "Birmingham": "2026-11-13T10:03:46.937521-06:00",
   "Richmond": "2026-11-13T10:04:32.218893-06:00",

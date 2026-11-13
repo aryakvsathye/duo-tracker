@@ -2436,3 +2436,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 10:00,Arrowhead,R247,Glendale,AZ,Phoenix,1,14.6,available,MK1E4LL/A
 2026-11-13 10:02,Downtown Nashville,R133,Nashville,TN,Nashville,2,6.0,available,MK1E4LL/A
 2026-11-13 10:02,CoolSprings Galleria,R513,Franklin,TN,Nashville,2,8.9,available,MK1F4LL/A
+2026-11-13 10:05,La Encantada,R086,Tucson,AZ,Tucson,3,1.2,unavailable,MK1E4LL/A
+2026-11-13 10:05,Arrowhead,R247,Glendale,AZ,Phoenix,1,14.6,unavailable,MK1E4LL/A
+2026-11-13 10:05,CoolSprings Galleria,R513,Franklin,TN,Nashville,2,8.9,unavailable,MK1F4LL/A
