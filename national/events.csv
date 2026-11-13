@@ -2316,3 +2316,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 09:06,University Park Village,R316,Fort Worth,TX,Dallas,1,34.5,available,MK1E4LL/A
 2026-11-13 09:06,Southlake Town Square,R151,Southlake,TX,Dallas,1,20.4,unavailable,MK1F4LL/A
 2026-11-13 09:07,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,unavailable,MK1E4LL/A
+2026-11-13 09:07,Queens Center,R612,Elmhurst,NY,New York,1,6.5,unavailable,MK1F4LL/A
+2026-11-13 09:08,Waterside Shops,R169,Naples,FL,,0,104.7,available,MK1F4LL/A
