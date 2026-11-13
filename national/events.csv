@@ -2636,3 +2636,9 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 12:02,Brea Mall,R156,Brea,CA,,0,89.9,available,MK1E4LL/A
 2026-11-13 12:02,Los Cerritos,R300,Cerritos,CA,,0,93.1,available,MK1F4LL/A
 2026-11-13 12:02,Los Cerritos,R300,Cerritos,CA,,0,93.1,available,MK1E4LL/A
+2026-11-13 12:05,Glendale Galleria,R001,Glendale,CA,Los Angeles,1,10.8,available,MK1F4LL/A
+2026-11-13 12:05,Glendale Galleria,R001,Glendale,CA,Los Angeles,1,10.8,available,MK1E4LL/A
+2026-11-13 12:05,Manhattan Village,R122,Manhattan Beach,CA,Los Angeles,1,11.0,available,MK1E4LL/A
+2026-11-13 12:05,Tower Theatre,R720,Los Angeles,CA,Los Angeles,1,9.2,unavailable,MK1E4LL/A
+2026-11-13 12:05,Union Square,R075,San Francisco,CA,San Francisco,1,0.2,available,MK1E4LL/A
+2026-11-13 12:05,Hillsdale,R231,San Mateo,CA,San Francisco,1,18.4,unavailable,MK1F4LL/A
