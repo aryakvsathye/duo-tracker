@@ -2182,3 +2182,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 08:20,Upper West Side,R251,New York,NY,New York,1,0.5,available,MK1E4LL/A
 2026-11-13 08:20,Freehold Raceway Mall,R138,Freehold,NJ,,0,50.6,available,MK1E4LL/A
 2026-11-13 08:21,Houston Galleria,R058,Houston,TX,Houston,1,0.7,available,MK1E4LL/A
+2026-11-13 08:24,Augusta,R364,Augusta,GA,,0,133.9,unavailable,MK1E4LL/A
+2026-11-13 08:24,Upper West Side,R251,New York,NY,New York,1,0.5,unavailable,MK1E4LL/A
