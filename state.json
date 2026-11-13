@@ -6,7 +6,7 @@
   },
   "Leawood": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Village Pointe": {
    "MK1F4LL/A": "unavailable",
@@ -49,39 +49,11 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 251,
+ "checks": 254,
  "errors": 0,
- "events": 25,
+ "events": 26,
  "last_heartbeat": "2026-11-13",
  "nearby": {
-  "Leawood": {
-   "miles": 10.47,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "quotes": {
-    "MK1F4LL/A": "Currently unavailable at Apple Leawood",
-    "MK1E4LL/A": "Today at Apple Leawood"
-   },
-   "quote": "Currently unavailable at Apple Leawood",
-   "phone": "913-234 9800",
-   "lat": 38.91131,
-   "lon": -94.6378,
-   "address": "4529 West 119th Street",
-   "city": "Leawood",
-   "hours": [
-    {
-     "days": "Mon-Sat:",
-     "time": "10:00 AM-8:00 PM"
-    },
-    {
-     "days": "Sun:",
-     "time": "11:00 AM-6:00 PM"
-    }
-   ]
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -107,6 +79,34 @@
     {
      "days": "Sun:",
      "time": "12:00 PM-6:00 PM"
+    }
+   ]
+  },
+  "Leawood": {
+   "miles": 10.47,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "quotes": {
+    "MK1F4LL/A": "Currently unavailable at Apple Leawood",
+    "MK1E4LL/A": "Currently unavailable at Apple Leawood"
+   },
+   "quote": "Currently unavailable at Apple Leawood",
+   "phone": "913-234 9800",
+   "lat": 38.91131,
+   "lon": -94.6378,
+   "address": "4529 West 119th Street",
+   "city": "Leawood",
+   "hours": [
+    {
+     "days": "Mon-Sat:",
+     "time": "10:00 AM-8:00 PM"
+    },
+    {
+     "days": "Sun:",
+     "time": "11:00 AM-6:00 PM"
     }
    ]
   },
@@ -171,32 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-13T10:48:51.599839-06:00",
+ "last_check": "2026-11-13T10:49:51.649065-06:00",
  "history": [
-  {
-   "t": "2026-11-13T10:18:24-06:00",
-   "ok": true,
-   "ms": 364,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:18:44-06:00",
-   "ok": true,
-   "ms": 429,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-13T10:19:04-06:00",
-   "ok": true,
-   "ms": 395,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-13T10:19:24-06:00",
    "ok": true,
@@ -896,19 +872,39 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-13T10:48:51-06:00",
+   "ok": true,
+   "ms": 399,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:49:11-06:00",
+   "ok": true,
+   "ms": 363,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:49:31-06:00",
+   "ok": true,
+   "ms": 390,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
-  "Leawood": {
-   "miles": 10.47,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Leawood",
-   "state": "KS"
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -918,6 +914,16 @@
    },
    "city": "Kansas City",
    "state": "MO"
+  },
+  "Leawood": {
+   "miles": 10.47,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Leawood",
+   "state": "KS"
   },
   "Village Pointe": {
    "miles": 171.88,
