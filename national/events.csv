@@ -2176,3 +2176,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 08:08,Brandon,R289,Brandon,FL,Tampa,2,13.0,available,MK1E4LL/A
 2026-11-13 08:12,Brandon,R289,Brandon,FL,Tampa,2,13.0,unavailable,MK1F4LL/A
 2026-11-13 08:14,Augusta,R364,Augusta,GA,,0,133.9,available,MK1E4LL/A
+2026-11-13 08:15,The Falls,R012,Miami,FL,Miami,1,12.5,available,MK1E4LL/A
+2026-11-13 08:15,Aventura,R087,Aventura,FL,Miami,1,13.6,unavailable,MK1E4LL/A
