@@ -2230,3 +2230,10 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 08:47,Bridgewater,R104,Bridgewater,NJ,,0,52.5,available,MK1E4LL/A
 2026-11-13 08:47,Menlo Park,R067,Edison,NJ,,0,60.3,available,MK1E4LL/A
 2026-11-13 08:47,Rockingham Park,R027,Salem,NH,Boston,1,29.9,available,MK1E4LL/A
+2026-11-13 08:48,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,available,MK1E4LL/A
+2026-11-13 08:48,Aventura,R087,Aventura,FL,Miami,1,13.6,available,MK1E4LL/A
+2026-11-13 08:48,International Plaza,R019,Tampa,FL,Tampa,2,1.1,available,MK1E4LL/A
+2026-11-13 08:48,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,available,MK1F4LL/A
+2026-11-13 08:48,Altamonte,R291,Altamonte Springs,FL,Orlando,2,16.0,available,MK1F4LL/A
+2026-11-13 08:48,Altamonte,R291,Altamonte Springs,FL,Orlando,2,16.0,available,MK1E4LL/A
+2026-11-13 08:48,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,available,MK1F4LL/A

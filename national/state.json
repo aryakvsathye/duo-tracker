@@ -1638,14 +1638,17 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 0.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-13 08:48"
+   },
+   "since": "2026-11-13 08:48"
   },
   "R752": {
    "name": "Miami Worldcenter",
@@ -1728,14 +1731,17 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 13.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-13 08:48"
+   },
+   "since": "2026-11-13 08:48"
   },
   "R214": {
    "name": "The Galleria",
@@ -3207,14 +3213,17 @@
    "metro": "Tampa",
    "tier": 2,
    "miles": 1.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-13 08:48"
+   },
+   "since": "2026-11-13 08:48"
   },
   "R289": {
    "name": "Brandon",
@@ -3279,14 +3288,17 @@
    "metro": "Orlando",
    "tier": 2,
    "miles": 4.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-13 08:48"
+   },
+   "since": "2026-11-13 08:48"
   },
   "R291": {
    "name": "Altamonte",
@@ -3297,14 +3309,18 @@
    "metro": "Orlando",
    "tier": 2,
    "miles": 16.0,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-13 08:48",
+    "MK1E4LL/A": "2026-11-13 08:48"
+   },
+   "since": "2026-11-13 08:48"
   },
   "R111": {
    "name": "St. Johns Town Center",
@@ -3315,14 +3331,17 @@
    "metro": "",
    "tier": 0,
    "miles": 124.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-13 08:48"
+   },
+   "since": "2026-11-13 08:48"
   },
   "R047": {
    "name": "Cherry Creek",
@@ -4189,7 +4208,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-13T08:48:07.978481-06:00",
+ "last_sweep": "2026-11-13T08:48:41.964973-06:00",
  "metros_ok": 48,
  "metros": [
   {
@@ -4513,10 +4532,10 @@
   "Chicago": "2026-11-13T08:45:14.179769-06:00",
   "Dallas": "2026-11-13T08:45:46.508708-06:00",
   "Houston": "2026-11-13T08:45:51.827654-06:00",
-  "Washington": "2026-11-13T08:43:15.053431-06:00",
+  "Washington": "2026-11-13T08:48:14.984731-06:00",
   "Philadelphia": "2026-11-13T08:47:23.603572-06:00",
-  "Atlanta": "2026-11-13T08:43:20.359194-06:00",
-  "Miami": "2026-11-13T08:43:25.801526-06:00",
+  "Atlanta": "2026-11-13T08:48:20.371026-06:00",
+  "Miami": "2026-11-13T08:48:25.751107-06:00",
   "Phoenix": "2026-11-13T08:46:53.139084-06:00",
   "Boston": "2026-11-13T08:47:51.850364-06:00",
   "San Francisco": "2026-11-13T08:47:41.013044-06:00",
@@ -4524,11 +4543,11 @@
   "Seattle": "2026-11-13T08:47:57.207876-06:00",
   "Minneapolis": "2026-11-13T08:43:54.105036-06:00",
   "San Diego": "2026-11-13T08:48:07.978348-06:00",
-  "Tampa": "2026-11-13T08:43:37.916775-06:00",
+  "Tampa": "2026-11-13T08:48:31.104455-06:00",
   "Denver": "2026-11-13T08:47:07.597126-06:00",
-  "Baltimore": "2026-11-13T08:43:48.519868-06:00",
+  "Baltimore": "2026-11-13T08:48:36.448556-06:00",
   "St. Louis": "2026-11-13T08:43:59.526412-06:00",
-  "Orlando": "2026-11-13T08:44:04.810860-06:00",
+  "Orlando": "2026-11-13T08:48:41.964798-06:00",
   "Charlotte": "2026-11-13T08:45:35.294877-06:00",
   "San Antonio": "2026-11-13T08:46:09.689737-06:00",
   "Portland": "2026-11-13T08:43:43.265062-06:00",
@@ -4565,10 +4584,10 @@
   "Chicago": "2026-11-13T08:45:14.179790-06:00",
   "Dallas": "2026-11-13T08:45:46.508732-06:00",
   "Houston": "2026-11-13T08:45:51.827678-06:00",
-  "Washington": "2026-11-13T08:43:15.053451-06:00",
+  "Washington": "2026-11-13T08:48:14.984756-06:00",
   "Philadelphia": "2026-11-13T08:47:23.603597-06:00",
-  "Atlanta": "2026-11-13T08:43:20.359212-06:00",
-  "Miami": "2026-11-13T08:43:25.801539-06:00",
+  "Atlanta": "2026-11-13T08:48:20.371050-06:00",
+  "Miami": "2026-11-13T08:48:25.751132-06:00",
   "Phoenix": "2026-11-13T08:46:53.139107-06:00",
   "Boston": "2026-11-13T08:47:51.850387-06:00",
   "San Francisco": "2026-11-13T08:47:41.013066-06:00",
@@ -4576,11 +4595,11 @@
   "Seattle": "2026-11-13T08:47:57.207898-06:00",
   "Minneapolis": "2026-11-13T08:43:54.105058-06:00",
   "San Diego": "2026-11-13T08:48:07.978372-06:00",
-  "Tampa": "2026-11-13T08:43:37.916793-06:00",
+  "Tampa": "2026-11-13T08:48:31.104481-06:00",
   "Denver": "2026-11-13T08:47:07.597150-06:00",
-  "Baltimore": "2026-11-13T08:43:48.519883-06:00",
+  "Baltimore": "2026-11-13T08:48:36.448582-06:00",
   "St. Louis": "2026-11-13T08:43:59.526431-06:00",
-  "Orlando": "2026-11-13T08:44:04.810878-06:00",
+  "Orlando": "2026-11-13T08:48:41.964825-06:00",
   "Charlotte": "2026-11-13T08:35:28.162081-06:00",
   "San Antonio": "2026-11-13T08:46:09.689762-06:00",
   "Portland": "2026-11-13T08:43:43.265079-06:00",
@@ -4612,8 +4631,8 @@
   "Buffalo": "2026-11-13T08:47:34.355591-06:00"
  },
  "hot": [
-  "Middle Atlantic",
-  "New England"
+  "South Atlantic",
+  "Middle Atlantic"
  ],
  "cycle_seconds": 150,
  "pace": 5.0,
