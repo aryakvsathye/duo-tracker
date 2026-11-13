@@ -2391,3 +2391,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 09:34,Eastview,R140,Victor,NY,,0,67.5,unavailable,MK1F4LL/A
 2026-11-13 09:35,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,available,MK1F4LL/A
 2026-11-13 09:35,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,unavailable,MK1E4LL/A
+2026-11-13 09:35,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,available,MK1F4LL/A
+2026-11-13 09:36,Oakbrook,R056,Oak Brook,IL,Chicago,1,17.4,available,MK1F4LL/A
