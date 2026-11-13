@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 168,
+ "checks": 174,
  "errors": 0,
  "events": 14,
  "last_heartbeat": "2026-11-13",
@@ -171,68 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-13T10:20:44.714445-06:00",
+ "last_check": "2026-11-13T10:22:24.887373-06:00",
  "history": [
-  {
-   "t": "2026-11-13T09:20:18-06:00",
-   "ok": true,
-   "ms": 276,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-13T09:21:18-06:00",
-   "ok": true,
-   "ms": 268,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-13T09:22:18-06:00",
-   "ok": true,
-   "ms": 380,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-13T09:22:36-06:00",
-   "ok": true,
-   "ms": 508,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-13T09:23:36-06:00",
-   "ok": true,
-   "ms": 398,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-13T09:24:36-06:00",
-   "ok": true,
-   "ms": 341,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
   {
    "t": "2026-11-13T09:25:36-06:00",
    "ok": true,
@@ -907,6 +847,54 @@
    "t": "2026-11-13T10:20:24-06:00",
    "ok": true,
    "ms": 351,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:20:44-06:00",
+   "ok": true,
+   "ms": 389,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:21:04-06:00",
+   "ok": true,
+   "ms": 335,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:21:24-06:00",
+   "ok": true,
+   "ms": 427,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:21:44-06:00",
+   "ok": true,
+   "ms": 348,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:22:04-06:00",
+   "ok": true,
+   "ms": 532,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-13T10:22:24-06:00",
+   "ok": true,
+   "ms": 561,
    "code": 200,
    "green": [],
    "burst": true
