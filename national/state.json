@@ -513,14 +513,17 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 22.4,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "East North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-13 09:44"
+   },
+   "since": "2026-11-13 09:44"
   },
   "R018": {
    "name": "Woodfield",
@@ -4197,8 +4200,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-13T09:44:29.061776-06:00",
- "metros_ok": 47,
+ "last_sweep": "2026-11-13T09:44:36.188371-06:00",
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4501,7 +4504,7 @@
    "state": "NY"
   }
  ],
- "retries": 0,
+ "retries": 1,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4510,7 +4513,9 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {},
+ "metro_skip": {
+  "Cleveland": 1
+ },
  "skipped": [],
  "checked_at": {
   "New York": "2026-11-13T09:44:29.061673-06:00",
@@ -4532,7 +4537,7 @@
   "Tampa": "2026-11-13T09:41:27.061964-06:00",
   "Denver": "2026-11-13T09:42:59.725931-06:00",
   "Baltimore": "2026-11-13T09:41:38.606471-06:00",
-  "St. Louis": "2026-11-13T09:39:10.240915-06:00",
+  "St. Louis": "2026-11-13T09:44:36.188172-06:00",
   "Orlando": "2026-11-13T09:41:51.730216-06:00",
   "Charlotte": "2026-11-13T09:42:03.528562-06:00",
   "San Antonio": "2026-11-13T09:39:29.568418-06:00",
@@ -4545,7 +4550,7 @@
   "Kansas City": "2026-11-13T09:41:01.888380-06:00",
   "Columbus": "2026-11-13T09:43:29.140349-06:00",
   "Indianapolis": "2026-11-13T09:44:23.250333-06:00",
-  "Cleveland": "2026-11-13T09:40:26.709090-06:00",
+  "Cleveland": "2026-11-13T09:44:51.974188-06:00",
   "Nashville": "2026-11-13T09:41:15.462015-06:00",
   "Raleigh": "2026-11-13T09:42:09.409622-06:00",
   "Oklahoma City": "2026-11-13T09:39:47.210085-06:00",
@@ -4584,7 +4589,7 @@
   "Tampa": "2026-11-13T09:41:27.061980-06:00",
   "Denver": "2026-11-13T09:42:59.725945-06:00",
   "Baltimore": "2026-11-13T09:41:38.606485-06:00",
-  "St. Louis": "2026-11-13T09:39:10.240935-06:00",
+  "St. Louis": "2026-11-13T09:44:36.188186-06:00",
   "Orlando": "2026-11-13T09:41:51.730232-06:00",
   "Charlotte": "2026-11-13T09:42:03.528575-06:00",
   "San Antonio": "2026-11-13T09:39:29.568438-06:00",
@@ -4617,8 +4622,8 @@
   "Buffalo": "2026-11-13T09:40:38.528146-06:00"
  },
  "hot": [
-  "Mountain",
-  "South Atlantic"
+  "East North Central",
+  "Mountain"
  ],
  "cycle_seconds": 150,
  "pace": 5.5,
@@ -4646,5 +4651,6 @@
   "2026-11-13T07:14-06:00",
   "2026-11-13T09:19-06:00"
  ],
- "last_weekly": "2026-W45"
+ "last_weekly": "2026-W45",
+ "last_error": "2026-11-13T09:44-06:00: Cleveland: HTTP 541"
 }
