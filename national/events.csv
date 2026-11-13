@@ -2484,3 +2484,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 10:42,Coconut Point,R185,Estero,FL,,0,109.5,available,MK1E4LL/A
 2026-11-13 10:42,Saint Louis Galleria,R114,Saint Louis,MO,St. Louis,2,1.2,available,MK1F4LL/A
 2026-11-13 10:44,Saint Louis Galleria,R114,Saint Louis,MO,St. Louis,2,1.2,unavailable,MK1F4LL/A
+2026-11-13 10:45,Saddle Creek,R020,Germantown,TN,Memphis,3,0.6,available,MK1E4LL/A
+2026-11-13 10:45,Saint Louis Galleria,R114,Saint Louis,MO,St. Louis,2,1.2,available,MK1E4LL/A
