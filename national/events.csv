@@ -2248,3 +2248,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 08:53,Aventura,R087,Aventura,FL,Miami,1,13.6,unavailable,MK1E4LL/A
 2026-11-13 08:53,Altamonte,R291,Altamonte Springs,FL,Orlando,2,16.0,unavailable,MK1F4LL/A
 2026-11-13 08:53,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,unavailable,MK1F4LL/A
+2026-11-13 08:54,Augusta,R364,Augusta,GA,,0,133.9,available,MK1E4LL/A
+2026-11-13 08:54,Charleston,R318,Charleston,SC,,0,172.2,available,MK1F4LL/A
+2026-11-13 08:54,Short Pump Town Center,R078,Richmond,VA,Richmond,3,1.1,available,MK1E4LL/A
