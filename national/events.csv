@@ -2226,3 +2226,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 08:42,Eton,R081,Woodmere,OH,Cleveland,2,2.4,unavailable,MK1E4LL/A
 2026-11-13 08:43,Aventura,R087,Aventura,FL,Miami,1,13.6,unavailable,MK1F4LL/A
 2026-11-13 08:43,Aventura,R087,Aventura,FL,Miami,1,13.6,unavailable,MK1E4LL/A
+2026-11-13 08:47,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,available,MK1F4LL/A
+2026-11-13 08:47,Bridgewater,R104,Bridgewater,NJ,,0,52.5,available,MK1E4LL/A
+2026-11-13 08:47,Menlo Park,R067,Edison,NJ,,0,60.3,available,MK1E4LL/A
