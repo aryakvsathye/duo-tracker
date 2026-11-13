@@ -2203,3 +2203,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 08:31,Natick,R232,Natick,MA,Boston,1,16.1,available,MK1F4LL/A
 2026-11-13 08:31,Pheasant Lane,R354,Nashua,NH,Boston,1,30.5,available,MK1E4LL/A
 2026-11-13 08:31,The Shops at Blackstone Valley,R622,Millbury,MA,Boston,1,37.4,available,MK1E4LL/A
+2026-11-13 08:31,Barton Creek,R085,Austin,TX,Austin,2,2.7,available,MK1E4LL/A
+2026-11-13 08:31,Barton Creek,R085,Austin,TX,Austin,2,2.7,unavailable,MK1E4LL/A
+2026-11-13 08:32,Barton Creek,R085,Austin,TX,Austin,2,2.7,available,MK1E4LL/A
+2026-11-13 08:32,Barton Creek,R085,Austin,TX,Austin,2,2.7,unavailable,MK1E4LL/A
