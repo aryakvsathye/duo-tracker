@@ -3366,14 +3366,17 @@
    "metro": "Denver",
    "tier": 2,
    "miles": 12.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Denver",
    "region": "Mountain",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-13 10:57"
+   },
+   "since": "2026-11-13 10:57"
   },
   "R182": {
    "name": "FlatIron Crossing",
@@ -3438,14 +3441,17 @@
    "metro": "Albuquerque",
    "tier": 3,
    "miles": 0.7,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Denver",
    "region": "Mountain",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-13 10:57"
+   },
+   "since": "2026-11-13 10:57"
   },
   "R461": {
    "name": "Fashion Place",
@@ -3458,13 +3464,12 @@
    "miles": 8.3,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "available"
    },
    "tz": "America/Denver",
    "region": "Mountain",
    "since_by_part": {
-    "MK1F4LL/A": "2026-11-13 10:53",
     "MK1E4LL/A": "2026-11-13 10:53"
    },
    "since": "2026-11-13 10:53"
@@ -3478,14 +3483,17 @@
    "metro": "Salt Lake City",
    "tier": 3,
    "miles": 0.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Denver",
    "region": "Mountain",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-13 10:57"
+   },
+   "since": "2026-11-13 10:57"
   },
   "R599": {
    "name": "Station Park",
@@ -4190,8 +4198,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-13T10:56:46.164013-06:00",
- "metros_ok": 41,
+ "last_sweep": "2026-11-13T10:57:35.590865-06:00",
+ "metros_ok": 46,
  "metros": [
   {
    "metro": "New York",
@@ -4535,21 +4543,21 @@
   "Austin": "2026-11-13T10:56:46.163911-06:00",
   "Las Vegas": "2026-11-13T10:53:34.149215-06:00",
   "Cincinnati": "2026-11-13T10:53:40.185500-06:00",
-  "Kansas City": "2026-11-13T10:51:18.585600-06:00",
+  "Kansas City": "2026-11-13T10:57:23.958456-06:00",
   "Columbus": "2026-11-13T10:54:41.470786-06:00",
   "Indianapolis": "2026-11-13T10:55:57.742594-06:00",
   "Cleveland": "2026-11-13T10:56:10.996165-06:00",
-  "Nashville": "2026-11-13T10:51:06.878166-06:00",
+  "Nashville": "2026-11-13T10:57:11.494537-06:00",
   "Raleigh": "2026-11-13T10:54:22.482490-06:00",
-  "Oklahoma City": "2026-11-13T10:51:37.491062-06:00",
-  "Tulsa": "2026-11-13T10:51:43.287011-06:00",
+  "Oklahoma City": "2026-11-13T10:56:54.138348-06:00",
+  "Tulsa": "2026-11-13T10:56:59.927276-06:00",
   "Omaha": "2026-11-13T10:54:16.634716-06:00",
   "Des Moines": "2026-11-13T10:54:34.179793-06:00",
-  "Little Rock": "2026-11-13T10:51:49.095090-06:00",
-  "Memphis": "2026-11-13T10:51:12.639221-06:00",
+  "Little Rock": "2026-11-13T10:57:05.724713-06:00",
+  "Memphis": "2026-11-13T10:57:17.704169-06:00",
   "Madison": "2026-11-13T10:52:38.006747-06:00",
-  "Albuquerque": "2026-11-13T10:53:02.553509-06:00",
-  "Salt Lake City": "2026-11-13T10:53:08.407787-06:00",
+  "Albuquerque": "2026-11-13T10:57:29.792983-06:00",
+  "Salt Lake City": "2026-11-13T10:57:35.590589-06:00",
   "Louisville": "2026-11-13T10:52:00.861504-06:00",
   "Birmingham": "2026-11-13T10:56:16.871792-06:00",
   "Richmond": "2026-11-13T10:54:28.279808-06:00",
@@ -4587,21 +4595,21 @@
   "Austin": "2026-11-13T10:56:46.163927-06:00",
   "Las Vegas": "2026-11-13T10:53:34.149232-06:00",
   "Cincinnati": "2026-11-13T10:53:40.185518-06:00",
-  "Kansas City": "2026-11-13T10:51:18.585616-06:00",
+  "Kansas City": "2026-11-13T10:57:23.958473-06:00",
   "Columbus": "2026-11-13T10:54:41.470803-06:00",
   "Indianapolis": "2026-11-13T10:55:57.742610-06:00",
   "Cleveland": "2026-11-13T10:56:10.996181-06:00",
-  "Nashville": "2026-11-13T10:51:06.878175-06:00",
+  "Nashville": "2026-11-13T10:57:11.494554-06:00",
   "Raleigh": "2026-11-13T10:54:22.482508-06:00",
-  "Oklahoma City": "2026-11-13T10:51:37.491074-06:00",
-  "Tulsa": "2026-11-13T10:51:43.287033-06:00",
+  "Oklahoma City": "2026-11-13T10:56:54.138365-06:00",
+  "Tulsa": "2026-11-13T10:56:59.927293-06:00",
   "Omaha": "2026-11-13T10:54:16.634733-06:00",
   "Des Moines": "2026-11-13T10:54:34.179809-06:00",
-  "Little Rock": "2026-11-13T10:51:49.095102-06:00",
-  "Memphis": "2026-11-13T10:51:12.639239-06:00",
+  "Little Rock": "2026-11-13T10:57:05.724748-06:00",
+  "Memphis": "2026-11-13T10:57:17.704185-06:00",
   "Madison": "2026-11-13T10:52:38.006765-06:00",
-  "Albuquerque": "2026-11-13T10:53:02.553527-06:00",
-  "Salt Lake City": "2026-11-13T10:53:08.407804-06:00",
+  "Albuquerque": "2026-11-13T10:57:29.793000-06:00",
+  "Salt Lake City": "2026-11-13T10:57:35.590605-06:00",
   "Louisville": "2026-11-13T10:52:00.861518-06:00",
   "Birmingham": "2026-11-13T10:56:16.871808-06:00",
   "Richmond": "2026-11-13T10:54:28.279823-06:00",
@@ -4610,8 +4618,8 @@
   "Buffalo": "2026-11-13T10:52:32.120451-06:00"
  },
  "hot": [
-  "West South Central",
-  "Mountain"
+  "Mountain",
+  "West South Central"
  ],
  "cycle_seconds": 150,
  "pace": 5.5,
