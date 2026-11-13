@@ -2673,17 +2673,14 @@
    "metro": "Columbus",
    "tier": 2,
    "miles": 9.5,
-   "status": "available",
+   "status": "ineligible",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "ineligible",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-13 12:36"
-   },
-   "since": "2026-11-13 12:36"
+   "since_by_part": {}
   },
   "R003": {
    "name": "Bellevue Square",
@@ -2949,17 +2946,14 @@
    "metro": "Minneapolis",
    "tier": 2,
    "miles": 12.6,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "ineligible"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-13 12:33"
-   },
-   "since": "2026-11-13 12:33"
+   "since_by_part": {}
   },
   "R183": {
    "name": "Ridgedale",
@@ -3531,7 +3525,7 @@
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "ineligible"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
@@ -4186,8 +4180,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-13T12:36:55.818522-06:00",
- "metros_ok": 46,
+ "last_sweep": "2026-11-13T12:37:24.254984-06:00",
+ "metros_ok": 49,
  "metros": [
   {
    "metro": "New York",
@@ -4531,16 +4525,16 @@
   "Austin": "2026-11-13T12:36:27.367983-06:00",
   "Las Vegas": "2026-11-13T12:33:39.542561-06:00",
   "Cincinnati": "2026-11-13T12:36:55.818294-06:00",
-  "Kansas City": "2026-11-13T12:33:11.387077-06:00",
-  "Columbus": "2026-11-13T12:33:06.069536-06:00",
+  "Kansas City": "2026-11-13T12:37:08.093568-06:00",
+  "Columbus": "2026-11-13T12:37:02.741423-06:00",
   "Indianapolis": "2026-11-13T12:35:43.113377-06:00",
   "Cleveland": "2026-11-13T12:35:55.375251-06:00",
   "Nashville": "2026-11-13T12:34:31.220046-06:00",
   "Raleigh": "2026-11-13T12:35:05.739283-06:00",
-  "Oklahoma City": "2026-11-13T12:31:42.048873-06:00",
+  "Oklahoma City": "2026-11-13T12:37:13.406251-06:00",
   "Tulsa": "2026-11-13T12:32:05.810749-06:00",
-  "Omaha": "2026-11-13T12:33:21.954653-06:00",
-  "Des Moines": "2026-11-13T12:33:34.155400-06:00",
+  "Omaha": "2026-11-13T12:37:18.798508-06:00",
+  "Des Moines": "2026-11-13T12:37:24.254878-06:00",
   "Little Rock": "2026-11-13T12:32:16.698020-06:00",
   "Memphis": "2026-11-13T12:34:36.576255-06:00",
   "Madison": "2026-11-13T12:36:16.504876-06:00",
@@ -4583,16 +4577,16 @@
   "Austin": "2026-11-13T12:36:27.367999-06:00",
   "Las Vegas": "2026-11-13T12:33:39.542579-06:00",
   "Cincinnati": "2026-11-13T12:36:55.818311-06:00",
-  "Kansas City": "2026-11-13T12:33:11.387093-06:00",
-  "Columbus": "2026-11-13T12:33:06.069553-06:00",
+  "Kansas City": "2026-11-13T12:37:08.093588-06:00",
+  "Columbus": "2026-11-13T12:37:02.741443-06:00",
   "Indianapolis": "2026-11-13T12:35:43.113393-06:00",
   "Cleveland": "2026-11-13T12:35:55.375264-06:00",
   "Nashville": "2026-11-13T12:34:31.220061-06:00",
   "Raleigh": "2026-11-13T12:35:05.739294-06:00",
-  "Oklahoma City": "2026-11-13T12:31:42.048890-06:00",
+  "Oklahoma City": "2026-11-13T12:37:13.406267-06:00",
   "Tulsa": "2026-11-13T12:32:05.810767-06:00",
-  "Omaha": "2026-11-13T12:33:21.954670-06:00",
-  "Des Moines": "2026-11-13T12:33:34.155416-06:00",
+  "Omaha": "2026-11-13T12:37:18.798524-06:00",
+  "Des Moines": "2026-11-13T12:37:24.254894-06:00",
   "Little Rock": "2026-11-13T12:32:16.698038-06:00",
   "Memphis": "2026-11-13T12:34:36.576270-06:00",
   "Madison": "2026-11-13T12:36:16.504891-06:00",
