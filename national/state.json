@@ -4178,7 +4178,7 @@
   }
  },
  "last_sweep": "2026-11-13T14:29:10.271170-06:00",
- "metros_ok": 45,
+ "metros_ok": 47,
  "metros": [
   {
    "metro": "New York",
@@ -4491,12 +4491,14 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Buffalo": 1,
   "Indianapolis": 1,
-  "San Francisco": 1
+  "San Diego": 1,
+  "Des Moines": 1,
+  "Minneapolis": 1
  },
  "skipped": [
-  "Atlanta"
+  "Buffalo",
+  "San Francisco"
  ],
  "checked_at": {
   "New York": "2026-11-13T14:26:32.805014-06:00",
@@ -4513,8 +4515,8 @@
   "San Francisco": "2026-11-13T14:28:46.231854-06:00",
   "Detroit": "2026-11-13T14:27:41.214637-06:00",
   "Seattle": "2026-11-13T14:29:05.521933-06:00",
-  "Minneapolis": "2026-11-13T14:24:14.122900-06:00",
-  "San Diego": "2026-11-13T14:25:38.739008-06:00",
+  "Minneapolis": "2026-11-13T14:29:55.808052-06:00",
+  "San Diego": "2026-11-13T14:29:26.376663-06:00",
   "Tampa": "2026-11-13T14:26:02.845119-06:00",
   "Denver": "2026-11-13T14:27:36.393807-06:00",
   "Baltimore": "2026-11-13T14:26:07.707284-06:00",
@@ -4537,7 +4539,7 @@
   "Oklahoma City": "2026-11-13T14:28:32.135765-06:00",
   "Tulsa": "2026-11-13T14:28:46.468546-06:00",
   "Omaha": "2026-11-13T14:29:00.756513-06:00",
-  "Des Moines": "2026-11-13T14:24:09.379856-06:00",
+  "Des Moines": "2026-11-13T14:29:41.007727-06:00",
   "Little Rock": "2026-11-13T14:28:56.008558-06:00",
   "Memphis": "2026-11-13T14:26:47.071768-06:00",
   "Madison": "2026-11-13T14:26:51.885626-06:00",
@@ -4633,5 +4635,5 @@
   "2026-11-13T09:19-06:00"
  ],
  "last_weekly": "2026-W45",
- "last_error": "2026-11-13T14:25-06:00: Buffalo: HTTP 541; Indianapolis: HTTP 541; San Francisco: HTTP 541"
+ "last_error": "2026-11-13T14:30-06:00: San Diego: HTTP 541; Des Moines: HTTP 541; Minneapolis: HTTP 541"
 }
