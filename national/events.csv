@@ -2323,3 +2323,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-13 09:09,Polaris Fashion Place,R417,Columbus,OH,Columbus,2,9.5,available,MK1F4LL/A
 2026-11-13 09:10,Eton,R081,Woodmere,OH,Cleveland,2,2.4,available,MK1E4LL/A
 2026-11-13 09:10,Polaris Fashion Place,R417,Columbus,OH,Columbus,2,9.5,unavailable,MK1F4LL/A
+2026-11-13 09:10,Avalon,R080,Alpharetta,GA,Atlanta,1,16.1,available,MK1F4LL/A
+2026-11-13 09:10,Avalon,R080,Alpharetta,GA,Atlanta,1,16.1,unavailable,MK1F4LL/A
