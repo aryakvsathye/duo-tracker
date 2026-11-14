@@ -2813,3 +2813,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-14 09:41,North Star,R290,San Antonio,TX,San Antonio,2,1.2,unavailable,MK1E4LL/A
 2026-11-14 09:44,Stonebridge Potomac Town Center,R598,Woodbridge,VA,Washington,1,24.2,unavailable,MK1E4LL/A
 2026-11-14 09:47,Main Place,R348,Naperville,IL,Chicago,1,28.5,available,MK1E4LL/A
+2026-11-14 09:51,Main Place,R348,Naperville,IL,Chicago,1,28.5,unavailable,MK1E4LL/A
