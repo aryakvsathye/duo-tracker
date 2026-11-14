@@ -26,7 +26,7 @@
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Penn Square": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 360,
+ "checks": 363,
  "errors": 0,
- "events": 4,
+ "events": 5,
  "last_heartbeat": "2026-11-14",
  "nearby": {
   "Country Club Plaza": {
@@ -171,32 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-14T13:41:08.241277-06:00",
+ "last_check": "2026-11-14T13:44:31.849815-06:00",
  "history": [
-  {
-   "t": "2026-11-14T12:17:55-06:00",
-   "ok": true,
-   "ms": 318,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-14T12:18:55-06:00",
-   "ok": true,
-   "ms": 263,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-14T12:19:55-06:00",
-   "ok": true,
-   "ms": 402,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-14T12:20:55-06:00",
    "ok": true,
@@ -892,9 +868,43 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-14T13:41:31-06:00",
+   "ok": true,
+   "ms": 288,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-14T13:42:31-06:00",
+   "ok": true,
+   "ms": 248,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-14T13:43:31-06:00",
+   "ok": true,
+   "ms": 248,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
+  "Saint Louis Galleria": {
+   "miles": 239.77,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -947,16 +957,6 @@
   },
   "West County": {
    "miles": 234.82,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
-  },
-  "Saint Louis Galleria": {
-   "miles": 239.77,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
