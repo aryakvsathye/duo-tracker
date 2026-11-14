@@ -2823,3 +2823,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-14 11:05,Park Meadows,R228,Lone Tree,CO,Denver,2,12.2,unavailable,MK1E4LL/A
 2026-11-14 11:07,Village Pointe,R190,Omaha,NE,Omaha,3,0.3,unavailable,MK1E4LL/A
 2026-11-14 11:15,Irvine Spectrum Center,R146,Irvine,CA,,0,69.7,available,MK1F4LL/A
+2026-11-14 11:21,Irvine Spectrum Center,R146,Irvine,CA,,0,69.7,unavailable,MK1F4LL/A
