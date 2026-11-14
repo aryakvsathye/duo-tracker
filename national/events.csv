@@ -2816,3 +2816,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-14 09:51,Main Place,R348,Naperville,IL,Chicago,1,28.5,unavailable,MK1E4LL/A
 2026-11-14 10:07,Village Pointe,R190,Omaha,NE,Omaha,3,0.3,available,MK1E4LL/A
 2026-11-14 10:35,King of Prussia,R065,King of Prussia,PA,Philadelphia,1,14.7,available,MK1E4LL/A
+2026-11-14 10:38,King of Prussia,R065,King of Prussia,PA,Philadelphia,1,14.7,unavailable,MK1E4LL/A
