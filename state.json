@@ -26,7 +26,7 @@
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Penn Square": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 363,
+ "checks": 365,
  "errors": 0,
- "events": 5,
+ "events": 6,
  "last_heartbeat": "2026-11-14",
  "nearby": {
   "Country Club Plaza": {
@@ -171,24 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-14T13:44:31.849815-06:00",
+ "last_check": "2026-11-14T13:46:31.624710-06:00",
  "history": [
-  {
-   "t": "2026-11-14T12:20:55-06:00",
-   "ok": true,
-   "ms": 318,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-14T12:21:55-06:00",
-   "ok": true,
-   "ms": 343,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-14T12:22:55-06:00",
    "ok": true,
@@ -892,19 +876,25 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-14T13:44:31-06:00",
+   "ok": true,
+   "ms": 528,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-14T13:45:31-06:00",
+   "ok": true,
+   "ms": 381,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
-  "Saint Louis Galleria": {
-   "miles": 239.77,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -957,6 +947,16 @@
   },
   "West County": {
    "miles": 234.82,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
+  },
+  "Saint Louis Galleria": {
+   "miles": 239.77,
    "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
