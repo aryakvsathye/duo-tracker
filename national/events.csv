@@ -2788,3 +2788,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-14 09:00,Somerset,R055,Troy,MI,Detroit,2,0.6,available,MK1E4LL/A
 2026-11-14 09:00,Downtown Detroit,R763,Detroit,MI,Detroit,2,16.7,unavailable,MK1E4LL/A
 2026-11-14 09:00,Baybrook,R204,Friendswood,TX,Houston,1,24.0,available,MK1E4LL/A
+2026-11-14 09:01,Perimeter,R184,Atlanta,GA,Atlanta,1,5.3,available,MK1E4LL/A
