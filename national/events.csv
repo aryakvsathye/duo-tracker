@@ -2829,3 +2829,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-14 11:58,Victoria Gardens,R094,Rancho Cucamonga,CA,,0,192.6,available,MK1E4LL/A
 2026-11-14 12:03,Valley Plaza,R550,Bakersfield,CA,,0,223.3,available,MK1E4LL/A
 2026-11-14 12:03,Victoria Gardens,R094,Rancho Cucamonga,CA,,0,192.6,unavailable,MK1E4LL/A
+2026-11-14 12:09,Victoria Gardens,R094,Rancho Cucamonga,CA,,0,192.6,available,MK1E4LL/A
+2026-11-14 12:09,Valley Plaza,R550,Bakersfield,CA,,0,223.3,unavailable,MK1E4LL/A
