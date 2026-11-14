@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 192,
+ "checks": 198,
  "errors": 0,
  "events": 4,
  "last_heartbeat": "2026-11-14",
@@ -171,56 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-14T11:05:40.004774-06:00",
+ "last_check": "2026-11-14T11:10:40.004386-06:00",
  "history": [
-  {
-   "t": "2026-11-14T09:42:02-06:00",
-   "ok": true,
-   "ms": 308,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-14T09:43:02-06:00",
-   "ok": true,
-   "ms": 417,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-14T09:44:02-06:00",
-   "ok": true,
-   "ms": 295,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-14T09:45:02-06:00",
-   "ok": true,
-   "ms": 675,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-14T09:46:02-06:00",
-   "ok": true,
-   "ms": 372,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-14T09:47:02-06:00",
-   "ok": true,
-   "ms": 629,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-14T09:47:23-06:00",
    "ok": true,
@@ -1015,6 +967,54 @@
    "green": [
     "Village Pointe"
    ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-14T11:05:39-06:00",
+   "ok": true,
+   "ms": 336,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-14T11:06:39-06:00",
+   "ok": true,
+   "ms": 385,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-14T11:07:39-06:00",
+   "ok": true,
+   "ms": 392,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-14T11:08:39-06:00",
+   "ok": true,
+   "ms": 455,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-14T11:09:39-06:00",
+   "ok": true,
+   "ms": 342,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-14T11:10:39-06:00",
+   "ok": true,
+   "ms": 335,
+   "code": 200,
+   "green": [],
    "burst": false
   }
  ],
