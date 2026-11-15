@@ -2901,3 +2901,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-15 08:58,Georgetown,R287,Washington,DC,Washington,1,2.4,unavailable,MK1E4LL/A
 2026-11-15 09:00,International Plaza,R019,Tampa,FL,Tampa,2,1.1,unavailable,MK1F4LL/A
 2026-11-15 09:56,Tysons Corner,R010,McLean,VA,Washington,1,10.9,available,MK1E4LL/A
+2026-11-15 09:57,Tysons Corner,R010,McLean,VA,Washington,1,10.9,unavailable,MK1E4LL/A
