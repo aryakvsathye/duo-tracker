@@ -30,7 +30,7 @@
   },
   "Penn Square": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "The Promenade at Chenal": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 189,
+ "checks": 193,
  "errors": 0,
- "events": 1,
+ "events": 2,
  "last_heartbeat": "2026-11-16",
  "nearby": {
   "Country Club Plaza": {
@@ -171,40 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-16T11:03:34.175040-06:00",
+ "last_check": "2026-11-16T11:07:58.193604-06:00",
  "history": [
-  {
-   "t": "2026-11-16T09:39:47-06:00",
-   "ok": true,
-   "ms": 276,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-16T09:40:47-06:00",
-   "ok": true,
-   "ms": 416,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-16T09:41:47-06:00",
-   "ok": true,
-   "ms": 379,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-16T09:42:47-06:00",
-   "ok": true,
-   "ms": 301,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-16T09:43:47-06:00",
    "ok": true,
@@ -892,19 +860,41 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-16T11:03:57-06:00",
+   "ok": true,
+   "ms": 478,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-16T11:04:57-06:00",
+   "ok": true,
+   "ms": 310,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-16T11:05:57-06:00",
+   "ok": true,
+   "ms": 343,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-16T11:06:57-06:00",
+   "ok": true,
+   "ms": 338,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
-  "Penn Square": {
-   "miles": 285.34,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Oklahoma City",
-   "state": "OK"
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -974,6 +964,16 @@
    },
    "city": "Saint Louis",
    "state": "MO"
+  },
+  "Penn Square": {
+   "miles": 285.34,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Oklahoma City",
+   "state": "OK"
   },
   "The Promenade at Chenal": {
    "miles": 320.42,
