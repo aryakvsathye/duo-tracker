@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 252,
+ "checks": 261,
  "errors": 0,
  "events": 3,
  "last_heartbeat": "2026-11-16",
@@ -171,80 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-16T12:02:06.564062-06:00",
+ "last_check": "2026-11-16T12:10:27.408815-06:00",
  "history": [
-  {
-   "t": "2026-11-16T10:38:39-06:00",
-   "ok": true,
-   "ms": 322,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-16T10:39:39-06:00",
-   "ok": true,
-   "ms": 261,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-16T10:40:39-06:00",
-   "ok": true,
-   "ms": 332,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-16T10:41:39-06:00",
-   "ok": true,
-   "ms": 327,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-16T10:42:39-06:00",
-   "ok": true,
-   "ms": 262,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-16T10:43:39-06:00",
-   "ok": true,
-   "ms": 369,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-16T10:44:39-06:00",
-   "ok": true,
-   "ms": 745,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-16T10:45:39-06:00",
-   "ok": true,
-   "ms": 355,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-16T10:46:39-06:00",
-   "ok": true,
-   "ms": 240,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-16T10:47:12-06:00",
    "ok": true,
@@ -889,6 +817,96 @@
    "t": "2026-11-16T12:02:06-06:00",
    "ok": true,
    "ms": 458,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-16T12:02:26-06:00",
+   "ok": true,
+   "ms": 492,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-16T12:03:26-06:00",
+   "ok": true,
+   "ms": 403,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-16T12:04:26-06:00",
+   "ok": true,
+   "ms": 537,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-16T12:05:26-06:00",
+   "ok": true,
+   "ms": 676,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-16T12:06:26-06:00",
+   "ok": true,
+   "ms": 351,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-16T12:07:26-06:00",
+   "ok": true,
+   "ms": 478,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-16T12:08:26-06:00",
+   "ok": true,
+   "ms": 368,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-16T12:09:26-06:00",
+   "ok": true,
+   "ms": 467,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-16T12:10:26-06:00",
+   "ok": true,
+   "ms": 500,
    "code": 200,
    "green": [
     "Country Club Plaza"
