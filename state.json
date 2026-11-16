@@ -18,7 +18,7 @@
   },
   "Woodland Hills": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "West County": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 596,
+ "checks": 601,
  "errors": 9,
- "events": 15,
+ "events": 16,
  "last_heartbeat": "2026-11-16",
  "nearby": {
   "Country Club Plaza": {
@@ -171,48 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-16T17:34:01.182983-06:00",
+ "last_check": "2026-11-16T17:39:01.408686-06:00",
  "history": [
-  {
-   "t": "2026-11-16T16:10:03-06:00",
-   "ok": true,
-   "ms": 375,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-16T16:11:03-06:00",
-   "ok": true,
-   "ms": 512,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-16T16:12:03-06:00",
-   "ok": true,
-   "ms": 359,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-16T16:13:03-06:00",
-   "ok": true,
-   "ms": 483,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-16T16:14:03-06:00",
-   "ok": true,
-   "ms": 373,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-16T16:15:03-06:00",
    "ok": true,
@@ -892,19 +852,49 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-16T17:34:00-06:00",
+   "ok": true,
+   "ms": 467,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-16T17:35:00-06:00",
+   "ok": true,
+   "ms": 356,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-16T17:36:00-06:00",
+   "ok": true,
+   "ms": 527,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-16T17:37:00-06:00",
+   "ok": true,
+   "ms": 492,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-16T17:38:00-06:00",
+   "ok": true,
+   "ms": 569,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
-  "Woodland Hills": {
-   "miles": 212.92,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Tulsa",
-   "state": "OK"
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -944,6 +934,16 @@
    },
    "city": "West Des Moines",
    "state": "IA"
+  },
+  "Woodland Hills": {
+   "miles": 212.92,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Tulsa",
+   "state": "OK"
   },
   "West County": {
    "miles": 234.82,
