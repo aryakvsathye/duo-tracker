@@ -4187,7 +4187,7 @@
   }
  },
  "last_sweep": "2026-11-16T12:04:34.113737-06:00",
- "metros_ok": 45,
+ "metros_ok": 46,
  "metros": [
   {
    "metro": "New York",
@@ -4490,7 +4490,7 @@
    "state": "NY"
   }
  ],
- "retries": 0,
+ "retries": 1,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4499,7 +4499,9 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {},
+ "metro_skip": {
+  "Nashville": 1
+ },
  "skipped": [],
  "checked_at": {
   "New York": "2026-11-16T11:58:31.179016-06:00",
@@ -4535,7 +4537,7 @@
   "Columbus": "2026-11-16T11:58:18.467027-06:00",
   "Indianapolis": "2026-11-16T12:00:53.180096-06:00",
   "Cleveland": "2026-11-16T12:02:24.565594-06:00",
-  "Nashville": "2026-11-16T11:58:12.742889-06:00",
+  "Nashville": "2026-11-16T12:04:51.571149-06:00",
   "Raleigh": "2026-11-16T12:01:12.249366-06:00",
   "Oklahoma City": "2026-11-16T12:00:59.034215-06:00",
   "Tulsa": "2026-11-16T12:01:18.088278-06:00",
@@ -4635,5 +4637,6 @@
   "2026-11-16T07:54-06:00",
   "2026-11-16T08:09-06:00"
  ],
- "last_weekly": "2026-W46"
+ "last_weekly": "2026-W46",
+ "last_error": "2026-11-16T12:04-06:00: Nashville: HTTP 541"
 }
