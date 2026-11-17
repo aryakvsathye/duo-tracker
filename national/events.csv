@@ -3610,3 +3610,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 17:27,Galleria Dallas,R746,Dallas,TX,Dallas,1,4.8,unavailable,MK1F4LL/A
 2026-11-17 17:44,Fritz Farm,R288,Lexington,KY,,0,62.5,unavailable,MK1F4LL/A
 2026-11-17 17:53,Southcenter,R106,Tukwila,WA,Seattle,2,10.7,available,MK1E4LL/A
+2026-11-17 17:55,Southcenter,R106,Tukwila,WA,Seattle,2,10.7,unavailable,MK1E4LL/A
