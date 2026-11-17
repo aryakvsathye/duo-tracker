@@ -38,7 +38,7 @@
   },
   "Saddle Creek": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Hilldale": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 268,
+ "checks": 272,
  "errors": 0,
- "events": 23,
+ "events": 24,
  "last_heartbeat": "2026-11-17",
  "nearby": {
   "Country Club Plaza": {
@@ -171,40 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-17T10:36:41.285302-06:00",
+ "last_check": "2026-11-17T10:40:41.077657-06:00",
  "history": [
-  {
-   "t": "2026-11-17T10:01:43-06:00",
-   "ok": true,
-   "ms": 244,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T10:02:03-06:00",
-   "ok": true,
-   "ms": 405,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T10:02:23-06:00",
-   "ok": true,
-   "ms": 364,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T10:02:43-06:00",
-   "ok": true,
-   "ms": 423,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-17T10:03:03-06:00",
    "ok": true,
@@ -892,19 +860,41 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-17T10:36:40-06:00",
+   "ok": true,
+   "ms": 444,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T10:37:40-06:00",
+   "ok": true,
+   "ms": 251,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T10:38:40-06:00",
+   "ok": true,
+   "ms": 297,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T10:39:40-06:00",
+   "ok": true,
+   "ms": 309,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
-  "Saddle Creek": {
-   "miles": 385.15,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Germantown",
-   "state": "TN"
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -994,6 +984,16 @@
    },
    "city": "Little Rock",
    "state": "AR"
+  },
+  "Saddle Creek": {
+   "miles": 385.15,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Germantown",
+   "state": "TN"
   },
   "Hilldale": {
    "miles": 394.05,
