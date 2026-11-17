@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 597,
+ "checks": 606,
  "errors": 1,
  "events": 48,
  "last_heartbeat": "2026-11-17",
@@ -171,107 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-17T14:52:27.408148-06:00",
+ "last_check": "2026-11-17T15:00:49.784639-06:00",
  "history": [
-  {
-   "t": "2026-11-17T14:11:29-06:00",
-   "ok": true,
-   "ms": 338,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:11:49-06:00",
-   "ok": true,
-   "ms": 608,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:12:09-06:00",
-   "ok": true,
-   "ms": 413,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:12:29-06:00",
-   "ok": true,
-   "ms": 343,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:12:49-06:00",
-   "ok": true,
-   "ms": 709,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:13:09-06:00",
-   "ok": true,
-   "ms": 476,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:13:29-06:00",
-   "ok": true,
-   "ms": 382,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:13:49-06:00",
-   "ok": true,
-   "ms": 326,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:14:09-06:00",
-   "ok": true,
-   "ms": 538,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
   {
    "t": "2026-11-17T14:14:29-06:00",
    "ok": true,
@@ -1069,6 +970,78 @@
    "t": "2026-11-17T14:52:27-06:00",
    "ok": true,
    "ms": 373,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T14:52:49-06:00",
+   "ok": true,
+   "ms": 520,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T14:53:49-06:00",
+   "ok": true,
+   "ms": 441,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T14:54:49-06:00",
+   "ok": true,
+   "ms": 545,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T14:55:49-06:00",
+   "ok": true,
+   "ms": 476,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T14:56:49-06:00",
+   "ok": true,
+   "ms": 455,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T14:57:49-06:00",
+   "ok": true,
+   "ms": 375,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T14:58:49-06:00",
+   "ok": true,
+   "ms": 567,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T14:59:49-06:00",
+   "ok": true,
+   "ms": 428,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T15:00:49-06:00",
+   "ok": true,
+   "ms": 500,
    "code": 200,
    "green": [],
    "burst": false
