@@ -3370,3 +3370,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 10:43,Saddle Creek,R020,Germantown,TN,Memphis,3,0.6,available,MK1E4LL/A
 2026-11-17 10:49,Ridgedale,R183,Minnetonka,MN,Minneapolis,2,13.3,available,MK1E4LL/A
 2026-11-17 10:49,Ridgedale,R183,Minnetonka,MN,Minneapolis,2,13.3,unavailable,MK1E4LL/A
+2026-11-17 10:53,The Summit,R225,Birmingham,AL,Birmingham,3,0.6,available,MK1E4LL/A
+2026-11-17 10:53,Saddle Creek,R020,Germantown,TN,Memphis,3,0.6,available,MK1E4LL/A
