@@ -2697,14 +2697,17 @@
    "metro": "Seattle",
    "tier": 2,
    "miles": 2.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-17 14:07"
+   },
+   "since": "2026-11-17 14:07"
   },
   "R072": {
    "name": "University Village",
@@ -2823,17 +2826,14 @@
    "metro": "Portland",
    "tier": 2,
    "miles": 7.0,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-17 14:06"
-   },
-   "since": "2026-11-17 14:06"
+   "since_by_part": {}
   },
   "R420": {
    "name": "River Park Square",
@@ -2862,17 +2862,14 @@
    "metro": "",
    "tier": 0,
    "miles": 299.0,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Denver",
    "region": "Mountain",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-17 14:03"
-   },
-   "since": "2026-11-17 14:03"
+   "since_by_part": {}
   },
   "R186": {
    "name": "Shayden Summit",
@@ -3567,14 +3564,17 @@
    "metro": "St. Louis",
    "tier": 2,
    "miles": 6.8,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-17 14:07"
+   },
+   "since": "2026-11-17 14:07"
   },
   "R097": {
    "name": "Country Club Plaza",
@@ -4207,8 +4207,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-17T14:07:14.393034-06:00",
- "metros_ok": 46,
+ "last_sweep": "2026-11-17T14:07:36.991018-06:00",
+ "metros_ok": 48,
  "metros": [
   {
    "metro": "New York",
@@ -4538,15 +4538,15 @@
   "Boston": "2026-11-17T14:06:32.313760-06:00",
   "San Francisco": "2026-11-17T14:06:53.289493-06:00",
   "Detroit": "2026-11-17T14:04:25.367211-06:00",
-  "Seattle": "2026-11-17T14:03:33.767396-06:00",
+  "Seattle": "2026-11-17T14:07:36.990737-06:00",
   "Minneapolis": "2026-11-17T14:05:42.176374-06:00",
   "San Diego": "2026-11-17T14:03:57.755165-06:00",
   "Tampa": "2026-11-17T14:07:09.170182-06:00",
   "Denver": "2026-11-17T14:04:20.122999-06:00",
   "Baltimore": "2026-11-17T14:07:14.392903-06:00",
-  "St. Louis": "2026-11-17T14:03:12.850397-06:00",
-  "Orlando": "2026-11-17T14:01:54.263484-06:00",
-  "Charlotte": "2026-11-17T14:01:59.652282-06:00",
+  "St. Louis": "2026-11-17T14:07:21.249344-06:00",
+  "Orlando": "2026-11-17T14:07:26.504150-06:00",
+  "Charlotte": "2026-11-17T14:07:31.741303-06:00",
   "San Antonio": "2026-11-17T14:04:47.855821-06:00",
   "Portland": "2026-11-17T14:06:09.936103-06:00",
   "Sacramento": "2026-11-17T14:06:15.217400-06:00",
@@ -4590,15 +4590,15 @@
   "Boston": "2026-11-17T14:06:32.313782-06:00",
   "San Francisco": "2026-11-17T14:06:53.289514-06:00",
   "Detroit": "2026-11-17T14:04:25.367229-06:00",
-  "Seattle": "2026-11-17T14:03:33.767414-06:00",
+  "Seattle": "2026-11-17T14:07:36.990758-06:00",
   "Minneapolis": "2026-11-17T14:05:42.176394-06:00",
   "San Diego": "2026-11-17T14:03:57.755183-06:00",
   "Tampa": "2026-11-17T14:07:09.170202-06:00",
   "Denver": "2026-11-17T14:04:20.123021-06:00",
   "Baltimore": "2026-11-17T14:07:14.392924-06:00",
-  "St. Louis": "2026-11-17T14:03:12.850415-06:00",
-  "Orlando": "2026-11-17T14:01:54.263505-06:00",
-  "Charlotte": "2026-11-17T14:01:59.652302-06:00",
+  "St. Louis": "2026-11-17T14:07:21.249364-06:00",
+  "Orlando": "2026-11-17T14:07:26.504170-06:00",
+  "Charlotte": "2026-11-17T14:07:31.741324-06:00",
   "San Antonio": "2026-11-17T14:04:47.855839-06:00",
   "Portland": "2026-11-17T14:06:09.936124-06:00",
   "Sacramento": "2026-11-17T14:06:15.217421-06:00",
@@ -4629,8 +4629,8 @@
   "Buffalo": "2026-11-17T14:07:03.911281-06:00"
  },
  "hot": [
-  "Pacific",
-  "East North Central"
+  "West North Central",
+  "Pacific"
  ],
  "cycle_seconds": 150,
  "pace": 5.0,

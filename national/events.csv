@@ -3465,3 +3465,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 14:06,Bridgeport Village,R134,Tigard,OR,Portland,2,7.0,available,MK1E4LL/A
 2026-11-17 14:06,Downtown Detroit,R763,Detroit,MI,Detroit,2,16.7,unavailable,MK1E4LL/A
 2026-11-17 14:07,Millenia,R053,Orlando,FL,Orlando,2,3.5,unavailable,MK1E4LL/A
+2026-11-17 14:07,West County,R062,Saint Louis,MO,St. Louis,2,6.8,available,MK1E4LL/A
+2026-11-17 14:07,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,available,MK1E4LL/A
+2026-11-17 14:07,Bridgeport Village,R134,Tigard,OR,Portland,2,7.0,unavailable,MK1E4LL/A
+2026-11-17 14:07,Boise Towne Square,R303,Boise,ID,,0,299.0,unavailable,MK1E4LL/A
