@@ -3101,3 +3101,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 08:52,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,unavailable,MK1E4LL/A
 2026-11-17 08:52,Syracuse,R107,Syracuse,NY,,0,131.6,unavailable,MK1E4LL/A
 2026-11-17 08:52,Chestnut Hill,R076,Chestnut Hill,MA,Boston,1,5.5,unavailable,MK1E4LL/A
+2026-11-17 08:53,Ross Park,R413,Pittsburgh,PA,Pittsburgh,2,2.2,unavailable,MK1E4LL/A
+2026-11-17 08:53,Millenia,R053,Orlando,FL,Orlando,2,3.5,available,MK1E4LL/A
+2026-11-17 08:53,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,available,MK1E4LL/A
