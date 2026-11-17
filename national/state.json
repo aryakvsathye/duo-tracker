@@ -4190,7 +4190,7 @@
   }
  },
  "last_sweep": "2026-11-17T16:14:31.923198-06:00",
- "metros_ok": 48,
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4493,7 +4493,7 @@
    "state": "NY"
   }
  ],
- "retries": 0,
+ "retries": 3,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4502,7 +4502,11 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {},
+ "metro_skip": {
+  "Washington": 1,
+  "Memphis": 1,
+  "Salt Lake City": 1
+ },
  "skipped": [],
  "checked_at": {
   "New York": "2026-11-17T16:12:34.037772-06:00",
@@ -4548,7 +4552,7 @@
   "Memphis": "2026-11-17T16:14:27.150599-06:00",
   "Madison": "2026-11-17T16:10:25.323763-06:00",
   "Albuquerque": "2026-11-17T16:13:57.776602-06:00",
-  "Salt Lake City": "2026-11-17T16:09:34.206707-06:00",
+  "Salt Lake City": "2026-11-17T16:14:47.925993-06:00",
   "Louisville": "2026-11-17T16:10:50.796798-06:00",
   "Birmingham": "2026-11-17T16:10:55.694052-06:00",
   "Richmond": "2026-11-17T16:13:48.303108-06:00",
@@ -4638,5 +4642,6 @@
   "2026-11-17T07:29-06:00",
   "2026-11-17T10:34-06:00"
  ],
- "last_weekly": "2026-W46"
+ "last_weekly": "2026-W46",
+ "last_error": "2026-11-17T16:14-06:00: Washington: HTTP 541; Memphis: HTTP 541; Salt Lake City: HTTP 541"
 }
