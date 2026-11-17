@@ -3250,3 +3250,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 09:37,International Plaza,R019,Tampa,FL,Tampa,2,1.1,available,MK1E4LL/A
 2026-11-17 09:37,Millenia,R053,Orlando,FL,Orlando,2,3.5,available,MK1E4LL/A
 2026-11-17 09:37,Millenia,R053,Orlando,FL,Orlando,2,3.5,unavailable,MK1E4LL/A
+2026-11-17 09:38,Woodland,R132,Grand Rapids,MI,,0,124.9,available,MK1E4LL/A
+2026-11-17 09:38,Kenwood Towne Centre,R028,Cincinnati,OH,Cincinnati,2,0.8,unavailable,MK1E4LL/A
