@@ -3122,3 +3122,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 08:57,Summit Mall,R353,Akron,OH,Cleveland,2,24.0,available,MK1E4LL/A
 2026-11-17 08:57,Fairfax Corner,R221,Fairfax,VA,Washington,1,18.5,available,MK1E4LL/A
 2026-11-17 08:57,Queens Center,R612,Elmhurst,NY,New York,1,6.5,unavailable,MK1E4LL/A
+2026-11-17 08:58,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,unavailable,MK1E4LL/A
+2026-11-17 08:58,Walden Galleria,R016,Buffalo,NY,Buffalo,3,0.6,available,MK1E4LL/A
+2026-11-17 08:58,Walden Galleria,R016,Buffalo,NY,Buffalo,3,0.6,unavailable,MK1E4LL/A
