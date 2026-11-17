@@ -49,7 +49,7 @@
    "MK1E4LL/A": "available"
   }
  },
- "checks": 137,
+ "checks": 142,
  "errors": 0,
  "events": 14,
  "last_heartbeat": "2026-11-17",
@@ -171,48 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-17T09:47:55.098555-06:00",
+ "last_check": "2026-11-17T09:49:15.028746-06:00",
  "history": [
-  {
-   "t": "2026-11-17T08:51:41-06:00",
-   "ok": true,
-   "ms": 183,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:52:41-06:00",
-   "ok": true,
-   "ms": 191,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:53:41-06:00",
-   "ok": true,
-   "ms": 226,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:54:41-06:00",
-   "ok": true,
-   "ms": 291,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:55:41-06:00",
-   "ok": true,
-   "ms": 205,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-17T08:56:41-06:00",
    "ok": true,
@@ -1027,6 +987,56 @@
    "green": [
     "Jordan Creek",
     "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:47:54-06:00",
+   "ok": true,
+   "ms": 341,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:48:14-06:00",
+   "ok": true,
+   "ms": 280,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:48:34-06:00",
+   "ok": true,
+   "ms": 305,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:48:54-06:00",
+   "ok": true,
+   "ms": 230,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:49:14-06:00",
+   "ok": true,
+   "ms": 271,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
    ],
    "burst": true
   }
