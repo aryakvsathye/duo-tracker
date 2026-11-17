@@ -46,12 +46,12 @@
   },
   "Main Place": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   }
  },
- "checks": 123,
+ "checks": 131,
  "errors": 0,
- "events": 12,
+ "events": 13,
  "last_heartbeat": "2026-11-17",
  "nearby": {
   "Leawood": {
@@ -171,72 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-17T09:43:15.101403-06:00",
+ "last_check": "2026-11-17T09:45:55.218578-06:00",
  "history": [
-  {
-   "t": "2026-11-17T08:38:47-06:00",
-   "ok": true,
-   "ms": 404,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:39:47-06:00",
-   "ok": true,
-   "ms": 393,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:40:47-06:00",
-   "ok": true,
-   "ms": 377,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:41:09-06:00",
-   "ok": true,
-   "ms": 281,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:42:09-06:00",
-   "ok": true,
-   "ms": 387,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:43:09-06:00",
-   "ok": true,
-   "ms": 244,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:44:09-06:00",
-   "ok": true,
-   "ms": 285,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:45:09-06:00",
-   "ok": true,
-   "ms": 238,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-17T08:46:09-06:00",
    "ok": true,
@@ -987,6 +923,94 @@
     "Village Pointe"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-17T09:43:14-06:00",
+   "ok": true,
+   "ms": 346,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:43:34-06:00",
+   "ok": true,
+   "ms": 311,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:43:54-06:00",
+   "ok": true,
+   "ms": 387,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:44:14-06:00",
+   "ok": true,
+   "ms": 300,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:44:34-06:00",
+   "ok": true,
+   "ms": 266,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:44:54-06:00",
+   "ok": true,
+   "ms": 238,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:45:14-06:00",
+   "ok": true,
+   "ms": 239,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:45:34-06:00",
+   "ok": true,
+   "ms": 232,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -1029,6 +1053,16 @@
    },
    "city": "Little Rock",
    "state": "AR"
+  },
+  "Main Place": {
+   "miles": 397.06,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Naperville",
+   "state": "IL"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -1099,16 +1133,6 @@
    },
    "city": "Madison",
    "state": "WI"
-  },
-  "Main Place": {
-   "miles": 397.06,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Naperville",
-   "state": "IL"
   }
  },
  "token_expires": "2026-11-26",
@@ -1127,9 +1151,10 @@
    "Village Pointe",
    "Leawood",
    "Jordan Creek",
-   "The Promenade at Chenal"
+   "The Promenade at Chenal",
+   "Main Place"
   ],
-  "until": "2026-11-17T10:10:00-06:00"
+  "until": "2026-11-17T10:15:00-06:00"
  },
  "wave_alerted_at": "2026-11-17T09:32:33.900183-06:00"
 }
