@@ -3327,3 +3327,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 10:06,Birkdale Village,R796,Huntersville,NC,Charlotte,2,19.5,unavailable,MK1E4LL/A
 2026-11-17 10:07,Cielo Vista Mall,R492,El Paso,TX,,0,230.6,available,MK1E4LL/A
 2026-11-17 10:07,Arrowhead,R247,Glendale,AZ,Phoenix,1,14.6,unavailable,MK1E4LL/A
+2026-11-17 10:08,Michigan Avenue,R035,Chicago,IL,Chicago,1,0.5,unavailable,MK1F4LL/A
+2026-11-17 10:08,Oakbrook,R056,Oak Brook,IL,Chicago,1,17.4,unavailable,MK1E4LL/A
+2026-11-17 10:08,Old Orchard,R089,Skokie,IL,Chicago,1,12.9,unavailable,MK1E4LL/A
+2026-11-17 10:08,Woodland,R132,Grand Rapids,MI,,0,124.9,available,MK1E4LL/A
