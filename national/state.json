@@ -1449,14 +1449,17 @@
    "metro": "Atlanta",
    "tier": 1,
    "miles": 6.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-17 13:48"
+   },
+   "since": "2026-11-17 13:48"
   },
   "R080": {
    "name": "Avalon",
@@ -2985,14 +2988,17 @@
    "metro": "Des Moines",
    "tier": 3,
    "miles": 0.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-17 13:48"
+   },
+   "since": "2026-11-17 13:48"
   },
   "R190": {
    "name": "Village Pointe",
@@ -3942,14 +3948,17 @@
    "metro": "",
    "tier": 0,
    "miles": 216.7,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-17 13:49"
+   },
+   "since": "2026-11-17 13:49"
   },
   "R550": {
    "name": "Valley Plaza",
@@ -4186,7 +4195,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-17T13:48:40.232223-06:00",
+ "last_sweep": "2026-11-17T13:49:02.393248-06:00",
  "metros_ok": 48,
  "metros": [
   {
@@ -4511,8 +4520,8 @@
   "Houston": "2026-11-17T13:47:35.894324-06:00",
   "Washington": "2026-11-17T13:48:29.717243-06:00",
   "Philadelphia": "2026-11-17T13:44:07.238916-06:00",
-  "Atlanta": "2026-11-17T13:43:18.123345-06:00",
-  "Miami": "2026-11-17T13:43:46.140771-06:00",
+  "Atlanta": "2026-11-17T13:48:46.709787-06:00",
+  "Miami": "2026-11-17T13:48:51.918621-06:00",
   "Phoenix": "2026-11-17T13:48:24.461326-06:00",
   "Boston": "2026-11-17T13:44:01.980982-06:00",
   "San Francisco": "2026-11-17T13:45:12.978248-06:00",
@@ -4531,9 +4540,9 @@
   "Sacramento": "2026-11-17T13:43:40.897172-06:00",
   "Pittsburgh": "2026-11-17T13:44:19.436976-06:00",
   "Austin": "2026-11-17T13:48:19.211740-06:00",
-  "Las Vegas": "2026-11-17T13:44:56.356216-06:00",
+  "Las Vegas": "2026-11-17T13:49:02.392958-06:00",
   "Cincinnati": "2026-11-17T13:47:56.962371-06:00",
-  "Kansas City": "2026-11-17T13:43:25.142240-06:00",
+  "Kansas City": "2026-11-17T13:48:57.161393-06:00",
   "Columbus": "2026-11-17T13:48:02.180793-06:00",
   "Indianapolis": "2026-11-17T13:46:17.586229-06:00",
   "Cleveland": "2026-11-17T13:46:33.241518-06:00",
@@ -4563,8 +4572,8 @@
   "Houston": "2026-11-17T13:47:35.894347-06:00",
   "Washington": "2026-11-17T13:48:29.717265-06:00",
   "Philadelphia": "2026-11-17T13:44:07.238932-06:00",
-  "Atlanta": "2026-11-17T13:43:18.123361-06:00",
-  "Miami": "2026-11-17T13:43:46.140784-06:00",
+  "Atlanta": "2026-11-17T13:48:46.709811-06:00",
+  "Miami": "2026-11-17T13:48:51.918644-06:00",
   "Phoenix": "2026-11-17T13:48:24.461348-06:00",
   "Boston": "2026-11-17T13:44:01.980997-06:00",
   "San Francisco": "2026-11-17T13:40:23.735568-06:00",
@@ -4583,9 +4592,9 @@
   "Sacramento": "2026-11-17T13:43:40.897188-06:00",
   "Pittsburgh": "2026-11-17T13:44:19.436993-06:00",
   "Austin": "2026-11-17T13:48:19.211762-06:00",
-  "Las Vegas": "2026-11-17T13:44:56.356231-06:00",
+  "Las Vegas": "2026-11-17T13:49:02.392981-06:00",
   "Cincinnati": "2026-11-17T13:47:56.962393-06:00",
-  "Kansas City": "2026-11-17T13:43:25.142257-06:00",
+  "Kansas City": "2026-11-17T13:48:57.161416-06:00",
   "Columbus": "2026-11-17T13:48:02.180815-06:00",
   "Indianapolis": "2026-11-17T13:46:17.586250-06:00",
   "Cleveland": "2026-11-17T13:46:33.241542-06:00",
@@ -4609,7 +4618,7 @@
  },
  "hot": [
   "Mountain",
-  "East North Central"
+  "South Atlantic"
  ],
  "cycle_seconds": 150,
  "pace": 5.0,
