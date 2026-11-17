@@ -3485,3 +3485,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 14:16,Franklin Park Mall,R299,Toledo,OH,,0,64.2,unavailable,MK1F4LL/A
 2026-11-17 14:17,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,unavailable,MK1E4LL/A
 2026-11-17 14:18,Arden Fair,R070,Sacramento,CA,Sacramento,2,1.2,available,MK1E4LL/A
+2026-11-17 14:22,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,available,MK1E4LL/A
+2026-11-17 14:22,Arden Fair,R070,Sacramento,CA,Sacramento,2,1.2,unavailable,MK1E4LL/A
+2026-11-17 14:22,Ridgedale,R183,Minnetonka,MN,Minneapolis,2,13.3,available,MK1E4LL/A

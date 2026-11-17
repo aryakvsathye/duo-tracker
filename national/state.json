@@ -2349,14 +2349,17 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 8.0,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-17 14:22"
+   },
+   "since": "2026-11-17 14:22"
   },
   "R071": {
    "name": "Corte Madera",
@@ -2961,14 +2964,17 @@
    "metro": "Minneapolis",
    "tier": 2,
    "miles": 13.3,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-17 14:22"
+   },
+   "since": "2026-11-17 14:22"
   },
   "R109": {
    "name": "Jordan Creek",
@@ -3789,17 +3795,14 @@
    "metro": "Sacramento",
    "tier": 2,
    "miles": 1.2,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-17 14:18"
-   },
-   "since": "2026-11-17 14:18"
+   "since_by_part": {}
   },
   "R322": {
    "name": "Vintage Faire",
@@ -4201,8 +4204,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-17T14:21:57.899441-06:00",
- "metros_ok": 47,
+ "last_sweep": "2026-11-17T14:22:26.526459-06:00",
+ "metros_ok": 46,
  "metros": [
   {
    "metro": "New York",
@@ -4533,7 +4536,7 @@
   "San Francisco": "2026-11-17T14:19:21.616613-06:00",
   "Detroit": "2026-11-17T14:20:49.590750-06:00",
   "Seattle": "2026-11-17T14:19:32.428608-06:00",
-  "Minneapolis": "2026-11-17T14:16:51.432917-06:00",
+  "Minneapolis": "2026-11-17T14:22:26.526338-06:00",
   "San Diego": "2026-11-17T14:19:43.080146-06:00",
   "Tampa": "2026-11-17T14:17:57.805930-06:00",
   "Denver": "2026-11-17T14:21:06.161193-06:00",
@@ -4543,7 +4546,7 @@
   "Charlotte": "2026-11-17T14:18:36.997333-06:00",
   "San Antonio": "2026-11-17T14:21:25.178664-06:00",
   "Portland": "2026-11-17T14:21:52.412094-06:00",
-  "Sacramento": "2026-11-17T14:18:03.159547-06:00",
+  "Sacramento": "2026-11-17T14:22:10.204010-06:00",
   "Pittsburgh": "2026-11-17T14:17:28.965913-06:00",
   "Austin": "2026-11-17T14:21:30.582768-06:00",
   "Las Vegas": "2026-11-17T14:21:19.793977-06:00",
@@ -4556,8 +4559,8 @@
   "Raleigh": "2026-11-17T14:18:42.372767-06:00",
   "Oklahoma City": "2026-11-17T14:21:36.029782-06:00",
   "Tulsa": "2026-11-17T14:18:58.538809-06:00",
-  "Omaha": "2026-11-17T14:16:33.456360-06:00",
-  "Des Moines": "2026-11-17T14:16:38.851120-06:00",
+  "Omaha": "2026-11-17T14:22:15.651903-06:00",
+  "Des Moines": "2026-11-17T14:22:21.104023-06:00",
   "Little Rock": "2026-11-17T14:19:16.183983-06:00",
   "Memphis": "2026-11-17T14:17:12.940237-06:00",
   "Madison": "2026-11-17T14:20:27.672124-06:00",
@@ -4585,7 +4588,7 @@
   "San Francisco": "2026-11-17T14:19:21.616632-06:00",
   "Detroit": "2026-11-17T14:20:49.590770-06:00",
   "Seattle": "2026-11-17T14:19:32.428629-06:00",
-  "Minneapolis": "2026-11-17T14:16:51.432938-06:00",
+  "Minneapolis": "2026-11-17T14:22:26.526357-06:00",
   "San Diego": "2026-11-17T14:19:43.080166-06:00",
   "Tampa": "2026-11-17T14:17:57.805950-06:00",
   "Denver": "2026-11-17T14:21:06.161213-06:00",
@@ -4595,7 +4598,7 @@
   "Charlotte": "2026-11-17T14:18:36.997351-06:00",
   "San Antonio": "2026-11-17T14:21:25.178685-06:00",
   "Portland": "2026-11-17T14:21:52.412113-06:00",
-  "Sacramento": "2026-11-17T14:18:03.159566-06:00",
+  "Sacramento": "2026-11-17T14:22:10.204029-06:00",
   "Pittsburgh": "2026-11-17T14:17:28.965933-06:00",
   "Austin": "2026-11-17T14:21:30.582787-06:00",
   "Las Vegas": "2026-11-17T14:21:19.793996-06:00",
@@ -4608,8 +4611,8 @@
   "Raleigh": "2026-11-17T14:18:42.372786-06:00",
   "Oklahoma City": "2026-11-17T14:21:36.029802-06:00",
   "Tulsa": "2026-11-17T14:18:58.538828-06:00",
-  "Omaha": "2026-11-17T14:16:33.456380-06:00",
-  "Des Moines": "2026-11-17T14:16:38.851141-06:00",
+  "Omaha": "2026-11-17T14:22:15.651923-06:00",
+  "Des Moines": "2026-11-17T14:22:21.104042-06:00",
   "Little Rock": "2026-11-17T14:19:16.184001-06:00",
   "Memphis": "2026-11-17T14:17:12.940256-06:00",
   "Madison": "2026-11-17T14:20:27.672144-06:00",
@@ -4624,7 +4627,7 @@
  },
  "hot": [
   "Pacific",
-  "East North Central"
+  "West North Central"
  ],
  "cycle_seconds": 150,
  "pace": 5.0,
