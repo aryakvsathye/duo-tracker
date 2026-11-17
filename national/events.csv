@@ -3125,3 +3125,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 08:58,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,unavailable,MK1E4LL/A
 2026-11-17 08:58,Walden Galleria,R016,Buffalo,NY,Buffalo,3,0.6,available,MK1E4LL/A
 2026-11-17 08:58,Walden Galleria,R016,Buffalo,NY,Buffalo,3,0.6,unavailable,MK1E4LL/A
+2026-11-17 08:58,CambridgeSide,R021,Cambridge,MA,Boston,1,1.2,unavailable,MK1E4LL/A
+2026-11-17 08:58,Legacy Place,R346,Dedham,MA,Boston,1,9.8,unavailable,MK1E4LL/A
+2026-11-17 08:58,SouthPark,R083,Charlotte,NC,Charlotte,2,2.5,available,MK1E4LL/A
+2026-11-17 08:58,Friendly Center,R293,Greensboro,NC,,0,65.4,available,MK1E4LL/A
