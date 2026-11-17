@@ -171,17 +171,14 @@
    "metro": "New York",
    "tier": 1,
    "miles": 5.7,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-17 09:19"
-   },
-   "since": "2026-11-17 09:19"
+   "since_by_part": {}
   },
   "R612": {
    "name": "Queens Center",
@@ -1353,17 +1350,14 @@
    "metro": "Philadelphia",
    "tier": 1,
    "miles": 49.3,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-17 09:19"
-   },
-   "since": "2026-11-17 09:19"
+   "since_by_part": {}
   },
   "R138": {
    "name": "Freehold Raceway Mall",
@@ -1392,17 +1386,14 @@
    "metro": "",
    "tier": 0,
    "miles": 52.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-17 09:19"
-   },
-   "since": "2026-11-17 09:19"
+   "since_by_part": {}
   },
   "R067": {
    "name": "Menlo Park",
@@ -1413,17 +1404,14 @@
    "metro": "",
    "tier": 0,
    "miles": 60.3,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-17 09:19"
-   },
-   "since": "2026-11-17 09:19"
+   "since_by_part": {}
   },
   "R006": {
    "name": "Lenox Square",
@@ -4249,8 +4237,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-17T09:24:53.015723-06:00",
- "metros_ok": 49,
+ "last_sweep": "2026-11-17T09:25:35.199171-06:00",
+ "metros_ok": 44,
  "metros": [
   {
    "metro": "New York",
@@ -4567,13 +4555,13 @@
  },
  "skipped": [],
  "checked_at": {
-  "New York": "2026-11-17T09:19:35.362342-06:00",
+  "New York": "2026-11-17T09:25:19.218646-06:00",
   "Los Angeles": "2026-11-17T09:23:33.983247-06:00",
   "Chicago": "2026-11-17T09:24:13.400518-06:00",
   "Dallas": "2026-11-17T09:22:58.319796-06:00",
-  "Houston": "2026-11-17T09:21:08.754063-06:00",
+  "Houston": "2026-11-17T09:25:24.526497-06:00",
   "Washington": "2026-11-17T09:21:21.466262-06:00",
-  "Philadelphia": "2026-11-17T09:19:40.685449-06:00",
+  "Philadelphia": "2026-11-17T09:25:29.813759-06:00",
   "Atlanta": "2026-11-17T09:21:26.837145-06:00",
   "Miami": "2026-11-17T09:21:32.284629-06:00",
   "Phoenix": "2026-11-17T09:23:03.715137-06:00",
@@ -4589,14 +4577,14 @@
   "St. Louis": "2026-11-17T09:24:34.904725-06:00",
   "Orlando": "2026-11-17T09:21:49.921708-06:00",
   "Charlotte": "2026-11-17T09:21:55.351910-06:00",
-  "San Antonio": "2026-11-17T09:21:14.119213-06:00",
+  "San Antonio": "2026-11-17T09:25:35.199024-06:00",
   "Portland": "2026-11-17T09:20:30.984748-06:00",
   "Sacramento": "2026-11-17T09:20:52.505051-06:00",
   "Pittsburgh": "2026-11-17T09:19:46.129271-06:00",
   "Austin": "2026-11-17T09:22:29.246432-06:00",
   "Las Vegas": "2026-11-17T09:23:28.625639-06:00",
   "Cincinnati": "2026-11-17T09:23:44.873150-06:00",
-  "Kansas City": "2026-11-17T09:21:03.315696-06:00",
+  "Kansas City": "2026-11-17T09:25:13.901633-06:00",
   "Columbus": "2026-11-17T09:23:50.319705-06:00",
   "Indianapolis": "2026-11-17T09:23:55.686393-06:00",
   "Cleveland": "2026-11-17T09:24:02.641030-06:00",
@@ -4619,13 +4607,13 @@
   "Buffalo": "2026-11-17T09:20:01.686904-06:00"
  },
  "ok_at": {
-  "New York": "2026-11-17T09:19:35.362368-06:00",
+  "New York": "2026-11-17T09:25:19.218668-06:00",
   "Los Angeles": "2026-11-17T09:23:33.983269-06:00",
   "Chicago": "2026-11-17T09:24:13.400539-06:00",
   "Dallas": "2026-11-17T09:22:58.319816-06:00",
-  "Houston": "2026-11-17T09:21:08.754081-06:00",
+  "Houston": "2026-11-17T09:25:24.526520-06:00",
   "Washington": "2026-11-17T09:21:21.466283-06:00",
-  "Philadelphia": "2026-11-17T09:19:40.685469-06:00",
+  "Philadelphia": "2026-11-17T09:25:29.813782-06:00",
   "Atlanta": "2026-11-17T09:21:26.837166-06:00",
   "Miami": "2026-11-17T09:21:32.284648-06:00",
   "Phoenix": "2026-11-17T09:23:03.715157-06:00",
@@ -4641,14 +4629,14 @@
   "St. Louis": "2026-11-17T09:24:34.904745-06:00",
   "Orlando": "2026-11-17T09:21:49.921723-06:00",
   "Charlotte": "2026-11-17T09:21:55.351931-06:00",
-  "San Antonio": "2026-11-17T09:21:14.119234-06:00",
+  "San Antonio": "2026-11-17T09:25:35.199050-06:00",
   "Portland": "2026-11-17T09:20:30.984769-06:00",
   "Sacramento": "2026-11-17T09:20:52.505071-06:00",
   "Pittsburgh": "2026-11-17T09:19:46.129293-06:00",
   "Austin": "2026-11-17T09:22:29.246453-06:00",
   "Las Vegas": "2026-11-17T09:23:28.625660-06:00",
   "Cincinnati": "2026-11-17T09:23:44.873170-06:00",
-  "Kansas City": "2026-11-17T09:21:03.315716-06:00",
+  "Kansas City": "2026-11-17T09:25:13.901655-06:00",
   "Columbus": "2026-11-17T09:23:50.319724-06:00",
   "Indianapolis": "2026-11-17T09:23:55.686426-06:00",
   "Cleveland": "2026-11-17T09:24:02.641051-06:00",

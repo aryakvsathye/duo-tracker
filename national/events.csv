@@ -3210,3 +3210,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 09:22,Memorial City,R164,Houston,TX,Houston,1,4.8,unavailable,MK1E4LL/A
 2026-11-17 09:23,Somerset,R055,Troy,MI,Detroit,2,0.6,unavailable,MK1E4LL/A
 2026-11-17 09:23,Downtown Detroit,R763,Detroit,MI,Detroit,2,16.7,unavailable,MK1E4LL/A
+2026-11-17 09:25,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,unavailable,MK1E4LL/A
+2026-11-17 09:25,Lehigh Valley,R281,Whitehall,PA,Philadelphia,1,49.3,unavailable,MK1E4LL/A
+2026-11-17 09:25,Bridgewater,R104,Bridgewater,NJ,,0,52.5,unavailable,MK1E4LL/A
+2026-11-17 09:25,Menlo Park,R067,Edison,NJ,,0,60.3,unavailable,MK1E4LL/A
