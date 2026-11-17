@@ -42,16 +42,16 @@
   },
   "Hilldale": {
    "MK1F4LL/A": "available",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Main Place": {
    "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 171,
+ "checks": 172,
  "errors": 0,
- "events": 18,
+ "events": 19,
  "last_heartbeat": "2026-11-17",
  "nearby": {
   "Country Club Plaza": {
@@ -171,18 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-17T09:59:23.529429-06:00",
+ "last_check": "2026-11-17T09:59:43.588837-06:00",
  "history": [
-  {
-   "t": "2026-11-17T09:23:12-06:00",
-   "ok": true,
-   "ms": 449,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": false
-  },
   {
    "t": "2026-11-17T09:24:12-06:00",
    "ok": true,
@@ -1065,6 +1055,14 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-17T09:59:23-06:00",
+   "ok": true,
+   "ms": 268,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
@@ -1103,7 +1101,7 @@
    "status": "available",
    "parts": {
     "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "city": "Madison",
    "state": "WI"
