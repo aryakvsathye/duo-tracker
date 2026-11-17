@@ -41,7 +41,7 @@
    "MK1E4LL/A": "available"
   },
   "Hilldale": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "available"
   },
   "Main Place": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 172,
+ "checks": 183,
  "errors": 0,
- "events": 19,
+ "events": 20,
  "last_heartbeat": "2026-11-17",
  "nearby": {
   "Country Club Plaza": {
@@ -171,96 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-17T09:59:43.588837-06:00",
+ "last_check": "2026-11-17T10:03:23.645577-06:00",
  "history": [
-  {
-   "t": "2026-11-17T09:24:12-06:00",
-   "ok": true,
-   "ms": 353,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T09:25:12-06:00",
-   "ok": true,
-   "ms": 367,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T09:26:12-06:00",
-   "ok": true,
-   "ms": 428,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T09:27:12-06:00",
-   "ok": true,
-   "ms": 394,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T09:28:12-06:00",
-   "ok": true,
-   "ms": 389,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T09:29:12-06:00",
-   "ok": true,
-   "ms": 400,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T09:30:12-06:00",
-   "ok": true,
-   "ms": 378,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T09:31:12-06:00",
-   "ok": true,
-   "ms": 363,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T09:31:33-06:00",
-   "ok": true,
-   "ms": 486,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T09:32:33-06:00",
-   "ok": true,
-   "ms": 363,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:32:53-06:00",
-   "ok": true,
-   "ms": 325,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-17T09:33:13-06:00",
    "ok": true,
@@ -1063,6 +975,94 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-17T09:59:43-06:00",
+   "ok": true,
+   "ms": 327,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:00:03-06:00",
+   "ok": true,
+   "ms": 323,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:00:23-06:00",
+   "ok": true,
+   "ms": 328,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:00:43-06:00",
+   "ok": true,
+   "ms": 259,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:01:03-06:00",
+   "ok": true,
+   "ms": 309,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:01:23-06:00",
+   "ok": true,
+   "ms": 344,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:01:43-06:00",
+   "ok": true,
+   "ms": 244,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:02:03-06:00",
+   "ok": true,
+   "ms": 405,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:02:23-06:00",
+   "ok": true,
+   "ms": 364,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:02:43-06:00",
+   "ok": true,
+   "ms": 423,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:03:03-06:00",
+   "ok": true,
+   "ms": 475,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
@@ -1100,7 +1100,7 @@
    "miles": 394.05,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "available"
    },
    "city": "Madison",
@@ -1199,8 +1199,6 @@
  "wave": {
   "since": "2026-11-17T09:32:33.900183-06:00",
   "stores": [
-   "Jordan Creek",
-   "The Promenade at Chenal",
    "Main Place",
    "Saddle Creek",
    "Hilldale"
