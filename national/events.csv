@@ -3599,3 +3599,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 17:01,Grand Central,R415,New York,NY,New York,1,1.1,available,MK1F4LL/A
 2026-11-17 17:01,Bayshore,R257,Glendale,WI,,0,78.2,available,MK1E4LL/A
 2026-11-17 17:01,Old Orchard,R089,Skokie,IL,Chicago,1,12.9,unavailable,MK1E4LL/A
+2026-11-17 17:03,Boise Towne Square,R303,Boise,ID,,0,299.0,available,MK1E4LL/A
