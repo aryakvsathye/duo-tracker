@@ -3299,3 +3299,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 09:56,CambridgeSide,R021,Cambridge,MA,Boston,1,1.2,unavailable,MK1E4LL/A
 2026-11-17 09:57,Michigan Avenue,R035,Chicago,IL,Chicago,1,0.5,available,MK1F4LL/A
 2026-11-17 09:57,Lincoln Park,R284,Chicago,IL,Chicago,1,1.7,available,MK1E4LL/A
+2026-11-17 09:58,Altamonte,R291,Altamonte Springs,FL,Orlando,2,16.0,unavailable,MK1E4LL/A
+2026-11-17 09:58,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,unavailable,MK1E4LL/A
+2026-11-17 09:58,Birkdale Village,R796,Huntersville,NC,Charlotte,2,19.5,unavailable,MK1E4LL/A
