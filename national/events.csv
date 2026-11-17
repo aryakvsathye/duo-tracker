@@ -3392,3 +3392,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 11:13,Saddle Creek,R020,Germantown,TN,Memphis,3,0.6,available,MK1E4LL/A
 2026-11-17 11:16,Saddle Creek,R020,Germantown,TN,Memphis,3,0.6,available,MK1E4LL/A
 2026-11-17 11:16,Ridgedale,R183,Minnetonka,MN,Minneapolis,2,13.3,unavailable,MK1E4LL/A
+2026-11-17 11:18,Cielo Vista Mall,R492,El Paso,TX,,0,230.6,unavailable,MK1E4LL/A
+2026-11-17 11:18,Scottsdale Fashion Square,R031,Scottsdale,AZ,Phoenix,1,6.0,unavailable,MK1E4LL/A
