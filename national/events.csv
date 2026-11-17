@@ -3014,3 +3014,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 08:01,Fifth Avenue,R095,New York,NY,New York,1,0.7,available,MK1E4LL/A
 2026-11-17 08:01,Upper East Side,R582,New York,NY,New York,1,1.2,available,MK1E4LL/A
 2026-11-17 08:01,Upper West Side,R251,New York,NY,New York,1,0.5,unavailable,MK1E4LL/A
+2026-11-17 08:02,South Hills Village,R147,Pittsburgh,PA,Pittsburgh,2,14.1,unavailable,MK1E4LL/A
