@@ -10,7 +10,7 @@
   },
   "Village Pointe": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Jordan Creek": {
    "MK1F4LL/A": "unavailable",
@@ -49,11 +49,39 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 91,
+ "checks": 97,
  "errors": 0,
- "events": 7,
+ "events": 8,
  "last_heartbeat": "2026-11-17",
  "nearby": {
+  "Village Pointe": {
+   "miles": 171.88,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "quotes": {
+    "MK1F4LL/A": "Currently unavailable at Apple Village Pointe",
+    "MK1E4LL/A": "Today at Apple Village Pointe"
+   },
+   "quote": "Currently unavailable at Apple Village Pointe",
+   "phone": "402-970 4477",
+   "lat": 41.261188,
+   "lon": -96.183078,
+   "address": "17170 Davenport Street",
+   "city": "Omaha",
+   "hours": [
+    {
+     "days": "Sun:",
+     "time": "11:00 AM-5:00 PM"
+    },
+    {
+     "days": "Mon-Sat:",
+     "time": "10:00 AM-9:00 PM"
+    }
+   ]
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -110,34 +138,6 @@
     }
    ]
   },
-  "Village Pointe": {
-   "miles": 171.88,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "quotes": {
-    "MK1F4LL/A": "Currently unavailable at Apple Village Pointe",
-    "MK1E4LL/A": "Currently unavailable at Apple Village Pointe"
-   },
-   "quote": "Currently unavailable at Apple Village Pointe",
-   "phone": "402-970 4477",
-   "lat": 41.261188,
-   "lon": -96.183078,
-   "address": "17170 Davenport Street",
-   "city": "Omaha",
-   "hours": [
-    {
-     "days": "Sun:",
-     "time": "11:00 AM-5:00 PM"
-    },
-    {
-     "days": "Mon-Sat:",
-     "time": "10:00 AM-9:00 PM"
-    }
-   ]
-  },
   "Jordan Creek": {
    "miles": 183.62,
    "status": "unavailable",
@@ -171,56 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-17T09:32:33.900169-06:00",
+ "last_check": "2026-11-17T09:34:33.925116-06:00",
  "history": [
-  {
-   "t": "2026-11-17T08:08:28-06:00",
-   "ok": true,
-   "ms": 291,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:09:28-06:00",
-   "ok": true,
-   "ms": 296,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:10:28-06:00",
-   "ok": true,
-   "ms": 337,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:11:28-06:00",
-   "ok": true,
-   "ms": 310,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:12:28-06:00",
-   "ok": true,
-   "ms": 388,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:13:28-06:00",
-   "ok": true,
-   "ms": 305,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-17T08:14:28-06:00",
    "ok": true,
@@ -906,9 +858,67 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-17T09:32:33-06:00",
+   "ok": true,
+   "ms": 363,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:32:53-06:00",
+   "ok": true,
+   "ms": 325,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:33:13-06:00",
+   "ok": true,
+   "ms": 353,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:33:33-06:00",
+   "ok": true,
+   "ms": 358,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:33:53-06:00",
+   "ok": true,
+   "ms": 439,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:34:13-06:00",
+   "ok": true,
+   "ms": 257,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
+  "Village Pointe": {
+   "miles": 171.88,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Omaha",
+   "state": "NE"
+  },
   "West County": {
    "miles": 234.82,
    "status": "available",
@@ -938,16 +948,6 @@
    },
    "city": "Leawood",
    "state": "KS"
-  },
-  "Village Pointe": {
-   "miles": 171.88,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Omaha",
-   "state": "NE"
   },
   "Jordan Creek": {
    "miles": 183.62,
@@ -1043,9 +1043,10 @@
   "since": "2026-11-17T09:32:33.900183-06:00",
   "stores": [
    "Jordan Creek",
-   "West County"
+   "West County",
+   "Village Pointe"
   ],
-  "until": "2026-11-17T10:02:00-06:00"
+  "until": "2026-11-17T10:04:00-06:00"
  },
  "wave_alerted_at": "2026-11-17T09:32:33.900183-06:00"
 }
