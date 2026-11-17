@@ -3483,3 +3483,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 14:15,Mission Viejo,R069,Mission Viejo,CA,,0,62.2,available,MK1E4LL/A
 2026-11-17 14:16,West County,R062,Saint Louis,MO,St. Louis,2,6.8,unavailable,MK1E4LL/A
 2026-11-17 14:16,Franklin Park Mall,R299,Toledo,OH,,0,64.2,unavailable,MK1F4LL/A
+2026-11-17 14:17,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,unavailable,MK1E4LL/A
+2026-11-17 14:18,Arden Fair,R070,Sacramento,CA,Sacramento,2,1.2,available,MK1E4LL/A
