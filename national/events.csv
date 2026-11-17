@@ -3585,3 +3585,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 16:16,The Mall at Bay Plaza,R753,Bronx,NY,New York,1,10.6,unavailable,MK1E4LL/A
 2026-11-17 16:19,Cielo Vista Mall,R492,El Paso,TX,,0,230.6,available,MK1E4LL/A
 2026-11-17 16:19,Ala Moana,R073,Honolulu,HI,Honolulu,3,0.4,available,MK1E4LL/A
+2026-11-17 16:23,Southcenter,R106,Tukwila,WA,Seattle,2,10.7,available,MK1E4LL/A
+2026-11-17 16:23,Roseville,R298,Roseville,CA,Sacramento,2,14.6,available,MK1E4LL/A
