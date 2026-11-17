@@ -3172,3 +3172,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 09:11,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,unavailable,MK1E4LL/A
 2026-11-17 09:11,Reston,R271,Reston,VA,Washington,1,18.6,unavailable,MK1E4LL/A
 2026-11-17 09:11,Friendly Center,R293,Greensboro,NC,,0,65.4,available,MK1F4LL/A
+2026-11-17 09:12,Orland Square Mall,R237,Orland Park,IL,Chicago,1,22.4,available,MK1E4LL/A
+2026-11-17 09:12,University Park Mall,R360,Mishawaka,IN,,0,74.7,unavailable,MK1E4LL/A
