@@ -3216,3 +3216,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 09:25,Menlo Park,R067,Edison,NJ,,0,60.3,unavailable,MK1E4LL/A
 2026-11-17 09:25,Polaris Fashion Place,R417,Columbus,OH,Columbus,2,9.5,unavailable,MK1E4LL/A
 2026-11-17 09:26,Southlake Town Square,R151,Southlake,TX,Dallas,1,20.4,unavailable,MK1E4LL/A
+2026-11-17 09:27,Carnegie Library,R516,Washington,DC,Washington,1,0.5,available,MK1E4LL/A
+2026-11-17 09:27,Lincoln Road,R115,Miami Beach,FL,Miami,1,3.6,available,MK1E4LL/A
+2026-11-17 09:27,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,unavailable,MK1E4LL/A
+2026-11-17 09:27,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,unavailable,MK1E4LL/A
