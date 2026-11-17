@@ -2355,14 +2355,17 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 8.0,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-17 16:04"
+   },
+   "since": "2026-11-17 16:04"
   },
   "R071": {
    "name": "Corte Madera",
@@ -2805,14 +2808,17 @@
    "metro": "Portland",
    "tier": 2,
    "miles": 3.4,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-17 16:04"
+   },
+   "since": "2026-11-17 16:04"
   },
   "R134": {
    "name": "Bridgeport Village",
@@ -2859,14 +2865,17 @@
    "metro": "",
    "tier": 0,
    "miles": 299.0,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Denver",
    "region": "Mountain",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-17 16:04"
+   },
+   "since": "2026-11-17 16:04"
   },
   "R186": {
    "name": "Shayden Summit",
@@ -4192,8 +4201,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-17T16:04:23.434814-06:00",
- "metros_ok": 48,
+ "last_sweep": "2026-11-17T16:04:48.569500-06:00",
+ "metros_ok": 49,
  "metros": [
   {
    "metro": "New York",
@@ -4496,7 +4505,7 @@
    "state": "NY"
   }
  ],
- "retries": 2,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4505,27 +4514,27 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Portland": 1
- },
- "skipped": [],
+ "metro_skip": {},
+ "skipped": [
+  "Portland"
+ ],
  "checked_at": {
   "New York": "2026-11-17T16:02:19.708233-06:00",
   "Los Angeles": "2026-11-17T16:04:23.434700-06:00",
   "Chicago": "2026-11-17T16:00:29.162609-06:00",
   "Dallas": "2026-11-17T16:02:24.564707-06:00",
   "Houston": "2026-11-17T16:01:09.318452-06:00",
-  "Washington": "2026-11-17T15:59:39.340641-06:00",
+  "Washington": "2026-11-17T16:04:29.552850-06:00",
   "Philadelphia": "2026-11-17T16:02:53.911952-06:00",
   "Atlanta": "2026-11-17T16:00:24.393989-06:00",
   "Miami": "2026-11-17T16:01:39.419297-06:00",
   "Phoenix": "2026-11-17T16:03:00.604333-06:00",
   "Boston": "2026-11-17T16:02:39.227120-06:00",
-  "San Francisco": "2026-11-17T16:01:18.781838-06:00",
+  "San Francisco": "2026-11-17T16:04:39.047442-06:00",
   "Detroit": "2026-11-17T16:00:38.640979-06:00",
-  "Seattle": "2026-11-17T16:01:34.631929-06:00",
+  "Seattle": "2026-11-17T16:04:43.807094-06:00",
   "Minneapolis": "2026-11-17T16:01:58.832976-06:00",
-  "San Diego": "2026-11-17T16:01:49.030587-06:00",
+  "San Diego": "2026-11-17T16:04:48.569386-06:00",
   "Tampa": "2026-11-17T16:03:19.839927-06:00",
   "Denver": "2026-11-17T16:03:05.491276-06:00",
   "Baltimore": "2026-11-17T16:03:24.676194-06:00",
@@ -4550,7 +4559,7 @@
   "Omaha": "2026-11-17T16:03:49.913288-06:00",
   "Des Moines": "2026-11-17T16:03:54.724936-06:00",
   "Little Rock": "2026-11-17T16:02:14.864139-06:00",
-  "Memphis": "2026-11-17T15:59:44.107446-06:00",
+  "Memphis": "2026-11-17T16:04:34.287674-06:00",
   "Madison": "2026-11-17T16:00:19.603218-06:00",
   "Albuquerque": "2026-11-17T16:02:34.318647-06:00",
   "Salt Lake City": "2026-11-17T16:02:44.171486-06:00",
@@ -4567,17 +4576,17 @@
   "Chicago": "2026-11-17T16:00:29.162626-06:00",
   "Dallas": "2026-11-17T16:02:24.564725-06:00",
   "Houston": "2026-11-17T16:01:09.318469-06:00",
-  "Washington": "2026-11-17T15:59:39.340664-06:00",
+  "Washington": "2026-11-17T16:04:29.552868-06:00",
   "Philadelphia": "2026-11-17T16:02:53.911969-06:00",
   "Atlanta": "2026-11-17T16:00:24.394007-06:00",
   "Miami": "2026-11-17T16:01:39.419315-06:00",
   "Phoenix": "2026-11-17T16:03:00.604351-06:00",
   "Boston": "2026-11-17T16:02:39.227138-06:00",
-  "San Francisco": "2026-11-17T16:01:18.781855-06:00",
+  "San Francisco": "2026-11-17T16:04:39.047458-06:00",
   "Detroit": "2026-11-17T16:00:38.640996-06:00",
-  "Seattle": "2026-11-17T16:01:34.631946-06:00",
+  "Seattle": "2026-11-17T16:04:43.807111-06:00",
   "Minneapolis": "2026-11-17T16:01:58.832993-06:00",
-  "San Diego": "2026-11-17T16:01:49.030605-06:00",
+  "San Diego": "2026-11-17T16:04:48.569404-06:00",
   "Tampa": "2026-11-17T16:03:19.839943-06:00",
   "Denver": "2026-11-17T16:03:05.491294-06:00",
   "Baltimore": "2026-11-17T16:03:24.676237-06:00",
@@ -4602,7 +4611,7 @@
   "Omaha": "2026-11-17T16:03:49.913313-06:00",
   "Des Moines": "2026-11-17T16:03:54.724953-06:00",
   "Little Rock": "2026-11-17T16:02:14.864157-06:00",
-  "Memphis": "2026-11-17T15:59:44.107466-06:00",
+  "Memphis": "2026-11-17T16:04:34.287691-06:00",
   "Madison": "2026-11-17T16:00:19.603236-06:00",
   "Albuquerque": "2026-11-17T16:02:34.318666-06:00",
   "Salt Lake City": "2026-11-17T16:02:44.171503-06:00",
@@ -4643,6 +4652,5 @@
   "2026-11-17T07:29-06:00",
   "2026-11-17T10:34-06:00"
  ],
- "last_weekly": "2026-W46",
- "last_error": "2026-11-17T16:00-06:00: Portland: HTTP 541"
+ "last_weekly": "2026-W46"
 }
