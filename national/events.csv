@@ -3362,3 +3362,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 10:32,Michigan Avenue,R035,Chicago,IL,Chicago,1,0.5,available,MK1E4LL/A
 2026-11-17 10:35,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,unavailable,MK1E4LL/A
 2026-11-17 10:37,The Promenade at Chenal,R286,Little Rock,AR,Little Rock,3,3.3,unavailable,MK1E4LL/A
+2026-11-17 10:42,Saddle Creek,R020,Germantown,TN,Memphis,3,0.6,available,MK1E4LL/A
+2026-11-17 10:42,The Summit,R225,Birmingham,AL,Birmingham,3,0.6,available,MK1E4LL/A
