@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 519,
+ "checks": 523,
  "errors": 1,
  "events": 40,
  "last_heartbeat": "2026-11-17",
@@ -171,40 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-17T14:15:29.789470-06:00",
+ "last_check": "2026-11-17T14:16:29.800419-06:00",
  "history": [
-  {
-   "t": "2026-11-17T13:10:28-06:00",
-   "ok": true,
-   "ms": 404,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T13:11:28-06:00",
-   "ok": true,
-   "ms": 760,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T13:12:28-06:00",
-   "ok": true,
-   "ms": 546,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T13:13:28-06:00",
-   "ok": true,
-   "ms": 502,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-17T13:14:28-06:00",
    "ok": true,
@@ -996,6 +964,50 @@
    "t": "2026-11-17T14:15:09-06:00",
    "ok": true,
    "ms": 369,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:15:29-06:00",
+   "ok": true,
+   "ms": 385,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:15:49-06:00",
+   "ok": true,
+   "ms": 348,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:16:09-06:00",
+   "ok": true,
+   "ms": 506,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:16:29-06:00",
+   "ok": true,
+   "ms": 396,
    "code": 200,
    "green": [
     "Jordan Creek",
