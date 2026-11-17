@@ -3084,3 +3084,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 08:45,Highland Village,R437,Houston,TX,Houston,1,1.4,available,MK1E4LL/A
 2026-11-17 08:45,First Colony Mall,R205,Sugar Land,TX,Houston,1,14.5,available,MK1E4LL/A
 2026-11-17 08:45,Baybrook,R204,Friendswood,TX,Houston,1,24.0,available,MK1E4LL/A
+2026-11-17 08:46,International Plaza,R019,Tampa,FL,Tampa,2,1.1,available,MK1E4LL/A
+2026-11-17 08:46,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,available,MK1E4LL/A
+2026-11-17 08:46,Clarendon,R036,Arlington,VA,Washington,1,4.2,unavailable,MK1E4LL/A
+2026-11-17 08:46,Crabtree Valley Mall,R116,Raleigh,NC,Raleigh,2,1.5,unavailable,MK1F4LL/A

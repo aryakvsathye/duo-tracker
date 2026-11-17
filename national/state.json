@@ -1053,17 +1053,14 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 4.2,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-17 08:41"
-   },
-   "since": "2026-11-17 08:41"
+   "since_by_part": {}
   },
   "R112": {
    "name": "Bethesda Row",
@@ -3225,14 +3222,17 @@
    "metro": "Tampa",
    "tier": 2,
    "miles": 1.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-17 08:46"
+   },
+   "since": "2026-11-17 08:46"
   },
   "R289": {
    "name": "Brandon",
@@ -3297,14 +3297,17 @@
    "metro": "Orlando",
    "tier": 2,
    "miles": 4.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-17 08:46"
+   },
+   "since": "2026-11-17 08:46"
   },
   "R291": {
    "name": "Altamonte",
@@ -3765,17 +3768,14 @@
    "metro": "Raleigh",
    "tier": 2,
    "miles": 1.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-17 08:41"
-   },
-   "since": "2026-11-17 08:41"
+   "since_by_part": {}
   },
   "R318": {
    "name": "Charleston",
@@ -4219,8 +4219,8 @@
    "since": "2026-11-17 08:33"
   }
  },
- "last_sweep": "2026-11-17T08:46:26.792855-06:00",
- "metros_ok": 45,
+ "last_sweep": "2026-11-17T08:46:49.066761-06:00",
+ "metros_ok": 44,
  "metros": [
   {
    "metro": "New York",
@@ -4553,12 +4553,12 @@
   "Seattle": "2026-11-17T08:46:10.981102-06:00",
   "Minneapolis": "2026-11-17T08:41:23.745964-06:00",
   "San Diego": "2026-11-17T08:46:26.792724-06:00",
-  "Tampa": "2026-11-17T08:41:18.425919-06:00",
+  "Tampa": "2026-11-17T08:46:33.324840-06:00",
   "Denver": "2026-11-17T08:44:15.850926-06:00",
-  "Baltimore": "2026-11-17T08:41:34.434855-06:00",
+  "Baltimore": "2026-11-17T08:46:38.553535-06:00",
   "St. Louis": "2026-11-17T08:44:31.822939-06:00",
-  "Orlando": "2026-11-17T08:41:39.709875-06:00",
-  "Charlotte": "2026-11-17T08:41:45.081271-06:00",
+  "Orlando": "2026-11-17T08:46:43.812490-06:00",
+  "Charlotte": "2026-11-17T08:46:49.066324-06:00",
   "San Antonio": "2026-11-17T08:45:27.423886-06:00",
   "Portland": "2026-11-17T08:42:18.489035-06:00",
   "Sacramento": "2026-11-17T08:43:25.410175-06:00",
@@ -4605,12 +4605,12 @@
   "Seattle": "2026-11-17T08:46:10.981127-06:00",
   "Minneapolis": "2026-11-17T08:41:23.745992-06:00",
   "San Diego": "2026-11-17T08:46:26.792747-06:00",
-  "Tampa": "2026-11-17T08:41:18.425944-06:00",
+  "Tampa": "2026-11-17T08:46:33.324863-06:00",
   "Denver": "2026-11-17T08:44:15.850954-06:00",
-  "Baltimore": "2026-11-17T08:41:34.434881-06:00",
+  "Baltimore": "2026-11-17T08:46:38.553557-06:00",
   "St. Louis": "2026-11-17T08:44:31.822965-06:00",
-  "Orlando": "2026-11-17T08:41:39.709900-06:00",
-  "Charlotte": "2026-11-17T08:41:45.081300-06:00",
+  "Orlando": "2026-11-17T08:46:43.812513-06:00",
+  "Charlotte": "2026-11-17T08:46:49.066358-06:00",
   "San Antonio": "2026-11-17T08:45:27.423908-06:00",
   "Portland": "2026-11-17T08:42:18.489061-06:00",
   "Sacramento": "2026-11-17T08:43:25.410221-06:00",
@@ -4641,8 +4641,8 @@
   "Buffalo": "2026-11-17T08:43:14.842408-06:00"
  },
  "hot": [
-  "West South Central",
-  "Middle Atlantic"
+  "South Atlantic",
+  "West South Central"
  ],
  "cycle_seconds": 150,
  "pace": 5.0,
