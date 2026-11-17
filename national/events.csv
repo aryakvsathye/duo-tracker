@@ -3222,3 +3222,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 09:27,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,unavailable,MK1E4LL/A
 2026-11-17 09:28,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,available,MK1E4LL/A
 2026-11-17 09:28,Woodland,R132,Grand Rapids,MI,,0,124.9,unavailable,MK1E4LL/A
+2026-11-17 09:30,Baybrook,R204,Friendswood,TX,Houston,1,24.0,available,MK1E4LL/A
+2026-11-17 09:30,Galleria Dallas,R746,Dallas,TX,Dallas,1,4.8,unavailable,MK1E4LL/A
