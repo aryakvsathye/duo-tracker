@@ -22,7 +22,7 @@
   },
   "West County": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 618,
+ "checks": 621,
  "errors": 1,
- "events": 49,
+ "events": 50,
  "last_heartbeat": "2026-11-17",
  "nearby": {
   "Country Club Plaza": {
@@ -171,41 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-17T15:12:45.563645-06:00",
+ "last_check": "2026-11-17T15:15:45.421331-06:00",
  "history": [
-  {
-   "t": "2026-11-17T14:18:42-06:00",
-   "ok": true,
-   "ms": 390,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:19:02-06:00",
-   "ok": true,
-   "ms": 418,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:19:22-06:00",
-   "ok": true,
-   "ms": 407,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
   {
    "t": "2026-11-17T14:19:42-06:00",
    "ok": true,
@@ -1009,19 +976,33 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-17T15:12:44-06:00",
+   "ok": true,
+   "ms": 570,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T15:13:44-06:00",
+   "ok": true,
+   "ms": 752,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T15:14:44-06:00",
+   "ok": true,
+   "ms": 388,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
-  "West County": {
-   "miles": 234.82,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -1071,6 +1052,16 @@
    },
    "city": "Tulsa",
    "state": "OK"
+  },
+  "West County": {
+   "miles": 234.82,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
   },
   "Saint Louis Galleria": {
    "miles": 239.77,
