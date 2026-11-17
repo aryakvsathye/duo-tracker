@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 114,
+ "checks": 115,
  "errors": 0,
  "events": 11,
  "last_heartbeat": "2026-11-17",
@@ -173,14 +173,6 @@
  },
  "last_check": "2026-11-17T09:40:13.900787-06:00",
  "history": [
-  {
-   "t": "2026-11-17T08:30:20-06:00",
-   "ok": true,
-   "ms": 269,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-17T08:31:20-06:00",
    "ok": true,
@@ -947,6 +939,18 @@
    "ms": 368,
    "code": 200,
    "green": [
+    "Leawood",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:40:13-06:00",
+   "ok": true,
+   "ms": 360,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
     "Leawood",
     "Village Pointe"
    ],
