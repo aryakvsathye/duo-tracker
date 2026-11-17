@@ -42,16 +42,16 @@
   },
   "Hilldale": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Main Place": {
    "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 223,
+ "checks": 249,
  "errors": 0,
- "events": 21,
+ "events": 22,
  "last_heartbeat": "2026-11-17",
  "nearby": {
   "Country Club Plaza": {
@@ -171,272 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-17T10:16:33.635855-06:00",
+ "last_check": "2026-11-17T10:25:36.642490-06:00",
  "history": [
-  {
-   "t": "2026-11-17T09:46:34-06:00",
-   "ok": true,
-   "ms": 340,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:46:54-06:00",
-   "ok": true,
-   "ms": 240,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:47:14-06:00",
-   "ok": true,
-   "ms": 283,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:47:34-06:00",
-   "ok": true,
-   "ms": 249,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:47:54-06:00",
-   "ok": true,
-   "ms": 341,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:48:14-06:00",
-   "ok": true,
-   "ms": 280,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:48:34-06:00",
-   "ok": true,
-   "ms": 305,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:48:54-06:00",
-   "ok": true,
-   "ms": 230,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:49:14-06:00",
-   "ok": true,
-   "ms": 271,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:49:41-06:00",
-   "ok": true,
-   "ms": 247,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:50:01-06:00",
-   "ok": true,
-   "ms": 328,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:50:21-06:00",
-   "ok": true,
-   "ms": 346,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:50:41-06:00",
-   "ok": true,
-   "ms": 309,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:51:01-06:00",
-   "ok": true,
-   "ms": 348,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:51:21-06:00",
-   "ok": true,
-   "ms": 220,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:51:41-06:00",
-   "ok": true,
-   "ms": 221,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:52:01-06:00",
-   "ok": true,
-   "ms": 355,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:52:21-06:00",
-   "ok": true,
-   "ms": 307,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:52:41-06:00",
-   "ok": true,
-   "ms": 245,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:53:01-06:00",
-   "ok": true,
-   "ms": 223,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:53:21-06:00",
-   "ok": true,
-   "ms": 306,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:53:41-06:00",
-   "ok": true,
-   "ms": 249,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:54:01-06:00",
-   "ok": true,
-   "ms": 295,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:54:21-06:00",
-   "ok": true,
-   "ms": 339,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:54:41-06:00",
-   "ok": true,
-   "ms": 230,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:55:01-06:00",
-   "ok": true,
-   "ms": 309,
-   "code": 200,
-   "green": [
-    "Jordan Creek"
-   ],
-   "burst": true
-  },
   {
    "t": "2026-11-17T09:55:21-06:00",
    "ok": true,
@@ -952,6 +688,214 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-17T10:16:56-06:00",
+   "ok": true,
+   "ms": 428,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:17:16-06:00",
+   "ok": true,
+   "ms": 472,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:17:36-06:00",
+   "ok": true,
+   "ms": 409,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:17:56-06:00",
+   "ok": true,
+   "ms": 326,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:18:16-06:00",
+   "ok": true,
+   "ms": 420,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:18:36-06:00",
+   "ok": true,
+   "ms": 343,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:18:56-06:00",
+   "ok": true,
+   "ms": 491,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:19:16-06:00",
+   "ok": true,
+   "ms": 378,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:19:36-06:00",
+   "ok": true,
+   "ms": 462,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:19:56-06:00",
+   "ok": true,
+   "ms": 445,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:20:16-06:00",
+   "ok": true,
+   "ms": 328,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:20:36-06:00",
+   "ok": true,
+   "ms": 554,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:20:56-06:00",
+   "ok": true,
+   "ms": 345,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:21:16-06:00",
+   "ok": true,
+   "ms": 364,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:21:36-06:00",
+   "ok": true,
+   "ms": 370,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:21:56-06:00",
+   "ok": true,
+   "ms": 491,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:22:16-06:00",
+   "ok": true,
+   "ms": 460,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:22:36-06:00",
+   "ok": true,
+   "ms": 478,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:22:56-06:00",
+   "ok": true,
+   "ms": 349,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:23:16-06:00",
+   "ok": true,
+   "ms": 375,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:23:36-06:00",
+   "ok": true,
+   "ms": 410,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:23:56-06:00",
+   "ok": true,
+   "ms": 285,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:24:16-06:00",
+   "ok": true,
+   "ms": 443,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:24:36-06:00",
+   "ok": true,
+   "ms": 521,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:24:56-06:00",
+   "ok": true,
+   "ms": 391,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:25:16-06:00",
+   "ok": true,
+   "ms": 305,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
@@ -974,16 +918,6 @@
    },
    "city": "Germantown",
    "state": "TN"
-  },
-  "Hilldale": {
-   "miles": 394.05,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Madison",
-   "state": "WI"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -1064,6 +998,16 @@
    },
    "city": "Oklahoma City",
    "state": "OK"
+  },
+  "Hilldale": {
+   "miles": 394.05,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Madison",
+   "state": "WI"
   },
   "Main Place": {
    "miles": 397.06,
