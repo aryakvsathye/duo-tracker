@@ -3099,3 +3099,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 08:50,The Woodlands,R126,The Woodlands,TX,Houston,1,28.7,unavailable,MK1E4LL/A
 2026-11-17 08:52,The Mall at Bay Plaza,R753,Bronx,NY,New York,1,10.6,available,MK1E4LL/A
 2026-11-17 08:52,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,unavailable,MK1E4LL/A
+2026-11-17 08:52,Syracuse,R107,Syracuse,NY,,0,131.6,unavailable,MK1E4LL/A
+2026-11-17 08:52,Chestnut Hill,R076,Chestnut Hill,MA,Boston,1,5.5,unavailable,MK1E4LL/A
