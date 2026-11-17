@@ -4189,8 +4189,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-17T16:19:28.038048-06:00",
- "metros_ok": 43,
+ "last_sweep": "2026-11-17T16:19:34.980205-06:00",
+ "metros_ok": 47,
  "metros": [
   {
    "metro": "New York",
@@ -4493,7 +4493,7 @@
    "state": "NY"
   }
  ],
- "retries": 3,
+ "retries": 1,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4505,12 +4505,13 @@
  "metro_skip": {
   "Washington": 1,
   "Memphis": 1,
-  "Salt Lake City": 1
+  "Salt Lake City": 1,
+  "San Francisco": 1
  },
  "skipped": [],
  "checked_at": {
   "New York": "2026-11-17T16:16:43.010266-06:00",
-  "Los Angeles": "2026-11-17T16:15:35.426225-06:00",
+  "Los Angeles": "2026-11-17T16:19:34.980119-06:00",
   "Chicago": "2026-11-17T16:16:21.489934-06:00",
   "Dallas": "2026-11-17T16:18:06.332636-06:00",
   "Houston": "2026-11-17T16:16:57.711325-06:00",
@@ -4520,7 +4521,7 @@
   "Miami": "2026-11-17T16:17:29.989632-06:00",
   "Phoenix": "2026-11-17T16:15:45.335086-06:00",
   "Boston": "2026-11-17T16:18:21.430058-06:00",
-  "San Francisco": "2026-11-17T16:15:40.419363-06:00",
+  "San Francisco": "2026-11-17T16:19:50.301763-06:00",
   "Detroit": "2026-11-17T16:16:26.679825-06:00",
   "Seattle": "2026-11-17T16:16:01.666186-06:00",
   "Minneapolis": "2026-11-17T16:17:44.768479-06:00",
@@ -4562,7 +4563,7 @@
  },
  "ok_at": {
   "New York": "2026-11-17T16:16:43.010280-06:00",
-  "Los Angeles": "2026-11-17T16:15:35.426239-06:00",
+  "Los Angeles": "2026-11-17T16:19:34.980133-06:00",
   "Chicago": "2026-11-17T16:16:21.489949-06:00",
   "Dallas": "2026-11-17T16:18:06.332650-06:00",
   "Houston": "2026-11-17T16:16:57.711339-06:00",
@@ -4613,8 +4614,8 @@
   "Buffalo": "2026-11-17T16:17:15.208743-06:00"
  },
  "hot": [
-  "West South Central",
-  "Pacific"
+  "Pacific",
+  "West South Central"
  ],
  "cycle_seconds": 150,
  "pace": 4.5,
@@ -4643,5 +4644,5 @@
   "2026-11-17T10:34-06:00"
  ],
  "last_weekly": "2026-W46",
- "last_error": "2026-11-17T16:14-06:00: Washington: HTTP 541; Memphis: HTTP 541; Salt Lake City: HTTP 541"
+ "last_error": "2026-11-17T16:19-06:00: San Francisco: HTTP 541"
 }
