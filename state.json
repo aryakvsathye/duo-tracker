@@ -46,12 +46,12 @@
   },
   "Main Place": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 142,
+ "checks": 145,
  "errors": 0,
- "events": 14,
+ "events": 15,
  "last_heartbeat": "2026-11-17",
  "nearby": {
   "Jordan Creek": {
@@ -171,32 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-17T09:49:15.028746-06:00",
+ "last_check": "2026-11-17T09:50:42.303926-06:00",
  "history": [
-  {
-   "t": "2026-11-17T08:56:41-06:00",
-   "ok": true,
-   "ms": 216,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:57:41-06:00",
-   "ok": true,
-   "ms": 205,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:58:11-06:00",
-   "ok": true,
-   "ms": 351,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-17T08:59:11-06:00",
    "ok": true,
@@ -1039,6 +1015,36 @@
     "Jordan Creek"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-17T09:49:41-06:00",
+   "ok": true,
+   "ms": 247,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:50:01-06:00",
+   "ok": true,
+   "ms": 328,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:50:21-06:00",
+   "ok": true,
+   "ms": 346,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -1071,16 +1077,6 @@
    },
    "city": "Little Rock",
    "state": "AR"
-  },
-  "Main Place": {
-   "miles": 397.06,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Naperville",
-   "state": "IL"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -1161,6 +1157,16 @@
    },
    "city": "Madison",
    "state": "WI"
+  },
+  "Main Place": {
+   "miles": 397.06,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Naperville",
+   "state": "IL"
   }
  },
  "token_expires": "2026-11-26",
