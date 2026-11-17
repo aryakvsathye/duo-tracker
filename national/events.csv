@@ -3462,3 +3462,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 14:03,Otay Ranch,R213,Chula Vista,CA,San Diego,2,14.6,available,MK1E4LL/A
 2026-11-17 14:04,Downtown Detroit,R763,Detroit,MI,Detroit,2,16.7,available,MK1E4LL/A
 2026-11-17 14:05,Village Pointe,R190,Omaha,NE,Omaha,3,0.3,available,MK1E4LL/A
+2026-11-17 14:06,Bridgeport Village,R134,Tigard,OR,Portland,2,7.0,available,MK1E4LL/A
+2026-11-17 14:06,Downtown Detroit,R763,Detroit,MI,Detroit,2,16.7,unavailable,MK1E4LL/A
