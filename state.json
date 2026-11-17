@@ -22,7 +22,7 @@
   },
   "West County": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 496,
+ "checks": 519,
  "errors": 1,
- "events": 39,
+ "events": 40,
  "last_heartbeat": "2026-11-17",
  "nearby": {
   "Village Pointe": {
@@ -171,192 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-17T14:07:24.489924-06:00",
+ "last_check": "2026-11-17T14:15:29.789470-06:00",
  "history": [
-  {
-   "t": "2026-11-17T12:46:37-06:00",
-   "ok": true,
-   "ms": 356,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T12:47:37-06:00",
-   "ok": true,
-   "ms": 497,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T12:48:37-06:00",
-   "ok": true,
-   "ms": 1149,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T12:51:47-06:00",
-   "ok": true,
-   "ms": 569,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T12:52:47-06:00",
-   "ok": true,
-   "ms": 692,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T12:53:47-06:00",
-   "ok": true,
-   "ms": 509,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T12:54:47-06:00",
-   "ok": true,
-   "ms": 560,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T12:55:47-06:00",
-   "ok": true,
-   "ms": 753,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T12:56:47-06:00",
-   "ok": true,
-   "ms": 1028,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T12:57:47-06:00",
-   "ok": true,
-   "ms": 440,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T12:58:47-06:00",
-   "ok": true,
-   "ms": 331,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T12:59:47-06:00",
-   "ok": true,
-   "ms": 418,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T13:00:07-06:00",
-   "ok": true,
-   "ms": 697,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T13:01:07-06:00",
-   "ok": true,
-   "ms": 445,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T13:02:07-06:00",
-   "ok": true,
-   "ms": 493,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T13:03:07-06:00",
-   "ok": true,
-   "ms": 553,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T13:04:07-06:00",
-   "ok": true,
-   "ms": 565,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T13:05:07-06:00",
-   "ok": true,
-   "ms": 783,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T13:06:07-06:00",
-   "ok": true,
-   "ms": 523,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T13:07:07-06:00",
-   "ok": true,
-   "ms": 396,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T13:08:07-06:00",
-   "ok": true,
-   "ms": 399,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T13:08:28-06:00",
-   "ok": true,
-   "ms": 1070,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T13:09:28-06:00",
-   "ok": true,
-   "ms": 762,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-17T13:10:28-06:00",
    "ok": true,
@@ -933,6 +749,259 @@
     "Village Pointe"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-17T14:07:49-06:00",
+   "ok": true,
+   "ms": 534,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:08:09-06:00",
+   "ok": true,
+   "ms": 348,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:08:29-06:00",
+   "ok": true,
+   "ms": 423,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:08:49-06:00",
+   "ok": true,
+   "ms": 442,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:09:09-06:00",
+   "ok": true,
+   "ms": 333,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:09:29-06:00",
+   "ok": true,
+   "ms": 397,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:09:49-06:00",
+   "ok": true,
+   "ms": 330,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:10:09-06:00",
+   "ok": true,
+   "ms": 365,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:10:29-06:00",
+   "ok": true,
+   "ms": 392,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:10:49-06:00",
+   "ok": true,
+   "ms": 566,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:11:09-06:00",
+   "ok": true,
+   "ms": 328,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:11:29-06:00",
+   "ok": true,
+   "ms": 338,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:11:49-06:00",
+   "ok": true,
+   "ms": 608,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:12:09-06:00",
+   "ok": true,
+   "ms": 413,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:12:29-06:00",
+   "ok": true,
+   "ms": 343,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:12:49-06:00",
+   "ok": true,
+   "ms": 709,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:13:09-06:00",
+   "ok": true,
+   "ms": 476,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:13:29-06:00",
+   "ok": true,
+   "ms": 382,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:13:49-06:00",
+   "ok": true,
+   "ms": 326,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:14:09-06:00",
+   "ok": true,
+   "ms": 538,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:14:29-06:00",
+   "ok": true,
+   "ms": 371,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:14:49-06:00",
+   "ok": true,
+   "ms": 390,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T14:15:09-06:00",
+   "ok": true,
+   "ms": 369,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Village Pointe"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -955,16 +1024,6 @@
    },
    "city": "West Des Moines",
    "state": "IA"
-  },
-  "West County": {
-   "miles": 234.82,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -995,6 +1054,16 @@
    },
    "city": "Tulsa",
    "state": "OK"
+  },
+  "West County": {
+   "miles": 234.82,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
   },
   "Saint Louis Galleria": {
    "miles": 239.77,
