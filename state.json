@@ -6,7 +6,7 @@
   },
   "Leawood": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Village Pointe": {
    "MK1F4LL/A": "unavailable",
@@ -49,39 +49,11 @@
    "MK1E4LL/A": "available"
   }
  },
- "checks": 131,
+ "checks": 137,
  "errors": 0,
- "events": 13,
+ "events": 14,
  "last_heartbeat": "2026-11-17",
  "nearby": {
-  "Leawood": {
-   "miles": 10.47,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "quotes": {
-    "MK1F4LL/A": "Currently unavailable at Apple Leawood",
-    "MK1E4LL/A": "Today at Apple Leawood"
-   },
-   "quote": "Currently unavailable at Apple Leawood",
-   "phone": "913-234 9800",
-   "lat": 38.91131,
-   "lon": -94.6378,
-   "address": "4529 West 119th Street",
-   "city": "Leawood",
-   "hours": [
-    {
-     "days": "Mon-Sat:",
-     "time": "10:00 AM-8:00 PM"
-    },
-    {
-     "days": "Sun:",
-     "time": "11:00 AM-6:00 PM"
-    }
-   ]
-  },
   "Jordan Creek": {
    "miles": 183.62,
    "status": "available",
@@ -142,6 +114,34 @@
     }
    ]
   },
+  "Leawood": {
+   "miles": 10.47,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "quotes": {
+    "MK1F4LL/A": "Currently unavailable at Apple Leawood",
+    "MK1E4LL/A": "Currently unavailable at Apple Leawood"
+   },
+   "quote": "Currently unavailable at Apple Leawood",
+   "phone": "913-234 9800",
+   "lat": 38.91131,
+   "lon": -94.6378,
+   "address": "4529 West 119th Street",
+   "city": "Leawood",
+   "hours": [
+    {
+     "days": "Mon-Sat:",
+     "time": "10:00 AM-8:00 PM"
+    },
+    {
+     "days": "Sun:",
+     "time": "11:00 AM-6:00 PM"
+    }
+   ]
+  },
   "Village Pointe": {
    "miles": 171.88,
    "status": "unavailable",
@@ -171,56 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-17T09:45:55.218578-06:00",
+ "last_check": "2026-11-17T09:47:55.098555-06:00",
  "history": [
-  {
-   "t": "2026-11-17T08:46:09-06:00",
-   "ok": true,
-   "ms": 227,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:47:09-06:00",
-   "ok": true,
-   "ms": 318,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:48:09-06:00",
-   "ok": true,
-   "ms": 224,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:49:09-06:00",
-   "ok": true,
-   "ms": 239,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:49:41-06:00",
-   "ok": true,
-   "ms": 306,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:50:41-06:00",
-   "ok": true,
-   "ms": 214,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-17T08:51:41-06:00",
    "ok": true,
@@ -1011,19 +963,75 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-17T09:45:54-06:00",
+   "ok": true,
+   "ms": 462,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:46:14-06:00",
+   "ok": true,
+   "ms": 388,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:46:34-06:00",
+   "ok": true,
+   "ms": 340,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:46:54-06:00",
+   "ok": true,
+   "ms": 240,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:47:14-06:00",
+   "ok": true,
+   "ms": 283,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:47:34-06:00",
+   "ok": true,
+   "ms": 249,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
-  "Leawood": {
-   "miles": 10.47,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Leawood",
-   "state": "KS"
-  },
   "Jordan Creek": {
    "miles": 183.62,
    "status": "available",
@@ -1073,6 +1081,16 @@
    },
    "city": "Kansas City",
    "state": "MO"
+  },
+  "Leawood": {
+   "miles": 10.47,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Leawood",
+   "state": "KS"
   },
   "Village Pointe": {
    "miles": 171.88,
