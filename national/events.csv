@@ -3272,3 +3272,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 09:45,Fairfax Corner,R221,Fairfax,VA,Washington,1,18.5,unavailable,MK1E4LL/A
 2026-11-17 09:45,Oxmoor,R264,Louisville,KY,Louisville,3,1.8,unavailable,MK1E4LL/A
 2026-11-17 09:47,American Dream,R755,East Rutherford,NJ,New York,1,5.1,available,MK1E4LL/A
+2026-11-17 09:47,Michigan Avenue,R035,Chicago,IL,Chicago,1,0.5,available,MK1E4LL/A
+2026-11-17 09:47,Main Place,R348,Naperville,IL,Chicago,1,28.5,available,MK1E4LL/A
+2026-11-17 09:47,Fritz Farm,R288,Lexington,KY,,0,62.5,unavailable,MK1E4LL/A
