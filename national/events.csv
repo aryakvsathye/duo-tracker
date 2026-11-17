@@ -3190,3 +3190,8 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 09:17,Jordan Creek,R109,West Des Moines,IA,Des Moines,3,0.6,unavailable,MK1E4LL/A
 2026-11-17 09:18,Twelve Oaks,R041,Novi,MI,Detroit,2,15.6,unavailable,MK1E4LL/A
 2026-11-17 09:18,The Greene,R518,Beavercreek,OH,Cincinnati,2,36.9,unavailable,MK1E4LL/A
+2026-11-17 09:19,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,available,MK1E4LL/A
+2026-11-17 09:19,Lehigh Valley,R281,Whitehall,PA,Philadelphia,1,49.3,available,MK1E4LL/A
+2026-11-17 09:19,Bridgewater,R104,Bridgewater,NJ,,0,52.5,available,MK1E4LL/A
+2026-11-17 09:19,Menlo Park,R067,Edison,NJ,,0,60.3,available,MK1E4LL/A
+2026-11-17 09:19,Montgomery Mall,R084,Bethesda,MD,Washington,1,10.5,unavailable,MK1E4LL/A
