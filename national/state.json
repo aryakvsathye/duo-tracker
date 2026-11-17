@@ -1845,17 +1845,14 @@
    "metro": "Phoenix",
    "tier": 1,
    "miles": 6.0,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "US/Arizona",
    "region": "Mountain",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-17 11:18"
-   },
-   "since": "2026-11-17 11:18"
+   "since_by_part": {}
   },
   "R292": {
    "name": "Scottsdale Quarter",
@@ -4098,17 +4095,14 @@
    "metro": "",
    "tier": 0,
    "miles": 230.6,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Denver",
    "region": "West South Central",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-17 11:18"
-   },
-   "since": "2026-11-17 11:18"
+   "since_by_part": {}
   },
   "R073": {
    "name": "Ala Moana",
@@ -4183,8 +4177,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-17T11:29:24.565747-06:00",
- "metros_ok": 39,
+ "last_sweep": "2026-11-17T11:29:42.555477-06:00",
+ "metros_ok": 41,
  "metros": [
   {
    "metro": "New York",
@@ -4487,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 0,
+ "retries": 3,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4496,7 +4490,10 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {},
+ "metro_skip": {
+  "Richmond": 1,
+  "Los Angeles": 1
+ },
  "skipped": [],
  "checked_at": {
   "New York": "2026-11-17T11:27:34.534837-06:00",
@@ -4510,7 +4507,7 @@
   "Miami": "2026-11-17T11:26:29.979629-06:00",
   "Phoenix": "2026-11-17T11:24:13.005911-06:00",
   "Boston": "2026-11-17T11:27:40.353006-06:00",
-  "San Francisco": "2026-11-17T11:22:20.584821-06:00",
+  "San Francisco": "2026-11-17T11:29:36.716903-06:00",
   "Detroit": "2026-11-17T11:25:40.598543-06:00",
   "Seattle": "2026-11-17T11:22:45.055145-06:00",
   "Minneapolis": "2026-11-17T11:28:09.255474-06:00",
@@ -4541,7 +4538,7 @@
   "Little Rock": "2026-11-17T11:24:20.319194-06:00",
   "Memphis": "2026-11-17T11:25:59.536085-06:00",
   "Madison": "2026-11-17T11:25:28.031147-06:00",
-  "Albuquerque": "2026-11-17T11:22:37.902192-06:00",
+  "Albuquerque": "2026-11-17T11:29:42.555193-06:00",
   "Salt Lake City": "2026-11-17T11:22:50.834408-06:00",
   "Louisville": "2026-11-17T11:26:53.151735-06:00",
   "Birmingham": "2026-11-17T11:25:22.212464-06:00",
@@ -4562,7 +4559,7 @@
   "Miami": "2026-11-17T11:26:29.979650-06:00",
   "Phoenix": "2026-11-17T11:24:13.005930-06:00",
   "Boston": "2026-11-17T11:27:40.353024-06:00",
-  "San Francisco": "2026-11-17T11:22:20.584839-06:00",
+  "San Francisco": "2026-11-17T11:29:36.716922-06:00",
   "Detroit": "2026-11-17T11:25:40.598562-06:00",
   "Seattle": "2026-11-17T11:22:45.055163-06:00",
   "Minneapolis": "2026-11-17T11:28:09.255496-06:00",
@@ -4593,7 +4590,7 @@
   "Little Rock": "2026-11-17T11:24:20.319212-06:00",
   "Memphis": "2026-11-17T11:25:59.536136-06:00",
   "Madison": "2026-11-17T11:25:28.031166-06:00",
-  "Albuquerque": "2026-11-17T11:22:37.902208-06:00",
+  "Albuquerque": "2026-11-17T11:29:42.555213-06:00",
   "Salt Lake City": "2026-11-17T11:22:50.834427-06:00",
   "Louisville": "2026-11-17T11:26:53.151755-06:00",
   "Birmingham": "2026-11-17T11:25:22.212485-06:00",
@@ -4632,5 +4629,6 @@
   "2026-11-17T07:29-06:00",
   "2026-11-17T10:34-06:00"
  ],
- "last_weekly": "2026-W46"
+ "last_weekly": "2026-W46",
+ "last_error": "2026-11-17T11:29-06:00: Richmond: HTTP 200 but not store data; Los Angeles: HTTP 200 but not store data"
 }
