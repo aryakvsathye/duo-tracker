@@ -3528,3 +3528,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 15:14,Haywood Mall,R355,Greenville,SC,,0,89.9,available,MK1E4LL/A
 2026-11-17 15:15,Haywood Mall,R355,Greenville,SC,,0,89.9,unavailable,MK1E4LL/A
 2026-11-17 15:15,Roseville,R298,Roseville,CA,Sacramento,2,14.6,available,MK1E4LL/A
+2026-11-17 15:15,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,unavailable,MK1E4LL/A
+2026-11-17 15:16,Michigan Avenue,R035,Chicago,IL,Chicago,1,0.5,unavailable,MK1E4LL/A
