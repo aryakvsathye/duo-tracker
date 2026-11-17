@@ -22,7 +22,7 @@
   },
   "West County": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 90,
+ "checks": 91,
  "errors": 0,
- "events": 6,
+ "events": 7,
  "last_heartbeat": "2026-11-17",
  "nearby": {
   "Country Club Plaza": {
@@ -171,16 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-17T09:31:12.723484-06:00",
+ "last_check": "2026-11-17T09:32:33.900169-06:00",
  "history": [
-  {
-   "t": "2026-11-17T08:07:28-06:00",
-   "ok": true,
-   "ms": 341,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-17T08:08:28-06:00",
    "ok": true,
@@ -906,9 +898,27 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-17T09:31:33-06:00",
+   "ok": true,
+   "ms": 486,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
+  "West County": {
+   "miles": 234.82,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -958,16 +968,6 @@
    },
    "city": "Tulsa",
    "state": "OK"
-  },
-  "West County": {
-   "miles": 234.82,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
   },
   "Saint Louis Galleria": {
    "miles": 239.77,
@@ -1040,12 +1040,12 @@
   "MK1E4LL/A": "Star White"
  },
  "wave": {
-  "since": "2026-11-13T11:41:18.960654-06:00",
+  "since": "2026-11-17T09:32:33.900183-06:00",
   "stores": [
-   "Village Pointe",
-   "Saint Louis Galleria"
+   "Jordan Creek",
+   "West County"
   ],
-  "until": "2026-11-13T12:26:00-06:00"
+  "until": "2026-11-17T10:02:00-06:00"
  },
- "wave_alerted_at": "2026-11-13T11:07:52.294731-06:00"
+ "wave_alerted_at": "2026-11-17T09:32:33.900183-06:00"
 }
