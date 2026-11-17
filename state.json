@@ -6,7 +6,7 @@
   },
   "Leawood": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Village Pointe": {
    "MK1F4LL/A": "unavailable",
@@ -49,39 +49,11 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 624,
+ "checks": 641,
  "errors": 1,
- "events": 51,
+ "events": 52,
  "last_heartbeat": "2026-11-17",
  "nearby": {
-  "Leawood": {
-   "miles": 10.47,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "quotes": {
-    "MK1F4LL/A": "Currently unavailable at Apple Leawood",
-    "MK1E4LL/A": "Today at Apple Leawood"
-   },
-   "quote": "Currently unavailable at Apple Leawood",
-   "phone": "913-234 9800",
-   "lat": 38.91131,
-   "lon": -94.6378,
-   "address": "4529 West 119th Street",
-   "city": "Leawood",
-   "hours": [
-    {
-     "days": "Mon-Sat:",
-     "time": "10:00 AM-8:00 PM"
-    },
-    {
-     "days": "Sun:",
-     "time": "11:00 AM-6:00 PM"
-    }
-   ]
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -107,6 +79,34 @@
     {
      "days": "Sun:",
      "time": "12:00 PM-6:00 PM"
+    }
+   ]
+  },
+  "Leawood": {
+   "miles": 10.47,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "quotes": {
+    "MK1F4LL/A": "Currently unavailable at Apple Leawood",
+    "MK1E4LL/A": "Currently unavailable at Apple Leawood"
+   },
+   "quote": "Currently unavailable at Apple Leawood",
+   "phone": "913-234 9800",
+   "lat": 38.91131,
+   "lon": -94.6378,
+   "address": "4529 West 119th Street",
+   "city": "Leawood",
+   "hours": [
+    {
+     "days": "Mon-Sat:",
+     "time": "10:00 AM-8:00 PM"
+    },
+    {
+     "days": "Sun:",
+     "time": "11:00 AM-6:00 PM"
     }
    ]
   },
@@ -171,195 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-17T15:18:10.706204-06:00",
+ "last_check": "2026-11-17T15:23:50.370737-06:00",
  "history": [
-  {
-   "t": "2026-11-17T14:20:42-06:00",
-   "ok": true,
-   "ms": 435,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:21:02-06:00",
-   "ok": true,
-   "ms": 437,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:21:22-06:00",
-   "ok": true,
-   "ms": 414,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:21:42-06:00",
-   "ok": true,
-   "ms": 431,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:22:02-06:00",
-   "ok": true,
-   "ms": 435,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:22:22-06:00",
-   "ok": true,
-   "ms": 529,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:22:42-06:00",
-   "ok": true,
-   "ms": 449,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:23:02-06:00",
-   "ok": true,
-   "ms": 492,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:23:22-06:00",
-   "ok": true,
-   "ms": 538,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:23:42-06:00",
-   "ok": true,
-   "ms": 391,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:24:02-06:00",
-   "ok": true,
-   "ms": 446,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:24:22-06:00",
-   "ok": true,
-   "ms": 376,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:24:42-06:00",
-   "ok": true,
-   "ms": 431,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:25:02-06:00",
-   "ok": true,
-   "ms": 456,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:25:22-06:00",
-   "ok": true,
-   "ms": 465,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:25:42-06:00",
-   "ok": true,
-   "ms": 443,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T14:26:08-06:00",
-   "ok": true,
-   "ms": 799,
-   "code": 200,
-   "green": [
-    "Jordan Creek",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
   {
    "t": "2026-11-17T14:26:28-06:00",
    "ok": true,
@@ -991,19 +804,179 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-17T15:18:10-06:00",
+   "ok": true,
+   "ms": 599,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T15:18:30-06:00",
+   "ok": true,
+   "ms": 379,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T15:18:50-06:00",
+   "ok": true,
+   "ms": 341,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T15:19:10-06:00",
+   "ok": true,
+   "ms": 255,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T15:19:30-06:00",
+   "ok": true,
+   "ms": 258,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T15:19:50-06:00",
+   "ok": true,
+   "ms": 322,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T15:20:10-06:00",
+   "ok": true,
+   "ms": 254,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T15:20:30-06:00",
+   "ok": true,
+   "ms": 294,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T15:20:50-06:00",
+   "ok": true,
+   "ms": 236,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T15:21:10-06:00",
+   "ok": true,
+   "ms": 264,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T15:21:30-06:00",
+   "ok": true,
+   "ms": 251,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T15:21:50-06:00",
+   "ok": true,
+   "ms": 368,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T15:22:10-06:00",
+   "ok": true,
+   "ms": 318,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T15:22:30-06:00",
+   "ok": true,
+   "ms": 248,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T15:22:50-06:00",
+   "ok": true,
+   "ms": 248,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T15:23:10-06:00",
+   "ok": true,
+   "ms": 360,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T15:23:30-06:00",
+   "ok": true,
+   "ms": 251,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
-  "Leawood": {
-   "miles": 10.47,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Leawood",
-   "state": "KS"
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -1013,6 +986,16 @@
    },
    "city": "Kansas City",
    "state": "MO"
+  },
+  "Leawood": {
+   "miles": 10.47,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Leawood",
+   "state": "KS"
   },
   "Village Pointe": {
    "miles": 171.88,
@@ -1132,5 +1115,5 @@
   ],
   "until": "2026-11-17T15:48:00-06:00"
  },
- "wave_alerted_at": "2026-11-17T09:32:33.900183-06:00"
+ "wave_alerted_at": "2026-11-17T15:23:50.370748-06:00"
 }
