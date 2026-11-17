@@ -3556,3 +3556,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 15:44,Fritz Farm,R288,Lexington,KY,,0,62.5,available,MK1F4LL/A
 2026-11-17 15:44,University Park Mall,R360,Mishawaka,IN,,0,74.7,available,MK1E4LL/A
 2026-11-17 15:44,Franklin Park Mall,R299,Toledo,OH,,0,64.2,unavailable,MK1F4LL/A
+2026-11-17 15:45,Washington Square,R090,Tigard,OR,Portland,2,3.4,available,MK1E4LL/A
+2026-11-17 15:45,Century City,R108,Los Angeles,CA,Los Angeles,1,0.2,available,MK1E4LL/A
