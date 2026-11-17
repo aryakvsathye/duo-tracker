@@ -10,7 +10,7 @@
   },
   "Village Pointe": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Jordan Creek": {
    "MK1F4LL/A": "unavailable",
@@ -49,11 +49,39 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 483,
+ "checks": 487,
  "errors": 1,
- "events": 37,
+ "events": 38,
  "last_heartbeat": "2026-11-17",
  "nearby": {
+  "Village Pointe": {
+   "miles": 171.88,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "quotes": {
+    "MK1F4LL/A": "Currently unavailable at Apple Village Pointe",
+    "MK1E4LL/A": "Today at Apple Village Pointe"
+   },
+   "quote": "Currently unavailable at Apple Village Pointe",
+   "phone": "402-970 4477",
+   "lat": 41.261188,
+   "lon": -96.183078,
+   "address": "17170 Davenport Street",
+   "city": "Omaha",
+   "hours": [
+    {
+     "days": "Sun:",
+     "time": "11:00 AM-5:00 PM"
+    },
+    {
+     "days": "Mon-Sat:",
+     "time": "10:00 AM-9:00 PM"
+    }
+   ]
+  },
   "Jordan Creek": {
    "miles": 183.62,
    "status": "available",
@@ -141,70 +169,10 @@
      "time": "11:00 AM-6:00 PM"
     }
    ]
-  },
-  "Village Pointe": {
-   "miles": 171.88,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "quotes": {
-    "MK1F4LL/A": "Currently unavailable at Apple Village Pointe",
-    "MK1E4LL/A": "Currently unavailable at Apple Village Pointe"
-   },
-   "quote": "Currently unavailable at Apple Village Pointe",
-   "phone": "402-970 4477",
-   "lat": 41.261188,
-   "lon": -96.183078,
-   "address": "17170 Davenport Street",
-   "city": "Omaha",
-   "hours": [
-    {
-     "days": "Sun:",
-     "time": "11:00 AM-5:00 PM"
-    },
-    {
-     "days": "Mon-Sat:",
-     "time": "10:00 AM-9:00 PM"
-    }
-   ]
   }
  },
- "last_check": "2026-11-17T14:00:44.410336-06:00",
+ "last_check": "2026-11-17T14:04:44.477998-06:00",
  "history": [
-  {
-   "t": "2026-11-17T12:34:10-06:00",
-   "ok": true,
-   "ms": 489,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T12:35:10-06:00",
-   "ok": true,
-   "ms": 578,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T12:36:10-06:00",
-   "ok": true,
-   "ms": 377,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T12:37:10-06:00",
-   "ok": true,
-   "ms": 702,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-17T12:38:10-06:00",
    "ok": true,
@@ -898,9 +866,59 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-17T14:00:44-06:00",
+   "ok": true,
+   "ms": 314,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T14:01:44-06:00",
+   "ok": true,
+   "ms": 301,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T14:02:44-06:00",
+   "ok": true,
+   "ms": 369,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-17T14:03:44-06:00",
+   "ok": true,
+   "ms": 372,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": false
   }
  ],
  "field": {
+  "Village Pointe": {
+   "miles": 171.88,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Omaha",
+   "state": "NE"
+  },
   "Jordan Creek": {
    "miles": 183.62,
    "status": "available",
@@ -930,16 +948,6 @@
    },
    "city": "Leawood",
    "state": "KS"
-  },
-  "Village Pointe": {
-   "miles": 171.88,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Omaha",
-   "state": "NE"
   },
   "Woodland Hills": {
    "miles": 212.92,
@@ -1032,12 +1040,12 @@
   "MK1E4LL/A": "Star White"
  },
  "wave": {
-  "since": "2026-11-17T09:32:33.900183-06:00",
+  "since": "2026-11-17T14:04:44.478008-06:00",
   "stores": [
-   "Saddle Creek",
-   "Hilldale"
+   "Jordan Creek",
+   "Village Pointe"
   ],
-  "until": "2026-11-17T10:29:00-06:00"
+  "until": "2026-11-17T14:34:00-06:00"
  },
  "wave_alerted_at": "2026-11-17T09:32:33.900183-06:00"
 }
