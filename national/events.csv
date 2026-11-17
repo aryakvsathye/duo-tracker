@@ -3074,3 +3074,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 08:41,Memorial City,R164,Houston,TX,Houston,1,4.8,available,MK1E4LL/A
 2026-11-17 08:41,Clarendon,R036,Arlington,VA,Washington,1,4.2,available,MK1E4LL/A
 2026-11-17 08:41,Crabtree Valley Mall,R116,Raleigh,NC,Raleigh,2,1.5,available,MK1F4LL/A
+2026-11-17 08:42,Legacy Place,R346,Dedham,MA,Boston,1,9.8,available,MK1E4LL/A
+2026-11-17 08:42,Burlington,R155,Burlington,MA,Boston,1,11.6,unavailable,MK1E4LL/A
