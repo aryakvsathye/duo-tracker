@@ -3334,3 +3334,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 10:09,Fairfax Corner,R221,Fairfax,VA,Washington,1,18.5,available,MK1E4LL/A
 2026-11-17 10:10,Fairfax Corner,R221,Fairfax,VA,Washington,1,18.5,unavailable,MK1E4LL/A
 2026-11-17 10:10,La Cantera,R131,San Antonio,TX,San Antonio,2,8.4,available,MK1E4LL/A
+2026-11-17 10:11,Mall of America,R007,Bloomington,MN,Minneapolis,2,1.2,unavailable,MK1E4LL/A
+2026-11-17 10:11,West County,R062,Saint Louis,MO,St. Louis,2,6.8,unavailable,MK1E4LL/A
+2026-11-17 10:11,Deer Park,R258,Deer Park,IL,Chicago,1,28.8,unavailable,MK1E4LL/A
+2026-11-17 10:11,Woodfield,R018,Schaumburg,IL,Chicago,1,23.8,unavailable,MK1E4LL/A
