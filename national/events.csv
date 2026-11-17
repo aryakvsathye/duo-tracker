@@ -3325,3 +3325,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 10:06,Ridgedale,R183,Minnetonka,MN,Minneapolis,2,13.3,available,MK1E4LL/A
 2026-11-17 10:06,Hilldale,R229,Madison,WI,Madison,3,0.6,unavailable,MK1F4LL/A
 2026-11-17 10:06,Birkdale Village,R796,Huntersville,NC,Charlotte,2,19.5,unavailable,MK1E4LL/A
+2026-11-17 10:07,Cielo Vista Mall,R492,El Paso,TX,,0,230.6,available,MK1E4LL/A
+2026-11-17 10:07,Arrowhead,R247,Glendale,AZ,Phoenix,1,14.6,unavailable,MK1E4LL/A
