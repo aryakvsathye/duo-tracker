@@ -10,7 +10,7 @@
   },
   "Village Pointe": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Jordan Creek": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 115,
+ "checks": 123,
  "errors": 0,
- "events": 11,
+ "events": 12,
  "last_heartbeat": "2026-11-17",
  "nearby": {
   "Leawood": {
@@ -79,34 +79,6 @@
     {
      "days": "Sun:",
      "time": "11:00 AM-6:00 PM"
-    }
-   ]
-  },
-  "Village Pointe": {
-   "miles": 171.88,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "quotes": {
-    "MK1F4LL/A": "Currently unavailable at Apple Village Pointe",
-    "MK1E4LL/A": "Today at Apple Village Pointe"
-   },
-   "quote": "Currently unavailable at Apple Village Pointe",
-   "phone": "402-970 4477",
-   "lat": 41.261188,
-   "lon": -96.183078,
-   "address": "17170 Davenport Street",
-   "city": "Omaha",
-   "hours": [
-    {
-     "days": "Sun:",
-     "time": "11:00 AM-5:00 PM"
-    },
-    {
-     "days": "Mon-Sat:",
-     "time": "10:00 AM-9:00 PM"
     }
    ]
   },
@@ -169,74 +141,38 @@
      "time": "12:00 PM-6:00 PM"
     }
    ]
+  },
+  "Village Pointe": {
+   "miles": 171.88,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "quotes": {
+    "MK1F4LL/A": "Currently unavailable at Apple Village Pointe",
+    "MK1E4LL/A": "Currently unavailable at Apple Village Pointe"
+   },
+   "quote": "Currently unavailable at Apple Village Pointe",
+   "phone": "402-970 4477",
+   "lat": 41.261188,
+   "lon": -96.183078,
+   "address": "17170 Davenport Street",
+   "city": "Omaha",
+   "hours": [
+    {
+     "days": "Sun:",
+     "time": "11:00 AM-5:00 PM"
+    },
+    {
+     "days": "Mon-Sat:",
+     "time": "10:00 AM-9:00 PM"
+    }
+   ]
   }
  },
- "last_check": "2026-11-17T09:40:13.900787-06:00",
+ "last_check": "2026-11-17T09:43:15.101403-06:00",
  "history": [
-  {
-   "t": "2026-11-17T08:31:20-06:00",
-   "ok": true,
-   "ms": 325,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:32:20-06:00",
-   "ok": true,
-   "ms": 340,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:32:47-06:00",
-   "ok": true,
-   "ms": 473,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:33:47-06:00",
-   "ok": true,
-   "ms": 336,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:34:47-06:00",
-   "ok": true,
-   "ms": 319,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:35:47-06:00",
-   "ok": true,
-   "ms": 428,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:36:47-06:00",
-   "ok": true,
-   "ms": 445,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-17T08:37:47-06:00",
-   "ok": true,
-   "ms": 365,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-17T08:38:47-06:00",
    "ok": true,
@@ -955,6 +891,102 @@
     "Village Pointe"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-17T09:40:34-06:00",
+   "ok": true,
+   "ms": 466,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:40:54-06:00",
+   "ok": true,
+   "ms": 308,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:41:14-06:00",
+   "ok": true,
+   "ms": 385,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:41:34-06:00",
+   "ok": true,
+   "ms": 347,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:41:54-06:00",
+   "ok": true,
+   "ms": 434,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:42:14-06:00",
+   "ok": true,
+   "ms": 237,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:42:34-06:00",
+   "ok": true,
+   "ms": 348,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood",
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T09:42:54-06:00",
+   "ok": true,
+   "ms": 319,
+   "code": 200,
+   "green": [
+    "Jordan Creek",
+    "Leawood",
+    "Village Pointe"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -967,16 +999,6 @@
    },
    "city": "Leawood",
    "state": "KS"
-  },
-  "Village Pointe": {
-   "miles": 171.88,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Omaha",
-   "state": "NE"
   },
   "Jordan Creek": {
    "miles": 183.62,
@@ -1017,6 +1039,16 @@
    },
    "city": "Kansas City",
    "state": "MO"
+  },
+  "Village Pointe": {
+   "miles": 171.88,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Omaha",
+   "state": "NE"
   },
   "Woodland Hills": {
    "miles": 212.92,
@@ -1091,10 +1123,10 @@
  "wave": {
   "since": "2026-11-17T09:32:33.900183-06:00",
   "stores": [
-   "Jordan Creek",
    "West County",
    "Village Pointe",
    "Leawood",
+   "Jordan Creek",
    "The Promenade at Chenal"
   ],
   "until": "2026-11-17T10:10:00-06:00"
