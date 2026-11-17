@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 183,
+ "checks": 196,
  "errors": 0,
  "events": 20,
  "last_heartbeat": "2026-11-17",
@@ -171,133 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-17T10:03:23.645577-06:00",
+ "last_check": "2026-11-17T10:07:23.536860-06:00",
  "history": [
-  {
-   "t": "2026-11-17T09:33:13-06:00",
-   "ok": true,
-   "ms": 353,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:33:33-06:00",
-   "ok": true,
-   "ms": 358,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:33:53-06:00",
-   "ok": true,
-   "ms": 439,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:34:13-06:00",
-   "ok": true,
-   "ms": 257,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:34:33-06:00",
-   "ok": true,
-   "ms": 386,
-   "code": 200,
-   "green": [
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:34:53-06:00",
-   "ok": true,
-   "ms": 289,
-   "code": 200,
-   "green": [
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:35:13-06:00",
-   "ok": true,
-   "ms": 326,
-   "code": 200,
-   "green": [
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:35:33-06:00",
-   "ok": true,
-   "ms": 349,
-   "code": 200,
-   "green": [
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:35:53-06:00",
-   "ok": true,
-   "ms": 318,
-   "code": 200,
-   "green": [
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:36:13-06:00",
-   "ok": true,
-   "ms": 316,
-   "code": 200,
-   "green": [
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:36:33-06:00",
-   "ok": true,
-   "ms": 453,
-   "code": 200,
-   "green": [
-    "Leawood",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:36:53-06:00",
-   "ok": true,
-   "ms": 276,
-   "code": 200,
-   "green": [
-    "Leawood",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-17T09:37:13-06:00",
-   "ok": true,
-   "ms": 351,
-   "code": 200,
-   "green": [
-    "Leawood",
-    "Village Pointe"
-   ],
-   "burst": true
-  },
   {
    "t": "2026-11-17T09:37:33-06:00",
    "ok": true,
@@ -1063,6 +938,110 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-17T10:03:23-06:00",
+   "ok": true,
+   "ms": 382,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:03:43-06:00",
+   "ok": true,
+   "ms": 426,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:04:03-06:00",
+   "ok": true,
+   "ms": 358,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:04:23-06:00",
+   "ok": true,
+   "ms": 408,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:04:43-06:00",
+   "ok": true,
+   "ms": 229,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:05:03-06:00",
+   "ok": true,
+   "ms": 589,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:05:23-06:00",
+   "ok": true,
+   "ms": 837,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:05:43-06:00",
+   "ok": true,
+   "ms": 358,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:06:03-06:00",
+   "ok": true,
+   "ms": 263,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:06:23-06:00",
+   "ok": true,
+   "ms": 557,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:06:43-06:00",
+   "ok": true,
+   "ms": 296,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:07:03-06:00",
+   "ok": true,
+   "ms": 246,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-17T10:07:23-06:00",
+   "ok": true,
+   "ms": 272,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
@@ -1199,7 +1178,6 @@
  "wave": {
   "since": "2026-11-17T09:32:33.900183-06:00",
   "stores": [
-   "Main Place",
    "Saddle Creek",
    "Hilldale"
   ],
