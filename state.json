@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 98,
+ "checks": 99,
  "errors": 0,
  "events": 4,
  "last_heartbeat": "2026-11-18",
@@ -173,14 +173,6 @@
  },
  "last_check": "2026-11-18T09:39:18.853531-06:00",
  "history": [
-  {
-   "t": "2026-11-18T08:15:22-06:00",
-   "ok": true,
-   "ms": 524,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-18T08:15:43-06:00",
    "ok": true,
@@ -903,6 +895,14 @@
    "green": [
     "Jordan Creek"
    ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-18T09:39:18-06:00",
+   "ok": true,
+   "ms": 528,
+   "code": 200,
+   "green": [],
    "burst": false
   }
  ],
