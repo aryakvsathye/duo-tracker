@@ -3822,3 +3822,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 09:22,Fritz Farm,R288,Lexington,KY,,0,62.5,unavailable,MK1F4LL/A
 2026-11-18 09:22,Queens Center,R612,Elmhurst,NY,New York,1,6.5,unavailable,MK1F4LL/A
 2026-11-18 09:22,Michigan Avenue,R035,Chicago,IL,Chicago,1,0.5,available,MK1F4LL/A
+2026-11-18 09:23,Wellington Green,R024,Wellington,FL,,0,60.9,unavailable,MK1F4LL/A
+2026-11-18 09:23,International Plaza,R019,Tampa,FL,Tampa,2,1.1,available,MK1E4LL/A
