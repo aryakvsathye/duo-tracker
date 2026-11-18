@@ -3829,3 +3829,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 09:27,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,unavailable,MK1E4LL/A
 2026-11-18 09:27,International Plaza,R019,Tampa,FL,Tampa,2,1.1,unavailable,MK1E4LL/A
 2026-11-18 09:29,Michigan Avenue,R035,Chicago,IL,Chicago,1,0.5,unavailable,MK1F4LL/A
+2026-11-18 09:31,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,available,MK1E4LL/A
+2026-11-18 09:31,Lincoln Road,R115,Miami Beach,FL,Miami,1,3.6,unavailable,MK1E4LL/A
+2026-11-18 09:31,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,available,MK1F4LL/A
+2026-11-18 09:31,Waterside Shops,R169,Naples,FL,,0,104.7,available,MK1E4LL/A
