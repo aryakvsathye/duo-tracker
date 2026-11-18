@@ -3591,14 +3591,17 @@
    "metro": "Indianapolis",
    "tier": 2,
    "miles": 1.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Indianapolis",
    "region": "East North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-17 23:24"
+   },
+   "since": "2026-11-17 23:24"
   },
   "R020": {
    "name": "Saddle Creek",
@@ -4177,7 +4180,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-17T23:00:17.998835-06:00",
+ "last_sweep": "2026-11-17T23:24:46.049493-06:00",
  "metros_ok": 49,
  "metros": [
   {
@@ -4521,7 +4524,7 @@
   "Pittsburgh": "2026-11-17T22:59:13.889239-06:00",
   "Austin": "2026-11-17T22:57:08.589238-06:00",
   "Las Vegas": "2026-11-17T22:55:37.531192-06:00",
-  "Cincinnati": "2026-11-17T22:54:45.516271-06:00",
+  "Cincinnati": "2026-11-17T23:24:46.049145-06:00",
   "Kansas City": "2026-11-17T22:57:59.224019-06:00",
   "Columbus": "2026-11-17T22:55:15.709232-06:00",
   "Indianapolis": "2026-11-17T22:56:17.769440-06:00",
@@ -4573,7 +4576,7 @@
   "Pittsburgh": "2026-11-17T22:59:13.889258-06:00",
   "Austin": "2026-11-17T22:57:08.589258-06:00",
   "Las Vegas": "2026-11-17T22:55:37.531212-06:00",
-  "Cincinnati": "2026-11-17T22:54:45.516293-06:00",
+  "Cincinnati": "2026-11-17T23:24:46.049165-06:00",
   "Kansas City": "2026-11-17T22:57:59.224039-06:00",
   "Columbus": "2026-11-17T22:55:15.709252-06:00",
   "Indianapolis": "2026-11-17T22:56:17.769460-06:00",
