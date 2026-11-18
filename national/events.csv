@@ -3641,3 +3641,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 20:11,Southcenter,R106,Tukwila,WA,Seattle,2,10.7,unavailable,MK1E4LL/A
 2026-11-17 20:11,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,unavailable,MK1E4LL/A
 2026-11-17 20:19,Pasadena,R034,Pasadena,CA,,0,216.7,available,MK1E4LL/A
+2026-11-17 20:24,Pasadena,R034,Pasadena,CA,,0,216.7,unavailable,MK1E4LL/A
