@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 516,
+ "checks": 519,
  "errors": 1,
  "events": 25,
  "last_heartbeat": "2026-11-18",
@@ -171,32 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-18T14:43:21.435852-06:00",
+ "last_check": "2026-11-18T14:45:21.127337-06:00",
  "history": [
-  {
-   "t": "2026-11-18T13:19:36-06:00",
-   "ok": true,
-   "ms": 312,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-18T13:20:36-06:00",
-   "ok": true,
-   "ms": 306,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-18T13:21:36-06:00",
-   "ok": true,
-   "ms": 376,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-18T13:22:03-06:00",
    "ok": true,
@@ -937,6 +913,36 @@
    "ms": 537,
    "code": 200,
    "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-18T14:43:20-06:00",
+   "ok": true,
+   "ms": 815,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-18T14:44:20-06:00",
+   "ok": true,
+   "ms": 1122,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-18T14:45:20-06:00",
+   "ok": true,
+   "ms": 508,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
    "burst": false
   }
  ],
