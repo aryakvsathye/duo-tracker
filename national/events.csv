@@ -3883,3 +3883,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 10:01,Queens Center,R612,Elmhurst,NY,New York,1,6.5,unavailable,MK1F4LL/A
 2026-11-18 10:01,Hilldale,R229,Madison,WI,Madison,3,0.6,available,MK1E4LL/A
 2026-11-18 10:01,Jordan Creek,R109,West Des Moines,IA,Des Moines,3,0.6,unavailable,MK1E4LL/A
+2026-11-18 10:02,The Summit,R225,Birmingham,AL,Birmingham,3,0.6,unavailable,MK1F4LL/A
+2026-11-18 10:02,Aventura,R087,Aventura,FL,Miami,1,13.6,unavailable,MK1F4LL/A
