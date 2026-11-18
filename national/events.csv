@@ -3867,3 +3867,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 09:50,Short Pump Town Center,R078,Richmond,VA,Richmond,3,1.1,unavailable,MK1E4LL/A
 2026-11-18 09:50,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,unavailable,MK1F4LL/A
 2026-11-18 09:51,North Star,R290,San Antonio,TX,San Antonio,2,1.2,available,MK1E4LL/A
+2026-11-18 09:51,Oxmoor,R264,Louisville,KY,Louisville,3,1.8,unavailable,MK1E4LL/A
+2026-11-18 09:51,Main Place,R348,Naperville,IL,Chicago,1,28.5,unavailable,MK1E4LL/A
+2026-11-18 09:52,Bayshore,R257,Glendale,WI,,0,78.2,unavailable,MK1E4LL/A
