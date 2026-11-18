@@ -3677,3 +3677,8 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 08:01,Upper West Side,R251,New York,NY,New York,1,0.5,unavailable,MK1F4LL/A
 2026-11-18 08:01,Upper West Side,R251,New York,NY,New York,1,0.5,unavailable,MK1E4LL/A
 2026-11-18 08:05,Aventura,R087,Aventura,FL,Miami,1,13.6,available,MK1E4LL/A
+2026-11-18 08:05,Bethesda Row,R112,Bethesda,MD,Washington,1,6.5,available,MK1E4LL/A
+2026-11-18 08:05,The Fashion Mall at Keystone,R066,Indianapolis,IN,Indianapolis,2,1.1,available,MK1E4LL/A
+2026-11-18 08:05,Michigan Avenue,R035,Chicago,IL,Chicago,1,0.5,available,MK1E4LL/A
+2026-11-18 08:05,Fritz Farm,R288,Lexington,KY,,0,62.5,available,MK1F4LL/A
+2026-11-18 08:05,South Hills Village,R147,Pittsburgh,PA,Pittsburgh,2,14.1,available,MK1E4LL/A
