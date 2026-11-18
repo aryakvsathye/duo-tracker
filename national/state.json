@@ -3666,14 +3666,17 @@
    "metro": "Louisville",
    "tier": 3,
    "miles": 1.8,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-18 08:55"
+   },
+   "since": "2026-11-18 08:55"
   },
   "R133": {
    "name": "Downtown Nashville",
@@ -3702,14 +3705,17 @@
    "metro": "Charlotte",
    "tier": 2,
    "miles": 2.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-18 08:55"
+   },
+   "since": "2026-11-18 08:55"
   },
   "R796": {
    "name": "Birkdale Village",
@@ -3792,14 +3798,17 @@
    "metro": "",
    "tier": 0,
    "miles": 172.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-18 08:55"
+   },
+   "since": "2026-11-18 08:55"
   },
   "R070": {
    "name": "Arden Fair",
@@ -4008,14 +4017,17 @@
    "metro": "Cincinnati",
    "tier": 2,
    "miles": 0.8,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-18 08:55"
+   },
+   "since": "2026-11-18 08:55"
   },
   "R518": {
    "name": "The Greene",
@@ -4216,8 +4228,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-18T08:54:33.761875-06:00",
- "metros_ok": 47,
+ "last_sweep": "2026-11-18T08:55:38.263981-06:00",
+ "metros_ok": 41,
  "metros": [
   {
    "metro": "New York",
@@ -4559,21 +4571,21 @@
   "Denver": "2026-11-18T08:51:42.561530-06:00",
   "Baltimore": "2026-11-18T08:51:47.857339-06:00",
   "St. Louis": "2026-11-18T08:54:33.406796-06:00",
-  "Orlando": "2026-11-18T08:50:24.931012-06:00",
-  "Charlotte": "2026-11-18T08:50:30.180959-06:00",
+  "Orlando": "2026-11-18T08:55:15.982005-06:00",
+  "Charlotte": "2026-11-18T08:55:27.167122-06:00",
   "San Antonio": "2026-11-18T08:53:11.797701-06:00",
   "Portland": "2026-11-18T08:53:43.436451-06:00",
   "Sacramento": "2026-11-18T08:53:48.682428-06:00",
   "Pittsburgh": "2026-11-18T08:54:21.728799-06:00",
   "Austin": "2026-11-18T08:53:27.623899-06:00",
   "Las Vegas": "2026-11-18T08:53:22.323985-06:00",
-  "Cincinnati": "2026-11-18T08:51:59.938701-06:00",
+  "Cincinnati": "2026-11-18T08:55:21.643322-06:00",
   "Kansas City": "2026-11-18T08:54:48.934386-06:00",
   "Columbus": "2026-11-18T08:52:05.487183-06:00",
   "Indianapolis": "2026-11-18T08:52:44.089673-06:00",
   "Cleveland": "2026-11-18T08:52:54.559832-06:00",
   "Nashville": "2026-11-18T08:54:05.769070-06:00",
-  "Raleigh": "2026-11-18T08:50:40.812077-06:00",
+  "Raleigh": "2026-11-18T08:55:32.708545-06:00",
   "Oklahoma City": "2026-11-18T08:53:32.920683-06:00",
   "Tulsa": "2026-11-18T08:52:10.761583-06:00",
   "Omaha": "2026-11-18T08:50:35.495067-06:00",
@@ -4585,7 +4597,7 @@
   "Salt Lake City": "2026-11-18T08:51:09.148262-06:00",
   "Louisville": "2026-11-18T08:52:28.223957-06:00",
   "Birmingham": "2026-11-18T08:52:59.812891-06:00",
-  "Richmond": "2026-11-18T08:50:53.286012-06:00",
+  "Richmond": "2026-11-18T08:55:38.263842-06:00",
   "Honolulu": "2026-11-18T08:53:53.842731-06:00",
   "Tucson": "2026-11-18T08:51:14.568465-06:00",
   "Buffalo": "2026-11-18T08:54:26.741774-06:00"
@@ -4611,21 +4623,21 @@
   "Denver": "2026-11-18T08:51:42.561550-06:00",
   "Baltimore": "2026-11-18T08:51:47.857358-06:00",
   "St. Louis": "2026-11-18T08:43:51.887514-06:00",
-  "Orlando": "2026-11-18T08:50:24.931034-06:00",
-  "Charlotte": "2026-11-18T08:50:30.180979-06:00",
+  "Orlando": "2026-11-18T08:55:15.982027-06:00",
+  "Charlotte": "2026-11-18T08:55:27.167144-06:00",
   "San Antonio": "2026-11-18T08:53:11.797722-06:00",
   "Portland": "2026-11-18T08:53:43.436472-06:00",
   "Sacramento": "2026-11-18T08:53:48.682456-06:00",
   "Pittsburgh": "2026-11-18T08:54:21.728820-06:00",
   "Austin": "2026-11-18T08:53:27.623920-06:00",
   "Las Vegas": "2026-11-18T08:53:22.324006-06:00",
-  "Cincinnati": "2026-11-18T08:51:59.938723-06:00",
+  "Cincinnati": "2026-11-18T08:55:21.643345-06:00",
   "Kansas City": "2026-11-18T08:50:19.515172-06:00",
   "Columbus": "2026-11-18T08:52:05.487205-06:00",
   "Indianapolis": "2026-11-18T08:52:44.089694-06:00",
   "Cleveland": "2026-11-18T08:52:54.559853-06:00",
   "Nashville": "2026-11-18T08:54:05.769091-06:00",
-  "Raleigh": "2026-11-18T08:50:40.812098-06:00",
+  "Raleigh": "2026-11-18T08:55:32.708568-06:00",
   "Oklahoma City": "2026-11-18T08:53:32.920704-06:00",
   "Tulsa": "2026-11-18T08:52:10.761621-06:00",
   "Omaha": "2026-11-18T08:50:35.495093-06:00",
@@ -4637,13 +4649,13 @@
   "Salt Lake City": "2026-11-18T08:51:09.148282-06:00",
   "Louisville": "2026-11-18T08:52:28.223979-06:00",
   "Birmingham": "2026-11-18T08:52:59.812911-06:00",
-  "Richmond": "2026-11-18T08:50:53.286034-06:00",
+  "Richmond": "2026-11-18T08:55:38.263866-06:00",
   "Honolulu": "2026-11-18T08:53:53.842751-06:00",
   "Tucson": "2026-11-18T08:51:14.568486-06:00",
   "Buffalo": "2026-11-18T08:45:32.967407-06:00"
  },
  "hot": [
-  "Middle Atlantic",
+  "South Atlantic",
   "East North Central"
  ],
  "cycle_seconds": 150,
