@@ -3927,3 +3927,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 10:26,Walnut Street,R162,Philadelphia,PA,Philadelphia,1,0.5,unavailable,MK1F4LL/A
 2026-11-18 10:27,The Grove,R050,Los Angeles,CA,Los Angeles,1,3.4,available,MK1E4LL/A
 2026-11-18 10:28,Michigan Avenue,R035,Chicago,IL,Chicago,1,0.5,unavailable,MK1F4LL/A
+2026-11-18 10:29,Coconut Point,R185,Estero,FL,,0,109.5,available,MK1E4LL/A
