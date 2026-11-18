@@ -4008,3 +4008,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 11:57,Corte Madera,R071,Corte Madera,CA,San Francisco,1,11.1,available,MK1E4LL/A
 2026-11-18 11:57,Stanford Shopping Center,R099,Palo Alto,CA,San Francisco,1,27.4,unavailable,MK1E4LL/A
 2026-11-18 11:58,University Village,R072,Seattle,WA,Seattle,2,3.9,unavailable,MK1E4LL/A
+2026-11-18 11:58,Fashion Show,R064,Las Vegas,NV,Las Vegas,2,0.6,available,MK1E4LL/A
+2026-11-18 11:58,Otay Ranch,R213,Chula Vista,CA,San Diego,2,14.6,available,MK1E4LL/A
