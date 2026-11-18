@@ -3818,3 +3818,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 09:21,Barton Creek,R085,Austin,TX,Austin,2,2.7,available,MK1F4LL/A
 2026-11-18 09:21,Galleria Dallas,R746,Dallas,TX,Dallas,1,4.8,unavailable,MK1F4LL/A
 2026-11-18 09:21,North Star,R290,San Antonio,TX,San Antonio,2,1.2,unavailable,MK1E4LL/A
+2026-11-18 09:22,Briarwood,R230,Ann Arbor,MI,Detroit,2,36.3,available,MK1E4LL/A
+2026-11-18 09:22,Fritz Farm,R288,Lexington,KY,,0,62.5,unavailable,MK1F4LL/A
+2026-11-18 09:22,Queens Center,R612,Elmhurst,NY,New York,1,6.5,unavailable,MK1F4LL/A
