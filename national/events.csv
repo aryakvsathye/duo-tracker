@@ -4018,3 +4018,8 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 11:59,Fashion Island,R015,Newport Beach,CA,,0,72.0,available,MK1E4LL/A
 2026-11-18 11:59,Los Cerritos,R300,Cerritos,CA,,0,93.1,available,MK1E4LL/A
 2026-11-18 11:59,UTC,R082,San Diego,CA,San Diego,2,7.9,unavailable,MK1E4LL/A
+2026-11-18 12:01,Bayshore,R257,Glendale,WI,,0,78.2,available,MK1F4LL/A
+2026-11-18 12:01,Bayshore,R257,Glendale,WI,,0,78.2,available,MK1E4LL/A
+2026-11-18 12:02,Tower Theatre,R720,Los Angeles,CA,Los Angeles,1,9.2,available,MK1F4LL/A
+2026-11-18 12:02,Tower Theatre,R720,Los Angeles,CA,Los Angeles,1,9.2,available,MK1E4LL/A
+2026-11-18 12:02,Del Amo,R777,Torrance,CA,Los Angeles,1,15.9,available,MK1E4LL/A
