@@ -3069,14 +3069,17 @@
    "metro": "San Diego",
    "tier": 2,
    "miles": 1.3,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-18 11:59"
+   },
+   "since": "2026-11-18 11:59"
   },
   "R082": {
    "name": "UTC",
@@ -3087,17 +3090,14 @@
    "metro": "San Diego",
    "tier": 2,
    "miles": 7.9,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-18 11:45"
-   },
-   "since": "2026-11-18 11:45"
+   "since_by_part": {}
   },
   "R294": {
    "name": "Carlsbad",
@@ -3144,14 +3144,17 @@
    "metro": "",
    "tier": 0,
    "miles": 62.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-18 11:59"
+   },
+   "since": "2026-11-18 11:59"
   },
   "R146": {
    "name": "Irvine Spectrum Center",
@@ -3162,14 +3165,17 @@
    "metro": "",
    "tier": 0,
    "miles": 69.7,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-18 11:59"
+   },
+   "since": "2026-11-18 11:59"
   },
   "R015": {
    "name": "Fashion Island",
@@ -3180,14 +3186,17 @@
    "metro": "",
    "tier": 0,
    "miles": 72.0,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-18 11:59"
+   },
+   "since": "2026-11-18 11:59"
   },
   "R004": {
    "name": "South Coast Plaza",
@@ -3234,14 +3243,17 @@
    "metro": "",
    "tier": 0,
    "miles": 93.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-18 11:59"
+   },
+   "since": "2026-11-18 11:59"
   },
   "R019": {
    "name": "International Plaza",
@@ -4246,8 +4258,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-18T11:59:41.584907-06:00",
- "metros_ok": 49,
+ "last_sweep": "2026-11-18T12:00:11.477623-06:00",
+ "metros_ok": 45,
  "metros": [
   {
    "metro": "New York",
@@ -4550,7 +4562,7 @@
    "state": "NY"
   }
  ],
- "retries": 5,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4560,20 +4572,19 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Nashville": 1,
-  "Portland": 1,
-  "Dallas": 1,
   "Kansas City": 1,
   "Sacramento": 1
  },
  "skipped": [
-  "San Diego"
+  "Dallas",
+  "Nashville",
+  "Portland"
  ],
  "checked_at": {
   "New York": "2026-11-18T11:59:36.228578-06:00",
   "Los Angeles": "2026-11-18T11:57:08.228423-06:00",
   "Chicago": "2026-11-18T11:57:53.250305-06:00",
-  "Dallas": "2026-11-18T11:55:05.404420-06:00",
+  "Dallas": "2026-11-18T12:00:16.477962-06:00",
   "Houston": "2026-11-18T11:56:10.224978-06:00",
   "Washington": "2026-11-18T11:56:30.742942-06:00",
   "Philadelphia": "2026-11-18T11:57:36.864535-06:00",
@@ -4585,15 +4596,15 @@
   "Detroit": "2026-11-18T11:58:17.382779-06:00",
   "Seattle": "2026-11-18T11:58:11.856104-06:00",
   "Minneapolis": "2026-11-18T11:56:51.176523-06:00",
-  "San Diego": "2026-11-18T11:54:18.018613-06:00",
+  "San Diego": "2026-11-18T11:59:59.354419-06:00",
   "Tampa": "2026-11-18T11:57:42.244712-06:00",
   "Denver": "2026-11-18T11:59:14.545715-06:00",
   "Baltimore": "2026-11-18T11:58:40.371479-06:00",
-  "St. Louis": "2026-11-18T11:54:14.004756-06:00",
+  "St. Louis": "2026-11-18T11:59:53.899995-06:00",
   "Orlando": "2026-11-18T11:59:03.562589-06:00",
   "Charlotte": "2026-11-18T11:59:09.120915-06:00",
   "San Antonio": "2026-11-18T11:57:02.879023-06:00",
-  "Portland": "2026-11-18T11:54:51.068326-06:00",
+  "Portland": "2026-11-18T12:00:16.477917-06:00",
   "Sacramento": "2026-11-18T11:55:33.836085-06:00",
   "Pittsburgh": "2026-11-18T11:58:04.366676-06:00",
   "Austin": "2026-11-18T11:57:13.758029-06:00",
@@ -4603,8 +4614,8 @@
   "Columbus": "2026-11-18T11:59:19.954687-06:00",
   "Indianapolis": "2026-11-18T11:56:04.680395-06:00",
   "Cleveland": "2026-11-18T11:57:31.449104-06:00",
-  "Nashville": "2026-11-18T11:54:36.972410-06:00",
-  "Raleigh": "2026-11-18T11:54:09.745114-06:00",
+  "Nashville": "2026-11-18T12:00:16.477852-06:00",
+  "Raleigh": "2026-11-18T11:59:48.496818-06:00",
   "Oklahoma City": "2026-11-18T11:57:19.078301-06:00",
   "Tulsa": "2026-11-18T11:59:25.340187-06:00",
   "Omaha": "2026-11-18T11:55:48.149996-06:00",
@@ -4614,8 +4625,8 @@
   "Madison": "2026-11-18T11:57:47.900813-06:00",
   "Albuquerque": "2026-11-18T11:58:22.807211-06:00",
   "Salt Lake City": "2026-11-18T11:58:34.967163-06:00",
-  "Louisville": "2026-11-18T11:54:18.258406-06:00",
-  "Birmingham": "2026-11-18T11:54:22.485398-06:00",
+  "Louisville": "2026-11-18T12:00:06.078294-06:00",
+  "Birmingham": "2026-11-18T12:00:11.477526-06:00",
   "Richmond": "2026-11-18T11:55:59.081792-06:00",
   "Honolulu": "2026-11-18T11:56:57.490922-06:00",
   "Tucson": "2026-11-18T11:58:45.772345-06:00",
@@ -4637,11 +4648,11 @@
   "Detroit": "2026-11-18T11:58:17.382791-06:00",
   "Seattle": "2026-11-18T11:58:11.857419-06:00",
   "Minneapolis": "2026-11-18T11:56:51.176530-06:00",
-  "San Diego": "2026-11-18T11:48:25.067346-06:00",
+  "San Diego": "2026-11-18T11:59:59.354441-06:00",
   "Tampa": "2026-11-18T11:57:42.244724-06:00",
   "Denver": "2026-11-18T11:59:14.545733-06:00",
   "Baltimore": "2026-11-18T11:58:40.371498-06:00",
-  "St. Louis": "2026-11-18T11:54:14.004772-06:00",
+  "St. Louis": "2026-11-18T11:59:53.900016-06:00",
   "Orlando": "2026-11-18T11:59:03.562614-06:00",
   "Charlotte": "2026-11-18T11:59:09.120938-06:00",
   "San Antonio": "2026-11-18T11:57:02.879031-06:00",
@@ -4656,7 +4667,7 @@
   "Indianapolis": "2026-11-18T11:56:04.680403-06:00",
   "Cleveland": "2026-11-18T11:57:31.449115-06:00",
   "Nashville": "2026-11-18T11:49:54.899954-06:00",
-  "Raleigh": "2026-11-18T11:54:09.745128-06:00",
+  "Raleigh": "2026-11-18T11:59:48.496836-06:00",
   "Oklahoma City": "2026-11-18T11:57:19.078309-06:00",
   "Tulsa": "2026-11-18T11:59:25.340208-06:00",
   "Omaha": "2026-11-18T11:55:48.150005-06:00",
@@ -4666,8 +4677,8 @@
   "Madison": "2026-11-18T11:57:47.900832-06:00",
   "Albuquerque": "2026-11-18T11:58:22.807221-06:00",
   "Salt Lake City": "2026-11-18T11:58:34.967185-06:00",
-  "Louisville": "2026-11-18T11:54:18.258419-06:00",
-  "Birmingham": "2026-11-18T11:54:22.485413-06:00",
+  "Louisville": "2026-11-18T12:00:06.078313-06:00",
+  "Birmingham": "2026-11-18T12:00:11.477537-06:00",
   "Richmond": "2026-11-18T11:55:59.081800-06:00",
   "Honolulu": "2026-11-18T11:56:57.490931-06:00",
   "Tucson": "2026-11-18T11:58:45.772365-06:00",
@@ -4700,6 +4711,5 @@
   "2026-11-18T07:24-06:00",
   "2026-11-18T11:55-06:00"
  ],
- "last_weekly": "2026-W46",
- "last_error": "2026-11-18T11:55-06:00: Nashville: HTTP 541; Portland: HTTP 541; Dallas: HTTP 541; Kansas City: HTTP 541; Sacramento: HTTP 541"
+ "last_weekly": "2026-W46"
 }
