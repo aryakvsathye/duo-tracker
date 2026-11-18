@@ -3707,3 +3707,10 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 08:27,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,available,MK1F4LL/A
 2026-11-18 08:29,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,unavailable,MK1F4LL/A
 2026-11-18 08:30,Lynnhaven Mall,R614,Virginia Beach,VA,,0,103.6,available,MK1F4LL/A
+2026-11-18 08:31,Chestnut Hill,R076,Chestnut Hill,MA,Boston,1,5.5,available,MK1F4LL/A
+2026-11-18 08:31,Natick,R232,Natick,MA,Boston,1,16.1,available,MK1E4LL/A
+2026-11-18 08:31,Rockingham Park,R027,Salem,NH,Boston,1,29.9,available,MK1F4LL/A
+2026-11-18 08:31,Rockingham Park,R027,Salem,NH,Boston,1,29.9,available,MK1E4LL/A
+2026-11-18 08:31,Pheasant Lane,R354,Nashua,NH,Boston,1,30.5,available,MK1E4LL/A
+2026-11-18 08:31,The Shops at Blackstone Valley,R622,Millbury,MA,Boston,1,37.4,available,MK1E4LL/A
+2026-11-18 08:31,MarketStreet,R011,Lynnfield,MA,Boston,1,11.6,unavailable,MK1E4LL/A
