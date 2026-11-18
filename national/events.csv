@@ -3839,3 +3839,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 09:34,Jordan Creek,R109,West Des Moines,IA,Des Moines,3,0.6,available,MK1F4LL/A
 2026-11-18 09:35,Bayshore,R257,Glendale,WI,,0,78.2,available,MK1E4LL/A
 2026-11-18 09:36,University Park Village,R316,Fort Worth,TX,Dallas,1,34.5,available,MK1E4LL/A
+2026-11-18 09:37,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,available,MK1E4LL/A
+2026-11-18 09:37,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,unavailable,MK1E4LL/A
+2026-11-18 09:37,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,unavailable,MK1E4LL/A
