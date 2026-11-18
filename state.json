@@ -25,7 +25,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "Saint Louis Galleria": {
-   "MK1F4LL/A": "unavailable",
+   "MK1F4LL/A": "available",
    "MK1E4LL/A": "available"
   },
   "Penn Square": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 55,
+ "checks": 56,
  "errors": 0,
- "events": 1,
+ "events": 2,
  "last_heartbeat": "2026-11-18",
  "nearby": {
   "Country Club Plaza": {
@@ -171,16 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-18T08:58:40.637239-06:00",
+ "last_check": "2026-11-18T08:59:40.718060-06:00",
  "history": [
-  {
-   "t": "2026-11-18T07:34:49-06:00",
-   "ok": true,
-   "ms": 425,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-18T07:35:49-06:00",
    "ok": true,
@@ -892,6 +884,14 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-18T08:58:40-06:00",
+   "ok": true,
+   "ms": 420,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
@@ -899,7 +899,7 @@
    "miles": 239.77,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "available"
    },
    "city": "Saint Louis",
