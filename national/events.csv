@@ -4110,3 +4110,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 12:56,Northridge,R023,Northridge,CA,Los Angeles,1,14.9,available,MK1E4LL/A
 2026-11-18 12:57,Corte Madera,R071,Corte Madera,CA,San Francisco,1,11.1,unavailable,MK1E4LL/A
 2026-11-18 12:57,Tacoma Mall,R339,Tacoma,WA,Seattle,2,29.2,unavailable,MK1E4LL/A
+2026-11-18 13:00,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,unavailable,MK1E4LL/A
