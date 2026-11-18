@@ -3737,3 +3737,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 08:48,The Mall at Bay Plaza,R753,Bronx,NY,New York,1,10.6,available,MK1F4LL/A
 2026-11-18 08:48,The Mall at Bay Plaza,R753,Bronx,NY,New York,1,10.6,available,MK1E4LL/A
 2026-11-18 08:48,Menlo Park,R067,Edison,NJ,,0,60.3,available,MK1E4LL/A
+2026-11-18 08:50,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,available,MK1F4LL/A
+2026-11-18 08:50,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,available,MK1E4LL/A
+2026-11-18 08:50,Lynnhaven Mall,R614,Virginia Beach,VA,,0,103.6,unavailable,MK1F4LL/A
