@@ -3984,3 +3984,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 11:40,University Village,R072,Seattle,WA,Seattle,2,3.9,available,MK1E4LL/A
 2026-11-18 11:42,South Coast Plaza,R004,Costa Mesa,CA,,0,76.9,available,MK1E4LL/A
 2026-11-18 11:43,Manhattan Village,R122,Manhattan Beach,CA,Los Angeles,1,11.0,unavailable,MK1E4LL/A
+2026-11-18 11:45,UTC,R082,San Diego,CA,San Diego,2,7.9,available,MK1E4LL/A
+2026-11-18 11:45,South Coast Plaza,R004,Costa Mesa,CA,,0,76.9,unavailable,MK1E4LL/A
+2026-11-18 11:45,Pioneer Place,R077,Portland,OR,Portland,2,4.5,available,MK1E4LL/A
