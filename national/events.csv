@@ -3999,3 +3999,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 11:51,Alderwood,R100,Lynnwood,WA,Seattle,2,15.0,available,MK1E4LL/A
 2026-11-18 11:52,Palo Alto,R002,Palo Alto,CA,San Francisco,1,27.4,available,MK1E4LL/A
 2026-11-18 11:53,SanTan Village,R267,Gilbert,AZ,Phoenix,1,21.6,available,MK1E4LL/A
+2026-11-18 11:57,Century City,R108,Los Angeles,CA,Los Angeles,1,0.2,available,MK1E4LL/A
+2026-11-18 11:57,Beverly Center,R124,Los Angeles,CA,Los Angeles,1,2.5,available,MK1E4LL/A
+2026-11-18 11:57,Glendale Galleria,R001,Glendale,CA,Los Angeles,1,10.8,available,MK1E4LL/A
+2026-11-18 11:57,Topanga,R189,Canoga Park,CA,Los Angeles,1,14.1,available,MK1E4LL/A
