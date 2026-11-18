@@ -3617,3 +3617,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 18:37,Boise Towne Square,R303,Boise,ID,,0,299.0,available,MK1E4LL/A
 2026-11-17 18:39,Boise Towne Square,R303,Boise,ID,,0,299.0,unavailable,MK1E4LL/A
 2026-11-17 18:41,Bayshore,R257,Glendale,WI,,0,78.2,available,MK1E4LL/A
+2026-11-17 18:41,Southlake Town Square,R151,Southlake,TX,Dallas,1,20.4,available,MK1E4LL/A
+2026-11-17 18:41,Southlake Town Square,R151,Southlake,TX,Dallas,1,20.4,unavailable,MK1E4LL/A
