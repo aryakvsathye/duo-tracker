@@ -4048,17 +4048,14 @@
    "metro": "Cincinnati",
    "tier": 2,
    "miles": 0.8,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-18 08:55"
-   },
-   "since": "2026-11-18 08:55"
+   "since_by_part": {}
   },
   "R518": {
    "name": "The Greene",
@@ -4262,8 +4259,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-18T09:04:45.561493-06:00",
- "metros_ok": 46,
+ "last_sweep": "2026-11-18T09:04:52.691562-06:00",
+ "metros_ok": 47,
  "metros": [
   {
    "metro": "New York",
@@ -4566,7 +4563,7 @@
    "state": "NY"
   }
  ],
- "retries": 2,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4575,12 +4572,12 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Kansas City": 1,
-  "Nashville": 1,
-  "Richmond": 1
- },
- "skipped": [],
+ "metro_skip": {},
+ "skipped": [
+  "Kansas City",
+  "Nashville",
+  "Richmond"
+ ],
  "checked_at": {
   "New York": "2026-11-18T09:00:23.652759-06:00",
   "Los Angeles": "2026-11-18T09:04:40.108385-06:00",
@@ -4612,10 +4609,10 @@
   "Las Vegas": "2026-11-18T09:04:13.366048-06:00",
   "Cincinnati": "2026-11-18T09:04:02.749904-06:00",
   "Kansas City": "2026-11-18T09:01:32.936136-06:00",
-  "Columbus": "2026-11-18T09:01:33.427890-06:00",
+  "Columbus": "2026-11-18T09:04:52.691278-06:00",
   "Indianapolis": "2026-11-18T09:02:02.484821-06:00",
   "Cleveland": "2026-11-18T09:02:13.546917-06:00",
-  "Nashville": "2026-11-18T08:59:39.974194-06:00",
+  "Nashville": "2026-11-18T09:04:52.297180-06:00",
   "Raleigh": "2026-11-18T09:04:45.561350-06:00",
   "Oklahoma City": "2026-11-18T09:03:28.187513-06:00",
   "Tulsa": "2026-11-18T09:02:53.395104-06:00",
@@ -4628,7 +4625,7 @@
   "Salt Lake City": "2026-11-18T09:01:57.051556-06:00",
   "Louisville": "2026-11-18T09:03:44.458363-06:00",
   "Birmingham": "2026-11-18T09:04:08.083395-06:00",
-  "Richmond": "2026-11-18T08:59:55.487974-06:00",
+  "Richmond": "2026-11-18T09:04:52.307400-06:00",
   "Honolulu": "2026-11-18T09:04:34.823818-06:00",
   "Tucson": "2026-11-18T09:02:07.884191-06:00",
   "Buffalo": "2026-11-18T09:00:40.176215-06:00"
@@ -4664,7 +4661,7 @@
   "Las Vegas": "2026-11-18T09:04:13.366070-06:00",
   "Cincinnati": "2026-11-18T09:04:02.749950-06:00",
   "Kansas City": "2026-11-18T08:50:19.515172-06:00",
-  "Columbus": "2026-11-18T09:01:33.427912-06:00",
+  "Columbus": "2026-11-18T09:04:52.691300-06:00",
   "Indianapolis": "2026-11-18T09:02:02.484843-06:00",
   "Cleveland": "2026-11-18T09:02:13.546966-06:00",
   "Nashville": "2026-11-18T08:54:05.769091-06:00",
@@ -4715,6 +4712,5 @@
   "2026-11-18T07:04-06:00",
   "2026-11-18T07:24-06:00"
  ],
- "last_weekly": "2026-W46",
- "last_error": "2026-11-18T09:00-06:00: Nashville: HTTP 541; Richmond: HTTP 541"
+ "last_weekly": "2026-W46"
 }
