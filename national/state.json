@@ -792,17 +792,14 @@
    "metro": "Austin",
    "tier": 2,
    "miles": 2.7,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-18 13:24"
-   },
-   "since": "2026-11-18 13:24"
+   "since_by_part": {}
   },
   "R126": {
    "name": "The Woodlands",
@@ -831,17 +828,14 @@
    "metro": "Houston",
    "tier": 1,
    "miles": 15.2,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-18 13:30"
-   },
-   "since": "2026-11-18 13:30"
+   "since_by_part": {}
   },
   "R164": {
    "name": "Memorial City",
@@ -4201,8 +4195,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-18T13:34:43.544406-06:00",
- "metros_ok": 44,
+ "last_sweep": "2026-11-18T13:34:50.367280-06:00",
+ "metros_ok": 49,
  "metros": [
   {
    "metro": "New York",
@@ -4514,15 +4508,15 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Houston": 1
- },
- "skipped": [],
+ "metro_skip": {},
+ "skipped": [
+  "Houston"
+ ],
  "checked_at": {
   "New York": "2026-11-18T13:33:16.109576-06:00",
   "Los Angeles": "2026-11-18T13:32:41.316201-06:00",
   "Chicago": "2026-11-18T13:33:43.167581-06:00",
-  "Dallas": "2026-11-18T13:29:40.282615-06:00",
+  "Dallas": "2026-11-18T13:34:50.366986-06:00",
   "Houston": "2026-11-18T13:30:20.617517-06:00",
   "Washington": "2026-11-18T13:31:18.230966-06:00",
   "Philadelphia": "2026-11-18T13:34:27.496825-06:00",
@@ -4574,7 +4568,7 @@
   "New York": "2026-11-18T13:33:16.109597-06:00",
   "Los Angeles": "2026-11-18T13:32:41.316223-06:00",
   "Chicago": "2026-11-18T13:33:43.167603-06:00",
-  "Dallas": "2026-11-18T13:29:40.282627-06:00",
+  "Dallas": "2026-11-18T13:34:50.367009-06:00",
   "Houston": "2026-11-18T13:20:43.912216-06:00",
   "Washington": "2026-11-18T13:31:18.230988-06:00",
   "Philadelphia": "2026-11-18T13:34:27.496848-06:00",
