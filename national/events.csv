@@ -3844,3 +3844,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 09:37,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,unavailable,MK1E4LL/A
 2026-11-18 09:38,Mall of America,R007,Bloomington,MN,Minneapolis,2,1.2,available,MK1E4LL/A
 2026-11-18 09:39,Scottsdale Fashion Square,R031,Scottsdale,AZ,Phoenix,1,6.0,available,MK1E4LL/A
+2026-11-18 09:40,MarketStreet,R011,Lynnfield,MA,Boston,1,11.6,available,MK1E4LL/A
+2026-11-18 09:40,The Shops at Blackstone Valley,R622,Millbury,MA,Boston,1,37.4,available,MK1E4LL/A
+2026-11-18 09:40,The Summit,R225,Birmingham,AL,Birmingham,3,0.6,available,MK1F4LL/A
+2026-11-18 09:40,Oxmoor,R264,Louisville,KY,Louisville,3,1.8,available,MK1F4LL/A
