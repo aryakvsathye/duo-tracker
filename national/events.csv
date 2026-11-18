@@ -3947,3 +3947,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 10:51,Mall of America,R007,Bloomington,MN,Minneapolis,2,1.2,available,MK1E4LL/A
 2026-11-18 10:52,Old Orchard,R089,Skokie,IL,Chicago,1,12.9,available,MK1F4LL/A
 2026-11-18 10:54,Mall of America,R007,Bloomington,MN,Minneapolis,2,1.2,unavailable,MK1E4LL/A
+2026-11-18 10:54,SanTan Village,R267,Gilbert,AZ,Phoenix,1,21.6,available,MK1F4LL/A
+2026-11-18 10:54,SanTan Village,R267,Gilbert,AZ,Phoenix,1,21.6,available,MK1E4LL/A
