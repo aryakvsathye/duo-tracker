@@ -3760,3 +3760,9 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 08:59,Crocker Park,R192,Westlake,OH,Cleveland,2,22.4,available,MK1F4LL/A
 2026-11-18 08:59,Crabtree Valley Mall,R116,Raleigh,NC,Raleigh,2,1.5,available,MK1F4LL/A
 2026-11-18 08:59,Crabtree Valley Mall,R116,Raleigh,NC,Raleigh,2,1.5,available,MK1E4LL/A
+2026-11-18 09:00,Upper West Side,R251,New York,NY,New York,1,0.5,available,MK1F4LL/A
+2026-11-18 09:00,Williamsburg,R594,Brooklyn,NY,New York,1,3.9,unavailable,MK1F4LL/A
+2026-11-18 09:00,Williamsburg,R594,Brooklyn,NY,New York,1,3.9,unavailable,MK1E4LL/A
+2026-11-18 09:00,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,unavailable,MK1E4LL/A
+2026-11-18 09:00,Ross Park,R413,Pittsburgh,PA,Pittsburgh,2,2.2,available,MK1E4LL/A
+2026-11-18 09:00,Eastview,R140,Victor,NY,,0,67.5,available,MK1E4LL/A
