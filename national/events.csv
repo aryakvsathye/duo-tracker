@@ -4044,3 +4044,9 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 12:07,Third Street Promenade,R051,Santa Monica,CA,Los Angeles,1,5.5,available,MK1E4LL/A
 2026-11-18 12:07,Tower Theatre,R720,Los Angeles,CA,Los Angeles,1,9.2,unavailable,MK1F4LL/A
 2026-11-18 12:07,Aventura,R087,Aventura,FL,Miami,1,13.6,unavailable,MK1E4LL/A
+2026-11-18 12:07,Old Orchard,R089,Skokie,IL,Chicago,1,12.9,unavailable,MK1F4LL/A
+2026-11-18 12:08,Union Square,R075,San Francisco,CA,San Francisco,1,0.2,available,MK1E4LL/A
+2026-11-18 12:08,Burlingame,R029,Burlingame,CA,San Francisco,1,15.1,unavailable,MK1F4LL/A
+2026-11-18 12:08,Stanford Shopping Center,R099,Palo Alto,CA,San Francisco,1,27.4,available,MK1E4LL/A
+2026-11-18 12:08,Bay Street,R057,Emeryville,CA,San Francisco,1,7.0,unavailable,MK1E4LL/A
+2026-11-18 12:08,Broadway Plaza,R014,Walnut Creek,CA,San Francisco,1,20.4,unavailable,MK1E4LL/A
