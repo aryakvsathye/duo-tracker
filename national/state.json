@@ -2534,14 +2534,17 @@
    "metro": "Detroit",
    "tier": 2,
    "miles": 15.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-18 08:54"
+   },
+   "since": "2026-11-18 08:54"
   },
   "R763": {
    "name": "Downtown Detroit",
@@ -4213,8 +4216,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-18T08:54:26.980668-06:00",
- "metros_ok": 46,
+ "last_sweep": "2026-11-18T08:54:33.761875-06:00",
+ "metros_ok": 47,
  "metros": [
   {
    "metro": "New York",
@@ -4517,7 +4520,7 @@
    "state": "NY"
   }
  ],
- "retries": 3,
+ "retries": 1,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4527,12 +4530,14 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Detroit": 1,
-  "St. Louis": 1,
-  "Seattle": 1,
-  "Buffalo": 1
+  "Kansas City": 1
  },
- "skipped": [],
+ "skipped": [
+  "Buffalo",
+  "Detroit",
+  "Seattle",
+  "St. Louis"
+ ],
  "checked_at": {
   "New York": "2026-11-18T08:54:11.220177-06:00",
   "Los Angeles": "2026-11-18T08:54:00.533610-06:00",
@@ -4546,14 +4551,14 @@
   "Phoenix": "2026-11-18T08:51:30.441114-06:00",
   "Boston": "2026-11-18T08:51:53.175524-06:00",
   "San Francisco": "2026-11-18T08:54:26.980531-06:00",
-  "Detroit": "2026-11-18T08:51:24.857083-06:00",
-  "Seattle": "2026-11-18T08:49:37.272682-06:00",
+  "Detroit": "2026-11-18T08:54:33.761579-06:00",
+  "Seattle": "2026-11-18T08:54:33.418654-06:00",
   "Minneapolis": "2026-11-18T08:52:33.532075-06:00",
   "San Diego": "2026-11-18T08:53:38.191050-06:00",
   "Tampa": "2026-11-18T08:51:37.276707-06:00",
   "Denver": "2026-11-18T08:51:42.561530-06:00",
   "Baltimore": "2026-11-18T08:51:47.857339-06:00",
-  "St. Louis": "2026-11-18T08:49:21.791663-06:00",
+  "St. Louis": "2026-11-18T08:54:33.406796-06:00",
   "Orlando": "2026-11-18T08:50:24.931012-06:00",
   "Charlotte": "2026-11-18T08:50:30.180959-06:00",
   "San Antonio": "2026-11-18T08:53:11.797701-06:00",
@@ -4563,7 +4568,7 @@
   "Austin": "2026-11-18T08:53:27.623899-06:00",
   "Las Vegas": "2026-11-18T08:53:22.323985-06:00",
   "Cincinnati": "2026-11-18T08:51:59.938701-06:00",
-  "Kansas City": "2026-11-18T08:50:19.515150-06:00",
+  "Kansas City": "2026-11-18T08:54:48.934386-06:00",
   "Columbus": "2026-11-18T08:52:05.487183-06:00",
   "Indianapolis": "2026-11-18T08:52:44.089673-06:00",
   "Cleveland": "2026-11-18T08:52:54.559832-06:00",
@@ -4598,7 +4603,7 @@
   "Phoenix": "2026-11-18T08:51:30.441134-06:00",
   "Boston": "2026-11-18T08:51:53.175545-06:00",
   "San Francisco": "2026-11-18T08:54:26.980552-06:00",
-  "Detroit": "2026-11-18T08:39:28.600710-06:00",
+  "Detroit": "2026-11-18T08:54:33.761621-06:00",
   "Seattle": "2026-11-18T08:43:57.241397-06:00",
   "Minneapolis": "2026-11-18T08:52:33.532096-06:00",
   "San Diego": "2026-11-18T08:53:38.191070-06:00",
@@ -4668,5 +4673,5 @@
   "2026-11-18T07:24-06:00"
  ],
  "last_weekly": "2026-W46",
- "last_error": "2026-11-18T08:49-06:00: St. Louis: HTTP 541; Seattle: HTTP 541; Buffalo: HTTP 541"
+ "last_error": "2026-11-18T08:54-06:00: Kansas City: HTTP 541"
 }
