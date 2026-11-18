@@ -4104,3 +4104,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 12:53,The Summit,R225,Birmingham,AL,Birmingham,3,0.6,available,MK1F4LL/A
 2026-11-18 12:54,The Summit,R225,Birmingham,AL,Birmingham,3,0.6,unavailable,MK1F4LL/A
 2026-11-18 12:55,The Promenade Shops at Briargate,R338,Colorado Springs,CO,,0,53.6,unavailable,MK1E4LL/A
+2026-11-18 12:56,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,available,MK1E4LL/A
+2026-11-18 12:56,Stoneridge Mall,R101,Pleasanton,CA,San Francisco,1,27.0,available,MK1E4LL/A
+2026-11-18 12:56,Corte Madera,R071,Corte Madera,CA,San Francisco,1,11.1,available,MK1E4LL/A
