@@ -3769,3 +3769,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 09:00,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,unavailable,MK1E4LL/A
 2026-11-18 09:01,Saint Louis Galleria,R114,Saint Louis,MO,St. Louis,2,1.2,available,MK1F4LL/A
 2026-11-18 09:01,Saint Louis Galleria,R114,Saint Louis,MO,St. Louis,2,1.2,available,MK1E4LL/A
+2026-11-18 09:01,Montgomery Mall,R084,Bethesda,MD,Washington,1,10.5,available,MK1E4LL/A
+2026-11-18 09:01,Reston,R271,Reston,VA,Washington,1,18.6,available,MK1F4LL/A
+2026-11-18 09:01,Reston,R271,Reston,VA,Washington,1,18.6,available,MK1E4LL/A
+2026-11-18 09:01,Briarwood,R230,Ann Arbor,MI,Detroit,2,36.3,unavailable,MK1E4LL/A
