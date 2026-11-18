@@ -4135,3 +4135,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 13:20,Barton Creek,R085,Austin,TX,Austin,2,2.7,unavailable,MK1E4LL/A
 2026-11-18 13:22,Century City,R108,Los Angeles,CA,Los Angeles,1,0.2,unavailable,MK1E4LL/A
 2026-11-18 13:23,Jordan Creek,R109,West Des Moines,IA,Des Moines,3,0.6,unavailable,MK1F4LL/A
+2026-11-18 13:23,UTC,R082,San Diego,CA,San Diego,2,7.9,unavailable,MK1E4LL/A
+2026-11-18 13:24,Barton Creek,R085,Austin,TX,Austin,2,2.7,available,MK1F4LL/A
