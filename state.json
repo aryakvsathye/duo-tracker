@@ -17,7 +17,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "Woodland Hills": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   },
   "West County": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 166,
+ "checks": 170,
  "errors": 0,
- "events": 13,
+ "events": 14,
  "last_heartbeat": "2026-11-18",
  "nearby": {
   "Country Club Plaza": {
@@ -171,40 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-18T10:06:22.967115-06:00",
+ "last_check": "2026-11-18T10:08:03.032095-06:00",
  "history": [
-  {
-   "t": "2026-11-18T09:18:25-06:00",
-   "ok": true,
-   "ms": 468,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-18T09:19:25-06:00",
-   "ok": true,
-   "ms": 669,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-18T09:20:25-06:00",
-   "ok": true,
-   "ms": 399,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-18T09:21:25-06:00",
-   "ok": true,
-   "ms": 630,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-18T09:22:25-06:00",
    "ok": true,
@@ -918,19 +886,41 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-18T10:06:42-06:00",
+   "ok": true,
+   "ms": 341,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-18T10:07:02-06:00",
+   "ok": true,
+   "ms": 278,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-18T10:07:22-06:00",
+   "ok": true,
+   "ms": 242,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-18T10:07:42-06:00",
+   "ok": true,
+   "ms": 658,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
-  "Woodland Hills": {
-   "miles": 212.92,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Tulsa",
-   "state": "OK"
-  },
   "West County": {
    "miles": 234.82,
    "status": "available",
@@ -990,6 +980,16 @@
    },
    "city": "West Des Moines",
    "state": "IA"
+  },
+  "Woodland Hills": {
+   "miles": 212.92,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Tulsa",
+   "state": "OK"
   },
   "Penn Square": {
    "miles": 285.34,
