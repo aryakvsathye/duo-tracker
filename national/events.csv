@@ -4053,3 +4053,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 12:08,Otay Ranch,R213,Chula Vista,CA,San Diego,2,14.6,unavailable,MK1E4LL/A
 2026-11-18 12:09,Brea Mall,R156,Brea,CA,,0,89.9,available,MK1E4LL/A
 2026-11-18 12:09,Pasadena,R034,Pasadena,CA,,0,216.7,unavailable,MK1E4LL/A
+2026-11-18 12:10,Irvine Spectrum Center,R146,Irvine,CA,,0,69.7,available,MK1E4LL/A
+2026-11-18 12:10,Mission Viejo,R069,Mission Viejo,CA,,0,62.2,unavailable,MK1E4LL/A
+2026-11-18 12:10,Brea Mall,R156,Brea,CA,,0,89.9,unavailable,MK1E4LL/A
