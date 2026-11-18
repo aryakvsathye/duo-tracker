@@ -3727,3 +3727,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 08:37,Pheasant Lane,R354,Nashua,NH,Boston,1,30.5,unavailable,MK1E4LL/A
 2026-11-18 08:41,Rockingham Park,R027,Salem,NH,Boston,1,29.9,unavailable,MK1E4LL/A
 2026-11-18 08:43,Queens Center,R612,Elmhurst,NY,New York,1,6.5,unavailable,MK1F4LL/A
+2026-11-18 08:45,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,available,MK1E4LL/A
+2026-11-18 08:45,Boca Raton,R074,Boca Raton,FL,Miami,1,41.6,unavailable,MK1E4LL/A
