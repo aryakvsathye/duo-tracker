@@ -3813,3 +3813,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 09:18,Stonebridge Potomac Town Center,R598,Woodbridge,VA,Washington,1,24.2,available,MK1E4LL/A
 2026-11-18 09:18,International Plaza,R019,Tampa,FL,Tampa,2,1.1,unavailable,MK1E4LL/A
 2026-11-18 09:20,Woodland,R132,Grand Rapids,MI,,0,124.9,unavailable,MK1F4LL/A
+2026-11-18 09:20,Galleria Dallas,R746,Dallas,TX,Dallas,1,4.8,available,MK1F4LL/A
+2026-11-18 09:21,Washington Square,R090,Tigard,OR,Portland,2,3.4,unavailable,MK1E4LL/A
