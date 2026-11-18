@@ -3625,3 +3625,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-17 19:04,Southdale,R054,Edina,MN,Minneapolis,2,5.2,unavailable,MK1E4LL/A
 2026-11-17 19:20,Southcenter,R106,Tukwila,WA,Seattle,2,10.7,available,MK1E4LL/A
 2026-11-17 19:24,Southcenter,R106,Tukwila,WA,Seattle,2,10.7,unavailable,MK1E4LL/A
+2026-11-17 19:24,Stonestown,R033,San Francisco,CA,San Francisco,1,5.8,available,MK1E4LL/A
+2026-11-17 19:24,Derby Street,R137,Hingham,MA,Boston,1,14.7,available,MK1E4LL/A
