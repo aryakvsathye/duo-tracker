@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 163,
+ "checks": 166,
  "errors": 0,
  "events": 13,
  "last_heartbeat": "2026-11-18",
@@ -171,32 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-18T10:05:42.832612-06:00",
+ "last_check": "2026-11-18T10:06:22.967115-06:00",
  "history": [
-  {
-   "t": "2026-11-18T09:15:25-06:00",
-   "ok": true,
-   "ms": 475,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-18T09:16:25-06:00",
-   "ok": true,
-   "ms": 387,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-18T09:17:25-06:00",
-   "ok": true,
-   "ms": 351,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-18T09:18:25-06:00",
    "ok": true,
@@ -918,6 +894,30 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-18T10:05:42-06:00",
+   "ok": true,
+   "ms": 368,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-18T10:06:02-06:00",
+   "ok": true,
+   "ms": 239,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-18T10:06:22-06:00",
+   "ok": true,
+   "ms": 503,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
@@ -1054,8 +1054,6 @@
  "wave": {
   "since": "2026-11-18T09:46:41.927183-06:00",
   "stores": [
-   "West County",
-   "Main Place",
    "Jordan Creek",
    "Hilldale",
    "Woodland Hills"
