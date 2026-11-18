@@ -3667,3 +3667,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-18 07:33,Eton,R081,Woodmere,OH,Cleveland,2,2.4,unavailable,MK1E4LL/A
 2026-11-18 07:45,Grand Central,R415,New York,NY,New York,1,1.1,available,MK1E4LL/A
 2026-11-18 07:45,World Trade Center,R654,New York,NY,New York,1,4.1,available,MK1F4LL/A
+2026-11-18 07:49,Upper West Side,R251,New York,NY,New York,1,0.5,available,MK1F4LL/A
