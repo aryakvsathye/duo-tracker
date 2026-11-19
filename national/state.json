@@ -1539,17 +1539,14 @@
    "metro": "Birmingham",
    "tier": 3,
    "miles": 0.6,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "East South Central",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-18 23:57"
-   },
-   "since": "2026-11-18 23:57"
+   "since_by_part": {}
   },
   "R203": {
    "name": "West Town Mall",
@@ -4186,7 +4183,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-19T00:24:36.155341-06:00",
+ "last_sweep": "2026-11-19T00:24:43.065001-06:00",
  "metros_ok": 50,
  "metros": [
   {
@@ -4535,7 +4532,7 @@
   "Columbus": "2026-11-19T00:24:36.155201-06:00",
   "Indianapolis": "2026-11-18T23:55:28.835687-06:00",
   "Cleveland": "2026-11-18T23:58:30.447704-06:00",
-  "Nashville": "2026-11-18T23:54:42.731342-06:00",
+  "Nashville": "2026-11-19T00:24:43.064742-06:00",
   "Raleigh": "2026-11-18T23:56:54.697639-06:00",
   "Oklahoma City": "2026-11-18T23:58:13.975212-06:00",
   "Tulsa": "2026-11-18T23:58:19.608233-06:00",
@@ -4587,7 +4584,7 @@
   "Columbus": "2026-11-19T00:24:36.155227-06:00",
   "Indianapolis": "2026-11-18T23:55:28.835708-06:00",
   "Cleveland": "2026-11-18T23:58:30.447719-06:00",
-  "Nashville": "2026-11-18T23:54:42.731360-06:00",
+  "Nashville": "2026-11-19T00:24:43.064759-06:00",
   "Raleigh": "2026-11-18T23:56:54.697661-06:00",
   "Oklahoma City": "2026-11-18T23:58:13.975236-06:00",
   "Tulsa": "2026-11-18T23:58:19.608255-06:00",
