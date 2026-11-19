@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 774,
+ "checks": 780,
  "errors": 1,
  "events": 28,
  "last_heartbeat": "2026-11-18",
@@ -171,56 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-18T18:43:41.377756-06:00",
+ "last_check": "2026-11-18T18:48:41.489406-06:00",
  "history": [
-  {
-   "t": "2026-11-18T17:19:50-06:00",
-   "ok": true,
-   "ms": 432,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-18T17:20:50-06:00",
-   "ok": true,
-   "ms": 506,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-18T17:21:50-06:00",
-   "ok": true,
-   "ms": 330,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-18T17:22:50-06:00",
-   "ok": true,
-   "ms": 263,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-18T17:23:50-06:00",
-   "ok": true,
-   "ms": 287,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-18T17:24:50-06:00",
-   "ok": true,
-   "ms": 418,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-18T17:25:09-06:00",
    "ok": true,
@@ -919,6 +871,54 @@
    "green": [
     "Jordan Creek"
    ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-18T18:43:40-06:00",
+   "ok": true,
+   "ms": 425,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-18T18:44:40-06:00",
+   "ok": true,
+   "ms": 564,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-18T18:45:40-06:00",
+   "ok": true,
+   "ms": 412,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-18T18:46:40-06:00",
+   "ok": true,
+   "ms": 417,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-18T18:47:40-06:00",
+   "ok": true,
+   "ms": 562,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-18T18:48:40-06:00",
+   "ok": true,
+   "ms": 536,
+   "code": 200,
+   "green": [],
    "burst": false
   }
  ],
