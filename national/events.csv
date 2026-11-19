@@ -4276,3 +4276,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-19 07:56,Fifth Avenue,R095,New York,NY,New York,1,0.7,available,MK1E4LL/A
 2026-11-19 07:56,Grand Central,R415,New York,NY,New York,1,1.1,unavailable,MK1E4LL/A
 2026-11-19 08:00,West Town Mall,R203,Knoxville,TN,,0,144.5,unavailable,MK1F4LL/A
+2026-11-19 08:01,Fifth Avenue,R095,New York,NY,New York,1,0.7,unavailable,MK1E4LL/A
