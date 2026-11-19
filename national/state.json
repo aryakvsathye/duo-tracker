@@ -4005,17 +4005,14 @@
    "metro": "",
    "tier": 0,
    "miles": 62.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East South Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-18 23:54"
-   },
-   "since": "2026-11-18 23:54"
+   "since_by_part": {}
   },
   "R286": {
    "name": "The Promenade at Chenal",
@@ -4180,7 +4177,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-19T01:24:36.999218-06:00",
+ "last_sweep": "2026-11-19T01:24:43.802045-06:00",
  "metros_ok": 50,
  "metros": [
   {
@@ -4529,7 +4526,7 @@
   "Columbus": "2026-11-19T01:24:36.999097-06:00",
   "Indianapolis": "2026-11-19T00:55:29.502383-06:00",
   "Cleveland": "2026-11-19T00:58:32.544834-06:00",
-  "Nashville": "2026-11-19T00:54:43.511114-06:00",
+  "Nashville": "2026-11-19T01:24:43.801783-06:00",
   "Raleigh": "2026-11-19T00:56:55.370655-06:00",
   "Oklahoma City": "2026-11-19T00:58:14.830012-06:00",
   "Tulsa": "2026-11-19T00:58:20.384393-06:00",
@@ -4581,7 +4578,7 @@
   "Columbus": "2026-11-19T01:24:36.999114-06:00",
   "Indianapolis": "2026-11-19T00:55:29.502404-06:00",
   "Cleveland": "2026-11-19T00:58:32.544856-06:00",
-  "Nashville": "2026-11-19T00:54:43.511139-06:00",
+  "Nashville": "2026-11-19T01:24:43.801800-06:00",
   "Raleigh": "2026-11-19T00:56:55.370676-06:00",
   "Oklahoma City": "2026-11-19T00:58:14.830032-06:00",
   "Tulsa": "2026-11-19T00:58:20.384415-06:00",
