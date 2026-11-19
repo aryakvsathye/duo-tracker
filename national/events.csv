@@ -4368,3 +4368,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-19 11:58,Glendale Galleria,R001,Glendale,CA,Los Angeles,1,10.8,unavailable,MK1E4LL/A
 2026-11-19 12:00,Stoneridge Mall,R101,Pleasanton,CA,San Francisco,1,27.0,available,MK1E4LL/A
 2026-11-19 12:00,Palo Alto,R002,Palo Alto,CA,San Francisco,1,27.4,unavailable,MK1E4LL/A
+2026-11-19 12:01,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,available,MK1F4LL/A
+2026-11-19 12:01,Otay Ranch,R213,Chula Vista,CA,San Diego,2,14.6,unavailable,MK1E4LL/A
+2026-11-19 12:01,Fashion Island,R015,Newport Beach,CA,,0,72.0,unavailable,MK1E4LL/A
