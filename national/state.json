@@ -4181,7 +4181,7 @@
   }
  },
  "last_sweep": "2026-11-19T09:49:35.075237-06:00",
- "metros_ok": 48,
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4484,7 +4484,7 @@
    "state": "NY"
   }
  ],
- "retries": 0,
+ "retries": 1,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4493,7 +4493,9 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {},
+ "metro_skip": {
+  "Madison": 1
+ },
  "skipped": [],
  "checked_at": {
   "New York": "2026-11-19T09:46:26.925361-06:00",
@@ -4537,7 +4539,7 @@
   "Des Moines": "2026-11-19T09:47:23.009480-06:00",
   "Little Rock": "2026-11-19T09:48:29.784634-06:00",
   "Memphis": "2026-11-19T09:45:49.744350-06:00",
-  "Madison": "2026-11-19T09:44:05.337459-06:00",
+  "Madison": "2026-11-19T09:49:51.578660-06:00",
   "Albuquerque": "2026-11-19T09:46:55.352850-06:00",
   "Salt Lake City": "2026-11-19T09:47:00.684216-06:00",
   "Louisville": "2026-11-19T09:45:54.984277-06:00",
@@ -4629,5 +4631,6 @@
   "2026-11-19T07:09-06:00",
   "2026-11-19T07:59-06:00"
  ],
- "last_weekly": "2026-W46"
+ "last_weekly": "2026-W46",
+ "last_error": "2026-11-19T09:49-06:00: Madison: HTTP 541"
 }
