@@ -4390,3 +4390,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-19 13:28,American Dream,R755,East Rutherford,NJ,New York,1,5.1,available,MK1E4LL/A
 2026-11-19 13:29,Park City,R304,Lancaster,PA,Baltimore,2,48.5,available,MK1E4LL/A
 2026-11-19 13:30,Tacoma Mall,R339,Tacoma,WA,Seattle,2,29.2,available,MK1E4LL/A
+2026-11-19 13:32,American Dream,R755,East Rutherford,NJ,New York,1,5.1,unavailable,MK1E4LL/A
+2026-11-19 13:32,Southlake Town Square,R151,Southlake,TX,Dallas,1,20.4,available,MK1E4LL/A
