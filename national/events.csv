@@ -4474,3 +4474,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-20 10:20,Pentagon City,R129,Arlington,VA,Washington,1,3.9,available,MK1F4LL/A
 2026-11-20 10:28,Pentagon City,R129,Arlington,VA,Washington,1,3.9,unavailable,MK1F4LL/A
 2026-11-20 10:31,Cherry Creek,R047,Denver,CO,Denver,2,0.8,available,MK1E4LL/A
+2026-11-20 10:36,Cherry Creek,R047,Denver,CO,Denver,2,0.8,unavailable,MK1E4LL/A
