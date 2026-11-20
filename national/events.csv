@@ -4537,3 +4537,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-20 13:10,River Park Square,R420,Spokane,WA,,0,225.2,unavailable,MK1F4LL/A
 2026-11-20 13:11,Lehigh Valley,R281,Whitehall,PA,Philadelphia,1,49.3,unavailable,MK1E4LL/A
 2026-11-20 13:11,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,available,MK1E4LL/A
+2026-11-20 13:13,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,unavailable,MK1E4LL/A
