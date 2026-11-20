@@ -4579,3 +4579,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-20 16:26,Jordan Creek,R109,West Des Moines,IA,Des Moines,3,0.6,available,MK1F4LL/A
 2026-11-20 16:26,Domain NORTHSIDE,R216,Austin,TX,Austin,2,9.3,available,MK1F4LL/A
 2026-11-20 16:27,Jordan Creek,R109,West Des Moines,IA,Des Moines,3,0.6,unavailable,MK1F4LL/A
+2026-11-20 16:27,Domain NORTHSIDE,R216,Austin,TX,Austin,2,9.3,unavailable,MK1F4LL/A
+2026-11-20 16:27,Domain NORTHSIDE,R216,Austin,TX,Austin,2,9.3,available,MK1F4LL/A
