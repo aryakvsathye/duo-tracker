@@ -4493,11 +4493,7 @@
  "metro_skip": {
   "Phoenix": 1
  },
- "skipped": [
-  "Little Rock",
-  "Nashville",
-  "Salt Lake City"
- ],
+ "skipped": [],
  "checked_at": {
   "New York": "2026-11-19T21:59:26.250184-06:00",
   "Los Angeles": "2026-11-19T21:57:26.428362-06:00",
