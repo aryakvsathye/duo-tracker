@@ -4506,3 +4506,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-20 12:03,Corte Madera,R071,Corte Madera,CA,San Francisco,1,11.1,unavailable,MK1F4LL/A
 2026-11-20 12:03,Stanford Shopping Center,R099,Palo Alto,CA,San Francisco,1,27.4,unavailable,MK1E4LL/A
 2026-11-20 12:06,Roseville,R298,Roseville,CA,Sacramento,2,14.6,available,MK1E4LL/A
+2026-11-20 12:06,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,available,MK1E4LL/A
+2026-11-20 12:06,Montgomery Village,R044,Santa Rosa,CA,,0,68.2,unavailable,MK1F4LL/A
