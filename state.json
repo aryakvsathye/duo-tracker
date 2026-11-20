@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 397,
+ "checks": 398,
  "errors": 0,
  "events": 9,
  "last_heartbeat": "2026-11-20",
@@ -173,16 +173,6 @@
  },
  "last_check": "2026-11-20T12:57:13.510561-06:00",
  "history": [
-  {
-   "t": "2026-11-20T11:58:06-06:00",
-   "ok": true,
-   "ms": 538,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
   {
    "t": "2026-11-20T11:58:26-06:00",
    "ok": true,
@@ -1055,6 +1045,14 @@
    "t": "2026-11-20T12:56:13-06:00",
    "ok": true,
    "ms": 367,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T12:57:13-06:00",
+   "ok": true,
+   "ms": 447,
    "code": 200,
    "green": [],
    "burst": false
