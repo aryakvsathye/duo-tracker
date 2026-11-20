@@ -17,7 +17,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "Woodland Hills": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "ineligible",
    "MK1E4LL/A": "unavailable"
   },
   "West County": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 251,
+ "checks": 260,
  "errors": 0,
- "events": 4,
+ "events": 5,
  "last_heartbeat": "2026-11-20",
  "nearby": {
   "Country Club Plaza": {
@@ -171,80 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-20T11:38:44.030408-06:00",
+ "last_check": "2026-11-20T11:42:10.055785-06:00",
  "history": [
-  {
-   "t": "2026-11-20T10:38:28-06:00",
-   "ok": true,
-   "ms": 603,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T10:38:51-06:00",
-   "ok": true,
-   "ms": 410,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T10:39:51-06:00",
-   "ok": true,
-   "ms": 368,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T10:40:51-06:00",
-   "ok": true,
-   "ms": 412,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T10:41:51-06:00",
-   "ok": true,
-   "ms": 419,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T10:42:51-06:00",
-   "ok": true,
-   "ms": 377,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T10:43:51-06:00",
-   "ok": true,
-   "ms": 292,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T10:44:51-06:00",
-   "ok": true,
-   "ms": 346,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T10:45:51-06:00",
-   "ok": true,
-   "ms": 341,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-20T10:46:51-06:00",
    "ok": true,
@@ -970,6 +898,96 @@
     "Country Club Plaza"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-20T11:39:09-06:00",
+   "ok": true,
+   "ms": 441,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T11:39:29-06:00",
+   "ok": true,
+   "ms": 455,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T11:39:49-06:00",
+   "ok": true,
+   "ms": 484,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T11:40:09-06:00",
+   "ok": true,
+   "ms": 433,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T11:40:29-06:00",
+   "ok": true,
+   "ms": 379,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T11:40:49-06:00",
+   "ok": true,
+   "ms": 392,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T11:41:09-06:00",
+   "ok": true,
+   "ms": 384,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T11:41:29-06:00",
+   "ok": true,
+   "ms": 383,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T11:41:49-06:00",
+   "ok": true,
+   "ms": 443,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -982,16 +1000,6 @@
    },
    "city": "Kansas City",
    "state": "MO"
-  },
-  "Woodland Hills": {
-   "miles": 212.92,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Tulsa",
-   "state": "OK"
   },
   "Leawood": {
    "miles": 10.47,
@@ -1022,6 +1030,16 @@
    },
    "city": "West Des Moines",
    "state": "IA"
+  },
+  "Woodland Hills": {
+   "miles": 212.92,
+   "status": "ineligible",
+   "parts": {
+    "MK1F4LL/A": "ineligible",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Tulsa",
+   "state": "OK"
   },
   "West County": {
    "miles": 234.82,
