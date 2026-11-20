@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 118,
+ "checks": 126,
  "errors": 0,
  "events": 2,
  "last_heartbeat": "2026-11-20",
@@ -171,72 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-20T09:58:04.123082-06:00",
+ "last_check": "2026-11-20T10:05:04.273963-06:00",
  "history": [
-  {
-   "t": "2026-11-20T08:33:43-06:00",
-   "ok": true,
-   "ms": 679,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T08:34:43-06:00",
-   "ok": true,
-   "ms": 434,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T08:35:43-06:00",
-   "ok": true,
-   "ms": 341,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T08:36:43-06:00",
-   "ok": true,
-   "ms": 538,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T08:37:43-06:00",
-   "ok": true,
-   "ms": 484,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T08:38:43-06:00",
-   "ok": true,
-   "ms": 454,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T08:39:43-06:00",
-   "ok": true,
-   "ms": 611,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T08:40:43-06:00",
-   "ok": true,
-   "ms": 408,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-20T08:41:04-06:00",
    "ok": true,
@@ -909,6 +845,70 @@
    "green": [
     "Leawood"
    ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T09:58:03-06:00",
+   "ok": true,
+   "ms": 275,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T09:59:03-06:00",
+   "ok": true,
+   "ms": 336,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T10:00:03-06:00",
+   "ok": true,
+   "ms": 361,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T10:01:03-06:00",
+   "ok": true,
+   "ms": 255,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T10:02:03-06:00",
+   "ok": true,
+   "ms": 473,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T10:03:03-06:00",
+   "ok": true,
+   "ms": 362,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T10:04:03-06:00",
+   "ok": true,
+   "ms": 340,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T10:05:03-06:00",
+   "ok": true,
+   "ms": 425,
+   "code": 200,
+   "green": [],
    "burst": false
   }
  ],
