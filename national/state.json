@@ -4177,8 +4177,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-20T07:44:39.357248-06:00",
- "metros_ok": 49,
+ "last_sweep": "2026-11-20T07:44:45.873107-06:00",
+ "metros_ok": 45,
  "metros": [
   {
    "metro": "New York",
@@ -4481,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 5,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4490,16 +4490,13 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Honolulu": 1,
-  "Indianapolis": 1,
-  "Cleveland": 1,
-  "St. Louis": 1,
-  "Raleigh": 1
- },
+ "metro_skip": {},
  "skipped": [
-  "Los Angeles",
-  "Madison"
+  "Cleveland",
+  "Honolulu",
+  "Indianapolis",
+  "Raleigh",
+  "St. Louis"
  ],
  "checked_at": {
   "New York": "2026-11-20T07:42:27.968096-06:00",
@@ -4536,14 +4533,14 @@
   "Indianapolis": "2026-11-20T07:44:26.601273-06:00",
   "Cleveland": "2026-11-20T07:44:26.601402-06:00",
   "Nashville": "2026-11-20T07:43:11.631145-06:00",
-  "Raleigh": "2026-11-20T07:39:49.366952-06:00",
+  "Raleigh": "2026-11-20T07:44:50.873407-06:00",
   "Oklahoma City": "2026-11-20T07:41:27.408138-06:00",
   "Tulsa": "2026-11-20T07:41:54.319598-06:00",
   "Omaha": "2026-11-20T07:43:27.398032-06:00",
   "Des Moines": "2026-11-20T07:44:05.854070-06:00",
   "Little Rock": "2026-11-20T07:43:06.376060-06:00",
   "Memphis": "2026-11-20T07:42:38.665723-06:00",
-  "Madison": "2026-11-20T07:39:39.094935-06:00",
+  "Madison": "2026-11-20T07:44:45.872981-06:00",
   "Albuquerque": "2026-11-20T07:41:43.553946-06:00",
   "Salt Lake City": "2026-11-20T07:43:01.020315-06:00",
   "Louisville": "2026-11-20T07:42:43.918566-06:00",
@@ -4595,7 +4592,7 @@
   "Des Moines": "2026-11-20T07:44:05.854088-06:00",
   "Little Rock": "2026-11-20T07:43:06.376078-06:00",
   "Memphis": "2026-11-20T07:42:38.665740-06:00",
-  "Madison": "2026-11-20T07:31:08.011760-06:00",
+  "Madison": "2026-11-20T07:44:45.873001-06:00",
   "Albuquerque": "2026-11-20T07:41:43.553963-06:00",
   "Salt Lake City": "2026-11-20T07:43:01.020359-06:00",
   "Louisville": "2026-11-20T07:42:43.918586-06:00",
@@ -4632,6 +4629,5 @@
   "2026-11-20T07:04-06:00",
   "2026-11-20T07:39-06:00"
  ],
- "last_weekly": "2026-W46",
- "last_error": "2026-11-20T07:39-06:00: Honolulu: HTTP 541; Indianapolis: HTTP 541; Cleveland: HTTP 541; St. Louis: HTTP 541; Raleigh: HTTP 541"
+ "last_weekly": "2026-W46"
 }
