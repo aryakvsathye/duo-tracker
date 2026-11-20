@@ -4178,7 +4178,7 @@
   }
  },
  "last_sweep": "2026-11-19T22:29:40.592942-06:00",
- "metros_ok": 50,
+ "metros_ok": 46,
  "metros": [
   {
    "metro": "New York",
@@ -4490,10 +4490,10 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Phoenix": 1
- },
- "skipped": [],
+ "metro_skip": {},
+ "skipped": [
+  "Phoenix"
+ ],
  "checked_at": {
   "New York": "2026-11-19T22:29:30.708717-06:00",
   "Los Angeles": "2026-11-19T22:27:29.390094-06:00",
