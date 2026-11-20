@@ -4508,3 +4508,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-20 12:06,Roseville,R298,Roseville,CA,Sacramento,2,14.6,available,MK1E4LL/A
 2026-11-20 12:06,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,available,MK1E4LL/A
 2026-11-20 12:06,Montgomery Village,R044,Santa Rosa,CA,,0,68.2,unavailable,MK1F4LL/A
+2026-11-20 12:06,Woodland Hills,R233,Tulsa,OK,Tulsa,3,1.6,unavailable,MK1F4LL/A
