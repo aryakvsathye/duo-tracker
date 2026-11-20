@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 199,
+ "checks": 207,
  "errors": 0,
  "events": 3,
  "last_heartbeat": "2026-11-20",
@@ -171,88 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-20T11:13:31.545111-06:00",
+ "last_check": "2026-11-20T11:20:31.502062-06:00",
  "history": [
-  {
-   "t": "2026-11-20T09:49:42-06:00",
-   "ok": true,
-   "ms": 360,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T09:50:42-06:00",
-   "ok": true,
-   "ms": 477,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T09:51:42-06:00",
-   "ok": true,
-   "ms": 413,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T09:52:42-06:00",
-   "ok": true,
-   "ms": 482,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T09:53:42-06:00",
-   "ok": true,
-   "ms": 409,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T09:54:42-06:00",
-   "ok": true,
-   "ms": 546,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T09:55:42-06:00",
-   "ok": true,
-   "ms": 557,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T09:56:42-06:00",
-   "ok": true,
-   "ms": 427,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
   {
    "t": "2026-11-20T09:57:03-06:00",
    "ok": true,
@@ -907,6 +827,70 @@
    "t": "2026-11-20T11:12:31-06:00",
    "ok": true,
    "ms": 481,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T11:13:31-06:00",
+   "ok": true,
+   "ms": 486,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T11:14:31-06:00",
+   "ok": true,
+   "ms": 426,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T11:15:31-06:00",
+   "ok": true,
+   "ms": 560,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T11:16:31-06:00",
+   "ok": true,
+   "ms": 343,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T11:17:31-06:00",
+   "ok": true,
+   "ms": 410,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T11:18:31-06:00",
+   "ok": true,
+   "ms": 535,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T11:19:31-06:00",
+   "ok": true,
+   "ms": 608,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T11:20:31-06:00",
+   "ok": true,
+   "ms": 442,
    "code": 200,
    "green": [],
    "burst": false
