@@ -1,7 +1,7 @@
 {
  "stock": {
   "Country Club Plaza": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   },
   "Leawood": {
@@ -49,23 +49,23 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 458,
+ "checks": 460,
  "errors": 0,
- "events": 17,
+ "events": 18,
  "last_heartbeat": "2026-11-20",
  "nearby": {
   "Country Club Plaza": {
    "miles": 10.11,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "quotes": {
-    "MK1F4LL/A": "Today at Apple Country Club Plaza",
+    "MK1F4LL/A": "Currently unavailable at Apple Country Club Plaza",
     "MK1E4LL/A": "Currently unavailable at Apple Country Club Plaza"
    },
-   "quote": "Today at Apple Country Club Plaza",
+   "quote": "Currently unavailable at Apple Country Club Plaza",
    "phone": "816-448 9200",
    "lat": 39.0413,
    "lon": -94.590172,
@@ -171,28 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-20T13:54:20.501702-06:00",
+ "last_check": "2026-11-20T13:55:00.397732-06:00",
  "history": [
-  {
-   "t": "2026-11-20T12:29:53-06:00",
-   "ok": true,
-   "ms": 269,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T12:30:53-06:00",
-   "ok": true,
-   "ms": 328,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": false
-  },
   {
    "t": "2026-11-20T12:31:53-06:00",
    "ok": true,
@@ -952,14 +932,34 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-20T13:54:20-06:00",
+   "ok": true,
+   "ms": 484,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T13:54:40-06:00",
+   "ok": true,
+   "ms": 426,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
   }
  ],
  "field": {
   "Country Club Plaza": {
    "miles": 10.11,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "city": "Kansas City",
@@ -1093,5 +1093,5 @@
   ],
   "until": "2026-11-20T14:24:00-06:00"
  },
- "wave_alerted_at": "2026-11-18T09:46:41.927183-06:00"
+ "wave_alerted_at": "2026-11-20T13:55:00.397744-06:00"
 }
