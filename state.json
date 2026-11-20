@@ -1,7 +1,7 @@
 {
  "stock": {
   "Country Club Plaza": {
-   "MK1F4LL/A": "unavailable",
+   "MK1F4LL/A": "available",
    "MK1E4LL/A": "unavailable"
   },
   "Leawood": {
@@ -49,23 +49,23 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 457,
+ "checks": 458,
  "errors": 0,
- "events": 16,
+ "events": 17,
  "last_heartbeat": "2026-11-20",
  "nearby": {
   "Country Club Plaza": {
    "miles": 10.11,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "quotes": {
-    "MK1F4LL/A": "Currently unavailable at Apple Country Club Plaza",
+    "MK1F4LL/A": "Today at Apple Country Club Plaza",
     "MK1E4LL/A": "Currently unavailable at Apple Country Club Plaza"
    },
-   "quote": "Currently unavailable at Apple Country Club Plaza",
+   "quote": "Today at Apple Country Club Plaza",
    "phone": "816-448 9200",
    "lat": 39.0413,
    "lon": -94.590172,
@@ -171,18 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-20T13:53:20.464797-06:00",
+ "last_check": "2026-11-20T13:54:20.501702-06:00",
  "history": [
-  {
-   "t": "2026-11-20T12:28:53-06:00",
-   "ok": true,
-   "ms": 313,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": false
-  },
   {
    "t": "2026-11-20T12:29:53-06:00",
    "ok": true,
@@ -954,14 +944,22 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-20T13:53:20-06:00",
+   "ok": true,
+   "ms": 449,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
   "Country Club Plaza": {
    "miles": 10.11,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "city": "Kansas City",
@@ -1088,12 +1086,12 @@
   "MK1E4LL/A": "Star White"
  },
  "wave": {
-  "since": "2026-11-20T11:26:00.239565-06:00",
+  "since": "2026-11-20T13:54:20.501713-06:00",
   "stores": [
-   "Country Club Plaza",
-   "Woodland Hills"
+   "Penn Square",
+   "Country Club Plaza"
   ],
-  "until": "2026-11-20T12:12:00-06:00"
+  "until": "2026-11-20T14:24:00-06:00"
  },
  "wave_alerted_at": "2026-11-18T09:46:41.927183-06:00"
 }
