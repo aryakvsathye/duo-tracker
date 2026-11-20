@@ -17,7 +17,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "Woodland Hills": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   },
   "West County": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 305,
+ "checks": 328,
  "errors": 0,
- "events": 6,
+ "events": 7,
  "last_heartbeat": "2026-11-20",
  "nearby": {
   "Country Club Plaza": {
@@ -171,238 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-20T11:56:53.977157-06:00",
+ "last_check": "2026-11-20T12:05:07.255784-06:00",
  "history": [
-  {
-   "t": "2026-11-20T11:26:59-06:00",
-   "ok": true,
-   "ms": 432,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:27:19-06:00",
-   "ok": true,
-   "ms": 416,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:27:39-06:00",
-   "ok": true,
-   "ms": 432,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:27:59-06:00",
-   "ok": true,
-   "ms": 400,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:28:19-06:00",
-   "ok": true,
-   "ms": 349,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:28:39-06:00",
-   "ok": true,
-   "ms": 455,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:28:59-06:00",
-   "ok": true,
-   "ms": 403,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:29:19-06:00",
-   "ok": true,
-   "ms": 377,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:29:39-06:00",
-   "ok": true,
-   "ms": 398,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:30:03-06:00",
-   "ok": true,
-   "ms": 700,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:30:23-06:00",
-   "ok": true,
-   "ms": 532,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:30:43-06:00",
-   "ok": true,
-   "ms": 354,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:31:03-06:00",
-   "ok": true,
-   "ms": 479,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:31:23-06:00",
-   "ok": true,
-   "ms": 374,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:31:43-06:00",
-   "ok": true,
-   "ms": 490,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:32:03-06:00",
-   "ok": true,
-   "ms": 411,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:32:23-06:00",
-   "ok": true,
-   "ms": 399,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:32:43-06:00",
-   "ok": true,
-   "ms": 393,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:33:03-06:00",
-   "ok": true,
-   "ms": 375,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:33:23-06:00",
-   "ok": true,
-   "ms": 442,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:33:43-06:00",
-   "ok": true,
-   "ms": 424,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:34:03-06:00",
-   "ok": true,
-   "ms": 387,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-20T11:34:23-06:00",
-   "ok": true,
-   "ms": 421,
-   "code": 200,
-   "green": [
-    "Country Club Plaza"
-   ],
-   "burst": true
-  },
   {
    "t": "2026-11-20T11:34:43-06:00",
    "ok": true,
@@ -1072,6 +842,236 @@
     "Country Club Plaza"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-20T11:57:26-06:00",
+   "ok": true,
+   "ms": 321,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T11:57:46-06:00",
+   "ok": true,
+   "ms": 236,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T11:58:06-06:00",
+   "ok": true,
+   "ms": 538,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T11:58:26-06:00",
+   "ok": true,
+   "ms": 257,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T11:58:46-06:00",
+   "ok": true,
+   "ms": 296,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T11:59:06-06:00",
+   "ok": true,
+   "ms": 334,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T11:59:26-06:00",
+   "ok": true,
+   "ms": 357,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T11:59:46-06:00",
+   "ok": true,
+   "ms": 333,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T12:00:06-06:00",
+   "ok": true,
+   "ms": 285,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T12:00:26-06:00",
+   "ok": true,
+   "ms": 374,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T12:00:46-06:00",
+   "ok": true,
+   "ms": 690,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T12:01:06-06:00",
+   "ok": true,
+   "ms": 270,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T12:01:26-06:00",
+   "ok": true,
+   "ms": 274,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T12:01:46-06:00",
+   "ok": true,
+   "ms": 294,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T12:02:06-06:00",
+   "ok": true,
+   "ms": 344,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T12:02:26-06:00",
+   "ok": true,
+   "ms": 346,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T12:02:46-06:00",
+   "ok": true,
+   "ms": 461,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T12:03:06-06:00",
+   "ok": true,
+   "ms": 399,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T12:03:26-06:00",
+   "ok": true,
+   "ms": 278,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T12:03:46-06:00",
+   "ok": true,
+   "ms": 335,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T12:04:06-06:00",
+   "ok": true,
+   "ms": 341,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T12:04:26-06:00",
+   "ok": true,
+   "ms": 515,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-20T12:04:46-06:00",
+   "ok": true,
+   "ms": 384,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -1084,16 +1084,6 @@
    },
    "city": "Kansas City",
    "state": "MO"
-  },
-  "Woodland Hills": {
-   "miles": 212.92,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Tulsa",
-   "state": "OK"
   },
   "Leawood": {
    "miles": 10.47,
@@ -1124,6 +1114,16 @@
    },
    "city": "West Des Moines",
    "state": "IA"
+  },
+  "Woodland Hills": {
+   "miles": 212.92,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Tulsa",
+   "state": "OK"
   },
   "West County": {
    "miles": 234.82,
