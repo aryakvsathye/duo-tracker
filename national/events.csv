@@ -4522,3 +4522,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-20 12:34,Broadway Plaza,R014,Walnut Creek,CA,San Francisco,1,20.4,unavailable,MK1F4LL/A
 2026-11-20 12:37,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,available,MK1E4LL/A
 2026-11-20 12:38,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,unavailable,MK1E4LL/A
+2026-11-20 12:40,Eton,R081,Woodmere,OH,Cleveland,2,2.4,available,MK1F4LL/A
+2026-11-20 12:40,Eton,R081,Woodmere,OH,Cleveland,2,2.4,unavailable,MK1F4LL/A
