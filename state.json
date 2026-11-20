@@ -17,7 +17,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "Woodland Hills": {
-   "MK1F4LL/A": "ineligible",
+   "MK1F4LL/A": "available",
    "MK1E4LL/A": "unavailable"
   },
   "West County": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 260,
+ "checks": 261,
  "errors": 0,
- "events": 5,
+ "events": 6,
  "last_heartbeat": "2026-11-20",
  "nearby": {
   "Country Club Plaza": {
@@ -171,16 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-20T11:42:10.055785-06:00",
+ "last_check": "2026-11-20T11:42:30.023502-06:00",
  "history": [
-  {
-   "t": "2026-11-20T10:46:51-06:00",
-   "ok": true,
-   "ms": 645,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-20T10:47:23-06:00",
    "ok": true,
@@ -988,6 +980,16 @@
     "Country Club Plaza"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-20T11:42:09-06:00",
+   "ok": true,
+   "ms": 446,
+   "code": 200,
+   "green": [
+    "Country Club Plaza"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -1000,6 +1002,16 @@
    },
    "city": "Kansas City",
    "state": "MO"
+  },
+  "Woodland Hills": {
+   "miles": 212.92,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Tulsa",
+   "state": "OK"
   },
   "Leawood": {
    "miles": 10.47,
@@ -1030,16 +1042,6 @@
    },
    "city": "West Des Moines",
    "state": "IA"
-  },
-  "Woodland Hills": {
-   "miles": 212.92,
-   "status": "ineligible",
-   "parts": {
-    "MK1F4LL/A": "ineligible",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Tulsa",
-   "state": "OK"
   },
   "West County": {
    "miles": 234.82,
@@ -1124,10 +1126,10 @@
  "wave": {
   "since": "2026-11-20T11:26:00.239565-06:00",
   "stores": [
-   "Woodland Hills",
-   "Country Club Plaza"
+   "Country Club Plaza",
+   "Woodland Hills"
   ],
-  "until": "2026-11-20T11:56:00-06:00"
+  "until": "2026-11-20T12:12:00-06:00"
  },
  "wave_alerted_at": "2026-11-18T09:46:41.927183-06:00"
 }
