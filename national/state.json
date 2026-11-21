@@ -996,14 +996,17 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 0.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 10:46"
+   },
+   "since": "2026-11-21 10:46"
   },
   "R287": {
    "name": "Georgetown",
@@ -3267,17 +3270,14 @@
    "metro": "Tampa",
    "tier": 2,
    "miles": 13.0,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-21 09:01"
-   },
-   "since": "2026-11-21 09:01"
+   "since_by_part": {}
   },
   "R615": {
    "name": "University Town Center",
@@ -3345,14 +3345,17 @@
    "metro": "Orlando",
    "tier": 2,
    "miles": 16.0,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 10:46"
+   },
+   "since": "2026-11-21 10:46"
   },
   "R111": {
    "name": "St. Johns Town Center",
@@ -4267,8 +4270,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-21T10:46:14.527438-06:00",
- "metros_ok": 50,
+ "last_sweep": "2026-11-21T10:46:45.849476-06:00",
+ "metros_ok": 49,
  "metros": [
   {
    "metro": "New York",
@@ -4599,12 +4602,12 @@
   "Seattle": "2026-11-21T10:46:02.700526-06:00",
   "Minneapolis": "2026-11-21T10:45:38.975883-06:00",
   "San Diego": "2026-11-21T10:42:05.378001-06:00",
-  "Tampa": "2026-11-21T10:40:44.564474-06:00",
+  "Tampa": "2026-11-21T10:46:28.090309-06:00",
   "Denver": "2026-11-21T10:42:57.753711-06:00",
-  "Baltimore": "2026-11-21T10:41:16.290348-06:00",
+  "Baltimore": "2026-11-21T10:46:33.953104-06:00",
   "St. Louis": "2026-11-21T10:41:59.425630-06:00",
-  "Orlando": "2026-11-21T10:41:28.163564-06:00",
-  "Charlotte": "2026-11-21T10:41:39.988151-06:00",
+  "Orlando": "2026-11-21T10:46:39.906592-06:00",
+  "Charlotte": "2026-11-21T10:46:45.849344-06:00",
   "San Antonio": "2026-11-21T10:44:24.682103-06:00",
   "Portland": "2026-11-21T10:44:42.431278-06:00",
   "Sacramento": "2026-11-21T10:44:56.091085-06:00",
@@ -4613,7 +4616,7 @@
   "Las Vegas": "2026-11-21T10:43:03.639574-06:00",
   "Cincinnati": "2026-11-21T10:46:08.609906-06:00",
   "Kansas City": "2026-11-21T10:42:33.803097-06:00",
-  "Columbus": "2026-11-21T10:40:38.644332-06:00",
+  "Columbus": "2026-11-21T10:46:22.208525-06:00",
   "Indianapolis": "2026-11-21T10:40:50.509426-06:00",
   "Cleveland": "2026-11-21T10:41:02.575315-06:00",
   "Nashville": "2026-11-21T10:42:51.827968-06:00",
@@ -4651,12 +4654,12 @@
   "Seattle": "2026-11-21T10:46:02.700548-06:00",
   "Minneapolis": "2026-11-21T10:45:38.975905-06:00",
   "San Diego": "2026-11-21T10:42:05.378020-06:00",
-  "Tampa": "2026-11-21T10:40:44.564493-06:00",
+  "Tampa": "2026-11-21T10:46:28.090331-06:00",
   "Denver": "2026-11-21T10:42:57.753733-06:00",
-  "Baltimore": "2026-11-21T10:41:16.290367-06:00",
+  "Baltimore": "2026-11-21T10:46:33.953127-06:00",
   "St. Louis": "2026-11-21T10:41:59.425650-06:00",
-  "Orlando": "2026-11-21T10:41:28.163584-06:00",
-  "Charlotte": "2026-11-21T10:41:39.988170-06:00",
+  "Orlando": "2026-11-21T10:46:39.906631-06:00",
+  "Charlotte": "2026-11-21T10:46:45.849365-06:00",
   "San Antonio": "2026-11-21T10:44:24.682124-06:00",
   "Portland": "2026-11-21T10:44:42.431300-06:00",
   "Sacramento": "2026-11-21T10:44:56.091107-06:00",
@@ -4665,7 +4668,7 @@
   "Las Vegas": "2026-11-21T10:43:03.639617-06:00",
   "Cincinnati": "2026-11-21T10:46:08.609929-06:00",
   "Kansas City": "2026-11-21T10:42:33.803118-06:00",
-  "Columbus": "2026-11-21T10:40:38.644349-06:00",
+  "Columbus": "2026-11-21T10:46:22.208546-06:00",
   "Indianapolis": "2026-11-21T10:40:50.509445-06:00",
   "Cleveland": "2026-11-21T10:41:02.575334-06:00",
   "Nashville": "2026-11-21T10:42:51.827990-06:00",
@@ -4687,8 +4690,8 @@
   "Buffalo": "2026-11-21T10:44:10.993637-06:00"
  },
  "hot": [
-  "West South Central",
-  "Middle Atlantic"
+  "South Atlantic",
+  "West South Central"
  ],
  "cycle_seconds": 150,
  "pace": 5.5,
