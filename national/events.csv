@@ -4675,3 +4675,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 08:47,Bridgewater,R104,Bridgewater,NJ,,0,52.5,available,MK1F4LL/A
 2026-11-21 08:47,Menlo Park,R067,Edison,NJ,,0,60.3,available,MK1F4LL/A
 2026-11-21 08:47,Galleria Dallas,R746,Dallas,TX,Dallas,1,4.8,unavailable,MK1F4LL/A
+2026-11-21 08:48,CambridgeSide,R021,Cambridge,MA,Boston,1,1.2,available,MK1F4LL/A
+2026-11-21 08:48,South Shore,R110,Braintree,MA,Boston,1,9.2,available,MK1E4LL/A
+2026-11-21 08:48,Burlington,R155,Burlington,MA,Boston,1,11.6,unavailable,MK1F4LL/A
