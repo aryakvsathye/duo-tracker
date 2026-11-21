@@ -4876,3 +4876,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 10:40,University Park Village,R316,Fort Worth,TX,Dallas,1,34.5,available,MK1F4LL/A
 2026-11-21 10:41,Woodfield,R018,Schaumburg,IL,Chicago,1,23.8,unavailable,MK1F4LL/A
 2026-11-21 10:41,Friendly Center,R293,Greensboro,NC,,0,65.4,unavailable,MK1F4LL/A
+2026-11-21 10:41,SanTan Village,R267,Gilbert,AZ,Phoenix,1,21.6,unavailable,MK1F4LL/A
+2026-11-21 10:41,Green Hills,R123,Nashville,TN,Nashville,2,1.8,unavailable,MK1F4LL/A
