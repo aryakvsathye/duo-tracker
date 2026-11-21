@@ -5061,3 +5061,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 13:35,Stoneridge Mall,R101,Pleasanton,CA,San Francisco,1,27.0,unavailable,MK1F4LL/A
 2026-11-21 13:35,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,unavailable,MK1F4LL/A
 2026-11-21 13:37,Ala Moana,R073,Honolulu,HI,Honolulu,3,0.4,available,MK1F4LL/A
+2026-11-21 13:40,Union Square,R075,San Francisco,CA,San Francisco,1,0.2,unavailable,MK1F4LL/A
