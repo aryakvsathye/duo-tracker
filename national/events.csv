@@ -4740,3 +4740,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 09:06,University Park Mall,R360,Mishawaka,IN,,0,74.7,available,MK1F4LL/A
 2026-11-21 09:07,Crocker Park,R192,Westlake,OH,Cleveland,2,22.4,unavailable,MK1F4LL/A
 2026-11-21 09:08,Willowbrook Mall,R321,Houston,TX,Houston,1,15.2,available,MK1F4LL/A
+2026-11-21 09:09,South Shore,R110,Braintree,MA,Boston,1,9.2,unavailable,MK1E4LL/A
+2026-11-21 09:09,Burlington,R155,Burlington,MA,Boston,1,11.6,unavailable,MK1F4LL/A
+2026-11-21 09:09,Pheasant Lane,R354,Nashua,NH,Boston,1,30.5,unavailable,MK1F4LL/A
