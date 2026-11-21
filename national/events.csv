@@ -4797,3 +4797,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 09:42,Arrowhead,R247,Glendale,AZ,Phoenix,1,14.6,available,MK1F4LL/A
 2026-11-21 09:45,Aventura,R087,Aventura,FL,Miami,1,13.6,available,MK1F4LL/A
 2026-11-21 09:45,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,unavailable,MK1F4LL/A
+2026-11-21 09:46,Oakbrook,R056,Oak Brook,IL,Chicago,1,17.4,unavailable,MK1F4LL/A
+2026-11-21 09:46,Bridgewater,R104,Bridgewater,NJ,,0,52.5,unavailable,MK1F4LL/A
