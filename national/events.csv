@@ -4679,3 +4679,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 08:48,South Shore,R110,Braintree,MA,Boston,1,9.2,available,MK1E4LL/A
 2026-11-21 08:48,Burlington,R155,Burlington,MA,Boston,1,11.6,unavailable,MK1F4LL/A
 2026-11-21 08:51,Eastview,R140,Victor,NY,,0,67.5,available,MK1F4LL/A
+2026-11-21 08:51,Millenia,R053,Orlando,FL,Orlando,2,3.5,available,MK1F4LL/A
+2026-11-21 08:51,Boca Raton,R074,Boca Raton,FL,Miami,1,41.6,available,MK1F4LL/A
+2026-11-21 08:51,Charleston,R318,Charleston,SC,,0,172.2,available,MK1F4LL/A
+2026-11-21 08:51,Mall of Georgia,R259,Buford,GA,Atlanta,1,26.3,available,MK1F4LL/A
