@@ -21,7 +21,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "West County": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   },
   "Saint Louis Galleria": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 357,
+ "checks": 364,
  "errors": 0,
- "events": 16,
+ "events": 17,
  "last_heartbeat": "2026-11-21",
  "nearby": {
   "Country Club Plaza": {
@@ -171,70 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-21T11:42:32.107950-06:00",
+ "last_check": "2026-11-21T11:49:57.968914-06:00",
  "history": [
-  {
-   "t": "2026-11-21T10:25:35-06:00",
-   "ok": true,
-   "ms": 335,
-   "code": 200,
-   "green": [
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T10:25:55-06:00",
-   "ok": true,
-   "ms": 283,
-   "code": 200,
-   "green": [
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T10:26:15-06:00",
-   "ok": true,
-   "ms": 285,
-   "code": 200,
-   "green": [
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T10:26:37-06:00",
-   "ok": true,
-   "ms": 401,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T10:26:57-06:00",
-   "ok": true,
-   "ms": 440,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T10:27:17-06:00",
-   "ok": true,
-   "ms": 458,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T10:27:37-06:00",
-   "ok": true,
-   "ms": 484,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-21T10:27:57-06:00",
    "ok": true,
@@ -898,19 +836,65 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-21T11:42:57-06:00",
+   "ok": true,
+   "ms": 395,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-21T11:43:57-06:00",
+   "ok": true,
+   "ms": 453,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-21T11:44:57-06:00",
+   "ok": true,
+   "ms": 723,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-21T11:45:57-06:00",
+   "ok": true,
+   "ms": 817,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-21T11:46:57-06:00",
+   "ok": true,
+   "ms": 378,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-21T11:47:57-06:00",
+   "ok": true,
+   "ms": 375,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-21T11:48:57-06:00",
+   "ok": true,
+   "ms": 498,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
-  "West County": {
-   "miles": 234.82,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
-  },
   "The Promenade at Chenal": {
    "miles": 320.42,
    "status": "available",
@@ -970,6 +954,16 @@
    },
    "city": "Tulsa",
    "state": "OK"
+  },
+  "West County": {
+   "miles": 234.82,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
   },
   "Saint Louis Galleria": {
    "miles": 239.77,
