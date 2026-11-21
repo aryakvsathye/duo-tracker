@@ -4837,3 +4837,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 10:05,Grand Central,R415,New York,NY,New York,1,1.1,unavailable,MK1F4LL/A
 2026-11-21 10:05,King of Prussia,R065,King of Prussia,PA,Philadelphia,1,14.7,available,MK1F4LL/A
 2026-11-21 10:06,MarketStreet,R011,Lynnfield,MA,Boston,1,11.6,unavailable,MK1F4LL/A
+2026-11-21 10:06,City Creek Center,R125,Salt Lake City,UT,Salt Lake City,3,0.9,available,MK1F4LL/A
+2026-11-21 10:06,Cielo Vista Mall,R492,El Paso,TX,,0,230.6,available,MK1F4LL/A
