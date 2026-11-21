@@ -4703,3 +4703,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 08:57,Christiana Mall,R102,Newark,DE,Philadelphia,1,31.8,available,MK1F4LL/A
 2026-11-21 08:57,Lehigh Valley,R281,Whitehall,PA,Philadelphia,1,49.3,available,MK1F4LL/A
 2026-11-21 08:57,Fairfax Corner,R221,Fairfax,VA,Washington,1,18.5,available,MK1F4LL/A
+2026-11-21 08:57,Southlake Town Square,R151,Southlake,TX,Dallas,1,20.4,available,MK1F4LL/A
+2026-11-21 08:57,The Woodlands,R126,The Woodlands,TX,Houston,1,28.7,available,MK1F4LL/A
+2026-11-21 08:58,First Colony Mall,R205,Sugar Land,TX,Houston,1,14.5,unavailable,MK1F4LL/A
