@@ -5073,3 +5073,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 14:01,The Greene,R518,Beavercreek,OH,Cincinnati,2,36.9,unavailable,MK1F4LL/A
 2026-11-21 14:04,Boylston Street,R149,Boston,MA,Boston,1,0.4,available,MK1F4LL/A
 2026-11-21 14:09,Arden Fair,R070,Sacramento,CA,Sacramento,2,1.2,available,MK1F4LL/A
+2026-11-21 14:12,Boylston Street,R149,Boston,MA,Boston,1,0.4,unavailable,MK1F4LL/A
+2026-11-21 14:12,Mall of America,R007,Bloomington,MN,Minneapolis,2,1.2,available,MK1F4LL/A
