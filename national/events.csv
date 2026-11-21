@@ -4594,3 +4594,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-20 17:27,Montgomery Mall,R084,Bethesda,MD,Washington,1,10.5,unavailable,MK1F4LL/A
 2026-11-20 17:32,Deer Park,R258,Deer Park,IL,Chicago,1,28.8,unavailable,MK1F4LL/A
 2026-11-20 19:50,Jordan Creek,R109,West Des Moines,IA,Des Moines,3,0.6,available,MK1F4LL/A
+2026-11-20 19:54,Jordan Creek,R109,West Des Moines,IA,Des Moines,3,0.6,unavailable,MK1F4LL/A
