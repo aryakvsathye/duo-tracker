@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 921,
+ "checks": 930,
  "errors": 0,
  "events": 27,
  "last_heartbeat": "2026-11-20",
@@ -171,80 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-20T20:09:50.626258-06:00",
+ "last_check": "2026-11-20T20:18:17.024873-06:00",
  "history": [
-  {
-   "t": "2026-11-20T18:46:00-06:00",
-   "ok": true,
-   "ms": 449,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T18:47:00-06:00",
-   "ok": true,
-   "ms": 459,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T18:48:00-06:00",
-   "ok": true,
-   "ms": 470,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T18:49:00-06:00",
-   "ok": true,
-   "ms": 397,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T18:50:00-06:00",
-   "ok": true,
-   "ms": 388,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T18:51:00-06:00",
-   "ok": true,
-   "ms": 565,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T18:52:00-06:00",
-   "ok": true,
-   "ms": 439,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T18:53:00-06:00",
-   "ok": true,
-   "ms": 466,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T18:54:00-06:00",
-   "ok": true,
-   "ms": 411,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-20T18:54:23-06:00",
    "ok": true,
@@ -917,6 +845,96 @@
    "t": "2026-11-20T20:09:50-06:00",
    "ok": true,
    "ms": 316,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:10:16-06:00",
+   "ok": true,
+   "ms": 524,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:11:16-06:00",
+   "ok": true,
+   "ms": 447,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:12:16-06:00",
+   "ok": true,
+   "ms": 437,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:13:16-06:00",
+   "ok": true,
+   "ms": 768,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:14:16-06:00",
+   "ok": true,
+   "ms": 367,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:15:16-06:00",
+   "ok": true,
+   "ms": 455,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:16:16-06:00",
+   "ok": true,
+   "ms": 465,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:17:16-06:00",
+   "ok": true,
+   "ms": 357,
+   "code": 200,
+   "green": [
+    "Jordan Creek"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:18:16-06:00",
+   "ok": true,
+   "ms": 491,
    "code": 200,
    "green": [
     "Jordan Creek"
