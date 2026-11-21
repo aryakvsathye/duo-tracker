@@ -4872,3 +4872,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 10:37,Grand Central,R415,New York,NY,New York,1,1.1,available,MK1F4LL/A
 2026-11-21 10:38,Cherry Creek,R047,Denver,CO,Denver,2,0.8,available,MK1F4LL/A
 2026-11-21 10:38,The Promenade Shops at Briargate,R338,Colorado Springs,CO,,0,53.6,available,MK1F4LL/A
+2026-11-21 10:39,Highland Village,R437,Houston,TX,Houston,1,1.4,unavailable,MK1F4LL/A
+2026-11-21 10:40,University Park Village,R316,Fort Worth,TX,Dallas,1,34.5,available,MK1F4LL/A
