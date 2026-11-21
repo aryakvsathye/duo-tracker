@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 966,
+ "checks": 975,
  "errors": 0,
  "events": 28,
  "last_heartbeat": "2026-11-20",
@@ -171,80 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-20T20:52:15.278637-06:00",
+ "last_check": "2026-11-20T21:00:15.224033-06:00",
  "history": [
-  {
-   "t": "2026-11-20T19:28:05-06:00",
-   "ok": true,
-   "ms": 410,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T19:29:05-06:00",
-   "ok": true,
-   "ms": 584,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T19:30:05-06:00",
-   "ok": true,
-   "ms": 294,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T19:31:05-06:00",
-   "ok": true,
-   "ms": 490,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T19:32:05-06:00",
-   "ok": true,
-   "ms": 380,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T19:33:05-06:00",
-   "ok": true,
-   "ms": 363,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T19:34:05-06:00",
-   "ok": true,
-   "ms": 516,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T19:35:05-06:00",
-   "ok": true,
-   "ms": 510,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-20T19:36:05-06:00",
-   "ok": true,
-   "ms": 615,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-20T19:36:35-06:00",
    "ok": true,
@@ -1011,6 +939,78 @@
    "green": [
     "Jordan Creek"
    ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:52:14-06:00",
+   "ok": true,
+   "ms": 503,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:53:14-06:00",
+   "ok": true,
+   "ms": 471,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:54:14-06:00",
+   "ok": true,
+   "ms": 727,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:55:14-06:00",
+   "ok": true,
+   "ms": 414,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:56:14-06:00",
+   "ok": true,
+   "ms": 454,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:57:14-06:00",
+   "ok": true,
+   "ms": 380,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:58:14-06:00",
+   "ok": true,
+   "ms": 436,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T20:59:14-06:00",
+   "ok": true,
+   "ms": 443,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-20T21:00:14-06:00",
+   "ok": true,
+   "ms": 448,
+   "code": 200,
+   "green": [],
    "burst": false
   }
  ],
