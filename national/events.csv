@@ -4761,3 +4761,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 09:17,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,available,MK1E4LL/A
 2026-11-21 09:17,The Falls,R012,Miami,FL,Miami,1,12.5,available,MK1F4LL/A
 2026-11-21 09:17,Penn Square,R130,Oklahoma City,OK,Oklahoma City,3,1.2,available,MK1F4LL/A
+2026-11-21 09:17,Barton Creek,R085,Austin,TX,Austin,2,2.7,unavailable,MK1F4LL/A
+2026-11-21 09:17,Park City,R304,Lancaster,PA,Baltimore,2,48.5,available,MK1F4LL/A
