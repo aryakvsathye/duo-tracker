@@ -4795,3 +4795,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 09:39,Charleston,R318,Charleston,SC,,0,172.2,unavailable,MK1F4LL/A
 2026-11-21 09:41,Fifth Avenue,R095,New York,NY,New York,1,0.7,unavailable,MK1F4LL/A
 2026-11-21 09:42,Arrowhead,R247,Glendale,AZ,Phoenix,1,14.6,available,MK1F4LL/A
+2026-11-21 09:45,Aventura,R087,Aventura,FL,Miami,1,13.6,available,MK1F4LL/A
+2026-11-21 09:45,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,unavailable,MK1F4LL/A
