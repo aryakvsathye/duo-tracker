@@ -4880,3 +4880,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 10:41,Green Hills,R123,Nashville,TN,Nashville,2,1.8,unavailable,MK1F4LL/A
 2026-11-21 10:43,Grand Central,R415,New York,NY,New York,1,1.1,unavailable,MK1F4LL/A
 2026-11-21 10:43,Suburban Square,R166,Ardmore,PA,Philadelphia,1,7.1,available,MK1F4LL/A
+2026-11-21 10:44,University Park Village,R316,Fort Worth,TX,Dallas,1,34.5,unavailable,MK1F4LL/A
+2026-11-21 10:44,NorthPark Center,R144,Dallas,TX,Dallas,1,1.0,available,MK1F4LL/A
