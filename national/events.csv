@@ -4758,3 +4758,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 09:16,Quaker Bridge,R549,Lawrence Township,NJ,Philadelphia,1,34.9,unavailable,MK1F4LL/A
 2026-11-21 09:16,Avalon,R080,Alpharetta,GA,Atlanta,1,16.1,available,MK1F4LL/A
 2026-11-21 09:16,Tysons Corner,R010,McLean,VA,Washington,1,10.9,unavailable,MK1F4LL/A
+2026-11-21 09:17,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,available,MK1E4LL/A
+2026-11-21 09:17,The Falls,R012,Miami,FL,Miami,1,12.5,available,MK1F4LL/A
+2026-11-21 09:17,Penn Square,R130,Oklahoma City,OK,Oklahoma City,3,1.2,available,MK1F4LL/A
