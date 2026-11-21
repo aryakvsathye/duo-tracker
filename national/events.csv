@@ -4608,3 +4608,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 07:17,Wellington Green,R024,Wellington,FL,,0,60.9,unavailable,MK1F4LL/A
 2026-11-21 07:17,Clarendon,R036,Arlington,VA,Washington,1,4.2,available,MK1F4LL/A
 2026-11-21 07:18,Wellington Green,R024,Wellington,FL,,0,60.9,available,MK1F4LL/A
+2026-11-21 07:18,Clarendon,R036,Arlington,VA,Washington,1,4.2,unavailable,MK1F4LL/A
+2026-11-21 07:18,Clarendon,R036,Arlington,VA,Washington,1,4.2,available,MK1F4LL/A
