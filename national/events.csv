@@ -4623,3 +4623,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 07:35,Wellington Green,R024,Wellington,FL,,0,60.9,available,MK1F4LL/A
 2026-11-21 07:41,Wellington Green,R024,Wellington,FL,,0,60.9,unavailable,MK1F4LL/A
 2026-11-21 07:48,University Park Mall,R360,Mishawaka,IN,,0,74.7,unavailable,MK1F4LL/A
+2026-11-21 07:48,Fifth Avenue,R095,New York,NY,New York,1,0.7,available,MK1F4LL/A
+2026-11-21 07:48,Upper East Side,R582,New York,NY,New York,1,1.2,available,MK1F4LL/A
+2026-11-21 07:48,World Trade Center,R654,New York,NY,New York,1,4.1,available,MK1F4LL/A
