@@ -4643,3 +4643,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 08:26,Freehold Raceway Mall,R138,Freehold,NJ,,0,50.6,available,MK1F4LL/A
 2026-11-21 08:28,Memorial City,R164,Houston,TX,Houston,1,4.8,available,MK1F4LL/A
 2026-11-21 08:28,Willowbrook Mall,R321,Houston,TX,Houston,1,15.2,unavailable,MK1F4LL/A
+2026-11-21 08:30,West 14th Street,R250,New York,NY,New York,1,2.1,available,MK1F4LL/A
+2026-11-21 08:30,Queens Center,R612,Elmhurst,NY,New York,1,6.5,unavailable,MK1F4LL/A
+2026-11-21 08:30,Queens Center,R612,Elmhurst,NY,New York,1,6.5,available,MK1E4LL/A
