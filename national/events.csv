@@ -5112,3 +5112,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 16:33,Main Place,R348,Naperville,IL,Chicago,1,28.5,unavailable,MK1E4LL/A
 2026-11-21 16:34,Saint Louis Galleria,R114,Saint Louis,MO,St. Louis,2,1.2,unavailable,MK1F4LL/A
 2026-11-21 16:34,Saint Louis Galleria,R114,Saint Louis,MO,St. Louis,2,1.2,unavailable,MK1E4LL/A
+2026-11-21 16:34,Twenty Ninth Street,R172,Boulder,CO,Denver,2,25.6,unavailable,MK1F4LL/A
+2026-11-21 16:34,Village Pointe,R190,Omaha,NE,Omaha,3,0.3,unavailable,MK1F4LL/A
+2026-11-21 16:34,Village Pointe,R190,Omaha,NE,Omaha,3,0.3,unavailable,MK1E4LL/A
