@@ -4638,3 +4638,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 08:19,Baybrook,R204,Friendswood,TX,Houston,1,24.0,available,MK1F4LL/A
 2026-11-21 08:20,Walnut Street,R162,Philadelphia,PA,Philadelphia,1,0.5,unavailable,MK1F4LL/A
 2026-11-21 08:23,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,available,MK1F4LL/A
+2026-11-21 08:26,South Hills Village,R147,Pittsburgh,PA,Pittsburgh,2,14.1,available,MK1F4LL/A
+2026-11-21 08:26,Queens Center,R612,Elmhurst,NY,New York,1,6.5,available,MK1F4LL/A
+2026-11-21 08:26,Freehold Raceway Mall,R138,Freehold,NJ,,0,50.6,available,MK1F4LL/A

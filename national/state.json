@@ -192,14 +192,17 @@
    "metro": "New York",
    "tier": 1,
    "miles": 6.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 08:26"
+   },
+   "since": "2026-11-21 08:26"
   },
   "R753": {
    "name": "The Mall at Bay Plaza",
@@ -1368,14 +1371,17 @@
    "metro": "",
    "tier": 0,
    "miles": 50.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 08:26"
+   },
+   "since": "2026-11-21 08:26"
   },
   "R104": {
    "name": "Bridgewater",
@@ -3882,14 +3888,17 @@
    "metro": "Pittsburgh",
    "tier": 2,
    "miles": 14.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 08:26"
+   },
+   "since": "2026-11-21 08:26"
   },
   "R009": {
    "name": "Easton Town Center",
@@ -4198,8 +4207,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-21T08:26:15.337460-06:00",
- "metros_ok": 44,
+ "last_sweep": "2026-11-21T08:26:43.593735-06:00",
+ "metros_ok": 46,
  "metros": [
   {
    "metro": "New York",
@@ -4518,14 +4527,14 @@
   "San Francisco"
  ],
  "checked_at": {
-  "New York": "2026-11-21T08:20:30.848933-06:00",
+  "New York": "2026-11-21T08:26:32.631307-06:00",
   "Los Angeles": "2026-11-21T08:25:37.846032-06:00",
   "Chicago": "2026-11-21T08:24:32.124262-06:00",
   "Dallas": "2026-11-21T08:22:45.785435-06:00",
   "Houston": "2026-11-21T08:22:56.670448-06:00",
   "Washington": "2026-11-21T08:26:04.467647-06:00",
-  "Philadelphia": "2026-11-21T08:20:36.224653-06:00",
-  "Atlanta": "2026-11-21T08:21:55.280621-06:00",
+  "Philadelphia": "2026-11-21T08:26:38.139211-06:00",
+  "Atlanta": "2026-11-21T08:26:21.889183-06:00",
   "Miami": "2026-11-21T08:23:23.823368-06:00",
   "Phoenix": "2026-11-21T08:21:49.874991-06:00",
   "Boston": "2026-11-21T08:23:18.531131-06:00",
@@ -4543,7 +4552,7 @@
   "San Antonio": "2026-11-21T08:23:07.577417-06:00",
   "Portland": "2026-11-21T08:23:02.138366-06:00",
   "Sacramento": "2026-11-21T08:24:08.773474-06:00",
-  "Pittsburgh": "2026-11-21T08:20:41.653734-06:00",
+  "Pittsburgh": "2026-11-21T08:26:43.593606-06:00",
   "Austin": "2026-11-21T08:23:52.718360-06:00",
   "Las Vegas": "2026-11-21T08:22:22.428580-06:00",
   "Cincinnati": "2026-11-21T08:22:17.012272-06:00",
@@ -4567,17 +4576,17 @@
   "Richmond": "2026-11-21T08:25:59.236279-06:00",
   "Honolulu": "2026-11-21T08:24:26.684927-06:00",
   "Tucson": "2026-11-21T08:20:47.134650-06:00",
-  "Buffalo": "2026-11-21T08:20:25.441474-06:00"
+  "Buffalo": "2026-11-21T08:26:27.225506-06:00"
  },
  "ok_at": {
-  "New York": "2026-11-21T08:20:30.848953-06:00",
+  "New York": "2026-11-21T08:26:32.631326-06:00",
   "Los Angeles": "2026-11-21T08:25:37.846047-06:00",
   "Chicago": "2026-11-21T08:24:32.124281-06:00",
   "Dallas": "2026-11-21T08:22:45.785454-06:00",
   "Houston": "2026-11-21T08:22:56.670468-06:00",
   "Washington": "2026-11-21T08:26:04.467664-06:00",
-  "Philadelphia": "2026-11-21T08:20:36.224675-06:00",
-  "Atlanta": "2026-11-21T08:21:55.280640-06:00",
+  "Philadelphia": "2026-11-21T08:26:38.139231-06:00",
+  "Atlanta": "2026-11-21T08:26:21.889199-06:00",
   "Miami": "2026-11-21T08:23:23.823388-06:00",
   "Phoenix": "2026-11-21T08:21:49.875010-06:00",
   "Boston": "2026-11-21T08:23:18.531152-06:00",
@@ -4595,7 +4604,7 @@
   "San Antonio": "2026-11-21T08:23:07.577436-06:00",
   "Portland": "2026-11-21T08:23:02.138386-06:00",
   "Sacramento": "2026-11-21T08:24:08.773494-06:00",
-  "Pittsburgh": "2026-11-21T08:20:41.653754-06:00",
+  "Pittsburgh": "2026-11-21T08:26:43.593627-06:00",
   "Austin": "2026-11-21T08:23:52.718380-06:00",
   "Las Vegas": "2026-11-21T08:22:22.428603-06:00",
   "Cincinnati": "2026-11-21T08:22:17.012292-06:00",
@@ -4619,11 +4628,11 @@
   "Richmond": "2026-11-21T08:25:59.236296-06:00",
   "Honolulu": "2026-11-21T08:24:26.684946-06:00",
   "Tucson": "2026-11-21T08:20:47.134669-06:00",
-  "Buffalo": "2026-11-21T08:20:25.441495-06:00"
+  "Buffalo": "2026-11-21T08:26:27.225523-06:00"
  },
  "hot": [
-  "South Atlantic",
-  "West South Central"
+  "Middle Atlantic",
+  "South Atlantic"
  ],
  "cycle_seconds": 150,
  "pace": 5.0,
