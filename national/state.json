@@ -4547,11 +4547,9 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Honolulu": 1
- },
+ "metro_skip": {},
  "skipped": [
-  "Birmingham"
+  "Honolulu"
  ],
  "checked_at": {
   "New York": "2026-11-21T08:39:28.979026-06:00",
