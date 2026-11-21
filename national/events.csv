@@ -4999,3 +4999,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 12:12,Del Amo,R777,Torrance,CA,Los Angeles,1,15.9,unavailable,MK1F4LL/A
 2026-11-21 12:13,Palo Alto,R002,Palo Alto,CA,San Francisco,1,27.4,available,MK1F4LL/A
 2026-11-21 12:13,Easton Town Center,R009,Columbus,OH,Columbus,2,2.7,unavailable,MK1F4LL/A
+2026-11-21 12:15,Woodland,R132,Grand Rapids,MI,,0,124.9,available,MK1F4LL/A
+2026-11-21 12:15,Stonebridge Potomac Town Center,R598,Woodbridge,VA,Washington,1,24.2,available,MK1F4LL/A
