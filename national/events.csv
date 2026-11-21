@@ -4899,3 +4899,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 10:57,ABQ Uptown,R177,Albuquerque,NM,Albuquerque,3,0.7,available,MK1F4LL/A
 2026-11-21 10:57,Chandler Fashion Center,R026,Chandler,AZ,Phoenix,1,16.1,unavailable,MK1F4LL/A
 2026-11-21 10:58,Boylston Street,R149,Boston,MA,Boston,1,0.4,unavailable,MK1F4LL/A
+2026-11-21 11:00,Town Square,R219,Las Vegas,NV,Las Vegas,2,3.6,available,MK1F4LL/A
+2026-11-21 11:00,Summerlin,R650,Las Vegas,NV,Las Vegas,2,9.4,available,MK1F4LL/A
