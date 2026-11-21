@@ -5058,3 +5058,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 13:21,Green Hills,R123,Nashville,TN,Nashville,2,1.8,unavailable,MK1F4LL/A
 2026-11-21 13:26,Union Square,R075,San Francisco,CA,San Francisco,1,0.2,available,MK1F4LL/A
 2026-11-21 13:31,Pioneer Place,R077,Portland,OR,Portland,2,4.5,unavailable,MK1F4LL/A
+2026-11-21 13:35,Stoneridge Mall,R101,Pleasanton,CA,San Francisco,1,27.0,unavailable,MK1F4LL/A
+2026-11-21 13:35,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,unavailable,MK1F4LL/A
