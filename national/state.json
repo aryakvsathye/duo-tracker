@@ -1116,14 +1116,17 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 10.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 08:56"
+   },
+   "since": "2026-11-21 08:56"
   },
   "R221": {
    "name": "Fairfax Corner",
@@ -1170,14 +1173,17 @@
    "metro": "Baltimore",
    "tier": 2,
    "miles": 17.7,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 08:56"
+   },
+   "since": "2026-11-21 08:56"
   },
   "R598": {
    "name": "Stonebridge Potomac Town Center",
@@ -1557,14 +1563,17 @@
    "metro": "",
    "tier": 0,
    "miles": 89.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 08:56"
+   },
+   "since": "2026-11-21 08:56"
   },
   "R225": {
    "name": "The Summit",
@@ -3763,14 +3772,17 @@
    "metro": "Charlotte",
    "tier": 2,
    "miles": 2.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 08:56"
+   },
+   "since": "2026-11-21 08:56"
   },
   "R796": {
    "name": "Birkdale Village",
@@ -4153,14 +4165,17 @@
    "metro": "Richmond",
    "tier": 3,
    "miles": 1.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 08:56"
+   },
+   "since": "2026-11-21 08:56"
   },
   "R614": {
    "name": "Lynnhaven Mall",
@@ -4292,8 +4307,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-21T08:56:08.871023-06:00",
- "metros_ok": 39,
+ "last_sweep": "2026-11-21T08:56:32.381249-06:00",
+ "metros_ok": 43,
  "metros": [
   {
    "metro": "New York",
@@ -4618,7 +4633,7 @@
   "Chicago": "2026-11-21T08:55:29.460276-06:00",
   "Dallas": "2026-11-21T08:53:12.500964-06:00",
   "Houston": "2026-11-21T08:53:17.854126-06:00",
-  "Washington": "2026-11-21T08:52:01.079182-06:00",
+  "Washington": "2026-11-21T08:56:32.381008-06:00",
   "Philadelphia": "2026-11-21T08:52:27.572339-06:00",
   "Atlanta": "2026-11-21T08:52:06.318311-06:00",
   "Miami": "2026-11-21T08:52:11.692584-06:00",
@@ -4634,7 +4649,7 @@
   "Baltimore": "2026-11-21T08:52:22.250779-06:00",
   "St. Louis": "2026-11-21T08:55:29.035137-06:00",
   "Orlando": "2026-11-21T08:56:08.870784-06:00",
-  "Charlotte": "2026-11-21T08:51:43.784617-06:00",
+  "Charlotte": "2026-11-21T08:56:15.826592-06:00",
   "San Antonio": "2026-11-21T08:53:23.102633-06:00",
   "Portland": "2026-11-21T08:55:34.904292-06:00",
   "Sacramento": "2026-11-21T08:55:58.252110-06:00",
@@ -4647,7 +4662,7 @@
   "Indianapolis": "2026-11-21T08:54:23.547403-06:00",
   "Cleveland": "2026-11-21T08:54:46.073471-06:00",
   "Nashville": "2026-11-21T08:54:01.333480-06:00",
-  "Raleigh": "2026-11-21T08:51:49.110349-06:00",
+  "Raleigh": "2026-11-21T08:56:21.456566-06:00",
   "Oklahoma City": "2026-11-21T08:53:33.719430-06:00",
   "Tulsa": "2026-11-21T08:53:40.208040-06:00",
   "Omaha": "2026-11-21T08:51:10.922228-06:00",
@@ -4659,7 +4674,7 @@
   "Salt Lake City": "2026-11-21T08:52:55.254507-06:00",
   "Louisville": "2026-11-21T08:55:18.478381-06:00",
   "Birmingham": "2026-11-21T08:56:03.537813-06:00",
-  "Richmond": "2026-11-21T08:51:54.437272-06:00",
+  "Richmond": "2026-11-21T08:56:26.958013-06:00",
   "Honolulu": "2026-11-21T08:51:27.797841-06:00",
   "Tucson": "2026-11-21T08:53:50.808666-06:00",
   "Buffalo": "2026-11-21T08:55:52.880637-06:00"
@@ -4670,7 +4685,7 @@
   "Chicago": "2026-11-21T08:55:29.460293-06:00",
   "Dallas": "2026-11-21T08:53:12.500982-06:00",
   "Houston": "2026-11-21T08:53:17.854144-06:00",
-  "Washington": "2026-11-21T08:52:01.079200-06:00",
+  "Washington": "2026-11-21T08:56:32.381026-06:00",
   "Philadelphia": "2026-11-21T08:52:27.572356-06:00",
   "Atlanta": "2026-11-21T08:52:06.318334-06:00",
   "Miami": "2026-11-21T08:52:11.692603-06:00",
@@ -4686,7 +4701,7 @@
   "Baltimore": "2026-11-21T08:52:22.250800-06:00",
   "St. Louis": "2026-11-21T08:44:20.191204-06:00",
   "Orlando": "2026-11-21T08:56:08.870803-06:00",
-  "Charlotte": "2026-11-21T08:51:43.784637-06:00",
+  "Charlotte": "2026-11-21T08:56:15.826614-06:00",
   "San Antonio": "2026-11-21T08:53:23.102652-06:00",
   "Portland": "2026-11-21T08:55:34.904315-06:00",
   "Sacramento": "2026-11-21T08:55:58.252130-06:00",
@@ -4699,7 +4714,7 @@
   "Indianapolis": "2026-11-21T08:54:23.547422-06:00",
   "Cleveland": "2026-11-21T08:54:46.073489-06:00",
   "Nashville": "2026-11-21T08:54:01.333499-06:00",
-  "Raleigh": "2026-11-21T08:51:49.110368-06:00",
+  "Raleigh": "2026-11-21T08:56:21.456587-06:00",
   "Oklahoma City": "2026-11-21T08:53:33.719449-06:00",
   "Tulsa": "2026-11-21T08:53:40.208058-06:00",
   "Omaha": "2026-11-21T08:51:10.922247-06:00",
@@ -4711,7 +4726,7 @@
   "Salt Lake City": "2026-11-21T08:52:55.254526-06:00",
   "Louisville": "2026-11-21T08:55:18.478400-06:00",
   "Birmingham": "2026-11-21T08:56:03.537831-06:00",
-  "Richmond": "2026-11-21T08:51:54.437290-06:00",
+  "Richmond": "2026-11-21T08:56:26.958033-06:00",
   "Honolulu": "2026-11-21T08:51:27.797858-06:00",
   "Tucson": "2026-11-21T08:53:50.808685-06:00",
   "Buffalo": "2026-11-21T08:55:52.880656-06:00"
