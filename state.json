@@ -21,7 +21,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "West County": {
-   "MK1F4LL/A": "unavailable",
+   "MK1F4LL/A": "available",
    "MK1E4LL/A": "unavailable"
   },
   "Saint Louis Galleria": {
@@ -51,7 +51,7 @@
  },
  "checks": 81,
  "errors": 0,
- "events": 2,
+ "events": 3,
  "last_heartbeat": "2026-11-21",
  "nearby": {
   "Country Club Plaza": {
@@ -171,7 +171,7 @@
    ]
   }
  },
- "last_check": "2026-11-21T09:22:57.191777-06:00",
+ "last_check": "2026-11-21T09:23:17.932271-06:00",
  "history": [
   {
    "t": "2026-11-21T07:59:24-06:00",
@@ -895,6 +895,16 @@
   }
  ],
  "field": {
+  "West County": {
+   "miles": 234.82,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -944,16 +954,6 @@
    },
    "city": "Tulsa",
    "state": "OK"
-  },
-  "West County": {
-   "miles": 234.82,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
   },
   "Saint Louis Galleria": {
    "miles": 239.77,
@@ -1026,12 +1026,12 @@
   "MK1E4LL/A": "Star White"
  },
  "wave": {
-  "since": "2026-11-20T13:54:20.501713-06:00",
+  "since": "2026-11-21T09:23:17.932283-06:00",
   "stores": [
-   "Country Club Plaza",
-   "Penn Square"
+   "Penn Square",
+   "West County"
   ],
-  "until": "2026-11-20T14:26:00-06:00"
+  "until": "2026-11-21T09:53:00-06:00"
  },
- "wave_alerted_at": "2026-11-20T13:55:00.397744-06:00"
+ "wave_alerted_at": "2026-11-21T09:23:17.932283-06:00"
 }
