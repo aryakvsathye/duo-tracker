@@ -4870,3 +4870,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 10:36,The Woodlands,R126,The Woodlands,TX,Houston,1,28.7,unavailable,MK1F4LL/A
 2026-11-21 10:37,Fairfax Corner,R221,Fairfax,VA,Washington,1,18.5,unavailable,MK1F4LL/A
 2026-11-21 10:37,Grand Central,R415,New York,NY,New York,1,1.1,available,MK1F4LL/A
+2026-11-21 10:38,Cherry Creek,R047,Denver,CO,Denver,2,0.8,available,MK1F4LL/A
+2026-11-21 10:38,The Promenade Shops at Briargate,R338,Colorado Springs,CO,,0,53.6,available,MK1F4LL/A
