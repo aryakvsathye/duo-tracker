@@ -4834,3 +4834,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 10:01,Downtown Nashville,R133,Nashville,TN,Nashville,2,6.0,available,MK1F4LL/A
 2026-11-21 10:02,Bridge Street,R266,Huntsville,AL,,0,87.9,available,MK1F4LL/A
 2026-11-21 10:04,Galleria Dallas,R746,Dallas,TX,Dallas,1,4.8,unavailable,MK1F4LL/A
+2026-11-21 10:05,Grand Central,R415,New York,NY,New York,1,1.1,unavailable,MK1F4LL/A
+2026-11-21 10:05,King of Prussia,R065,King of Prussia,PA,Philadelphia,1,14.7,available,MK1F4LL/A
