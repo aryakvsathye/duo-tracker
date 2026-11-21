@@ -41,7 +41,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "Hilldale": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   },
   "Main Place": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 332,
+ "checks": 334,
  "errors": 0,
- "events": 13,
+ "events": 14,
  "last_heartbeat": "2026-11-21",
  "nearby": {
   "Country Club Plaza": {
@@ -171,28 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-21T11:19:46.560704-06:00",
+ "last_check": "2026-11-21T11:21:46.571244-06:00",
  "history": [
-  {
-   "t": "2026-11-21T10:17:10-06:00",
-   "ok": true,
-   "ms": 335,
-   "code": 200,
-   "green": [
-    "Village Pointe"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T10:17:35-06:00",
-   "ok": true,
-   "ms": 324,
-   "code": 200,
-   "green": [
-    "Village Pointe"
-   ],
-   "burst": true
-  },
   {
    "t": "2026-11-21T10:17:55-06:00",
    "ok": true,
@@ -948,6 +928,22 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-21T11:19:46-06:00",
+   "ok": true,
+   "ms": 499,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-21T11:20:46-06:00",
+   "ok": true,
+   "ms": 393,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
@@ -970,16 +966,6 @@
    },
    "city": "Little Rock",
    "state": "AR"
-  },
-  "Hilldale": {
-   "miles": 394.05,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Madison",
-   "state": "WI"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -1060,6 +1046,16 @@
    },
    "city": "Germantown",
    "state": "TN"
+  },
+  "Hilldale": {
+   "miles": 394.05,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Madison",
+   "state": "WI"
   },
   "Main Place": {
    "miles": 397.06,
