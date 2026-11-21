@@ -4723,3 +4723,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 09:01,Reston,R271,Reston,VA,Washington,1,18.6,unavailable,MK1F4LL/A
 2026-11-21 09:01,Montgomery Mall,R084,Bethesda,MD,Washington,1,10.5,available,MK1F4LL/A
 2026-11-21 09:02,Lenox Square,R006,Atlanta,GA,Atlanta,1,0.1,available,MK1F4LL/A
+2026-11-21 09:03,Knox Street,R042,Dallas,TX,Dallas,1,3.0,available,MK1F4LL/A
+2026-11-21 09:03,Houston Galleria,R058,Houston,TX,Houston,1,0.7,available,MK1F4LL/A
+2026-11-21 09:03,First Colony Mall,R205,Sugar Land,TX,Houston,1,14.5,available,MK1F4LL/A
