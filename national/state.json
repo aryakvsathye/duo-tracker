@@ -48,14 +48,17 @@
    "metro": "New York",
    "tier": 1,
    "miles": 1.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 08:47"
+   },
+   "since": "2026-11-21 08:47"
   },
   "R582": {
    "name": "Upper East Side",
@@ -123,14 +126,17 @@
    "metro": "New York",
    "tier": 1,
    "miles": 3.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 08:47"
+   },
+   "since": "2026-11-21 08:47"
   },
   "R654": {
    "name": "World Trade Center",
@@ -1359,17 +1365,14 @@
    "metro": "Philadelphia",
    "tier": 1,
    "miles": 49.3,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-21 08:43"
-   },
-   "since": "2026-11-21 08:43"
+   "since_by_part": {}
   },
   "R138": {
    "name": "Freehold Raceway Mall",
@@ -4243,8 +4246,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-21T08:46:49.577523-06:00",
- "metros_ok": 46,
+ "last_sweep": "2026-11-21T08:47:18.424939-06:00",
+ "metros_ok": 48,
  "metros": [
   {
    "metro": "New York",
@@ -4559,8 +4562,8 @@
  "metro_skip": {},
  "skipped": [],
  "checked_at": {
-  "New York": "2026-11-21T08:43:23.722539-06:00",
-  "Los Angeles": "2026-11-21T08:41:30.376217-06:00",
+  "New York": "2026-11-21T08:47:18.424721-06:00",
+  "Los Angeles": "2026-11-21T08:46:56.696938-06:00",
   "Chicago": "2026-11-21T08:45:53.748733-06:00",
   "Dallas": "2026-11-21T08:42:15.138478-06:00",
   "Houston": "2026-11-21T08:42:20.586003-06:00",
@@ -4597,22 +4600,22 @@
   "Oklahoma City": "2026-11-21T08:42:36.626909-06:00",
   "Tulsa": "2026-11-21T08:43:06.119037-06:00",
   "Omaha": "2026-11-21T08:45:37.911206-06:00",
-  "Des Moines": "2026-11-21T08:41:35.699619-06:00",
+  "Des Moines": "2026-11-21T08:47:07.491700-06:00",
   "Little Rock": "2026-11-21T08:42:09.653813-06:00",
   "Memphis": "2026-11-21T08:44:47.031562-06:00",
   "Madison": "2026-11-21T08:45:43.220077-06:00",
   "Albuquerque": "2026-11-21T08:44:36.257256-06:00",
-  "Salt Lake City": "2026-11-21T08:41:51.715272-06:00",
+  "Salt Lake City": "2026-11-21T08:47:12.904483-06:00",
   "Louisville": "2026-11-21T08:45:27.207077-06:00",
   "Birmingham": "2026-11-21T08:46:49.577430-06:00",
   "Richmond": "2026-11-21T08:46:17.074384-06:00",
   "Honolulu": "2026-11-21T08:45:48.448537-06:00",
   "Tucson": "2026-11-21T08:42:47.669352-06:00",
-  "Buffalo": "2026-11-21T08:43:00.781553-06:00"
+  "Buffalo": "2026-11-21T08:47:02.118433-06:00"
  },
  "ok_at": {
-  "New York": "2026-11-21T08:43:23.722561-06:00",
-  "Los Angeles": "2026-11-21T08:41:30.376237-06:00",
+  "New York": "2026-11-21T08:47:18.424738-06:00",
+  "Los Angeles": "2026-11-21T08:46:56.696956-06:00",
   "Chicago": "2026-11-21T08:45:53.748743-06:00",
   "Dallas": "2026-11-21T08:42:15.138498-06:00",
   "Houston": "2026-11-21T08:42:20.586022-06:00",
@@ -4649,18 +4652,18 @@
   "Oklahoma City": "2026-11-21T08:42:36.626929-06:00",
   "Tulsa": "2026-11-21T08:43:06.119057-06:00",
   "Omaha": "2026-11-21T08:45:37.911216-06:00",
-  "Des Moines": "2026-11-21T08:41:35.699639-06:00",
+  "Des Moines": "2026-11-21T08:47:07.491716-06:00",
   "Little Rock": "2026-11-21T08:42:09.653832-06:00",
   "Memphis": "2026-11-21T08:44:47.031582-06:00",
   "Madison": "2026-11-21T08:45:43.220090-06:00",
   "Albuquerque": "2026-11-21T08:44:36.257273-06:00",
-  "Salt Lake City": "2026-11-21T08:41:51.715290-06:00",
+  "Salt Lake City": "2026-11-21T08:47:12.904498-06:00",
   "Louisville": "2026-11-21T08:45:27.207088-06:00",
   "Birmingham": "2026-11-21T08:46:49.577443-06:00",
   "Richmond": "2026-11-21T08:46:17.074397-06:00",
   "Honolulu": "2026-11-21T08:45:48.448546-06:00",
   "Tucson": "2026-11-21T08:42:47.669372-06:00",
-  "Buffalo": "2026-11-21T08:43:00.781571-06:00"
+  "Buffalo": "2026-11-21T08:47:02.118446-06:00"
  },
  "hot": [
   "South Atlantic",
