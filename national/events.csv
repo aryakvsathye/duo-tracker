@@ -4808,3 +4808,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 09:51,South Shore,R110,Braintree,MA,Boston,1,9.2,unavailable,MK1F4LL/A
 2026-11-21 09:51,Derby Street,R137,Hingham,MA,Boston,1,14.7,unavailable,MK1F4LL/A
 2026-11-21 09:52,Woodland,R132,Grand Rapids,MI,,0,124.9,unavailable,MK1F4LL/A
+2026-11-21 09:53,Main Place,R348,Naperville,IL,Chicago,1,28.5,unavailable,MK1F4LL/A
+2026-11-21 09:53,Ross Park,R413,Pittsburgh,PA,Pittsburgh,2,2.2,unavailable,MK1F4LL/A
