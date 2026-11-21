@@ -4749,3 +4749,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 09:10,Wellington Green,R024,Wellington,FL,,0,60.9,unavailable,MK1F4LL/A
 2026-11-21 09:11,University Park Mall,R360,Mishawaka,IN,,0,74.7,unavailable,MK1F4LL/A
 2026-11-21 09:12,NorthPark Center,R144,Dallas,TX,Dallas,1,1.0,available,MK1F4LL/A
+2026-11-21 09:13,University Park Village,R316,Fort Worth,TX,Dallas,1,34.5,available,MK1F4LL/A
+2026-11-21 09:13,Willowbrook Mall,R321,Houston,TX,Houston,1,15.2,unavailable,MK1F4LL/A
+2026-11-21 09:13,Columbia,R168,Columbia,MD,Baltimore,2,17.7,unavailable,MK1F4LL/A
+2026-11-21 09:13,Barton Creek,R085,Austin,TX,Austin,2,2.7,available,MK1F4LL/A
