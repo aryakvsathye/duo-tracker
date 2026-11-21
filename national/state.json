@@ -639,10 +639,10 @@
    "metro": "Madison",
    "tier": 3,
    "miles": 0.6,
-   "status": "unavailable",
+   "status": "ineligible",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "ineligible",
+    "MK1E4LL/A": "ineligible"
    },
    "tz": "America/Chicago",
    "region": "East North Central",
@@ -2907,10 +2907,10 @@
    "metro": "Minneapolis",
    "tier": 2,
    "miles": 1.2,
-   "status": "unavailable",
+   "status": "ineligible",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "ineligible",
+    "MK1E4LL/A": "ineligible"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
@@ -2925,10 +2925,10 @@
    "metro": "Minneapolis",
    "tier": 2,
    "miles": 5.2,
-   "status": "unavailable",
+   "status": "ineligible",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "ineligible",
+    "MK1E4LL/A": "ineligible"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
@@ -2943,10 +2943,10 @@
    "metro": "Minneapolis",
    "tier": 2,
    "miles": 12.6,
-   "status": "unavailable",
+   "status": "ineligible",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "ineligible",
+    "MK1E4LL/A": "ineligible"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
@@ -2961,10 +2961,10 @@
    "metro": "Minneapolis",
    "tier": 2,
    "miles": 13.3,
-   "status": "unavailable",
+   "status": "ineligible",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "ineligible",
+    "MK1E4LL/A": "ineligible"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
@@ -2979,10 +2979,10 @@
    "metro": "Des Moines",
    "tier": 3,
    "miles": 0.6,
-   "status": "unavailable",
+   "status": "ineligible",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "ineligible",
+    "MK1E4LL/A": "ineligible"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
@@ -2997,10 +2997,10 @@
    "metro": "Omaha",
    "tier": 3,
    "miles": 0.3,
-   "status": "unavailable",
+   "status": "ineligible",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "ineligible",
+    "MK1E4LL/A": "ineligible"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
@@ -3525,10 +3525,10 @@
    "metro": "St. Louis",
    "tier": 2,
    "miles": 1.2,
-   "status": "unavailable",
+   "status": "ineligible",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "ineligible",
+    "MK1E4LL/A": "ineligible"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
@@ -4186,7 +4186,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-21T16:33:08.248686-06:00",
+ "last_sweep": "2026-11-21T16:33:56.100090-06:00",
  "metros_ok": 50,
  "metros": [
   {
@@ -4514,9 +4514,9 @@
   "Philadelphia": "2026-11-21T16:31:34.054981-06:00",
   "Atlanta": "2026-11-21T16:29:07.617478-06:00",
   "Miami": "2026-11-21T16:29:23.529569-06:00",
-  "Phoenix": "2026-11-21T16:28:13.034660-06:00",
+  "Phoenix": "2026-11-21T16:33:14.723393-06:00",
   "Boston": "2026-11-21T16:31:00.895202-06:00",
-  "San Francisco": "2026-11-21T16:28:21.754144-06:00",
+  "San Francisco": "2026-11-21T16:33:22.009736-06:00",
   "Detroit": "2026-11-21T16:31:18.198320-06:00",
   "Seattle": "2026-11-21T16:30:50.441566-06:00",
   "Minneapolis": "2026-11-21T16:31:23.516332-06:00",
@@ -4533,17 +4533,17 @@
   "Pittsburgh": "2026-11-21T16:29:12.851837-06:00",
   "Austin": "2026-11-21T16:32:25.917391-06:00",
   "Las Vegas": "2026-11-21T16:30:07.113633-06:00",
-  "Cincinnati": "2026-11-21T16:28:27.061718-06:00",
+  "Cincinnati": "2026-11-21T16:33:27.549028-06:00",
   "Kansas City": "2026-11-21T16:32:52.285573-06:00",
-  "Columbus": "2026-11-21T16:28:34.720655-06:00",
-  "Indianapolis": "2026-11-21T16:28:55.117894-06:00",
+  "Columbus": "2026-11-21T16:33:34.953503-06:00",
+  "Indianapolis": "2026-11-21T16:33:56.099802-06:00",
   "Cleveland": "2026-11-21T16:29:44.855579-06:00",
   "Nashville": "2026-11-21T16:30:45.146442-06:00",
   "Raleigh": "2026-11-21T16:30:33.513815-06:00",
   "Oklahoma City": "2026-11-21T16:32:41.815649-06:00",
-  "Tulsa": "2026-11-21T16:28:49.878876-06:00",
+  "Tulsa": "2026-11-21T16:33:50.701393-06:00",
   "Omaha": "2026-11-21T16:33:08.248539-06:00",
-  "Des Moines": "2026-11-21T16:28:43.316757-06:00",
+  "Des Moines": "2026-11-21T16:33:45.441555-06:00",
   "Little Rock": "2026-11-21T16:29:00.570882-06:00",
   "Memphis": "2026-11-21T16:32:36.482470-06:00",
   "Madison": "2026-11-21T16:30:12.426965-06:00",
@@ -4566,9 +4566,9 @@
   "Philadelphia": "2026-11-21T16:31:34.054999-06:00",
   "Atlanta": "2026-11-21T16:29:07.617495-06:00",
   "Miami": "2026-11-21T16:29:23.529605-06:00",
-  "Phoenix": "2026-11-21T16:28:13.034677-06:00",
+  "Phoenix": "2026-11-21T16:33:14.723414-06:00",
   "Boston": "2026-11-21T16:31:00.895220-06:00",
-  "San Francisco": "2026-11-21T16:28:21.754159-06:00",
+  "San Francisco": "2026-11-21T16:33:22.009758-06:00",
   "Detroit": "2026-11-21T16:31:18.198339-06:00",
   "Seattle": "2026-11-21T16:30:50.441603-06:00",
   "Minneapolis": "2026-11-21T16:31:23.516349-06:00",
@@ -4585,17 +4585,17 @@
   "Pittsburgh": "2026-11-21T16:29:12.851853-06:00",
   "Austin": "2026-11-21T16:32:25.917410-06:00",
   "Las Vegas": "2026-11-21T16:30:07.113651-06:00",
-  "Cincinnati": "2026-11-21T16:28:27.061735-06:00",
+  "Cincinnati": "2026-11-21T16:33:27.549052-06:00",
   "Kansas City": "2026-11-21T16:32:52.285614-06:00",
-  "Columbus": "2026-11-21T16:28:34.720672-06:00",
-  "Indianapolis": "2026-11-21T16:28:55.117909-06:00",
+  "Columbus": "2026-11-21T16:33:34.953522-06:00",
+  "Indianapolis": "2026-11-21T16:33:56.099826-06:00",
   "Cleveland": "2026-11-21T16:29:44.855617-06:00",
   "Nashville": "2026-11-21T16:30:45.146459-06:00",
   "Raleigh": "2026-11-21T16:30:33.513832-06:00",
   "Oklahoma City": "2026-11-21T16:32:41.815671-06:00",
-  "Tulsa": "2026-11-21T16:28:49.878891-06:00",
+  "Tulsa": "2026-11-21T16:33:50.701415-06:00",
   "Omaha": "2026-11-21T16:33:08.248560-06:00",
-  "Des Moines": "2026-11-21T16:28:43.316772-06:00",
+  "Des Moines": "2026-11-21T16:33:45.441574-06:00",
   "Little Rock": "2026-11-21T16:29:00.570899-06:00",
   "Memphis": "2026-11-21T16:32:36.482490-06:00",
   "Madison": "2026-11-21T16:30:12.426981-06:00",

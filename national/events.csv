@@ -5102,3 +5102,11 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 16:26,Boise Towne Square,R303,Boise,ID,,0,299.0,available,MK1F4LL/A
 2026-11-21 16:27,Twenty Ninth Street,R172,Boulder,CO,Denver,2,25.6,available,MK1F4LL/A
 2026-11-21 16:30,Boise Towne Square,R303,Boise,ID,,0,299.0,unavailable,MK1F4LL/A
+2026-11-21 16:33,Leawood,R283,Leawood,KS,Kansas City,2,10.5,unavailable,MK1F4LL/A
+2026-11-21 16:33,Leawood,R283,Leawood,KS,Kansas City,2,10.5,unavailable,MK1E4LL/A
+2026-11-21 16:33,Country Club Plaza,R097,Kansas City,MO,Kansas City,2,10.1,unavailable,MK1F4LL/A
+2026-11-21 16:33,Country Club Plaza,R097,Kansas City,MO,Kansas City,2,10.1,unavailable,MK1E4LL/A
+2026-11-21 16:33,West County,R062,Saint Louis,MO,St. Louis,2,6.8,unavailable,MK1F4LL/A
+2026-11-21 16:33,West County,R062,Saint Louis,MO,St. Louis,2,6.8,unavailable,MK1E4LL/A
+2026-11-21 16:33,Main Place,R348,Naperville,IL,Chicago,1,28.5,unavailable,MK1F4LL/A
+2026-11-21 16:33,Main Place,R348,Naperville,IL,Chicago,1,28.5,unavailable,MK1E4LL/A
