@@ -2788,14 +2788,17 @@
    "metro": "Seattle",
    "tier": 2,
    "miles": 15.0,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 11:59"
+   },
+   "since": "2026-11-21 11:59"
   },
   "R339": {
    "name": "Tacoma Mall",
@@ -2935,14 +2938,17 @@
    "metro": "Sacramento",
    "tier": 2,
    "miles": 14.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 11:59"
+   },
+   "since": "2026-11-21 11:59"
   },
   "R007": {
    "name": "Mall of America",
@@ -4277,8 +4283,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-21T11:59:41.567366-06:00",
- "metros_ok": 47,
+ "last_sweep": "2026-11-21T11:59:48.797780-06:00",
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4606,7 +4612,7 @@
   "Boston": "2026-11-21T11:55:58.981835-06:00",
   "San Francisco": "2026-11-21T11:59:06.357561-06:00",
   "Detroit": "2026-11-21T11:57:53.413900-06:00",
-  "Seattle": "2026-11-21T11:55:22.484350-06:00",
+  "Seattle": "2026-11-21T11:59:48.797549-06:00",
   "Minneapolis": "2026-11-21T11:55:53.228295-06:00",
   "San Diego": "2026-11-21T11:55:28.281630-06:00",
   "Tampa": "2026-11-21T11:59:00.525589-06:00",
@@ -4658,7 +4664,7 @@
   "Boston": "2026-11-21T11:55:58.981853-06:00",
   "San Francisco": "2026-11-21T11:59:06.357580-06:00",
   "Detroit": "2026-11-21T11:57:53.413918-06:00",
-  "Seattle": "2026-11-21T11:55:22.484368-06:00",
+  "Seattle": "2026-11-21T11:59:48.797568-06:00",
   "Minneapolis": "2026-11-21T11:55:53.228313-06:00",
   "San Diego": "2026-11-21T11:55:28.281649-06:00",
   "Tampa": "2026-11-21T11:59:00.525609-06:00",

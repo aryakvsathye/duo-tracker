@@ -4965,3 +4965,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 11:58,Del Amo,R777,Torrance,CA,Los Angeles,1,15.9,available,MK1F4LL/A
 2026-11-21 11:58,The Grove,R050,Los Angeles,CA,Los Angeles,1,3.4,unavailable,MK1F4LL/A
 2026-11-21 11:59,King of Prussia,R065,King of Prussia,PA,Philadelphia,1,14.7,available,MK1F4LL/A
+2026-11-21 11:59,Alderwood,R100,Lynnwood,WA,Seattle,2,15.0,available,MK1F4LL/A
+2026-11-21 11:59,Roseville,R298,Roseville,CA,Sacramento,2,14.6,available,MK1F4LL/A
