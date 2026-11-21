@@ -4499,16 +4499,10 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Los Angeles": 1,
-  "Kansas City": 1
- },
+ "metro_skip": {},
  "skipped": [
-  "Memphis",
-  "Oklahoma City",
-  "Omaha",
-  "St. Louis",
-  "Tucson"
+  "Kansas City",
+  "Los Angeles"
  ],
  "checked_at": {
   "New York": "2026-11-21T16:31:12.731082-06:00",
