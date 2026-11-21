@@ -45,13 +45,13 @@
    "MK1E4LL/A": "unavailable"
   },
   "Main Place": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 162,
+ "checks": 171,
  "errors": 0,
- "events": 4,
+ "events": 5,
  "last_heartbeat": "2026-11-21",
  "nearby": {
   "Country Club Plaza": {
@@ -171,80 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-21T09:49:59.646388-06:00",
+ "last_check": "2026-11-21T09:53:23.623637-06:00",
  "history": [
-  {
-   "t": "2026-11-21T09:14:56-06:00",
-   "ok": true,
-   "ms": 291,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-21T09:15:56-06:00",
-   "ok": true,
-   "ms": 277,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-21T09:16:56-06:00",
-   "ok": true,
-   "ms": 264,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-21T09:17:56-06:00",
-   "ok": true,
-   "ms": 234,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-21T09:18:56-06:00",
-   "ok": true,
-   "ms": 244,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-21T09:19:56-06:00",
-   "ok": true,
-   "ms": 473,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-21T09:20:56-06:00",
-   "ok": true,
-   "ms": 354,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-21T09:21:56-06:00",
-   "ok": true,
-   "ms": 577,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-21T09:22:56-06:00",
-   "ok": true,
-   "ms": 270,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-21T09:23:17-06:00",
    "ok": true,
@@ -892,6 +820,78 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-21T09:50:23-06:00",
+   "ok": true,
+   "ms": 340,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T09:50:43-06:00",
+   "ok": true,
+   "ms": 253,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T09:51:03-06:00",
+   "ok": true,
+   "ms": 666,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T09:51:23-06:00",
+   "ok": true,
+   "ms": 294,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T09:51:43-06:00",
+   "ok": true,
+   "ms": 621,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T09:52:03-06:00",
+   "ok": true,
+   "ms": 398,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T09:52:23-06:00",
+   "ok": true,
+   "ms": 305,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T09:52:43-06:00",
+   "ok": true,
+   "ms": 300,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T09:53:03-06:00",
+   "ok": true,
+   "ms": 305,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
@@ -904,16 +904,6 @@
    },
    "city": "Saint Louis",
    "state": "MO"
-  },
-  "Main Place": {
-   "miles": 397.06,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Naperville",
-   "state": "IL"
   },
   "Country Club Plaza": {
    "miles": 10.11,
@@ -1014,6 +1004,16 @@
    },
    "city": "Madison",
    "state": "WI"
+  },
+  "Main Place": {
+   "miles": 397.06,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Naperville",
+   "state": "IL"
   }
  },
  "token_expires": "2026-11-26",
