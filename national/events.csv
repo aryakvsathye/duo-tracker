@@ -5079,3 +5079,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 14:13,Arden Fair,R070,Sacramento,CA,Sacramento,2,1.2,unavailable,MK1F4LL/A
 2026-11-21 14:14,Ala Moana,R073,Honolulu,HI,Honolulu,3,0.4,unavailable,MK1F4LL/A
 2026-11-21 14:17,Boylston Street,R149,Boston,MA,Boston,1,0.4,available,MK1F4LL/A
+2026-11-21 14:19,Rosedale Center,R022,Roseville,MN,Minneapolis,2,12.6,unavailable,MK1F4LL/A
