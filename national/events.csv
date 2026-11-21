@@ -4933,3 +4933,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 11:28,Downtown Nashville,R133,Nashville,TN,Nashville,2,6.0,unavailable,MK1F4LL/A
 2026-11-21 11:30,Stonebridge Potomac Town Center,R598,Woodbridge,VA,Washington,1,24.2,unavailable,MK1F4LL/A
 2026-11-21 11:33,South Hills Village,R147,Pittsburgh,PA,Pittsburgh,2,14.1,unavailable,MK1F4LL/A
+2026-11-21 11:35,Houston Galleria,R058,Houston,TX,Houston,1,0.7,available,MK1F4LL/A
+2026-11-21 11:35,Saddle Creek,R020,Germantown,TN,Memphis,3,0.6,unavailable,MK1F4LL/A
