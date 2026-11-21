@@ -4785,3 +4785,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 09:32,Galleria Dallas,R746,Dallas,TX,Dallas,1,4.8,unavailable,MK1F4LL/A
 2026-11-21 09:33,Memorial City,R164,Houston,TX,Houston,1,4.8,unavailable,MK1F4LL/A
 2026-11-21 09:33,Crabtree Valley Mall,R116,Raleigh,NC,Raleigh,2,1.5,unavailable,MK1F4LL/A
+2026-11-21 09:34,Downtown Detroit,R763,Detroit,MI,Detroit,2,16.7,unavailable,MK1F4LL/A
+2026-11-21 09:34,Main Place,R348,Naperville,IL,Chicago,1,28.5,available,MK1F4LL/A
+2026-11-21 09:34,Oakbrook,R056,Oak Brook,IL,Chicago,1,17.4,available,MK1F4LL/A
+2026-11-21 09:34,Scottsdale Quarter,R292,Scottsdale,AZ,Phoenix,1,10.0,available,MK1F4LL/A
