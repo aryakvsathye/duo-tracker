@@ -4660,3 +4660,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 08:39,Natick,R232,Natick,MA,Boston,1,16.1,available,MK1F4LL/A
 2026-11-21 08:39,Rockingham Park,R027,Salem,NH,Boston,1,29.9,available,MK1F4LL/A
 2026-11-21 08:39,Pheasant Lane,R354,Nashua,NH,Boston,1,30.5,available,MK1F4LL/A
+2026-11-21 08:39,The Mall at Bay Plaza,R753,Bronx,NY,New York,1,10.6,available,MK1F4LL/A
+2026-11-21 08:39,World Trade Center,R654,New York,NY,New York,1,4.1,unavailable,MK1F4LL/A
