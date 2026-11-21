@@ -4850,3 +4850,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 10:16,City Creek Center,R125,Salt Lake City,UT,Salt Lake City,3,0.9,unavailable,MK1F4LL/A
 2026-11-21 10:17,Natick,R232,Natick,MA,Boston,1,16.1,unavailable,MK1F4LL/A
 2026-11-21 10:18,Knox Street,R042,Dallas,TX,Dallas,1,3.0,unavailable,MK1F4LL/A
+2026-11-21 10:20,Southlake Town Square,R151,Southlake,TX,Dallas,1,20.4,available,MK1F4LL/A
+2026-11-21 10:20,Park City,R304,Lancaster,PA,Baltimore,2,48.5,available,MK1F4LL/A
