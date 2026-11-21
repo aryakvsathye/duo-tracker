@@ -4649,3 +4649,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 08:34,Burlington,R155,Burlington,MA,Boston,1,11.6,available,MK1F4LL/A
 2026-11-21 08:34,Derby Street,R137,Hingham,MA,Boston,1,14.7,available,MK1F4LL/A
 2026-11-21 08:34,The Shops at Blackstone Valley,R622,Millbury,MA,Boston,1,37.4,available,MK1F4LL/A
+2026-11-21 08:34,World Trade Center,R654,New York,NY,New York,1,4.1,available,MK1F4LL/A
+2026-11-21 08:34,Queens Center,R612,Elmhurst,NY,New York,1,6.5,available,MK1F4LL/A
+2026-11-21 08:34,Queens Center,R612,Elmhurst,NY,New York,1,6.5,unavailable,MK1E4LL/A
+2026-11-21 08:34,Freehold Raceway Mall,R138,Freehold,NJ,,0,50.6,unavailable,MK1F4LL/A
