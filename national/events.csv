@@ -4861,3 +4861,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 10:25,Carnegie Library,R516,Washington,DC,Washington,1,0.5,unavailable,MK1F4LL/A
 2026-11-21 10:26,Walden Galleria,R016,Buffalo,NY,Buffalo,3,0.6,unavailable,MK1F4LL/A
 2026-11-21 10:28,Village Pointe,R190,Omaha,NE,Omaha,3,0.3,unavailable,MK1F4LL/A
+2026-11-21 10:28,University Park Village,R316,Fort Worth,TX,Dallas,1,34.5,unavailable,MK1F4LL/A
+2026-11-21 10:29,Bridge Street,R266,Huntsville,AL,,0,87.9,unavailable,MK1F4LL/A
