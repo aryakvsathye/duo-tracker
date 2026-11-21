@@ -2703,14 +2703,17 @@
    "metro": "Seattle",
    "tier": 2,
    "miles": 2.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 13:13"
+   },
+   "since": "2026-11-21 13:13"
   },
   "R072": {
    "name": "University Village",
@@ -2739,14 +2742,17 @@
    "metro": "Seattle",
    "tier": 2,
    "miles": 10.7,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 13:13"
+   },
+   "since": "2026-11-21 13:13"
   },
   "R100": {
    "name": "Alderwood",
@@ -3133,14 +3139,17 @@
    "metro": "",
    "tier": 0,
    "miles": 69.7,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 13:14"
+   },
+   "since": "2026-11-21 13:14"
   },
   "R015": {
    "name": "Fashion Island",
@@ -4217,8 +4226,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-21T13:13:49.511634-06:00",
- "metros_ok": 43,
+ "last_sweep": "2026-11-21T13:14:12.235255-06:00",
+ "metros_ok": 42,
  "metros": [
   {
    "metro": "New York",
@@ -4551,9 +4560,9 @@
   "Boston": "2026-11-21T13:13:33.413320-06:00",
   "San Francisco": "2026-11-21T13:13:44.214876-06:00",
   "Detroit": "2026-11-21T13:13:12.073740-06:00",
-  "Seattle": "2026-11-21T13:10:22.185055-06:00",
+  "Seattle": "2026-11-21T13:13:56.352165-06:00",
   "Minneapolis": "2026-11-21T13:13:28.098494-06:00",
-  "San Diego": "2026-11-21T13:10:27.619130-06:00",
+  "San Diego": "2026-11-21T13:14:06.975478-06:00",
   "Tampa": "2026-11-21T13:12:11.254244-06:00",
   "Denver": "2026-11-21T13:09:40.549694-06:00",
   "Baltimore": "2026-11-21T13:13:38.929084-06:00",
@@ -4568,8 +4577,8 @@
   "Las Vegas": "2026-11-21T13:12:17.634869-06:00",
   "Cincinnati": "2026-11-21T13:13:49.511510-06:00",
   "Kansas City": "2026-11-21T13:11:39.102965-06:00",
-  "Columbus": "2026-11-21T13:08:55.611988-06:00",
-  "Indianapolis": "2026-11-21T13:09:00.981036-06:00",
+  "Columbus": "2026-11-21T13:14:01.666931-06:00",
+  "Indianapolis": "2026-11-21T13:14:12.235135-06:00",
   "Cleveland": "2026-11-21T13:12:05.999621-06:00",
   "Nashville": "2026-11-21T13:12:49.610215-06:00",
   "Raleigh": "2026-11-21T13:11:06.116094-06:00",
@@ -4603,9 +4612,9 @@
   "Boston": "2026-11-21T13:13:33.413339-06:00",
   "San Francisco": "2026-11-21T13:13:44.214899-06:00",
   "Detroit": "2026-11-21T13:13:12.073760-06:00",
-  "Seattle": "2026-11-21T13:10:22.185074-06:00",
+  "Seattle": "2026-11-21T13:13:56.352185-06:00",
   "Minneapolis": "2026-11-21T13:13:28.098513-06:00",
-  "San Diego": "2026-11-21T13:10:27.619149-06:00",
+  "San Diego": "2026-11-21T13:14:06.975499-06:00",
   "Tampa": "2026-11-21T13:12:11.254264-06:00",
   "Denver": "2026-11-21T13:09:40.549713-06:00",
   "Baltimore": "2026-11-21T13:13:38.929104-06:00",
@@ -4620,8 +4629,8 @@
   "Las Vegas": "2026-11-21T13:12:17.634888-06:00",
   "Cincinnati": "2026-11-21T13:13:49.511531-06:00",
   "Kansas City": "2026-11-21T13:11:39.102985-06:00",
-  "Columbus": "2026-11-21T13:08:55.612007-06:00",
-  "Indianapolis": "2026-11-21T13:09:00.981055-06:00",
+  "Columbus": "2026-11-21T13:14:01.666951-06:00",
+  "Indianapolis": "2026-11-21T13:14:12.235155-06:00",
   "Cleveland": "2026-11-21T13:12:05.999641-06:00",
   "Nashville": "2026-11-21T13:12:49.610235-06:00",
   "Raleigh": "2026-11-21T13:11:06.116114-06:00",

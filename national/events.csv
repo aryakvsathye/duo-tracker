@@ -5045,3 +5045,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 13:11,Reston,R271,Reston,VA,Washington,1,18.6,available,MK1F4LL/A
 2026-11-21 13:13,Broadway Plaza,R014,Walnut Creek,CA,San Francisco,1,20.4,available,MK1F4LL/A
 2026-11-21 13:13,Palo Alto,R002,Palo Alto,CA,San Francisco,1,27.4,unavailable,MK1F4LL/A
+2026-11-21 13:13,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,available,MK1F4LL/A
+2026-11-21 13:13,Southcenter,R106,Tukwila,WA,Seattle,2,10.7,available,MK1F4LL/A
+2026-11-21 13:14,Irvine Spectrum Center,R146,Irvine,CA,,0,69.7,available,MK1F4LL/A
