@@ -4967,3 +4967,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 11:59,King of Prussia,R065,King of Prussia,PA,Philadelphia,1,14.7,available,MK1F4LL/A
 2026-11-21 11:59,Alderwood,R100,Lynnwood,WA,Seattle,2,15.0,available,MK1F4LL/A
 2026-11-21 11:59,Roseville,R298,Roseville,CA,Sacramento,2,14.6,available,MK1F4LL/A
+2026-11-21 12:00,Otay Ranch,R213,Chula Vista,CA,San Diego,2,14.6,available,MK1F4LL/A
+2026-11-21 12:00,Mission Viejo,R069,Mission Viejo,CA,,0,62.2,available,MK1F4LL/A
+2026-11-21 12:00,South Coast Plaza,R004,Costa Mesa,CA,,0,76.9,available,MK1F4LL/A
+2026-11-21 12:00,Los Cerritos,R300,Cerritos,CA,,0,93.1,available,MK1F4LL/A

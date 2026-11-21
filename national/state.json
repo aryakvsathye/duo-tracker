@@ -2080,14 +2080,17 @@
    "metro": "San Diego",
    "tier": 2,
    "miles": 14.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 12:00"
+   },
+   "since": "2026-11-21 12:00"
   },
   "R149": {
    "name": "Boylston Street",
@@ -3154,14 +3157,17 @@
    "metro": "",
    "tier": 0,
    "miles": 62.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 12:00"
+   },
+   "since": "2026-11-21 12:00"
   },
   "R146": {
    "name": "Irvine Spectrum Center",
@@ -3208,14 +3214,17 @@
    "metro": "",
    "tier": 0,
    "miles": 76.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 12:00"
+   },
+   "since": "2026-11-21 12:00"
   },
   "R156": {
    "name": "Brea Mall",
@@ -3247,14 +3256,17 @@
    "metro": "",
    "tier": 0,
    "miles": 93.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-21 12:00"
+   },
+   "since": "2026-11-21 12:00"
   },
   "R019": {
    "name": "International Plaza",
@@ -4283,8 +4295,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-21T11:59:48.797780-06:00",
- "metros_ok": 50,
+ "last_sweep": "2026-11-21T12:00:46.092944-06:00",
+ "metros_ok": 46,
  "metros": [
   {
    "metro": "New York",
@@ -4614,15 +4626,15 @@
   "Detroit": "2026-11-21T11:57:53.413900-06:00",
   "Seattle": "2026-11-21T11:59:48.797549-06:00",
   "Minneapolis": "2026-11-21T11:55:53.228295-06:00",
-  "San Diego": "2026-11-21T11:55:28.281630-06:00",
+  "San Diego": "2026-11-21T12:00:27.824959-06:00",
   "Tampa": "2026-11-21T11:59:00.525589-06:00",
   "Denver": "2026-11-21T11:56:28.029530-06:00",
   "Baltimore": "2026-11-21T11:59:18.134241-06:00",
   "St. Louis": "2026-11-21T11:58:18.202270-06:00",
   "Orlando": "2026-11-21T11:59:41.567270-06:00",
-  "Charlotte": "2026-11-21T11:53:59.111760-06:00",
+  "Charlotte": "2026-11-21T12:00:33.773122-06:00",
   "San Antonio": "2026-11-21T11:54:42.143949-06:00",
-  "Portland": "2026-11-21T11:55:40.256369-06:00",
+  "Portland": "2026-11-21T12:00:39.864899-06:00",
   "Sacramento": "2026-11-21T11:57:47.568758-06:00",
   "Pittsburgh": "2026-11-21T11:59:29.915685-06:00",
   "Austin": "2026-11-21T11:56:16.389033-06:00",
@@ -4633,7 +4645,7 @@
   "Indianapolis": "2026-11-21T11:57:11.445013-06:00",
   "Cleveland": "2026-11-21T11:57:17.337502-06:00",
   "Nashville": "2026-11-21T11:54:36.232585-06:00",
-  "Raleigh": "2026-11-21T11:54:12.535146-06:00",
+  "Raleigh": "2026-11-21T12:00:46.092786-06:00",
   "Oklahoma City": "2026-11-21T11:56:22.174243-06:00",
   "Tulsa": "2026-11-21T11:56:41.127451-06:00",
   "Omaha": "2026-11-21T11:58:41.557737-06:00",
@@ -4666,15 +4678,15 @@
   "Detroit": "2026-11-21T11:57:53.413918-06:00",
   "Seattle": "2026-11-21T11:59:48.797568-06:00",
   "Minneapolis": "2026-11-21T11:55:53.228313-06:00",
-  "San Diego": "2026-11-21T11:55:28.281649-06:00",
+  "San Diego": "2026-11-21T12:00:27.824978-06:00",
   "Tampa": "2026-11-21T11:59:00.525609-06:00",
   "Denver": "2026-11-21T11:56:28.029548-06:00",
   "Baltimore": "2026-11-21T11:59:18.134260-06:00",
   "St. Louis": "2026-11-21T11:58:18.202289-06:00",
   "Orlando": "2026-11-21T11:59:41.567287-06:00",
-  "Charlotte": "2026-11-21T11:53:59.111772-06:00",
+  "Charlotte": "2026-11-21T12:00:33.773142-06:00",
   "San Antonio": "2026-11-21T11:54:42.143961-06:00",
-  "Portland": "2026-11-21T11:55:40.256388-06:00",
+  "Portland": "2026-11-21T12:00:39.864919-06:00",
   "Sacramento": "2026-11-21T11:57:47.568776-06:00",
   "Pittsburgh": "2026-11-21T11:59:29.915705-06:00",
   "Austin": "2026-11-21T11:56:16.389050-06:00",
@@ -4685,7 +4697,7 @@
   "Indianapolis": "2026-11-21T11:57:11.445030-06:00",
   "Cleveland": "2026-11-21T11:57:17.337520-06:00",
   "Nashville": "2026-11-21T11:54:36.232596-06:00",
-  "Raleigh": "2026-11-21T11:54:12.535157-06:00",
+  "Raleigh": "2026-11-21T12:00:46.092808-06:00",
   "Oklahoma City": "2026-11-21T11:56:22.174261-06:00",
   "Tulsa": "2026-11-21T11:56:41.127468-06:00",
   "Omaha": "2026-11-21T11:58:41.557756-06:00",
@@ -4703,8 +4715,8 @@
   "Buffalo": "2026-11-21T11:59:35.801066-06:00"
  },
  "hot": [
-  "Middle Atlantic",
-  "Pacific"
+  "Pacific",
+  "Middle Atlantic"
  ],
  "cycle_seconds": 150,
  "pace": 5.5,
