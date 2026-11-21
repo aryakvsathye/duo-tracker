@@ -4735,3 +4735,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 09:05,King of Prussia,R065,King of Prussia,PA,Philadelphia,1,14.7,available,MK1F4LL/A
 2026-11-21 09:05,Birkdale Village,R796,Huntersville,NC,Charlotte,2,19.5,unavailable,MK1F4LL/A
 2026-11-21 09:05,Avalon,R080,Alpharetta,GA,Atlanta,1,16.1,unavailable,MK1F4LL/A
+2026-11-21 09:06,Lenox Square,R006,Atlanta,GA,Atlanta,1,0.1,unavailable,MK1F4LL/A
+2026-11-21 09:06,Kenwood Towne Centre,R028,Cincinnati,OH,Cincinnati,2,0.8,available,MK1F4LL/A
+2026-11-21 09:06,University Park Mall,R360,Mishawaka,IN,,0,74.7,available,MK1F4LL/A
