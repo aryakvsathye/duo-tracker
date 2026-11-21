@@ -4777,3 +4777,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-21 09:26,Oxmoor,R264,Louisville,KY,Louisville,3,1.8,available,MK1F4LL/A
 2026-11-21 09:26,Kenwood Towne Centre,R028,Cincinnati,OH,Cincinnati,2,0.8,unavailable,MK1F4LL/A
 2026-11-21 09:29,Stonebridge Potomac Town Center,R598,Woodbridge,VA,Washington,1,24.2,available,MK1F4LL/A
+2026-11-21 09:30,Southdale,R054,Edina,MN,Minneapolis,2,5.2,available,MK1F4LL/A
+2026-11-21 09:30,Altamonte,R291,Altamonte Springs,FL,Orlando,2,16.0,unavailable,MK1F4LL/A
+2026-11-21 09:30,SoHo,R032,New York,NY,New York,1,3.0,unavailable,MK1F4LL/A
