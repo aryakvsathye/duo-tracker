@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 189,
+ "checks": 216,
  "errors": 0,
  "events": 9,
  "last_heartbeat": "2026-11-21",
@@ -171,224 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-21T09:59:03.562462-06:00",
+ "last_check": "2026-11-21T10:08:09.066994-06:00",
  "history": [
-  {
-   "t": "2026-11-21T09:29:17-06:00",
-   "ok": true,
-   "ms": 502,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:29:37-06:00",
-   "ok": true,
-   "ms": 388,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:29:57-06:00",
-   "ok": true,
-   "ms": 321,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:30:17-06:00",
-   "ok": true,
-   "ms": 350,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:30:37-06:00",
-   "ok": true,
-   "ms": 352,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:30:57-06:00",
-   "ok": true,
-   "ms": 331,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:31:17-06:00",
-   "ok": true,
-   "ms": 679,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:31:37-06:00",
-   "ok": true,
-   "ms": 319,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:31:57-06:00",
-   "ok": true,
-   "ms": 367,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:32:18-06:00",
-   "ok": true,
-   "ms": 458,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:32:38-06:00",
-   "ok": true,
-   "ms": 385,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:32:58-06:00",
-   "ok": true,
-   "ms": 522,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:33:18-06:00",
-   "ok": true,
-   "ms": 414,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:33:38-06:00",
-   "ok": true,
-   "ms": 514,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:33:58-06:00",
-   "ok": true,
-   "ms": 437,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:34:18-06:00",
-   "ok": true,
-   "ms": 449,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:34:38-06:00",
-   "ok": true,
-   "ms": 399,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:34:58-06:00",
-   "ok": true,
-   "ms": 414,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:35:18-06:00",
-   "ok": true,
-   "ms": 470,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:35:38-06:00",
-   "ok": true,
-   "ms": 563,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:35:58-06:00",
-   "ok": true,
-   "ms": 450,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:36:18-06:00",
-   "ok": true,
-   "ms": 424,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:36:38-06:00",
-   "ok": true,
-   "ms": 471,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:36:58-06:00",
-   "ok": true,
-   "ms": 458,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:37:18-06:00",
-   "ok": true,
-   "ms": 394,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:37:38-06:00",
-   "ok": true,
-   "ms": 449,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-21T09:37:58-06:00",
-   "ok": true,
-   "ms": 345,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-21T09:38:18-06:00",
    "ok": true,
@@ -889,6 +673,276 @@
    "t": "2026-11-21T09:59:03-06:00",
    "ok": true,
    "ms": 266,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T09:59:28-06:00",
+   "ok": true,
+   "ms": 445,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T09:59:48-06:00",
+   "ok": true,
+   "ms": 438,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:00:08-06:00",
+   "ok": true,
+   "ms": 474,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:00:28-06:00",
+   "ok": true,
+   "ms": 359,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:00:48-06:00",
+   "ok": true,
+   "ms": 625,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:01:08-06:00",
+   "ok": true,
+   "ms": 391,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:01:28-06:00",
+   "ok": true,
+   "ms": 434,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:01:48-06:00",
+   "ok": true,
+   "ms": 359,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:02:08-06:00",
+   "ok": true,
+   "ms": 763,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:02:28-06:00",
+   "ok": true,
+   "ms": 617,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:02:48-06:00",
+   "ok": true,
+   "ms": 366,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:03:08-06:00",
+   "ok": true,
+   "ms": 457,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:03:28-06:00",
+   "ok": true,
+   "ms": 360,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:03:48-06:00",
+   "ok": true,
+   "ms": 385,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:04:08-06:00",
+   "ok": true,
+   "ms": 433,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:04:28-06:00",
+   "ok": true,
+   "ms": 363,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:04:48-06:00",
+   "ok": true,
+   "ms": 383,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:05:08-06:00",
+   "ok": true,
+   "ms": 376,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:05:28-06:00",
+   "ok": true,
+   "ms": 527,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:05:48-06:00",
+   "ok": true,
+   "ms": 393,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:06:08-06:00",
+   "ok": true,
+   "ms": 357,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:06:28-06:00",
+   "ok": true,
+   "ms": 399,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:06:48-06:00",
+   "ok": true,
+   "ms": 359,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:07:08-06:00",
+   "ok": true,
+   "ms": 484,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:07:28-06:00",
+   "ok": true,
+   "ms": 458,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:07:48-06:00",
+   "ok": true,
+   "ms": 433,
+   "code": 200,
+   "green": [
+    "Village Pointe"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-21T10:08:08-06:00",
+   "ok": true,
+   "ms": 345,
    "code": 200,
    "green": [
     "Village Pointe"
