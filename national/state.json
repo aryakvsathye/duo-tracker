@@ -4189,7 +4189,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-22T09:59:31.974020-06:00",
+ "last_sweep": "2026-11-22T09:59:38.640239-06:00",
  "metros_ok": 44,
  "metros": [
   {
@@ -4493,7 +4493,7 @@
    "state": "NY"
   }
  ],
- "retries": 4,
+ "retries": 1,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4503,20 +4503,20 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Nashville": 1,
-  "Boston": 1,
-  "San Francisco": 1,
-  "Washington": 1,
-  "New York": 1,
-  "Philadelphia": 1
+  "Nashville": 1
  },
  "skipped": [
-  "Richmond"
+  "Boston",
+  "Nashville",
+  "New York",
+  "Philadelphia",
+  "San Francisco",
+  "Washington"
  ],
  "checked_at": {
   "New York": "2026-11-22T09:59:26.512608-06:00",
   "Los Angeles": "2026-11-22T09:58:15.681665-06:00",
-  "Chicago": "2026-11-22T09:55:27.942885-06:00",
+  "Chicago": "2026-11-22T09:59:38.640131-06:00",
   "Dallas": "2026-11-22T09:57:39.670691-06:00",
   "Houston": "2026-11-22T09:58:05.831107-06:00",
   "Washington": "2026-11-22T09:58:00.392196-06:00",
@@ -4547,7 +4547,7 @@
   "Columbus": "2026-11-22T09:57:55.875595-06:00",
   "Indianapolis": "2026-11-22T09:58:20.591607-06:00",
   "Cleveland": "2026-11-22T09:58:40.339953-06:00",
-  "Nashville": "2026-11-22T09:55:32.459411-06:00",
+  "Nashville": "2026-11-22T09:59:53.543626-06:00",
   "Raleigh": "2026-11-22T09:59:31.973911-06:00",
   "Oklahoma City": "2026-11-22T09:56:48.621758-06:00",
   "Tulsa": "2026-11-22T09:56:53.584280-06:00",
@@ -4568,7 +4568,7 @@
  "ok_at": {
   "New York": "2026-11-22T09:48:50.455069-06:00",
   "Los Angeles": "2026-11-22T09:58:15.681683-06:00",
-  "Chicago": "2026-11-22T09:55:27.942902-06:00",
+  "Chicago": "2026-11-22T09:59:38.640148-06:00",
   "Dallas": "2026-11-22T09:57:39.670727-06:00",
   "Houston": "2026-11-22T09:58:05.831125-06:00",
   "Washington": "2026-11-22T09:50:16.673272-06:00",
@@ -4647,5 +4647,5 @@
   "2026-11-22T07:04-06:00"
  ],
  "last_weekly": "2026-W46",
- "last_error": "2026-11-22T09:54-06:00: San Francisco: HTTP 541; Washington: HTTP 541; New York: HTTP 541; Philadelphia: HTTP 541"
+ "last_error": "2026-11-22T09:59-06:00: Nashville: HTTP 541"
 }
