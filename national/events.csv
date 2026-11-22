@@ -5149,3 +5149,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-22 07:58,Fifth Avenue,R095,New York,NY,New York,1,0.7,unavailable,MK1F4LL/A
 2026-11-22 08:46,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,available,MK1F4LL/A
 2026-11-22 08:49,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,available,MK1F4LL/A
+2026-11-22 09:05,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,unavailable,MK1F4LL/A
