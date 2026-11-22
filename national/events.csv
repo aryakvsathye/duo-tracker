@@ -5147,3 +5147,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-22 00:58,Stonestown,R033,San Francisco,CA,San Francisco,1,5.8,unavailable,MK1F4LL/A
 2026-11-22 07:51,Fifth Avenue,R095,New York,NY,New York,1,0.7,available,MK1F4LL/A
 2026-11-22 07:58,Fifth Avenue,R095,New York,NY,New York,1,0.7,unavailable,MK1F4LL/A
+2026-11-22 08:46,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,available,MK1F4LL/A
