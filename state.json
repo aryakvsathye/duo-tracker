@@ -37,7 +37,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "Saddle Creek": {
-   "MK1F4LL/A": "unavailable",
+   "MK1F4LL/A": "available",
    "MK1E4LL/A": "unavailable"
   },
   "Hilldale": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 171,
+ "checks": 179,
  "errors": 0,
- "events": 0,
+ "events": 1,
  "last_heartbeat": "2026-11-22",
  "nearby": {
   "Country Club Plaza": {
@@ -171,72 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-22T10:46:56.660813-06:00",
+ "last_check": "2026-11-22T10:55:18.592045-06:00",
  "history": [
-  {
-   "t": "2026-11-22T09:23:25-06:00",
-   "ok": true,
-   "ms": 261,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-22T09:24:25-06:00",
-   "ok": true,
-   "ms": 215,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-22T09:25:25-06:00",
-   "ok": true,
-   "ms": 209,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-22T09:26:25-06:00",
-   "ok": true,
-   "ms": 225,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-22T09:27:25-06:00",
-   "ok": true,
-   "ms": 225,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-22T09:28:25-06:00",
-   "ok": true,
-   "ms": 202,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-22T09:29:25-06:00",
-   "ok": true,
-   "ms": 197,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-22T09:30:25-06:00",
-   "ok": true,
-   "ms": 338,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-22T09:31:25-06:00",
    "ok": true,
@@ -892,9 +828,83 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-22T10:47:16-06:00",
+   "ok": true,
+   "ms": 398,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-22T10:48:16-06:00",
+   "ok": true,
+   "ms": 403,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-22T10:49:16-06:00",
+   "ok": true,
+   "ms": 461,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-22T10:50:16-06:00",
+   "ok": true,
+   "ms": 454,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-22T10:51:16-06:00",
+   "ok": true,
+   "ms": 391,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-22T10:52:16-06:00",
+   "ok": true,
+   "ms": 585,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-22T10:53:16-06:00",
+   "ok": true,
+   "ms": 394,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-22T10:54:16-06:00",
+   "ok": true,
+   "ms": 570,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
+  "Saddle Creek": {
+   "miles": 385.15,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Germantown",
+   "state": "TN"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -984,16 +994,6 @@
    },
    "city": "Little Rock",
    "state": "AR"
-  },
-  "Saddle Creek": {
-   "miles": 385.15,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Germantown",
-   "state": "TN"
   },
   "Hilldale": {
    "miles": 394.05,
