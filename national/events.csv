@@ -5156,3 +5156,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-22 09:50,Lincoln Road,R115,Miami Beach,FL,Miami,1,3.6,available,MK1F4LL/A
 2026-11-22 09:59,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,available,MK1F4LL/A
 2026-11-22 10:01,Annapolis,R142,Annapolis,MD,Washington,1,26.1,available,MK1F4LL/A
+2026-11-22 10:12,Annapolis,R142,Annapolis,MD,Washington,1,26.1,unavailable,MK1F4LL/A
