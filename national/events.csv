@@ -5235,3 +5235,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-22 14:05,Northridge,R023,Northridge,CA,Los Angeles,1,14.9,unavailable,MK1F4LL/A
 2026-11-22 14:06,Roseville,R298,Roseville,CA,Sacramento,2,14.6,unavailable,MK1F4LL/A
 2026-11-22 14:31,Victoria Gardens,R094,Rancho Cucamonga,CA,,0,192.6,unavailable,MK1F4LL/A
+2026-11-22 14:45,Tysons Corner,R010,McLean,VA,Washington,1,10.9,available,MK1F4LL/A
