@@ -4178,7 +4178,7 @@
   }
  },
  "last_sweep": "2026-11-21T22:30:19.122974-06:00",
- "metros_ok": 46,
+ "metros_ok": 45,
  "metros": [
   {
    "metro": "New York",
@@ -4495,9 +4495,7 @@
   "Portland": 1,
   "Atlanta": 1
  },
- "skipped": [
-  "Philadelphia"
- ],
+ "skipped": [],
  "checked_at": {
   "New York": "2026-11-21T22:29:11.343778-06:00",
   "Los Angeles": "2026-11-21T22:27:15.302591-06:00",
