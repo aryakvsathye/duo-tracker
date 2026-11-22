@@ -4493,17 +4493,9 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Nashville": 1
- },
+ "metro_skip": {},
  "skipped": [
-  "Albuquerque",
-  "Chicago",
-  "Detroit",
-  "Madison",
-  "New York",
-  "San Diego",
-  "San Francisco"
+  "Nashville"
  ],
  "checked_at": {
   "New York": "2026-11-21T19:05:22.507373-06:00",
