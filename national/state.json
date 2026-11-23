@@ -4491,9 +4491,7 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {},
- "skipped": [
-  "Tulsa"
- ],
+ "skipped": [],
  "checked_at": {
   "New York": "2026-11-23T04:30:26.394716-06:00",
   "Los Angeles": "2026-11-23T04:25:55.754020-06:00",
