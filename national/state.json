@@ -2673,14 +2673,17 @@
    "metro": "Columbus",
    "tier": 2,
    "miles": 9.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-23 14:49"
+   },
+   "since": "2026-11-23 14:49"
   },
   "R003": {
    "name": "Bellevue Square",
@@ -4177,8 +4180,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-23T14:49:43.105257-06:00",
- "metros_ok": 50,
+ "last_sweep": "2026-11-23T14:49:50.955799-06:00",
+ "metros_ok": 49,
  "metros": [
   {
    "metro": "New York",
@@ -4523,7 +4526,7 @@
   "Las Vegas": "2026-11-23T14:44:44.079650-06:00",
   "Cincinnati": "2026-11-23T14:49:36.801740-06:00",
   "Kansas City": "2026-11-23T14:46:52.318667-06:00",
-  "Columbus": "2026-11-23T14:43:49.759288-06:00",
+  "Columbus": "2026-11-23T14:49:50.955489-06:00",
   "Indianapolis": "2026-11-23T14:44:09.008813-06:00",
   "Cleveland": "2026-11-23T14:46:39.537200-06:00",
   "Nashville": "2026-11-23T14:44:28.061562-06:00",
@@ -4575,7 +4578,7 @@
   "Las Vegas": "2026-11-23T14:44:44.079671-06:00",
   "Cincinnati": "2026-11-23T14:49:36.801759-06:00",
   "Kansas City": "2026-11-23T14:46:52.318687-06:00",
-  "Columbus": "2026-11-23T14:43:49.759308-06:00",
+  "Columbus": "2026-11-23T14:49:50.955508-06:00",
   "Indianapolis": "2026-11-23T14:44:09.008836-06:00",
   "Cleveland": "2026-11-23T14:46:39.537220-06:00",
   "Nashville": "2026-11-23T14:44:28.061580-06:00",
