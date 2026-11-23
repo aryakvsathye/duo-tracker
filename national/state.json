@@ -4481,7 +4481,7 @@
    "state": "NY"
   }
  ],
- "retries": 3,
+ "retries": 1,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4493,7 +4493,8 @@
  "metro_skip": {
   "Sacramento": 1,
   "Salt Lake City": 1,
-  "Oklahoma City": 1
+  "Oklahoma City": 1,
+  "Albuquerque": 1
  },
  "skipped": [],
  "checked_at": {
@@ -4539,7 +4540,7 @@
   "Little Rock": "2026-11-23T09:26:11.578069-06:00",
   "Memphis": "2026-11-23T09:25:31.026955-06:00",
   "Madison": "2026-11-23T09:26:27.648405-06:00",
-  "Albuquerque": "2026-11-23T09:24:01.108896-06:00",
+  "Albuquerque": "2026-11-23T09:29:41.830889-06:00",
   "Salt Lake City": "2026-11-23T09:24:31.827629-06:00",
   "Louisville": "2026-11-23T09:26:22.341586-06:00",
   "Birmingham": "2026-11-23T09:28:34.562244-06:00",
@@ -4628,5 +4629,5 @@
   "2026-11-23T07:29-06:00"
  ],
  "last_weekly": "2026-W47",
- "last_error": "2026-11-23T09:24-06:00: Sacramento: HTTP 541; Salt Lake City: HTTP 541; Oklahoma City: HTTP 541"
+ "last_error": "2026-11-23T09:29-06:00: Albuquerque: HTTP 541"
 }
