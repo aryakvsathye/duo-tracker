@@ -5321,3 +5321,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-24 12:29,Highland Village,R437,Houston,TX,Houston,1,1.4,available,MK1E4LL/A
 2026-11-24 12:32,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,available,MK1E4LL/A
 2026-11-24 12:37,Fashion Island,R015,Newport Beach,CA,,0,72.0,available,MK1F4LL/A
+2026-11-24 12:40,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,unavailable,MK1F4LL/A
+2026-11-24 12:40,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,unavailable,MK1E4LL/A
