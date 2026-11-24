@@ -4190,7 +4190,7 @@
   }
  },
  "last_sweep": "2026-11-24T12:43:29.239427-06:00",
- "metros_ok": 43,
+ "metros_ok": 48,
  "metros": [
   {
    "metro": "New York",
@@ -4503,12 +4503,12 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Los Angeles": 1,
-  "Omaha": 1
+  "Omaha": 1,
+  "Louisville": 1,
+  "Madison": 1
  },
  "skipped": [
-  "Phoenix",
-  "Sacramento"
+  "Los Angeles"
  ],
  "checked_at": {
   "New York": "2026-11-24T12:42:46.719887-06:00",
@@ -4552,10 +4552,10 @@
   "Des Moines": "2026-11-24T12:41:10.597160-06:00",
   "Little Rock": "2026-11-24T12:40:35.157106-06:00",
   "Memphis": "2026-11-24T12:42:39.053745-06:00",
-  "Madison": "2026-11-24T12:38:11.827858-06:00",
+  "Madison": "2026-11-24T12:44:01.473496-06:00",
   "Albuquerque": "2026-11-24T12:42:01.584433-06:00",
   "Salt Lake City": "2026-11-24T12:42:23.166966-06:00",
-  "Louisville": "2026-11-24T12:38:06.496647-06:00",
+  "Louisville": "2026-11-24T12:43:46.316816-06:00",
   "Birmingham": "2026-11-24T12:38:24.101030-06:00",
   "Richmond": "2026-11-24T12:39:54.975203-06:00",
   "Honolulu": "2026-11-24T12:42:33.761431-06:00",
@@ -4645,5 +4645,5 @@
   "2026-11-24T09:44-06:00"
  ],
  "last_weekly": "2026-W47",
- "last_error": "2026-11-24T12:39-06:00: Los Angeles: HTTP 541; Omaha: HTTP 541"
+ "last_error": "2026-11-24T12:44-06:00: Louisville: HTTP 541; Madison: HTTP 541"
 }
