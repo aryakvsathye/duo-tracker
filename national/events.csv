@@ -5285,3 +5285,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-24 09:43,The Woodlands,R126,The Woodlands,TX,Houston,1,28.7,unavailable,MK1F4LL/A
 2026-11-24 09:46,Southpoint,R049,Durham,NC,Raleigh,2,14.0,available,MK1F4LL/A
 2026-11-24 09:46,Southpoint,R049,Durham,NC,Raleigh,2,14.0,available,MK1E4LL/A
+2026-11-24 09:53,Michigan Avenue,R035,Chicago,IL,Chicago,1,0.5,available,MK1F4LL/A
+2026-11-24 09:53,Michigan Avenue,R035,Chicago,IL,Chicago,1,0.5,available,MK1E4LL/A
