@@ -4201,7 +4201,7 @@
   }
  },
  "last_sweep": "2026-11-24T14:40:25.053886-06:00",
- "metros_ok": 43,
+ "metros_ok": 48,
  "metros": [
   {
    "metro": "New York",
@@ -4513,13 +4513,9 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Columbus": 1
- },
+ "metro_skip": {},
  "skipped": [
-  "Baltimore",
-  "Charlotte",
-  "Tampa"
+  "Columbus"
  ],
  "checked_at": {
   "New York": "2026-11-24T14:36:25.274057-06:00",
