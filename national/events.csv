@@ -5373,3 +5373,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-24 15:00,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,available,MK1F4LL/A
 2026-11-24 15:00,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,available,MK1E4LL/A
 2026-11-24 15:01,Southpoint,R049,Durham,NC,Raleigh,2,14.0,available,MK1E4LL/A
+2026-11-24 15:06,Southpoint,R049,Durham,NC,Raleigh,2,14.0,unavailable,MK1F4LL/A
+2026-11-24 15:06,Southpoint,R049,Durham,NC,Raleigh,2,14.0,unavailable,MK1E4LL/A
