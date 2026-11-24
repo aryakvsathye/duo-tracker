@@ -14,7 +14,7 @@
   },
   "Jordan Creek": {
    "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "Woodland Hills": {
    "MK1F4LL/A": "unavailable",
@@ -49,11 +49,43 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 440,
+ "checks": 443,
  "errors": 1,
- "events": 6,
+ "events": 7,
  "last_heartbeat": "2026-11-24",
  "nearby": {
+  "Jordan Creek": {
+   "miles": 183.62,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "quotes": {
+    "MK1F4LL/A": "Currently unavailable at Apple Jordan Creek",
+    "MK1E4LL/A": "Today at Apple Jordan Creek"
+   },
+   "quote": "Currently unavailable at Apple Jordan Creek",
+   "phone": "515-440 9900",
+   "lat": 41.570044,
+   "lon": -93.803773,
+   "address": "101 Jordan Creek Parkway",
+   "city": "West Des Moines",
+   "hours": [
+    {
+     "days": "Mon-Thu:",
+     "time": "10:00 AM-8:00 PM"
+    },
+    {
+     "days": "Sun:",
+     "time": "11:00 AM-6:00 PM"
+    },
+    {
+     "days": "Fri-Sat:",
+     "time": "10:00 AM-9:00 PM"
+    }
+   ]
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -137,66 +169,10 @@
      "time": "10:00 AM-9:00 PM"
     }
    ]
-  },
-  "Jordan Creek": {
-   "miles": 183.62,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "quotes": {
-    "MK1F4LL/A": "Currently unavailable at Apple Jordan Creek",
-    "MK1E4LL/A": "Currently unavailable at Apple Jordan Creek"
-   },
-   "quote": "Currently unavailable at Apple Jordan Creek",
-   "phone": "515-440 9900",
-   "lat": 41.570044,
-   "lon": -93.803773,
-   "address": "101 Jordan Creek Parkway",
-   "city": "West Des Moines",
-   "hours": [
-    {
-     "days": "Mon-Thu:",
-     "time": "10:00 AM-8:00 PM"
-    },
-    {
-     "days": "Sun:",
-     "time": "11:00 AM-6:00 PM"
-    },
-    {
-     "days": "Fri-Sat:",
-     "time": "10:00 AM-9:00 PM"
-    }
-   ]
   }
  },
- "last_check": "2026-11-24T15:01:03.812104-06:00",
+ "last_check": "2026-11-24T15:04:33.874971-06:00",
  "history": [
-  {
-   "t": "2026-11-24T13:37:29-06:00",
-   "ok": true,
-   "ms": 270,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-24T13:38:29-06:00",
-   "ok": true,
-   "ms": 326,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-24T13:39:29-06:00",
-   "ok": true,
-   "ms": 291,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-24T13:40:29-06:00",
    "ok": true,
@@ -904,9 +880,43 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-24T15:01:33-06:00",
+   "ok": true,
+   "ms": 477,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-24T15:02:33-06:00",
+   "ok": true,
+   "ms": 504,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-24T15:03:33-06:00",
+   "ok": true,
+   "ms": 579,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
+  "Jordan Creek": {
+   "miles": 183.62,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "available"
+   },
+   "city": "West Des Moines",
+   "state": "IA"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -936,16 +946,6 @@
    },
    "city": "Omaha",
    "state": "NE"
-  },
-  "Jordan Creek": {
-   "miles": 183.62,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "West Des Moines",
-   "state": "IA"
   },
   "Woodland Hills": {
    "miles": 212.92,
@@ -1038,12 +1038,12 @@
   "MK1E4LL/A": "Star White"
  },
  "wave": {
-  "since": "2026-11-21T09:23:17.932283-06:00",
+  "since": "2026-11-24T15:04:33.874984-06:00",
   "stores": [
-   "Hilldale",
-   "Village Pointe"
+   "Village Pointe",
+   "Jordan Creek"
   ],
-  "until": "2026-11-21T10:29:00-06:00"
+  "until": "2026-11-24T15:34:00-06:00"
  },
  "wave_alerted_at": "2026-11-21T09:23:17.932283-06:00"
 }
