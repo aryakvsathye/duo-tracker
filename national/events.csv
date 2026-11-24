@@ -5391,3 +5391,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-24 16:08,Vintage Faire,R322,Modesto,CA,,0,67.2,unavailable,MK1E4LL/A
 2026-11-24 16:21,Boise Towne Square,R303,Boise,ID,,0,299.0,available,MK1F4LL/A
 2026-11-24 16:21,Boise Towne Square,R303,Boise,ID,,0,299.0,available,MK1E4LL/A
+2026-11-24 16:22,Carlsbad,R294,Carlsbad,CA,San Diego,2,21.8,unavailable,MK1F4LL/A
+2026-11-24 16:22,Carlsbad,R294,Carlsbad,CA,San Diego,2,21.8,available,MK1E4LL/A
