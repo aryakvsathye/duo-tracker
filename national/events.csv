@@ -5290,3 +5290,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-24 09:54,Barton Creek,R085,Austin,TX,Austin,2,2.7,unavailable,MK1F4LL/A
 2026-11-24 09:55,Bridge Street,R266,Huntsville,AL,,0,87.9,available,MK1F4LL/A
 2026-11-24 09:59,Deer Park,R258,Deer Park,IL,Chicago,1,28.8,available,MK1E4LL/A
+2026-11-24 10:14,Deer Park,R258,Deer Park,IL,Chicago,1,28.8,unavailable,MK1E4LL/A
