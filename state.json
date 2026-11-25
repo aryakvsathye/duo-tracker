@@ -46,12 +46,12 @@
   },
   "Main Place": {
    "MK1F4LL/A": "available",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 612,
+ "checks": 614,
  "errors": 0,
- "events": 28,
+ "events": 29,
  "last_heartbeat": "2026-11-25",
  "nearby": {
   "Country Club Plaza": {
@@ -171,24 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-25T14:51:10.255330-06:00",
+ "last_check": "2026-11-25T14:53:10.253876-06:00",
  "history": [
-  {
-   "t": "2026-11-25T13:18:54-06:00",
-   "ok": true,
-   "ms": 507,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T13:19:54-06:00",
-   "ok": true,
-   "ms": 474,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-25T13:20:54-06:00",
    "ok": true,
@@ -892,6 +876,22 @@
    "code": 200,
    "green": [],
    "burst": false
+  },
+  {
+   "t": "2026-11-25T14:51:09-06:00",
+   "ok": true,
+   "ms": 290,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-25T14:52:09-06:00",
+   "ok": true,
+   "ms": 460,
+   "code": 200,
+   "green": [],
+   "burst": false
   }
  ],
  "field": {
@@ -950,7 +950,7 @@
    "status": "available",
    "parts": {
     "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "city": "Naperville",
    "state": "IL"
