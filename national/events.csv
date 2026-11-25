@@ -6066,3 +6066,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 13:16,Walnut Street,R162,Philadelphia,PA,Philadelphia,1,0.5,unavailable,MK1F4LL/A
 2026-11-25 13:16,Del Amo,R777,Torrance,CA,Los Angeles,1,15.9,available,MK1E4LL/A
 2026-11-25 13:16,Shayden Summit,R186,Reno,NV,,0,448.2,unavailable,MK1F4LL/A
+2026-11-25 13:17,Crabtree Valley Mall,R116,Raleigh,NC,Raleigh,2,1.5,available,MK1E4LL/A
+2026-11-25 13:17,Stonebridge Potomac Town Center,R598,Woodbridge,VA,Washington,1,24.2,available,MK1E4LL/A
+2026-11-25 13:17,Chestnut Hill,R076,Chestnut Hill,MA,Boston,1,5.5,available,MK1F4LL/A
