@@ -5767,3 +5767,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 10:33,Leawood,R283,Leawood,KS,Kansas City,2,10.5,unavailable,MK1E4LL/A
 2026-11-25 10:33,Eastview,R140,Victor,NY,,0,67.5,available,MK1F4LL/A
 2026-11-25 10:33,King of Prussia,R065,King of Prussia,PA,Philadelphia,1,14.7,unavailable,MK1E4LL/A
+2026-11-25 10:35,Rockingham Park,R027,Salem,NH,Boston,1,29.9,unavailable,MK1E4LL/A
+2026-11-25 10:35,Crabtree Valley Mall,R116,Raleigh,NC,Raleigh,2,1.5,unavailable,MK1E4LL/A
+2026-11-25 10:35,Short Pump Town Center,R078,Richmond,VA,Richmond,3,1.1,unavailable,MK1E4LL/A
