@@ -5965,3 +5965,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 12:00,Valley Plaza,R550,Bakersfield,CA,,0,223.3,available,MK1E4LL/A
 2026-11-25 12:01,Penn Square,R130,Oklahoma City,OK,Oklahoma City,3,1.2,unavailable,MK1E4LL/A
 2026-11-25 12:02,Crabtree Valley Mall,R116,Raleigh,NC,Raleigh,2,1.5,available,MK1E4LL/A
+2026-11-25 12:02,Cherry Hill,R206,Cherry Hill,NJ,Philadelphia,1,8.0,unavailable,MK1E4LL/A
+2026-11-25 12:02,Menlo Park,R067,Edison,NJ,,0,60.3,unavailable,MK1F4LL/A
