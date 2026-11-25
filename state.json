@@ -37,8 +37,8 @@
    "MK1E4LL/A": "available"
   },
   "Saddle Creek": {
-   "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1F4LL/A": "available",
+   "MK1E4LL/A": "available"
   },
   "Hilldale": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 144,
+ "checks": 154,
  "errors": 0,
- "events": 9,
+ "events": 11,
  "last_heartbeat": "2026-11-25",
  "nearby": {
   "Leawood": {
@@ -171,88 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-25T09:50:31.499583-06:00",
+ "last_check": "2026-11-25T09:54:18.430821-06:00",
  "history": [
-  {
-   "t": "2026-11-25T08:58:13-06:00",
-   "ok": true,
-   "ms": 419,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T08:59:13-06:00",
-   "ok": true,
-   "ms": 461,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T09:00:13-06:00",
-   "ok": true,
-   "ms": 355,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T09:01:13-06:00",
-   "ok": true,
-   "ms": 484,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T09:02:13-06:00",
-   "ok": true,
-   "ms": 500,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T09:03:13-06:00",
-   "ok": true,
-   "ms": 363,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T09:04:13-06:00",
-   "ok": true,
-   "ms": 592,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T09:05:13-06:00",
-   "ok": true,
-   "ms": 412,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T09:06:13-06:00",
-   "ok": true,
-   "ms": 517,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T09:06:36-06:00",
-   "ok": true,
-   "ms": 487,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-25T09:07:36-06:00",
    "ok": true,
@@ -924,6 +844,106 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-25T09:50:57-06:00",
+   "ok": true,
+   "ms": 432,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:51:17-06:00",
+   "ok": true,
+   "ms": 440,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:51:37-06:00",
+   "ok": true,
+   "ms": 412,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:51:57-06:00",
+   "ok": true,
+   "ms": 337,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:52:17-06:00",
+   "ok": true,
+   "ms": 268,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:52:37-06:00",
+   "ok": true,
+   "ms": 381,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:52:57-06:00",
+   "ok": true,
+   "ms": 286,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:53:17-06:00",
+   "ok": true,
+   "ms": 307,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:53:37-06:00",
+   "ok": true,
+   "ms": 298,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:53:57-06:00",
+   "ok": true,
+   "ms": 325,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -977,6 +997,16 @@
    "city": "Little Rock",
    "state": "AR"
   },
+  "Saddle Creek": {
+   "miles": 385.15,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Germantown",
+   "state": "TN"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -1017,16 +1047,6 @@
    "city": "Tulsa",
    "state": "OK"
   },
-  "Saddle Creek": {
-   "miles": 385.15,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Germantown",
-   "state": "TN"
-  },
   "Hilldale": {
    "miles": 394.05,
    "status": "unavailable",
@@ -1060,11 +1080,10 @@
  "wave": {
   "since": "2026-11-25T09:31:35.827691-06:00",
   "stores": [
-   "The Promenade at Chenal",
-   "Penn Square",
-   "Leawood"
+   "Leawood",
+   "Saddle Creek"
   ],
-  "until": "2026-11-25T10:14:00-06:00"
+  "until": "2026-11-25T10:24:00-06:00"
  },
  "wave_alerted_at": "2026-11-25T09:31:35.827691-06:00"
 }
