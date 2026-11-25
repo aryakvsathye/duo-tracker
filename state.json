@@ -49,7 +49,7 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 128,
+ "checks": 144,
  "errors": 0,
  "events": 9,
  "last_heartbeat": "2026-11-25",
@@ -171,136 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-25T09:44:45.118919-06:00",
+ "last_check": "2026-11-25T09:50:31.499583-06:00",
  "history": [
-  {
-   "t": "2026-11-25T08:43:25-06:00",
-   "ok": true,
-   "ms": 530,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T08:44:25-06:00",
-   "ok": true,
-   "ms": 410,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T08:45:25-06:00",
-   "ok": true,
-   "ms": 444,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T08:46:25-06:00",
-   "ok": true,
-   "ms": 416,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T08:47:25-06:00",
-   "ok": true,
-   "ms": 395,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T08:48:25-06:00",
-   "ok": true,
-   "ms": 452,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T08:49:25-06:00",
-   "ok": true,
-   "ms": 388,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T08:49:50-06:00",
-   "ok": true,
-   "ms": 321,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T08:50:50-06:00",
-   "ok": true,
-   "ms": 485,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T08:51:50-06:00",
-   "ok": true,
-   "ms": 441,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T08:52:50-06:00",
-   "ok": true,
-   "ms": 469,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T08:53:50-06:00",
-   "ok": true,
-   "ms": 500,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T08:54:50-06:00",
-   "ok": true,
-   "ms": 421,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T08:55:50-06:00",
-   "ok": true,
-   "ms": 440,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T08:56:50-06:00",
-   "ok": true,
-   "ms": 393,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T08:57:50-06:00",
-   "ok": true,
-   "ms": 331,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-25T08:58:13-06:00",
    "ok": true,
@@ -892,6 +764,166 @@
    "code": 200,
    "green": [],
    "burst": true
+  },
+  {
+   "t": "2026-11-25T09:44:44-06:00",
+   "ok": true,
+   "ms": 441,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:45:51-06:00",
+   "ok": true,
+   "ms": 390,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:46:11-06:00",
+   "ok": true,
+   "ms": 509,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:46:31-06:00",
+   "ok": true,
+   "ms": 498,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:46:51-06:00",
+   "ok": true,
+   "ms": 506,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:47:11-06:00",
+   "ok": true,
+   "ms": 439,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:47:31-06:00",
+   "ok": true,
+   "ms": 283,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:47:51-06:00",
+   "ok": true,
+   "ms": 496,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:48:11-06:00",
+   "ok": true,
+   "ms": 400,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:48:31-06:00",
+   "ok": true,
+   "ms": 417,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:48:51-06:00",
+   "ok": true,
+   "ms": 473,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:49:11-06:00",
+   "ok": true,
+   "ms": 404,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:49:31-06:00",
+   "ok": true,
+   "ms": 494,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:49:51-06:00",
+   "ok": true,
+   "ms": 426,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:50:11-06:00",
+   "ok": true,
+   "ms": 414,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T09:50:31-06:00",
+   "ok": true,
+   "ms": 432,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -1028,7 +1060,6 @@
  "wave": {
   "since": "2026-11-25T09:31:35.827691-06:00",
   "stores": [
-   "West County",
    "The Promenade at Chenal",
    "Penn Square",
    "Leawood"
