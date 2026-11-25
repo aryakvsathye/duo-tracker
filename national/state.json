@@ -2148,14 +2148,17 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 5.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "New England",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 08:35"
+   },
+   "since": "2026-11-25 08:35"
   },
   "R110": {
    "name": "South Shore",
@@ -2205,14 +2208,17 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 11.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "New England",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 08:35"
+   },
+   "since": "2026-11-25 08:35"
   },
   "R011": {
    "name": "MarketStreet",
@@ -2223,14 +2229,17 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 11.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "New England",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-25 08:35"
+   },
+   "since": "2026-11-25 08:35"
   },
   "R137": {
    "name": "Derby Street",
@@ -2259,14 +2268,18 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 16.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "New England",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 08:35",
+    "MK1E4LL/A": "2026-11-25 08:35"
+   },
+   "since": "2026-11-25 08:35"
   },
   "R027": {
    "name": "Rockingham Park",
@@ -2295,14 +2308,18 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 30.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "New England",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 08:35",
+    "MK1E4LL/A": "2026-11-25 08:35"
+   },
+   "since": "2026-11-25 08:35"
   },
   "R622": {
    "name": "The Shops at Blackstone Valley",
@@ -2313,14 +2330,17 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 37.4,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "New England",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 08:35"
+   },
+   "since": "2026-11-25 08:35"
   },
   "R075": {
    "name": "Union Square",
@@ -4256,8 +4276,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-25T08:34:39.849161-06:00",
- "metros_ok": 50,
+ "last_sweep": "2026-11-25T08:35:38.801556-06:00",
+ "metros_ok": 47,
  "metros": [
   {
    "metro": "New York",
@@ -4574,7 +4594,7 @@
  },
  "skipped": [],
  "checked_at": {
-  "New York": "2026-11-25T08:29:21.259998-06:00",
+  "New York": "2026-11-25T08:35:33.532347-06:00",
   "Los Angeles": "2026-11-25T08:33:56.139975-06:00",
   "Chicago": "2026-11-25T08:31:24.305278-06:00",
   "Dallas": "2026-11-25T08:34:18.144643-06:00",
@@ -4584,12 +4604,12 @@
   "Atlanta": "2026-11-25T08:32:16.394671-06:00",
   "Miami": "2026-11-25T08:32:40.581698-06:00",
   "Phoenix": "2026-11-25T08:33:37.473655-06:00",
-  "Boston": "2026-11-25T08:29:15.927482-06:00",
+  "Boston": "2026-11-25T08:35:22.874003-06:00",
   "San Francisco": "2026-11-25T08:34:01.582820-06:00",
   "Detroit": "2026-11-25T08:31:35.279643-06:00",
   "Seattle": "2026-11-25T08:34:12.668910-06:00",
   "Minneapolis": "2026-11-25T08:33:26.638637-06:00",
-  "San Diego": "2026-11-25T08:29:26.596403-06:00",
+  "San Diego": "2026-11-25T08:35:38.801440-06:00",
   "Tampa": "2026-11-25T08:32:46.109612-06:00",
   "Denver": "2026-11-25T08:33:48.358486-06:00",
   "Baltimore": "2026-11-25T08:32:51.594892-06:00",
@@ -4610,7 +4630,7 @@
   "Nashville": "2026-11-25T08:32:21.788804-06:00",
   "Raleigh": "2026-11-25T08:31:40.644763-06:00",
   "Oklahoma City": "2026-11-25T08:34:39.849049-06:00",
-  "Tulsa": "2026-11-25T08:30:46.046859-06:00",
+  "Tulsa": "2026-11-25T08:35:28.202343-06:00",
   "Omaha": "2026-11-25T08:30:29.761836-06:00",
   "Des Moines": "2026-11-25T08:31:29.878943-06:00",
   "Little Rock": "2026-11-25T08:30:56.863843-06:00",
@@ -4626,7 +4646,7 @@
   "Buffalo": "2026-11-25T08:34:57.826343-06:00"
  },
  "ok_at": {
-  "New York": "2026-11-25T08:29:21.260019-06:00",
+  "New York": "2026-11-25T08:35:33.532363-06:00",
   "Los Angeles": "2026-11-25T08:33:56.139991-06:00",
   "Chicago": "2026-11-25T08:31:24.305291-06:00",
   "Dallas": "2026-11-25T08:34:18.144659-06:00",
@@ -4636,12 +4656,12 @@
   "Atlanta": "2026-11-25T08:32:16.394688-06:00",
   "Miami": "2026-11-25T08:32:40.581710-06:00",
   "Phoenix": "2026-11-25T08:33:37.473670-06:00",
-  "Boston": "2026-11-25T08:29:15.927503-06:00",
+  "Boston": "2026-11-25T08:35:22.874021-06:00",
   "San Francisco": "2026-11-25T08:34:01.582835-06:00",
   "Detroit": "2026-11-25T08:31:35.279658-06:00",
   "Seattle": "2026-11-25T08:34:12.668926-06:00",
   "Minneapolis": "2026-11-25T08:33:26.638654-06:00",
-  "San Diego": "2026-11-25T08:29:26.596425-06:00",
+  "San Diego": "2026-11-25T08:35:38.801458-06:00",
   "Tampa": "2026-11-25T08:32:46.109630-06:00",
   "Denver": "2026-11-25T08:33:48.358501-06:00",
   "Baltimore": "2026-11-25T08:32:51.594908-06:00",
@@ -4662,7 +4682,7 @@
   "Nashville": "2026-11-25T08:32:21.788821-06:00",
   "Raleigh": "2026-11-25T08:31:40.644779-06:00",
   "Oklahoma City": "2026-11-25T08:34:39.849078-06:00",
-  "Tulsa": "2026-11-25T08:30:46.046874-06:00",
+  "Tulsa": "2026-11-25T08:35:28.202365-06:00",
   "Omaha": "2026-11-25T08:30:29.761853-06:00",
   "Des Moines": "2026-11-25T08:31:29.878960-06:00",
   "Little Rock": "2026-11-25T08:30:56.863858-06:00",
@@ -4678,8 +4698,8 @@
   "Buffalo": "2026-11-25T08:29:08.092232-06:00"
  },
  "hot": [
-  "West South Central",
-  "South Atlantic"
+  "New England",
+  "West South Central"
  ],
  "cycle_seconds": 150,
  "pace": 5.0,
