@@ -5664,3 +5664,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 09:17,Houston Galleria,R058,Houston,TX,Houston,1,0.7,available,MK1E4LL/A
 2026-11-25 09:18,The Woodlands,R126,The Woodlands,TX,Houston,1,28.7,available,MK1F4LL/A
 2026-11-25 09:18,Upper West Side,R251,New York,NY,New York,1,0.5,unavailable,MK1F4LL/A
+2026-11-25 09:20,Chandler Fashion Center,R026,Chandler,AZ,Phoenix,1,16.1,available,MK1F4LL/A
+2026-11-25 09:20,Chandler Fashion Center,R026,Chandler,AZ,Phoenix,1,16.1,available,MK1E4LL/A
