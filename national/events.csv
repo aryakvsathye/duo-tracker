@@ -6303,3 +6303,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 17:18,Cherry Creek,R047,Denver,CO,Denver,2,0.8,unavailable,MK1E4LL/A
 2026-11-25 17:19,Menlo Park,R067,Edison,NJ,,0,60.3,available,MK1F4LL/A
 2026-11-25 17:19,Freehold Raceway Mall,R138,Freehold,NJ,,0,50.6,unavailable,MK1E4LL/A
+2026-11-25 17:20,Glendale Galleria,R001,Glendale,CA,Los Angeles,1,10.8,available,MK1F4LL/A
