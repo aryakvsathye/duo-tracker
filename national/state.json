@@ -4208,7 +4208,7 @@
   }
  },
  "last_sweep": "2026-11-24T18:24:33.669011-06:00",
- "metros_ok": 48,
+ "metros_ok": 50,
  "metros": [
   {
    "metro": "New York",
@@ -4511,7 +4511,7 @@
    "state": "NY"
   }
  ],
- "retries": 0,
+ "retries": 1,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4520,13 +4520,15 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {},
+ "metro_skip": {
+  "Dallas": 1
+ },
  "skipped": [],
  "checked_at": {
   "New York": "2026-11-24T18:20:46.721744-06:00",
   "Los Angeles": "2026-11-24T18:21:11.183524-06:00",
   "Chicago": "2026-11-24T18:20:56.626061-06:00",
-  "Dallas": "2026-11-24T18:19:27.006818-06:00",
+  "Dallas": "2026-11-24T18:24:50.104720-06:00",
   "Houston": "2026-11-24T18:22:48.194256-06:00",
   "Washington": "2026-11-24T18:21:57.017168-06:00",
   "Philadelphia": "2026-11-24T18:21:06.283234-06:00",
@@ -4656,5 +4658,6 @@
   "2026-11-24T09:44-06:00",
   "2026-11-24T14:10-06:00"
  ],
- "last_weekly": "2026-W47"
+ "last_weekly": "2026-W47",
+ "last_error": "2026-11-24T18:24-06:00: Dallas: HTTP 541"
 }
