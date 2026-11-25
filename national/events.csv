@@ -6099,3 +6099,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 13:38,Pioneer Place,R077,Portland,OR,Portland,2,4.5,unavailable,MK1F4LL/A
 2026-11-25 13:40,Stonebridge Potomac Town Center,R598,Woodbridge,VA,Washington,1,24.2,unavailable,MK1E4LL/A
 2026-11-25 13:42,Highland Village,R437,Houston,TX,Houston,1,1.4,available,MK1F4LL/A
+2026-11-25 13:43,Third Street Promenade,R051,Santa Monica,CA,Los Angeles,1,5.5,available,MK1F4LL/A
+2026-11-25 13:43,Third Street Promenade,R051,Santa Monica,CA,Los Angeles,1,5.5,available,MK1E4LL/A
+2026-11-25 13:43,Palo Alto,R002,Palo Alto,CA,San Francisco,1,27.4,unavailable,MK1F4LL/A
