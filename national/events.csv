@@ -5471,3 +5471,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 06:57,Franklin Park Mall,R299,Toledo,OH,,0,64.2,available,MK1F4LL/A
 2026-11-25 07:19,Franklin Park Mall,R299,Toledo,OH,,0,64.2,unavailable,MK1F4LL/A
 2026-11-25 07:21,Ross Park,R413,Pittsburgh,PA,Pittsburgh,2,2.2,available,MK1F4LL/A
+2026-11-25 07:30,Upper West Side,R251,New York,NY,New York,1,0.5,available,MK1F4LL/A
+2026-11-25 07:30,Upper West Side,R251,New York,NY,New York,1,0.5,available,MK1E4LL/A
