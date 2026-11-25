@@ -5721,3 +5721,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 09:58,Millenia,R053,Orlando,FL,Orlando,2,3.5,unavailable,MK1E4LL/A
 2026-11-25 10:15,Waterside Shops,R169,Naples,FL,,0,104.7,available,MK1F4LL/A
 2026-11-25 10:15,Southpoint,R049,Durham,NC,Raleigh,2,14.0,available,MK1F4LL/A
+2026-11-25 10:15,Boise Towne Square,R303,Boise,ID,,0,299.0,unavailable,MK1E4LL/A
+2026-11-25 10:16,Cielo Vista Mall,R492,El Paso,TX,,0,230.6,available,MK1F4LL/A
