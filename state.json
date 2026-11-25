@@ -41,7 +41,7 @@
    "MK1E4LL/A": "available"
   },
   "Hilldale": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   },
   "Main Place": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "available"
   }
  },
- "checks": 198,
+ "checks": 201,
  "errors": 0,
- "events": 16,
+ "events": 17,
  "last_heartbeat": "2026-11-25",
  "nearby": {
   "Leawood": {
@@ -171,32 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-25T10:09:06.323295-06:00",
+ "last_check": "2026-11-25T10:10:21.716767-06:00",
  "history": [
-  {
-   "t": "2026-11-25T09:37:53-06:00",
-   "ok": true,
-   "ms": 226,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T09:38:13-06:00",
-   "ok": true,
-   "ms": 234,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T09:38:33-06:00",
-   "ok": true,
-   "ms": 244,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-25T09:38:53-06:00",
    "ok": true,
@@ -1032,6 +1008,36 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-25T10:09:21-06:00",
+   "ok": true,
+   "ms": 445,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:09:41-06:00",
+   "ok": true,
+   "ms": 699,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:10:01-06:00",
+   "ok": true,
+   "ms": 381,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -1095,16 +1101,6 @@
    "city": "Germantown",
    "state": "TN"
   },
-  "Hilldale": {
-   "miles": 394.05,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Madison",
-   "state": "WI"
-  },
   "Main Place": {
    "miles": 397.06,
    "status": "available",
@@ -1154,6 +1150,16 @@
    },
    "city": "Tulsa",
    "state": "OK"
+  },
+  "Hilldale": {
+   "miles": 394.05,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Madison",
+   "state": "WI"
   }
  },
  "token_expires": "2026-11-26",
