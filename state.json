@@ -41,7 +41,7 @@
    "MK1E4LL/A": "available"
   },
   "Hilldale": {
-   "MK1F4LL/A": "unavailable",
+   "MK1F4LL/A": "available",
    "MK1E4LL/A": "unavailable"
   },
   "Main Place": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 171,
+ "checks": 174,
  "errors": 0,
- "events": 11,
+ "events": 12,
  "last_heartbeat": "2026-11-25",
  "nearby": {
   "Leawood": {
@@ -171,32 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-25T09:59:38.273875-06:00",
+ "last_check": "2026-11-25T10:01:26.496609-06:00",
  "history": [
-  {
-   "t": "2026-11-25T09:23:35-06:00",
-   "ok": true,
-   "ms": 637,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T09:24:35-06:00",
-   "ok": true,
-   "ms": 410,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T09:25:35-06:00",
-   "ok": true,
-   "ms": 1302,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-25T09:26:35-06:00",
    "ok": true,
@@ -978,6 +954,36 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-25T10:00:25-06:00",
+   "ok": true,
+   "ms": 433,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:00:45-06:00",
+   "ok": true,
+   "ms": 349,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:01:05-06:00",
+   "ok": true,
+   "ms": 406,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -1041,6 +1047,16 @@
    "city": "Germantown",
    "state": "TN"
   },
+  "Hilldale": {
+   "miles": 394.05,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Madison",
+   "state": "WI"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -1081,16 +1097,6 @@
    "city": "Tulsa",
    "state": "OK"
   },
-  "Hilldale": {
-   "miles": 394.05,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Madison",
-   "state": "WI"
-  },
   "Main Place": {
    "miles": 397.06,
    "status": "unavailable",
@@ -1115,9 +1121,10 @@
   "since": "2026-11-25T09:31:35.827691-06:00",
   "stores": [
    "Leawood",
-   "Saddle Creek"
+   "Saddle Creek",
+   "Hilldale"
   ],
-  "until": "2026-11-25T10:24:00-06:00"
+  "until": "2026-11-25T10:31:00-06:00"
  },
  "wave_alerted_at": "2026-11-25T09:31:35.827691-06:00"
 }
