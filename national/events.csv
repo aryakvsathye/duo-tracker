@@ -6137,3 +6137,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 14:14,Broadway Plaza,R014,Walnut Creek,CA,San Francisco,1,20.4,unavailable,MK1E4LL/A
 2026-11-25 14:15,Brea Mall,R156,Brea,CA,,0,89.9,unavailable,MK1F4LL/A
 2026-11-25 14:15,Broadway Plaza,R014,Walnut Creek,CA,San Francisco,1,20.4,available,MK1F4LL/A
+2026-11-25 14:17,Orland Square Mall,R237,Orland Park,IL,Chicago,1,22.4,unavailable,MK1F4LL/A
+2026-11-25 14:17,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,available,MK1E4LL/A
