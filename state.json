@@ -30,7 +30,7 @@
   },
   "Penn Square": {
    "MK1F4LL/A": "available",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "The Promenade at Chenal": {
    "MK1F4LL/A": "available",
@@ -51,7 +51,7 @@
  },
  "checks": 390,
  "errors": 0,
- "events": 23,
+ "events": 24,
  "last_heartbeat": "2026-11-25",
  "nearby": {
   "Leawood": {
@@ -171,7 +171,7 @@
    ]
   }
  },
- "last_check": "2026-11-25T12:11:21.932098-06:00",
+ "last_check": "2026-11-25T12:11:45.542948-06:00",
  "history": [
   {
    "t": "2026-11-25T11:00:24-06:00",
@@ -1120,7 +1120,7 @@
    "status": "available",
    "parts": {
     "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "city": "Oklahoma City",
    "state": "OK"
