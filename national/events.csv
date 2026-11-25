@@ -6179,3 +6179,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 14:47,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,available,MK1F4LL/A
 2026-11-25 14:51,Woodland Hills,R233,Tulsa,OK,Tulsa,3,1.6,unavailable,MK1F4LL/A
 2026-11-25 14:51,Wellington Green,R024,Wellington,FL,,0,60.9,available,MK1E4LL/A
+2026-11-25 14:53,Cielo Vista Mall,R492,El Paso,TX,,0,230.6,unavailable,MK1F4LL/A
+2026-11-25 14:53,Broadway Plaza,R014,Walnut Creek,CA,San Francisco,1,20.4,unavailable,MK1F4LL/A
