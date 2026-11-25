@@ -5905,3 +5905,10 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 11:48,Lenox Square,R006,Atlanta,GA,Atlanta,1,0.1,unavailable,MK1E4LL/A
 2026-11-25 11:48,Lincoln Park,R284,Chicago,IL,Chicago,1,1.7,unavailable,MK1E4LL/A
 2026-11-25 11:48,Somerset,R055,Troy,MI,Detroit,2,0.6,unavailable,MK1E4LL/A
+2026-11-25 11:49,Fashion Show,R064,Las Vegas,NV,Las Vegas,2,0.6,available,MK1F4LL/A
+2026-11-25 11:49,Fashion Show,R064,Las Vegas,NV,Las Vegas,2,0.6,available,MK1E4LL/A
+2026-11-25 11:49,Brea Mall,R156,Brea,CA,,0,89.9,available,MK1F4LL/A
+2026-11-25 11:49,Pasadena,R034,Pasadena,CA,,0,216.7,available,MK1F4LL/A
+2026-11-25 11:49,Pasadena,R034,Pasadena,CA,,0,216.7,available,MK1E4LL/A
+2026-11-25 11:49,The Americana at Brand,R451,Glendale,CA,Los Angeles,1,10.8,available,MK1F4LL/A
+2026-11-25 11:49,The Americana at Brand,R451,Glendale,CA,Los Angeles,1,10.8,available,MK1E4LL/A
