@@ -45,13 +45,13 @@
    "MK1E4LL/A": "unavailable"
   },
   "Main Place": {
-   "MK1F4LL/A": "unavailable",
-   "MK1E4LL/A": "unavailable"
+   "MK1F4LL/A": "available",
+   "MK1E4LL/A": "available"
   }
  },
- "checks": 177,
+ "checks": 192,
  "errors": 0,
- "events": 14,
+ "events": 16,
  "last_heartbeat": "2026-11-25",
  "nearby": {
   "Leawood": {
@@ -171,128 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-25T10:02:26.331108-06:00",
+ "last_check": "2026-11-25T10:07:26.429394-06:00",
  "history": [
-  {
-   "t": "2026-11-25T09:29:35-06:00",
-   "ok": true,
-   "ms": 372,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T09:30:35-06:00",
-   "ok": true,
-   "ms": 547,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T09:31:35-06:00",
-   "ok": true,
-   "ms": 313,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T09:31:55-06:00",
-   "ok": true,
-   "ms": 535,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T09:32:15-06:00",
-   "ok": true,
-   "ms": 399,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T09:32:33-06:00",
-   "ok": true,
-   "ms": 284,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T09:32:53-06:00",
-   "ok": true,
-   "ms": 309,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T09:33:13-06:00",
-   "ok": true,
-   "ms": 205,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T09:33:33-06:00",
-   "ok": true,
-   "ms": 345,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T09:33:53-06:00",
-   "ok": true,
-   "ms": 320,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T09:34:13-06:00",
-   "ok": true,
-   "ms": 263,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T09:34:33-06:00",
-   "ok": true,
-   "ms": 391,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T09:34:53-06:00",
-   "ok": true,
-   "ms": 241,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T09:35:13-06:00",
-   "ok": true,
-   "ms": 267,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T09:35:33-06:00",
-   "ok": true,
-   "ms": 408,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-25T09:35:53-06:00",
    "ok": true,
@@ -990,6 +870,156 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-25T10:02:25-06:00",
+   "ok": true,
+   "ms": 347,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:02:45-06:00",
+   "ok": true,
+   "ms": 297,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:03:05-06:00",
+   "ok": true,
+   "ms": 399,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:03:25-06:00",
+   "ok": true,
+   "ms": 333,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:03:45-06:00",
+   "ok": true,
+   "ms": 482,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:04:05-06:00",
+   "ok": true,
+   "ms": 418,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:04:25-06:00",
+   "ok": true,
+   "ms": 380,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:04:45-06:00",
+   "ok": true,
+   "ms": 433,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:05:05-06:00",
+   "ok": true,
+   "ms": 321,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:05:25-06:00",
+   "ok": true,
+   "ms": 473,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:05:45-06:00",
+   "ok": true,
+   "ms": 247,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:06:05-06:00",
+   "ok": true,
+   "ms": 321,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:06:25-06:00",
+   "ok": true,
+   "ms": 335,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:06:45-06:00",
+   "ok": true,
+   "ms": 386,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T10:07:05-06:00",
+   "ok": true,
+   "ms": 328,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -1063,6 +1093,16 @@
    "city": "Madison",
    "state": "WI"
   },
+  "Main Place": {
+   "miles": 397.06,
+   "status": "available",
+   "parts": {
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
+   },
+   "city": "Naperville",
+   "state": "IL"
+  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -1102,16 +1142,6 @@
    },
    "city": "Tulsa",
    "state": "OK"
-  },
-  "Main Place": {
-   "miles": 397.06,
-   "status": "unavailable",
-   "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Naperville",
-   "state": "IL"
   }
  },
  "token_expires": "2026-11-26",
@@ -1126,11 +1156,11 @@
  "wave": {
   "since": "2026-11-25T09:31:35.827691-06:00",
   "stores": [
-   "Leawood",
    "Saddle Creek",
-   "Hilldale"
+   "Hilldale",
+   "Main Place"
   ],
-  "until": "2026-11-25T10:32:00-06:00"
+  "until": "2026-11-25T10:37:00-06:00"
  },
  "wave_alerted_at": "2026-11-25T09:31:35.827691-06:00"
 }
