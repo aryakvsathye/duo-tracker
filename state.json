@@ -49,7 +49,7 @@
    "MK1E4LL/A": "available"
   }
  },
- "checks": 489,
+ "checks": 498,
  "errors": 0,
  "events": 27,
  "last_heartbeat": "2026-11-25",
@@ -171,90 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-25T12:47:13.925215-06:00",
+ "last_check": "2026-11-25T12:55:37.608008-06:00",
  "history": [
-  {
-   "t": "2026-11-25T12:14:45-06:00",
-   "ok": true,
-   "ms": 605,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T12:15:05-06:00",
-   "ok": true,
-   "ms": 391,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T12:15:25-06:00",
-   "ok": true,
-   "ms": 555,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T12:15:45-06:00",
-   "ok": true,
-   "ms": 367,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T12:16:05-06:00",
-   "ok": true,
-   "ms": 675,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T12:16:25-06:00",
-   "ok": true,
-   "ms": 395,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T12:16:45-06:00",
-   "ok": true,
-   "ms": 475,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T12:17:05-06:00",
-   "ok": true,
-   "ms": 594,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
-  {
-   "t": "2026-11-25T12:17:25-06:00",
-   "ok": true,
-   "ms": 374,
-   "code": 200,
-   "green": [],
-   "burst": true
-  },
   {
    "t": "2026-11-25T12:17:45-06:00",
    "ok": true,
@@ -899,6 +817,78 @@
    "t": "2026-11-25T12:47:13-06:00",
    "ok": true,
    "ms": 336,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-25T12:47:36-06:00",
+   "ok": true,
+   "ms": 558,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-25T12:48:36-06:00",
+   "ok": true,
+   "ms": 357,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-25T12:49:36-06:00",
+   "ok": true,
+   "ms": 572,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-25T12:50:36-06:00",
+   "ok": true,
+   "ms": 546,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-25T12:51:36-06:00",
+   "ok": true,
+   "ms": 450,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-25T12:52:36-06:00",
+   "ok": true,
+   "ms": 402,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-25T12:53:36-06:00",
+   "ok": true,
+   "ms": 380,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-25T12:54:36-06:00",
+   "ok": true,
+   "ms": 383,
+   "code": 200,
+   "green": [],
+   "burst": false
+  },
+  {
+   "t": "2026-11-25T12:55:36-06:00",
+   "ok": true,
+   "ms": 623,
    "code": 200,
    "green": [],
    "burst": false
