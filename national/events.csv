@@ -6026,3 +6026,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 12:40,Twenty Ninth Street,R172,Boulder,CO,Denver,2,25.6,unavailable,MK1E4LL/A
 2026-11-25 12:40,Town Square,R219,Las Vegas,NV,Las Vegas,2,3.6,available,MK1F4LL/A
 2026-11-25 12:40,Victoria Gardens,R094,Rancho Cucamonga,CA,,0,192.6,available,MK1F4LL/A
+2026-11-25 12:41,Aspen Grove,R030,Littleton,CO,Denver,2,10.7,unavailable,MK1E4LL/A
+2026-11-25 12:41,Upper West Side,R251,New York,NY,New York,1,0.5,unavailable,MK1E4LL/A
+2026-11-25 12:41,Cherry Hill,R206,Cherry Hill,NJ,Philadelphia,1,8.0,available,MK1E4LL/A
