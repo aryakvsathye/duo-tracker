@@ -5830,3 +5830,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 11:02,Park Meadows,R228,Lone Tree,CO,Denver,2,12.2,available,MK1E4LL/A
 2026-11-25 11:03,Oakbrook,R056,Oak Brook,IL,Chicago,1,17.4,unavailable,MK1E4LL/A
 2026-11-25 11:05,River Park Square,R420,Spokane,WA,,0,225.2,available,MK1E4LL/A
+2026-11-25 11:06,Stonebridge Potomac Town Center,R598,Woodbridge,VA,Washington,1,24.2,available,MK1F4LL/A
+2026-11-25 11:06,Stonebridge Potomac Town Center,R598,Woodbridge,VA,Washington,1,24.2,available,MK1E4LL/A
+2026-11-25 11:06,Cumberland Mall,R591,Atlanta,GA,Atlanta,1,6.5,unavailable,MK1E4LL/A
