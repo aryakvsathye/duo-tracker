@@ -467,14 +467,17 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 0.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "East North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 09:57"
+   },
+   "since": "2026-11-25 09:57"
   },
   "R284": {
    "name": "Lincoln Park",
@@ -485,14 +488,18 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 1.7,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "East North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 09:57",
+    "MK1E4LL/A": "2026-11-25 09:57"
+   },
+   "since": "2026-11-25 09:57"
   },
   "R089": {
    "name": "Old Orchard",
@@ -521,18 +528,14 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 17.4,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "East North Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 09:33",
-    "MK1E4LL/A": "2026-11-25 09:33"
-   },
-   "since": "2026-11-25 09:33"
+   "since_by_part": {}
   },
   "R237": {
    "name": "Orland Square Mall",
@@ -543,14 +546,17 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 22.4,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "East North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 09:57"
+   },
+   "since": "2026-11-25 09:57"
   },
   "R018": {
    "name": "Woodfield",
@@ -4496,8 +4502,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-25T09:57:41.413794-06:00",
- "metros_ok": 28,
+ "last_sweep": "2026-11-25T09:58:18.559987-06:00",
+ "metros_ok": 35,
  "metros": [
   {
    "metro": "New York",
@@ -4816,7 +4822,7 @@
  "checked_at": {
   "New York": "2026-11-25T09:57:31.466918-06:00",
   "Los Angeles": "2026-11-25T09:55:34.521577-06:00",
-  "Chicago": "2026-11-25T09:44:08.580101-06:00",
+  "Chicago": "2026-11-25T09:58:13.586669-06:00",
   "Dallas": "2026-11-25T09:56:39.900338-06:00",
   "Houston": "2026-11-25T09:56:44.819108-06:00",
   "Washington": "2026-11-25T09:56:27.743041-06:00",
@@ -4828,7 +4834,7 @@
   "San Francisco": "2026-11-25T09:55:39.545459-06:00",
   "Detroit": "2026-11-25T09:44:46.424962-06:00",
   "Seattle": "2026-11-25T09:56:12.732100-06:00",
-  "Minneapolis": "2026-11-25T09:42:39.109227-06:00",
+  "Minneapolis": "2026-11-25T09:58:18.559875-06:00",
   "San Diego": "2026-11-25T09:43:51.285212-06:00",
   "Tampa": "2026-11-25T09:43:26.697964-06:00",
   "Denver": "2026-11-25T09:55:57.840976-06:00",
@@ -4845,17 +4851,17 @@
   "Cincinnati": "2026-11-25T09:56:22.750481-06:00",
   "Kansas City": "2026-11-25T09:57:26.544209-06:00",
   "Columbus": "2026-11-25T09:56:32.739797-06:00",
-  "Indianapolis": "2026-11-25T09:42:31.850520-06:00",
-  "Cleveland": "2026-11-25T09:42:46.513308-06:00",
+  "Indianapolis": "2026-11-25T09:57:58.675688-06:00",
+  "Cleveland": "2026-11-25T09:58:03.719618-06:00",
   "Nashville": "2026-11-25T09:56:02.711081-06:00",
   "Raleigh": "2026-11-25T09:44:35.609218-06:00",
   "Oklahoma City": "2026-11-25T09:56:59.700789-06:00",
   "Tulsa": "2026-11-25T09:57:06.849447-06:00",
-  "Omaha": "2026-11-25T09:42:06.898491-06:00",
-  "Des Moines": "2026-11-25T09:42:26.182207-06:00",
+  "Omaha": "2026-11-25T09:57:48.613882-06:00",
+  "Des Moines": "2026-11-25T09:57:53.679876-06:00",
   "Little Rock": "2026-11-25T09:57:11.803608-06:00",
   "Memphis": "2026-11-25T09:56:07.802304-06:00",
-  "Madison": "2026-11-25T09:43:45.933872-06:00",
+  "Madison": "2026-11-25T09:58:08.678859-06:00",
   "Albuquerque": "2026-11-25T09:44:52.027399-06:00",
   "Salt Lake City": "2026-11-25T09:55:29.683051-06:00",
   "Louisville": "2026-11-25T09:55:19.871949-06:00",
@@ -4868,7 +4874,7 @@
  "ok_at": {
   "New York": "2026-11-25T09:57:31.466939-06:00",
   "Los Angeles": "2026-11-25T09:55:34.521596-06:00",
-  "Chicago": "2026-11-25T09:44:08.580121-06:00",
+  "Chicago": "2026-11-25T09:58:13.586691-06:00",
   "Dallas": "2026-11-25T09:56:39.900359-06:00",
   "Houston": "2026-11-25T09:56:44.819129-06:00",
   "Washington": "2026-11-25T09:56:27.743062-06:00",
@@ -4880,7 +4886,7 @@
   "San Francisco": "2026-11-25T09:55:39.545478-06:00",
   "Detroit": "2026-11-25T09:44:46.424983-06:00",
   "Seattle": "2026-11-25T09:56:12.732121-06:00",
-  "Minneapolis": "2026-11-25T09:42:39.109247-06:00",
+  "Minneapolis": "2026-11-25T09:58:18.559897-06:00",
   "San Diego": "2026-11-25T09:43:51.285231-06:00",
   "Tampa": "2026-11-25T09:43:26.697985-06:00",
   "Denver": "2026-11-25T09:55:57.840998-06:00",
@@ -4897,17 +4903,17 @@
   "Cincinnati": "2026-11-25T09:56:22.750501-06:00",
   "Kansas City": "2026-11-25T09:57:26.544255-06:00",
   "Columbus": "2026-11-25T09:56:32.739818-06:00",
-  "Indianapolis": "2026-11-25T09:42:31.850542-06:00",
-  "Cleveland": "2026-11-25T09:42:46.513329-06:00",
+  "Indianapolis": "2026-11-25T09:57:58.675709-06:00",
+  "Cleveland": "2026-11-25T09:58:03.719640-06:00",
   "Nashville": "2026-11-25T09:56:02.711102-06:00",
   "Raleigh": "2026-11-25T09:44:35.609239-06:00",
   "Oklahoma City": "2026-11-25T09:56:59.700810-06:00",
   "Tulsa": "2026-11-25T09:57:06.849468-06:00",
-  "Omaha": "2026-11-25T09:42:06.898511-06:00",
-  "Des Moines": "2026-11-25T09:42:26.182227-06:00",
+  "Omaha": "2026-11-25T09:57:48.613903-06:00",
+  "Des Moines": "2026-11-25T09:57:53.679898-06:00",
   "Little Rock": "2026-11-25T09:57:11.803628-06:00",
   "Memphis": "2026-11-25T09:56:07.802326-06:00",
-  "Madison": "2026-11-25T09:43:45.933891-06:00",
+  "Madison": "2026-11-25T09:58:08.678880-06:00",
   "Albuquerque": "2026-11-25T09:44:52.027420-06:00",
   "Salt Lake City": "2026-11-25T09:55:29.683069-06:00",
   "Louisville": "2026-11-25T09:55:19.871970-06:00",
@@ -4918,8 +4924,8 @@
   "Buffalo": "2026-11-25T09:57:21.658363-06:00"
  },
  "hot": [
-  "Middle Atlantic",
-  "West South Central"
+  "East North Central",
+  "Middle Atlantic"
  ],
  "cycle_seconds": 150,
  "pace": 4.5,
