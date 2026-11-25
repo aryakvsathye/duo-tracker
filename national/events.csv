@@ -6021,3 +6021,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 12:36,Menlo Park,R067,Edison,NJ,,0,60.3,available,MK1F4LL/A
 2026-11-25 12:37,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,unavailable,MK1E4LL/A
 2026-11-25 12:37,Stanford Shopping Center,R099,Palo Alto,CA,San Francisco,1,27.4,unavailable,MK1F4LL/A
+2026-11-25 12:37,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,unavailable,MK1F4LL/A
+2026-11-25 12:37,South Coast Plaza,R004,Costa Mesa,CA,,0,76.9,unavailable,MK1E4LL/A
