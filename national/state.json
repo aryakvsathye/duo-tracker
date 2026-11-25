@@ -2394,14 +2394,17 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 14.7,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "New England",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 10:19"
+   },
+   "since": "2026-11-25 10:19"
   },
   "R232": {
    "name": "Natick",
@@ -2456,17 +2459,14 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 30.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "New England",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 08:35"
-   },
-   "since": "2026-11-25 08:35"
+   "since_by_part": {}
   },
   "R622": {
    "name": "The Shops at Blackstone Valley",
@@ -4541,8 +4541,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-25T10:19:13.095484-06:00",
- "metros_ok": 44,
+ "last_sweep": "2026-11-25T10:19:29.647297-06:00",
+ "metros_ok": 47,
  "metros": [
   {
    "metro": "New York",
@@ -4845,7 +4845,7 @@
    "state": "NY"
   }
  ],
- "retries": 0,
+ "retries": 2,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4854,10 +4854,11 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {},
- "skipped": [
-  "Washington"
- ],
+ "metro_skip": {
+  "Miami": 1,
+  "Tampa": 1
+ },
+ "skipped": [],
  "checked_at": {
   "New York": "2026-11-25T10:18:26.240535-06:00",
   "Los Angeles": "2026-11-25T10:17:28.885384-06:00",
@@ -4867,18 +4868,18 @@
   "Washington": "2026-11-25T10:16:14.912981-06:00",
   "Philadelphia": "2026-11-25T10:18:31.030734-06:00",
   "Atlanta": "2026-11-25T10:18:10.010807-06:00",
-  "Miami": "2026-11-25T09:58:39.485408-06:00",
+  "Miami": "2026-11-25T10:19:44.590616-06:00",
   "Phoenix": "2026-11-25T10:17:18.994314-06:00",
-  "Boston": "2026-11-25T09:58:34.546481-06:00",
+  "Boston": "2026-11-25T10:19:29.647087-06:00",
   "San Francisco": "2026-11-25T10:17:35.409525-06:00",
-  "Detroit": "2026-11-25T09:58:44.573788-06:00",
+  "Detroit": "2026-11-25T10:19:19.860392-06:00",
   "Seattle": "2026-11-25T10:17:40.296380-06:00",
   "Minneapolis": "2026-11-25T10:18:53.420726-06:00",
   "San Diego": "2026-11-25T10:15:37.639574-06:00",
-  "Tampa": "2026-11-25T09:58:49.505390-06:00",
+  "Tampa": "2026-11-25T10:19:59.589016-06:00",
   "Denver": "2026-11-25T10:17:24.026679-06:00",
   "Baltimore": "2026-11-25T09:58:54.430869-06:00",
-  "St. Louis": "2026-11-25T09:58:29.504243-06:00",
+  "St. Louis": "2026-11-25T10:19:24.749146-06:00",
   "Orlando": "2026-11-25T10:15:22.477276-06:00",
   "Charlotte": "2026-11-25T10:15:27.453355-06:00",
   "San Antonio": "2026-11-25T10:16:29.902475-06:00",
@@ -4921,16 +4922,16 @@
   "Atlanta": "2026-11-25T10:18:10.010821-06:00",
   "Miami": "2026-11-25T09:58:39.485424-06:00",
   "Phoenix": "2026-11-25T10:17:18.994329-06:00",
-  "Boston": "2026-11-25T09:58:34.546501-06:00",
+  "Boston": "2026-11-25T10:19:29.647098-06:00",
   "San Francisco": "2026-11-25T10:17:35.409536-06:00",
-  "Detroit": "2026-11-25T09:58:44.573809-06:00",
+  "Detroit": "2026-11-25T10:19:19.860408-06:00",
   "Seattle": "2026-11-25T10:17:40.296393-06:00",
   "Minneapolis": "2026-11-25T10:18:53.420742-06:00",
   "San Diego": "2026-11-25T10:15:37.639589-06:00",
   "Tampa": "2026-11-25T09:58:49.505412-06:00",
   "Denver": "2026-11-25T10:17:24.026697-06:00",
   "Baltimore": "2026-11-25T09:58:54.430889-06:00",
-  "St. Louis": "2026-11-25T09:58:29.504263-06:00",
+  "St. Louis": "2026-11-25T10:19:24.749160-06:00",
   "Orlando": "2026-11-25T10:15:22.477294-06:00",
   "Charlotte": "2026-11-25T10:15:27.453371-06:00",
   "San Antonio": "2026-11-25T10:16:29.902490-06:00",
@@ -4964,7 +4965,7 @@
  },
  "hot": [
   "East North Central",
-  "Middle Atlantic"
+  "New England"
  ],
  "cycle_seconds": 150,
  "pace": 4.5,
@@ -4992,5 +4993,6 @@
   "2026-11-25T07:04-06:00",
   "2026-11-25T07:44-06:00"
  ],
- "last_weekly": "2026-W47"
+ "last_weekly": "2026-W47",
+ "last_error": "2026-11-25T10:20-06:00: Miami: HTTP 541; Tampa: HTTP 541"
 }
