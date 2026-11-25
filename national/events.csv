@@ -5976,3 +5976,9 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 12:04,Penn Square,R130,Oklahoma City,OK,Oklahoma City,3,1.2,available,MK1E4LL/A
 2026-11-25 12:06,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,available,MK1F4LL/A
 2026-11-25 12:06,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,unavailable,MK1E4LL/A
+2026-11-25 12:07,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,available,MK1F4LL/A
+2026-11-25 12:07,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,available,MK1E4LL/A
+2026-11-25 12:07,Hillsdale,R231,San Mateo,CA,San Francisco,1,18.4,available,MK1F4LL/A
+2026-11-25 12:07,Hillsdale,R231,San Mateo,CA,San Francisco,1,18.4,available,MK1E4LL/A
+2026-11-25 12:07,Stanford Shopping Center,R099,Palo Alto,CA,San Francisco,1,27.4,unavailable,MK1F4LL/A
+2026-11-25 12:08,Chestnut Hill,R076,Chestnut Hill,MA,Boston,1,5.5,unavailable,MK1F4LL/A
