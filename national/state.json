@@ -1260,14 +1260,18 @@
    "metro": "Philadelphia",
    "tier": 1,
    "miles": 0.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 08:57",
+    "MK1E4LL/A": "2026-11-25 08:57"
+   },
+   "since": "2026-11-25 08:57"
   },
   "R166": {
    "name": "Suburban Square",
@@ -1314,14 +1318,18 @@
    "metro": "Philadelphia",
    "tier": 1,
    "miles": 13.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 08:57",
+    "MK1E4LL/A": "2026-11-25 08:57"
+   },
+   "since": "2026-11-25 08:57"
   },
   "R088": {
    "name": "Sagemore",
@@ -1350,14 +1358,18 @@
    "metro": "Philadelphia",
    "tier": 1,
    "miles": 14.7,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 08:57",
+    "MK1E4LL/A": "2026-11-25 08:57"
+   },
+   "since": "2026-11-25 08:57"
   },
   "R102": {
    "name": "Christiana Mall",
@@ -2616,14 +2628,18 @@
    "metro": "Detroit",
    "tier": 2,
    "miles": 0.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "East North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 08:57",
+    "MK1E4LL/A": "2026-11-25 08:57"
+   },
+   "since": "2026-11-25 08:57"
   },
   "R041": {
    "name": "Twelve Oaks",
@@ -2748,14 +2764,17 @@
    "metro": "Cleveland",
    "tier": 2,
    "miles": 2.4,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "East North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-25 08:57"
+   },
+   "since": "2026-11-25 08:57"
   },
   "R132": {
    "name": "Woodland",
@@ -4089,14 +4108,18 @@
    "metro": "Buffalo",
    "tier": 3,
    "miles": 0.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 08:57",
+    "MK1E4LL/A": "2026-11-25 08:57"
+   },
+   "since": "2026-11-25 08:57"
   },
   "R094": {
    "name": "Victoria Gardens",
@@ -4383,7 +4406,7 @@
    "since": "2026-11-25 08:46"
   }
  },
- "last_sweep": "2026-11-25T08:57:24.235863-06:00",
+ "last_sweep": "2026-11-25T08:57:47.847405-06:00",
  "metros_ok": 49,
  "metros": [
   {
@@ -4703,13 +4726,13 @@
   "Houston"
  ],
  "checked_at": {
-  "New York": "2026-11-25T08:51:53.900741-06:00",
+  "New York": "2026-11-25T08:57:36.934917-06:00",
   "Los Angeles": "2026-11-25T08:55:26.752761-06:00",
   "Chicago": "2026-11-25T08:56:51.676110-06:00",
   "Dallas": "2026-11-25T08:55:53.922878-06:00",
   "Houston": "2026-11-25T08:56:06.386973-06:00",
   "Washington": "2026-11-25T08:53:39.783856-06:00",
-  "Philadelphia": "2026-11-25T08:51:59.180262-06:00",
+  "Philadelphia": "2026-11-25T08:57:42.394273-06:00",
   "Atlanta": "2026-11-25T08:53:45.042679-06:00",
   "Miami": "2026-11-25T08:54:24.150100-06:00",
   "Phoenix": "2026-11-25T08:54:57.812905-06:00",
@@ -4728,7 +4751,7 @@
   "San Antonio": "2026-11-25T08:56:17.288812-06:00",
   "Portland": "2026-11-25T08:54:01.063911-06:00",
   "Sacramento": "2026-11-25T08:54:11.682963-06:00",
-  "Pittsburgh": "2026-11-25T08:52:16.644586-06:00",
+  "Pittsburgh": "2026-11-25T08:57:47.847151-06:00",
   "Austin": "2026-11-25T08:56:22.707783-06:00",
   "Las Vegas": "2026-11-25T08:52:37.953464-06:00",
   "Cincinnati": "2026-11-25T08:57:07.962961-06:00",
@@ -4752,16 +4775,16 @@
   "Richmond": "2026-11-25T08:53:34.523974-06:00",
   "Honolulu": "2026-11-25T08:54:18.893546-06:00",
   "Tucson": "2026-11-25T08:54:40.324168-06:00",
-  "Buffalo": "2026-11-25T08:51:48.585527-06:00"
+  "Buffalo": "2026-11-25T08:57:31.508597-06:00"
  },
  "ok_at": {
-  "New York": "2026-11-25T08:51:53.900758-06:00",
+  "New York": "2026-11-25T08:57:36.934937-06:00",
   "Los Angeles": "2026-11-25T08:55:26.752783-06:00",
   "Chicago": "2026-11-25T08:56:51.676130-06:00",
   "Dallas": "2026-11-25T08:55:53.922898-06:00",
   "Houston": "2026-11-25T08:56:06.386993-06:00",
   "Washington": "2026-11-25T08:53:39.783873-06:00",
-  "Philadelphia": "2026-11-25T08:51:59.180279-06:00",
+  "Philadelphia": "2026-11-25T08:57:42.394293-06:00",
   "Atlanta": "2026-11-25T08:53:45.042697-06:00",
   "Miami": "2026-11-25T08:54:24.150119-06:00",
   "Phoenix": "2026-11-25T08:54:57.812924-06:00",
@@ -4780,7 +4803,7 @@
   "San Antonio": "2026-11-25T08:56:17.288832-06:00",
   "Portland": "2026-11-25T08:54:01.063928-06:00",
   "Sacramento": "2026-11-25T08:54:11.682980-06:00",
-  "Pittsburgh": "2026-11-25T08:52:16.644604-06:00",
+  "Pittsburgh": "2026-11-25T08:57:47.847169-06:00",
   "Austin": "2026-11-25T08:56:22.707803-06:00",
   "Las Vegas": "2026-11-25T08:52:37.953481-06:00",
   "Cincinnati": "2026-11-25T08:57:07.962981-06:00",
@@ -4804,11 +4827,11 @@
   "Richmond": "2026-11-25T08:53:34.523991-06:00",
   "Honolulu": "2026-11-25T08:54:18.893563-06:00",
   "Tucson": "2026-11-25T08:54:40.324185-06:00",
-  "Buffalo": "2026-11-25T08:51:48.585544-06:00"
+  "Buffalo": "2026-11-25T08:57:31.508616-06:00"
  },
  "hot": [
-  "East North Central",
-  "East South Central"
+  "Middle Atlantic",
+  "East North Central"
  ],
  "cycle_seconds": 150,
  "pace": 5.0,
