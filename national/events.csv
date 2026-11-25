@@ -6290,3 +6290,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 17:00,Main Place,R348,Naperville,IL,Chicago,1,28.5,unavailable,MK1F4LL/A
 2026-11-25 17:05,Palo Alto,R002,Palo Alto,CA,San Francisco,1,27.4,unavailable,MK1E4LL/A
 2026-11-25 17:05,Twenty Ninth Street,R172,Boulder,CO,Denver,2,25.6,unavailable,MK1E4LL/A
+2026-11-25 17:06,Twenty Ninth Street,R172,Boulder,CO,Denver,2,25.6,available,MK1E4LL/A
