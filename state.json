@@ -30,7 +30,7 @@
   },
   "Penn Square": {
    "MK1F4LL/A": "available",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "The Promenade at Chenal": {
    "MK1F4LL/A": "available",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "available"
   }
  },
- "checks": 367,
+ "checks": 369,
  "errors": 0,
- "events": 22,
+ "events": 23,
  "last_heartbeat": "2026-11-25",
  "nearby": {
   "Leawood": {
@@ -171,28 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-25T12:02:14.088103-06:00",
+ "last_check": "2026-11-25T12:04:41.793461-06:00",
  "history": [
-  {
-   "t": "2026-11-25T10:38:41-06:00",
-   "ok": true,
-   "ms": 416,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T10:39:41-06:00",
-   "ok": true,
-   "ms": 604,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
   {
    "t": "2026-11-25T10:40:41-06:00",
    "ok": true,
@@ -1072,6 +1052,26 @@
     "Leawood"
    ],
    "burst": false
+  },
+  {
+   "t": "2026-11-25T12:02:41-06:00",
+   "ok": true,
+   "ms": 573,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-25T12:03:41-06:00",
+   "ok": true,
+   "ms": 586,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": false
   }
  ],
  "field": {
@@ -1120,7 +1120,7 @@
    "status": "available",
    "parts": {
     "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "city": "Oklahoma City",
    "state": "OK"
@@ -1206,12 +1206,12 @@
   "MK1E4LL/A": "Star White"
  },
  "wave": {
-  "since": "2026-11-25T09:31:35.827691-06:00",
+  "since": "2026-11-25T12:04:41.793470-06:00",
   "stores": [
-   "Hilldale",
-   "Main Place"
+   "Woodland Hills",
+   "Penn Square"
   ],
-  "until": "2026-11-25T10:37:00-06:00"
+  "until": "2026-11-25T12:34:00-06:00"
  },
  "wave_alerted_at": "2026-11-25T09:31:35.827691-06:00"
 }
