@@ -5853,3 +5853,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 11:17,Derby Street,R137,Hingham,MA,Boston,1,14.7,unavailable,MK1F4LL/A
 2026-11-25 11:18,Lenox Square,R006,Atlanta,GA,Atlanta,1,0.1,unavailable,MK1F4LL/A
 2026-11-25 11:20,Oxmoor,R264,Louisville,KY,Louisville,3,1.8,unavailable,MK1F4LL/A
+2026-11-25 11:20,La Encantada,R086,Tucson,AZ,Tucson,3,1.2,available,MK1E4LL/A
+2026-11-25 11:20,Penn Square,R130,Oklahoma City,OK,Oklahoma City,3,1.2,available,MK1E4LL/A
