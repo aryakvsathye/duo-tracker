@@ -6007,3 +6007,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 12:23,Rosedale Center,R022,Roseville,MN,Minneapolis,2,12.6,available,MK1F4LL/A
 2026-11-25 12:23,Rosedale Center,R022,Roseville,MN,Minneapolis,2,12.6,available,MK1E4LL/A
 2026-11-25 12:24,Arden Fair,R070,Sacramento,CA,Sacramento,2,1.2,available,MK1F4LL/A
+2026-11-25 12:25,Park Meadows,R228,Lone Tree,CO,Denver,2,12.2,unavailable,MK1E4LL/A
+2026-11-25 12:25,Scottsdale Quarter,R292,Scottsdale,AZ,Phoenix,1,10.0,unavailable,MK1E4LL/A
