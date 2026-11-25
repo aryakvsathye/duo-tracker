@@ -6278,3 +6278,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 16:35,Chandler Fashion Center,R026,Chandler,AZ,Phoenix,1,16.1,unavailable,MK1F4LL/A
 2026-11-25 16:36,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,unavailable,MK1E4LL/A
 2026-11-25 16:39,Cherry Hill,R206,Cherry Hill,NJ,Philadelphia,1,8.0,available,MK1F4LL/A
+2026-11-25 16:40,La Encantada,R086,Tucson,AZ,Tucson,3,1.2,unavailable,MK1E4LL/A
+2026-11-25 16:40,City Creek Center,R125,Salt Lake City,UT,Salt Lake City,3,0.9,available,MK1E4LL/A
