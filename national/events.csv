@@ -6128,3 +6128,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 14:07,Broadway Plaza,R014,Walnut Creek,CA,San Francisco,1,20.4,available,MK1E4LL/A
 2026-11-25 14:07,Roseville,R298,Roseville,CA,Sacramento,2,14.6,available,MK1E4LL/A
 2026-11-25 14:07,South Coast Plaza,R004,Costa Mesa,CA,,0,76.9,unavailable,MK1E4LL/A
+2026-11-25 14:09,Town Square,R219,Las Vegas,NV,Las Vegas,2,3.6,unavailable,MK1E4LL/A
+2026-11-25 14:09,Aspen Grove,R030,Littleton,CO,Denver,2,10.7,available,MK1E4LL/A
