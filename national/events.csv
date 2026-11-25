@@ -6235,3 +6235,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 15:38,Chandler Fashion Center,R026,Chandler,AZ,Phoenix,1,16.1,available,MK1F4LL/A
 2026-11-25 15:39,The Falls,R012,Miami,FL,Miami,1,12.5,unavailable,MK1F4LL/A
 2026-11-25 15:39,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,unavailable,MK1F4LL/A
+2026-11-25 15:41,Woodfield,R018,Schaumburg,IL,Chicago,1,23.8,unavailable,MK1E4LL/A
+2026-11-25 15:41,Bay Street,R057,Emeryville,CA,San Francisco,1,7.0,unavailable,MK1E4LL/A
