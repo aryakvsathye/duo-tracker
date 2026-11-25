@@ -5845,3 +5845,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 11:15,Twenty Ninth Street,R172,Boulder,CO,Denver,2,25.6,available,MK1E4LL/A
 2026-11-25 11:15,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,available,MK1E4LL/A
 2026-11-25 11:15,Penn Square,R130,Oklahoma City,OK,Oklahoma City,3,1.2,unavailable,MK1E4LL/A
+2026-11-25 11:16,Park City,R304,Lancaster,PA,Baltimore,2,48.5,available,MK1F4LL/A
+2026-11-25 11:16,Park City,R304,Lancaster,PA,Baltimore,2,48.5,available,MK1E4LL/A
