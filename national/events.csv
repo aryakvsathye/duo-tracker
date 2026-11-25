@@ -5822,3 +5822,9 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 11:00,Rockingham Park,R027,Salem,NH,Boston,1,29.9,unavailable,MK1F4LL/A
 2026-11-25 11:01,Pioneer Place,R077,Portland,OR,Portland,2,4.5,available,MK1E4LL/A
 2026-11-25 11:01,River Park Square,R420,Spokane,WA,,0,225.2,available,MK1F4LL/A
+2026-11-25 11:02,Station Park,R599,Farmington,UT,Salt Lake City,3,15.7,available,MK1F4LL/A
+2026-11-25 11:02,Station Park,R599,Farmington,UT,Salt Lake City,3,15.7,available,MK1E4LL/A
+2026-11-25 11:02,FlatIron Crossing,R182,Broomfield,CO,Denver,2,17.1,available,MK1F4LL/A
+2026-11-25 11:02,FlatIron Crossing,R182,Broomfield,CO,Denver,2,17.1,available,MK1E4LL/A
+2026-11-25 11:02,Park Meadows,R228,Lone Tree,CO,Denver,2,12.2,available,MK1F4LL/A
+2026-11-25 11:02,Park Meadows,R228,Lone Tree,CO,Denver,2,12.2,available,MK1E4LL/A
