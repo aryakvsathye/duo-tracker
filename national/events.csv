@@ -5881,3 +5881,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 11:35,Southpoint,R049,Durham,NC,Raleigh,2,14.0,available,MK1F4LL/A
 2026-11-25 11:35,Augusta,R364,Augusta,GA,,0,133.9,unavailable,MK1F4LL/A
 2026-11-25 11:35,Vintage Faire,R322,Modesto,CA,,0,67.2,available,MK1E4LL/A
+2026-11-25 11:38,Pioneer Place,R077,Portland,OR,Portland,2,4.5,available,MK1E4LL/A
+2026-11-25 11:39,Eton,R081,Woodmere,OH,Cleveland,2,2.4,unavailable,MK1F4LL/A
+2026-11-25 11:39,La Encantada,R086,Tucson,AZ,Tucson,3,1.2,unavailable,MK1E4LL/A
