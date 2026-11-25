@@ -193,14 +193,18 @@
    "metro": "New York",
    "tier": 1,
    "miles": 5.7,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 08:51",
+    "MK1E4LL/A": "2026-11-25 08:51"
+   },
+   "since": "2026-11-25 08:51"
   },
   "R612": {
    "name": "Queens Center",
@@ -1416,12 +1420,13 @@
    "miles": 50.6,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
    "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 08:51",
     "MK1E4LL/A": "2026-11-25 08:46"
    },
    "since": "2026-11-25 08:46"
@@ -1602,12 +1607,13 @@
    "miles": 0.6,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "East South Central",
    "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 08:51",
     "MK1E4LL/A": "2026-11-25 08:36"
    },
    "since": "2026-11-25 08:36"
@@ -4335,8 +4341,8 @@
    "since": "2026-11-25 08:46"
   }
  },
- "last_sweep": "2026-11-25T08:51:36.258799-06:00",
- "metros_ok": 45,
+ "last_sweep": "2026-11-25T08:51:59.180515-06:00",
+ "metros_ok": 46,
  "metros": [
   {
    "metro": "New York",
@@ -4654,13 +4660,13 @@
  },
  "skipped": [],
  "checked_at": {
-  "New York": "2026-11-25T08:46:18.766595-06:00",
+  "New York": "2026-11-25T08:51:53.900741-06:00",
   "Los Angeles": "2026-11-25T08:49:39.919078-06:00",
   "Chicago": "2026-11-25T08:47:33.560182-06:00",
   "Dallas": "2026-11-25T08:50:35.976681-06:00",
   "Houston": "2026-11-25T08:50:46.344695-06:00",
   "Washington": "2026-11-25T08:48:44.043135-06:00",
-  "Philadelphia": "2026-11-25T08:46:24.227629-06:00",
+  "Philadelphia": "2026-11-25T08:51:59.180262-06:00",
   "Atlanta": "2026-11-25T08:48:54.785545-06:00",
   "Miami": "2026-11-25T08:50:41.326920-06:00",
   "Phoenix": "2026-11-25T08:49:29.096652-06:00",
@@ -4699,20 +4705,20 @@
   "Albuquerque": "2026-11-25T08:48:29.659480-06:00",
   "Salt Lake City": "2026-11-25T08:49:00.213866-06:00",
   "Louisville": "2026-11-25T08:51:31.009167-06:00",
-  "Birmingham": "2026-11-25T08:46:07.769023-06:00",
+  "Birmingham": "2026-11-25T08:51:43.263829-06:00",
   "Richmond": "2026-11-25T08:48:24.320153-06:00",
   "Honolulu": "2026-11-25T08:49:10.882717-06:00",
   "Tucson": "2026-11-25T08:49:21.850728-06:00",
-  "Buffalo": "2026-11-25T08:46:13.244346-06:00"
+  "Buffalo": "2026-11-25T08:51:48.585527-06:00"
  },
  "ok_at": {
-  "New York": "2026-11-25T08:46:18.766613-06:00",
+  "New York": "2026-11-25T08:51:53.900758-06:00",
   "Los Angeles": "2026-11-25T08:49:39.919097-06:00",
   "Chicago": "2026-11-25T08:47:33.560201-06:00",
   "Dallas": "2026-11-25T08:50:35.976698-06:00",
   "Houston": "2026-11-25T08:39:31.290884-06:00",
   "Washington": "2026-11-25T08:48:44.043152-06:00",
-  "Philadelphia": "2026-11-25T08:46:24.227648-06:00",
+  "Philadelphia": "2026-11-25T08:51:59.180279-06:00",
   "Atlanta": "2026-11-25T08:48:54.785563-06:00",
   "Miami": "2026-11-25T08:50:41.326940-06:00",
   "Phoenix": "2026-11-25T08:49:29.096672-06:00",
@@ -4751,15 +4757,15 @@
   "Albuquerque": "2026-11-25T08:48:29.659497-06:00",
   "Salt Lake City": "2026-11-25T08:49:00.213884-06:00",
   "Louisville": "2026-11-25T08:51:31.009185-06:00",
-  "Birmingham": "2026-11-25T08:46:07.769042-06:00",
+  "Birmingham": "2026-11-25T08:51:43.263847-06:00",
   "Richmond": "2026-11-25T08:48:24.320173-06:00",
   "Honolulu": "2026-11-25T08:49:10.882734-06:00",
   "Tucson": "2026-11-25T08:49:21.850747-06:00",
-  "Buffalo": "2026-11-25T08:46:13.244365-06:00"
+  "Buffalo": "2026-11-25T08:51:48.585544-06:00"
  },
  "hot": [
-  "New England",
-  "South Atlantic"
+  "East South Central",
+  "New England"
  ],
  "cycle_seconds": 150,
  "pace": 5.0,

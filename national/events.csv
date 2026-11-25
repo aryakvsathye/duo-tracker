@@ -5569,3 +5569,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 08:50,Pentagon City,R129,Arlington,VA,Washington,1,3.9,available,MK1E4LL/A
 2026-11-25 08:51,Rockingham Park,R027,Salem,NH,Boston,1,29.9,available,MK1F4LL/A
 2026-11-25 08:51,Rockingham Park,R027,Salem,NH,Boston,1,29.9,available,MK1E4LL/A
+2026-11-25 08:51,The Summit,R225,Birmingham,AL,Birmingham,3,0.6,available,MK1F4LL/A
+2026-11-25 08:51,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,available,MK1F4LL/A
+2026-11-25 08:51,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,available,MK1E4LL/A
+2026-11-25 08:51,Freehold Raceway Mall,R138,Freehold,NJ,,0,50.6,available,MK1F4LL/A
