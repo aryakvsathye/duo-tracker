@@ -3432,14 +3432,18 @@
    "metro": "",
    "tier": 0,
    "miles": 72.0,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 12:00",
+    "MK1E4LL/A": "2026-11-25 12:00"
+   },
+   "since": "2026-11-25 12:00"
   },
   "R004": {
    "name": "South Coast Plaza",
@@ -3493,14 +3497,18 @@
    "metro": "",
    "tier": 0,
    "miles": 93.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 12:00",
+    "MK1E4LL/A": "2026-11-25 12:00"
+   },
+   "since": "2026-11-25 12:00"
   },
   "R019": {
    "name": "International Plaza",
@@ -3709,13 +3717,12 @@
    "miles": 12.2,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "available"
    },
    "tz": "America/Denver",
    "region": "Mountain",
    "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 11:02",
     "MK1E4LL/A": "2026-11-25 11:02"
    },
    "since": "2026-11-25 11:02"
@@ -4383,14 +4390,18 @@
    "metro": "",
    "tier": 0,
    "miles": 223.3,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 12:00",
+    "MK1E4LL/A": "2026-11-25 12:00"
+   },
+   "since": "2026-11-25 12:00"
   },
   "R028": {
    "name": "Kenwood Towne Centre",
@@ -4636,8 +4647,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-25T11:59:45.278272-06:00",
- "metros_ok": 50,
+ "last_sweep": "2026-11-25T12:00:46.650292-06:00",
+ "metros_ok": 46,
  "metros": [
   {
    "metro": "New York",
@@ -4967,22 +4978,22 @@
   "Detroit": "2026-11-25T11:59:30.279853-06:00",
   "Seattle": "2026-11-25T11:59:45.278155-06:00",
   "Minneapolis": "2026-11-25T11:56:38.837926-06:00",
-  "San Diego": "2026-11-25T11:56:54.960088-06:00",
+  "San Diego": "2026-11-25T12:00:33.265115-06:00",
   "Tampa": "2026-11-25T11:55:52.568784-06:00",
-  "Denver": "2026-11-25T11:55:22.794289-06:00",
+  "Denver": "2026-11-25T12:00:28.871523-06:00",
   "Baltimore": "2026-11-25T11:55:57.639434-06:00",
   "St. Louis": "2026-11-25T11:56:50.039741-06:00",
   "Orlando": "2026-11-25T11:56:09.498477-06:00",
   "Charlotte": "2026-11-25T11:56:33.944741-06:00",
   "San Antonio": "2026-11-25T11:57:40.969837-06:00",
-  "Portland": "2026-11-25T11:57:04.828967-06:00",
+  "Portland": "2026-11-25T12:00:46.650156-06:00",
   "Sacramento": "2026-11-25T11:57:21.207472-06:00",
   "Pittsburgh": "2026-11-25T11:57:14.743512-06:00",
   "Austin": "2026-11-25T11:57:58.120315-06:00",
-  "Las Vegas": "2026-11-25T11:55:27.805434-06:00",
-  "Cincinnati": "2026-11-25T11:55:17.834180-06:00",
+  "Las Vegas": "2026-11-25T12:00:37.735633-06:00",
+  "Cincinnati": "2026-11-25T12:00:24.476018-06:00",
   "Kansas City": "2026-11-25T11:59:03.775051-06:00",
-  "Columbus": "2026-11-25T11:55:32.826443-06:00",
+  "Columbus": "2026-11-25T12:00:42.240154-06:00",
   "Indianapolis": "2026-11-25T11:58:27.814468-06:00",
   "Cleveland": "2026-11-25T11:58:32.660772-06:00",
   "Nashville": "2026-11-25T11:58:48.746815-06:00",
@@ -5019,22 +5030,22 @@
   "Detroit": "2026-11-25T11:59:30.279873-06:00",
   "Seattle": "2026-11-25T11:59:45.278175-06:00",
   "Minneapolis": "2026-11-25T11:56:38.837944-06:00",
-  "San Diego": "2026-11-25T11:56:54.960109-06:00",
+  "San Diego": "2026-11-25T12:00:33.265129-06:00",
   "Tampa": "2026-11-25T11:55:52.568805-06:00",
-  "Denver": "2026-11-25T11:55:22.794309-06:00",
+  "Denver": "2026-11-25T12:00:28.871542-06:00",
   "Baltimore": "2026-11-25T11:55:57.639455-06:00",
   "St. Louis": "2026-11-25T11:56:50.039760-06:00",
   "Orlando": "2026-11-25T11:56:09.498498-06:00",
   "Charlotte": "2026-11-25T11:56:33.944760-06:00",
   "San Antonio": "2026-11-25T11:57:40.969856-06:00",
-  "Portland": "2026-11-25T11:57:04.828992-06:00",
+  "Portland": "2026-11-25T12:00:46.650194-06:00",
   "Sacramento": "2026-11-25T11:57:21.207491-06:00",
   "Pittsburgh": "2026-11-25T11:57:14.743531-06:00",
   "Austin": "2026-11-25T11:57:58.120335-06:00",
-  "Las Vegas": "2026-11-25T11:55:27.805455-06:00",
-  "Cincinnati": "2026-11-25T11:55:17.834200-06:00",
+  "Las Vegas": "2026-11-25T12:00:37.735650-06:00",
+  "Cincinnati": "2026-11-25T12:00:24.476030-06:00",
   "Kansas City": "2026-11-25T11:59:03.775071-06:00",
-  "Columbus": "2026-11-25T11:55:32.826463-06:00",
+  "Columbus": "2026-11-25T12:00:42.240196-06:00",
   "Indianapolis": "2026-11-25T11:58:27.814486-06:00",
   "Cleveland": "2026-11-25T11:58:32.660791-06:00",
   "Nashville": "2026-11-25T11:58:48.746833-06:00",
@@ -5060,8 +5071,8 @@
   "West South Central"
  ],
  "cycle_seconds": 150,
- "pace": 4.5,
- "pace_since": "2026-11-25T09:55:19.327185-06:00",
+ "pace": 4.0,
+ "pace_since": "2026-11-25T12:00:24.009060-06:00",
  "slow_until": "2026-11-25T08:04:15.674186-06:00",
  "blocks": [
   "2026-11-21T07:39-06:00",
