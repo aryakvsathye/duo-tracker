@@ -5548,3 +5548,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 08:40,Derby Street,R137,Hingham,MA,Boston,1,14.7,available,MK1F4LL/A
 2026-11-25 08:44,Barton Creek,R085,Austin,TX,Austin,2,2.7,available,MK1E4LL/A
 2026-11-25 08:45,Legacy Place,R346,Dedham,MA,Boston,1,9.8,available,MK1E4LL/A
+2026-11-25 08:46,Syracuse,R107,Syracuse,NY,,0,131.6,available,MK1F4LL/A
+2026-11-25 08:46,The Mall at Bay Plaza,R753,Bronx,NY,New York,1,10.6,available,MK1F4LL/A
+2026-11-25 08:46,Freehold Raceway Mall,R138,Freehold,NJ,,0,50.6,available,MK1E4LL/A
+2026-11-25 08:46,Menlo Park,R067,Edison,NJ,,0,60.3,available,MK1F4LL/A
