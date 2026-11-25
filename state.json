@@ -6,7 +6,7 @@
   },
   "Leawood": {
    "MK1F4LL/A": "available",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "Village Pointe": {
    "MK1F4LL/A": "unavailable",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "available"
   }
  },
- "checks": 252,
+ "checks": 253,
  "errors": 0,
- "events": 17,
+ "events": 18,
  "last_heartbeat": "2026-11-25",
  "nearby": {
   "Leawood": {
@@ -59,11 +59,11 @@
    "status": "available",
    "parts": {
     "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "quotes": {
     "MK1F4LL/A": "Today at Apple Leawood",
-    "MK1E4LL/A": "Today at Apple Leawood"
+    "MK1E4LL/A": "Currently unavailable at Apple Leawood"
    },
    "quote": "Today at Apple Leawood",
    "phone": "913-234 9800",
@@ -171,18 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-25T10:29:07.703779-06:00",
+ "last_check": "2026-11-25T10:29:57.233634-06:00",
  "history": [
-  {
-   "t": "2026-11-25T09:56:57-06:00",
-   "ok": true,
-   "ms": 294,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": true
-  },
   {
    "t": "2026-11-25T09:57:17-06:00",
    "ok": true,
@@ -1072,6 +1062,16 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-25T10:29:36-06:00",
+   "ok": true,
+   "ms": 492,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -1080,7 +1080,7 @@
    "status": "available",
    "parts": {
     "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "city": "Leawood",
    "state": "KS"
