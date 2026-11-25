@@ -6084,3 +6084,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 13:27,Mission Viejo,R069,Mission Viejo,CA,,0,62.2,unavailable,MK1F4LL/A
 2026-11-25 13:28,Chestnut Hill,R076,Chestnut Hill,MA,Boston,1,5.5,unavailable,MK1F4LL/A
 2026-11-25 13:29,Oakbrook,R056,Oak Brook,IL,Chicago,1,17.4,available,MK1F4LL/A
+2026-11-25 13:30,World Trade Center,R654,New York,NY,New York,1,4.1,unavailable,MK1F4LL/A
+2026-11-25 13:30,American Dream,R755,East Rutherford,NJ,New York,1,5.1,unavailable,MK1F4LL/A
+2026-11-25 13:30,Menlo Park,R067,Edison,NJ,,0,60.3,unavailable,MK1F4LL/A
