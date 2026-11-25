@@ -5897,3 +5897,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 11:46,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,available,MK1E4LL/A
 2026-11-25 11:46,University Village,R072,Seattle,WA,Seattle,2,3.9,available,MK1F4LL/A
 2026-11-25 11:46,University Village,R072,Seattle,WA,Seattle,2,3.9,available,MK1E4LL/A
+2026-11-25 11:47,Manhattan Village,R122,Manhattan Beach,CA,Los Angeles,1,11.0,available,MK1F4LL/A
+2026-11-25 11:47,Manhattan Village,R122,Manhattan Beach,CA,Los Angeles,1,11.0,available,MK1E4LL/A
+2026-11-25 11:47,Stanford Shopping Center,R099,Palo Alto,CA,San Francisco,1,27.4,available,MK1F4LL/A
+2026-11-25 11:47,Stanford Shopping Center,R099,Palo Alto,CA,San Francisco,1,27.4,available,MK1E4LL/A
