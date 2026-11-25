@@ -6150,3 +6150,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 14:25,Wellington Green,R024,Wellington,FL,,0,60.9,available,MK1E4LL/A
 2026-11-25 14:27,Tower Theatre,R720,Los Angeles,CA,Los Angeles,1,9.2,unavailable,MK1E4LL/A
 2026-11-25 14:27,Eastview,R140,Victor,NY,,0,67.5,available,MK1F4LL/A
+2026-11-25 14:28,Brea Mall,R156,Brea,CA,,0,89.9,available,MK1F4LL/A
+2026-11-25 14:28,Valley Plaza,R550,Bakersfield,CA,,0,223.3,unavailable,MK1F4LL/A
+2026-11-25 14:28,South Coast Plaza,R004,Costa Mesa,CA,,0,76.9,available,MK1E4LL/A
