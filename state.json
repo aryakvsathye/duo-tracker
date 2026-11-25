@@ -49,7 +49,7 @@
    "MK1E4LL/A": "available"
   }
  },
- "checks": 366,
+ "checks": 367,
  "errors": 0,
  "events": 22,
  "last_heartbeat": "2026-11-25",
@@ -173,16 +173,6 @@
  },
  "last_check": "2026-11-25T12:02:14.088103-06:00",
  "history": [
-  {
-   "t": "2026-11-25T10:38:16-06:00",
-   "ok": true,
-   "ms": 525,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
   {
    "t": "2026-11-25T10:38:41-06:00",
    "ok": true,
@@ -1067,6 +1057,16 @@
    "t": "2026-11-25T12:01:13-06:00",
    "ok": true,
    "ms": 351,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": false
+  },
+  {
+   "t": "2026-11-25T12:02:13-06:00",
+   "ok": true,
+   "ms": 433,
    "code": 200,
    "green": [
     "Leawood"
