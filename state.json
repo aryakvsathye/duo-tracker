@@ -30,7 +30,7 @@
   },
   "Penn Square": {
    "MK1F4LL/A": "available",
-   "MK1E4LL/A": "available"
+   "MK1E4LL/A": "unavailable"
   },
   "The Promenade at Chenal": {
    "MK1F4LL/A": "available",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "available"
   }
  },
- "checks": 404,
+ "checks": 406,
  "errors": 0,
- "events": 26,
+ "events": 27,
  "last_heartbeat": "2026-11-25",
  "nearby": {
   "Country Club Plaza": {
@@ -171,28 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-25T12:16:25.491271-06:00",
+ "last_check": "2026-11-25T12:17:05.691291-06:00",
  "history": [
-  {
-   "t": "2026-11-25T11:13:17-06:00",
-   "ok": true,
-   "ms": 435,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T11:14:17-06:00",
-   "ok": true,
-   "ms": 355,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
   {
    "t": "2026-11-25T11:15:17-06:00",
    "ok": true,
@@ -1072,6 +1052,22 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-25T12:16:25-06:00",
+   "ok": true,
+   "ms": 395,
+   "code": 200,
+   "green": [],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T12:16:45-06:00",
+   "ok": true,
+   "ms": 475,
+   "code": 200,
+   "green": [],
+   "burst": true
   }
  ],
  "field": {
@@ -1110,7 +1106,7 @@
    "status": "available",
    "parts": {
     "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "city": "Oklahoma City",
    "state": "OK"
