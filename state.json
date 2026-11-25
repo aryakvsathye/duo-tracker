@@ -41,7 +41,7 @@
    "MK1E4LL/A": "available"
   },
   "Hilldale": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   },
   "Main Place": {
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "unavailable"
   }
  },
- "checks": 174,
+ "checks": 175,
  "errors": 0,
- "events": 12,
+ "events": 13,
  "last_heartbeat": "2026-11-25",
  "nearby": {
   "Leawood": {
@@ -171,16 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-25T10:01:26.496609-06:00",
+ "last_check": "2026-11-25T10:01:46.274591-06:00",
  "history": [
-  {
-   "t": "2026-11-25T09:26:35-06:00",
-   "ok": true,
-   "ms": 333,
-   "code": 200,
-   "green": [],
-   "burst": false
-  },
   {
    "t": "2026-11-25T09:27:35-06:00",
    "ok": true,
@@ -984,6 +976,16 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-25T10:01:25-06:00",
+   "ok": true,
+   "ms": 513,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -1047,16 +1049,6 @@
    "city": "Germantown",
    "state": "TN"
   },
-  "Hilldale": {
-   "miles": 394.05,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Madison",
-   "state": "WI"
-  },
   "Country Club Plaza": {
    "miles": 10.11,
    "status": "unavailable",
@@ -1096,6 +1088,16 @@
    },
    "city": "Tulsa",
    "state": "OK"
+  },
+  "Hilldale": {
+   "miles": 394.05,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Madison",
+   "state": "WI"
   },
   "Main Place": {
    "miles": 397.06,
