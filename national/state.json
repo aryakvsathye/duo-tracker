@@ -449,14 +449,18 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 14.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 12:59",
+    "MK1E4LL/A": "2026-11-25 12:59"
+   },
+   "since": "2026-11-25 12:59"
   },
   "R777": {
    "name": "Del Amo",
@@ -4636,8 +4640,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-25T12:59:38.259766-06:00",
- "metros_ok": 43,
+ "last_sweep": "2026-11-25T12:59:45.792977-06:00",
+ "metros_ok": 48,
  "metros": [
   {
    "metro": "New York",
@@ -4949,14 +4953,14 @@
   "MK1F4LL/A": "Night Sky",
   "MK1E4LL/A": "Star White"
  },
- "metro_skip": {
-  "Nashville": 1,
-  "Des Moines": 1
- },
- "skipped": [],
+ "metro_skip": {},
+ "skipped": [
+  "Des Moines",
+  "Nashville"
+ ],
  "checked_at": {
   "New York": "2026-11-25T12:57:50.480508-06:00",
-  "Los Angeles": "2026-11-25T12:55:45.653555-06:00",
+  "Los Angeles": "2026-11-25T12:59:45.792741-06:00",
   "Chicago": "2026-11-25T12:57:26.841426-06:00",
   "Dallas": "2026-11-25T12:56:54.145756-06:00",
   "Houston": "2026-11-25T12:58:35.805786-06:00",
@@ -5008,7 +5012,7 @@
  },
  "ok_at": {
   "New York": "2026-11-25T12:57:50.480528-06:00",
-  "Los Angeles": "2026-11-25T12:55:45.653576-06:00",
+  "Los Angeles": "2026-11-25T12:59:45.792760-06:00",
   "Chicago": "2026-11-25T12:57:26.841445-06:00",
   "Dallas": "2026-11-25T12:56:54.145777-06:00",
   "Houston": "2026-11-25T12:58:35.805807-06:00",
