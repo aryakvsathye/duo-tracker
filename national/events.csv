@@ -6266,3 +6266,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 16:08,Memorial City,R164,Houston,TX,Houston,1,4.8,available,MK1E4LL/A
 2026-11-25 16:09,Burlingame,R029,Burlingame,CA,San Francisco,1,15.1,unavailable,MK1E4LL/A
 2026-11-25 16:11,City Creek Center,R125,Salt Lake City,UT,Salt Lake City,3,0.9,unavailable,MK1E4LL/A
+2026-11-25 16:13,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,unavailable,MK1E4LL/A
+2026-11-25 16:14,La Encantada,R086,Tucson,AZ,Tucson,3,1.2,available,MK1E4LL/A
