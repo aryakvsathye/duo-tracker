@@ -5893,3 +5893,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 11:46,Promenade Temecula,R345,Temecula,CA,,0,51.9,available,MK1F4LL/A
 2026-11-25 11:46,Promenade Temecula,R345,Temecula,CA,,0,51.9,available,MK1E4LL/A
 2026-11-25 11:46,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,unavailable,MK1F4LL/A
+2026-11-25 11:46,Pioneer Place,R077,Portland,OR,Portland,2,4.5,unavailable,MK1E4LL/A
+2026-11-25 11:46,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,available,MK1E4LL/A
+2026-11-25 11:46,University Village,R072,Seattle,WA,Seattle,2,3.9,available,MK1F4LL/A
+2026-11-25 11:46,University Village,R072,Seattle,WA,Seattle,2,3.9,available,MK1E4LL/A
