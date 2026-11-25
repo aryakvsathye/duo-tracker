@@ -6029,3 +6029,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 12:41,Aspen Grove,R030,Littleton,CO,Denver,2,10.7,unavailable,MK1E4LL/A
 2026-11-25 12:41,Upper West Side,R251,New York,NY,New York,1,0.5,unavailable,MK1E4LL/A
 2026-11-25 12:41,Cherry Hill,R206,Cherry Hill,NJ,Philadelphia,1,8.0,available,MK1E4LL/A
+2026-11-25 12:42,Bay Street,R057,Emeryville,CA,San Francisco,1,7.0,available,MK1F4LL/A
+2026-11-25 12:42,Bridgeport Village,R134,Tigard,OR,Portland,2,7.0,unavailable,MK1E4LL/A
