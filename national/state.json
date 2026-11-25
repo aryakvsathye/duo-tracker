@@ -4582,8 +4582,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-25T11:49:47.020424-06:00",
- "metros_ok": 43,
+ "last_sweep": "2026-11-25T11:49:53.915391-06:00",
+ "metros_ok": 46,
  "metros": [
   {
    "metro": "New York",
@@ -4886,7 +4886,7 @@
    "state": "NY"
   }
  ],
- "retries": 4,
+ "retries": 0,
  "products": {
   "MK1F4LL/A": "iPhone Duo 256GB Night Sky",
   "MK1E4LL/A": "iPhone Duo 256GB Star White"
@@ -4896,12 +4896,13 @@
   "MK1E4LL/A": "Star White"
  },
  "metro_skip": {
-  "Little Rock": 1,
-  "Salt Lake City": 1,
-  "Seattle": 1,
   "Buffalo": 1
  },
- "skipped": [],
+ "skipped": [
+  "Little Rock",
+  "Salt Lake City",
+  "Seattle"
+ ],
  "checked_at": {
   "New York": "2026-11-25T11:47:27.893809-06:00",
   "Los Angeles": "2026-11-25T11:47:38.089068-06:00",
@@ -4945,7 +4946,7 @@
   "Little Rock": "2026-11-25T11:49:36.491089-06:00",
   "Memphis": "2026-11-25T11:49:11.816750-06:00",
   "Madison": "2026-11-25T11:48:59.579541-06:00",
-  "Albuquerque": "2026-11-25T11:46:13.672150-06:00",
+  "Albuquerque": "2026-11-25T11:49:53.915245-06:00",
   "Salt Lake City": "2026-11-25T11:48:43.824311-06:00",
   "Louisville": "2026-11-25T11:48:39.310873-06:00",
   "Birmingham": "2026-11-25T11:48:44.413485-06:00",
@@ -4997,7 +4998,7 @@
   "Little Rock": "2026-11-25T11:38:42.111309-06:00",
   "Memphis": "2026-11-25T11:49:11.816773-06:00",
   "Madison": "2026-11-25T11:48:59.579563-06:00",
-  "Albuquerque": "2026-11-25T11:46:13.672168-06:00",
+  "Albuquerque": "2026-11-25T11:49:53.915268-06:00",
   "Salt Lake City": "2026-11-25T11:38:52.148311-06:00",
   "Louisville": "2026-11-25T11:48:39.310895-06:00",
   "Birmingham": "2026-11-25T11:48:44.413506-06:00",
@@ -5036,6 +5037,5 @@
   "2026-11-25T07:04-06:00",
   "2026-11-25T07:44-06:00"
  ],
- "last_weekly": "2026-W47",
- "last_error": "2026-11-25T11:45-06:00: Little Rock: HTTP 541; Salt Lake City: HTTP 541; Seattle: HTTP 541; Buffalo: HTTP 541"
+ "last_weekly": "2026-W47"
 }
