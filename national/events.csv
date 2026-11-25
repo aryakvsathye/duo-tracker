@@ -6165,3 +6165,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 14:34,Washington Square,R090,Tigard,OR,Portland,2,3.4,available,MK1F4LL/A
 2026-11-25 14:34,Hillsdale,R231,San Mateo,CA,San Francisco,1,18.4,available,MK1F4LL/A
 2026-11-25 14:35,Washington Square,R090,Tigard,OR,Portland,2,3.4,unavailable,MK1F4LL/A
+2026-11-25 14:37,Summerlin,R650,Las Vegas,NV,Las Vegas,2,9.4,unavailable,MK1F4LL/A
+2026-11-25 14:37,Lynnhaven Mall,R614,Virginia Beach,VA,,0,103.6,available,MK1F4LL/A
