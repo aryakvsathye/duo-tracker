@@ -6123,3 +6123,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 14:04,Fashion Show,R064,Las Vegas,NV,Las Vegas,2,0.6,unavailable,MK1E4LL/A
 2026-11-25 14:04,The Americana at Brand,R451,Glendale,CA,Los Angeles,1,10.8,unavailable,MK1F4LL/A
 2026-11-25 14:05,Cherry Hill,R206,Cherry Hill,NJ,Philadelphia,1,8.0,unavailable,MK1E4LL/A
+2026-11-25 14:07,4th Street,R414,Berkeley,CA,San Francisco,1,8.0,available,MK1E4LL/A
+2026-11-25 14:07,Broadway Plaza,R014,Walnut Creek,CA,San Francisco,1,20.4,unavailable,MK1F4LL/A
+2026-11-25 14:07,Broadway Plaza,R014,Walnut Creek,CA,San Francisco,1,20.4,available,MK1E4LL/A
