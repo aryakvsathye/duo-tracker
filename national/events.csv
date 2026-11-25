@@ -5716,3 +5716,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 09:57,Lincoln Park,R284,Chicago,IL,Chicago,1,1.7,available,MK1E4LL/A
 2026-11-25 09:57,Oakbrook,R056,Oak Brook,IL,Chicago,1,17.4,unavailable,MK1E4LL/A
 2026-11-25 09:58,Oakbrook,R056,Oak Brook,IL,Chicago,1,17.4,unavailable,MK1F4LL/A
+2026-11-25 09:58,Chestnut Hill,R076,Chestnut Hill,MA,Boston,1,5.5,unavailable,MK1E4LL/A
+2026-11-25 09:58,Brandon,R289,Brandon,FL,Tampa,2,13.0,unavailable,MK1F4LL/A
+2026-11-25 09:58,Millenia,R053,Orlando,FL,Orlando,2,3.5,unavailable,MK1E4LL/A
