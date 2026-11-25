@@ -30,7 +30,7 @@
   },
   "Penn Square": {
    "MK1F4LL/A": "available",
-   "MK1E4LL/A": "unavailable"
+   "MK1E4LL/A": "available"
   },
   "The Promenade at Chenal": {
    "MK1F4LL/A": "available",
@@ -49,9 +49,9 @@
    "MK1E4LL/A": "available"
   }
  },
- "checks": 390,
+ "checks": 394,
  "errors": 0,
- "events": 24,
+ "events": 25,
  "last_heartbeat": "2026-11-25",
  "nearby": {
   "Leawood": {
@@ -171,48 +171,8 @@
    ]
   }
  },
- "last_check": "2026-11-25T12:11:45.542948-06:00",
+ "last_check": "2026-11-25T12:13:05.464557-06:00",
  "history": [
-  {
-   "t": "2026-11-25T11:00:24-06:00",
-   "ok": true,
-   "ms": 504,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T11:01:24-06:00",
-   "ok": true,
-   "ms": 273,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T11:02:24-06:00",
-   "ok": true,
-   "ms": 294,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
-  {
-   "t": "2026-11-25T11:03:24-06:00",
-   "ok": true,
-   "ms": 355,
-   "code": 200,
-   "green": [
-    "Leawood"
-   ],
-   "burst": false
-  },
   {
    "t": "2026-11-25T11:03:47-06:00",
    "ok": true,
@@ -1072,6 +1032,46 @@
     "Leawood"
    ],
    "burst": true
+  },
+  {
+   "t": "2026-11-25T12:11:45-06:00",
+   "ok": true,
+   "ms": 445,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T12:12:05-06:00",
+   "ok": true,
+   "ms": 570,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T12:12:25-06:00",
+   "ok": true,
+   "ms": 403,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
+  },
+  {
+   "t": "2026-11-25T12:12:45-06:00",
+   "ok": true,
+   "ms": 577,
+   "code": 200,
+   "green": [
+    "Leawood"
+   ],
+   "burst": true
   }
  ],
  "field": {
@@ -1120,7 +1120,7 @@
    "status": "available",
    "parts": {
     "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "city": "Oklahoma City",
    "state": "OK"
@@ -1211,7 +1211,7 @@
    "Woodland Hills",
    "Penn Square"
   ],
-  "until": "2026-11-25T12:34:00-06:00"
+  "until": "2026-11-25T12:43:00-06:00"
  },
  "wave_alerted_at": "2026-11-25T09:31:35.827691-06:00"
 }
