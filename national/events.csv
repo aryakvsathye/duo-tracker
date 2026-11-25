@@ -6239,3 +6239,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 15:41,Bay Street,R057,Emeryville,CA,San Francisco,1,7.0,unavailable,MK1E4LL/A
 2026-11-25 15:43,The Fashion Mall at Keystone,R066,Indianapolis,IN,Indianapolis,2,1.1,available,MK1E4LL/A
 2026-11-25 15:45,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,available,MK1F4LL/A
+2026-11-25 15:46,The Fashion Mall at Keystone,R066,Indianapolis,IN,Indianapolis,2,1.1,unavailable,MK1E4LL/A
+2026-11-25 15:46,Orland Square Mall,R237,Orland Park,IL,Chicago,1,22.4,unavailable,MK1F4LL/A
+2026-11-25 15:46,Michigan Avenue,R035,Chicago,IL,Chicago,1,0.5,available,MK1E4LL/A
+2026-11-25 15:46,Tower Theatre,R720,Los Angeles,CA,Los Angeles,1,9.2,unavailable,MK1F4LL/A
