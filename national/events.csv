@@ -5916,3 +5916,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 11:51,The Grove,R050,Los Angeles,CA,Los Angeles,1,3.4,available,MK1F4LL/A
 2026-11-25 11:51,The Grove,R050,Los Angeles,CA,Los Angeles,1,3.4,available,MK1E4LL/A
 2026-11-25 11:51,Stanford Shopping Center,R099,Palo Alto,CA,San Francisco,1,27.4,unavailable,MK1E4LL/A
+2026-11-25 11:52,Menlo Park,R067,Edison,NJ,,0,60.3,unavailable,MK1F4LL/A
+2026-11-25 11:52,Galleria Dallas,R746,Dallas,TX,Dallas,1,4.8,unavailable,MK1E4LL/A
