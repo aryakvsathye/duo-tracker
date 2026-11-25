@@ -6181,3 +6181,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 14:51,Wellington Green,R024,Wellington,FL,,0,60.9,available,MK1E4LL/A
 2026-11-25 14:53,Cielo Vista Mall,R492,El Paso,TX,,0,230.6,unavailable,MK1F4LL/A
 2026-11-25 14:53,Broadway Plaza,R014,Walnut Creek,CA,San Francisco,1,20.4,unavailable,MK1F4LL/A
+2026-11-25 14:54,Ala Moana,R073,Honolulu,HI,Honolulu,3,0.4,unavailable,MK1E4LL/A
+2026-11-25 14:54,Main Place,R348,Naperville,IL,Chicago,1,28.5,unavailable,MK1E4LL/A
