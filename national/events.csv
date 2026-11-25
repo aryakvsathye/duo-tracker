@@ -5997,3 +5997,7 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 12:17,University Town Center,R615,Sarasota,FL,Tampa,2,40.9,unavailable,MK1E4LL/A
 2026-11-25 12:18,Penn Square,R130,Oklahoma City,OK,Oklahoma City,3,1.2,unavailable,MK1E4LL/A
 2026-11-25 12:19,Clarendon,R036,Arlington,VA,Washington,1,4.2,unavailable,MK1F4LL/A
+2026-11-25 12:20,Town Square,R219,Las Vegas,NV,Las Vegas,2,3.6,unavailable,MK1F4LL/A
+2026-11-25 12:20,Glendale Galleria,R001,Glendale,CA,Los Angeles,1,10.8,available,MK1F4LL/A
+2026-11-25 12:20,Glendale Galleria,R001,Glendale,CA,Los Angeles,1,10.8,available,MK1E4LL/A
+2026-11-25 12:20,Glendale Galleria,R001,Glendale,CA,Los Angeles,1,10.8,unavailable,MK1E4LL/A
