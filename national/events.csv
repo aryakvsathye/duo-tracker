@@ -5608,3 +5608,9 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 08:58,Columbia,R168,Columbia,MD,Baltimore,2,17.7,available,MK1E4LL/A
 2026-11-25 08:58,Aventura,R087,Aventura,FL,Miami,1,13.6,available,MK1F4LL/A
 2026-11-25 08:58,Aventura,R087,Aventura,FL,Miami,1,13.6,available,MK1E4LL/A
+2026-11-25 09:00,Perimeter,R184,Atlanta,GA,Atlanta,1,5.3,available,MK1F4LL/A
+2026-11-25 09:00,Perimeter,R184,Atlanta,GA,Atlanta,1,5.3,available,MK1E4LL/A
+2026-11-25 09:00,Mall of Georgia,R259,Buford,GA,Atlanta,1,26.3,available,MK1F4LL/A
+2026-11-25 09:01,Eton,R081,Woodmere,OH,Cleveland,2,2.4,available,MK1F4LL/A
+2026-11-25 09:01,Crocker Park,R192,Westlake,OH,Cleveland,2,22.4,available,MK1F4LL/A
+2026-11-25 09:01,Crocker Park,R192,Westlake,OH,Cleveland,2,22.4,available,MK1E4LL/A
