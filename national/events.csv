@@ -6075,3 +6075,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 13:20,La Encantada,R086,Tucson,AZ,Tucson,3,1.2,available,MK1E4LL/A
 2026-11-25 13:20,Scottsdale Fashion Square,R031,Scottsdale,AZ,Phoenix,1,6.0,unavailable,MK1E4LL/A
 2026-11-25 13:21,Upper West Side,R251,New York,NY,New York,1,0.5,available,MK1E4LL/A
+2026-11-25 13:21,Glendale Galleria,R001,Glendale,CA,Los Angeles,1,10.8,unavailable,MK1F4LL/A
+2026-11-25 13:22,Bay Street,R057,Emeryville,CA,San Francisco,1,7.0,unavailable,MK1F4LL/A
