@@ -5791,3 +5791,11 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 10:46,Cumberland Mall,R591,Atlanta,GA,Atlanta,1,6.5,available,MK1E4LL/A
 2026-11-25 10:47,Avalon,R080,Alpharetta,GA,Atlanta,1,16.1,available,MK1E4LL/A
 2026-11-25 10:47,SoHo,R032,New York,NY,New York,1,3.0,unavailable,MK1F4LL/A
+2026-11-25 10:48,City Creek Center,R125,Salt Lake City,UT,Salt Lake City,3,0.9,available,MK1F4LL/A
+2026-11-25 10:48,City Creek Center,R125,Salt Lake City,UT,Salt Lake City,3,0.9,available,MK1E4LL/A
+2026-11-25 10:48,Fashion Place,R461,Murray,UT,Salt Lake City,3,8.3,available,MK1F4LL/A
+2026-11-25 10:48,Fashion Place,R461,Murray,UT,Salt Lake City,3,8.3,available,MK1E4LL/A
+2026-11-25 10:48,Aspen Grove,R030,Littleton,CO,Denver,2,10.7,available,MK1F4LL/A
+2026-11-25 10:48,Aspen Grove,R030,Littleton,CO,Denver,2,10.7,available,MK1E4LL/A
+2026-11-25 10:48,The Promenade Shops at Briargate,R338,Colorado Springs,CO,,0,53.6,available,MK1F4LL/A
+2026-11-25 10:48,The Promenade Shops at Briargate,R338,Colorado Springs,CO,,0,53.6,available,MK1E4LL/A
