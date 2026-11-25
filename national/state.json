@@ -49,14 +49,18 @@
    "metro": "New York",
    "tier": 1,
    "miles": 1.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 07:50",
+    "MK1E4LL/A": "2026-11-25 07:50"
+   },
+   "since": "2026-11-25 07:50"
   },
   "R582": {
    "name": "Upper East Side",
@@ -67,14 +71,18 @@
    "metro": "New York",
    "tier": 1,
    "miles": 1.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 07:50",
+    "MK1E4LL/A": "2026-11-25 07:50"
+   },
+   "since": "2026-11-25 07:50"
   },
   "R250": {
    "name": "West 14th Street",
@@ -85,14 +93,18 @@
    "metro": "New York",
    "tier": 1,
    "miles": 2.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 07:50",
+    "MK1E4LL/A": "2026-11-25 07:50"
+   },
+   "since": "2026-11-25 07:50"
   },
   "R032": {
    "name": "SoHo",
@@ -103,14 +115,18 @@
    "metro": "New York",
    "tier": 1,
    "miles": 3.0,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 07:50",
+    "MK1E4LL/A": "2026-11-25 07:50"
+   },
+   "since": "2026-11-25 07:50"
   },
   "R594": {
    "name": "Williamsburg",
@@ -139,14 +155,18 @@
    "metro": "New York",
    "tier": 1,
    "miles": 4.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 07:50",
+    "MK1E4LL/A": "2026-11-25 07:50"
+   },
+   "since": "2026-11-25 07:50"
   },
   "R755": {
    "name": "American Dream",
@@ -4209,8 +4229,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-25T07:49:02.960390-06:00",
- "metros_ok": 42,
+ "last_sweep": "2026-11-25T07:51:03.633287-06:00",
+ "metros_ok": 45,
  "metros": [
   {
    "metro": "New York",
@@ -4534,22 +4554,22 @@
   "St. Louis"
  ],
  "checked_at": {
-  "New York": "2026-11-25T07:45:34.652052-06:00",
+  "New York": "2026-11-25T07:50:47.163528-06:00",
   "Los Angeles": "2026-11-25T07:49:07.960785-06:00",
   "Chicago": "2026-11-25T07:48:03.723094-06:00",
   "Dallas": "2026-11-25T07:46:34.851505-06:00",
   "Houston": "2026-11-25T07:47:04.025778-06:00",
-  "Washington": "2026-11-25T07:45:40.322066-06:00",
-  "Philadelphia": "2026-11-25T07:45:45.642415-06:00",
+  "Washington": "2026-11-25T07:50:57.930287-06:00",
+  "Philadelphia": "2026-11-25T07:51:03.633186-06:00",
   "Atlanta": "2026-11-25T07:45:51.054557-06:00",
   "Miami": "2026-11-25T07:46:01.657626-06:00",
   "Phoenix": "2026-11-25T07:49:02.960287-06:00",
-  "Boston": "2026-11-25T07:45:34.651985-06:00",
+  "Boston": "2026-11-25T07:50:41.758240-06:00",
   "San Francisco": "2026-11-25T07:49:07.960872-06:00",
   "Detroit": "2026-11-25T07:48:24.872962-06:00",
-  "Seattle": "2026-11-25T07:45:19.142226-06:00",
+  "Seattle": "2026-11-25T07:50:19.929549-06:00",
   "Minneapolis": "2026-11-25T07:48:47.014304-06:00",
-  "San Diego": "2026-11-25T07:45:34.986934-06:00",
+  "San Diego": "2026-11-25T07:50:52.517190-06:00",
   "Tampa": "2026-11-25T07:46:29.494295-06:00",
   "Denver": "2026-11-25T07:49:07.960660-06:00",
   "Baltimore": "2026-11-25T07:46:45.432901-06:00",
@@ -4564,8 +4584,8 @@
   "Las Vegas": "2026-11-25T07:46:53.565940-06:00",
   "Cincinnati": "2026-11-25T07:49:15.674514-06:00",
   "Kansas City": "2026-11-25T07:46:18.918013-06:00",
-  "Columbus": "2026-11-25T07:45:24.373745-06:00",
-  "Indianapolis": "2026-11-25T07:45:34.651901-06:00",
+  "Columbus": "2026-11-25T07:50:25.252462-06:00",
+  "Indianapolis": "2026-11-25T07:50:36.320975-06:00",
   "Cleveland": "2026-11-25T07:47:47.917260-06:00",
   "Nashville": "2026-11-25T07:48:36.597135-06:00",
   "Raleigh": "2026-11-25T07:48:14.267382-06:00",
@@ -4583,25 +4603,25 @@
   "Richmond": "2026-11-25T07:48:19.561925-06:00",
   "Honolulu": "2026-11-25T07:48:41.790720-06:00",
   "Tucson": "2026-11-25T07:48:57.673017-06:00",
-  "Buffalo": "2026-11-25T07:45:29.651566-06:00"
+  "Buffalo": "2026-11-25T07:50:30.616620-06:00"
  },
  "ok_at": {
-  "New York": "2026-11-25T07:34:40.967163-06:00",
+  "New York": "2026-11-25T07:50:47.163547-06:00",
   "Los Angeles": "2026-11-25T07:38:14.152822-06:00",
   "Chicago": "2026-11-25T07:48:03.723112-06:00",
   "Dallas": "2026-11-25T07:46:34.851521-06:00",
   "Houston": "2026-11-25T07:47:04.025795-06:00",
-  "Washington": "2026-11-25T07:45:40.322082-06:00",
-  "Philadelphia": "2026-11-25T07:45:45.642431-06:00",
+  "Washington": "2026-11-25T07:50:57.930307-06:00",
+  "Philadelphia": "2026-11-25T07:51:03.633206-06:00",
   "Atlanta": "2026-11-25T07:45:51.054572-06:00",
   "Miami": "2026-11-25T07:46:01.657642-06:00",
   "Phoenix": "2026-11-25T07:49:02.960304-06:00",
-  "Boston": "2026-11-25T07:34:36.588655-06:00",
+  "Boston": "2026-11-25T07:50:41.758259-06:00",
   "San Francisco": "2026-11-25T07:38:18.665297-06:00",
   "Detroit": "2026-11-25T07:48:24.872978-06:00",
-  "Seattle": "2026-11-25T07:45:19.142248-06:00",
+  "Seattle": "2026-11-25T07:50:19.929569-06:00",
   "Minneapolis": "2026-11-25T07:48:47.014320-06:00",
-  "San Diego": "2026-11-25T07:45:34.986951-06:00",
+  "San Diego": "2026-11-25T07:50:52.517208-06:00",
   "Tampa": "2026-11-25T07:46:29.494308-06:00",
   "Denver": "2026-11-25T07:38:09.761449-06:00",
   "Baltimore": "2026-11-25T07:46:45.432917-06:00",
@@ -4616,8 +4636,8 @@
   "Las Vegas": "2026-11-25T07:46:53.565955-06:00",
   "Cincinnati": "2026-11-25T07:38:36.019607-06:00",
   "Kansas City": "2026-11-25T07:46:18.918028-06:00",
-  "Columbus": "2026-11-25T07:45:24.373760-06:00",
-  "Indianapolis": "2026-11-25T07:34:32.169641-06:00",
+  "Columbus": "2026-11-25T07:50:25.252482-06:00",
+  "Indianapolis": "2026-11-25T07:50:36.320995-06:00",
   "Cleveland": "2026-11-25T07:47:47.917276-06:00",
   "Nashville": "2026-11-25T07:48:36.597153-06:00",
   "Raleigh": "2026-11-25T07:48:14.267402-06:00",
@@ -4635,7 +4655,7 @@
   "Richmond": "2026-11-25T07:48:19.561941-06:00",
   "Honolulu": "2026-11-25T07:48:41.790737-06:00",
   "Tucson": "2026-11-25T07:48:57.673033-06:00",
-  "Buffalo": "2026-11-25T07:45:29.651579-06:00"
+  "Buffalo": "2026-11-25T07:50:30.616637-06:00"
  },
  "hot": [],
  "cycle_seconds": 150,
