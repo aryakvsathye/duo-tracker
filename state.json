@@ -29,7 +29,7 @@
    "MK1E4LL/A": "unavailable"
   },
   "Penn Square": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   },
   "The Promenade at Chenal": {
@@ -51,7 +51,7 @@
  },
  "checks": 822,
  "errors": 0,
- "events": 30,
+ "events": 31,
  "last_heartbeat": "2026-11-25",
  "nearby": {
   "Country Club Plaza": {
@@ -171,7 +171,7 @@
    ]
   }
  },
- "last_check": "2026-11-25T18:07:14.507425-06:00",
+ "last_check": "2026-11-25T18:07:37.792164-06:00",
  "history": [
   {
    "t": "2026-11-25T16:43:19-06:00",
@@ -915,16 +915,6 @@
    "city": "Saint Louis",
    "state": "MO"
   },
-  "Penn Square": {
-   "miles": 285.34,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Oklahoma City",
-   "state": "OK"
-  },
   "The Promenade at Chenal": {
    "miles": 320.42,
    "status": "available",
@@ -993,6 +983,16 @@
     "MK1E4LL/A": "unavailable"
    },
    "city": "Tulsa",
+   "state": "OK"
+  },
+  "Penn Square": {
+   "miles": 285.34,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Oklahoma City",
    "state": "OK"
   },
   "Hilldale": {
