@@ -1477,17 +1477,14 @@
    "metro": "Atlanta",
    "tier": 1,
    "miles": 6.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 20:00"
-   },
-   "since": "2026-11-25 20:00"
+   "since_by_part": {}
   },
   "R080": {
    "name": "Avalon",
@@ -1920,18 +1917,14 @@
    "metro": "Phoenix",
    "tier": 1,
    "miles": 10.0,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "US/Arizona",
    "region": "Mountain",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 22:26",
-    "MK1E4LL/A": "2026-11-25 22:26"
-   },
-   "since": "2026-11-25 22:26"
+   "since_by_part": {}
   },
   "R247": {
    "name": "Arrowhead",
@@ -1942,17 +1935,14 @@
    "metro": "Phoenix",
    "tier": 1,
    "miles": 14.6,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "US/Arizona",
    "region": "Mountain",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 09:14"
-   },
-   "since": "2026-11-25 09:14"
+   "since_by_part": {}
   },
   "R026": {
    "name": "Chandler Fashion Center",
@@ -1981,18 +1971,14 @@
    "metro": "Phoenix",
    "tier": 1,
    "miles": 21.6,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "US/Arizona",
    "region": "Mountain",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 21:05",
-    "MK1E4LL/A": "2026-11-25 21:02"
-   },
-   "since": "2026-11-25 21:02"
+   "since_by_part": {}
   },
   "R086": {
    "name": "La Encantada",
@@ -3052,13 +3038,12 @@
    "status": "available",
    "parts": {
     "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
    "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 10:18",
-    "MK1E4LL/A": "2026-11-25 10:18"
+    "MK1F4LL/A": "2026-11-25 10:18"
    },
    "since": "2026-11-25 10:18"
   },
@@ -3430,17 +3415,14 @@
    "metro": "Denver",
    "tier": 2,
    "miles": 0.8,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Denver",
    "region": "Mountain",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 11:07"
-   },
-   "since": "2026-11-25 11:07"
+   "since_by_part": {}
   },
   "R030": {
    "name": "Aspen Grove",
@@ -3529,17 +3511,14 @@
    "metro": "",
    "tier": 0,
    "miles": 53.6,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Denver",
    "region": "Mountain",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-25 10:48"
-   },
-   "since": "2026-11-25 10:48"
+   "since_by_part": {}
   },
   "R177": {
    "name": "ABQ Uptown",
@@ -4342,8 +4321,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-26T14:34:29.034342-06:00",
- "metros_ok": 14,
+ "last_sweep": "2026-11-26T14:34:49.561410-06:00",
+ "metros_ok": 19,
  "metros": [
   {
    "metro": "New York",
@@ -4676,7 +4655,7 @@
   "Detroit": "2026-11-26T07:24:12.898452-06:00",
   "Seattle": "2026-11-26T14:34:13.505878-06:00",
   "Minneapolis": "2026-11-26T07:23:51.291480-06:00",
-  "San Diego": "2026-11-26T07:21:51.560037-06:00",
+  "San Diego": "2026-11-26T14:34:41.892877-06:00",
   "Tampa": "2026-11-26T07:24:17.570785-06:00",
   "Denver": "2026-11-26T07:23:31.633538-06:00",
   "Baltimore": "2026-11-26T07:24:36.136722-06:00",
@@ -4694,19 +4673,19 @@
   "Columbus": "2026-11-26T07:22:41.040119-06:00",
   "Indianapolis": "2026-11-26T07:22:55.227004-06:00",
   "Cleveland": "2026-11-26T07:23:00.340995-06:00",
-  "Nashville": "2026-11-26T07:21:55.906654-06:00",
+  "Nashville": "2026-11-26T14:34:45.664996-06:00",
   "Raleigh": "2026-11-26T14:34:09.634677-06:00",
   "Oklahoma City": "2026-11-26T07:22:10.023996-06:00",
   "Tulsa": "2026-11-26T07:22:23.382625-06:00",
-  "Omaha": "2026-11-26T07:22:01.572894-06:00",
+  "Omaha": "2026-11-26T14:34:49.561161-06:00",
   "Des Moines": "2026-11-26T07:23:05.114554-06:00",
   "Little Rock": "2026-11-26T07:22:32.549319-06:00",
   "Memphis": "2026-11-26T07:23:27.172863-06:00",
   "Madison": "2026-11-26T07:23:09.383237-06:00",
-  "Albuquerque": "2026-11-26T07:21:42.850385-06:00",
+  "Albuquerque": "2026-11-26T14:34:34.291950-06:00",
   "Salt Lake City": "2026-11-26T07:22:14.596389-06:00",
   "Louisville": "2026-11-26T14:34:29.034224-06:00",
-  "Birmingham": "2026-11-26T07:21:47.152258-06:00",
+  "Birmingham": "2026-11-26T14:34:38.137724-06:00",
   "Richmond": "2026-11-26T14:34:17.408008-06:00",
   "Honolulu": "2026-11-26T14:33:52.653119-06:00",
   "Tucson": "2026-11-26T07:22:27.738407-06:00",
@@ -4728,7 +4707,7 @@
   "Detroit": "2026-11-26T07:24:12.898467-06:00",
   "Seattle": "2026-11-26T14:34:13.505895-06:00",
   "Minneapolis": "2026-11-26T07:23:51.291497-06:00",
-  "San Diego": "2026-11-26T07:21:51.560053-06:00",
+  "San Diego": "2026-11-26T14:34:41.892895-06:00",
   "Tampa": "2026-11-26T07:24:17.570802-06:00",
   "Denver": "2026-11-26T07:23:31.633555-06:00",
   "Baltimore": "2026-11-26T07:00:31.186216-06:00",
@@ -4746,19 +4725,19 @@
   "Columbus": "2026-11-26T07:22:41.040136-06:00",
   "Indianapolis": "2026-11-26T07:22:55.227018-06:00",
   "Cleveland": "2026-11-26T07:23:00.341012-06:00",
-  "Nashville": "2026-11-26T07:21:55.906670-06:00",
+  "Nashville": "2026-11-26T14:34:45.665014-06:00",
   "Raleigh": "2026-11-26T14:34:09.634691-06:00",
   "Oklahoma City": "2026-11-26T07:22:10.024011-06:00",
   "Tulsa": "2026-11-26T07:22:23.382642-06:00",
-  "Omaha": "2026-11-26T07:22:01.572910-06:00",
+  "Omaha": "2026-11-26T14:34:49.561179-06:00",
   "Des Moines": "2026-11-26T07:23:05.114572-06:00",
   "Little Rock": "2026-11-26T07:22:32.549336-06:00",
   "Memphis": "2026-11-26T07:23:27.172878-06:00",
   "Madison": "2026-11-26T07:23:09.383254-06:00",
-  "Albuquerque": "2026-11-26T07:21:42.850402-06:00",
+  "Albuquerque": "2026-11-26T14:34:34.291969-06:00",
   "Salt Lake City": "2026-11-26T07:22:14.596405-06:00",
   "Louisville": "2026-11-26T14:34:29.034241-06:00",
-  "Birmingham": "2026-11-26T07:21:47.152274-06:00",
+  "Birmingham": "2026-11-26T14:34:38.137740-06:00",
   "Richmond": "2026-11-26T14:34:17.408026-06:00",
   "Honolulu": "2026-11-26T14:33:52.653137-06:00",
   "Tucson": "2026-11-26T07:22:27.738423-06:00",
