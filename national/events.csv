@@ -6410,3 +6410,4 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 20:01,Houston Galleria,R058,Houston,TX,Houston,1,0.7,available,MK1F4LL/A
 2026-11-25 20:01,Penn Square,R130,Oklahoma City,OK,Oklahoma City,3,1.2,available,MK1F4LL/A
 2026-11-25 20:01,Los Cerritos,R300,Cerritos,CA,,0,93.1,unavailable,MK1F4LL/A
+2026-11-25 20:01,Bellevue Square,R003,Bellevue,WA,Seattle,2,2.5,unavailable,MK1F4LL/A
