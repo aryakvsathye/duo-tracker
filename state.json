@@ -21,8 +21,8 @@
    "MK1E4LL/A": "unavailable"
   },
   "West County": {
-   "MK1F4LL/A": "available",
-   "MK1E4LL/A": "available"
+   "MK1F4LL/A": "unavailable",
+   "MK1E4LL/A": "unavailable"
   },
   "Saint Louis Galleria": {
    "MK1F4LL/A": "available",
@@ -33,11 +33,11 @@
    "MK1E4LL/A": "unavailable"
   },
   "The Promenade at Chenal": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "available"
   },
   "Saddle Creek": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "available"
   },
   "Hilldale": {
@@ -51,7 +51,7 @@
  },
  "checks": 0,
  "errors": 0,
- "events": 0,
+ "events": 4,
  "last_heartbeat": "2026-11-26",
  "nearby": {
   "Country Club Plaza": {
@@ -171,7 +171,7 @@
    ]
   }
  },
- "last_check": "2026-11-26T09:14:07.872084-06:00",
+ "last_check": "2026-11-26T17:48:32.528275-06:00",
  "history": [
   {
    "t": "2026-11-25T21:54:22-06:00",
@@ -895,16 +895,6 @@
   }
  ],
  "field": {
-  "West County": {
-   "miles": 234.82,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
-   },
-   "city": "Saint Louis",
-   "state": "MO"
-  },
   "Saint Louis Galleria": {
    "miles": 239.77,
    "status": "available",
@@ -919,7 +909,7 @@
    "miles": 320.42,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "available"
    },
    "city": "Little Rock",
@@ -929,7 +919,7 @@
    "miles": 385.15,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "available"
    },
    "city": "Germantown",
@@ -984,6 +974,16 @@
    },
    "city": "Tulsa",
    "state": "OK"
+  },
+  "West County": {
+   "miles": 234.82,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Saint Louis",
+   "state": "MO"
   },
   "Penn Square": {
    "miles": 285.34,
