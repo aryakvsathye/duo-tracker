@@ -6443,3 +6443,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 20:51,Somerset,R055,Troy,MI,Detroit,2,0.6,unavailable,MK1F4LL/A
 2026-11-25 20:53,Natick,R232,Natick,MA,Boston,1,16.1,unavailable,MK1F4LL/A
 2026-11-25 20:59,Natick,R232,Natick,MA,Boston,1,16.1,unavailable,MK1E4LL/A
+2026-11-25 21:00,The Falls,R012,Miami,FL,Miami,1,12.5,available,MK1F4LL/A
+2026-11-25 21:00,Glendale Galleria,R001,Glendale,CA,Los Angeles,1,10.8,unavailable,MK1F4LL/A
