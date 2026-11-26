@@ -6416,3 +6416,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 20:06,Penn Square,R130,Oklahoma City,OK,Oklahoma City,3,1.2,unavailable,MK1F4LL/A
 2026-11-25 20:06,Otay Ranch,R213,Chula Vista,CA,San Diego,2,14.6,unavailable,MK1F4LL/A
 2026-11-25 20:07,Roseville,R298,Roseville,CA,Sacramento,2,14.6,unavailable,MK1F4LL/A
+2026-11-25 20:11,Tacoma Mall,R339,Tacoma,WA,Seattle,2,29.2,unavailable,MK1F4LL/A
+2026-11-25 20:11,Deer Park,R258,Deer Park,IL,Chicago,1,28.8,available,MK1E4LL/A
