@@ -6514,3 +6514,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 23:30,Rockingham Park,R027,Salem,NH,Boston,1,29.9,available,MK1F4LL/A
 2026-11-25 23:30,Rockingham Park,R027,Salem,NH,Boston,1,29.9,available,MK1E4LL/A
 2026-11-25 23:30,Pheasant Lane,R354,Nashua,NH,Boston,1,30.5,available,MK1F4LL/A
+2026-11-25 23:55,Del Amo,R777,Torrance,CA,Los Angeles,1,15.9,available,MK1F4LL/A
+2026-11-25 23:55,Del Amo,R777,Torrance,CA,Los Angeles,1,15.9,available,MK1E4LL/A
+2026-11-25 23:55,Beverly Center,R124,Los Angeles,CA,Los Angeles,1,2.5,unavailable,MK1E4LL/A
