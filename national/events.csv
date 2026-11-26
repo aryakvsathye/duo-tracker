@@ -6524,3 +6524,6 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 23:59,Woodfield,R018,Schaumburg,IL,Chicago,1,23.8,unavailable,MK1F4LL/A
 2026-11-25 23:59,The Mall at Bay Plaza,R753,Bronx,NY,New York,1,10.6,available,MK1F4LL/A
 2026-11-25 23:59,Brandon,R289,Brandon,FL,Tampa,2,13.0,unavailable,MK1F4LL/A
+2026-11-26 00:00,Rockingham Park,R027,Salem,NH,Boston,1,29.9,unavailable,MK1F4LL/A
+2026-11-26 00:00,Rockingham Park,R027,Salem,NH,Boston,1,29.9,unavailable,MK1E4LL/A
+2026-11-26 00:00,Pheasant Lane,R354,Nashua,NH,Boston,1,30.5,unavailable,MK1F4LL/A
