@@ -328,14 +328,17 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 9.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-26 00:25"
+   },
+   "since": "2026-11-26 00:25"
   },
   "R001": {
    "name": "Glendale Galleria",
@@ -348,12 +351,13 @@
    "miles": 10.8,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "available"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
    "since_by_part": {
+    "MK1F4LL/A": "2026-11-26 00:25",
     "MK1E4LL/A": "2026-11-25 17:25"
    },
    "since": "2026-11-25 17:25"
@@ -2490,14 +2494,17 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 11.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-26 00:25"
+   },
+   "since": "2026-11-26 00:25"
   },
   "R029": {
    "name": "Burlingame",
@@ -3953,17 +3960,14 @@
    "metro": "Raleigh",
    "tier": 2,
    "miles": 1.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 08:16"
-   },
-   "since": "2026-11-25 08:16"
+   "since_by_part": {}
   },
   "R318": {
    "name": "Charleston",
@@ -4429,7 +4433,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-26T00:00:37.245022-06:00",
+ "last_sweep": "2026-11-26T00:25:52.871907-06:00",
  "metros_ok": 50,
  "metros": [
   {
@@ -4746,7 +4750,7 @@
  "skipped": [],
  "checked_at": {
   "New York": "2026-11-25T23:59:31.088468-06:00",
-  "Los Angeles": "2026-11-25T23:55:52.474857-06:00",
+  "Los Angeles": "2026-11-26T00:25:52.871621-06:00",
   "Chicago": "2026-11-25T23:59:22.494454-06:00",
   "Dallas": "2026-11-25T23:57:54.163197-06:00",
   "Houston": "2026-11-25T23:58:30.772052-06:00",
@@ -4766,10 +4770,10 @@
   "Baltimore": "2026-11-26T00:00:23.543667-06:00",
   "St. Louis": "2026-11-25T23:59:45.042569-06:00",
   "Orlando": "2026-11-26T00:00:28.465996-06:00",
-  "Charlotte": "2026-11-25T23:55:40.088209-06:00",
+  "Charlotte": "2026-11-26T00:25:40.516051-06:00",
   "San Antonio": "2026-11-25T23:59:03.905222-06:00",
   "Portland": "2026-11-25T23:57:25.784318-06:00",
-  "Sacramento": "2026-11-25T23:55:34.370653-06:00",
+  "Sacramento": "2026-11-26T00:25:34.922204-06:00",
   "Pittsburgh": "2026-11-25T23:58:21.106251-06:00",
   "Austin": "2026-11-25T23:59:16.878934-06:00",
   "Las Vegas": "2026-11-25T23:56:42.988199-06:00",
@@ -4792,13 +4796,13 @@
   "Louisville": "2026-11-25T23:56:47.838174-06:00",
   "Birmingham": "2026-11-25T23:56:57.892554-06:00",
   "Richmond": "2026-11-25T23:56:33.074154-06:00",
-  "Honolulu": "2026-11-25T23:55:43.876638-06:00",
+  "Honolulu": "2026-11-26T00:25:44.224891-06:00",
   "Tucson": "2026-11-25T23:57:36.091853-06:00",
   "Buffalo": "2026-11-25T23:58:26.344340-06:00"
  },
  "ok_at": {
   "New York": "2026-11-25T23:59:31.088489-06:00",
-  "Los Angeles": "2026-11-25T23:55:52.474877-06:00",
+  "Los Angeles": "2026-11-26T00:25:52.871643-06:00",
   "Chicago": "2026-11-25T23:59:22.494473-06:00",
   "Dallas": "2026-11-25T23:57:54.163216-06:00",
   "Houston": "2026-11-25T23:58:30.772073-06:00",
@@ -4818,10 +4822,10 @@
   "Baltimore": "2026-11-26T00:00:23.543689-06:00",
   "St. Louis": "2026-11-25T23:59:45.042590-06:00",
   "Orlando": "2026-11-26T00:00:28.466019-06:00",
-  "Charlotte": "2026-11-25T23:55:40.088228-06:00",
+  "Charlotte": "2026-11-26T00:25:40.516074-06:00",
   "San Antonio": "2026-11-25T23:59:03.905243-06:00",
   "Portland": "2026-11-25T23:57:25.784337-06:00",
-  "Sacramento": "2026-11-25T23:55:34.370671-06:00",
+  "Sacramento": "2026-11-26T00:25:34.922226-06:00",
   "Pittsburgh": "2026-11-25T23:58:21.106271-06:00",
   "Austin": "2026-11-25T23:59:16.878953-06:00",
   "Las Vegas": "2026-11-25T23:56:42.988219-06:00",
@@ -4844,7 +4848,7 @@
   "Louisville": "2026-11-25T23:56:47.838194-06:00",
   "Birmingham": "2026-11-25T23:56:57.892575-06:00",
   "Richmond": "2026-11-25T23:56:33.074174-06:00",
-  "Honolulu": "2026-11-25T23:55:43.876655-06:00",
+  "Honolulu": "2026-11-26T00:25:44.224910-06:00",
   "Tucson": "2026-11-25T23:57:36.091873-06:00",
   "Buffalo": "2026-11-25T23:58:26.344360-06:00"
  },
