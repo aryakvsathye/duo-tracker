@@ -6451,3 +6451,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 21:05,SanTan Village,R267,Gilbert,AZ,Phoenix,1,21.6,available,MK1F4LL/A
 2026-11-25 21:10,The Falls,R012,Miami,FL,Miami,1,12.5,unavailable,MK1F4LL/A
 2026-11-25 21:10,Boca Raton,R074,Boca Raton,FL,Miami,1,41.6,available,MK1E4LL/A
+2026-11-25 21:15,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,available,MK1F4LL/A
+2026-11-25 21:15,Orland Square Mall,R237,Orland Park,IL,Chicago,1,22.4,available,MK1F4LL/A
