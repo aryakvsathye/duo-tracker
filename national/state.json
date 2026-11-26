@@ -1085,14 +1085,17 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 3.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 23:30"
+   },
+   "since": "2026-11-25 23:30"
   },
   "R036": {
    "name": "Clarendon",
@@ -2345,14 +2348,18 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 29.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "New England",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 23:30",
+    "MK1E4LL/A": "2026-11-25 23:30"
+   },
+   "since": "2026-11-25 23:30"
   },
   "R354": {
    "name": "Pheasant Lane",
@@ -2363,14 +2370,17 @@
    "metro": "Boston",
    "tier": 1,
    "miles": 30.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "New England",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 23:30"
+   },
+   "since": "2026-11-25 23:30"
   },
   "R622": {
    "name": "The Shops at Blackstone Valley",
@@ -3380,12 +3390,13 @@
    "miles": 13.0,
    "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
    "since_by_part": {
+    "MK1F4LL/A": "2026-11-25 23:30",
     "MK1E4LL/A": "2026-11-25 09:03"
    },
    "since": "2026-11-25 09:03"
@@ -3441,12 +3452,13 @@
    "status": "available",
    "parts": {
     "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
    "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 21:15"
+    "MK1F4LL/A": "2026-11-25 21:15",
+    "MK1E4LL/A": "2026-11-25 23:30"
    },
    "since": "2026-11-25 21:15"
   },
@@ -4428,7 +4440,7 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-25T23:29:44.164700-06:00",
+ "last_sweep": "2026-11-25T23:30:36.798582-06:00",
  "metros_ok": 50,
  "metros": [
   {
@@ -4754,7 +4766,7 @@
   "Atlanta": "2026-11-25T23:29:07.601798-06:00",
   "Miami": "2026-11-25T23:29:26.306618-06:00",
   "Phoenix": "2026-11-25T23:27:45.016865-06:00",
-  "Boston": "2026-11-25T23:00:31.459119-06:00",
+  "Boston": "2026-11-25T23:30:32.372213-06:00",
   "San Francisco": "2026-11-25T23:26:06.963710-06:00",
   "Detroit": "2026-11-25T23:29:35.136270-06:00",
   "Seattle": "2026-11-25T23:26:23.966317-06:00",
@@ -4762,9 +4774,9 @@
   "San Diego": "2026-11-25T23:27:01.862795-06:00",
   "Tampa": "2026-11-25T23:29:39.562886-06:00",
   "Denver": "2026-11-25T23:28:57.595256-06:00",
-  "Baltimore": "2026-11-25T23:00:22.668452-06:00",
+  "Baltimore": "2026-11-25T23:30:23.129622-06:00",
   "St. Louis": "2026-11-25T23:29:44.164553-06:00",
-  "Orlando": "2026-11-25T23:00:27.065686-06:00",
+  "Orlando": "2026-11-25T23:30:28.025313-06:00",
   "Charlotte": "2026-11-25T23:25:39.380385-06:00",
   "San Antonio": "2026-11-25T23:29:03.329555-06:00",
   "Portland": "2026-11-25T23:27:25.474135-06:00",
@@ -4772,7 +4784,7 @@
   "Pittsburgh": "2026-11-25T23:28:20.296706-06:00",
   "Austin": "2026-11-25T23:29:16.484815-06:00",
   "Las Vegas": "2026-11-25T23:26:41.690022-06:00",
-  "Cincinnati": "2026-11-25T23:00:35.868640-06:00",
+  "Cincinnati": "2026-11-25T23:30:36.798469-06:00",
   "Kansas City": "2026-11-25T23:26:37.135950-06:00",
   "Columbus": "2026-11-25T23:27:49.338042-06:00",
   "Indianapolis": "2026-11-25T23:28:02.536517-06:00",
@@ -4806,7 +4818,7 @@
   "Atlanta": "2026-11-25T23:29:07.601815-06:00",
   "Miami": "2026-11-25T23:29:26.306638-06:00",
   "Phoenix": "2026-11-25T23:27:45.016886-06:00",
-  "Boston": "2026-11-25T23:00:31.459140-06:00",
+  "Boston": "2026-11-25T23:30:32.372231-06:00",
   "San Francisco": "2026-11-25T23:26:06.963728-06:00",
   "Detroit": "2026-11-25T23:29:35.136287-06:00",
   "Seattle": "2026-11-25T23:26:23.966344-06:00",
@@ -4814,9 +4826,9 @@
   "San Diego": "2026-11-25T23:27:01.862812-06:00",
   "Tampa": "2026-11-25T23:29:39.562905-06:00",
   "Denver": "2026-11-25T23:28:57.595275-06:00",
-  "Baltimore": "2026-11-25T23:00:22.668471-06:00",
+  "Baltimore": "2026-11-25T23:30:23.129639-06:00",
   "St. Louis": "2026-11-25T23:29:44.164571-06:00",
-  "Orlando": "2026-11-25T23:00:27.065707-06:00",
+  "Orlando": "2026-11-25T23:30:28.025333-06:00",
   "Charlotte": "2026-11-25T23:25:39.380403-06:00",
   "San Antonio": "2026-11-25T23:29:03.329571-06:00",
   "Portland": "2026-11-25T23:27:25.474154-06:00",
@@ -4824,7 +4836,7 @@
   "Pittsburgh": "2026-11-25T23:28:20.296724-06:00",
   "Austin": "2026-11-25T23:29:16.484833-06:00",
   "Las Vegas": "2026-11-25T23:26:41.690041-06:00",
-  "Cincinnati": "2026-11-25T23:00:35.868660-06:00",
+  "Cincinnati": "2026-11-25T23:30:36.798488-06:00",
   "Kansas City": "2026-11-25T23:26:37.135969-06:00",
   "Columbus": "2026-11-25T23:27:49.338060-06:00",
   "Indianapolis": "2026-11-25T23:28:02.536536-06:00",
