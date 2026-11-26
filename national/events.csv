@@ -6453,3 +6453,5 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-25 21:10,Boca Raton,R074,Boca Raton,FL,Miami,1,41.6,available,MK1E4LL/A
 2026-11-25 21:15,Florida Mall,R143,Orlando,FL,Orlando,2,4.9,available,MK1F4LL/A
 2026-11-25 21:15,Orland Square Mall,R237,Orland Park,IL,Chicago,1,22.4,available,MK1F4LL/A
+2026-11-25 21:15,Bayshore,R257,Glendale,WI,,0,78.2,available,MK1F4LL/A
+2026-11-25 21:15,Penn Square,R130,Oklahoma City,OK,Oklahoma City,3,1.2,available,MK1F4LL/A
