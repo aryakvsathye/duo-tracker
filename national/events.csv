@@ -6682,3 +6682,23 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-27 06:38,Arden Fair,R070,Sacramento,CA,Sacramento,2,1.2,unavailable,MK1F4LL/A
 2026-11-27 06:39,Woodfield,R018,Schaumburg,IL,Chicago,1,23.8,available,MK1E4LL/A
 2026-11-27 06:39,Valley Plaza,R550,Bakersfield,CA,,0,223.3,unavailable,MK1E4LL/A
+2026-11-27 15:37,CoolSprings Galleria,R513,Franklin,TN,Nashville,2,8.9,available,MK1F4LL/A
+2026-11-27 15:37,Green Hills,R123,Nashville,TN,Nashville,2,1.8,available,MK1F4LL/A
+2026-11-27 15:37,Green Hills,R123,Nashville,TN,Nashville,2,1.8,available,MK1E4LL/A
+2026-11-27 15:37,Oxmoor,R264,Louisville,KY,Louisville,3,1.8,available,MK1F4LL/A
+2026-11-27 15:37,Oxmoor,R264,Louisville,KY,Louisville,3,1.8,available,MK1E4LL/A
+2026-11-27 15:37,Saddle Creek,R020,Germantown,TN,Memphis,3,0.6,unavailable,MK1E4LL/A
+2026-11-27 15:37,The Promenade at Chenal,R286,Little Rock,AR,Little Rock,3,3.3,unavailable,MK1E4LL/A
+2026-11-27 15:37,Renaissance at Colony Park,R324,Ridgeland,MS,,0,184.0,unavailable,MK1E4LL/A
+2026-11-27 15:37,West Town Mall,R203,Knoxville,TN,,0,144.5,unavailable,MK1F4LL/A
+2026-11-27 15:37,West Town Mall,R203,Knoxville,TN,,0,144.5,unavailable,MK1E4LL/A
+2026-11-27 15:37,Jordan Creek,R109,West Des Moines,IA,Des Moines,3,0.6,available,MK1F4LL/A
+2026-11-27 15:37,Southdale,R054,Edina,MN,Minneapolis,2,5.2,unavailable,MK1F4LL/A
+2026-11-27 15:37,Southdale,R054,Edina,MN,Minneapolis,2,5.2,unavailable,MK1E4LL/A
+2026-11-27 15:37,Ridgedale,R183,Minnetonka,MN,Minneapolis,2,13.3,unavailable,MK1F4LL/A
+2026-11-27 15:37,Woodfield,R018,Schaumburg,IL,Chicago,1,23.8,unavailable,MK1E4LL/A
+2026-11-27 15:37,Country Club Plaza,R097,Kansas City,MO,Kansas City,2,10.1,available,MK1F4LL/A
+2026-11-27 15:37,The Fashion Mall at Keystone,R066,Indianapolis,IN,Indianapolis,2,1.1,available,MK1E4LL/A
+2026-11-27 15:37,Woodland Hills,R233,Tulsa,OK,Tulsa,3,1.6,available,MK1F4LL/A
+2026-11-27 15:37,Woodland Hills,R233,Tulsa,OK,Tulsa,3,1.6,available,MK1E4LL/A
+2026-11-27 15:37,Penn Square,R130,Oklahoma City,OK,Oklahoma City,3,1.2,available,MK1E4LL/A

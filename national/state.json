@@ -535,17 +535,14 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 23.8,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "East North Central",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-27 06:39"
-   },
-   "since": "2026-11-27 06:39"
+   "since_by_part": {}
   },
   "R348": {
    "name": "Main Place",
@@ -772,14 +769,17 @@
    "metro": "Oklahoma City",
    "tier": 3,
    "miles": 1.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-27 15:37"
+   },
+   "since": "2026-11-27 15:37"
   },
   "R085": {
    "name": "Barton Creek",
@@ -865,14 +865,18 @@
    "metro": "Tulsa",
    "tier": 3,
    "miles": 1.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-27 15:37",
+    "MK1E4LL/A": "2026-11-27 15:37"
+   },
+   "since": "2026-11-27 15:37"
   },
   "R058": {
    "name": "Houston Galleria",
@@ -1574,18 +1578,14 @@
    "metro": "",
    "tier": 0,
    "miles": 144.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East South Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-27 06:36",
-    "MK1E4LL/A": "2026-11-27 06:36"
-   },
-   "since": "2026-11-27 06:36"
+   "since_by_part": {}
   },
   "R266": {
    "name": "Bridge Street",
@@ -1614,14 +1614,17 @@
    "metro": "Nashville",
    "tier": 2,
    "miles": 8.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "East South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-27 15:37"
+   },
+   "since": "2026-11-27 15:37"
   },
   "R123": {
    "name": "Green Hills",
@@ -1632,14 +1635,18 @@
    "metro": "Nashville",
    "tier": 2,
    "miles": 1.8,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "East South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-27 15:37",
+    "MK1E4LL/A": "2026-11-27 15:37"
+   },
+   "since": "2026-11-27 15:37"
   },
   "R623": {
    "name": "Brickell City Centre",
@@ -2966,18 +2973,14 @@
    "metro": "Minneapolis",
    "tier": 2,
    "miles": 5.2,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 10:44",
-    "MK1E4LL/A": "2026-11-25 10:44"
-   },
-   "since": "2026-11-25 10:44"
+   "since_by_part": {}
   },
   "R022": {
    "name": "Rosedale Center",
@@ -3010,17 +3013,14 @@
    "metro": "Minneapolis",
    "tier": 2,
    "miles": 13.3,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 10:18"
-   },
-   "since": "2026-11-25 10:18"
+   "since_by_part": {}
   },
   "R109": {
    "name": "Jordan Creek",
@@ -3031,14 +3031,17 @@
    "metro": "Des Moines",
    "tier": 3,
    "miles": 0.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-27 15:37"
+   },
+   "since": "2026-11-27 15:37"
   },
   "R190": {
    "name": "Village Pointe",
@@ -3610,14 +3613,17 @@
    "metro": "Kansas City",
    "tier": 2,
    "miles": 10.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-27 15:37"
+   },
+   "since": "2026-11-27 15:37"
   },
   "R283": {
    "name": "Leawood",
@@ -3646,14 +3652,17 @@
    "metro": "Indianapolis",
    "tier": 2,
    "miles": 1.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Indianapolis",
    "region": "East North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-27 15:37"
+   },
+   "since": "2026-11-27 15:37"
   },
   "R020": {
    "name": "Saddle Creek",
@@ -3664,17 +3673,14 @@
    "metro": "Memphis",
    "tier": 3,
    "miles": 0.6,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "East South Central",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-25 09:55"
-   },
-   "since": "2026-11-25 09:55"
+   "since_by_part": {}
   },
   "R264": {
    "name": "Oxmoor",
@@ -3685,14 +3691,18 @@
    "metro": "Louisville",
    "tier": 3,
    "miles": 1.8,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "East South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-27 15:37",
+    "MK1E4LL/A": "2026-11-27 15:37"
+   },
+   "since": "2026-11-27 15:37"
   },
   "R133": {
    "name": "Downtown Nashville",
@@ -4084,17 +4094,14 @@
    "metro": "Little Rock",
    "tier": 3,
    "miles": 3.3,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-25 09:32"
-   },
-   "since": "2026-11-25 09:32"
+   "since_by_part": {}
   },
   "R078": {
    "name": "Short Pump Town Center",
@@ -4141,17 +4148,14 @@
    "metro": "",
    "tier": 0,
    "miles": 184.0,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "East South Central",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-25 10:16"
-   },
-   "since": "2026-11-25 10:16"
+   "since_by_part": {}
   },
   "R492": {
    "name": "Cielo Vista Mall",
@@ -4244,8 +4248,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-27T06:39:33.423050-06:00",
- "metros_ok": 50,
+ "last_sweep": "2026-11-27T15:37:54.088266-06:00",
+ "metros_ok": 6,
  "metros": [
   {
    "metro": "New York",
@@ -4562,24 +4566,24 @@
  "checked_at": {
   "New York": "2026-11-27T06:37:03.474711-06:00",
   "Los Angeles": "2026-11-27T06:38:29.877944-06:00",
-  "Chicago": "2026-11-27T06:36:44.565335-06:00",
+  "Chicago": "2026-11-27T15:37:54.088161-06:00",
   "Dallas": "2026-11-27T06:37:44.439754-06:00",
   "Houston": "2026-11-27T06:39:19.798029-06:00",
   "Washington": "2026-11-27T06:37:47.783661-06:00",
   "Philadelphia": "2026-11-27T06:37:51.143820-06:00",
-  "Atlanta": "2026-11-27T06:36:37.758947-06:00",
+  "Atlanta": "2026-11-27T15:37:40.213337-06:00",
   "Miami": "2026-11-27T06:36:48.019238-06:00",
   "Phoenix": "2026-11-27T06:38:08.135106-06:00",
   "Boston": "2026-11-27T06:37:32.530103-06:00",
   "San Francisco": "2026-11-27T06:38:36.694404-06:00",
   "Detroit": "2026-11-27T06:37:06.802031-06:00",
   "Seattle": "2026-11-27T06:38:41.966518-06:00",
-  "Minneapolis": "2026-11-27T06:36:41.230613-06:00",
+  "Minneapolis": "2026-11-27T15:37:43.767343-06:00",
   "San Diego": "2026-11-27T06:38:11.481642-06:00",
   "Tampa": "2026-11-27T06:36:51.440283-06:00",
   "Denver": "2026-11-27T06:38:14.869286-06:00",
   "Baltimore": "2026-11-27T06:36:56.484460-06:00",
-  "St. Louis": "2026-11-27T06:37:10.533704-06:00",
+  "St. Louis": "2026-11-27T15:37:47.176224-06:00",
   "Orlando": "2026-11-27T06:37:00.125460-06:00",
   "Charlotte": "2026-11-27T06:37:13.944411-06:00",
   "San Antonio": "2026-11-27T06:39:23.123362-06:00",
@@ -4589,7 +4593,7 @@
   "Austin": "2026-11-27T06:39:33.422942-06:00",
   "Las Vegas": "2026-11-27T06:39:26.476122-06:00",
   "Cincinnati": "2026-11-27T06:37:35.914777-06:00",
-  "Kansas City": "2026-11-27T06:37:54.601346-06:00",
+  "Kansas City": "2026-11-27T15:37:50.700180-06:00",
   "Columbus": "2026-11-27T06:38:55.930611-06:00",
   "Indianapolis": "2026-11-27T06:38:59.299458-06:00",
   "Cleveland": "2026-11-27T06:39:02.759153-06:00",
@@ -4600,7 +4604,7 @@
   "Omaha": "2026-11-27T06:38:52.402580-06:00",
   "Des Moines": "2026-11-27T06:39:06.287726-06:00",
   "Little Rock": "2026-11-27T06:37:40.895584-06:00",
-  "Memphis": "2026-11-27T06:36:34.290213-06:00",
+  "Memphis": "2026-11-27T15:37:36.738522-06:00",
   "Madison": "2026-11-27T06:39:09.728557-06:00",
   "Albuquerque": "2026-11-27T06:37:57.918186-06:00",
   "Salt Lake City": "2026-11-27T06:38:01.360401-06:00",
@@ -4614,24 +4618,24 @@
  "ok_at": {
   "New York": "2026-11-27T06:37:03.474729-06:00",
   "Los Angeles": "2026-11-27T06:38:29.877964-06:00",
-  "Chicago": "2026-11-27T06:36:44.565346-06:00",
+  "Chicago": "2026-11-27T15:37:54.088180-06:00",
   "Dallas": "2026-11-27T06:37:44.439775-06:00",
   "Houston": "2026-11-27T06:39:19.798051-06:00",
   "Washington": "2026-11-27T06:37:47.783678-06:00",
   "Philadelphia": "2026-11-27T06:37:51.143841-06:00",
-  "Atlanta": "2026-11-27T06:36:37.758966-06:00",
+  "Atlanta": "2026-11-27T15:37:40.213357-06:00",
   "Miami": "2026-11-27T06:36:48.019259-06:00",
   "Phoenix": "2026-11-27T06:38:08.135127-06:00",
   "Boston": "2026-11-27T06:37:32.530124-06:00",
   "San Francisco": "2026-11-27T06:38:36.694423-06:00",
   "Detroit": "2026-11-27T06:37:06.802043-06:00",
   "Seattle": "2026-11-27T06:38:41.966537-06:00",
-  "Minneapolis": "2026-11-27T06:36:41.230631-06:00",
+  "Minneapolis": "2026-11-27T15:37:43.767363-06:00",
   "San Diego": "2026-11-27T06:38:11.481662-06:00",
   "Tampa": "2026-11-27T06:36:51.440317-06:00",
   "Denver": "2026-11-27T06:38:14.869316-06:00",
   "Baltimore": "2026-11-27T06:36:56.484480-06:00",
-  "St. Louis": "2026-11-27T06:37:10.533725-06:00",
+  "St. Louis": "2026-11-27T15:37:47.176242-06:00",
   "Orlando": "2026-11-27T06:37:00.125480-06:00",
   "Charlotte": "2026-11-27T06:37:13.944432-06:00",
   "San Antonio": "2026-11-27T06:39:23.123381-06:00",
@@ -4641,7 +4645,7 @@
   "Austin": "2026-11-27T06:39:33.422964-06:00",
   "Las Vegas": "2026-11-27T06:39:26.476140-06:00",
   "Cincinnati": "2026-11-27T06:37:35.914799-06:00",
-  "Kansas City": "2026-11-27T06:37:54.601363-06:00",
+  "Kansas City": "2026-11-27T15:37:50.700197-06:00",
   "Columbus": "2026-11-27T06:38:55.930629-06:00",
   "Indianapolis": "2026-11-27T06:38:59.299476-06:00",
   "Cleveland": "2026-11-27T06:39:02.759173-06:00",
@@ -4652,7 +4656,7 @@
   "Omaha": "2026-11-27T06:38:52.402596-06:00",
   "Des Moines": "2026-11-27T06:39:06.287744-06:00",
   "Little Rock": "2026-11-27T06:37:40.895604-06:00",
-  "Memphis": "2026-11-27T06:36:34.290231-06:00",
+  "Memphis": "2026-11-27T15:37:36.738545-06:00",
   "Madison": "2026-11-27T06:39:09.728577-06:00",
   "Albuquerque": "2026-11-27T06:37:57.918204-06:00",
   "Salt Lake City": "2026-11-27T06:38:01.360417-06:00",
@@ -4663,7 +4667,10 @@
   "Tucson": "2026-11-27T06:38:04.696244-06:00",
   "Buffalo": "2026-11-27T06:39:16.404685-06:00"
  },
- "hot": [],
+ "hot": [
+  "East South Central",
+  "West North Central"
+ ],
  "cycle_seconds": 150,
  "pace": 3.0,
  "pace_since": "2026-11-26T21:14:13.502586-06:00",
