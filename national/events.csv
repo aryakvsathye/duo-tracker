@@ -6702,3 +6702,21 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-27 15:37,Woodland Hills,R233,Tulsa,OK,Tulsa,3,1.6,available,MK1F4LL/A
 2026-11-27 15:37,Woodland Hills,R233,Tulsa,OK,Tulsa,3,1.6,available,MK1E4LL/A
 2026-11-27 15:37,Penn Square,R130,Oklahoma City,OK,Oklahoma City,3,1.2,available,MK1E4LL/A
+2026-11-27 15:37,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,available,MK1F4LL/A
+2026-11-27 15:37,Brickell City Centre,R623,Miami,FL,Miami,1,0.2,available,MK1E4LL/A
+2026-11-27 15:37,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,available,MK1F4LL/A
+2026-11-27 15:37,Miami Worldcenter,R752,Miami,FL,Miami,1,1.1,available,MK1E4LL/A
+2026-11-27 15:37,Lincoln Road,R115,Miami Beach,FL,Miami,1,3.6,available,MK1F4LL/A
+2026-11-27 15:37,Lincoln Road,R115,Miami Beach,FL,Miami,1,3.6,available,MK1E4LL/A
+2026-11-27 15:37,Dadeland,R312,Miami,FL,Miami,1,9.3,available,MK1F4LL/A
+2026-11-27 15:37,Dadeland,R312,Miami,FL,Miami,1,9.3,available,MK1E4LL/A
+2026-11-27 15:37,Waterside Shops,R169,Naples,FL,,0,104.7,available,MK1E4LL/A
+2026-11-27 15:37,Coconut Point,R185,Estero,FL,,0,109.5,available,MK1E4LL/A
+2026-11-27 15:37,The Galleria,R214,Fort Lauderdale,FL,Miami,1,26.0,unavailable,MK1F4LL/A
+2026-11-27 15:37,Wellington Green,R024,Wellington,FL,,0,60.9,unavailable,MK1F4LL/A
+2026-11-27 15:37,The Gardens Mall,R127,Palm Beach Gardens,FL,,0,75.1,unavailable,MK1F4LL/A
+2026-11-27 15:38,Millenia,R053,Orlando,FL,Orlando,2,3.5,available,MK1E4LL/A
+2026-11-27 15:38,St. Johns Town Center,R111,Jacksonville,FL,,0,124.5,unavailable,MK1F4LL/A
+2026-11-27 15:38,Carnegie Library,R516,Washington,DC,Washington,1,0.5,unavailable,MK1F4LL/A
+2026-11-27 15:38,Tysons Corner,R010,McLean,VA,Washington,1,10.9,unavailable,MK1F4LL/A
+2026-11-27 15:38,Tysons Corner,R010,McLean,VA,Washington,1,10.9,unavailable,MK1E4LL/A

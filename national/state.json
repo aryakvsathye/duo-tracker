@@ -995,17 +995,14 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 0.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-27 06:36"
-   },
-   "since": "2026-11-27 06:36"
+   "since_by_part": {}
   },
   "R287": {
    "name": "Georgetown",
@@ -1106,18 +1103,14 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 10.9,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-27 06:36",
-    "MK1E4LL/A": "2026-11-27 06:36"
-   },
-   "since": "2026-11-27 06:36"
+   "since_by_part": {}
   },
   "R221": {
    "name": "Fairfax Corner",
@@ -1657,14 +1650,18 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 0.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-27 15:37",
+    "MK1E4LL/A": "2026-11-27 15:37"
+   },
+   "since": "2026-11-27 15:37"
   },
   "R752": {
    "name": "Miami Worldcenter",
@@ -1675,14 +1672,18 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 1.1,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-27 15:37",
+    "MK1E4LL/A": "2026-11-27 15:37"
+   },
+   "since": "2026-11-27 15:37"
   },
   "R115": {
    "name": "Lincoln Road",
@@ -1693,14 +1694,18 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 3.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-27 15:37",
+    "MK1E4LL/A": "2026-11-27 15:37"
+   },
+   "since": "2026-11-27 15:37"
   },
   "R312": {
    "name": "Dadeland",
@@ -1711,14 +1716,18 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 9.3,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-27 15:37",
+    "MK1E4LL/A": "2026-11-27 15:37"
+   },
+   "since": "2026-11-27 15:37"
   },
   "R012": {
    "name": "The Falls",
@@ -1769,17 +1778,14 @@
    "metro": "Miami",
    "tier": 1,
    "miles": 26.0,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 15:45"
-   },
-   "since": "2026-11-25 15:45"
+   "since_by_part": {}
   },
   "R074": {
    "name": "Boca Raton",
@@ -1808,17 +1814,14 @@
    "metro": "",
    "tier": 0,
    "miles": 60.9,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 08:32"
-   },
-   "since": "2026-11-25 08:32"
+   "since_by_part": {}
   },
   "R127": {
    "name": "The Gardens Mall",
@@ -1829,17 +1832,14 @@
    "metro": "",
    "tier": 0,
    "miles": 75.1,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 10:25"
-   },
-   "since": "2026-11-25 10:25"
+   "since_by_part": {}
   },
   "R169": {
    "name": "Waterside Shops",
@@ -1850,14 +1850,17 @@
    "metro": "",
    "tier": 0,
    "miles": 104.7,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-27 15:37"
+   },
+   "since": "2026-11-27 15:37"
   },
   "R185": {
    "name": "Coconut Point",
@@ -1868,14 +1871,17 @@
    "metro": "",
    "tier": 0,
    "miles": 109.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-27 15:37"
+   },
+   "since": "2026-11-27 15:37"
   },
   "R031": {
    "name": "Scottsdale Fashion Square",
@@ -3304,14 +3310,17 @@
    "metro": "Orlando",
    "tier": 2,
    "miles": 3.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-27 15:38"
+   },
+   "since": "2026-11-27 15:38"
   },
   "R143": {
    "name": "Florida Mall",
@@ -3358,17 +3367,14 @@
    "metro": "",
    "tier": 0,
    "miles": 124.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-24 13:36"
-   },
-   "since": "2026-11-24 13:36"
+   "since_by_part": {}
   },
   "R047": {
    "name": "Cherry Creek",
@@ -4248,8 +4254,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-27T15:37:54.088266-06:00",
- "metros_ok": 6,
+ "last_sweep": "2026-11-27T15:38:16.436810-06:00",
+ "metros_ok": 12,
  "metros": [
   {
    "metro": "New York",
@@ -4572,7 +4578,7 @@
   "Washington": "2026-11-27T06:37:47.783661-06:00",
   "Philadelphia": "2026-11-27T06:37:51.143820-06:00",
   "Atlanta": "2026-11-27T15:37:40.213337-06:00",
-  "Miami": "2026-11-27T06:36:48.019238-06:00",
+  "Miami": "2026-11-27T15:37:59.148439-06:00",
   "Phoenix": "2026-11-27T06:38:08.135106-06:00",
   "Boston": "2026-11-27T06:37:32.530103-06:00",
   "San Francisco": "2026-11-27T06:38:36.694404-06:00",
@@ -4580,12 +4586,12 @@
   "Seattle": "2026-11-27T06:38:41.966518-06:00",
   "Minneapolis": "2026-11-27T15:37:43.767343-06:00",
   "San Diego": "2026-11-27T06:38:11.481642-06:00",
-  "Tampa": "2026-11-27T06:36:51.440283-06:00",
+  "Tampa": "2026-11-27T15:38:02.567878-06:00",
   "Denver": "2026-11-27T06:38:14.869286-06:00",
-  "Baltimore": "2026-11-27T06:36:56.484460-06:00",
+  "Baltimore": "2026-11-27T15:38:06.258695-06:00",
   "St. Louis": "2026-11-27T15:37:47.176224-06:00",
-  "Orlando": "2026-11-27T06:37:00.125460-06:00",
-  "Charlotte": "2026-11-27T06:37:13.944411-06:00",
+  "Orlando": "2026-11-27T15:38:09.647112-06:00",
+  "Charlotte": "2026-11-27T15:38:13.150307-06:00",
   "San Antonio": "2026-11-27T06:39:23.123362-06:00",
   "Portland": "2026-11-27T06:38:19.917875-06:00",
   "Sacramento": "2026-11-27T06:38:23.277546-06:00",
@@ -4598,7 +4604,7 @@
   "Indianapolis": "2026-11-27T06:38:59.299458-06:00",
   "Cleveland": "2026-11-27T06:39:02.759153-06:00",
   "Nashville": "2026-11-27T06:38:48.888126-06:00",
-  "Raleigh": "2026-11-27T06:37:18.960898-06:00",
+  "Raleigh": "2026-11-27T15:38:16.436708-06:00",
   "Oklahoma City": "2026-11-27T06:37:25.761442-06:00",
   "Tulsa": "2026-11-27T06:37:29.123940-06:00",
   "Omaha": "2026-11-27T06:38:52.402580-06:00",
@@ -4624,7 +4630,7 @@
   "Washington": "2026-11-27T06:37:47.783678-06:00",
   "Philadelphia": "2026-11-27T06:37:51.143841-06:00",
   "Atlanta": "2026-11-27T15:37:40.213357-06:00",
-  "Miami": "2026-11-27T06:36:48.019259-06:00",
+  "Miami": "2026-11-27T15:37:59.148458-06:00",
   "Phoenix": "2026-11-27T06:38:08.135127-06:00",
   "Boston": "2026-11-27T06:37:32.530124-06:00",
   "San Francisco": "2026-11-27T06:38:36.694423-06:00",
@@ -4632,12 +4638,12 @@
   "Seattle": "2026-11-27T06:38:41.966537-06:00",
   "Minneapolis": "2026-11-27T15:37:43.767363-06:00",
   "San Diego": "2026-11-27T06:38:11.481662-06:00",
-  "Tampa": "2026-11-27T06:36:51.440317-06:00",
+  "Tampa": "2026-11-27T15:38:02.567899-06:00",
   "Denver": "2026-11-27T06:38:14.869316-06:00",
-  "Baltimore": "2026-11-27T06:36:56.484480-06:00",
+  "Baltimore": "2026-11-27T15:38:06.258717-06:00",
   "St. Louis": "2026-11-27T15:37:47.176242-06:00",
-  "Orlando": "2026-11-27T06:37:00.125480-06:00",
-  "Charlotte": "2026-11-27T06:37:13.944432-06:00",
+  "Orlando": "2026-11-27T15:38:09.647131-06:00",
+  "Charlotte": "2026-11-27T15:38:13.150326-06:00",
   "San Antonio": "2026-11-27T06:39:23.123381-06:00",
   "Portland": "2026-11-27T06:38:19.917893-06:00",
   "Sacramento": "2026-11-27T06:38:23.277566-06:00",
@@ -4650,7 +4656,7 @@
   "Indianapolis": "2026-11-27T06:38:59.299476-06:00",
   "Cleveland": "2026-11-27T06:39:02.759173-06:00",
   "Nashville": "2026-11-27T06:38:48.888137-06:00",
-  "Raleigh": "2026-11-27T06:37:18.960917-06:00",
+  "Raleigh": "2026-11-27T15:38:16.436726-06:00",
   "Oklahoma City": "2026-11-27T06:37:25.761458-06:00",
   "Tulsa": "2026-11-27T06:37:29.123962-06:00",
   "Omaha": "2026-11-27T06:38:52.402596-06:00",
@@ -4668,8 +4674,8 @@
   "Buffalo": "2026-11-27T06:39:16.404685-06:00"
  },
  "hot": [
-  "East South Central",
-  "West North Central"
+  "South Atlantic",
+  "East South Central"
  ],
  "cycle_seconds": 150,
  "pace": 3.0,
