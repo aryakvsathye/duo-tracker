@@ -189,14 +189,18 @@
    "metro": "New York",
    "tier": 1,
    "miles": 6.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "Middle Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-27 06:37",
+    "MK1E4LL/A": "2026-11-27 06:37"
+   },
+   "since": "2026-11-27 06:37"
   },
   "R753": {
    "name": "The Mall at Bay Plaza",
@@ -981,14 +985,17 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 0.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-27 06:36"
+   },
+   "since": "2026-11-27 06:36"
   },
   "R287": {
    "name": "Georgetown",
@@ -1089,14 +1096,18 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 10.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-27 06:36",
+    "MK1E4LL/A": "2026-11-27 06:36"
+   },
+   "since": "2026-11-27 06:36"
   },
   "R221": {
    "name": "Fairfax Corner",
@@ -2657,17 +2668,14 @@
    "metro": "",
    "tier": 0,
    "miles": 124.9,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/New_York",
    "region": "East North Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 09:11"
-   },
-   "since": "2026-11-25 09:11"
+   "since_by_part": {}
   },
   "R353": {
    "name": "Summit Mall",
@@ -4248,8 +4256,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-27T06:36:51.440396-06:00",
- "metros_ok": 6,
+ "last_sweep": "2026-11-27T06:37:13.944515-06:00",
+ "metros_ok": 12,
  "metros": [
   {
    "metro": "New York",
@@ -4566,7 +4574,7 @@
   "Kansas City"
  ],
  "checked_at": {
-  "New York": "2026-11-26T21:16:18.249089-06:00",
+  "New York": "2026-11-27T06:37:03.474711-06:00",
   "Los Angeles": "2026-11-26T21:17:43.434470-06:00",
   "Chicago": "2026-11-27T06:36:44.565335-06:00",
   "Dallas": "2026-11-26T21:16:57.639941-06:00",
@@ -4578,16 +4586,16 @@
   "Phoenix": "2026-11-26T21:17:22.793157-06:00",
   "Boston": "2026-11-26T21:16:47.326248-06:00",
   "San Francisco": "2026-11-26T21:17:50.242227-06:00",
-  "Detroit": "2026-11-26T21:16:21.995551-06:00",
+  "Detroit": "2026-11-27T06:37:06.802031-06:00",
   "Seattle": "2026-11-26T21:17:53.625190-06:00",
   "Minneapolis": "2026-11-27T06:36:41.230613-06:00",
   "San Diego": "2026-11-26T21:17:26.334905-06:00",
   "Tampa": "2026-11-27T06:36:51.440283-06:00",
   "Denver": "2026-11-26T21:17:29.707798-06:00",
-  "Baltimore": "2026-11-26T21:16:11.452862-06:00",
-  "St. Louis": "2026-11-26T21:16:26.857876-06:00",
-  "Orlando": "2026-11-26T21:16:14.897169-06:00",
-  "Charlotte": "2026-11-26T21:16:30.223744-06:00",
+  "Baltimore": "2026-11-27T06:36:56.484460-06:00",
+  "St. Louis": "2026-11-27T06:37:10.533704-06:00",
+  "Orlando": "2026-11-27T06:37:00.125460-06:00",
+  "Charlotte": "2026-11-27T06:37:13.944411-06:00",
   "San Antonio": "2026-11-26T21:18:36.583765-06:00",
   "Portland": "2026-11-26T21:17:33.366887-06:00",
   "Sacramento": "2026-11-26T21:17:36.760264-06:00",
@@ -4618,7 +4626,7 @@
   "Buffalo": "2026-11-26T21:18:29.552063-06:00"
  },
  "ok_at": {
-  "New York": "2026-11-26T21:16:18.249106-06:00",
+  "New York": "2026-11-27T06:37:03.474729-06:00",
   "Los Angeles": "2026-11-26T21:17:43.434487-06:00",
   "Chicago": "2026-11-27T06:36:44.565346-06:00",
   "Dallas": "2026-11-26T21:16:57.639958-06:00",
@@ -4630,16 +4638,16 @@
   "Phoenix": "2026-11-26T21:17:22.793174-06:00",
   "Boston": "2026-11-26T21:16:47.326265-06:00",
   "San Francisco": "2026-11-26T21:17:50.242244-06:00",
-  "Detroit": "2026-11-26T21:16:21.995568-06:00",
+  "Detroit": "2026-11-27T06:37:06.802043-06:00",
   "Seattle": "2026-11-26T21:17:53.625207-06:00",
   "Minneapolis": "2026-11-27T06:36:41.230631-06:00",
   "San Diego": "2026-11-26T21:17:26.334922-06:00",
   "Tampa": "2026-11-27T06:36:51.440317-06:00",
   "Denver": "2026-11-26T21:17:29.707815-06:00",
-  "Baltimore": "2026-11-26T21:16:11.452878-06:00",
-  "St. Louis": "2026-11-26T21:16:26.857893-06:00",
-  "Orlando": "2026-11-26T21:16:14.897185-06:00",
-  "Charlotte": "2026-11-26T21:16:30.223761-06:00",
+  "Baltimore": "2026-11-27T06:36:56.484480-06:00",
+  "St. Louis": "2026-11-27T06:37:10.533725-06:00",
+  "Orlando": "2026-11-27T06:37:00.125480-06:00",
+  "Charlotte": "2026-11-27T06:37:13.944432-06:00",
   "San Antonio": "2026-11-26T21:18:36.583783-06:00",
   "Portland": "2026-11-26T21:17:33.366906-06:00",
   "Sacramento": "2026-11-26T21:17:36.760281-06:00",
