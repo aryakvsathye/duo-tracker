@@ -279,17 +279,14 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 5.5,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-25 13:43"
-   },
-   "since": "2026-11-25 13:43"
+   "since_by_part": {}
   },
   "R148": {
    "name": "Sherman Oaks",
@@ -408,17 +405,14 @@
    "metro": "Los Angeles",
    "tier": 1,
    "miles": 14.9,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 12:59"
-   },
-   "since": "2026-11-25 12:59"
+   "since_by_part": {}
   },
   "R777": {
    "name": "Del Amo",
@@ -825,17 +819,14 @@
    "metro": "Houston",
    "tier": 1,
    "miles": 15.2,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 09:12"
-   },
-   "since": "2026-11-25 09:12"
+   "since_by_part": {}
   },
   "R164": {
    "name": "Memorial City",
@@ -846,17 +837,14 @@
    "metro": "Houston",
    "tier": 1,
    "miles": 4.8,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 08:28"
-   },
-   "since": "2026-11-25 08:28"
+   "since_by_part": {}
   },
   "R233": {
    "name": "Woodland Hills",
@@ -885,17 +873,14 @@
    "metro": "Houston",
    "tier": 1,
    "miles": 0.7,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-26 00:58"
-   },
-   "since": "2026-11-26 00:58"
+   "since_by_part": {}
   },
   "R437": {
    "name": "Highland Village",
@@ -978,17 +963,14 @@
    "metro": "San Antonio",
    "tier": 2,
    "miles": 8.4,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-26 14:35"
-   },
-   "since": "2026-11-26 14:35"
+   "since_by_part": {}
   },
   "R516": {
    "name": "Carnegie Library",
@@ -3900,17 +3882,14 @@
    "metro": "",
    "tier": 0,
    "miles": 68.2,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 11:57"
-   },
-   "since": "2026-11-25 11:57"
+   "since_by_part": {}
   },
   "R413": {
    "name": "Ross Park",
@@ -4288,8 +4267,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-26T21:15:07.230708-06:00",
- "metros_ok": 16,
+ "last_sweep": "2026-11-26T21:15:32.489884-06:00",
+ "metros_ok": 23,
  "metros": [
   {
    "metro": "New York",
@@ -4610,10 +4589,10 @@
  ],
  "checked_at": {
   "New York": "2026-11-26T14:36:38.096470-06:00",
-  "Los Angeles": "2026-11-26T14:37:30.000706-06:00",
+  "Los Angeles": "2026-11-26T21:15:32.489645-06:00",
   "Chicago": "2026-11-26T14:36:26.639069-06:00",
   "Dallas": "2026-11-26T14:37:33.859854-06:00",
-  "Houston": "2026-11-26T14:35:58.542054-06:00",
+  "Houston": "2026-11-26T21:15:29.137948-06:00",
   "Washington": "2026-11-26T14:37:39.036565-06:00",
   "Philadelphia": "2026-11-26T14:37:42.802686-06:00",
   "Atlanta": "2026-11-26T14:36:19.007584-06:00",
@@ -4633,8 +4612,8 @@
   "Charlotte": "2026-11-26T14:36:51.133451-06:00",
   "San Antonio": "2026-11-26T14:36:02.307241-06:00",
   "Portland": "2026-11-26T21:14:53.421343-06:00",
-  "Sacramento": "2026-11-26T14:37:18.150527-06:00",
-  "Pittsburgh": "2026-11-26T14:35:50.874252-06:00",
+  "Sacramento": "2026-11-26T21:15:15.418320-06:00",
+  "Pittsburgh": "2026-11-26T21:15:18.865712-06:00",
   "Austin": "2026-11-26T14:36:06.156498-06:00",
   "Las Vegas": "2026-11-26T21:14:13.994156-06:00",
   "Cincinnati": "2026-11-26T14:37:14.096593-06:00",
@@ -4650,22 +4629,22 @@
   "Des Moines": "2026-11-26T21:15:07.230593-06:00",
   "Little Rock": "2026-11-26T14:37:22.353235-06:00",
   "Memphis": "2026-11-26T14:36:10.106545-06:00",
-  "Madison": "2026-11-26T14:35:47.085624-06:00",
+  "Madison": "2026-11-26T21:15:12.048643-06:00",
   "Albuquerque": "2026-11-26T21:14:21.077519-06:00",
   "Salt Lake City": "2026-11-26T21:14:24.439430-06:00",
   "Louisville": "2026-11-26T21:14:17.469501-06:00",
   "Birmingham": "2026-11-26T21:14:34.809276-06:00",
   "Richmond": "2026-11-26T14:36:58.656375-06:00",
-  "Honolulu": "2026-11-26T14:37:26.186869-06:00",
+  "Honolulu": "2026-11-26T21:15:25.738965-06:00",
   "Tucson": "2026-11-26T21:14:27.897451-06:00",
-  "Buffalo": "2026-11-26T14:35:54.694394-06:00"
+  "Buffalo": "2026-11-26T21:15:22.515742-06:00"
  },
  "ok_at": {
   "New York": "2026-11-26T14:36:38.096505-06:00",
-  "Los Angeles": "2026-11-26T14:37:30.000721-06:00",
+  "Los Angeles": "2026-11-26T21:15:32.489661-06:00",
   "Chicago": "2026-11-26T14:36:26.639085-06:00",
   "Dallas": "2026-11-26T14:37:33.859871-06:00",
-  "Houston": "2026-11-26T14:35:58.542071-06:00",
+  "Houston": "2026-11-26T21:15:29.137965-06:00",
   "Washington": "2026-11-26T14:37:39.036582-06:00",
   "Philadelphia": "2026-11-26T14:37:42.802701-06:00",
   "Atlanta": "2026-11-26T14:36:19.007605-06:00",
@@ -4685,8 +4664,8 @@
   "Charlotte": "2026-11-26T14:36:51.133467-06:00",
   "San Antonio": "2026-11-26T14:36:02.307258-06:00",
   "Portland": "2026-11-26T21:14:53.421360-06:00",
-  "Sacramento": "2026-11-26T14:37:18.150546-06:00",
-  "Pittsburgh": "2026-11-26T14:35:50.874270-06:00",
+  "Sacramento": "2026-11-26T21:15:15.418336-06:00",
+  "Pittsburgh": "2026-11-26T21:15:18.865729-06:00",
   "Austin": "2026-11-26T14:36:06.156515-06:00",
   "Las Vegas": "2026-11-26T21:14:13.994180-06:00",
   "Cincinnati": "2026-11-26T14:37:14.096611-06:00",
@@ -4702,15 +4681,15 @@
   "Des Moines": "2026-11-26T21:15:07.230613-06:00",
   "Little Rock": "2026-11-26T14:37:22.353254-06:00",
   "Memphis": "2026-11-26T14:36:10.106563-06:00",
-  "Madison": "2026-11-26T14:35:47.085642-06:00",
+  "Madison": "2026-11-26T21:15:12.048659-06:00",
   "Albuquerque": "2026-11-26T21:14:21.077538-06:00",
   "Salt Lake City": "2026-11-26T21:14:24.439448-06:00",
   "Louisville": "2026-11-26T21:14:17.469518-06:00",
   "Birmingham": "2026-11-26T21:14:34.809293-06:00",
   "Richmond": "2026-11-26T14:36:58.656395-06:00",
-  "Honolulu": "2026-11-26T14:37:26.186884-06:00",
+  "Honolulu": "2026-11-26T21:15:25.738982-06:00",
   "Tucson": "2026-11-26T21:14:27.897468-06:00",
-  "Buffalo": "2026-11-26T14:35:54.694411-06:00"
+  "Buffalo": "2026-11-26T21:15:22.515758-06:00"
  },
  "hot": [
   "Mountain",
