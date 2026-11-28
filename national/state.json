@@ -525,14 +525,18 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 22.4,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "East North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-28 14:19",
+    "MK1E4LL/A": "2026-11-28 14:19"
+   },
+   "since": "2026-11-28 14:19"
   },
   "R018": {
    "name": "Woodfield",
@@ -543,17 +547,14 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 23.8,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
-    "MK1F4LL/A": "available",
+    "MK1F4LL/A": "unavailable",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "East North Central",
-   "since_by_part": {
-    "MK1F4LL/A": "2026-11-28 06:17"
-   },
-   "since": "2026-11-28 06:17"
+   "since_by_part": {}
   },
   "R348": {
    "name": "Main Place",
@@ -564,14 +565,17 @@
    "metro": "Chicago",
    "tier": 1,
    "miles": 28.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "East North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-28 14:19"
+   },
+   "since": "2026-11-28 14:19"
   },
   "R258": {
    "name": "Deer Park",
@@ -881,13 +885,12 @@
    "status": "available",
    "parts": {
     "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
    "since_by_part": {
-    "MK1F4LL/A": "2026-11-27 15:37",
-    "MK1E4LL/A": "2026-11-27 15:37"
+    "MK1F4LL/A": "2026-11-27 15:37"
    },
    "since": "2026-11-27 15:37"
   },
@@ -2999,13 +3002,12 @@
    "status": "available",
    "parts": {
     "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
    "since_by_part": {
-    "MK1F4LL/A": "2026-11-25 10:18",
-    "MK1E4LL/A": "2026-11-25 10:18"
+    "MK1F4LL/A": "2026-11-25 10:18"
    },
    "since": "2026-11-25 10:18"
   },
@@ -3096,14 +3098,18 @@
    "metro": "Omaha",
    "tier": 3,
    "miles": 0.3,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-28 14:19",
+    "MK1E4LL/A": "2026-11-28 14:19"
+   },
+   "since": "2026-11-28 14:19"
   },
   "R040": {
    "name": "Fashion Valley",
@@ -3634,14 +3640,17 @@
    "metro": "St. Louis",
    "tier": 2,
    "miles": 1.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West North Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-28 14:19"
+   },
+   "since": "2026-11-28 14:19"
   },
   "R062": {
    "name": "West County",
@@ -3706,17 +3715,14 @@
    "metro": "Indianapolis",
    "tier": 2,
    "miles": 1.1,
-   "status": "available",
+   "status": "unavailable",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Indianapolis",
    "region": "East North Central",
-   "since_by_part": {
-    "MK1E4LL/A": "2026-11-27 15:37"
-   },
-   "since": "2026-11-27 15:37"
+   "since_by_part": {}
   },
   "R020": {
    "name": "Saddle Creek",
@@ -3763,14 +3769,17 @@
    "metro": "Nashville",
    "tier": 2,
    "miles": 6.0,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "East South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-28 14:19"
+   },
+   "since": "2026-11-28 14:19"
   },
   "R083": {
    "name": "SouthPark",
@@ -4312,8 +4321,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-28T14:19:15.793156-06:00",
- "metros_ok": 12,
+ "last_sweep": "2026-11-28T14:19:37.925884-06:00",
+ "metros_ok": 18,
  "metros": [
   {
    "metro": "New York",
@@ -4647,12 +4656,12 @@
   "San Francisco": "2026-11-28T14:18:59.148033-06:00",
   "Detroit": "2026-11-28T06:18:54.021095-06:00",
   "Seattle": "2026-11-28T14:19:02.412175-06:00",
-  "Minneapolis": "2026-11-28T06:17:26.749636-06:00",
+  "Minneapolis": "2026-11-28T14:19:31.253133-06:00",
   "San Diego": "2026-11-28T14:18:41.135725-06:00",
   "Tampa": "2026-11-28T06:18:22.908348-06:00",
-  "Denver": "2026-11-28T06:17:50.719240-06:00",
+  "Denver": "2026-11-28T14:19:20.825880-06:00",
   "Baltimore": "2026-11-28T06:18:26.399675-06:00",
-  "St. Louis": "2026-11-28T06:17:33.505136-06:00",
+  "St. Louis": "2026-11-28T14:19:34.551303-06:00",
   "Orlando": "2026-11-28T06:18:29.759649-06:00",
   "Charlotte": "2026-11-28T06:18:33.167071-06:00",
   "San Antonio": "2026-11-28T06:18:16.257852-06:00",
@@ -4662,7 +4671,7 @@
   "Austin": "2026-11-28T06:18:19.567634-06:00",
   "Las Vegas": "2026-11-28T14:18:37.763783-06:00",
   "Cincinnati": "2026-11-28T06:19:37.668179-06:00",
-  "Kansas City": "2026-11-28T06:17:40.296108-06:00",
+  "Kansas City": "2026-11-28T14:19:37.925777-06:00",
   "Columbus": "2026-11-28T06:16:48.852928-06:00",
   "Indianapolis": "2026-11-28T06:16:52.379983-06:00",
   "Cleveland": "2026-11-28T06:16:57.954376-06:00",
@@ -4670,8 +4679,8 @@
   "Raleigh": "2026-11-28T06:18:36.720679-06:00",
   "Oklahoma City": "2026-11-28T06:17:57.436083-06:00",
   "Tulsa": "2026-11-28T06:18:01.259660-06:00",
-  "Omaha": "2026-11-28T06:16:45.422911-06:00",
-  "Des Moines": "2026-11-28T06:17:01.512047-06:00",
+  "Omaha": "2026-11-28T14:19:24.226968-06:00",
+  "Des Moines": "2026-11-28T14:19:27.813085-06:00",
   "Little Rock": "2026-11-28T06:18:04.757559-06:00",
   "Memphis": "2026-11-28T06:17:15.089734-06:00",
   "Madison": "2026-11-28T06:17:05.007766-06:00",
@@ -4699,12 +4708,12 @@
   "San Francisco": "2026-11-28T14:18:59.148051-06:00",
   "Detroit": "2026-11-28T06:18:54.021114-06:00",
   "Seattle": "2026-11-28T14:19:02.412193-06:00",
-  "Minneapolis": "2026-11-28T06:17:26.749655-06:00",
+  "Minneapolis": "2026-11-28T14:19:31.253153-06:00",
   "San Diego": "2026-11-28T14:18:41.135743-06:00",
   "Tampa": "2026-11-28T06:18:22.908367-06:00",
-  "Denver": "2026-11-28T06:17:50.719260-06:00",
+  "Denver": "2026-11-28T14:19:20.825901-06:00",
   "Baltimore": "2026-11-28T06:18:26.399695-06:00",
-  "St. Louis": "2026-11-28T06:17:33.505155-06:00",
+  "St. Louis": "2026-11-28T14:19:34.551321-06:00",
   "Orlando": "2026-11-28T06:18:29.759668-06:00",
   "Charlotte": "2026-11-28T06:18:33.167090-06:00",
   "San Antonio": "2026-11-28T06:18:16.257871-06:00",
@@ -4714,7 +4723,7 @@
   "Austin": "2026-11-28T06:18:19.567654-06:00",
   "Las Vegas": "2026-11-28T14:18:37.763801-06:00",
   "Cincinnati": "2026-11-27T21:37:58.821716-06:00",
-  "Kansas City": "2026-11-28T06:17:40.296127-06:00",
+  "Kansas City": "2026-11-28T14:19:37.925794-06:00",
   "Columbus": "2026-11-28T06:16:48.852947-06:00",
   "Indianapolis": "2026-11-28T06:16:52.380004-06:00",
   "Cleveland": "2026-11-28T06:16:57.954395-06:00",
@@ -4722,8 +4731,8 @@
   "Raleigh": "2026-11-28T06:18:36.720698-06:00",
   "Oklahoma City": "2026-11-28T06:17:57.436103-06:00",
   "Tulsa": "2026-11-28T06:18:01.259682-06:00",
-  "Omaha": "2026-11-28T06:16:45.422931-06:00",
-  "Des Moines": "2026-11-28T06:17:01.512067-06:00",
+  "Omaha": "2026-11-28T14:19:24.226985-06:00",
+  "Des Moines": "2026-11-28T14:19:27.813104-06:00",
   "Little Rock": "2026-11-28T06:18:04.757579-06:00",
   "Memphis": "2026-11-28T06:17:15.089755-06:00",
   "Madison": "2026-11-28T06:17:05.007786-06:00",
@@ -4738,7 +4747,7 @@
  },
  "hot": [
   "Mountain",
-  "Pacific"
+  "West North Central"
  ],
  "cycle_seconds": 150,
  "pace": 3.0,
