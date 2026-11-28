@@ -6864,3 +6864,13 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-28 14:20,North Star,R290,San Antonio,TX,San Antonio,2,1.2,available,MK1F4LL/A
 2026-11-28 14:20,North Star,R290,San Antonio,TX,San Antonio,2,1.2,available,MK1E4LL/A
 2026-11-28 14:21,Fritz Farm,R288,Lexington,KY,,0,62.5,unavailable,MK1E4LL/A
+2026-11-28 14:21,Upper West Side,R251,New York,NY,New York,1,0.5,available,MK1F4LL/A
+2026-11-28 14:21,Fifth Avenue,R095,New York,NY,New York,1,0.7,available,MK1F4LL/A
+2026-11-28 14:21,Fifth Avenue,R095,New York,NY,New York,1,0.7,available,MK1E4LL/A
+2026-11-28 14:21,Grand Central,R415,New York,NY,New York,1,1.1,available,MK1E4LL/A
+2026-11-28 14:21,American Dream,R755,East Rutherford,NJ,New York,1,5.1,available,MK1E4LL/A
+2026-11-28 14:21,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,available,MK1F4LL/A
+2026-11-28 14:21,Downtown Brooklyn,R715,Brooklyn,NY,New York,1,5.7,available,MK1E4LL/A
+2026-11-28 14:21,The Mall at Bay Plaza,R753,Bronx,NY,New York,1,10.6,available,MK1F4LL/A
+2026-11-28 14:21,The Mall at Bay Plaza,R753,Bronx,NY,New York,1,10.6,available,MK1E4LL/A
+2026-11-28 14:21,Woodland,R132,Grand Rapids,MI,,0,124.9,available,MK1F4LL/A
