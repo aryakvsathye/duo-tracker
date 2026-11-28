@@ -6795,3 +6795,10 @@ time,store,store_id,city,state,metro,tier,miles,status,part
 2026-11-28 14:18,Third Street Promenade,R051,Santa Monica,CA,Los Angeles,1,5.5,available,MK1F4LL/A
 2026-11-28 14:18,Sherman Oaks,R148,Sherman Oaks,CA,Los Angeles,1,7.0,available,MK1F4LL/A
 2026-11-28 14:18,Sherman Oaks,R148,Sherman Oaks,CA,Los Angeles,1,7.0,unavailable,MK1E4LL/A
+2026-11-28 14:18,Hillsdale,R231,San Mateo,CA,San Francisco,1,18.4,available,MK1F4LL/A
+2026-11-28 14:19,Park Meadows,R228,Lone Tree,CO,Denver,2,12.2,available,MK1F4LL/A
+2026-11-28 14:19,Cherry Creek,R047,Denver,CO,Denver,2,0.8,available,MK1E4LL/A
+2026-11-28 14:19,Arrowhead,R247,Glendale,AZ,Phoenix,1,14.6,available,MK1E4LL/A
+2026-11-28 14:19,City Creek Center,R125,Salt Lake City,UT,Salt Lake City,3,0.9,available,MK1F4LL/A
+2026-11-28 14:19,Fashion Place,R461,Murray,UT,Salt Lake City,3,8.3,available,MK1F4LL/A
+2026-11-28 14:19,Fashion Place,R461,Murray,UT,Salt Lake City,3,8.3,available,MK1E4LL/A

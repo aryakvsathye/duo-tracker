@@ -1931,14 +1931,17 @@
    "metro": "Phoenix",
    "tier": 1,
    "miles": 14.6,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "US/Arizona",
    "region": "Mountain",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-28 14:19"
+   },
+   "since": "2026-11-28 14:19"
   },
   "R026": {
    "name": "Chandler Fashion Center",
@@ -2474,14 +2477,17 @@
    "metro": "San Francisco",
    "tier": 1,
    "miles": 18.4,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Los_Angeles",
    "region": "Pacific",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-28 14:18"
+   },
+   "since": "2026-11-28 14:18"
   },
   "R014": {
    "name": "Broadway Plaza",
@@ -3417,14 +3423,17 @@
    "metro": "Denver",
    "tier": 2,
    "miles": 0.8,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Denver",
    "region": "Mountain",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-28 14:19"
+   },
+   "since": "2026-11-28 14:19"
   },
   "R030": {
    "name": "Aspen Grove",
@@ -3453,14 +3462,17 @@
    "metro": "Denver",
    "tier": 2,
    "miles": 12.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Denver",
    "region": "Mountain",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-28 14:19"
+   },
+   "since": "2026-11-28 14:19"
   },
   "R182": {
    "name": "FlatIron Crossing",
@@ -3543,14 +3555,18 @@
    "metro": "Salt Lake City",
    "tier": 3,
    "miles": 8.3,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Denver",
    "region": "Mountain",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-28 14:19",
+    "MK1E4LL/A": "2026-11-28 14:19"
+   },
+   "since": "2026-11-28 14:19"
   },
   "R125": {
    "name": "City Creek Center",
@@ -3561,14 +3577,17 @@
    "metro": "Salt Lake City",
    "tier": 3,
    "miles": 0.9,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
+    "MK1F4LL/A": "available",
     "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Denver",
    "region": "Mountain",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-28 14:19"
+   },
+   "since": "2026-11-28 14:19"
   },
   "R599": {
    "name": "Station Park",
@@ -4293,8 +4312,8 @@
    "since_by_part": {}
   }
  },
- "last_sweep": "2026-11-28T14:18:54.326303-06:00",
- "metros_ok": 6,
+ "last_sweep": "2026-11-28T14:19:15.793156-06:00",
+ "metros_ok": 12,
  "metros": [
   {
    "metro": "New York",
@@ -4623,11 +4642,11 @@
   "Philadelphia": "2026-11-28T06:19:51.298492-06:00",
   "Atlanta": "2026-11-28T06:17:18.542849-06:00",
   "Miami": "2026-11-28T06:17:54.100300-06:00",
-  "Phoenix": "2026-11-28T06:17:43.998899-06:00",
+  "Phoenix": "2026-11-28T14:19:15.793052-06:00",
   "Boston": "2026-11-28T06:19:24.436130-06:00",
-  "San Francisco": "2026-11-28T06:16:38.528855-06:00",
+  "San Francisco": "2026-11-28T14:18:59.148033-06:00",
   "Detroit": "2026-11-28T06:18:54.021095-06:00",
-  "Seattle": "2026-11-28T06:16:41.909780-06:00",
+  "Seattle": "2026-11-28T14:19:02.412175-06:00",
   "Minneapolis": "2026-11-28T06:17:26.749636-06:00",
   "San Diego": "2026-11-28T14:18:41.135725-06:00",
   "Tampa": "2026-11-28T06:18:22.908348-06:00",
@@ -4656,13 +4675,13 @@
   "Little Rock": "2026-11-28T06:18:04.757559-06:00",
   "Memphis": "2026-11-28T06:17:15.089734-06:00",
   "Madison": "2026-11-28T06:17:05.007766-06:00",
-  "Albuquerque": "2026-11-28T06:17:21.969561-06:00",
-  "Salt Lake City": "2026-11-28T06:17:30.137426-06:00",
+  "Albuquerque": "2026-11-28T14:19:05.708446-06:00",
+  "Salt Lake City": "2026-11-28T14:19:09.030724-06:00",
   "Louisville": "2026-11-28T06:18:46.900504-06:00",
   "Birmingham": "2026-11-28T06:18:57.423607-06:00",
   "Richmond": "2026-11-28T06:18:40.049081-06:00",
   "Honolulu": "2026-11-28T14:18:50.993760-06:00",
-  "Tucson": "2026-11-28T06:17:36.893645-06:00",
+  "Tucson": "2026-11-28T14:19:12.416096-06:00",
   "Buffalo": "2026-11-28T06:17:11.679792-06:00"
  },
  "ok_at": {
@@ -4675,11 +4694,11 @@
   "Philadelphia": "2026-11-27T21:38:02.771492-06:00",
   "Atlanta": "2026-11-28T06:17:18.542870-06:00",
   "Miami": "2026-11-28T06:17:54.100320-06:00",
-  "Phoenix": "2026-11-28T06:17:43.998921-06:00",
+  "Phoenix": "2026-11-28T14:19:15.793071-06:00",
   "Boston": "2026-11-27T21:37:54.968962-06:00",
-  "San Francisco": "2026-11-28T06:16:38.528874-06:00",
+  "San Francisco": "2026-11-28T14:18:59.148051-06:00",
   "Detroit": "2026-11-28T06:18:54.021114-06:00",
-  "Seattle": "2026-11-28T06:16:41.909798-06:00",
+  "Seattle": "2026-11-28T14:19:02.412193-06:00",
   "Minneapolis": "2026-11-28T06:17:26.749655-06:00",
   "San Diego": "2026-11-28T14:18:41.135743-06:00",
   "Tampa": "2026-11-28T06:18:22.908367-06:00",
@@ -4708,13 +4727,13 @@
   "Little Rock": "2026-11-28T06:18:04.757579-06:00",
   "Memphis": "2026-11-28T06:17:15.089755-06:00",
   "Madison": "2026-11-28T06:17:05.007786-06:00",
-  "Albuquerque": "2026-11-28T06:17:21.969581-06:00",
-  "Salt Lake City": "2026-11-28T06:17:30.137446-06:00",
+  "Albuquerque": "2026-11-28T14:19:05.708467-06:00",
+  "Salt Lake City": "2026-11-28T14:19:09.030743-06:00",
   "Louisville": "2026-11-28T06:18:46.900525-06:00",
   "Birmingham": "2026-11-28T06:18:57.423627-06:00",
   "Richmond": "2026-11-28T06:18:40.049101-06:00",
   "Honolulu": "2026-11-28T14:18:50.993779-06:00",
-  "Tucson": "2026-11-28T06:17:36.893664-06:00",
+  "Tucson": "2026-11-28T14:19:12.416113-06:00",
   "Buffalo": "2026-11-28T06:17:11.679829-06:00"
  },
  "hot": [
