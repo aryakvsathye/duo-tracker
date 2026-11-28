@@ -1,7 +1,7 @@
 {
  "stock": {
   "Country Club Plaza": {
-   "MK1F4LL/A": "available",
+   "MK1F4LL/A": "unavailable",
    "MK1E4LL/A": "unavailable"
   },
   "Leawood": {
@@ -51,37 +51,9 @@
  },
  "checks": 27,
  "errors": 0,
- "events": 4,
+ "events": 5,
  "last_heartbeat": "2026-11-27",
  "nearby": {
-  "Country Club Plaza": {
-   "miles": 10.11,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "quotes": {
-    "MK1F4LL/A": "Tomorrow at Apple Country Club Plaza",
-    "MK1E4LL/A": "Currently unavailable at Apple Country Club Plaza"
-   },
-   "quote": "Tomorrow at Apple Country Club Plaza",
-   "phone": "816-448 9200",
-   "lat": 39.0413,
-   "lon": -94.590172,
-   "address": "227 Nichols Road",
-   "city": "Kansas City",
-   "hours": [
-    {
-     "days": "Mon-Sat:",
-     "time": "10:00 AM-7:00 PM"
-    },
-    {
-     "days": "Sun:",
-     "time": "12:00 PM-6:00 PM"
-    }
-   ]
-  },
   "Jordan Creek": {
    "miles": 183.62,
    "status": "available",
@@ -111,6 +83,34 @@
     {
      "days": "Fri-Sat:",
      "time": "10:00 AM-9:00 PM"
+    }
+   ]
+  },
+  "Country Club Plaza": {
+   "miles": 10.11,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "quotes": {
+    "MK1F4LL/A": "Currently unavailable at Apple Country Club Plaza",
+    "MK1E4LL/A": "Currently unavailable at Apple Country Club Plaza"
+   },
+   "quote": "Currently unavailable at Apple Country Club Plaza",
+   "phone": "816-448 9200",
+   "lat": 39.0413,
+   "lon": -94.590172,
+   "address": "227 Nichols Road",
+   "city": "Kansas City",
+   "hours": [
+    {
+     "days": "Mon-Sat:",
+     "time": "10:00 AM-7:00 PM"
+    },
+    {
+     "days": "Sun:",
+     "time": "12:00 PM-6:00 PM"
     }
    ]
   },
@@ -171,7 +171,7 @@
    ]
   }
  },
- "last_check": "2026-11-27T17:49:31.556622-06:00",
+ "last_check": "2026-11-28T08:03:19.452789-06:00",
  "history": [
   {
    "t": "2026-11-26T07:00:21-06:00",
@@ -976,16 +976,6 @@
   }
  ],
  "field": {
-  "Country Club Plaza": {
-   "miles": 10.11,
-   "status": "available",
-   "parts": {
-    "MK1F4LL/A": "available",
-    "MK1E4LL/A": "unavailable"
-   },
-   "city": "Kansas City",
-   "state": "MO"
-  },
   "Jordan Creek": {
    "miles": 183.62,
    "status": "available",
@@ -1005,6 +995,16 @@
    },
    "city": "Tulsa",
    "state": "OK"
+  },
+  "Country Club Plaza": {
+   "miles": 10.11,
+   "status": "unavailable",
+   "parts": {
+    "MK1F4LL/A": "unavailable",
+    "MK1E4LL/A": "unavailable"
+   },
+   "city": "Kansas City",
+   "state": "MO"
   },
   "Leawood": {
    "miles": 10.47,
