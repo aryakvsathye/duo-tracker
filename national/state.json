@@ -726,13 +726,12 @@
    "status": "available",
    "parts": {
     "MK1F4LL/A": "available",
-    "MK1E4LL/A": "available"
+    "MK1E4LL/A": "unavailable"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
    "since_by_part": {
-    "MK1F4LL/A": "2026-11-28 06:17",
-    "MK1E4LL/A": "2026-11-28 06:17"
+    "MK1F4LL/A": "2026-11-28 06:17"
    },
    "since": "2026-11-28 06:17"
   },
@@ -745,14 +744,18 @@
    "metro": "Dallas",
    "tier": 1,
    "miles": 20.4,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-28 14:20",
+    "MK1E4LL/A": "2026-11-28 14:20"
+   },
+   "since": "2026-11-28 14:20"
   },
   "R316": {
    "name": "University Park Village",
@@ -763,14 +766,18 @@
    "metro": "Dallas",
    "tier": 1,
    "miles": 34.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-28 14:20",
+    "MK1E4LL/A": "2026-11-28 14:20"
+   },
+   "since": "2026-11-28 14:20"
   },
   "R216": {
    "name": "Domain NORTHSIDE",
@@ -781,14 +788,18 @@
    "metro": "Austin",
    "tier": 2,
    "miles": 9.3,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-28 14:20",
+    "MK1E4LL/A": "2026-11-28 14:20"
+   },
+   "since": "2026-11-28 14:20"
   },
   "R130": {
    "name": "Penn Square",
@@ -817,14 +828,18 @@
    "metro": "Austin",
    "tier": 2,
    "miles": 2.7,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/Chicago",
    "region": "West South Central",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-28 14:20",
+    "MK1E4LL/A": "2026-11-28 14:20"
+   },
+   "since": "2026-11-28 14:20"
   },
   "R126": {
    "name": "The Woodlands",
@@ -1220,14 +1235,18 @@
    "metro": "Washington",
    "tier": 1,
    "miles": 24.2,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-28 14:20",
+    "MK1E4LL/A": "2026-11-28 14:20"
+   },
+   "since": "2026-11-28 14:20"
   },
   "R142": {
    "name": "Annapolis",
@@ -3850,14 +3869,18 @@
    "metro": "Charlotte",
    "tier": 2,
    "miles": 2.5,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
-    "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1F4LL/A": "available",
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1F4LL/A": "2026-11-28 14:20",
+    "MK1E4LL/A": "2026-11-28 14:20"
+   },
+   "since": "2026-11-28 14:20"
   },
   "R796": {
    "name": "Birkdale Village",
@@ -3886,14 +3909,17 @@
    "metro": "",
    "tier": 0,
    "miles": 65.4,
-   "status": "unavailable",
+   "status": "available",
    "parts": {
     "MK1F4LL/A": "unavailable",
-    "MK1E4LL/A": "unavailable"
+    "MK1E4LL/A": "available"
    },
    "tz": "America/New_York",
    "region": "South Atlantic",
-   "since_by_part": {}
+   "since_by_part": {
+    "MK1E4LL/A": "2026-11-28 14:20"
+   },
+   "since": "2026-11-28 14:20"
   },
   "R049": {
    "name": "Southpoint",
@@ -4391,8 +4417,8 @@
    "since": "2026-11-28 14:19"
   }
  },
- "last_sweep": "2026-11-28T14:20:21.557850-06:00",
- "metros_ok": 30,
+ "last_sweep": "2026-11-28T14:20:43.239455-06:00",
+ "metros_ok": 36,
  "metros": [
   {
    "metro": "New York",
@@ -4714,10 +4740,10 @@
  "checked_at": {
   "New York": "2026-11-28T06:18:50.574571-06:00",
   "Los Angeles": "2026-11-28T14:18:54.326046-06:00",
-  "Chicago": "2026-11-28T06:17:47.351001-06:00",
+  "Chicago": "2026-11-28T14:20:39.789083-06:00",
   "Dallas": "2026-11-28T06:18:08.267998-06:00",
   "Houston": "2026-11-28T06:18:11.544035-06:00",
-  "Washington": "2026-11-28T06:18:43.354582-06:00",
+  "Washington": "2026-11-28T14:20:36.492146-06:00",
   "Philadelphia": "2026-11-28T06:19:51.298492-06:00",
   "Atlanta": "2026-11-28T14:20:08.119123-06:00",
   "Miami": "2026-11-28T14:20:11.532754-06:00",
@@ -4733,7 +4759,7 @@
   "Baltimore": "2026-11-28T14:20:18.251151-06:00",
   "St. Louis": "2026-11-28T14:19:34.551303-06:00",
   "Orlando": "2026-11-28T14:20:21.557739-06:00",
-  "Charlotte": "2026-11-28T06:18:33.167071-06:00",
+  "Charlotte": "2026-11-28T14:20:26.379924-06:00",
   "San Antonio": "2026-11-28T06:18:16.257852-06:00",
   "Portland": "2026-11-28T14:18:44.526955-06:00",
   "Sacramento": "2026-11-28T14:18:47.811487-06:00",
@@ -4746,8 +4772,8 @@
   "Indianapolis": "2026-11-28T14:19:46.085242-06:00",
   "Cleveland": "2026-11-28T14:19:49.747856-06:00",
   "Nashville": "2026-11-28T06:19:11.031783-06:00",
-  "Raleigh": "2026-11-28T06:18:36.720679-06:00",
-  "Oklahoma City": "2026-11-28T06:17:57.436083-06:00",
+  "Raleigh": "2026-11-28T14:20:29.739973-06:00",
+  "Oklahoma City": "2026-11-28T14:20:43.239137-06:00",
   "Tulsa": "2026-11-28T06:18:01.259660-06:00",
   "Omaha": "2026-11-28T14:19:24.226968-06:00",
   "Des Moines": "2026-11-28T14:19:27.813085-06:00",
@@ -4758,7 +4784,7 @@
   "Salt Lake City": "2026-11-28T14:19:09.030724-06:00",
   "Louisville": "2026-11-28T06:18:46.900504-06:00",
   "Birmingham": "2026-11-28T06:18:57.423607-06:00",
-  "Richmond": "2026-11-28T06:18:40.049081-06:00",
+  "Richmond": "2026-11-28T14:20:33.104504-06:00",
   "Honolulu": "2026-11-28T14:18:50.993760-06:00",
   "Tucson": "2026-11-28T14:19:12.416096-06:00",
   "Buffalo": "2026-11-28T14:19:59.833318-06:00"
@@ -4766,10 +4792,10 @@
  "ok_at": {
   "New York": "2026-11-28T06:18:50.574588-06:00",
   "Los Angeles": "2026-11-28T14:18:54.326064-06:00",
-  "Chicago": "2026-11-28T06:17:47.351019-06:00",
+  "Chicago": "2026-11-28T14:20:39.789101-06:00",
   "Dallas": "2026-11-28T06:18:08.268019-06:00",
   "Houston": "2026-11-28T06:18:11.544054-06:00",
-  "Washington": "2026-11-28T06:18:43.354602-06:00",
+  "Washington": "2026-11-28T14:20:36.492164-06:00",
   "Philadelphia": "2026-11-27T21:38:02.771492-06:00",
   "Atlanta": "2026-11-28T14:20:08.119144-06:00",
   "Miami": "2026-11-28T14:20:11.532772-06:00",
@@ -4785,7 +4811,7 @@
   "Baltimore": "2026-11-28T14:20:18.251170-06:00",
   "St. Louis": "2026-11-28T14:19:34.551321-06:00",
   "Orlando": "2026-11-28T14:20:21.557759-06:00",
-  "Charlotte": "2026-11-28T06:18:33.167090-06:00",
+  "Charlotte": "2026-11-28T14:20:26.379943-06:00",
   "San Antonio": "2026-11-28T06:18:16.257871-06:00",
   "Portland": "2026-11-28T14:18:44.526975-06:00",
   "Sacramento": "2026-11-28T14:18:47.811505-06:00",
@@ -4798,8 +4824,8 @@
   "Indianapolis": "2026-11-28T14:19:46.085262-06:00",
   "Cleveland": "2026-11-28T14:19:49.747876-06:00",
   "Nashville": "2026-11-27T21:37:49.640337-06:00",
-  "Raleigh": "2026-11-28T06:18:36.720698-06:00",
-  "Oklahoma City": "2026-11-28T06:17:57.436103-06:00",
+  "Raleigh": "2026-11-28T14:20:29.739993-06:00",
+  "Oklahoma City": "2026-11-28T14:20:43.239158-06:00",
   "Tulsa": "2026-11-28T06:18:01.259682-06:00",
   "Omaha": "2026-11-28T14:19:24.226985-06:00",
   "Des Moines": "2026-11-28T14:19:27.813104-06:00",
@@ -4810,7 +4836,7 @@
   "Salt Lake City": "2026-11-28T14:19:09.030743-06:00",
   "Louisville": "2026-11-28T06:18:46.900525-06:00",
   "Birmingham": "2026-11-28T06:18:57.423627-06:00",
-  "Richmond": "2026-11-28T06:18:40.049101-06:00",
+  "Richmond": "2026-11-28T14:20:33.104523-06:00",
   "Honolulu": "2026-11-28T14:18:50.993779-06:00",
   "Tucson": "2026-11-28T14:19:12.416113-06:00",
   "Buffalo": "2026-11-28T14:19:59.833336-06:00"
